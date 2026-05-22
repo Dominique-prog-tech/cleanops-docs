@@ -2,6 +2,10 @@ site_name: CleanOps Documentatie
 site_description: Officiële handleiding voor CleanOps
 site_author: Dominique
 site_url: https://docs.cleanops.eu/
+copyright: >
+  CleanOps &copy; 2026 — eigendom van
+  <a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
+  Alle rechten voorbehouden.
 
 theme:
   name: material
