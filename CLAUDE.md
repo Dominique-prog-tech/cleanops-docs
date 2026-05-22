@@ -168,11 +168,10 @@ De docs-navigatie volgt **één-op-één de sidebar** van het platform:
 
 ## Publicatie-status
 
-Op moment van setup: **GitHub Pages is nog NIET geactiveerd** voor deze repo.
-Reden: repo is private en GitHub Pages vereist GitHub Pro voor private repos.
+De docs zijn live op **https://docs.cleanops.eu**.
 
-Wanneer publicatie gewenst is:
-- Optie 1: repo public maken (gratis Pages).
-- Optie 2: GitHub Pro nemen (~$4/mnd), repo blijft private.
-- Daarna: Settings → Pages → Source: GitHub Actions.
-- Voor custom domein: CNAME-record + docs/CNAME bestand.
+- Repo blijft **private** (mogelijk dankzij GitHub Pro).
+- Deploy: automatisch via GitHub Actions bij elke push naar `main`.
+- Domein: `docs.cleanops.eu` (CNAME-record bij Combell).
+- HTTPS: gratis SSL-certificaat via Let's Encrypt (auto-renewal).
+- Workflow: `.github/workflows/deploy.yml`.

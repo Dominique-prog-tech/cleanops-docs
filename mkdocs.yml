@@ -1,9 +1,7 @@
 site_name: CleanOps Documentatie
 site_description: Officiële handleiding voor CleanOps
 site_author: Dominique
-# Custom domein nog niet geconfigureerd — gebruik github.io URL voor nu.
-# Bij activatie: site_url: https://docs.cleanops.be/
-site_url: https://Dominique-prog-tech.github.io/cleanops-docs/
+site_url: https://docs.cleanops.eu/
 
 theme:
   name: material
