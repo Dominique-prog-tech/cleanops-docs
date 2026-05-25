@@ -1,4 +1,4 @@
-# CleanOps Documentatie
+﻿# CleanOps Documentatie
 
 !!! info "Documentatie in opbouw"
     Deze handleiding wordt actief uitgewerkt. Sommige pagina's bevatten nog
@@ -13,24 +13,24 @@ facturatie, boekhouding en wettelijke attesten voor afvalverwerking.
 
 ## Snel aan de slag
 
-- [Installatie](aan-de-slag/installatie.md) — installeer en configureer CleanOps.
-- [Eerste aanmelding](aan-de-slag/eerste-aanmelding.md) — uw eerste keer inloggen.
-- [Interface-overzicht](aan-de-slag/interface-overzicht.md) — leer de lay-out kennen.
-- [Dashboard](aan-de-slag/dashboard.md) — uw startscherm.
+- [Installatie](getting-started/installation.md) — installeer en configureer CleanOps.
+- [Eerste aanmelding](getting-started/first-login.md) — uw eerste keer inloggen.
+- [Interface-overzicht](getting-started/interface.md) — leer de lay-out kennen.
+- [Dashboard](getting-started/dashboard.md) — uw startscherm.
 
 ## De hoofdmodules
 
 | Module | Wat u hier doet |
 |---|---|
-| [Werkzaamheden](werkzaamheden/overzicht.md) | Contracten beheren, opdrachten genereren, planning |
-| [CRM](crm/overzicht.md) | Klanten, leveranciers, medewerkers |
-| [Attesten](attesten/overzicht.md) | Verwerkingsattesten en producten |
-| [Facturatie](facturatie/overzicht.md) | Offertes, facturen, rappels |
-| [Boekhouding](boekhouding/overzicht.md) | Boekjaren, dagboeken, betalingen |
-| [Aankoopdocumenten](aankoop/overzicht.md) | Leveranciersfacturen en betalingsvoorstellen |
-| [Beheer](beheer/bedrijfsprofiel.md) | Configuratie, stamgegevens, gebruikers |
+| [Werkzaamheden](operations/overview.md) | Contracten beheren, opdrachten genereren, planning |
+| [CRM](crm/overview.md) | Klanten, leveranciers, medewerkers |
+| [Attesten](certificates/overview.md) | Verwerkingsattesten en producten |
+| [Facturatie](invoicing/overview.md) | Offertes, facturen, rappels |
+| [Boekhouding](accounting/overview.md) | Boekjaren, dagboeken, betalingen |
+| [Aankoopdocumenten](purchases/overview.md) | Leveranciersfacturen en betalingsvoorstellen |
+| [Beheer](settings/company-profile.md) | Configuratie, stamgegevens, gebruikers |
 
 ## Hulp nodig?
 
-- [Begrippenlijst](concepten/begrippenlijst.md) — uitleg van vaktermen.
-- [Supportticket indienen](gebruiker/supportticket-indienen.md) — direct contact met support.
+- [Begrippenlijst](concepts/glossary.md) — uitleg van vaktermen.
+- [Supportticket indienen](account/support-ticket.md) — direct contact met support.

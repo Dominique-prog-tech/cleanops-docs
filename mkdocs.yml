@@ -55,6 +55,117 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+plugins:
+  - search:
+      lang:
+        - nl
+        - fr
+  - i18n:
+      docs_structure: suffix
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: nl
+          default: true
+          name: Nederlands
+          build: true
+          site_name: CleanOps Documentatie
+          site_description: Officiële handleiding voor CleanOps
+        - locale: fr
+          name: Français
+          build: true
+          site_name: CleanOps Documentation
+          site_description: Manuel officiel de CleanOps
+          copyright: >
+            CleanOps &copy; 2026 — propriété d'<a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
+            Tous droits réservés.
+          theme:
+            language: fr
+            palette:
+              - scheme: default
+                primary: teal
+                accent: teal
+                toggle:
+                  icon: material/brightness-7
+                  name: Passer en mode sombre
+              - scheme: slate
+                primary: teal
+                accent: teal
+                toggle:
+                  icon: material/brightness-4
+                  name: Passer en mode clair
+          nav_translations:
+            Home: Accueil
+            Aan de slag: Premiers pas
+            Installatie: Installation
+            Eerste aanmelding: Première connexion
+            Interface-overzicht: Aperçu de l'interface
+            Dashboard: Tableau de bord
+            Werkzaamheden: Opérations
+            Overzicht: Aperçu
+            Contracten: Contrats
+            Generatie opdrachten: Génération des ordres
+            Opdrachten: Ordres de travail
+            Planning: Planning
+            Personeel groeperen: Groupement du personnel
+            CRM: CRM
+            Klanten: Clients
+            Leveranciers: Fournisseurs
+            Medewerkers: Collaborateurs
+            Overzicht verloven: Aperçu des congés
+            Verlofsaldi: Soldes de congés
+            Attesten: Attestations
+            Producten: Produits
+            Verwerkingen: Traitements
+            Verwerkingsbedrijven: Entreprises de traitement
+            Raadplegen en bewerken: Consulter et modifier
+            Facturatie: Facturation
+            Offertebeheer: Gestion des devis
+            Overzicht te factureren: Aperçu à facturer
+            Aanmaken facturen: Création des factures
+            Factureren werkorders: Facturer les bons de travail
+            Afdruk facturen: Impression des factures
+            Rappelbeheer: Gestion des rappels
+            Openstaande posten: Postes ouverts
+            "Op te volgen memo's": "Mémos à suivre"
+            Schuldbemiddelingen: Médiation de dettes
+            Documentnummers: Numéros de documents
+            Boekhouding: Comptabilité
+            Boekjaren: Exercices comptables
+            Dagboeken: Journaux
+            Type documenten: Types de documents
+            Bankverrichtingen: Opérations bancaires
+            Ingave betalingen: Saisie des paiements
+            Rekeningsplan: Plan comptable
+            Controle klantenbalans: Contrôle balance clients
+            Correctieroutine: Routine de correction
+            Aankoopdocumenten: Documents d'achat
+            Ingave: Saisie
+            Betalingsvoorstel: Proposition de paiement
+            Beheer: Configuration
+            Bedrijfsprofiel: Profil d'entreprise
+            Betalingsvoorwaarden: Conditions de paiement
+            Btw-codes: Codes TVA
+            Eenheden: Unités
+            Facturatiecodes: Codes de facturation
+            Landcodes: Codes pays
+            Postcodes: Codes postaux
+            Taalcodes: Codes langue
+            Munt en wisselkoers: Devise et taux de change
+            Mail accounts: Comptes mail
+            Mail templates: Modèles de mail
+            Gebruikers: Utilisateurs
+            Registratie Peppol: Enregistrement Peppol
+            Stamgegevens: Données de base
+            Voertuigen: Véhicules
+            Mijn gebruiker: Mon utilisateur
+            Dashboard platform: Tableau de bord plateforme
+            Supportticket indienen: Créer un ticket de support
+            Sessie afsluiten: Fermer la session
+            Concepten: Concepts
+            Begrippenlijst: Glossaire
+            Workflow-overzicht: Aperçu du workflow
+
 extra:
   generator: false
 
@@ -62,88 +173,88 @@ nav:
   - Home: index.md
 
   - Aan de slag:
-    - Installatie: aan-de-slag/installatie.md
-    - Eerste aanmelding: aan-de-slag/eerste-aanmelding.md
-    - Interface-overzicht: aan-de-slag/interface-overzicht.md
-    - Dashboard: aan-de-slag/dashboard.md
+    - Installatie: getting-started/installation.md
+    - Eerste aanmelding: getting-started/first-login.md
+    - Interface-overzicht: getting-started/interface.md
+    - Dashboard: getting-started/dashboard.md
 
   - Werkzaamheden:
-    - Overzicht: werkzaamheden/overzicht.md
-    - Contracten: werkzaamheden/contracten.md
-    - Generatie opdrachten: werkzaamheden/generatie-opdrachten.md
-    - Opdrachten: werkzaamheden/opdrachten.md
-    - Planning: werkzaamheden/planning.md
-    - Personeel groeperen: werkzaamheden/personeel-groeperen.md
+    - Overzicht: operations/overview.md
+    - Contracten: operations/contracts.md
+    - Generatie opdrachten: operations/order-generation.md
+    - Opdrachten: operations/orders.md
+    - Planning: operations/planning.md
+    - Personeel groeperen: operations/staff-grouping.md
 
   - CRM:
-    - Overzicht: crm/overzicht.md
-    - Klanten: crm/klanten.md
-    - Leveranciers: crm/leveranciers.md
-    - Medewerkers: crm/medewerkers.md
-    - Overzicht verloven: crm/overzicht-verloven.md
-    - Verlofsaldi: crm/verlofsaldi.md
+    - Overzicht: crm/overview.md
+    - Klanten: crm/customers.md
+    - Leveranciers: crm/suppliers.md
+    - Medewerkers: crm/staff.md
+    - Overzicht verloven: crm/leave-overview.md
+    - Verlofsaldi: crm/leave-balances.md
 
   - Attesten:
-    - Overzicht: attesten/overzicht.md
-    - Producten: attesten/producten.md
-    - Verwerkingen: attesten/verwerkingen.md
-    - Verwerkingsbedrijven: attesten/verwerkingsbedrijven.md
-    - Raadplegen en bewerken: attesten/raadplegen-bewerken.md
+    - Overzicht: certificates/overview.md
+    - Producten: certificates/products.md
+    - Verwerkingen: certificates/processings.md
+    - Verwerkingsbedrijven: certificates/processing-companies.md
+    - Raadplegen en bewerken: certificates/view-edit.md
 
   - Facturatie:
-    - Overzicht: facturatie/overzicht.md
-    - Offertebeheer: facturatie/offertebeheer.md
-    - Overzicht te factureren: facturatie/overzicht-te-factureren.md
-    - Aanmaken facturen: facturatie/aanmaken-facturen.md
-    - Factureren werkorders: facturatie/factureren-werkorders.md
-    - Afdruk facturen: facturatie/afdruk-facturen.md
-    - Rappelbeheer: facturatie/rappelbeheer.md
-    - Openstaande posten: facturatie/openstaande-posten.md
-    - Op te volgen memo's: facturatie/op-te-volgen-memos.md
-    - Schuldbemiddelingen: facturatie/schuldbemiddelingen.md
-    - Documentnummers: facturatie/documentnummers.md
+    - Overzicht: invoicing/overview.md
+    - Offertebeheer: invoicing/quotes.md
+    - Overzicht te factureren: invoicing/to-invoice.md
+    - Aanmaken facturen: invoicing/create-invoices.md
+    - Factureren werkorders: invoicing/invoice-work-orders.md
+    - Afdruk facturen: invoicing/print-invoices.md
+    - Rappelbeheer: invoicing/reminders.md
+    - Openstaande posten: invoicing/outstanding.md
+    - "Op te volgen memo's": invoicing/follow-up-memos.md
+    - Schuldbemiddelingen: invoicing/debt-mediation.md
+    - Documentnummers: invoicing/document-numbers.md
 
   - Boekhouding:
-    - Overzicht: boekhouding/overzicht.md
-    - Boekjaren: boekhouding/boekjaren.md
-    - Dagboeken: boekhouding/dagboeken.md
-    - Type documenten: boekhouding/type-documenten.md
-    - Bankverrichtingen: boekhouding/bankverrichtingen.md
-    - Ingave betalingen: boekhouding/ingave-betalingen.md
-    - Rekeningsplan: boekhouding/rekeningsplan.md
-    - Controle klantenbalans: boekhouding/controle-klantenbalans.md
-    - Correctieroutine: boekhouding/correctieroutine.md
+    - Overzicht: accounting/overview.md
+    - Boekjaren: accounting/fiscal-years.md
+    - Dagboeken: accounting/journals.md
+    - Type documenten: accounting/document-types.md
+    - Bankverrichtingen: accounting/bank-transactions.md
+    - Ingave betalingen: accounting/payment-entry.md
+    - Rekeningsplan: accounting/chart-of-accounts.md
+    - Controle klantenbalans: accounting/customer-balance-check.md
+    - Correctieroutine: accounting/correction-routine.md
 
   - Aankoopdocumenten:
-    - Overzicht: aankoop/overzicht.md
-    - Ingave: aankoop/ingave.md
-    - Openstaande posten: aankoop/openstaande-posten.md
-    - Betalingsvoorstel: aankoop/betalingsvoorstel.md
-    - Documentnummers: aankoop/documentnummers.md
+    - Overzicht: purchases/overview.md
+    - Ingave: purchases/entry.md
+    - Openstaande posten: purchases/outstanding.md
+    - Betalingsvoorstel: purchases/payment-proposal.md
+    - Documentnummers: purchases/document-numbers.md
 
   - Beheer:
-    - Bedrijfsprofiel: beheer/bedrijfsprofiel.md
-    - Betalingsvoorwaarden: beheer/betalingsvoorwaarden.md
-    - Btw-codes: beheer/btw-codes.md
-    - Eenheden: beheer/eenheden.md
-    - Facturatiecodes: beheer/facturatiecodes.md
-    - Landcodes: beheer/landcodes.md
-    - Postcodes: beheer/postcodes.md
-    - Taalcodes: beheer/taalcodes.md
-    - Munt en wisselkoers: beheer/munt-wisselkoers.md
-    - Mail accounts: beheer/mail-accounts.md
-    - Mail templates: beheer/mail-templates.md
-    - Gebruikers: beheer/gebruikers.md
-    - Registratie Peppol: beheer/registratie-peppol.md
-    - Stamgegevens: beheer/stamgegevens.md
-    - Voertuigen: beheer/voertuigen.md
-    - Producten: beheer/producten.md
+    - Bedrijfsprofiel: settings/company-profile.md
+    - Betalingsvoorwaarden: settings/payment-terms.md
+    - Btw-codes: settings/vat-codes.md
+    - Eenheden: settings/units.md
+    - Facturatiecodes: settings/invoicing-codes.md
+    - Landcodes: settings/country-codes.md
+    - Postcodes: settings/postal-codes.md
+    - Taalcodes: settings/language-codes.md
+    - Munt en wisselkoers: settings/currency-exchange.md
+    - Mail accounts: settings/mail-accounts.md
+    - Mail templates: settings/mail-templates.md
+    - Gebruikers: settings/users.md
+    - Registratie Peppol: settings/peppol.md
+    - Stamgegevens: settings/master-data.md
+    - Voertuigen: settings/vehicles.md
+    - Producten: settings/products.md
 
   - Mijn gebruiker:
-    - Dashboard platform: gebruiker/dashboard-platform.md
-    - Supportticket indienen: gebruiker/supportticket-indienen.md
-    - Sessie afsluiten: gebruiker/sessie-afsluiten.md
+    - Dashboard platform: account/platform-dashboard.md
+    - Supportticket indienen: account/support-ticket.md
+    - Sessie afsluiten: account/logout.md
 
   - Concepten:
-    - Begrippenlijst: concepten/begrippenlijst.md
-    - Workflow-overzicht: concepten/workflow-overzicht.md
+    - Begrippenlijst: concepts/glossary.md
+    - Workflow-overzicht: concepts/workflow.md
