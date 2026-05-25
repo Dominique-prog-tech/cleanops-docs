@@ -1,0 +1,13 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CleanOps logo">
+  <defs>
+    <linearGradient id="co-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#co-bg)"/>
+  <!-- Water drop -->
+  <path d="M32 12 C 22 26, 17 33, 17 41 A15 15 0 0 0 47 41 C 47 33, 42 26, 32 12 Z" fill="white"/>
+  <!-- Wave inside -->
+  <path d="M23 42 Q 27.5 38, 32 42 T 41 42" stroke="#0d9488" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+</svg>
