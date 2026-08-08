@@ -23,17 +23,33 @@ geen IT-developers.
 - **Geen IT-jargon** zonder context.
 - **Concreet en actiegericht**: "Klik op X", "Vul Y in".
 
-## Bronnen op deze machine
+## Bronnen op deze machine — LET OP: migratie in uitvoering
 
-### Delphi-source (read-only)
-- **Pad**: `D:\@newProjects\platform-cleanops-delphi\`
-- **Repo**: ADM-Concept/platform-cleanops-delphi (private)
-- **Autoritieve bron** voor: schermen, velden, validaties, foutmeldingen,
-  bedrijfsregels, menu-structuur.
+CleanOps migreert momenteel van het Delphi/UniGUI-platform naar een nieuwe
+.NET 10/Blazor-app (repo `adm-cleanops`). **Welke bron autoritair is, hangt af
+van of het onderdeel al gemigreerd is:**
 
-**Bij elk docs-onderwerp: lees relevante .pas/.dfm bestanden eerst.**
-Verzin nooit functionaliteit — markeer onzekerheden met
-`[TODO: bevestigen met source of gebruiker]`.
+### Voor een AL GEMIGREERD onderdeel (staat effectief in `adm-cleanops`)
+- **Autoritieve bron = de nieuwe .NET/Blazor-app zelf.** Start hem lokaal
+  (`dotnet run --project src/Host/CleanOps.Host.Web` in `~/projects/adm-cleanops`,
+  of vraag de gebruiker) en documenteer wat je **effectief in de UI ziet** —
+  velden, knoppen, flow. De migratie is **geen 1-op-1-kopie**: sommige
+  schermen zijn bewust herbouwd met een andere opzet dan Delphi (bv. Offertes,
+  Planning). Ga NOOIT uit van het Delphi-scherm zodra het onderdeel gemigreerd is.
+- Check eerst `~/projects/adm-cleanops/CLAUDE.md` en het projectgeheugen
+  (indien toegankelijk) om te weten wat al gemigreerd is.
+
+### Voor een NOG NIET gemigreerd onderdeel
+- **Delphi-source blijft de bron**, als voorlopige/verwachte functionaliteit:
+  - **Pad**: `D:\@newProjects\platform-cleanops-delphi\`
+  - **Repo**: ADM-Concept/platform-cleanops-delphi (private)
+- Markeer zulke pagina's expliciet als **voorlopig** (bv. een `!!! info`-blok
+  "Beschrijft de huidige Delphi-versie; kan wijzigen bij de migratie naar het
+  nieuwe platform.") zodat een lezer weet dat dit nog kan veranderen.
+
+**Bij elk docs-onderwerp: lees eerst de juiste bron (nieuwe app of Delphi,
+zie boven) voor je schrijft.** Verzin nooit functionaliteit — markeer
+onzekerheden met `[TODO: bevestigen met source of gebruiker]`.
 
 ### Belangrijke regel rond Delphi-source
 **NOOIT** Write of Edit gebruiken op `.pas` of `.dfm` bestanden — Windows-1252/
