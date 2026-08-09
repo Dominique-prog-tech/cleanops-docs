@@ -84,6 +84,34 @@ De docs-navigatie volgt **één-op-één de sidebar** van het platform:
 9. **Mijn gebruiker** — platform-overzicht, support, sessie afsluiten
 10. **Concepten** — begrippenlijst, workflow-overzicht
 
+## Docs ↔ app-koppeling
+
+Elke handleiding-pagina hoort bij een route in `adm-cleanops` via
+`CleanOpsHelpProvider.cs` (`src/Host/CleanOps.Host.Web/Help/`). Vandaag enkel de
+permanent Operator-only schermen (geen bèta-module in validatie):
+
+| App-route | Docs-slug | HelpProvider-prefix |
+|---|---|---|
+| `/beheer/conversie` | *(geen — enkel korte uitleg, geen link)* | `beheer/conversie` |
+| `/tenants` | *(geen — enkel korte uitleg, geen link)* | `tenants` |
+| `/beheer/gebruikers` | *(geen — enkel korte uitleg, geen link)* | `beheer/gebruikers` |
+
+URL-patroon zodra een pagina een slug krijgt: `https://docs.cleanops.eu[/fr]/{slug}/`.
+
+**Alleen klare pagina's staan in `mkdocs.yml` → `nav`** (en dus live op
+docs.cleanops.eu). Het volledige skelet uit de Delphi-scan blijft op schijf staan
+onder `docs/` tot het vervangen is, maar komt niet in de nav.
+
+**Definition of done per vrijgegeven scherm** (afgesproken met Dominique
+09/08/2026, playbook §7a — de handleiding groeit mee met de vrijgave, niet
+vooraf): een module is pas "klaar" als **alle vier** kloppen:
+
+1. Entry in `CleanOpsHelpProvider.cs` (NL + FR).
+2. Docs-pagina (`.md` + `.fr.md`) volledig ingevuld — geen `TODO`-markers meer,
+   op screenshots na.
+3. De pagina staat in `mkdocs.yml` → `nav`.
+4. Openstaande screenshots genoteerd in `SCREENSHOTS.md` (repo-root).
+
 ## Vaktermen die uitleg verdienen
 
 - **Attest** — wettelijk verplicht document bij afvalverwerking, bevestigt
@@ -115,6 +143,10 @@ De docs-navigatie volgt **één-op-één de sidebar** van het platform:
 - Formaat: PNG voor UI met tekst, JPG voor foto's
 - Resolutie: max 1920px breed
 - Alt-text altijd beschrijvend
+- **Ik maak zelf geen screenshots van de effectieve app.** Ontbreekt er één op de plek
+  waar de tekst ernaar verwijst, dan noteer ik dat in `SCREENSHOTS.md` (repo-root,
+  buiten `docs/` — nooit gepubliceerd) i.p.v. de pagina erop te laten wachten.
+  Dominique levert de screenshots als laatste stap vóór oplevering van een module.
 
 ### Markdown
 - Eén `# H1` per pagina (de paginatitel).
@@ -136,13 +168,20 @@ De docs-navigatie volgt **één-op-één de sidebar** van het platform:
 
 ## Schrijfflow per pagina
 
-1. Lees de source (`.pas` en `.dfm`) van het bijhorende scherm.
+Enkel opstarten op het moment dat het scherm effectief vrijgegeven wordt aan de
+bètatesters (playbook §7a) — niet vooraf voor alles tegelijk.
+
+1. Lees de source (nieuwe app als het scherm al gemigreerd is, anders Delphi — zie
+   "Bronnen op deze machine" hierboven) van het bijhorende scherm.
 2. Begrijp velden, knoppen, validaties.
-3. Schrijf de pagina volgens de template hieronder.
-4. Maak screenshot, plaats in `docs/images/`.
-5. Verwijs vanuit de tekst.
-6. Lokaal previewen via `mkdocs serve`.
-7. Commit + push.
+3. Schrijf de pagina volgens de template hieronder — NL én FR, geen `TODO`-markers
+   meer buiten eventuele screenshot-plekken.
+4. Ontbreekt er een screenshot op een plek waar de tekst ernaar verwijst? Noteer
+   dat in `SCREENSHOTS.md`, plaats zelf geen afbeelding.
+5. Voeg de pagina toe aan `mkdocs.yml` → `nav`.
+6. Voeg een `Entry` toe in `CleanOpsHelpProvider.cs` (NL + FR) in `adm-cleanops`.
+7. Lokaal previewen via `mkdocs serve`.
+8. Commit + push (beide repo's).
 
 ## Pagina-template
 

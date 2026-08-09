@@ -173,92 +173,10 @@ plugins:
 extra:
   generator: false
 
+# Alleen KLARE pagina's staan hier (playbook: handleiding groeit mee per vrijgave, zelfde discipline als
+# nimble-docs). Het volledige skelet uit de Delphi-scan (Aan de slag, Werkzaamheden, CRM, Attesten,
+# Facturatie, Boekhouding, Aankoopdocumenten, Beheer, Mijn gebruiker, Concepten — met TODO-stubs) blijft op
+# schijf staan onder docs/, maar komt pas in deze nav (en dus live op docs.cleanops.eu) zodra een pagina echt
+# af is. Voeg per vrijgegeven module de betreffende regel(s) hier terug toe.
 nav:
   - Home: index.md
-
-  - Aan de slag:
-    - Installatie: getting-started/installation.md
-    - Eerste aanmelding: getting-started/first-login.md
-    - Interface-overzicht: getting-started/interface.md
-    - Dashboard: getting-started/dashboard.md
-
-  - Werkzaamheden:
-    - Overzicht: operations/overview.md
-    - Contracten: operations/contracts.md
-    - Generatie opdrachten: operations/order-generation.md
-    - Opdrachten: operations/orders.md
-    - Planning: operations/planning.md
-    - Personeel groeperen: operations/staff-grouping.md
-
-  - CRM:
-    - Overzicht: crm/overview.md
-    - Klanten: crm/customers.md
-    - Leveranciers: crm/suppliers.md
-    - Medewerkers: crm/staff.md
-    - Overzicht verloven: crm/leave-overview.md
-    - Verlofsaldi: crm/leave-balances.md
-
-  - Attesten:
-    - Overzicht: certificates/overview.md
-    - Producten: certificates/products.md
-    - Verwerkingen: certificates/processings.md
-    - Verwerkingsbedrijven: certificates/processing-companies.md
-    - Raadplegen en bewerken: certificates/view-edit.md
-
-  - Facturatie:
-    - Overzicht: invoicing/overview.md
-    - Offertebeheer: invoicing/quotes.md
-    - Overzicht te factureren: invoicing/to-invoice.md
-    - Aanmaken facturen: invoicing/create-invoices.md
-    - Factureren werkorders: invoicing/invoice-work-orders.md
-    - Afdruk facturen: invoicing/print-invoices.md
-    - Rappelbeheer: invoicing/reminders.md
-    - Openstaande posten: invoicing/outstanding.md
-    - "Op te volgen memo's": invoicing/follow-up-memos.md
-    - Schuldbemiddelingen: invoicing/debt-mediation.md
-    - Documentnummers: invoicing/document-numbers.md
-
-  - Boekhouding:
-    - Overzicht: accounting/overview.md
-    - Boekjaren: accounting/fiscal-years.md
-    - Dagboeken: accounting/journals.md
-    - Type documenten: accounting/document-types.md
-    - Bankverrichtingen: accounting/bank-transactions.md
-    - Ingave betalingen: accounting/payment-entry.md
-    - Rekeningsplan: accounting/chart-of-accounts.md
-    - Controle klantenbalans: accounting/customer-balance-check.md
-    - Correctieroutine: accounting/correction-routine.md
-
-  - Aankoopdocumenten:
-    - Overzicht: purchases/overview.md
-    - Ingave: purchases/entry.md
-    - Openstaande posten: purchases/outstanding.md
-    - Betalingsvoorstel: purchases/payment-proposal.md
-    - Documentnummers: purchases/document-numbers.md
-
-  - Beheer:
-    - Bedrijfsprofiel: settings/company-profile.md
-    - Betalingsvoorwaarden: settings/payment-terms.md
-    - Btw-codes: settings/vat-codes.md
-    - Eenheden: settings/units.md
-    - Facturatiecodes: settings/invoicing-codes.md
-    - Landcodes: settings/country-codes.md
-    - Postcodes: settings/postal-codes.md
-    - Taalcodes: settings/language-codes.md
-    - Munt en wisselkoers: settings/currency-exchange.md
-    - Mail accounts: settings/mail-accounts.md
-    - Mail templates: settings/mail-templates.md
-    - Gebruikers: settings/users.md
-    - Registratie Peppol: settings/peppol.md
-    - Stamgegevens: settings/master-data.md
-    - Voertuigen: settings/vehicles.md
-    - Producten: settings/products.md
-
-  - Mijn gebruiker:
-    - Dashboard platform: account/platform-dashboard.md
-    - Supportticket indienen: account/support-ticket.md
-    - Sessie afsluiten: account/logout.md
-
-  - Concepten:
-    - Begrippenlijst: concepts/glossary.md
-    - Workflow-overzicht: concepts/workflow.md
