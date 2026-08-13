@@ -14,7 +14,13 @@ Formaat: `- [ ] pagina.md (+ .fr.md) — locatie in de pagina — wat de screens
 
 ## Open
 
-*(nog leeg — de eerste module komt hier zodra ze gevalideerd en vrijgegeven is)*
+### Klanten (vrijgegeven 13/08/2026)
+
+- [ ] klanten.md (+ .fr.md) — onder de inleiding, vóór "Het scherm openen" — het klantenoverzicht met de zoekbalk en enkele rijen gevuld
+- [ ] klanten.md (+ .fr.md) — in "Een klant toevoegen of wijzigen", vóór de veldtabel — het bewerkvenster met de velden ingevuld
+- [ ] klanten.md (+ .fr.md) — in "De klantfiche", na de eerste zin — de fiche met de blokken Contracten en Uitvoeringsadressen zichtbaar
+
+⚠️ Gebruik demo- of testgegevens, geen echte klantnamen: de handleiding staat publiek op docs.cleanops.eu.
 
 ## Afgewerkt
 

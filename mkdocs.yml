@@ -180,3 +180,4 @@ extra:
 # af is. Voeg per vrijgegeven module de betreffende regel(s) hier terug toe.
 nav:
   - Home: index.md
+  - Klanten: klanten.md
