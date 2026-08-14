@@ -6,13 +6,13 @@
    dus die schalen automatisch mee — NIET expliciet overschrijven. */
 
 .md-typeset {
-  font-size: 0.76rem;
-  line-height: 1.65;
+  font-size: 0.8rem;
+  line-height: 1.72;
 }
 
 /* Sidebar en nav iets compacter */
 .md-nav {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
 }
 
 
@@ -74,5 +74,135 @@
    Lager getal = compactere site overal (header, tabs, sidebar, body, footer).
    Eén knop om alles proportioneel mee te schalen. */
 html {
-  font-size: 125%;
+  font-size: 130%;
+}
+
+
+/* === Merkkleur (augustus 2026) =================================================
+   Overgenomen van creditsoft-docs, met onze eigen kleuren. De site had geen
+   merkanker: alles stond op Material's teal-palet, wat er toevallig dichtbij zit
+   maar niet uit ons logo komt. De tinten hieronder zijn de twee stops van het
+   verloop in docs/images/logo.svg: #0d9488 diep, #5eead4 licht.
+
+   Bewuste keuze, zelfde als CreditSoft: de header blijft WIT. Een volteal balk
+   oogt gedateerd; het merk komt terug in links, actieve navigatie en accenten. */
+:root {
+  --co-teal: #0d9488;
+  --co-teal-licht: #5eead4;
+}
+
+/* ⚠️ Ook op [data-md-color-primary], niet enkel op :root. Material zet dat attribuut op de BODY en declareert
+   daar `--md-typeset-a-color: #4051b5` (indigo). Een regel op :root staat op <html> en wordt binnen de body dus
+   overschreven — gemeten: de variabele was #0d9488 op <html> terwijl elke link indigo bleef. Zelfde
+   specificiteit (0,1,0), maar extra.css laadt ná het palet, dus deze wint. */
+:root,
+[data-md-color-primary] {
+  --md-accent-fg-color: var(--co-teal);
+  --md-typeset-a-color: var(--co-teal);
+}
+/* ⚠️ Twee attributen, niet één. Material declareert dit als
+   `[data-md-color-scheme=slate][data-md-color-primary=white]` — specificiteit (0,2,0). Mijn eerste versie stond
+   op enkel `[data-md-color-scheme="slate"]` (0,1,0) en verloor dus; gemeten: de variabele bleef #5e8bde, het
+   blauw van Material, terwijl licht wél omschakelde. Met het tweede attribuut zitten we op dezelfde
+   specificiteit en wint deze regel omdat extra.css later laadt. */
+[data-md-color-scheme="slate"][data-md-color-primary] {
+  /* #0d9488 is op donkere achtergrond te donker om te lezen; #5eead4 is dan weer
+     zo licht dat hij gaat gloeien op grote vlakken. #2dd4bf zit ertussen en is de
+     tint die de app zelf gebruikt voor accenten in dark mode. */
+  --md-accent-fg-color: #2dd4bf;
+  --md-typeset-a-color: #2dd4bf;
+}
+
+/* Actieve pagina in de zijbalk krijgt het merkteal i.p.v. Material's standaard */
+.md-nav__link--active,
+.md-nav__link--active:focus,
+.md-nav__link--active:hover {
+  color: var(--md-typeset-a-color);
+  font-weight: 600;
+}
+
+/* === Leeskolom =================================================================
+   Material's .md-grid staat standaard op 61rem, wat op een breed scherm een smalle
+   tekstkolom geeft tussen twee schaarse zijkolommen. 70rem geeft de tekst zijn
+   plaats terug zonder de regels onleesbaar lang te maken (~90 tekens blijft de
+   bovengrens voor comfortabel lezen). */
+.md-grid {
+  max-width: 70rem;
+}
+
+/* === Koppen ====================================================================
+   h2 en h3 leken te veel op elkaar: zelfde kleur, nauwelijks verschil in gewicht.
+   h2 krijgt een fijne scheidingslijn zodat een lange pagina leesbaar opdeelt. */
+.md-typeset h2 {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.8em;
+}
+
+/* === Onthaalpagina =============================================================
+   Kop-blok plus kaartraster (Material's ingebouwde .grid.cards, mogelijk dankzij
+   attr_list + md_in_html). */
+.co-hero {
+  padding: 2.2rem 0 1.6rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  margin-bottom: 2rem;
+}
+.co-hero h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(95deg, var(--co-teal), var(--co-teal-licht));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.co-hero p {
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 34rem;
+  margin: 0;
+}
+
+/* Drie kolommen op een breed scherm. Met Material's standaard (auto-fit vanaf
+   16rem) worden het er vier en breekt een halve rij af.
+   Let op: het raster staat op de .grid-div zelf — de <ul> erbinnen is
+   display:contents, dus daar heeft grid-template-columns geen effect. */
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Kaartraster: rustige rand, merkteal bij hover */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1rem 1.1rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 2px 12px rgba(13, 148, 136, 0.09);
+  transform: translateY(-2px);
+}
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 0.6em 0;
+  border-color: var(--md-default-fg-color--lightest);
+}
+.md-typeset .grid.cards > ul > li p:last-child {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.74rem;
+  margin-bottom: 0;
+}
+
+/* Wat er nog niet is, mag zichtbaar zijn zonder klikbaar te lijken. */
+.co-binnenkort {
+  opacity: 0.55;
+  pointer-events: none;
 }
