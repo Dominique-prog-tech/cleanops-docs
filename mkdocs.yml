@@ -15,6 +15,10 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
+  # ⚠️ Dit palet staat TWEE KEER: hier en nogmaals in het i18n-taalblok voor het Frans, en dat tweede blok
+  # WINT voor /fr/. Gemeten 14/08/2026: enkel dit blok op black zetten gaf `primary="black"` in site/index.html
+  # en `primary="teal"` in site/fr/index.html. Wie in één taal test, ziet dat niet. Pas ze dus samen aan.
+  # Gemeld door de Nimble-sessie, die dezelfde dubbele declaratie had.
   palette:
     - scheme: default
       primary: white
@@ -23,7 +27,7 @@ theme:
         icon: material/brightness-7
         name: Schakel naar donkere modus
     - scheme: slate
-      primary: teal
+      primary: black
       accent: teal
       toggle:
         icon: material/brightness-4
@@ -89,6 +93,8 @@ plugins:
             Tous droits réservés.
           theme:
             language: fr
+            # ⚠️ Tweede exemplaar van het palet — dit blok wint voor /fr/. Houd het gelijk met theme.palette
+            # hierboven; zie de nota daar.
             palette:
               - scheme: default
                 primary: white
@@ -97,7 +103,7 @@ plugins:
                   icon: material/brightness-7
                   name: Passer en mode sombre
               - scheme: slate
-                primary: teal
+                primary: black
                 accent: teal
                 toggle:
                   icon: material/brightness-4
