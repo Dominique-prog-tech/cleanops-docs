@@ -158,6 +158,36 @@ vooraf): een module is pas "klaar" als **alle vier** kloppen:
 - Tussen pagina's: relatieve paden met `.md` extensie.
 - Naar afbeeldingen: absoluut vanaf docs-root: `/images/bestand.png`.
 
+### Vormgeving — vloot-afspraak (14/08/2026)
+
+De drie docs-sites (CreditSoft, Nimble, CleanOps) delen één opzet, afgestemd tussen de sessies. Wijzig je hier
+iets aan de vorm, stem het dan af; dit staat niet los van de andere twee.
+
+- Merkkleur uit `docs/images/logo.svg` in links, actieve navigatie en de titel op het onthaal. **Header wit in
+  licht, zwart in donker** — geen volgekleurde balk.
+- Zetting: `.md-typeset` 0.8rem / 1.72, `.md-nav` 0.72rem, `html` 130%, `.md-grid` 70rem.
+- Onthaalpagina: `hide: [navigation, toc]` + hero + kaartraster van zes. **Alleen vrijgegeven schermen zijn
+  klikbaar**; de rest krijgt `.co-binnenkort`.
+- `.co-binnenkort` staat op **0.8**, niet 0.55. Bij CreditSoft is die klasse ongebruikt omdat al hun kaarten
+  een link zijn; bij ons zijn er vijf van de zes in aanbouw en op 0.55 kleurt dat de halve pagina grijs.
+  Dominique las dat als "de tekst is lichter dan bij Nimble en CreditSoft", terwijl de typografie
+  byte-voor-byte gelijk was over de drie sites.
+
+⚠️ **Drie valkuilen die er alle drie uitzien alsof alles klopt.** Alle drie gemeten, geen ervan zichtbaar
+zonder gericht na te kijken:
+
+1. **Een `:root`-regel voor de merkkleur werkt niet.** Material zet `data-md-color-primary` op de **body** en
+   declareert daar `--md-typeset-a-color: #4051b5`. Je variabele klopt op `<html>` en elke link blijft indigo.
+   Nodig: `:root, [data-md-color-primary] { … }`. In donker heeft Material
+   `[data-md-color-scheme=slate][data-md-color-primary=white]` — specificiteit (0,2,0) — dus ook daar twee
+   attributen gebruiken. Stond live bij CreditSoft én Nimble tot 14/08/2026.
+2. **Het palet staat op TWEE plaatsen**: `theme.palette` én nogmaals in het i18n-taalblok voor het Frans, en
+   dat taalblok wint voor `/fr/`. Pas je enkel het eerste aan en test je in het Nederlands, dan zie je het
+   niet. Controlestap: na een paletwijziging `grep data-md-color-primary site/index.html site/fr/index.html`
+   en vergelijken.
+3. **Meet nooit binnen de seconde na een themawissel.** Material heeft een kleurtransitie op links; je leest
+   dan de startkleur. Een werkende fix lijkt zo kapot (en omgekeerd). Bij twijfel: herladen en één keer meten.
+
 ## TODO-markers — conventie
 
 ```markdown
