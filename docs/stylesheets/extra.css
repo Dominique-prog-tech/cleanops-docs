@@ -201,8 +201,16 @@ html {
   margin-bottom: 0;
 }
 
-/* Wat er nog niet is, mag zichtbaar zijn zonder klikbaar te lijken. */
+/* Wat er nog niet is, mag zichtbaar zijn zonder klikbaar te lijken.
+
+   ⚠️ Opacity 0.8, niet 0.55. Bij CreditSoft is deze klasse ongebruikt — daar zijn alle zes de kaarten een
+   echte link. Bij ons zijn er vijf van de zes nog in aanbouw, en op 0.55 kleurde dat de hele onthaalpagina
+   grijs: Dominique las het als "de tekst is lichter dan bij Nimble en CreditSoft". Gemeten was de lopende
+   tekst identiek (rgba(0,0,0,0.87), 16,64 px, Inter) — het waren deze vijf titels.
+
+   0.8 houdt ze duidelijk minder present dan de actieve kaart zonder ze te laten vervagen. Wat het onderscheid
+   draagt is niet de vaalheid maar de kleur: de vrijgegeven kaart is teal en klikbaar, deze zijn dat niet. */
 .co-binnenkort {
-  opacity: 0.55;
+  opacity: 0.8;
   pointer-events: none;
 }
