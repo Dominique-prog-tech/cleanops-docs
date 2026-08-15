@@ -158,35 +158,15 @@ vooraf): een module is pas "klaar" als **alle vier** kloppen:
 - Tussen pagina's: relatieve paden met `.md` extensie.
 - Naar afbeeldingen: absoluut vanaf docs-root: `/images/bestand.png`.
 
-### Vormgeving — vloot-afspraak (14/08/2026)
+### Vormgeving — vloot-afspraak
 
-De drie docs-sites (CreditSoft, Nimble, CleanOps) delen één opzet, afgestemd tussen de sessies. Wijzig je hier
-iets aan de vorm, stem het dan af; dit staat niet los van de andere twee.
+De drie docs-sites (CreditSoft, Nimble, CleanOps) delen één opzet. De afspraak én de drie gemeten
+valkuilen staan in **`~/projects/adm-appkit/docs/docs-site-vormgeving.md`** — lees dat vóór je iets aan
+de vorm wijzigt, en **stem een wijziging af met de andere twee**.
 
-- Merkkleur uit `docs/images/logo.svg` in links, actieve navigatie en de titel op het onthaal. **Header wit in
-  licht, zwart in donker** — geen volgekleurde balk.
-- Zetting: `.md-typeset` 0.8rem / 1.72, `.md-nav` 0.72rem, `html` 130%, `.md-grid` 70rem.
-- Onthaalpagina: `hide: [navigation, toc]` + hero + kaartraster van zes. **Alleen vrijgegeven schermen zijn
-  klikbaar**; de rest krijgt `.co-binnenkort`.
-- `.co-binnenkort` staat op **0.8**, niet 0.55. Bij CreditSoft is die klasse ongebruikt omdat al hun kaarten
-  een link zijn; bij ons zijn er vijf van de zes in aanbouw en op 0.55 kleurt dat de halve pagina grijs.
-  Dominique las dat als "de tekst is lichter dan bij Nimble en CreditSoft", terwijl de typografie
-  byte-voor-byte gelijk was over de drie sites.
-
-⚠️ **Drie valkuilen die er alle drie uitzien alsof alles klopt.** Alle drie gemeten, geen ervan zichtbaar
-zonder gericht na te kijken:
-
-1. **Een `:root`-regel voor de merkkleur werkt niet.** Material zet `data-md-color-primary` op de **body** en
-   declareert daar `--md-typeset-a-color: #4051b5`. Je variabele klopt op `<html>` en elke link blijft indigo.
-   Nodig: `:root, [data-md-color-primary] { … }`. In donker heeft Material
-   `[data-md-color-scheme=slate][data-md-color-primary=white]` — specificiteit (0,2,0) — dus ook daar twee
-   attributen gebruiken. Stond live bij CreditSoft én Nimble tot 14/08/2026.
-2. **Het palet staat op TWEE plaatsen**: `theme.palette` én nogmaals in het i18n-taalblok voor het Frans, en
-   dat taalblok wint voor `/fr/`. Pas je enkel het eerste aan en test je in het Nederlands, dan zie je het
-   niet. Controlestap: na een paletwijziging `grep data-md-color-primary site/index.html site/fr/index.html`
-   en vergelijken.
-3. **Meet nooit binnen de seconde na een themawissel.** Material heeft een kleurtransitie op links; je leest
-   dan de startkleur. Een werkende fix lijkt zo kapot (en omgekeerd). Bij twijfel: herladen en één keer meten.
+Kort: merkkleur uit `logo.svg`, header wit in licht en zwart in donker, en drie valkuilen die er alle
+drie uitzien alsof alles klopt (een `:root`-regel die niet werkt, een palet dat op twee plaatsen staat,
+en meten binnen een seconde na een themawissel). **Niet hier overschrijven — verwijs ernaar.**
 
 ## TODO-markers — conventie
 
@@ -213,43 +193,17 @@ bètatesters (playbook §7a) — niet vooraf voor alles tegelijk.
 7. Lokaal previewen via `mkdocs serve`.
 8. Commit + push (beide repo's).
 
-## Pagina-template
+## Een pagina schrijven
 
-```markdown
-# [Naam van het scherm]
+Gebruik **`/adm-toolkit:handleiding-schrijven <scherm>`**. Die loopt de hele procedure af: de source
+lezen, de pagina-template, NL én FR, de `nav` in `mkdocs.yml`, en de entry in de hulplade van de app.
 
-[Eén alinea: wanneer en waarom gebruikt een gebruiker dit scherm.]
+Daar staan ook de stijlregels die vroeger hier stonden — geen verzonnen functionaliteit, geen
+Amerikaanse SaaS-toon, actief formuleren, en zelf geen schermafdrukken plaatsen.
 
-## Het scherm openen
-
-[Hoe navigeren in CleanOps.]
-
-## Velden en functies
-
-[Per veld of sectie een korte uitleg.]
-
-## Veelgemaakte fouten
-
-!!! warning
-    [Wat gaat vaak fout, en hoe vermijd je dat.]
-
-## Zie ook
-
-- [Gerelateerde pagina](pad.md)
-```
-
-## Wat NIET doen
-
-- Geen functionaliteit verzinnen die niet in de source staat.
-- Geen Amerikaanse SaaS-toon ("Awesome!", "You're all set!"). Belgisch-professioneel.
-- Geen "the system will…". Actief: "U klikt op X, en Y verschijnt."
-- Geen lange paragrafen — splits in stappen of lijsten.
-
-## Bij twijfel
-
-- **Twijfel over functionaliteit**: lees source, of markeer met `[TODO]`.
-- **Twijfel over stijl**: kijk naar bestaande afgewerkte pagina's.
-- **Twijfel over structuur**: blijf bij de hoofdstuk-indeling.
+> Tot 15/08/2026 stond die template hier uitgeschreven, en identiek in de twee andere docs-repo's:
+> 113 regels die drie keer onderhouden moesten worden. De **schrijfflow** hierboven blijft wél
+> repo-eigen — die verschilt echt per platform.
 
 ## Publicatie-status
 
