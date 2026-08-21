@@ -191,3 +191,9 @@ extra:
 nav:
   - Home: index.md
   - Klanten: klanten.md
+  - Beheer:
+    - Klantenregister: beheer/klantenregister.md
+    - Gebruikers: beheer/gebruikers.md
+    - Rollen: beheer/rollen.md
+    - Prullenbak: beheer/prullenbak.md
+    - Actielogboek: beheer/actielogboek.md
