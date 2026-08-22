@@ -48,6 +48,11 @@ extra_css:
 
 extra_javascript:
   - javascripts/embed.js
+  # Plausible Analytics — cookieloos, geen persoonsgegevens, EU-hosting; dus
+  # geen toestemmingsbanner nodig. Via extra_javascript belandt dit in ELKE
+  # gegenereerde pagina, ook in pagina's die er later bij komen.
+  - https://plausible.io/js/pa-t-auKVF4n6YRwXPdKW87p.js
+  - javascripts/plausible-init.js
 
 markdown_extensions:
   - admonition
