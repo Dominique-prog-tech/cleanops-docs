@@ -62,8 +62,8 @@ moins que chez un client avec des années d'historique.
 <!-- AFBEELDING: la fiche client avec les blocs contrats et adresses d'exécution -->
 
 **Contrats** — les contrats périodiques de ce client, avec le numéro, la description, la fréquence et la date
-de début. Ce sont ces contrats qui donnent naissance aux ordres de travail. **Nouveau contrat** en ajoute un ;
-ouvrez une ligne pour consulter un contrat existant.
+de début. Ce sont ces contrats qui donnent naissance aux ordres de travail. **Nouveau contrat** en ajoute un.
+Le nouveau contrat apparaît immédiatement dans ce bloc.
 
 **Adresses d'exécution** — les adresses où le travail est effectué, avec la rue, le numéro, le code postal, la
 commune et le téléphone. Elles ne coïncident pas nécessairement avec l'adresse de facturation : un client
@@ -90,12 +90,21 @@ Chaque bloc dispose de son propre bouton d'exportation, ce qui vous permet d'exp
 
 ### Les boutons en haut
 
-- **Nouvel ordre de travail** — lance un ordre de travail pour ce client.
-- **Nouveau devis** — ouvre un devis vierge pour ce client.
+- **Nouvel ordre de travail** — ouvre une fenêtre où vous composez l'ordre de travail. Après **Enregistrer**,
+  vous restez sur la fiche et vous lisez en haut que l'ordre a été créé et figure dans la planification.
 - **Facture d'acompte** — ouvre une fenêtre où vous saisissez une description, un montant net et un code TVA.
-  **Créer** ne devient actif que lorsque le montant dépasse zéro.
+  **Créer** ne devient actif que lorsque le montant dépasse zéro. Vous lisez ensuite en haut le numéro de la
+  facture, et celle-ci figure dans le bloc **Factures**.
+
+Vous restez donc chaque fois auprès du client ; ce que vous créez apparaît dans le bloc correspondant de
+cette fiche. Le message en haut se ferme avec **Fermer**.
 
 **← Clients**, en haut à gauche, vous ramène à la liste.
+
+!!! info "Tous les boutons ne sont pas visibles par tout le monde"
+    Les boutons et les blocs que vous voyez dépendent de vos droits. Un écran qui n'est pas encore disponible
+    n'apparaît pas dans votre menu — et les boutons qui y mènent ne vous sont donc pas montrés non plus. Si
+    votre collègue voit un bouton que vous n'avez pas, c'est une différence de droits et non un problème.
 
 ## Questions fréquentes
 

@@ -61,8 +61,8 @@ een klant met jaren geschiedenis.
 <!-- AFBEELDING: de klantfiche met de blokken contracten en uitvoeringsadressen -->
 
 **Contracten** — de periodieke contracten van deze klant, met nummer, omschrijving, frequentie en startdatum.
-Uit deze contracten ontstaan de werkorders. Met **Nieuw contract** voegt u er één toe; klik een rij open om
-een bestaand contract te bekijken.
+Uit deze contracten ontstaan de werkorders. Met **Nieuw contract** voegt u er één toe. Het nieuwe contract
+verschijnt meteen in dit blok.
 
 **Uitvoeringsadressen** — de adressen waar het werk gebeurt, met straat, nummer, postcode, gemeente en
 telefoon. Ze zijn niet noodzakelijk hetzelfde als het facturatieadres: een klant met meerdere panden heeft
@@ -89,12 +89,21 @@ Elk blok heeft een eigen exportknop, zodat u één onderdeel apart kunt uitvoere
 
 ### De knoppen bovenaan
 
-- **Nieuwe werkorder** — start een werkorder voor deze klant.
-- **Nieuwe offerte** — opent een lege offerte voor deze klant.
+- **Nieuwe werkorder** — opent een venster waarin u de werkorder samenstelt. Na **Opslaan** blijft u op de
+  fiche en leest u bovenaan dat de werkorder aangemaakt is en in de planning staat.
 - **Voorschotfactuur** — opent een venster waarin u een omschrijving, een netto bedrag en een btw-code
-  invult. **Aanmaken** wordt pas actief zodra het bedrag groter is dan nul.
+  invult. **Aanmaken** wordt pas actief zodra het bedrag groter is dan nul. Daarna leest u bovenaan het
+  nummer van de factuur, en ze staat in het blok **Facturen**.
+
+U blijft dus telkens bij de klant staan; wat u aanmaakt komt in het bijbehorende blok op deze fiche. De
+melding bovenaan sluit u met **Sluiten**.
 
 Met **← Klanten** links bovenaan keert u terug naar de lijst.
+
+!!! info "Niet elke knop is voor iedereen zichtbaar"
+    Welke knoppen en welke blokken u ziet, hangt af van wat u mag. Een scherm dat nog niet vrijgegeven is,
+    verschijnt niet in uw menu — en de knoppen die ernaartoe leiden, toont CleanOps u dan ook niet. Ziet uw
+    collega een knop die u niet heeft, dan is dat het verschil in rechten en niet een storing.
 
 ## Veelgestelde vragen
 
