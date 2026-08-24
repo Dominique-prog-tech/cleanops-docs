@@ -3,7 +3,7 @@
 Le fichier clients de CleanOps. Vous y trouvez tous les clients de votre entreprise, avec leurs coordonnées,
 leurs contrats périodiques et les adresses où les travaux sont exécutés.
 
-<!-- AFBEELDING: het klantenoverzicht met de zoekbalk en enkele rijen -->
+<!-- AFBEELDING: l'aperçu des clients avec la barre de recherche et quelques lignes -->
 
 ## Ouvrir l'écran
 
@@ -29,7 +29,7 @@ des dizaines de milliers de clients, l'écran reste donc rapide.
 Cliquez sur **Nouveau client**, ou sur **Modifier** dans la ligne d'un client existant. Dans les deux cas, la
 même fenêtre s'ouvre.
 
-<!-- AFBEELDING: het bewerkvenster van een klant, met de velden ingevuld -->
+<!-- AFBEELDING: la fenêtre de modification d'un client, champs remplis -->
 
 Les champs :
 
