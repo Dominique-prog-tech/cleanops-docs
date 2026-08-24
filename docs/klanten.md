@@ -54,21 +54,47 @@ prullenbak en kan van daaruit hersteld worden.
 
 ## De klantfiche
 
-Klik een rij open en u krijgt alles van die ene klant op één scherm.
+Klik een rij open en u krijgt alles van die ene klant op één scherm: bovenaan zijn gegevens, daaronder een
+reeks blokken. Een blok zonder gegevens verschijnt niet — bij een nieuwe klant ziet u er dus minder dan bij
+een klant met jaren geschiedenis.
 
 <!-- AFBEELDING: de klantfiche met de blokken contracten en uitvoeringsadressen -->
 
-**Contracten** — de periodieke contracten van deze klant, met omschrijving, frequentie en startdatum. Uit deze
-contracten ontstaan de werkorders. U kunt hier een nieuw contract toevoegen of een bestaand contract openen.
+**Contracten** — de periodieke contracten van deze klant, met nummer, omschrijving, frequentie en startdatum.
+Uit deze contracten ontstaan de werkorders. Met **Nieuw contract** voegt u er één toe; klik een rij open om
+een bestaand contract te bekijken.
 
-**Uitvoeringsadressen** — de adressen waar het werk gebeurt. Die zijn niet noodzakelijk hetzelfde als het
-facturatieadres: een klant met meerdere panden heeft één facturatieadres en meerdere werkadressen.
+**Uitvoeringsadressen** — de adressen waar het werk gebeurt, met straat, nummer, postcode, gemeente en
+telefoon. Ze zijn niet noodzakelijk hetzelfde als het facturatieadres: een klant met meerdere panden heeft
+één facturatieadres en meerdere werkadressen. Met **Nieuw adres** voegt u er één toe; per rij staan
+**Bewerken** en **Verwijderen**.
 
-Bovenaan de fiche staan drie knoppen die rechtstreeks vanuit de klant vertrekken:
+**Offertes** — de offertes van deze klant, met nummer, datum, omschrijving, totaal en status.
 
-- **Nieuwe werkorder**
-- **Nieuwe offerte**
-- **Voorschotfactuur**
+**Facturen** — de facturen en creditnota's, met nummer, type, datum, totaal, vervaldag en mededeling. De
+mededeling is de gestructureerde referentie die de klant bij zijn betaling vermeldt.
+
+**Openstaande posten** — wat er van deze klant nog openstaat. Naast de titel staat het totaal; is dat groter
+dan nul, dan staat het in het rood. Per post ziet u het document, de datum, de vervaldag, het openstaande
+bedrag en het aantal verstuurde rappels.
+
+**Rappelhistoriek** — de verstuurde rappels, met datum, document en niveau.
+
+**Notities** — losse aantekeningen bij deze klant, met de datum waarop u ze wil terugzien (**Onthoud op**) en
+de datum waarop ze genoteerd zijn.
+
+<!-- AFBEELDING: de blokken openstaande posten en rappelhistoriek op een klantfiche -->
+
+Elk blok heeft een eigen exportknop, zodat u één onderdeel apart kunt uitvoeren.
+
+### De knoppen bovenaan
+
+- **Nieuwe werkorder** — start een werkorder voor deze klant.
+- **Nieuwe offerte** — opent een lege offerte voor deze klant.
+- **Voorschotfactuur** — opent een venster waarin u een omschrijving, een netto bedrag en een btw-code
+  invult. **Aanmaken** wordt pas actief zodra het bedrag groter is dan nul.
+
+Met **← Klanten** links bovenaan keert u terug naar de lijst.
 
 ## Veelgestelde vragen
 

@@ -114,6 +114,8 @@ plugins:
                   icon: material/brightness-4
                   name: Passer en mode clair
           nav_translations:
+            Conversie: Conversion
+            Generatie: Génération des ordres de travail
             Home: Accueil
             Aan de slag: Premiers pas
             Installatie: Installation
@@ -200,5 +202,7 @@ nav:
     - Klantenregister: beheer/klantenregister.md
     - Gebruikers: beheer/gebruikers.md
     - Rollen: beheer/rollen.md
+    - Conversie: beheer/conversie.md
+    - Generatie: beheer/generatie.md
     - Prullenbak: beheer/prullenbak.md
     - Actielogboek: beheer/actielogboek.md

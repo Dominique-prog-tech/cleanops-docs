@@ -55,23 +55,47 @@ corbeille et peut être restauré de là.
 
 ## La fiche client
 
-Ouvrez une ligne et vous obtenez tout ce qui concerne ce client sur un seul écran.
+Ouvrez une ligne et vous obtenez tout ce qui concerne ce client sur un seul écran : ses coordonnées en haut,
+puis une série de blocs. Un bloc sans données ne s'affiche pas — chez un nouveau client, vous en voyez donc
+moins que chez un client avec des années d'historique.
 
-<!-- AFBEELDING: de klantfiche met de blokken contracten en uitvoeringsadressen -->
+<!-- AFBEELDING: la fiche client avec les blocs contrats et adresses d'exécution -->
 
-**Contrats** — les contrats périodiques de ce client, avec description, fréquence et date de début. C'est de
-ces contrats que naissent les ordres de travail. Vous pouvez ajouter un nouveau contrat ici ou ouvrir un
-contrat existant.
+**Contrats** — les contrats périodiques de ce client, avec le numéro, la description, la fréquence et la date
+de début. Ce sont ces contrats qui donnent naissance aux ordres de travail. **Nouveau contrat** en ajoute un ;
+ouvrez une ligne pour consulter un contrat existant.
 
-**Adresses d'exécution** — les adresses où le travail a lieu. Elles ne sont pas nécessairement identiques à
-l'adresse de facturation : un client possédant plusieurs bâtiments a une seule adresse de facturation et
-plusieurs adresses de travail.
+**Adresses d'exécution** — les adresses où le travail est effectué, avec la rue, le numéro, le code postal, la
+commune et le téléphone. Elles ne coïncident pas nécessairement avec l'adresse de facturation : un client
+possédant plusieurs bâtiments a une seule adresse de facturation et plusieurs adresses de travail. **Nouvelle
+adresse** en ajoute une ; chaque ligne porte **Modifier** et **Supprimer**.
 
-En haut de la fiche se trouvent trois boutons qui partent directement du client :
+**Devis** — les devis de ce client, avec le numéro, la date, la description, le total et le statut.
 
-- **Nouvel ordre de travail**
-- **Nouveau devis**
-- **Facture d'acompte**
+**Factures** — les factures et notes de crédit, avec le numéro, le type, la date, le total, l'échéance et la
+communication. La communication est la référence structurée que le client mentionne lors de son paiement.
+
+**Postes ouverts** — ce qui reste dû par ce client. Le total figure à côté du titre ; s'il dépasse zéro, il
+s'affiche en rouge. Pour chaque poste, vous voyez le document, la date, l'échéance, le solde ouvert et le
+nombre de rappels envoyés.
+
+**Historique des rappels** — les rappels envoyés, avec la date, le document et le niveau.
+
+**Notes** — des annotations libres sur ce client, avec la date à laquelle vous souhaitez les revoir
+(**Rappeler le**) et la date à laquelle elles ont été notées.
+
+<!-- AFBEELDING: les blocs postes ouverts et historique des rappels sur une fiche client -->
+
+Chaque bloc dispose de son propre bouton d'exportation, ce qui vous permet d'exporter un élément séparément.
+
+### Les boutons en haut
+
+- **Nouvel ordre de travail** — lance un ordre de travail pour ce client.
+- **Nouveau devis** — ouvre un devis vierge pour ce client.
+- **Facture d'acompte** — ouvre une fenêtre où vous saisissez une description, un montant net et un code TVA.
+  **Créer** ne devient actif que lorsque le montant dépasse zéro.
+
+**← Clients**, en haut à gauche, vous ramène à la liste.
 
 ## Questions fréquentes
 
