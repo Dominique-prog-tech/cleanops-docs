@@ -3,10 +3,6 @@
 !!! info "Pour les opérateurs ADM"
     Cet écran est réservé aux collaborateurs d'ADM-Concept. En tant que client de CleanOps, vous ne le voyez pas dans votre menu.
 
-!!! note "Écran en néerlandais"
-    Cet écran interne s'affiche en néerlandais. Les libellés des boutons sont repris ci-dessous tels qu'ils
-    apparaissent à l'écran.
-
 Les contrats périodiques d'un client donnent naissance aux ordres de travail : un contrat prévoyant un curage
 deux fois par an produit de lui-même les passages à planifier. Cela se fait automatiquement chaque nuit. Sur
 cet écran, vous lancez cette même génération manuellement pour un seul client, par exemple après avoir
@@ -14,19 +10,19 @@ transféré ou modifié des contrats et que vous voulez en voir le résultat imm
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Beheer**, puis sur **Generatie**.
+Dans la barre latérale, cliquez sur **Gestion**, puis sur **Génération**.
 
-<!-- AFBEELDING: l'écran de génération avec le tenant actif et le bouton Genereer werkorders -->
+<!-- AFBEELDING: l'écran de génération avec le tenant actif et le bouton Générer les ordres de travail -->
 
 ## Choisir d'abord un client
 
-En haut figure **Actieve tenant** avec le code du client sur lequel vous travaillez. Si vous lisez *geen —
-kies er eerst één bij Tenants*, rendez-vous dans le [Registre des clients](klantenregister.fr.md) et cliquez
+En haut figure **Tenant actif** avec le code du client sur lequel vous travaillez. Si vous lisez *aucun —
+choisissez-en d'abord un dans Tenants*, rendez-vous dans le [Registre des clients](klantenregister.fr.md) et cliquez
 sur **Utiliser →** chez le bon client. Tant qu'aucun client n'est choisi, le bouton reste désactivé.
 
 ## Lancer la génération
 
-Cliquez sur **Genereer werkorders**. Pendant l'opération, le bouton affiche **Bezig…**. Ensuite s'affiche le
+Cliquez sur **Générer les ordres de travail**. Pendant l'opération, le bouton affiche **En cours…**. Ensuite s'affiche le
 nombre de nouveaux ordres de travail créés et le nombre de contrats actifs dont ils proviennent.
 
 Ce que fait la génération :
