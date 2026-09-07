@@ -55,20 +55,24 @@ corbeille et peut être restauré de là.
 
 ## La fiche client
 
-Ouvrez une ligne et vous obtenez tout ce qui concerne ce client sur un seul écran : ses coordonnées en haut,
-puis une série de blocs. Un bloc sans données ne s'affiche pas — chez un nouveau client, vous en voyez donc
-moins que chez un client avec des années d'historique.
+Ouvrez une ligne et vous obtenez tout ce qui concerne ce client sur un seul écran. Son nom figure en haut,
+puis une rangée d'onglets. À gauche **Fiche** et **Adresses** — le client lui-même. À droite, après un
+espace, ce qui est rattaché au client : contrats, devis, factures, postes ouverts, notes, pièces jointes et
+historique.
 
-<!-- AFBEELDING: la fiche client avec les blocs contrats et adresses d'exécution -->
+Chaque onglet reste visible, même vide ; le nombre figure entre parenthèses dans son titre. « Contrats (0) »
+est donc une réponse, pas un onglet manquant.
+
+<!-- AFBEELDING: la fiche client avec les onglets contrats et adresses d'exécution -->
 
 **Contrats** — les contrats périodiques de ce client, avec le numéro, la description, la fréquence et la date
 de début. Ce sont ces contrats qui donnent naissance aux ordres de travail. **Nouveau contrat** en ajoute un.
-Le nouveau contrat apparaît immédiatement dans ce bloc.
+Le nouveau contrat apparaît immédiatement dans cet onglet.
 
 **Adresses d'exécution** — les adresses où le travail est effectué, avec la rue, le numéro, le code postal, la
 commune et le téléphone. Elles ne coïncident pas nécessairement avec l'adresse de facturation : un client
 possédant plusieurs bâtiments a une seule adresse de facturation et plusieurs adresses de travail. **Nouvelle
-adresse** en ajoute une ; chaque ligne porte **Modifier** et **Supprimer**.
+adresse** en ajoute une ; ouvrir une ligne vous mène à l'adresse même, où vous la modifiez ou la supprimez.
 
 **Devis** — les devis de ce client, avec le numéro, la date, la description, le total et le statut.
 
@@ -84,25 +88,32 @@ nombre de rappels envoyés.
 **Notes** — des annotations libres sur ce client, avec la date à laquelle vous souhaitez les revoir
 (**Rappeler le**) et la date à laquelle elles ont été notées.
 
-<!-- AFBEELDING: les blocs postes ouverts et historique des rappels sur une fiche client -->
+**Pièces jointes** — les documents de ce client. **Pièce jointe** ajoute un fichier ; pour chacune, vous
+adaptez la description ou vous la supprimez. Un fichier peut peser jusqu'à 25 Mo.
 
-Chaque bloc dispose de son propre bouton d'exportation, ce qui vous permet d'exporter un élément séparément.
+**Historique** — qui a modifié quel champ de ce client, quand, et de quelle valeur vers quelle autre. Le plus
+récent figure en haut. La ligne la plus ancienne est généralement **Créé**, à la date à laquelle le client
+est né dans CleanOps ; tous les champs y figurent tels qu'ils étaient alors.
+
+<!-- AFBEELDING: les onglets postes ouverts et historique sur une fiche client -->
+
+Chaque onglet dispose de son propre bouton d'exportation, ce qui vous permet d'exporter un élément séparément.
 
 ### Les boutons en haut
 
-- **Nouvel ordre de travail** — ouvre une fenêtre où vous composez l'ordre de travail. Après **Enregistrer**,
-  vous restez sur la fiche et vous lisez en haut que l'ordre a été créé et figure dans la planification.
+- **Nouvel ordre de travail** — ouvre un écran où vous composez l'ordre de travail. Après **Enregistrer**,
+  vous arrivez sur le nouvel ordre ; il figure alors dans la planification.
 - **Facture d'acompte** — ouvre une fenêtre où vous saisissez une description, un montant net et un code TVA.
   **Créer** ne devient actif que lorsque le montant dépasse zéro. Vous lisez ensuite en haut le numéro de la
-  facture, et celle-ci figure dans le bloc **Factures**.
+  facture, et celle-ci figure dans l'onglet **Factures**.
 
-Vous restez donc chaque fois auprès du client ; ce que vous créez apparaît dans le bloc correspondant de
-cette fiche. Le message en haut se ferme avec **Fermer**.
+Ce que vous créez depuis la fiche apparaît dans l'onglet correspondant. Le message en haut se ferme avec
+**Fermer**.
 
 **← Clients**, en haut à gauche, vous ramène à la liste.
 
 !!! info "Tous les boutons ne sont pas visibles par tout le monde"
-    Les boutons et les blocs que vous voyez dépendent de vos droits. Un écran qui n'est pas encore disponible
+    Les boutons et les onglets que vous voyez dépendent de vos droits. Un écran qui n'est pas encore disponible
     n'apparaît pas dans votre menu — et les boutons qui y mènent ne vous sont donc pas montrés non plus. Si
     votre collègue voit un bouton que vous n'avez pas, c'est une différence de droits et non un problème.
 

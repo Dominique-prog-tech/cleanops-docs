@@ -54,20 +54,24 @@ prullenbak en kan van daaruit hersteld worden.
 
 ## De klantfiche
 
-Klik een rij open en u krijgt alles van die ene klant op één scherm: bovenaan zijn gegevens, daaronder een
-reeks blokken. Een blok zonder gegevens verschijnt niet — bij een nieuwe klant ziet u er dus minder dan bij
-een klant met jaren geschiedenis.
+Klik een rij open en u krijgt alles van die ene klant op één scherm. Bovenaan staat zijn naam, daaronder een
+rij tabbladen. Links **Fiche** en **Adressen** — dat is de klant zelf. Rechts daarvan, na een tussenruimte,
+staat wat aan de klant hángt: contracten, offertes, facturen, openstaande posten, notities, bijlagen en
+historiek.
 
-<!-- AFBEELDING: de klantfiche met de blokken contracten en uitvoeringsadressen -->
+Elk tabblad blijft staan, ook als er niets in zit; het aantal staat tussen haakjes in de titel. "Contracten
+(0)" is dus een antwoord, en geen ontbrekend tabblad.
+
+<!-- AFBEELDING: de klantfiche met de tabbladen contracten en uitvoeringsadressen -->
 
 **Contracten** — de periodieke contracten van deze klant, met nummer, omschrijving, frequentie en startdatum.
 Uit deze contracten ontstaan de werkorders. Met **Nieuw contract** voegt u er één toe. Het nieuwe contract
-verschijnt meteen in dit blok.
+verschijnt meteen in dit tabblad.
 
 **Uitvoeringsadressen** — de adressen waar het werk gebeurt, met straat, nummer, postcode, gemeente en
 telefoon. Ze zijn niet noodzakelijk hetzelfde als het facturatieadres: een klant met meerdere panden heeft
-één facturatieadres en meerdere werkadressen. Met **Nieuw adres** voegt u er één toe; per rij staan
-**Bewerken** en **Verwijderen**.
+één facturatieadres en meerdere werkadressen. Met **Nieuw adres** voegt u er één toe; een rij openen brengt
+u op het adres zelf, waar u het wijzigt of verwijdert.
 
 **Offertes** — de offertes van deze klant, met nummer, datum, omschrijving, totaal en status.
 
@@ -83,25 +87,32 @@ bedrag en het aantal verstuurde rappels.
 **Notities** — losse aantekeningen bij deze klant, met de datum waarop u ze wil terugzien (**Onthoud op**) en
 de datum waarop ze genoteerd zijn.
 
-<!-- AFBEELDING: de blokken openstaande posten en rappelhistoriek op een klantfiche -->
+**Bijlagen** — de documenten bij deze klant. Met **Bijlage** voegt u een bestand toe; per bijlage past u de
+omschrijving aan of haalt u ze weg. Een bestand mag tot 25 MB groot zijn.
 
-Elk blok heeft een eigen exportknop, zodat u één onderdeel apart kunt uitvoeren.
+**Historiek** — wie welk veld van deze klant gewijzigd heeft, wanneer, en van welke waarde naar welke. Het
+nieuwste staat bovenaan. De oudste regel is meestal **Aangemaakt**, op de dag dat de klant in CleanOps
+ontstaan is; daar staan alle velden bij zoals ze toen waren.
+
+<!-- AFBEELDING: de tabbladen openstaande posten en historiek op een klantfiche -->
+
+Elk tabblad heeft een eigen exportknop, zodat u één onderdeel apart kunt uitvoeren.
 
 ### De knoppen bovenaan
 
-- **Nieuwe werkorder** — opent een venster waarin u de werkorder samenstelt. Na **Opslaan** blijft u op de
-  fiche en leest u bovenaan dat de werkorder aangemaakt is en in de planning staat.
+- **Nieuwe werkorder** — opent een scherm waarin u de werkorder samenstelt. Na **Opslaan** komt u op de
+  nieuwe werkorder terecht; hij staat dan in de planning.
 - **Voorschotfactuur** — opent een venster waarin u een omschrijving, een netto bedrag en een btw-code
   invult. **Aanmaken** wordt pas actief zodra het bedrag groter is dan nul. Daarna leest u bovenaan het
-  nummer van de factuur, en ze staat in het blok **Facturen**.
+  nummer van de factuur, en ze staat in het tabblad **Facturen**.
 
-U blijft dus telkens bij de klant staan; wat u aanmaakt komt in het bijbehorende blok op deze fiche. De
-melding bovenaan sluit u met **Sluiten**.
+Wat u vanaf de fiche aanmaakt, komt in het bijbehorende tabblad terecht. De melding bovenaan sluit u met
+**Sluiten**.
 
 Met **← Klanten** links bovenaan keert u terug naar de lijst.
 
 !!! info "Niet elke knop is voor iedereen zichtbaar"
-    Welke knoppen en welke blokken u ziet, hangt af van wat u mag. Een scherm dat nog niet vrijgegeven is,
+    Welke knoppen en welke tabbladen u ziet, hangt af van wat u mag. Een scherm dat nog niet vrijgegeven is,
     verschijnt niet in uw menu — en de knoppen die ernaartoe leiden, toont CleanOps u dan ook niet. Ziet uw
     collega een knop die u niet heeft, dan is dat het verschil in rechten en niet een storing.
 
