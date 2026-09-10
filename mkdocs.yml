@@ -119,6 +119,7 @@ plugins:
             # de Nederlandse titel in de Franse navigatie, terwijl de pagina zelf correct Frans is —
             # dat is precies waarom het lang niemand opviel. Gemeten 24/08/2026 in de gebouwde site:
             # vier van de zes Beheer-items stonden er nog in het Nederlands.
+            Tarieven: Tarifs
             Klantenregister: Registre des clients
             Rollen: Rôles
             Prullenbak: Corbeille
@@ -189,7 +190,6 @@ plugins:
             Registratie Peppol: Enregistrement Peppol
             Stamgegevens: Données de base
             Basistabellen: Tables de base
-            Btw-codes: Codes TVA
             Voertuigen: Véhicules
             Mijn gebruiker: Mon utilisateur
             Dashboard platform: Tableau de bord plateforme
@@ -215,6 +215,7 @@ nav:
     - Bedrijfsfiche: beheer/bedrijfsfiche.md
     - Basistabellen: beheer/basistabellen.md
     - Btw-codes: beheer/btw-codes.md
+    - Tarieven: beheer/tarieven.md
     - Klantenregister: beheer/klantenregister.md
     - Gebruikers: beheer/gebruikers.md
     - Rollen: beheer/rollen.md
