@@ -188,6 +188,7 @@ plugins:
             Gebruikers: Utilisateurs
             Registratie Peppol: Enregistrement Peppol
             Stamgegevens: Données de base
+            Basistabellen: Tables de base
             Voertuigen: Véhicules
             Mijn gebruiker: Mon utilisateur
             Dashboard platform: Tableau de bord plateforme
@@ -211,6 +212,7 @@ nav:
   - Medewerkers: medewerkers.md
   - Beheer:
     - Bedrijfsfiche: beheer/bedrijfsfiche.md
+    - Basistabellen: beheer/basistabellen.md
     - Klantenregister: beheer/klantenregister.md
     - Gebruikers: beheer/gebruikers.md
     - Rollen: beheer/rollen.md
