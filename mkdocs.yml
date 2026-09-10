@@ -207,6 +207,7 @@ extra:
 nav:
   - Home: index.md
   - Klanten: klanten.md
+  - Medewerkers: medewerkers.md
   - Beheer:
     - Klantenregister: beheer/klantenregister.md
     - Gebruikers: beheer/gebruikers.md
