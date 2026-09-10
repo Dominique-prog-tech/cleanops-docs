@@ -189,6 +189,7 @@ plugins:
             Registratie Peppol: Enregistrement Peppol
             Stamgegevens: Données de base
             Basistabellen: Tables de base
+            Btw-codes: Codes TVA
             Voertuigen: Véhicules
             Mijn gebruiker: Mon utilisateur
             Dashboard platform: Tableau de bord plateforme
@@ -213,6 +214,7 @@ nav:
   - Beheer:
     - Bedrijfsfiche: beheer/bedrijfsfiche.md
     - Basistabellen: beheer/basistabellen.md
+    - Btw-codes: beheer/btw-codes.md
     - Klantenregister: beheer/klantenregister.md
     - Gebruikers: beheer/gebruikers.md
     - Rollen: beheer/rollen.md
