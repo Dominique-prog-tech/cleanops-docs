@@ -120,6 +120,7 @@ plugins:
             # dat is precies waarom het lang niemand opviel. Gemeten 24/08/2026 in de gebouwde site:
             # vier van de zes Beheer-items stonden er nog in het Nederlands.
             Tarieven: Tarifs
+            Betalingstermijnen: Conditions de paiement
             Klantenregister: Registre des clients
             Rollen: Rôles
             Prullenbak: Corbeille
@@ -216,6 +217,7 @@ nav:
     - Basistabellen: beheer/basistabellen.md
     - Btw-codes: beheer/btw-codes.md
     - Tarieven: beheer/tarieven.md
+    - Betalingstermijnen: beheer/betalingstermijnen.md
     - Klantenregister: beheer/klantenregister.md
     - Gebruikers: beheer/gebruikers.md
     - Rollen: beheer/rollen.md
