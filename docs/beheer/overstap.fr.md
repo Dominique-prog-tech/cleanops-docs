@@ -34,10 +34,14 @@ défaut s'applique : l'application actuelle écrit.
 
 ## Basculer vers CleanOps
 
-1. Lancez d'abord une dernière fois la [conversion](conversie.fr.md), afin que CleanOps dispose de l'état le plus
-   récent des données.
-2. Cliquez sur **CleanOps devient l'auteur…**.
-3. Lisez la confirmation et cliquez sur **Basculer**.
+1. Faites vérifier par ADM-Concept sur le serveur que l'application **ne s'endort pas** : le pool d'applications
+   de CleanOps doit toujours tourner (*Start Mode* AlwaysRunning, *Idle Time-out* 0). Sinon CleanOps ne crée pas
+   les ordres de travail chaque nuit — constaté en septembre 2026, quand la génération ne tournait pas certaines
+   nuits.
+2. Lancez une dernière fois la [conversion](conversie.fr.md), afin que CleanOps dispose de l'état le plus récent
+   des données.
+3. Cliquez sur **CleanOps devient l'auteur…**.
+4. Lisez la confirmation et cliquez sur **Basculer**.
 
 À partir de ce moment, le client peut enregistrer dans CleanOps, et CleanOps crée les ordres de travail dès la
 nuit suivante.

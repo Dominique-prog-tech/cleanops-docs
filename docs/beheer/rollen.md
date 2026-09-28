@@ -21,6 +21,15 @@ Onder **Gebruikers met deze rol** ziet u wie de rol vandaag draagt. Staat daar *
 
 Met **Rol verwijderen** haalt u een rol weg. Doe dat pas nadat u de gebruikers die hem dragen een andere rol gegeven hebt.
 
+## De rol Financieel
+
+Elke klant krijgt vanzelf een rol **Financieel**, met de rechten om **facturatie** en de **openstaande posten**
+te bekijken. De standaardrol van een gebruiker draagt die rechten niet: net zoals in uw huidige toepassing
+ziet niet iedereen de financiële onderdelen. Ken de rol toe aan wie ze nodig heeft.
+
+U mag de rol aanpassen; CleanOps overschrijft uw keuze niet. Verwijdert u ze, dan maakt CleanOps ze bij de
+volgende update opnieuw aan, zonder gebruikers.
+
 ## Wat een recht doet
 
 Een recht dat u **uitvinkt**, verbergt het scherm én blokkeert het. De menu-ingang verdwijnt, en wie het adres rechtstreeks intypt komt er evenmin binnen. U hoeft dus niet apart na te denken over "zichtbaar" en "toegankelijk" — dat is één en dezelfde instelling.

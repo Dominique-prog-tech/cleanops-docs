@@ -33,9 +33,12 @@ dan geldt de standaard: de huidige toepassing schrijft.
 
 ## Overstappen naar CleanOps
 
-1. Draai eerst nog één keer de [conversie](conversie.md), zodat CleanOps de laatste stand van de gegevens heeft.
-2. Klik op **CleanOps wordt de schrijver…**.
-3. Lees de bevestiging en klik op **Overstappen**.
+1. Laat ADM-Concept op de server nakijken dat de toepassing **niet inslaapt**: de app pool van CleanOps moet
+   altijd draaien (*Start Mode* AlwaysRunning, *Idle Time-out* 0). Anders maakt CleanOps de werkorders niet
+   elke nacht — gemeten in september 2026, toen de generatie op sommige nachten niet draaide.
+2. Draai nog één keer de [conversie](conversie.md), zodat CleanOps de laatste stand van de gegevens heeft.
+3. Klik op **CleanOps wordt de schrijver…**.
+4. Lees de bevestiging en klik op **Overstappen**.
 
 Vanaf dat moment kan de klant in CleanOps bewaren, en maakt CleanOps vanaf de volgende nacht de werkorders.
 

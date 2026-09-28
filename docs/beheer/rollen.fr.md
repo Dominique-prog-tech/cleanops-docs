@@ -21,6 +21,15 @@ Sous **Utilisateurs avec ce rôle**, vous voyez qui porte ce rôle aujourd'hui. 
 
 **Supprimer le rôle** retire un rôle. Ne le faites qu'après avoir donné un autre rôle aux utilisateurs qui le portent.
 
+## Le rôle Financieel
+
+Chaque client reçoit automatiquement un rôle **Financieel**, avec les droits de consulter la **facturation** et
+les **postes ouverts**. Le rôle standard d'un utilisateur ne porte pas ces droits : comme dans votre application
+actuelle, tout le monde ne voit pas la partie financière. Attribuez le rôle à qui en a besoin.
+
+Vous pouvez adapter le rôle ; CleanOps ne remplace pas votre choix. Si vous le supprimez, CleanOps le recrée à la
+prochaine mise à jour, sans utilisateurs.
+
 ## Ce que fait un droit
 
 Un droit que vous **décochez** masque l'écran **et** le bloque. L'entrée de menu disparaît, et celui qui saisit l'adresse directement n'entre pas davantage. Vous ne devez donc pas raisonner séparément en « visible » et « accessible » : c'est un seul et même réglage.
