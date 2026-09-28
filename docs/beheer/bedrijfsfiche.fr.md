@@ -31,7 +31,7 @@ Pour remplacer un logo, choisissez simplement une nouvelle image. **Supprimer** 
 Rue, numéro, code postal, commune et pays.
 
 Le code postal et la commune se complètent mutuellement : si vous choisissez un code postal, la commune
-apparaît automatiquement. Le pays est une liste de choix.
+apparaît automatiquement. Le champ Commune propose ensuite les localités de ce code postal — pour 9800 par exemple Deinze, Astene, Vinkt et les autres sections. Vous pouvez aussi taper vous-même un nom. Le pays est une liste de choix.
 
 ## Contact
 

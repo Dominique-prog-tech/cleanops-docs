@@ -43,7 +43,7 @@ toepassing herkend wordt — op een werkorder, in een ploeg, op een werkbon.
 ### Adres
 
 Straat, nummer, postcode, gemeente en land. Postcode en gemeente vullen elkaar aan: kiest u een postcode,
-dan verschijnt de gemeente vanzelf.
+dan verschijnt de gemeente vanzelf. Het veld Gemeente biedt daarna de plaatsen van die postcode aan — voor 9800 bijvoorbeeld Deinze, Astene, Vinkt en de andere deelgemeenten. U mag ook zelf een naam typen.
 
 ### Contact
 

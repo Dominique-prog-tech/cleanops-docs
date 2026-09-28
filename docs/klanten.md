@@ -36,7 +36,7 @@ De velden:
 |---|---|
 | Zoeknaam | De naam waarop u in de praktijk zoekt — vaak een afkorting of de naam zonder rechtsvorm. |
 | Naam / Naam (2e regel) | De officiële naam zoals hij op documenten moet komen. |
-| Straat, Nr, Postcode, Gemeente, Land | Het facturatieadres. Werkadressen legt u apart vast op de fiche. |
+| Straat, Nr, Postcode, Gemeente, Land | Het facturatieadres. Werkadressen legt u apart vast op de fiche. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. |
 | Taal | Bepaalt de taal van de documenten voor deze klant, zoals de leveringsbon. |
 | Btw-nummer | |
 | Contact, Telefoon, Gsm, E-mail | |

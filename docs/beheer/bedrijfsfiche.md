@@ -29,7 +29,7 @@ Om een logo te vervangen, kiest u gewoon een nieuwe afbeelding. Met **Verwijdere
 
 Straat, nummer, postcode, gemeente en land.
 
-Postcode en gemeente vullen elkaar aan: kiest u een postcode, dan verschijnt de gemeente vanzelf. Het land is
+Postcode en gemeente vullen elkaar aan: kiest u een postcode, dan verschijnt de gemeente vanzelf. Het veld Gemeente biedt daarna de plaatsen van die postcode aan — voor 9800 bijvoorbeeld Deinze, Astene, Vinkt en de andere deelgemeenten. U mag ook zelf een naam typen. Het land is
 een keuzelijst.
 
 ## Contact

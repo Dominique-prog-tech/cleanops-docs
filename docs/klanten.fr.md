@@ -37,7 +37,7 @@ Les champs :
 |---|---|
 | Nom de recherche | Le nom que vous utilisez en pratique — souvent une abréviation ou le nom sans forme juridique. |
 | Nom / Nom (2e ligne) | Le nom officiel tel qu'il doit figurer sur les documents. |
-| Rue, N°, Code postal, Commune, Pays | L'adresse de facturation. Les adresses de travail se saisissent séparément sur la fiche. |
+| Rue, N°, Code postal, Commune, Pays | L'adresse de facturation. Les adresses de travail se saisissent séparément sur la fiche. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. |
 | Langue | Détermine la langue des documents pour ce client, comme le bon de livraison. |
 | Numéro de TVA | |
 | Contact, Téléphone, GSM, E-mail | |
