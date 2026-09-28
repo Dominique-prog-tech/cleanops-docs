@@ -98,10 +98,15 @@ ontstaan is; daar staan alle velden bij zoals ze toen waren.
 
 Elk tabblad heeft een eigen exportknop, zodat u één onderdeel apart kunt uitvoeren.
 
-### De knoppen bovenaan
+### De knoppen onderaan
+
+U ziet een knop enkel wanneer u het recht hebt om te maken wat hij maakt, én het bijbehorende onderdeel
+(werkorders, offertes, facturatie) voor u vrijgegeven is.
 
 - **Nieuwe werkorder** — opent een scherm waarin u de werkorder samenstelt. Na **Opslaan** komt u op de
   nieuwe werkorder terecht; hij staat dan in de planning.
+- **Nieuwe offerte** — opent een nieuwe offerte voor deze klant. Na **Opslaan** komt u op de nieuwe offerte
+  terecht; ze staat ook in het tabblad **Offertes** van de klant.
 - **Voorschotfactuur** — opent een venster waarin u een omschrijving, een netto bedrag en een btw-code
   invult. **Aanmaken** wordt pas actief zodra het bedrag groter is dan nul. Daarna leest u bovenaan het
   nummer van de factuur, en ze staat in het tabblad **Facturen**.

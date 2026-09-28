@@ -99,10 +99,15 @@ est né dans CleanOps ; tous les champs y figurent tels qu'ils étaient alors.
 
 Chaque onglet dispose de son propre bouton d'exportation, ce qui vous permet d'exporter un élément séparément.
 
-### Les boutons en haut
+### Les boutons en bas
+
+Vous ne voyez un bouton que si vous avez le droit de créer ce qu'il crée, et que la partie correspondante
+(ordres de travail, devis, facturation) est ouverte pour vous.
 
 - **Nouvel ordre de travail** — ouvre un écran où vous composez l'ordre de travail. Après **Enregistrer**,
   vous arrivez sur le nouvel ordre ; il figure alors dans la planification.
+- **Nouveau devis** — ouvre un nouveau devis pour ce client. Après **Enregistrer**, vous arrivez sur le
+  nouveau devis ; il figure aussi dans l'onglet **Devis** du client.
 - **Facture d'acompte** — ouvre une fenêtre où vous saisissez une description, un montant net et un code TVA.
   **Créer** ne devient actif que lorsque le montant dépasse zéro. Vous lisez ensuite en haut le numéro de la
   facture, et celle-ci figure dans l'onglet **Factures**.
