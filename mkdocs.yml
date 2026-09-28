@@ -127,6 +127,7 @@ plugins:
             Actielogboek: Journal d'audit
             Conversie: Conversion
             Generatie: Génération des ordres de travail
+            Overstap: Basculement
             Home: Accueil
             Aan de slag: Premiers pas
             Installatie: Installation
@@ -225,5 +226,6 @@ nav:
     - Rollen: beheer/rollen.md
     - Conversie: beheer/conversie.md
     - Generatie: beheer/generatie.md
+    - Overstap: beheer/overstap.md
     - Prullenbak: beheer/prullenbak.md
     - Actielogboek: beheer/actielogboek.md

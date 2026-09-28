@@ -7,7 +7,7 @@ Le registre des clients contient tous les clients qui tournent sur la plateforme
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Gestion**, puis sur **Tenants**.
+Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Tenants**.
 
 ## Créer un client
 

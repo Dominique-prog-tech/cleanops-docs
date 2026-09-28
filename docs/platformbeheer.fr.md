@@ -20,7 +20,8 @@ Elles sont réparties en quatre thèmes :
 - **Historique** — la corbeille avec ce qui a été supprimé et peut être restauré, et le journal d'audit
   indiquant qui a fait quoi et quand.
 - **Transfert et plateforme** — la conversion depuis votre application actuelle, la génération d'ordres de
-  travail issus des contrats périodiques, et l'aperçu des clients tournant sur cette plateforme.
+  travail issus des contrats périodiques, le basculement (qui gère les données : votre application actuelle ou
+  CleanOps), et l'aperçu des clients tournant sur cette plateforme.
 
 ## Uniquement ce que vous pouvez ouvrir
 

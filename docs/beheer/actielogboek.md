@@ -4,7 +4,7 @@ Het actielogboek toont wat er in CleanOps gebeurd is: wie zich aanmeldde, wie ee
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Beheer** en daarna op **Actielogboek**.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Actielogboek**.
 
 ## Velden en functies
 

@@ -7,7 +7,7 @@ Het klantenregister bevat alle klanten die op het CleanOps-platform draaien. Elk
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Beheer** en daarna op **Tenants**.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Tenants**.
 
 ## Een klant aanmaken
 

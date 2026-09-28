@@ -19,7 +19,8 @@ vier onderwerpen:
 - **Historiek** — de prullenbak met wat verwijderd is en terug te zetten valt, en het actielogboek met wie
   wat wanneer deed.
 - **Overzetting en platform** — de conversie vanuit uw huidige toepassing, de generatie van werkorders uit
-  periodieke contracten, en het overzicht van de klanten die op dit platform draaien.
+  periodieke contracten, de overstap (wie de gegevens beheert: uw huidige toepassing of CleanOps), en het
+  overzicht van de klanten die op dit platform draaien.
 
 ## Enkel wat u mag openen
 

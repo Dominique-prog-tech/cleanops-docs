@@ -4,7 +4,7 @@ Cet écran détermine qui peut se connecter à CleanOps et ce que cette personne
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Gestion**, puis sur **Utilisateurs**.
+Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Utilisateurs**.
 
 ## Créer un utilisateur
 

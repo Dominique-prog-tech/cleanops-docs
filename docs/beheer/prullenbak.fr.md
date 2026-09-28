@@ -4,7 +4,7 @@ Ce que vous supprimez dans CleanOps n'est pas détruit mais mis de côté. L'él
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Gestion**, puis sur **Corbeille**.
+Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Corbeille**.
 
 ## Champs et fonctions
 

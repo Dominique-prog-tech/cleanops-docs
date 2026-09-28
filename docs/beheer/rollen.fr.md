@@ -4,7 +4,7 @@ Un rôle est un ensemble de droits. Vous attribuez un rôle à un utilisateur pl
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Gestion**, puis sur **Rôles**.
+Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Rôles**.
 
 ## Créer un rôle
 

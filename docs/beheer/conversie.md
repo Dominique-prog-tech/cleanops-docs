@@ -9,7 +9,7 @@ Onderaan staat een aparte actie om de aanmeldingen van die klant aan te maken.
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Beheer** en daarna op **Conversie**.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Conversie**.
 
 <!-- AFBEELDING: het conversiescherm met de actieve tenant en de knop Converteer tenant -->
 

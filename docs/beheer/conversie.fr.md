@@ -9,7 +9,7 @@ pour chaque élément. En bas se trouve une action distincte pour créer les con
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Gestion**, puis sur **Conversion**.
+Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Conversion**.
 
 <!-- AFBEELDING: l'écran de conversion avec le tenant actif et le bouton Convertir le tenant -->
 

@@ -10,7 +10,7 @@ transféré ou modifié des contrats et que vous voulez en voir le résultat imm
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Gestion**, puis sur **Génération**.
+Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Génération**.
 
 <!-- AFBEELDING: l'écran de génération avec le tenant actif et le bouton Générer les ordres de travail -->
 
@@ -19,6 +19,11 @@ Dans la barre latérale, cliquez sur **Gestion**, puis sur **Génération**.
 En haut figure **Tenant actif** avec le code du client sur lequel vous travaillez. Si vous lisez *aucun —
 choisissez-en d'abord un dans Tenants*, rendez-vous dans le [Registre des clients](klantenregister.fr.md) et cliquez
 sur **Utiliser →** chez le bon client. Tant qu'aucun client n'est choisi, le bouton reste désactivé.
+
+!!! note "Tant que votre application actuelle écrit"
+    Tant que le client travaille encore dans son application actuelle, c'est celle-ci qui crée les ordres de
+    travail — pas CleanOps. Le bouton est alors désactivé, et un message au-dessus renvoie vers
+    [Basculement](overstap.fr.md). La génération de nuit ignore elle aussi ce client.
 
 ## Lancer la génération
 
@@ -53,3 +58,4 @@ Ce que fait la génération :
 - [Registre des clients](klantenregister.fr.md) — choisir le client sur lequel vous travaillez
 - [Conversion](conversie.fr.md) — transférer les contrats qui servent de base à la génération
 - [Clients](../klanten.fr.md) — les contrats d'un client sur sa fiche
+- [Basculement](overstap.fr.md) — à partir de quand CleanOps crée les ordres de travail

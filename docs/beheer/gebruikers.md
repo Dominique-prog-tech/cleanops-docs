@@ -4,7 +4,7 @@ Op dit scherm bepaalt u wie zich mag aanmelden bij CleanOps en wat die persoon m
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Beheer** en daarna op **Gebruikers**.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Gebruikers**.
 
 ## Een gebruiker aanmaken
 

@@ -4,7 +4,7 @@ Le journal d'audit montre ce qui s'est passé dans CleanOps : qui s'est connect�
 
 ## Ouvrir l'écran
 
-Dans la barre latérale, cliquez sur **Gestion**, puis sur **Journal d'audit**.
+Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Journal d'audit**.
 
 ## Champs et fonctions
 

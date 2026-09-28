@@ -10,7 +10,7 @@ aangepast en het resultaat meteen wil zien.
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Beheer** en daarna op **Generatie**.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Generatie**.
 
 <!-- AFBEELDING: het generatiescherm met de actieve tenant en de knop Genereer werkorders -->
 
@@ -19,6 +19,11 @@ Klik in de zijbalk op **Beheer** en daarna op **Generatie**.
 Bovenaan staat **Actieve tenant** met de code van de klant waarop u werkt. Staat er *geen — kies er eerst één
 bij Tenants*, ga dan naar [Klantenregister](klantenregister.md) en klik bij de juiste klant op **Gebruiken →**.
 Zolang er geen klant gekozen is, blijft de knop uitgeschakeld.
+
+!!! note "Zolang uw huidige toepassing schrijft"
+    Zolang de klant nog in zijn huidige toepassing werkt, maakt die toepassing de werkorders — niet CleanOps. De
+    knop staat dan uit, en er staat een melding boven die verwijst naar [Overstap](overstap.md). Ook de
+    nachtelijke generatie slaat zo'n klant over.
 
 ## De generatie starten
 
@@ -53,3 +58,4 @@ Wat de generatie doet:
 - [Klantenregister](klantenregister.md) — de klant kiezen waarop u werkt
 - [Conversie](conversie.md) — de contracten overzetten waaruit gegenereerd wordt
 - [Klanten](../klanten.md) — de contracten van een klant op zijn fiche
+- [Overstap](overstap.md) — wanneer CleanOps de werkorders begint te maken

@@ -4,7 +4,7 @@ Wat u in CleanOps verwijdert, wordt niet vernietigd maar weggelegd. Het komt in 
 
 ## Het scherm openen
 
-Klik in de zijbalk op **Beheer** en daarna op **Prullenbak**.
+Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Prullenbak**.
 
 ## Velden en functies
 
