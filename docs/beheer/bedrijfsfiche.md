@@ -18,8 +18,7 @@ grijs.
 
 <!-- AFBEELDING: het logoblok met een geladen logo en de knop Verwijderen -->
 
-Sleep een afbeelding in het vak, of klik erop om er een te kiezen. Toegestaan zijn **PNG, JPEG en SVG**, tot
-2 MB.
+Sleep een afbeelding in het vak, of klik erop om er een te kiezen. Toegestaan zijn **PNG en JPEG**, tot 2 MB.
 
 Het logo verschijnt op uw facturen, offertes en werkbonnen. Staat er nog geen, dan blijft die plek op de
 documenten leeg.

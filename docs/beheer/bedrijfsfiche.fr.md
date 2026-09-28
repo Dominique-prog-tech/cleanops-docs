@@ -18,8 +18,8 @@ donc grisé.
 
 <!-- AFBEELDING: le bloc logo avec un logo chargé et le bouton Supprimer -->
 
-Glissez une image dans le cadre, ou cliquez dessus pour en choisir une. Les formats autorisés sont **PNG,
-JPEG et SVG**, jusqu'à 2 MB.
+Glissez une image dans le cadre, ou cliquez dessus pour en choisir une. Les formats autorisés sont **PNG et
+JPEG**, jusqu'à 2 MB.
 
 Le logo figure sur vos factures, devis et bons de travail. S'il n'y en a pas encore, cet emplacement reste
 vide sur les documents.
