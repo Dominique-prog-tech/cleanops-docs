@@ -2,7 +2,7 @@
 
 Vos codes de facturation : chaque tarif porte une description, une unité, un prix unitaire et un code TVA.
 Si vous choisissez un tarif sur une ligne de devis, il complète ces champs pour vous. Sur cet écran, vous créez
-des tarifs, vous les modifiez et vous les supprimez.
+des tarifs, vous les modifiez et vous les archivez.
 
 <!-- AFBEELDING: l'aperçu des tarifs avec le bouton Nouveau tarif et le champ de recherche -->
 
@@ -50,12 +50,12 @@ a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre
 
 Cliquez sur **Enregistrer**. Après la création d'un nouveau tarif, sa fiche s'ouvre automatiquement.
 
-## Supprimer ou rétablir un tarif
+## Archiver ou rétablir un tarif
 
-En bas à droite de la fiche se trouve **Supprimer**. Un tarif supprimé disparaît des listes de choix, mais il
+En bas à droite de la fiche se trouve **Archiver**. Un tarif archivé disparaît des listes de choix, mais il
 subsiste : des ordres de travail, devis et factures plus anciens portent encore le code.
 
-Vous le voulez de retour ? En haut de la liste, mettez **Afficher** sur **Aussi les tarifs supprimés**, ouvrez le
+Vous le voulez de retour ? En haut de la liste, mettez **Afficher** sur **Aussi les tarifs archivés**, ouvrez le
 tarif et cliquez sur **Rétablir**.
 
 <!-- AFBEELDING: le choix Afficher, déplié -->
@@ -84,8 +84,8 @@ et de quelle valeur vers quelle autre.
 ## Erreurs fréquentes
 
 !!! warning
-    **Créer un tarif avec le même code qu'un tarif supprimé.** C'est impossible : le code existe toujours,
-    simplement supprimé. Rétablissez l'ancien tarif et adaptez-le, au lieu d'en créer un nouveau.
+    **Créer un tarif avec le même code qu'un tarif archivé.** C'est impossible : le code existe toujours,
+    simplement archivé. Rétablissez l'ancien tarif et adaptez-le, au lieu d'en créer un nouveau.
 
 !!! warning
     **Mettre un prix à zéro pour marquer un travail comme gratuit.** Zéro signifie *à compléter*. Un travail
@@ -94,7 +94,7 @@ et de quelle valeur vers quelle autre.
 ## Questions fréquentes
 
 **Je ne retrouve pas un tarif que nous utilisions auparavant.**
-Mettez **Afficher** sur *Aussi les tarifs supprimés*. Il a probablement été supprimé ; il subsiste pour les
+Mettez **Afficher** sur *Aussi les tarifs archivés*. Il a probablement été archivé ; il subsiste pour les
 documents plus anciens qui y renvoient.
 
 **Le prix sur mon devis ne correspond pas à ce qui figure ici.**

@@ -2,7 +2,7 @@
 
 Uw facturatiecodes: elk tarief draagt een omschrijving, een eenheid, een eenheidsprijs en een btw-code.
 Kiest u een tarief op een offertelijn, dan vult het die velden voor u in. Op dit scherm maakt u tarieven aan,
-past u ze aan en voert u ze af.
+past u ze aan en archiveert u ze.
 
 <!-- AFBEELDING: het overzicht van de tarieven met de knop Nieuw tarief en het zoekveld -->
 
@@ -50,12 +50,12 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 
 Klik op **Opslaan**. Na het aanmaken van een nieuw tarief opent zijn fiche vanzelf.
 
-## Een tarief afvoeren of terughalen
+## Een tarief archiveren of terughalen
 
-Op de fiche staat onderaan rechts **Afvoeren**. Een afgevoerd tarief verdwijnt uit de keuzelijsten, maar het
+Op de fiche staat onderaan rechts **Archiveren**. Een gearchiveerd tarief verdwijnt uit de keuzelijsten, maar het
 blijft bestaan: oudere werkorders, offertes en facturen dragen de code nog.
 
-Wilt u het terug? Zet bovenaan de lijst **Tonen** op **Ook afgevoerde tarieven**, open het tarief en klik op
+Wilt u het terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde tarieven**, open het tarief en klik op
 **Terughalen**.
 
 <!-- AFBEELDING: de keuze Tonen, opengeklapt -->
@@ -83,8 +83,8 @@ wanneer, door wie — en van welke waarde naar welke.
 ## Veelgemaakte fouten
 
 !!! warning
-    **Een tarief met dezelfde code aanmaken als een afgevoerd tarief.** Dat kan niet: de code bestaat nog, alleen
-    afgevoerd. Haal het oude tarief terug en pas het aan, in plaats van een nieuw te maken.
+    **Een tarief met dezelfde code aanmaken als een gearchiveerd tarief.** Dat kan niet: de code bestaat nog, alleen
+    gearchiveerd. Haal het oude tarief terug en pas het aan, in plaats van een nieuw te maken.
 
 !!! warning
     **Een prijs op nul zetten om een werk als gratis te markeren.** Nul betekent *nog in te vullen*. Een gratis
@@ -93,7 +93,7 @@ wanneer, door wie — en van welke waarde naar welke.
 ## Veelgestelde vragen
 
 **Ik vind een tarief niet terug dat we vroeger gebruikten.**
-Zet **Tonen** op *Ook afgevoerde tarieven*. Waarschijnlijk is het afgevoerd; het blijft bestaan voor de
+Zet **Tonen** op *Ook gearchiveerde tarieven*. Waarschijnlijk is het gearchiveerd; het blijft bestaan voor de
 oudere documenten die ernaar verwijzen.
 
 **De prijs op mijn offerte klopt niet met wat hier staat.**
