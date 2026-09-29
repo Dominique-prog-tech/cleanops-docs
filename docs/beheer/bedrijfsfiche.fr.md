@@ -1,65 +1,65 @@
 # Fiche d'entreprise
 
-Les données de votre propre entreprise. Elles figurent sur tout ce que vous envoyez à un client : factures,
-devis, bons de travail et attestations.
+Les données de votre propre entreprise : nom, adresse, coordonnées, numéro de TVA et banque, votre logo, et le
+délai entre deux rappels.
 
-<!-- AFBEELDING: la fiche d'entreprise avec les blocs identité, logo et adresse -->
+![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo et Rappels](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
+
+!!! note "Où CleanOps utilise ces données aujourd'hui"
+    Le **délai entre deux rappels** détermine directement quels postes figurent dans la liste *Prochain rappel*
+    des postes ouverts.
+
+    Le nom, l'adresse, le numéro de TVA, l'IBAN et le logo sont conservés pour les documents que CleanOps
+    établit. Aujourd'hui, CleanOps n'imprime pas encore de factures avec en-tête ; vos factures proviennent
+    encore de votre application actuelle.
 
 ## Ouvrir l'écran
 
 Cliquez sur **Administration** en bas du menu, puis sur la tuile **Fiche d'entreprise**.
 
-## Identification
+## Identité et adresse
 
-Le **nom** de votre entreprise provient de votre application actuelle et n'est pas modifié ici. Le champ est
-donc grisé.
+Le **nom** est obligatoire, 60 caractères au maximum. C'est le nom tel qu'il doit figurer sur vos propres
+documents — votre en-tête. Il est indépendant du nom sous lequel ADM-Concept vous connaît.
 
-## Logo
-
-<!-- AFBEELDING: le bloc logo avec un logo chargé et le bouton Supprimer -->
-
-Glissez une image dans le cadre, ou cliquez dessus pour en choisir une. Les formats autorisés sont **PNG et
-JPEG**, jusqu'à 2 MB.
-
-Le logo figure sur vos factures, devis et bons de travail. S'il n'y en a pas encore, cet emplacement reste
-vide sur les documents.
-
-Pour remplacer un logo, choisissez simplement une nouvelle image. **Supprimer** l'enlève.
-
-## Adresse
-
-Rue, numéro, code postal, commune et pays.
-
-Le code postal et la commune se complètent mutuellement : si vous choisissez un code postal, la commune
-apparaît automatiquement. Le champ Commune propose ensuite les localités de ce code postal — pour 9800 par exemple Deinze, Astene, Vinkt et les autres sections. Vous pouvez aussi taper vous-même un nom. Le pays est une liste de choix.
+En dessous : rue, numéro, code postal, commune et pays. Le code postal et la commune se complètent
+mutuellement : si vous choisissez un code postal, la commune apparaît automatiquement. Le champ Commune propose
+ensuite les localités de ce code postal — pour 9800 par exemple Deinze, Astene, Vinkt et les autres sections.
+Vous pouvez aussi taper vous-même un nom. Le pays est une liste de choix.
 
 ## Contact
 
 Téléphone, e-mail et site web. Lors de l'enregistrement, CleanOps vérifie qu'un numéro et une adresse e-mail
 saisis sont valides. Les laisser vides est permis ; les remplir à moitié ne l'est pas.
 
-## Fiscal et bancaire
+## Données fiscales et bancaires
 
-<!-- AFBEELDING: le bloc Fiscal et bancaire avec le bouton Rechercher à côté du numéro de TVA -->
-
-Le **numéro de TVA** doit figurer sur chaque facture. À côté du champ se trouve **Rechercher** : ce bouton
-consulte le numéro auprès de la Banque-Carrefour des Entreprises et complète votre adresse avec ce qui y est
-enregistré.
+Le **numéro de TVA** doit figurer sur chaque facture. CleanOps vérifie le chiffre de contrôle d'un numéro belge
+et l'enregistre dans son écriture fixe, par exemple `BE 0123.456.749`. À côté du champ se trouve
+**Rechercher** : ce bouton consulte le numéro auprès de la Banque-Carrefour des Entreprises et complète votre
+adresse avec ce qui y est enregistré.
 
 !!! note "Rien ne revient ?"
     Le message *« Aucune donnée reçue pour ce numéro »* signifie deux choses à la fois : soit le numéro
     n'existe pas, soit le service est momentanément injoignable. L'écran ne peut pas distinguer les deux.
     Vérifiez le numéro, et complétez sinon à la main.
 
-Le nom de votre entreprise n'est **pas** écrasé lors de la recherche — il reste tel qu'il figure dans votre
-application actuelle.
+Votre nom n'est **pas** écrasé lors de la recherche.
 
-L'**IBAN** et le **BIC** apparaissent sur vos factures afin que le client sache où payer.
+L'**IBAN** est lui aussi vérifié sur son chiffre de contrôle et enregistré par groupes de quatre
+(`BE68 5390 0754 7034`). À côté, le **BIC**.
+
+## Logo
+
+Glissez une image dans le cadre, ou cliquez dessus pour en choisir une. Les formats autorisés sont **PNG et
+JPEG**, jusqu'à 2 MB. Pour remplacer un logo, choisissez simplement une nouvelle image. **Supprimer** l'enlève
+définitivement.
 
 ## Rappels
 
-Le **délai entre deux rappels** fixe le nombre minimum de jours entre deux relances. Si vous laissez le champ
-vide, CleanOps applique le réglage par défaut de l'application.
+Le **délai entre deux rappels** fixe le nombre minimum de jours entre deux relances pour un même poste : un poste
+ne revient dans la liste *Prochain rappel* que lorsque son dernier rappel date d'au moins ce délai. Si vous
+laissez le champ vide, 15 jours s'appliquent.
 
 ## Enregistrer ou annuler
 
@@ -67,13 +67,14 @@ vide, CleanOps applique le réglage par défaut de l'application.
 
 ## Questions fréquentes
 
-**Je veux modifier le nom de l'entreprise.**
-Ce n'est pas possible ici : le nom provient de votre application actuelle. Prenez contact avec ADM-Concept.
-
-**Le logo est de travers ou trop grand sur mes factures.**
-Le logo est mis à l'échelle selon la place disponible sur les documents. Si le résultat n'est pas bon,
-chargez une version avec moins de blanc autour.
+**Mon numéro de TVA est refusé.**
+Le chiffre de contrôle ne correspond pas : les deux derniers chiffres découlent du reste du numéro. Vérifiez le
+numéro sur un document officiel, ou récupérez-le avec **Rechercher**.
 
 **J'ai cliqué sur Rechercher et mon adresse a changé.**
 C'est l'effet voulu : le bouton reprend l'adresse telle qu'elle figure à la Banque-Carrefour. Si elle est
 incorrecte, corrigez-la à la main et enregistrez.
+
+**J'ai modifié le délai, mais la liste Prochain rappel ne change pas.**
+Les derniers rappels de vos postes datent alors tous d'avant l'ancien comme le nouveau délai. La différence ne
+se voit que pour des postes relancés récemment.

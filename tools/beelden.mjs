@@ -69,6 +69,10 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Bedrijfsfiche: één fiche, één beeld. ⚠️ HOGER dan de standaard (hoogte): op 900 px vielen Logo en Rappels half weg
+  // (29/09/2026). Het merkteken is daarom "Rappels"-tekst onderaan, niet de kop bovenaan.
+  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1180,
+    verwacht: tekstTaal('Wachttijd tussen twee rappels', 'Délai entre deux rappels') },
   // Basistabellen: zelfde vorm; het scherm opent op de lijst Contracttypes.
   { naam: 'basistabellen-lijst', route: '/beheer/basistabellen', verwacht: tekstTaal('Nieuw item', 'Nouvel élément') },
   { naam: 'basistabel-venster', route: '/beheer/basistabellen', verwacht: tekstTaal('Item bewerken', "Modifier l'élément"),
@@ -160,6 +164,8 @@ for (const taal of ['nl-BE', 'fr-BE']) {
     if (filter && !s.naam.includes(filter)) continue;
     const bestand = `${s.naam}${achter}`;
     try {
+      // Een recept mag een eigen hoogte vragen (hoogte) — anders valt een lange fiche onderaan weg.
+      await page.setViewportSize({ width: BREED, height: s.hoogte ?? HOOG });
       await page.goto(`${BASIS}${s.route}`); await page.waitForLoadState('networkidle');
       await page.waitForTimeout(600);
       if (s.na) await s.na(page);
@@ -167,7 +173,7 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       catch { mislukt.push(`${bestand} — het merkteken ${s.verwacht} verscheen niet: dit is niet het beloofde scherm`); continue; }
       await page.waitForTimeout(400);
       await page.addStyleTag({ content: VERBERG }).catch(() => {});
-      await page.mouse.move(0, HOOG - 1);            // geen zweeftoestand van de muis op het beeld
+      await page.mouse.move(0, (s.hoogte ?? HOOG) - 1);   // geen zweeftoestand van de muis op het beeld
 
       const tekst = await page.locator('body').innerText();
       const besluit = schermBesluit({ tekst, isElementSchot: false, magKortZijn: Boolean(s.magKortZijn) });
