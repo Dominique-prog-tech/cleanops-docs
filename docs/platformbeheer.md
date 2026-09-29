@@ -2,40 +2,45 @@
 
 Alle instellingen en stamgegevens van uw bedrijf op één plek, gegroepeerd per onderwerp.
 
-<!-- AFBEELDING: de beheer-hub met de vier groepen tegels -->
-
 ## Het scherm openen
 
 Klik links in het menu op **Platformbeheer**.
 
 ## Wat u ziet
 
-De schermen staan als tegels, met bij elke tegel een zin die zegt waarvoor ze dient. Ze zijn gegroepeerd in
-vier onderwerpen:
+De schermen staan als tegels, gegroepeerd per onderwerp. Gaat u met de muis over een tegel, dan verschijnt een
+zin die zegt waarvoor het scherm dient.
 
-- **Stamgegevens** — de basistabellen, btw-codes en tarieven. Dit voedt de rest van de toepassing: een
-  offertelijn kiest hier haar tarief, een factuur haar btw-code. Bij een nieuwe inrichting begint u hier.
-- **Toegang** — wie mag aanmelden (Gebruikers) en welke rechten bij welke rol horen (Rollen).
-- **Historiek** — de prullenbak met wat verwijderd is en terug te zetten valt, en het actielogboek met wie
-  wat wanneer deed.
-- **Overzetting en platform** — de conversie vanuit uw huidige toepassing, de generatie van werkorders uit
-  periodieke contracten, de overstap (wie de gegevens beheert: uw huidige toepassing of CleanOps), en het
-  overzicht van de klanten die op dit platform draaien.
+![De zeven tegels voor de stamgegevens: Bedrijfsfiche, Basistabellen, Btw-codes, Tarieven, Betalingstermijnen, Factuurteksten en Voertuigen](images/platformbeheer-stamgegevens.png "Stamgegevens")
+
+**Stamgegevens** — wat de rest van CleanOps voedt: een offertelijn kiest hier haar tarief, een factuur haar
+btw-code en betalingstermijn. Bij een nieuwe inrichting begint u hier.
+
+- [Bedrijfsfiche](beheer/bedrijfsfiche.md) — uw eigen firmagegevens en de wachttijd tussen twee rappels
+- [Basistabellen](beheer/basistabellen.md) — de keuzelijsten: contracttypes, werkzaamheden, planningstatus, functies,
+  materialen en betaalwijzen, standaardteksten en soorten voertuig
+- [Btw-codes](beheer/btw-codes.md) — de btw-tarieven op offertes en facturen
+- [Tarieven](beheer/tarieven.md) — omschrijving en eenheidsprijs voor een offertelijn
+- [Betalingstermijnen](beheer/betalingstermijnen.md) — hoe de vervaldag van een factuur berekend wordt
+- [Factuurteksten](beheer/factuurteksten.md) — de standaardteksten onderaan een factuur
+- [Voertuigen](beheer/voertuigen.md) — uw vloot, het onderhoud en de keuring
+
+**Toegang**
+
+- [Rollen](beheer/rollen.md) — welke rechten bij welke rol horen, en wie welke rol draagt
+
+**Historiek**
+
+- [Prullenbak](beheer/prullenbak.md) — wat verwijderd is, en het terugzetten ervan
+- [Actielogboek](beheer/actielogboek.md) — wie wat wanneer deed
+
+Een nieuwe gebruiker aanmaken en de gegevens overnemen uit uw huidige toepassing doet ADM-Concept voor u. Die
+schermen ziet u niet.
 
 ## Enkel wat u mag openen
 
-!!! note "Tijdens de testfase"
-    De schermen komen één voor één vrij. Ziet u een tegel die hier beschreven staat nog niet, dan is dat scherm
-    nog niet vrijgegeven — het verschijnt vanzelf zodra het zover is.
+U ziet alleen de tegels waarvoor u het recht hebt. Heeft u voor geen enkel scherm uit een groep het recht, dan
+valt die groep helemaal weg — u krijgt geen kop met niets eronder.
 
-U ziet alleen de tegels waarvoor u het recht hebt. Heeft u voor geen enkel scherm uit een groep het recht,
-dan valt die groep helemaal weg — u krijgt geen kop met niets eronder.
-
-Dat betekent ook dat twee collega's een verschillend Platformbeheer kunnen zien. Mist u een tegel die een
-collega wel heeft, dan is dat een kwestie van rechten: kijk bij **Rollen** welke rechten aan uw rol hangen.
-
-## Waar de schermen gebleven zijn
-
-Tot september 2026 stonden deze tien schermen als losse regels onder in het menu. Ze zijn niet verdwenen en
-hun adressen zijn niet veranderd — een bladwijzer naar bijvoorbeeld het actielogboek blijft dus werken. Ze
-staan alleen bij elkaar, met uitleg erbij.
+Twee collega's kunnen dus een verschillend Platformbeheer zien. Mist u een tegel die een collega wel heeft, dan is
+dat een kwestie van rechten: vraag de beheerder van uw omgeving om ze bij [Rollen](beheer/rollen.md) aan te passen.

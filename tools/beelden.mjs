@@ -151,6 +151,10 @@ const SCHOTEN = [
         return rijen.length > 0 && rijen.every(r => r.innerText.includes('Demo'));
       }, null, { timeout: 15000 });
     } },
+  // Platformbeheer (de hub): ⚠️ een ELEMENT, enkel de tegels van Stamgegevens. De operator die het beeld maakt, ziet ook
+  // Gebruikers en de groep Overzetting en platform — schermen die een klant NOOIT ziet (29/09/2026).
+  { naam: 'platformbeheer-stamgegevens', route: '/beheer', verwacht: tekstTaal('Betalingstermijnen', 'Conditions de paiement'),
+    element: 'main .tiles' },
   // Rollen: het fundering-scherm. ⚠️ Een ELEMENT (de drie kolommen) en niet de pagina: bovenaan staat een tenant-keuzelijst
   // die enkel een ADM-operator ziet — een klant nooit. Die lijst staat bij het openen op "— kies een tenant —", ook als
   // de demo de actieve tenant is; eerst de demo kiezen, dan de rol Financieel (29/09/2026). De demo heeft geen
