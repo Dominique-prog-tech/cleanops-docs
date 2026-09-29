@@ -1,21 +1,15 @@
 # Tarifs
 
 Vos codes de facturation : chaque tarif porte une description, une unité, un prix unitaire et un code TVA.
-Si vous choisissez un tarif sur une ligne de devis, il complète ces champs pour vous.
+Si vous choisissez un tarif sur une ligne de devis, il complète ces champs pour vous. Sur cet écran, vous créez
+des tarifs, vous les modifiez et vous les supprimez.
 
-<!-- AFBEELDING: l'aperçu des tarifs avec les cinq colonnes -->
-
-!!! note "Cet écran est en lecture seule"
-    Vous gérez les tarifs pour l'instant dans votre application actuelle. Ils sont repris de là dans
-    CleanOps.
-
-    C'est pourquoi il n'y a ici aucun bouton pour en ajouter ou en modifier un : cette modification
-    disparaîtrait lors de la prochaine reprise, sans avertissement. Vous êtes ainsi certain que les prix
-    affichés ici sont bien ceux qui servent au calcul.
+<!-- AFBEELDING: l'aperçu des tarifs avec le bouton Nouveau tarif et le champ de recherche -->
 
 ## Ouvrir l'écran
 
-Cliquez sur **Administration** en bas du menu, puis sur la tuile **Tarifs**.
+Cliquez sur **Administration** en bas du menu, puis sur la tuile **Tarifs**. Le curseur se trouve directement
+dans le champ de recherche : tapez un code ou une partie de la description.
 
 ## La liste
 
@@ -27,57 +21,91 @@ Cliquez sur **Administration** en bas du menu, puis sur la tuile **Tarifs**.
 | Prix unitaire | le prix par unité |
 | Code TVA | le code TVA repris par défaut |
 
-En haut se trouve un compteur, par exemple **105 sur 114** : combien de tarifs vous voyez, et combien il y
-en a au total.
+En haut se trouve un compteur, par exemple **105 sur 114** : combien de tarifs vous voyez, et combien il y en
+a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre**.
 
-!!! warning "Un tiret à la place du prix ne veut pas dire gratuit"
-    Si vous voyez un **—** au lieu d'un montant, aucun prix n'est renseigné. Cela signifie *à compléter*, et
-    non *gratuit*. Vous indiquez alors le prix sur la ligne de devis elle-même.
+!!! warning "Un tiret à la place du prix n'est pas la même chose que gratuit"
+    Si un **—** figure à la place d'un montant, aucun prix n'est encodé. Cela signifie *à compléter*, et non
+    *gratuit*. Vous complétez alors le prix sur la ligne de devis elle-même.
 
-    C'est le cas pour environ deux tiers des tarifs. C'est normal : beaucoup de travaux sont chiffrés par
+    C'est le cas pour environ deux tiers des tarifs. C'est normal : de nombreux travaux sont chiffrés par
     dossier.
+
+## Modifier ou créer un tarif
+
+**Double-cliquez** sur un tarif dans la liste, ou cliquez sur **Nouveau tarif**. La fiche du tarif s'ouvre.
+
+<!-- AFBEELDING: la fiche d'un tarif avec tous les champs -->
+
+| Champ | Ce que vous encodez |
+|---|---|
+| **Code** *(obligatoire)* | 5 caractères au maximum. Fixé dès que le tarif est enregistré. |
+| **Langue** *(obligatoire)* | Nederlands ou Français. Le même code peut exister une fois dans chaque langue. Fixée dès que le tarif est enregistré. |
+| **Description** *(obligatoire)* | 35 caractères au maximum ; figure sur la ligne de devis ou de facture. |
+| **Unité** | un choix parmi les unités déjà utilisées (UUR, T, M3 …). |
+| **Prix unitaire** | jamais négatif. Laissez-le à zéro si le prix est fixé par dossier. |
+| **Code TVA** | un choix parmi vos codes TVA ; peut rester vide. |
+| **Texte sur la facture** | quand vous choisissez ce tarif sur un ordre de travail, il s'ajoute à sa remarque de facturation, et donc à la facture — c'est ce que lit le client. |
+| **Texte sur le devis** | s'ajoute au texte de la ligne de devis quand vous choisissez ce tarif — le client le lit aussi. |
+
+Cliquez sur **Enregistrer**. Après la création d'un nouveau tarif, sa fiche s'ouvre automatiquement.
+
+## Supprimer ou rétablir un tarif
+
+En bas à droite de la fiche se trouve **Supprimer**. Un tarif supprimé disparaît des listes de choix, mais il
+subsiste : des ordres de travail, devis et factures plus anciens portent encore le code.
+
+Vous le voulez de retour ? En haut de la liste, mettez **Afficher** sur **Aussi les tarifs supprimés**, ouvrez le
+tarif et cliquez sur **Rétablir**.
+
+<!-- AFBEELDING: le choix Afficher, déplié -->
 
 ## Utiliser un tarif sur un devis
 
-Sur une ligne de devis, vous choisissez un tarif. CleanOps complète alors la description, l'unité, le prix
-et le code TVA.
+Sur une ligne de devis, vous choisissez un tarif. CleanOps complète alors la description, l'unité, le prix, le
+code TVA et le texte sur le devis. Sur un ordre de travail, le texte sur la facture s'ajoute à la remarque de
+facturation.
 
 Ces champs restent ensuite **librement modifiables**. Le prix du tarif est une valeur de départ : si vous
 l'adaptez sur la ligne, rien ne change au tarif lui-même, ni aux autres devis.
 
-## Voir les tarifs supprimés
-
-<!-- AFBEELDING: le choix Afficher, déplié -->
-
-En haut se trouve **Afficher**. Par défaut, vous ne voyez que les tarifs actifs. Si vous choisissez **Aussi
-les tarifs supprimés**, ceux-ci s'ajoutent, avec la mention **supprimé**.
-
-Ils subsistent parce que des devis et des factures plus anciens y renvoient. S'ils disparaissaient, un
-ancien devis porterait une ligne sans description lisible.
-
 ## Le journal
 
-<!-- AFBEELDING: le journal ouvert, avec une modification de prix -->
+La fiche d'un tarif porte l'onglet **Journal**. Il montre ce qui a été modifié sur ce tarif, quand, par qui —
+et de quelle valeur vers quelle autre.
 
-À droite de l'écran se trouve une bande portant **journal**. Cliquez dessus et le panneau s'ouvre.
+<!-- AFBEELDING: le journal d'un tarif, avec une modification de prix -->
 
-Le journal indique, par tarif, ce qui a été modifié, quand et par qui — et de quelle valeur vers quelle
-autre. Comme vous ne pouvez rien modifier ici vous-même, c'est précisément l'endroit où regarder lorsqu'un
-prix diffère de ce que vous attendez : vous voyez alors si et quand il a changé lors d'une reprise.
+!!! note "En phase de test"
+    Tant que votre entreprise travaille encore dans son application actuelle, CleanOps est un environnement de
+    test. À chaque reprise, les tarifs reprennent la valeur de votre application actuelle, et les tarifs que vous
+    avez créés ici disparaissent. L'étiquette **Phase de test** figure alors en haut de chaque écran.
+
+## Erreurs fréquentes
+
+!!! warning
+    **Créer un tarif avec le même code qu'un tarif supprimé.** C'est impossible : le code existe toujours,
+    simplement supprimé. Rétablissez l'ancien tarif et adaptez-le, au lieu d'en créer un nouveau.
+
+!!! warning
+    **Mettre un prix à zéro pour marquer un travail comme gratuit.** Zéro signifie *à compléter*. Un travail
+    gratuit s'indique sur la ligne de devis elle-même.
 
 ## Questions fréquentes
 
-**Je veux adapter un prix, mais il n'y a pas de bouton.**
-C'est voulu. Modifiez le tarif dans votre application actuelle ; il figurera ici à la prochaine reprise.
-
-**Un tarif est à 0,00 € — est-ce un travail que nous faisons gratuitement ?**
-Non. Dans la liste, vous voyez alors un tiret : aucun prix n'est renseigné. Vous l'indiquez sur la ligne de
-devis elle-même.
-
-**Je ne retrouve pas un tarif que nous utilisions autrefois.**
-Mettez **Afficher** sur *Aussi les tarifs supprimés*. Il est probablement supprimé ; il subsiste pour les
+**Je ne retrouve pas un tarif que nous utilisions auparavant.**
+Mettez **Afficher** sur *Aussi les tarifs supprimés*. Il a probablement été supprimé ; il subsiste pour les
 documents plus anciens qui y renvoient.
 
 **Le prix sur mon devis ne correspond pas à ce qui figure ici.**
-C'est possible : le prix du tarif est une valeur de départ et peut être adapté sur la ligne. Vérifiez dans
-le journal si le tarif lui-même a été modifié entre-temps.
+C'est possible : le prix du tarif est une valeur de départ et peut être adapté sur la ligne. Regardez dans le
+journal du tarif s'il a lui-même été modifié entre-temps.
+
+**Il me manque une unité dans la liste de choix.**
+La liste montre les unités déjà utilisées. Ajouter une nouvelle unité n'est pas encore possible ; signalez-le
+via le système de tickets.
+
+## Voir aussi
+
+- [Codes TVA](btw-codes.fr.md) — les codes TVA que vous choisissez sur un tarif
+- [Administration](../platformbeheer.fr.md) — tous les écrans d'administration
