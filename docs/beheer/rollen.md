@@ -1,34 +1,59 @@
 # Rollen
 
-Een rol is een bundel rechten. U kent een rol toe aan een gebruiker in plaats van elk recht apart te geven — zo hoeft u bij een nieuwe collega maar één keuze te maken.
+Een rol is een bundel rechten. U geeft iemand een rol in plaats van elk recht apart — zo hoeft u bij een nieuwe collega maar één keuze te maken.
 
 ## Het scherm openen
 
 Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Rollen**.
 
+Links staan de **Rollen**, in het midden de **Rechten** van de gekozen rol, rechts de **Gebruikers met deze rol**.
+
+![De rol Financieel: links de rollen, in het midden de rechten met Openstaande posten bekijken en Facturatie bekijken aangevinkt, rechts de gebruikers](../images/rollen-financieel.png "Rollen en rechten")
+
+## Hoe rechten optellen
+
+Elke gebruiker heeft een **basisrol**, die u als label naast de naam ziet (bv. **Gebruiker**). Die basisrol laat alles
+bekijken, behalve de financiële onderdelen, en laat niets wijzigen.
+
+De rollen op dit scherm komen daar **bovenop**. Iemand met de basisrol Gebruiker én de rol Financieel mag alles wat
+beide toelaten. Wilt u een collega klanten laten bewerken, maak dan een rol met het recht **Klanten bewerken** en geef
+hem die rol.
+
+## De twee rollen die er al staan
+
+**Tenant-beheerder 🔒** is de beheerder van uw omgeving. Deze rol heeft automatisch álle rechten, ook de rechten die er
+later bij komen. U kunt ze niet bewerken en niet verwijderen. Enkel een Tenant-beheerder kan rollen beheren: dat recht
+kunt u aan geen andere rol geven.
+
+**Financieel** krijgt elke klant vanzelf. Ze draagt standaard twee rechten: **Facturatie bekijken** en **Openstaande
+posten bekijken**. Wie ook facturen maakt, heeft daarnaast **Facturen opmaken** nodig — vink dat aan bij deze rol, of
+maak er een aparte rol voor.
+
+U mag de rol Financieel aanpassen; CleanOps overschrijft uw keuze niet. Verwijdert u ze, dan maakt CleanOps ze bij de
+volgende update opnieuw aan, zonder gebruikers.
+
 ## Een rol aanmaken
 
-1. Kies bovenaan de **Tenant** waarvoor u rollen beheert. Zolang er geen gekozen is, staat er **— kies een tenant —**.
-2. Typ de naam bij **Nieuwe rol** en klik op **Toevoegen**.
+Typ de naam bij **Nieuwe rol** en klik op **Toevoegen**. De nieuwe rol verschijnt in de lijst **Rollen** links, nog
+zonder rechten en zonder gebruikers.
 
-De nieuwe rol verschijnt in de lijst **Rollen** links.
+## De rechten van een rol wijzigen
 
-## Rechten toekennen
+Klik links op de rol. In het midden staan de **Rechten**, gegroepeerd per onderdeel van CleanOps. Vink aan wat deze rol
+mag en klik op **Rechten bewaren**. Bij een geslaagde bewaring verschijnt **✓ bewaard**.
 
-Selecteer een rol in de lijst. Rechts verschijnt **Rechten**: een lijst met vinkvakjes, gegroepeerd per onderdeel van CleanOps. Vink aan wat deze rol mag en klik op **Rechten bewaren**. Bij een geslaagde bewaring verschijnt **✓ bewaard**.
+## Een rol aan iemand geven
 
-Onder **Gebruikers met deze rol** ziet u wie de rol vandaag draagt. Staat daar **Er zijn nog geen gebruikers**, dan is de rol aangemaakt maar nog aan niemand toegekend.
+Klik links op de rol. Rechts, onder **Gebruikers met deze rol**, staan alle gebruikers van uw omgeving. Een vinkje
+betekent: deze persoon draagt de rol.
 
-Met **Rol verwijderen** haalt u een rol weg. Doe dat pas nadat u de gebruikers die hem dragen een andere rol gegeven hebt.
+Vink iemand aan om de rol te geven, of uit om ze af te nemen. Dat wordt **meteen** bewaard — de knop **Rechten
+bewaren** is daarvoor niet nodig.
 
-## De rol Financieel
+## Een rol verwijderen
 
-Elke klant krijgt vanzelf een rol **Financieel**, met de rechten om **facturatie** en de **openstaande posten**
-te bekijken. De standaardrol van een gebruiker draagt die rechten niet: net zoals in uw huidige toepassing
-ziet niet iedereen de financiële onderdelen. Ken de rol toe aan wie ze nodig heeft.
-
-U mag de rol aanpassen; CleanOps overschrijft uw keuze niet. Verwijdert u ze, dan maakt CleanOps ze bij de
-volgende update opnieuw aan, zonder gebruikers.
+Klik links op de rol en daarna op **Rol verwijderen**. CleanOps vraagt eerst een bevestiging: verwijderen is definitief. Wie de rol droeg, verliest
+de rechten die hij enkel via deze rol had. Geef die personen dus eerst een andere rol.
 
 ## Wat een recht doet
 
@@ -37,12 +62,11 @@ Een recht dat u **uitvinkt**, verbergt het scherm én blokkeert het. De menu-ing
 ## Veelgemaakte fouten
 
 !!! warning
-    **Neem nooit het laatste beheerrecht weg.** Vinkt u bij de enige rol die rollen mag beheren dat recht uit, dan kan niemand het nog terugzetten — ook u niet. Maak eerst een tweede rol met dat recht aan, of controleer dat u zelf een andere rol met beheerrechten hebt.
+    **Vink de laatste Tenant-beheerder niet uit.** CleanOps houdt dat niet tegen. Heeft niemand in uw omgeving die rol nog, dan kan niemand bij u nog rollen beheren — ook u niet. Geef eerst een tweede persoon de rol Tenant-beheerder. Is het toch gebeurd, neem dan contact op met ADM-Concept.
 
 !!! info
-    **Een wijziging geldt vanaf de volgende aanmelding.** Iemand die op dit moment werkt, merkt uw aanpassing pas nadat hij zich afmeldt en opnieuw aanmeldt. Vraag de persoon dat te doen wanneer de wijziging dringend is.
+    **Een nieuwe of afgenomen rol geldt vanaf de volgende aanmelding.** Iemand die op dit moment werkt, merkt het pas nadat hij zich afmeldt en opnieuw aanmeldt. Vraag de persoon dat te doen wanneer het dringend is.
 
 ## Zie ook
 
-- [Gebruikers](gebruikers.md) — een rol aan iemand toekennen
-- [Klantenregister](klantenregister.md) — voor welke klant u rollen beheert
+- [Platformbeheer](../platformbeheer.md) — de andere beheertegels

@@ -137,6 +137,16 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Rollen: het fundering-scherm. ⚠️ Een ELEMENT (de drie kolommen) en niet de pagina: bovenaan staat een tenant-keuzelijst
+  // die enkel een ADM-operator ziet — een klant nooit. Die lijst staat bij het openen op "— kies een tenant —", ook als
+  // de demo de actieve tenant is; eerst de demo kiezen, dan de rol Financieel (29/09/2026). De demo heeft geen
+  // gebruikers, dus de rechterkolom zegt "Nog geen gebruikers in deze tenant".
+  { naam: 'rollen-financieel', route: '/beheer/rollen', verwacht: tekstTaal('Rechten — Financieel', 'Droits — Financieel'),
+    element: 'main .row:has(h3)',
+    na: async p => {
+      await p.locator('main select').first().selectOption({ label: 'Demo (demo)' });
+      await p.getByText('Financieel', { exact: true }).first().click();
+    } },
 ];
 
 async function openRij(p, tekst) {
