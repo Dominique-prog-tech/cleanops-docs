@@ -107,10 +107,11 @@ onder `docs/` tot het vervangen is, maar komt niet in de nav.
 vooraf): een module is pas "klaar" als **alle vier** kloppen:
 
 1. Entry in `CleanOpsHelpProvider.cs` (NL + FR).
-2. Docs-pagina (`.md` + `.fr.md`) volledig ingevuld — geen `TODO`-markers meer,
-   op screenshots na.
+2. Docs-pagina (`.md` + `.fr.md`) volledig ingevuld — geen `TODO`-markers meer.
 3. De pagina staat in `mkdocs.yml` → `nav`.
-4. Openstaande screenshots genoteerd in `SCREENSHOTS.md` (repo-root).
+4. **De beelden staan erin, NL én FR**, gemaakt met `tools/beelden.mjs` uit de demo-tenant (zie *Screenshots*).
+   Sinds 29/09/2026 volgt de vrijgave de checklist in `adm-cleanops/docs/vrijgave-overzicht.md`: zijlade,
+   handleiding, screenshots, codecontrole en de visuele controle van Dominique.
 
 ## Vaktermen die uitleg verdienen
 
@@ -141,12 +142,24 @@ vooraf): een module is pas "klaar" als **alle vier** kloppen:
 
 ### Screenshots
 - Formaat: PNG voor UI met tekst, JPG voor foto's
-- Resolutie: max 1920px breed
+- Resolutie: venster 1440 × 900, verdubbeld (deviceScaleFactor 2) voor scherpte — zoals CreditSoft; het script
+  zet dat vast
 - Alt-text altijd beschrijvend
-- **Ik maak zelf geen screenshots van de effectieve app.** Ontbreekt er één op de plek
-  waar de tekst ernaar verwijst, dan noteer ik dat in `SCREENSHOTS.md` (repo-root,
-  buiten `docs/` — nooit gepubliceerd) i.p.v. de pagina erop te laten wachten.
-  Dominique levert de screenshots als laatste stap vóór oplevering van een module.
+- **Beelden komen ALTIJD uit de demo-tenant (`demo`), nooit uit een klant** — Van Parys en D'Hollander dragen
+  echte klantnamen en deze site is publiek (vlootregel, `adm-appkit/docs/handleiding-schrijfregels.md` §4).
+- **Beslist door Dominique op 29/09/2026: de beelden worden GEGENEREERD**, zoals bij CreditSoft. Hier stond "ik maak
+  zelf geen screenshots; Dominique levert ze" — dat is vervangen.
+  1. Lokaal: de preview draait (`https://localhost:7245`), de tenant `demo` bestaat en is gevuld
+     (Platformbeheer → Conversie → *Demo vullen*, enkel zichtbaar in de demo).
+  2. `node tools/beelden.mjs [filter]` — alle recepten in NL en FR naar `docs/images/<naam>.png` en `<naam>-fr.png`.
+     Loopt de preview uit een worktree, zet dan `CLEANOPS_REPO=<pad>` zodat het verslag de juiste commit noemt.
+  3. Het script WEIGERT: een andere tenant dan de demo, een foutscherm, een scherm zonder het merkteken van het recept
+     (`verwacht`), een afwijkende beeldvorm. Een alt-tekst die iets belooft wat niet op het scherm staat, of die geen
+     enkele schermterm met een hoofdletter draagt, wordt gemeld.
+- Een nieuw beeld = een recept in `tools/beelden.mjs` (naam, route, merkteken) + een verwijzing in de pagina.
+  Ontbreekt het beeld nog, dan markeer je de plek in de pagina met `<!-- AFBEELDING: … -->`.
+- **Alt-tekst: de schermwoorden met een hoofdletter**, zoals ze op het scherm staan ("met Code, Taal en Omschrijving") —
+  de controle toetst enkel woorden met een hoofdletter.
 
 ### Markdown
 - Eén `# H1` per pagina (de paginatitel).
@@ -156,7 +169,8 @@ vooraf): een module is pas "klaar" als **alle vier** kloppen:
 
 ### Links
 - Tussen pagina's: relatieve paden met `.md` extensie.
-- Naar afbeeldingen: absoluut vanaf docs-root: `/images/bestand.png`.
+- Naar afbeeldingen: **relatief**, zoals de andere docs-sites: `![volle zin](../images/bestand.png "Korte titel")`
+  vanuit `docs/beheer/`, `images/bestand.png` vanuit `docs/`. Het Franse beeld heet `bestand-fr.png`.
 
 ### Vormgeving — vloot-afspraak
 

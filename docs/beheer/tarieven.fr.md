@@ -4,7 +4,7 @@ Vos codes de facturation : chaque tarif porte une description, une unité, un pr
 Si vous choisissez un tarif sur une ligne de devis, il complète ces champs pour vous. Sur cet écran, vous créez
 des tarifs, vous les modifiez et vous les archivez.
 
-<!-- AFBEELDING: l'aperçu des tarifs avec le bouton Nouveau tarif et le champ de recherche -->
+![La liste avec les colonnes Code, Description, Unité, Prix unitaire et Code TVA, le bouton Nouveau tarif et le champ de recherche](../images/tarieven-lijst-fr.png "Tarifs")
 
 ## Ouvrir l'écran
 
@@ -35,7 +35,7 @@ a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre
 
 **Double-cliquez** sur un tarif dans la liste, ou cliquez sur **Nouveau tarif**. La fiche du tarif s'ouvre.
 
-<!-- AFBEELDING: la fiche d'un tarif avec tous les champs -->
+![La fiche d'un tarif avec Code, Langue, Description, Unité, Prix unitaire, Code TVA, Texte sur la facture et Texte sur le devis](../images/tarief-fiche-fr.png "Un tarif")
 
 | Champ | Ce que vous encodez |
 |---|---|
@@ -58,7 +58,7 @@ subsiste : des ordres de travail, devis et factures plus anciens portent encore 
 Vous le voulez de retour ? En haut de la liste, mettez **Afficher** sur **Aussi les tarifs archivés**, ouvrez le
 tarif et cliquez sur **Rétablir**.
 
-<!-- AFBEELDING: le choix Afficher, déplié -->
+![Le choix Afficher, déplié : Tarifs actifs ou Aussi les tarifs archivés](../images/tarieven-tonen-fr.png "Afficher")
 
 ## Utiliser un tarif sur un devis
 
@@ -69,12 +69,12 @@ facturation.
 Ces champs restent ensuite **librement modifiables**. Le prix du tarif est une valeur de départ : si vous
 l'adaptez sur la ligne, rien ne change au tarif lui-même, ni aux autres devis.
 
-## Le journal
+## L'historique
 
-La fiche d'un tarif porte l'onglet **Journal**. Il montre ce qui a été modifié sur ce tarif, quand, par qui —
+La fiche d'un tarif porte l'onglet **Historique**. Il montre ce qui a été modifié sur ce tarif, quand, par qui —
 et de quelle valeur vers quelle autre.
 
-<!-- AFBEELDING: le journal d'un tarif, avec une modification de prix -->
+![L'Historique d'un tarif : Modifié, avec le Prix unitaire de l'ancienne vers la nouvelle valeur](../images/tarief-logboek-fr.png "Historique")
 
 !!! note "En phase de test"
     Tant que votre entreprise travaille encore dans son application actuelle, CleanOps est un environnement de
@@ -98,8 +98,8 @@ Mettez **Afficher** sur *Aussi les tarifs archivés*. Il a probablement été ar
 documents plus anciens qui y renvoient.
 
 **Le prix sur mon devis ne correspond pas à ce qui figure ici.**
-C'est possible : le prix du tarif est une valeur de départ et peut être adapté sur la ligne. Regardez dans le
-journal du tarif s'il a lui-même été modifié entre-temps.
+C'est possible : le prix du tarif est une valeur de départ et peut être adapté sur la ligne. Regardez dans
+l'historique du tarif s'il a lui-même été modifié entre-temps.
 
 **Il me manque une unité dans la liste de choix.**
 La liste montre les unités déjà utilisées. Ajouter une nouvelle unité n'est pas encore possible ; signalez-le

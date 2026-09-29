@@ -4,7 +4,7 @@ Uw facturatiecodes: elk tarief draagt een omschrijving, een eenheid, een eenheid
 Kiest u een tarief op een offertelijn, dan vult het die velden voor u in. Op dit scherm maakt u tarieven aan,
 past u ze aan en archiveert u ze.
 
-<!-- AFBEELDING: het overzicht van de tarieven met de knop Nieuw tarief en het zoekveld -->
+![De lijst met de kolommen Code, Omschrijving, Eenheid, Eenheidsprijs en Btw-code, de knop Nieuw tarief en het zoekveld](../images/tarieven-lijst.png "Tarieven")
 
 ## Het scherm openen
 
@@ -35,7 +35,7 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 
 **Dubbelklik** op een tarief in de lijst, of klik op **Nieuw tarief**. De fiche van het tarief opent.
 
-<!-- AFBEELDING: de fiche van een tarief met alle velden -->
+![De fiche van een tarief met Code, Taal, Omschrijving, Eenheid, Eenheidsprijs, Btw-code, Tekst op de factuur en Tekst op de offerte](../images/tarief-fiche.png "Een tarief")
 
 | Veld | Wat u invult |
 |---|---|
@@ -58,7 +58,7 @@ blijft bestaan: oudere werkorders, offertes en facturen dragen de code nog.
 Wilt u het terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde tarieven**, open het tarief en klik op
 **Terughalen**.
 
-<!-- AFBEELDING: de keuze Tonen, opengeklapt -->
+![De keuze Tonen, opengeklapt: Actieve tarieven of Ook gearchiveerde tarieven](../images/tarieven-tonen.png "Tonen")
 
 ## Een tarief op een offerte gebruiken
 
@@ -73,7 +73,7 @@ lijn aan, dan verandert er niets aan het tarief zelf, en ook niet aan andere off
 Op de fiche van een tarief staat het tabblad **Logboek**. Het toont wat er aan dat tarief gewijzigd is,
 wanneer, door wie — en van welke waarde naar welke.
 
-<!-- AFBEELDING: het logboek van een tarief, met een prijswijziging -->
+![Het Logboek van een tarief: Gewijzigd, met de Eenheidsprijs van de oude naar de nieuwe waarde](../images/tarief-logboek.png "Logboek")
 
 !!! note "In de testfase"
     Zolang uw bedrijf nog in zijn huidige toepassing werkt, is CleanOps een testomgeving. Bij elke overname

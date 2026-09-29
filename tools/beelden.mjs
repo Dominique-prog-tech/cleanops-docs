@@ -1,0 +1,171 @@
+// De handleidingbeelden van CleanOps, in NL en FR, uit de DEMO-tenant — beslist door Dominique op 29/09/2026.
+//
+//   node tools/beelden.mjs              alle beelden
+//   node tools/beelden.mjs tarie        enkel de beelden waarvan de naam "tarie" bevat
+//
+// Vereist: de app draait lokaal (preview, https://localhost:7245) en de tenant "demo" bestaat en is gevuld
+// (Platformbeheer → Conversie → Demo vullen, enkel zichtbaar in de demo).
+//
+// Naar het model van creditsoft-docs/tools/beelden.mjs, op de GEDEELDE kern (adm-appkit/tools/beeldgenerator):
+//  - schermBesluit: een foutmelding, "geen toegang" of een te leeg scherm is nooit een beeld;
+//  - vormBesluit:   wijkt de afmeting af van het bestaande beeld, dan NIET overschrijven maar melden;
+//  - ontbrekendeTermen: staat wat de alt-tekst belooft ook op het scherm?
+// ⚠️ "Een generator is niet af als hij werkt. Hij is af als hij WEIGERT wanneer hij het niet zeker weet." (kern-README)
+//
+// Beelden: docs/images/<naam>.png (NL) en <naam>-fr.png (FR). De pagina verwijst ernaar met een relatief pad:
+//   ![volle zin](../images/tarieven-lijst.png "Korte titel")
+// Een beeld zonder recept, of een recept zonder verwijzing in de pagina, wordt gemeld.
+
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import { PAKKET } from './app.mjs';
+import { BASIS, DEMO, meldAan, appToestand } from './aansturing.mjs';
+import { NIET_SCHERMTEKST_BASIS, altTermen, ontbrekendeTermen, pngMaat, vormBesluit, schermBesluit }
+  from '/Users/dominique/projects/adm-appkit/tools/beeldgenerator/kern.mjs';
+
+const { chromium } = await import(PAKKET.playwright);
+
+const HIER = new URL('.', import.meta.url).pathname;
+const DOCS = join(HIER, '..', 'docs');
+const BEELDEN = join(DOCS, 'images');
+const filter = process.argv[2] ?? null;
+const BREED = 1440, HOOG = 900;
+
+// Wat NIET op een beeld hoort: het versienummer, de klok, schuifbalken (zie creditsoft-docs: VERBERG_VERSIE).
+const VERBERG = '.nav-version, .adm-klok-vast, .dxbl-scroll-viewer-vert-scroll-bar, .dxbl-scroll-viewer-hor-scroll-bar'
+  + ' { visibility: hidden !important; }'
+  + '::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb { background: transparent !important; }';
+
+// ── De recepten ──────────────────────────────────────────────────────────────────────────────────────────────
+// naam · route · (optioneel) wat er na het openen gebeurt · (optioneel) magKortZijn met reden.
+const tekstTaal = (nl, fr) => new RegExp(`${nl}|${fr}`);
+// ⚠️ ELK RECEPT DRAAGT EEN MERKTEKEN (verwacht): een tekst die op DAT scherm staat en niet op het vorige. Het script
+// WACHT erop en weigert het beeld zonder. Op 29/09/2026 heette een beeld "tarief-fiche" en toonde het de LIJST: de URL
+// was al veranderd, het scherm nog niet hertekend — en geen enkele controle zag het, want de alt-controle had niets
+// te meten (zie hieronder).
+const SCHOTEN = [
+  { naam: 'tarieven-lijst', route: '/beheer/tarieven', verwacht: tekstTaal('Nieuw tarief', 'Nouveau tarif') },
+  { naam: 'tarieven-tonen', route: '/beheer/tarieven', verwacht: tekstTaal('Ook gearchiveerde tarieven', 'Aussi les tarifs archivés'),
+    na: async p => { await p.getByText(tekstTaal('Actieve tarieven', 'Tarifs actifs')).first().click(); } },
+  { naam: 'tarief-fiche', route: '/beheer/tarieven', verwacht: tekstTaal('Tekst op de factuur', 'Texte sur la facture'),
+    na: async p => { await openRij(p, DEMO.tarief); } },
+  { naam: 'tarief-logboek', route: '/beheer/tarieven', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
+    na: async p => { await openRij(p, DEMO.tarief); await p.getByText(tekstTaal('^Logboek$', '^Historique$')).first().click(); },
+    magKortZijn: 'een logboek met twee regels is kort, en dat is juist' },
+];
+
+async function openRij(p, tekst) {
+  await p.getByRole('row').filter({ hasText: tekst }).first().dblclick();
+  // De URL alleen is NIET genoeg: Blazor wisselt de URL vóór het scherm hertekend is. Het merkteken van het recept
+  // (verwacht) is de echte wachtgrens.
+  await p.waitForURL(/\/[0-9a-f-]{36}$/, { timeout: 15000 });
+}
+
+// ── De alt-teksten uit de pagina's: per beeld de zin die de pagina belooft ────────────────────────────────────
+function altUitPaginas() {
+  const alt = {};
+  const loop = map => {
+    for (const e of readdirSync(map, { withFileTypes: true })) {
+      const pad = join(map, e.name);
+      if (e.isDirectory()) { if (e.name !== 'images') loop(pad); continue; }
+      if (!e.name.endsWith('.md')) continue;
+      for (const m of readFileSync(pad, 'utf8').matchAll(/!\[([^\]]*)\]\((?:\.\.\/)*images\/([^)"\s]+)\.png/g))
+        alt[m[2]] ??= m[1];
+    }
+  };
+  loop(DOCS);
+  return alt;
+}
+
+// ── De ronde ────────────────────────────────────────────────────────────────────────────────────────────────
+const ALT = altUitPaginas();
+const toestand = appToestand();
+const browser = await chromium.launch();
+const ctx = await browser.newContext({ viewport: { width: BREED, height: HOOG }, deviceScaleFactor: 2, ignoreHTTPSErrors: true });
+const page = await ctx.newPage();
+
+// ⚠️ Aanmelden ZONDER tenantkeuze, dan eerst de taal op Nederlands, dan pas de demo kiezen. De taalvoorkeur hoort bij
+// de GEBRUIKER: stond ze op Frans (iemand keek net een Frans scherm na), dan heette de knop "Utiliser" en vond de
+// gedeelde meldAan zijn "Gebruiken" niet (29/09/2026). Vandaar ook de knoptekst in beide talen.
+await meldAan(page, false);
+await page.goto(`${BASIS}/culture/set?c=nl-BE`); await page.waitForLoadState('networkidle');
+await page.goto(`${BASIS}/tenants`);
+try { await page.waitForSelector('table', { timeout: 20000 }); }
+catch { console.error('⛔ Geen tenant-lijst na het aanmelden — vermoedelijk is de aanmelding mislukt.'); process.exit(2); }
+await page.locator('tr', { has: page.locator('td', { hasText: /^\s*demo\s*$/ }) }).first()
+  .getByText(/Gebruiken|Utiliser/).click();
+await page.waitForLoadState('networkidle');
+
+// ⛔ DE GRENDEL: nooit beelden uit een echte tenant. Na de tenantkeuze moet de demo ÉCHT actief zijn — meldAan zelf
+// controleert dat niet (hij klikt de rij met "demo" en gaat verder).
+await page.goto(`${BASIS}/beheer/conversie`); await page.waitForLoadState('networkidle');
+const actief = await page.locator('main').innerText();
+if (!/Actieve tenant:\s*demo\b|Tenant actif\s*:\s*demo\b/i.test(actief)) {
+  console.error('⛔ De actieve tenant is niet "demo". Nooit beelden uit een echte tenant maken. Gestopt; niets geschreven.');
+  await browser.close(); process.exit(2);
+}
+
+const geschreven = [], mislukt = [], geweigerd = [], altMissers = [];
+for (const taal of ['nl-BE', 'fr-BE']) {
+  await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
+  const achter = taal.startsWith('fr') ? '-fr' : '';
+  for (const s of SCHOTEN) {
+    if (filter && !s.naam.includes(filter)) continue;
+    const bestand = `${s.naam}${achter}`;
+    try {
+      await page.goto(`${BASIS}${s.route}`); await page.waitForLoadState('networkidle');
+      await page.waitForTimeout(600);
+      if (s.na) await s.na(page);
+      try { await page.getByText(s.verwacht).first().waitFor({ state: 'visible', timeout: 15000 }); }
+      catch { mislukt.push(`${bestand} — het merkteken ${s.verwacht} verscheen niet: dit is niet het beloofde scherm`); continue; }
+      await page.waitForTimeout(400);
+      await page.addStyleTag({ content: VERBERG }).catch(() => {});
+      await page.mouse.move(0, HOOG - 1);            // geen zweeftoestand van de muis op het beeld
+
+      const tekst = await page.locator('body').innerText();
+      const besluit = schermBesluit({ tekst, isElementSchot: false, magKortZijn: Boolean(s.magKortZijn) });
+      if (!besluit.ok) { mislukt.push(`${bestand} — ${besluit.reden}`); continue; }
+
+      const alt = ALT[bestand];
+      if (alt) {
+        // ⚠️ De kern toetst enkel woorden met een HOOFDLETTER. Levert een alt er geen enkele op, dan meet de controle
+        // niets — en dat is geen "in orde" (29/09/2026: vier alt-teksten in kleine letters, nul termen, nul meldingen).
+        if (altTermen(alt, NIET_SCHERMTEKST_BASIS).length === 0)
+          altMissers.push(`${bestand} — de alt-tekst draagt geen enkele schermterm met een hoofdletter; de controle meet niets`);
+        // De veldwaarden staan niet in innerText (DevExpress): lees ze mee, zoals de kern vraagt.
+        const waarden = await page.locator('input, textarea').evaluateAll(els => els.map(e => e.value).join('\n'));
+        const mist = ontbrekendeTermen(alt, `${tekst}\n${waarden}`, NIET_SCHERMTEKST_BASIS);
+        if (mist.length) altMissers.push(`${bestand} — de alt-tekst belooft ${mist.join(', ')}, niet op het scherm`);
+      }
+
+      const png = await page.screenshot();
+      const doel = join(BEELDEN, `${bestand}.png`);
+      const vorm = vormBesluit({
+        bestaandeMaat: existsSync(doel) ? pngMaat(readFileSync(doel)) : null,
+        nieuweMaat: pngMaat(png), isElementSchot: false,
+      });
+      if (vorm.besluit === 'weigeren') { geweigerd.push(`${bestand} — ${vorm.reden}`); continue; }
+      writeFileSync(doel, png);
+      geschreven.push(bestand);
+    } catch (e) {
+      mislukt.push(`${bestand} — ${String(e).split('\n')[0].slice(0, 160)}`);
+    }
+  }
+}
+// De taalvoorkeur hoort bij de gebruiker: laat haar NIET op Frans staan, anders ziet wie daarna in de app werkt een
+// Frans scherm (29/09/2026).
+await page.goto(`${BASIS}/culture/set?c=nl-BE`).catch(() => {});
+await browser.close();
+
+// ── Verantwoording: elk recept in een pagina, elke verwijzing met een beeld ─────────────────────────────────
+const zonderVerwijzing = SCHOTEN.flatMap(s => [s.naam, `${s.naam}-fr`]).filter(n => !(n in ALT));
+const zonderRecept = Object.keys(ALT).filter(n => !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
+
+console.log(`\nApp: ${toestand.sha?.slice(0, 7) ?? '?'}${toestand.vuil ? ' (werkmap VUIL — het beeld toont niet-vastgelegde code)' : ''} · tenant demo`);
+console.log(`✅ ${geschreven.length} beeld(en) geschreven`);
+for (const [kop, lijst] of [['❌ MISLUKT', mislukt], ['⛔ GEWEIGERD (vorm)', geweigerd], ['⚠️ ALT-TEKST', altMissers],
+                             ['⚠️ RECEPT ZONDER VERWIJZING IN EEN PAGINA', zonderVerwijzing],
+                             ['⚠️ VERWIJZING ZONDER RECEPT', zonderRecept]]) {
+  if (lijst.length) { console.log(`\n${kop} (${lijst.length}):`); for (const r of lijst) console.log(`   ${r}`); }
+}
+process.exit(mislukt.length || geweigerd.length ? 1 : 0);
