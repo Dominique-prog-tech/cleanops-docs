@@ -24,6 +24,10 @@ vier onderwerpen:
 
 ## Enkel wat u mag openen
 
+!!! note "Tijdens de testfase"
+    De schermen komen één voor één vrij. Ziet u een tegel die hier beschreven staat nog niet, dan is dat scherm
+    nog niet vrijgegeven — het verschijnt vanzelf zodra het zover is.
+
 U ziet alleen de tegels waarvoor u het recht hebt. Heeft u voor geen enkel scherm uit een groep het recht,
 dan valt die groep helemaal weg — u krijgt geen kop met niets eronder.
 

@@ -25,6 +25,10 @@ Elles sont réparties en quatre thèmes :
 
 ## Uniquement ce que vous pouvez ouvrir
 
+!!! note "Pendant la phase de test"
+    Les écrans sont libérés un par un. Si une tuile décrite ici n'apparaît pas encore, c'est que cet écran
+    n'est pas encore libéré — il apparaîtra de lui-même le moment venu.
+
 Vous ne voyez que les tuiles pour lesquelles vous avez le droit. Si vous n'avez le droit sur aucun écran
 d'un groupe, ce groupe disparaît entièrement — pas de titre sans contenu.
 
