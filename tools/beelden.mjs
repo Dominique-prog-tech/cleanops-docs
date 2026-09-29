@@ -137,6 +137,8 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Prullenbak: de demo legt er een klant en twee medewerkers in (één met 01/01/2000, de zin uit de handleiding).
+  { naam: 'prullenbak', route: '/prullenbak', verwacht: new RegExp(DEMO.prullenbakKlant) },
   // Rollen: het fundering-scherm. ⚠️ Een ELEMENT (de drie kolommen) en niet de pagina: bovenaan staat een tenant-keuzelijst
   // die enkel een ADM-operator ziet — een klant nooit. Die lijst staat bij het openen op "— kies een tenant —", ook als
   // de demo de actieve tenant is; eerst de demo kiezen, dan de rol Financieel (29/09/2026). De demo heeft geen

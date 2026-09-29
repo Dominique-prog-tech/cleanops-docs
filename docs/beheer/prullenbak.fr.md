@@ -6,29 +6,50 @@ Ce que vous supprimez dans CleanOps n'est pas détruit mais mis de côté. L'él
 
 Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Corbeille**.
 
-## Champs et fonctions
+## Ce qui arrive dans la corbeille
 
-La liste affiche trois colonnes par enregistrement supprimé :
+Tout ce que vous supprimez avec le bouton **Supprimer** sur une fiche :
+
+- clients et adresses de clients
+- collaborateurs
+- devis
+- contrats
+- ordres de travail
+
+CleanOps demande d'abord une confirmation et précise que vous retrouverez l'enregistrement dans la corbeille.
+
+Les **données de base** — tarifs, textes de facture, conditions de paiement, codes TVA, tables de base et véhicules —
+n'arrivent pas ici. Vous les archivez sur leur propre écran, et c'est là aussi que vous les rétablissez.
+
+## La liste
+
+![La corbeille avec un client et deux collaborateurs, chacun avec le bouton Restaurer ; le dernier porte la date 01/01/2000](../images/prullenbak-fr.png "Corbeille")
 
 | Colonne | Ce que vous voyez |
 |---|---|
-| **Type** | De quel type d'enregistrement il s'agit — une relation, un article, une personne de contact… |
-| **Nom** | La description à laquelle vous reconnaissez l'enregistrement. |
-| **Supprimé le** | Le moment de la mise de côté. |
+| **Type** | De quel type d'enregistrement il s'agit : Clients, Devis, Ordres de travail… |
+| **Nom** | La description à laquelle vous reconnaissez l'enregistrement, p. ex. le numéro et le nom du client. |
+| **Supprimé le** | Quand il est arrivé dans la corbeille. Les plus récents figurent en haut. |
 
-Filtrez en haut sur **Type** pour limiter la liste à un seul type. Si rien n'a été supprimé, la mention **La corbeille est vide.** s'affiche.
+Si la date est **01/01/2000**, l'enregistrement a été supprimé dans votre application précédente, qui ne notait pas
+quand. Ces enregistrements figurent toujours en bas.
 
-Cliquez en fin de ligne sur **Restaurer** pour remettre l'enregistrement à son ancienne place, avec tout ce qui y était rattaché.
+Cherchez dans le champ de recherche en haut, ou filtrez par colonne. Avec **Exporter**, vous enregistrez la liste en
+fichier Excel, CSV ou PDF. Si rien n'a été supprimé, la mention **La corbeille est vide.** s'affiche.
+
+## Restaurer un enregistrement
+
+Cliquez en fin de ligne sur **Restaurer**. L'enregistrement est immédiatement remis à sa place et disparaît de la
+corbeille. Qui l'a restauré et quand figure dans l'historique de l'enregistrement.
+
+Restaurer requiert le droit **Restaurer des enregistrements**. Consulter la corbeille requiert le droit **Voir la
+corbeille**. Votre administrateur attribue ces droits dans [Rôles](rollen.fr.md).
 
 ## Erreurs fréquentes
 
 !!! warning
-    **Restaurez ensemble les enregistrements liés.** Si vous avez supprimé une relation *et* ses personnes de contact, et que vous ne restaurez que les personnes de contact, celles-ci renvoient à une relation encore dans la corbeille. Dans ce cas, cherchez d'abord l'enregistrement parent et restaurez-le en premier.
-
-!!! info
-    Vous avez besoin du droit adéquat pour restaurer. Si le bouton **Restaurer** n'apparaît pas, demandez à votre administrateur d'ajouter ce droit à votre rôle.
+    **Restaurez d'abord le client, puis son adresse.** Une adresse de client appartient à la fiche de son client. Si le client lui-même est aussi dans la corbeille, vous ne reverrez l'adresse restaurée qu'après avoir restauré le client.
 
 ## Voir aussi
 
-- [Rôles](rollen.fr.md) — attribuer le droit de restaurer
-- [Journal d'audit](actielogboek.fr.md) — vérifier qui a supprimé quelque chose
+- [Rôles](rollen.fr.md) — les droits pour consulter et restaurer

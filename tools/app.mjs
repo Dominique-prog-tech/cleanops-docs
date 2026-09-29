@@ -38,4 +38,6 @@ export const DEMO = {
   voertuig: '1-DEM-001',
   // Het voertuig met de VERLOPEN keuring: de fiche toont dan haar melding in het keuringsblok.
   voertuigKeuring: '1-DEM-003',
+  // De verwijderde demo-klant (DemoDataGenerator.VerzinPrullenbakAsync): het merkteken van het prullenbakbeeld.
+  prullenbakKlant: 'Bakkerij Voorbeeld',
 };
