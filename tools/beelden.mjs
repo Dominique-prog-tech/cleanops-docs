@@ -69,6 +69,16 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Betalingstermijnen: zelfde vorm als Factuurteksten (lijst + venster + journaal van één termijn).
+  { naam: 'betalingstermijnen-lijst', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Nieuwe termijn', 'Nouvelle condition') },
+  { naam: 'betalingstermijn-venster', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Voorbeeld:', 'Exemple :'),
+    na: async p => { await p.getByRole('gridcell', { name: DEMO.termijn, exact: true }).first().dblclick(); } },
+  { naam: 'betalingstermijnen-journaal', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
+    na: async p => {
+      await p.getByRole('gridcell', { name: DEMO.termijn, exact: true }).first().click();
+      const strook = p.locator('.adm-detail-drawer__rail').first();
+      if (await strook.isVisible()) await strook.click();
+    } },
 ];
 
 async function openRij(p, tekst) {

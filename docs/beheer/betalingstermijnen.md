@@ -3,7 +3,7 @@
 Een betalingstermijn bepaalt **wanneer een factuur vervalt**. U kiest er één op een klantfiche; hij komt
 daarna mee op de facturen van die klant.
 
-<!-- AFBEELDING: het overzicht van de betalingstermijnen met de kolom Vervaldag -->
+![De lijst Betalingstermijnen met de kolommen Code, Taal, Omschrijving en Vervaldag, het zoekveld en de knop Nieuwe termijn](../images/betalingstermijnen-lijst.png "Betalingstermijnen")
 
 ## Het scherm openen
 
@@ -17,6 +17,9 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Betaling
 | Taal | in welke taal de omschrijving staat |
 | Omschrijving | de tekst die de gebruiker leest |
 | Vervaldag | de regel in gewone taal, bijvoorbeeld *30 dagen na factuurdatum* |
+
+Het zoekveld staat meteen klaar en zoekt in alle kolommen, ook in de vervaldag: *einde maand* vindt de
+termijnen die vanaf het einde van de maand tellen.
 
 !!! note "Dezelfde code kan twee keer in de lijst staan"
     Dat is geen fout. Een termijn bestaat **per taal**: `30DFD` staat er één keer met een Nederlandse
@@ -43,37 +46,48 @@ Drie stappen, in deze volgorde:
 
 ## Een termijn toevoegen of wijzigen
 
-<!-- AFBEELDING: het venster om een betalingstermijn te bewerken, met het voorbeeld onderaan -->
-
 Klik op **Nieuwe termijn**, of dubbelklik op een bestaande rij.
 
-**Code** en **Taal** liggen vast zodra de termijn bestaat. Klanten en facturen verwijzen naar die code; zou
-die veranderen, dan wijzen ze naar iets dat er niet meer is.
+![Het venster Betalingstermijn bewerken met Code, Taal, Omschrijving, Tellen vanaf, Dagen uitstel, Vaste dag van de maand en het Voorbeeld onderaan](../images/betalingstermijn-venster.png "Een betalingstermijn")
 
-!!! warning "Let op welke termijnen u wijzigt"
-    Termijnen met het merkteken **eigen** hebt u hier zelf aangemaakt. Die blijven staan.
+| Veld | Wat u invult |
+|---|---|
+| **Code** *(verplicht)* | maximaal 10 tekens — zoveel past er op een klantfiche. Ligt vast zodra de termijn bestaat. |
+| **Taal** *(verplicht)* | Nederlands of Frans. Ligt ook vast: code en taal vormen samen de sleutel. |
+| **Omschrijving** *(verplicht)* | maximaal 50 tekens. |
+| **Tellen vanaf** | de factuurdatum, of het einde van de maand. |
+| **Dagen uitstel** | 0 of meer. Bij 0 vervalt de factuur op het startpunt zelf, zoals bij contante betaling. |
+| **Vaste dag van de maand** | 0 tot 31; 0 = geen vaste dag. |
 
-    De andere komen uit uw huidige toepassing en worden bij **elke overname** opnieuw overgenomen. Een
-    wijziging die u hier maakt, verdwijnt dan. Wilt u zo'n termijn aanpassen, doe dat in uw huidige
-    toepassing.
+Code en taal liggen vast omdat klanten en facturen naar die code verwijzen; zou ze veranderen, dan wijzen ze
+naar iets dat er niet meer is. Termijnen die u hier zelf aanmaakt, dragen het merkteken **eigen**.
 
-    Het venster zegt het er ook bij zodra u zo'n termijn opent.
+## Een termijn archiveren of terughalen
 
-## Een termijn afvoeren
+Open de rij en gebruik **Archiveren**. De termijn verdwijnt uit de keuzelijst voor **nieuwe** klanten, maar hij
+blijft bestaan.
 
-Open de rij en gebruik **Afvoeren**. De termijn verdwijnt uit de keuzelijsten maar blijft bestaan.
+!!! note "Klanten die hem al dragen, merken niets"
+    Een klant die de gearchiveerde termijn al heeft, houdt hem: zijn fiche toont hem nog, en zijn facturen
+    krijgen er gewoon hun vervaldag mee. Archiveren is *niet meer kiezen*, niet *weghalen*.
 
-Afvoeren en niet verwijderen, om dezelfde reden als hierboven: bestaande klanten en facturen verwijzen naar
-de code. Zou ze verdwijnen, dan draagt een oude factuur een verwijzing zonder leesbare betekenis.
+Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde termijnen**, open de termijn en klik
+op **Terughalen**.
 
-## Het logboek
+## Het journaal
 
-<!-- AFBEELDING: het logboek open, met een wijziging aan een termijn -->
+Rechts op het scherm zit een strook **Journaal**. Klik een termijn in de lijst aan en open de strook: het
+paneel toont het journaal van die ene termijn, met de code en de taal als titel.
 
-Rechts op het scherm zit een strook met **logboek**. Klik erop en het paneel schuift open.
+![Het journaal van de termijn 30DEM naast de lijst Betalingstermijnen, met het tabblad Logboek: Gewijzigd, met de Omschrijving van de oude naar de nieuwe waarde](../images/betalingstermijnen-journaal.png "Journaal")
 
-Het logboek toont wie welke termijn wanneer gewijzigd heeft, en van welke waarde naar welke. Het toont ook
-wat een overname veranderd heeft — handig wanneer een vervaldag anders uitvalt dan u verwachtte.
+Het tabblad **Logboek** toont wie de termijn wanneer gewijzigd heeft, en van welke waarde naar welke — handig
+wanneer een vervaldag anders uitvalt dan u verwachtte.
+
+!!! note "In de testfase"
+    Zolang uw bedrijf nog in zijn huidige toepassing werkt, is CleanOps een testomgeving. Bij elke overname
+    krijgen de betalingstermijnen weer de waarde uit uw huidige toepassing, en verdwijnen de termijnen die u
+    hier aanmaakte. Bovenaan elk scherm staat dan het label **Testfase**.
 
 ## Veelgestelde vragen
 
@@ -81,12 +95,12 @@ wat een overname veranderd heeft — handig wanneer een vervaldag anders uitvalt
 Eén keer per taal. De omschrijving verschilt, de berekening niet. Zie de kolom **Taal**.
 
 **Ik heb een termijn gewijzigd en na een tijdje stond de oude waarde er weer.**
-Dan kwam die termijn uit uw huidige toepassing. Die wordt bij elke overname opnieuw overgenomen. Alleen
-termijnen met het merkteken **eigen** blijven staan.
+Dan was er intussen een overname vanuit uw huidige toepassing. In de testfase zet elke overname de termijnen
+terug zoals ze daar staan — ook die met het merkteken **eigen** verdwijnen dan.
 
 **Een factuur vervalt op een andere datum dan ik verwachtte.**
 Open de termijn en kijk naar het voorbeeld onderaan het venster: dat rekent met dezelfde regel als de
-facturatie. Kijk ook in het logboek of de termijn tussentijds gewijzigd is.
+facturatie. Kijk ook in het journaal of de termijn tussentijds gewijzigd is.
 
 **Wat betekent een vaste dag van 0?**
 Dat er geen vaste dag gebruikt wordt. De vervaldag is dan gewoon het startpunt plus de dagen uitstel.

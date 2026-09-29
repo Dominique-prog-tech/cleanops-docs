@@ -3,7 +3,7 @@
 Une condition de paiement détermine **quand une facture échoit**. Vous en choisissez une sur une fiche
 client ; elle est ensuite reprise sur les factures de ce client.
 
-<!-- AFBEELDING: l'aperçu des conditions de paiement avec la colonne Échéance -->
+![La liste Conditions de paiement avec les colonnes Code, Langue, Description et Échéance, le champ de recherche et le bouton Nouvelle condition](../images/betalingstermijnen-lijst-fr.png "Conditions de paiement")
 
 ## Ouvrir l'écran
 
@@ -17,6 +17,9 @@ Cliquez sur **Administration** en bas du menu, puis sur la tuile **Conditions de
 | Langue | la langue dans laquelle la description est rédigée |
 | Description | le texte que l'utilisateur lit |
 | Échéance | la règle en langage courant, par exemple *30 jours après date de facture* |
+
+Le champ de recherche est prêt dès l'ouverture et cherche dans toutes les colonnes, y compris l'échéance :
+*fin du mois* trouve les conditions qui comptent à partir de la fin du mois.
 
 !!! note "Un même code peut figurer deux fois dans la liste"
     Ce n'est pas une erreur. Une condition existe **par langue** : `30DFD` y figure une fois avec une
@@ -43,38 +46,50 @@ Trois étapes, dans cet ordre :
 
 ## Ajouter ou modifier une condition
 
-<!-- AFBEELDING: la fenêtre de modification d'une condition, avec l'exemple en bas -->
-
 Cliquez sur **Nouvelle condition**, ou double-cliquez sur une ligne existante.
 
-Le **Code** et la **Langue** sont figés dès que la condition existe. Des clients et des factures renvoient à
-ce code ; s'il changeait, ils pointeraient vers quelque chose qui n'existe plus.
+![La fenêtre Modifier la condition avec Code, Langue, Description, Compter à partir de, Jours de délai, Jour fixe du mois et l'Exemple en bas](../images/betalingstermijn-venster-fr.png "Une condition de paiement")
 
-!!! warning "Attention aux conditions que vous modifiez"
-    Les conditions portant la mention **propre**, vous les avez créées ici. Celles-là subsistent.
+| Champ | Ce que vous complétez |
+|---|---|
+| **Code** *(obligatoire)* | 10 caractères au maximum — c'est ce qui tient sur une fiche client. Figé dès que la condition existe. |
+| **Langue** *(obligatoire)* | néerlandais ou français. Également figée : le code et la langue forment ensemble la clé. |
+| **Description** *(obligatoire)* | 50 caractères au maximum. |
+| **Compter à partir de** | la date de facture, ou la fin du mois. |
+| **Jours de délai** | 0 ou plus. À 0, la facture échoit au point de départ même, comme pour un paiement comptant. |
+| **Jour fixe du mois** | 0 à 31 ; 0 = pas de jour fixe. |
 
-    Les autres proviennent de votre application actuelle et sont reprises à **chaque reprise**. Une
-    modification faite ici disparaît alors. Si vous voulez adapter une telle condition, faites-le dans votre
-    application actuelle.
+Le code et la langue sont figés parce que des clients et des factures renvoient à ce code ; s'il changeait, ils
+pointeraient vers quelque chose qui n'existe plus. Les conditions que vous créez ici portent la mention
+**propre**.
 
-    La fenêtre vous le signale également dès que vous ouvrez une condition de ce type.
+## Archiver ou rétablir une condition
 
-## Retirer une condition
+Ouvrez la ligne et utilisez **Archiver**. La condition disparaît de la liste de choix pour les **nouveaux**
+clients, mais elle continue d'exister.
 
-Ouvrez la ligne et utilisez **Supprimer**. La condition disparaît des listes de choix mais continue
-d'exister.
+!!! note "Les clients qui la portent déjà ne remarquent rien"
+    Un client qui a déjà la condition archivée la garde : sa fiche la montre toujours, et ses factures en
+    reçoivent normalement leur échéance. Archiver, c'est *ne plus choisir*, pas *retirer*.
 
-Retirer et non effacer, pour la même raison que ci-dessus : des clients et des factures renvoient au code.
-S'il disparaissait, une ancienne facture porterait une référence sans signification lisible.
+Vous la voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi les conditions archivées**,
+ouvrez la condition et cliquez sur **Rétablir**.
 
 ## Le journal
 
-<!-- AFBEELDING: le journal ouvert, avec une modification d'une condition -->
+À droite de l'écran se trouve une bande **Journal**. Sélectionnez une condition dans la liste et ouvrez la
+bande : le panneau montre le journal de cette condition, avec le code et la langue comme titre.
 
-À droite de l'écran se trouve une bande portant **journal**. Cliquez dessus et le panneau s'ouvre.
+![Le journal de la condition 30DEM à côté de la liste Conditions de paiement, avec l'onglet Historique : Modifié, avec la Description de l'ancienne vers la nouvelle valeur](../images/betalingstermijnen-journaal-fr.png "Journal")
 
-Le journal indique qui a modifié quelle condition et quand, et de quelle valeur vers quelle autre. Il montre
-aussi ce qu'une reprise a changé — utile lorsqu'une échéance tombe autrement que prévu.
+L'onglet **Historique** indique qui a modifié la condition et quand, et de quelle valeur vers quelle autre —
+utile lorsqu'une échéance tombe autrement que prévu.
+
+!!! note "Pendant la phase de test"
+    Tant que votre entreprise travaille encore dans son application actuelle, CleanOps est un environnement de
+    test. À chaque reprise, les conditions de paiement reprennent la valeur de votre application actuelle, et
+    les conditions que vous avez créées ici disparaissent. L'étiquette **Phase de test** figure alors en haut de
+    chaque écran.
 
 ## Questions fréquentes
 
@@ -82,8 +97,8 @@ aussi ce qu'une reprise a changé — utile lorsqu'une échéance tombe autremen
 Une fois par langue. La description diffère, le calcul non. Voyez la colonne **Langue**.
 
 **J'ai modifié une condition et après un certain temps l'ancienne valeur était revenue.**
-C'est que cette condition provenait de votre application actuelle. Elle est reprise à chaque reprise. Seules
-les conditions portant la mention **propre** subsistent.
+Entre-temps, une reprise depuis votre application actuelle a eu lieu. Pendant la phase de test, chaque reprise
+remet les conditions telles qu'elles y figurent — celles marquées **propre** disparaissent alors aussi.
 
 **Une facture échoit à une autre date que celle que j'attendais.**
 Ouvrez la condition et regardez l'exemple en bas de la fenêtre : il applique la même règle que la

@@ -28,4 +28,6 @@ export const DEMO = {
   factuurtekst: 'BTW6%',
   // De tekst die DemoDataGenerator wijzigt, zodat haar journaal een echte "Gewijzigd"-regel toont.
   gewijzigdeFactuurtekst: 'VOORW',
+  // De termijn die DemoDataGenerator rechtzet ("einde der maand" → "einde maand"): venster én journaal.
+  termijn: '30DEM',
 };
