@@ -52,6 +52,23 @@ const SCHOTEN = [
   { naam: 'tarief-logboek', route: '/beheer/tarieven', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
     na: async p => { await openRij(p, DEMO.tarief); await p.getByText(tekstTaal('^Logboek$', '^Historique$')).first().click(); },
     magKortZijn: 'een logboek met twee regels is kort, en dat is juist' },
+  // Factuurteksten: een lijst met een pop-upvenster (vier velden, geen fiche) en het logboek als zijlade.
+  { naam: 'factuurteksten-lijst', route: '/beheer/factuurteksten', verwacht: tekstTaal('Nieuwe tekst', 'Nouveau texte') },
+  { naam: 'factuurtekst-venster', route: '/beheer/factuurteksten',
+    verwacht: tekstTaal('Wettelijke vermelding bij 6 % btw', 'Mention légale TVA 6 %'),
+    na: async p => { await p.getByRole('row').filter({ hasText: DEMO.factuurtekst }).first().dblclick(); } },
+  // Het journaal van ÉÉN tekst (Journaal-rail zoals Nimble en CreditSoft): eerst de rij aanklikken, dan de strook openen.
+  { naam: 'factuurteksten-journaal', route: '/beheer/factuurteksten', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
+    na: async p => {
+      // ⚠️ De CEL met exact die code, niet hasText op de rij: dat is een hoofdletterongevoelige deeltekst, en "VOORW" zit
+      // ook in "aannemingsvoorwaarden" van rij 9999 — die kwam eerst en werd aangeklikt (29/09/2026).
+      await p.getByRole('gridcell', { name: DEMO.gewijzigdeFactuurtekst, exact: true }).first().click();
+      // ⚠️ Op de KLASSE van de zijlade-strook en niet op de naam: /logboek|journal/ ving in het Frans eerst een ander
+      // element. En enkel klikken als ze ZICHTBAAR is: het paneel onthoudt dat het open stond (DrawerId), en dan is
+      // de strook weg — de Franse ronde liep daarop vast.
+      const strook = p.locator('.adm-detail-drawer__rail').first();
+      if (await strook.isVisible()) await strook.click();
+    } },
 ];
 
 async function openRij(p, tekst) {

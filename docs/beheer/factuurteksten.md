@@ -3,7 +3,7 @@
 Factuurteksten zijn de **standaardteksten die onderaan een factuur kunnen staan**: btw-vermeldingen,
 algemene voorwaarden, het attest bij een renovatie aan 6 %.
 
-<!-- AFBEELDING: het overzicht van de factuurteksten met het merkteken 6 % btw -->
+![De lijst Factuurteksten met de kolommen Code, Taal en Tekst, het merkteken 6 % btw en de knop Nieuwe tekst](../images/factuurteksten-lijst.png "Factuurteksten")
 
 !!! warning "Eén van deze teksten komt er vanzelf op"
     De tekst met het merkteken **6 % btw** wordt **automatisch** onderaan elke factuur gezet waarop 6 % btw
@@ -23,7 +23,7 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Factuurt
 | Code | de korte sleutel uit uw huidige toepassing, bijvoorbeeld `BTW6%` of `VOORW` |
 | Taal | in welke taal de tekst staat |
 | Tekst | het **begin** van de tekst — open de rij om ze voluit te zien |
-| Merktekens | **6 % btw**, **eigen** of **afgevoerd** |
+| Merktekens | **6 % btw**, **eigen** of **gearchiveerd** |
 
 De kolom Tekst is afgekapt met opzet: het renovatie-attest is meer dan vierhonderd tekens en zou de lijst
 onleesbaar maken. Dubbelklik op een rij om de hele tekst te zien en te wijzigen.
@@ -54,34 +54,56 @@ Franstalig, dan komt er **geen** vermelding op die factuur.
 
 ## Een tekst wijzigen of toevoegen
 
-Dubbelklik op een rij, of gebruik **Nieuwe tekst**. Code en taal staan vast zodra een tekst bestaat — ze
-vormen samen de sleutel.
+Dubbelklik op een rij, of gebruik **Nieuwe tekst**. Het venster toont de hele tekst.
 
-Teksten met het merkteken **eigen** hebt u hier zelf aangemaakt; die blijven staan. De andere komen uit uw
-huidige toepassing en worden **bij elke overname overschreven**. Het venster waarschuwt u daarvoor zodra u
-zo'n rij opent. Wilt u die tekst blijvend anders hebben, wijzig hem dan in uw huidige toepassing.
+![Het venster Factuurtekst bewerken met Code, Taal, Tekst en het vinkje Wettelijke vermelding bij 6 % btw](../images/factuurtekst-venster.png "Een factuurtekst")
 
-## Een tekst afvoeren
+| Veld | Wat u invult |
+|---|---|
+| **Code** *(verplicht)* | maximaal 5 tekens, zoals in uw huidige toepassing. Ligt vast zodra de tekst bewaard is. |
+| **Taal** *(verplicht)* | Nederlands of Frans. Ligt ook vast: code en taal vormen samen de sleutel. |
+| **Tekst** *(verplicht)* | de volledige tekst, zoals hij onderaan de factuur komt. |
+| **Wettelijke vermelding bij 6 % btw** | zie hierboven: één tekst per taal. |
 
-Open de rij en gebruik **Afvoeren**. De tekst verdwijnt uit de lijst maar blijft bestaan.
+Klik op **Opslaan**. Teksten die u hier zelf aanmaakt, dragen het merkteken **eigen**.
 
-Afvoeren en niet verwijderen: facturen die al gemaakt zijn dragen de tekst als **kopie**, dus ze veranderen
+## Een tekst archiveren of terughalen
+
+Open de rij en gebruik **Archiveren**. De tekst verdwijnt uit de lijst maar blijft bestaan.
+
+Archiveren en niet verwijderen: facturen die al gemaakt zijn dragen de tekst als **kopie**, dus ze veranderen
 niet mee. De code blijft wel een verwijzing waard wanneer u later wil nakijken welke tekst er gebruikt werd.
+
+Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde teksten**, open de tekst en klik op
+**Terughalen**.
+
+!!! note "Een gearchiveerde tekst houdt zijn vinkje"
+    Draagt een gearchiveerde tekst het vinkje **6 % btw**, dan kunt u het niet op een andere tekst in die taal
+    zetten: bij het terughalen zouden er anders twee zijn. CleanOps noemt de tekst en zegt dat hij
+    gearchiveerd is. Haal hem terug, haal het vinkje weg en archiveer hem opnieuw.
 
 ## Waar u de tekst terugziet
 
 Op de fiche van een factuur staat onderaan het blok **Slottekst** — daar leest u wat er werkelijk op die
-factuur is komen te staan. Staat er niets, dan is het blok er ook niet.
+factuur is komen te staan. Staat er niets, dan is het blok er ook niet. (Het scherm **Facturen** komt in de
+testfase later vrij.)
 
-## Het logboek
+## Het journaal
 
-<!-- AFBEELDING: het logboek open, met een wijziging aan een factuurtekst -->
+Rechts op het scherm zit een strook **Journaal**. Klik een tekst in de lijst aan en open de strook: het paneel
+toont het journaal van die ene tekst, met de code en de taal als titel. Klikt u een andere tekst aan, dan
+wisselt het journaal mee.
 
-Rechts op het scherm zit een strook met **logboek**. Klik erop en het paneel schuift open.
+![Het journaal van de tekst VOORW naast de lijst Factuurteksten, met het tabblad Logboek: Gewijzigd, met de Tekst van de oude naar de nieuwe waarde](../images/factuurteksten-journaal.png "Journaal")
 
-Het logboek toont wie welke tekst wanneer gewijzigd heeft, en van welke waarde naar welke. Bij een
+Het tabblad **Logboek** toont wie de tekst wanneer gewijzigd heeft, en van welke waarde naar welke. Bij een
 wettelijke vermelding is dat meer dan netheid: het laat zien wanneer de zin op uw facturen veranderd is, en
-door wie.
+door wie. Alle wijzigingen aan alle teksten samen vindt u in het **Actielogboek** (Platformbeheer → Historiek; dat scherm komt in de testfase later vrij).
+
+!!! note "In de testfase"
+    Zolang uw bedrijf nog in zijn huidige toepassing werkt, is CleanOps een testomgeving. Bij elke overname
+    krijgen de factuurteksten weer de waarde uit uw huidige toepassing, en verdwijnen de teksten die u hier
+    aanmaakte. Bovenaan elk scherm staat dan het label **Testfase**.
 
 ## Veelgestelde vragen
 
@@ -90,11 +112,12 @@ Alleen die met het merkteken **6 % btw**, en alleen op facturen waarop 6 % btw v
 klaar als naslag; ze worden vandaag niet automatisch gebruikt.
 
 **Ik heb een tekst gewijzigd en na een tijdje stond de oude er weer.**
-Dan kwam die tekst uit uw huidige toepassing. Die wordt bij elke overname opnieuw overgenomen. Alleen
-teksten met het merkteken **eigen** blijven staan.
+Dan was er intussen een overname vanuit uw huidige toepassing. In de testfase zet elke overname de teksten
+terug zoals ze daar staan — ook die met het merkteken **eigen** verdwijnen dan.
 
 **Waarom staat er op mijn Franstalige factuur met 6 % geen vermelding?**
 Omdat er nog geen Franse tekst met het merkteken **6 % btw** bestaat. Maak er een en zet het vinkje.
 
 **Kan ik zelf een tekst op een factuur zetten?**
-Nog niet. Vandaag gebeurt dat alleen automatisch voor de 6 %-vermelding.
+Nee, en dat is een keuze. Een wettelijke vermelding die van een klik afhangt, ontbreekt vroeg of laat —
+daarom zet CleanOps ze zelf, op basis van de btw op de factuur. Vandaag gebeurt dat voor de 6 %-vermelding.

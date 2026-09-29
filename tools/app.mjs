@@ -24,4 +24,8 @@ export const BASIS = PAKKET.basis;
 // krijgt bij elk opnieuw vullen nieuwe sleutels.
 export const DEMO = {
   tarief: 'Afvalwater',
+  // De rij met de 6 %-attestzin: het venster toont dan het vinkje dat dit scherm bijzonder maakt.
+  factuurtekst: 'BTW6%',
+  // De tekst die DemoDataGenerator wijzigt, zodat haar journaal een echte "Gewijzigd"-regel toont.
+  gewijzigdeFactuurtekst: 'VOORW',
 };
