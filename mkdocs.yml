@@ -121,13 +121,9 @@ plugins:
             # vier van de zes Beheer-items stonden er nog in het Nederlands.
             Tarieven: Tarifs
             Betalingstermijnen: Conditions de paiement
-            Klantenregister: Registre des clients
             Rollen: Rôles
             Prullenbak: Corbeille
             Actielogboek: Journal des actions
-            Conversie: Conversion
-            Generatie: Génération des ordres de travail
-            Overstap: Basculement
             Home: Accueil
             Aan de slag: Premiers pas
             Installatie: Installation
@@ -221,11 +217,6 @@ nav:
     - Betalingstermijnen: beheer/betalingstermijnen.md
     - Factuurteksten: beheer/factuurteksten.md
     - Voertuigen: beheer/voertuigen.md
-    - Klantenregister: beheer/klantenregister.md
-    - Gebruikers: beheer/gebruikers.md
     - Rollen: beheer/rollen.md
-    - Conversie: beheer/conversie.md
-    - Generatie: beheer/generatie.md
-    - Overstap: beheer/overstap.md
     - Prullenbak: beheer/prullenbak.md
     - Actielogboek: beheer/actielogboek.md
