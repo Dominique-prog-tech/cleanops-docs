@@ -1,53 +1,77 @@
 # Voertuigen
 
 Hier staat **uw vloot**: per voertuig het kenteken, het merk, de soort, de tankinhoud, het onderhoud, de
-documenten en een herinnering voor de keuring.
+bijlagen en een herinnering voor de keuring.
 
-<!-- AFBEELDING: het overzicht van de voertuigen met de kolom Volgende keuring -->
+![De lijst met de kolommen Kenteken, Merk, Soort, Omschrijving en Volgende keuring, de knop Nieuw voertuig en het zoekveld](../images/voertuigen-lijst.png "Voertuigen")
 
 ## Het scherm openen
 
-Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Voertuigen**.
-
-## Waarom de meeste velden nog leeg zijn
-
-Uw huidige toepassing kent van een voertuig maar **twee** dingen: het kenteken en één omschrijving. Merk,
-soort, chassisnummer, eerste inschrijving, keuring en tankinhoud zijn **nieuw**.
-
-Ze zijn dus nog nergens ingevuld. U vult ze hier aan, per voertuig, en **ze blijven staan** — ook wanneer de
-gegevens opnieuw uit uw huidige toepassing overgenomen worden.
-
-!!! note "De omschrijving hoort niet bij die nieuwe velden"
-    De kolom **Omschrijving** komt wél uit uw huidige toepassing en wordt daar beheerd. Bij elke overname
-    wordt ze opnieuw opgehaald. Wilt u die tekst aanpassen, doe dat dan in uw huidige toepassing — een
-    wijziging hier zou verdwijnen.
-
-    Daarom staat die tekst naast merk en soort en niet in de plaats ervan: vandaag is het het enige wat
-    gevuld is, en het is vrije tekst — *"MAN TREKKER"*, *"oplegger"*, *"man + oplegger"*.
+Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Voertuigen**. De cursor staat meteen in
+het zoekveld: typ een kenteken, een merk, een soort of een deel van de omschrijving.
 
 ## De lijst
 
 | Kolom | Wat het is |
 |---|---|
 | Kenteken | de nummerplaat; dit is de sleutel waarnaar werkorders en werkbonnen verwijzen |
-| Merk | het merk, bijvoorbeeld MAN of Vervaet |
-| Soort | trekker, oplegger, kolkenzuiger… — u beheert die lijst zelf, zie hieronder |
-| Omschrijving | de tekst uit uw huidige toepassing |
+| Merk | het merk, bijvoorbeeld Scania of DAF |
+| Soort | kolkenzuiger, trekker, oplegger… — u beheert die lijst zelf, zie verderop |
+| Omschrijving | een korte vrije tekst, bijvoorbeeld *"Scania kolkenzuiger"* |
 | Volgende keuring | de datum, gekleurd zodra ze nadert of voorbij is |
 
-Met **Tonen** kiest u of afgevoerde voertuigen meedoen. De teller ernaast zegt hoeveel er getoond worden van
-hoeveel in totaal.
+Bovenaan staat een teller: hoeveel voertuigen u ziet. Worden er niet alle getoond, dan staat er ook hoeveel
+er in totaal zijn. Een voertuig dat u zelf aanmaakte, draagt het label **eigen**; een gearchiveerd voertuig het label
+**gearchiveerd**.
 
-## De soorten zelf beheren
+Met **Tonen** kiest u tussen **Actieve voertuigen** en **Ook gearchiveerde voertuigen**.
 
-De lijst met soorten is **van u**. Ga naar **Platformbeheer → Basistabellen** en kies bovenaan de lijst
-**Soorten voertuig**. Daar voegt u toe wat u nodig hebt, in het Nederlands en het Frans.
+## Het journaal van een voertuig
 
-!!! warning "Staat er niets in, dan is de keuzelijst op de fiche leeg"
-    Dat is geen storing. Vul eerst een paar soorten aan bij Basistabellen; daarna kunt u ze op elke
-    voertuigfiche kiezen.
+Klik een voertuig in de lijst aan en open rechts de strook **Journaal**. Daar ziet u, zonder de fiche te
+openen:
 
-## Water- en slibinhoud staan apart
+- de **Bijlagen** van dat voertuig;
+- het **Logboek**: wie welk veld wanneer gewijzigd heeft, en van welke waarde naar welke.
+
+Kiest u een ander voertuig, dan volgt het journaal mee.
+
+![Het journaal van een voertuig: het logboek toont Gewijzigd, met de omschrijving van de oude naar de nieuwe waarde](../images/voertuigen-journaal.png "Journaal")
+
+## Een voertuig toevoegen of openen
+
+Klik op **Nieuw voertuig**, of dubbelklik op een rij om de fiche te openen.
+
+![De fiche van een voertuig met de blokken Voertuig, Inschrijving en keuring en Inhoud, en de melding dat de keuring verlopen is](../images/voertuig-fiche.png "Een voertuig")
+
+De fiche heeft vier tabbladen:
+
+| Tabblad | Wat er staat |
+|---|---|
+| Fiche | de gegevens van het voertuig, in drie blokken |
+| Onderhoud | de onderhoudsbeurten van dit voertuig |
+| Bijlagen | het keuringsbewijs, de inschrijving, de verzekering… |
+| Logboek | wie wat wanneer gewijzigd heeft aan het voertuig |
+
+### Het blok Voertuig
+
+| Veld | Wat u invult |
+|---|---|
+| **Kenteken** *(verplicht)* | maximaal 10 tekens. Ligt vast zodra het voertuig bewaard is. |
+| **Omschrijving** *(verplicht)* | maximaal 50 tekens, bijvoorbeeld *"MAN trekker"* of *"oplegger"*. |
+| **Merk** | maximaal 40 tekens. |
+| **Soort** | een keuze uit uw lijst met soorten. |
+| **Chassisnummer** | maximaal 30 tekens. |
+
+Het **kenteken** ligt vast omdat werkorders en werkbonnen ernaar verwijzen: zou het veranderen, dan wijzen ze
+naar iets dat er niet meer is.
+
+### Het blok Inschrijving en keuring
+
+**Eerste inschrijving** en **Volgende keuring**. Is de keuring verlopen, of valt ze binnen 30 dagen, dan staat
+er in dit blok een melding. Meer daarover bij *De keuring en haar herinnering*, verderop.
+
+### Het blok Inhoud
 
 Een kolkenzuiger heeft **twee** compartimenten, en dat verschil bepaalt wat hij kan ophalen. Daarom zijn het
 twee velden en geen totaal:
@@ -57,97 +81,87 @@ twee velden en geen totaal:
 
 !!! tip "Laat ze leeg bij een voertuig zonder tank"
     Bij een trekker of een oplegger vult u niets in. **Leeg** betekent *niet van toepassing*; **0** zou
-    betekenen dat het voertuig een tank heeft die niets kan bevatten. Met nullen overal wordt een lijst op
-    inhoud onleesbaar.
+    betekenen dat het voertuig een tank heeft die niets kan bevatten.
+
+Klik op **Opslaan** om uw wijzigingen te bewaren, of op **Annuleren** om ze weg te gooien.
+
+## De soorten zelf beheren
+
+De lijst met soorten is **van u**. Ga naar **Platformbeheer → Basistabellen** en kies bovenaan de lijst
+**Soorten voertuig**. Daar voegt u toe wat u nodig hebt, in het Nederlands en het Frans.
+
+Archiveert u daar een soort, dan kunt u ze niet meer kiezen voor een ander voertuig. Een voertuig dat die soort
+al draagt, houdt ze wel.
 
 ## De keuring en haar herinnering
 
-<!-- AFBEELDING: de melding op de startpagina dat er voertuigen op keuring wachten -->
+![De melding op de startpagina dat voertuigen op hun keuring wachten, met de link Naar de voertuigen](../images/voertuigen-keuringsherinnering.png "Keuringsherinnering")
 
 Vult u bij een voertuig **Volgende keuring** in, dan herinnert CleanOps u eraan. Vanaf **30 dagen** vóór die
 datum ziet u het op vier plaatsen:
 
 | Waar | Wat u ziet |
 |---|---|
-| uw startpagina | een melding *"3 voertuigen wachten op hun keuring"* |
+| uw startpagina | een melding, bijvoorbeeld *"2 voertuigen wachten op hun keuring"* |
 | de lijst | de datum oranje, of **rood en vet** zodra ze voorbij is |
-| boven de lijst | een teller *"3 te keuren"* |
-| de fiche zelf | een melding boven de velden van dát voertuig |
+| boven de lijst | een teller, bijvoorbeeld *"2 te keuren"* |
+| de fiche zelf | een melding in het blok **Inschrijving en keuring** |
 
 !!! note "Zonder datum is er niets om aan te herinneren"
-    Een voertuig waarbij **Volgende keuring** leeg is, komt in geen enkele van die vier tellers voor. Dat is
-    met opzet: aan een datum die niemand kent, kan CleanOps niet herinneren. Zou zo'n voertuig meetellen,
-    dan stond er vandaag een melding over uw hele vloot — en een teller die alles aanwijst, wijst niets aan.
-
-    Het gevolg is wel dat de herinnering **stil blijft** tot u de datums invult. Begin daarmee bij de
-    voertuigen die binnenkort aan de beurt zijn.
-
-## Een voertuig toevoegen of openen
-
-Klik op **Nieuw voertuig**, of dubbelklik op een rij om de fiche te openen.
-
-Het **kenteken** ligt vast zodra het voertuig bestaat: werkorders en werkbonnen verwijzen ernaar, en zou het
-veranderen, dan wijzen ze naar iets dat er niet meer is.
-
-De fiche heeft vier tabbladen:
-
-| Tabblad | Wat er staat |
-|---|---|
-| Fiche | de velden hierboven |
-| Onderhoud | de onderhoudsbeurten van dit voertuig |
-| Documenten | het keuringsbewijs, de inschrijving, de verzekering… |
-| Logboek | wie wat wanneer gewijzigd heeft aan het voertuig |
+    Een voertuig waarbij **Volgende keuring** leeg is, telt niet mee: aan een datum die niemand kent, kan
+    CleanOps niet herinneren. Ook een gearchiveerd voertuig telt niet mee — het rijdt niet meer.
 
 ## Onderhoud bijhouden
 
-<!-- AFBEELDING: het venster voor een onderhoudsbeurt met de controlepunten -->
+Op het tabblad **Onderhoud** staat elke beurt met haar datum, de kilometerstand, de controlepunten die
+afgevinkt zijn en een nota. De jongste staat bovenaan.
 
-Op het tabblad **Onderhoud** staat elke beurt met zijn datum, de kilometerstand, een nota en de
-controlepunten die afgevinkt zijn. De jongste staat bovenaan.
+Klik op **Nieuwe beurt**, of dubbelklik op een bestaande beurt om ze te wijzigen.
 
-Klik op **Nieuwe beurt**, of dubbelklik op een bestaande beurt om ze te wijzigen. Alleen de **datum** is
-verplicht.
+![Het venster Onderhoudsbeurt bewerken met Uitgevoerd op, Kilometerstand, de controlepunten en een nota](../images/voertuig-onderhoud.png "Een onderhoudsbeurt")
 
-De **controlepunten** zijn vaste onderdelen van een beurt: hydraulische olie, olie smeren, olie vervangen,
-controle onderdelen, luchtfilter, brandstoffilter en inspecties. U vinkt aan wat er gedaan is.
+| Veld | Wat u invult |
+|---|---|
+| **Uitgevoerd op** *(verplicht)* | de datum van de beurt. |
+| **Kilometerstand** | niet negatief. Leeg laten mag: een oplegger heeft geen teller. |
+| **Controlepunten** | vink aan wat er gedaan is: hydraulische olie, olie smeren, olie vervangen, controle onderdelen, luchtfilter, brandstoffilter, inspecties. |
+| **Nota** | vrije tekst. |
 
-!!! tip "Kilometerstand leeg laten is toegestaan"
-    Niet elk voertuig heeft een teller — een oplegger niet. Laat het veld dan leeg.
+**Een beurt archiveren of terughalen.** In het venster van een beurt staat **Archiveren**. De beurt verdwijnt
+dan uit de lijst, maar blijft bewaard. Zet bovenaan het tabblad **Tonen** op **Ook gearchiveerde beurten**,
+open de beurt en klik op **Terughalen** om ze terug te zetten.
 
-## Documenten aan een voertuig hangen
+## Bijlagen aan een voertuig hangen
 
-Op het tabblad **Documenten** sleept u bestanden naar het voertuig: het keuringsbewijs, de inschrijving, de
+Op het tabblad **Bijlagen** sleept u bestanden naar het voertuig: het keuringsbewijs, de inschrijving, de
 verzekering, een factuur van een herstelling.
 
-!!! note "Dit bestond nog niet"
-    In uw huidige toepassing kan er geen enkel document aan een voertuig hangen. Alles wat u hier oplaadt,
-    is dus nieuw en blijft bewaard.
+## Een voertuig archiveren of terughalen
 
-## Een voertuig afvoeren
+Op de fiche staat onderaan rechts **Archiveren**. Een gearchiveerd voertuig verdwijnt uit de keuzelijsten en uit
+de keuringsherinnering, maar het blijft bestaan: werkorders en werkbonnen dragen het kenteken nog.
 
-Open de fiche en gebruik **Afvoeren**. Het voertuig verdwijnt uit de keuzelijsten maar blijft bestaan; met
-**Terughalen** komt het weer terug, en het staat ook in de **Prullenbak**.
-
-Afvoeren en niet verwijderen: bestaande werkorders en werkbonnen verwijzen naar het kenteken. Een afgevoerd
-voertuig komt ook niet meer in de keuringsherinnering — het rijdt niet meer.
+Wilt u het terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde voertuigen**, open het voertuig en klik
+op **Terughalen**.
 
 ## Het logboek
 
-Het tabblad **Logboek** toont wie welk veld wanneer gewijzigd heeft aan dit voertuig, en van welke waarde
-naar welke. Ook wat een overname veranderd heeft, staat erin.
+Het tabblad **Logboek** op de fiche — of het journaal rechts van de lijst — toont wie welk veld wanneer
+gewijzigd heeft aan dit voertuig, en van welke waarde naar welke.
 
 !!! note "Het logboek gaat over het voertuig, niet over zijn onderhoud"
-    Voegt u een onderhoudsbeurt toe, dan verschijnt dat **niet** in het logboek. Het tabblad **Onderhoud**
-    is zelf de geschiedenis van de beurten — daar staat elke beurt met haar datum.
+    Voegt u een onderhoudsbeurt toe, dan verschijnt dat **niet** in het logboek van het voertuig. Het
+    tabblad **Onderhoud** is zelf de geschiedenis van de beurten.
 
-## Veelgestelde vragen
+## Veelgemaakte fouten
+
+!!! warning "Het kenteken bestaat al"
+    Een kenteken kan maar één keer bestaan, ook in andere hoofdletters (*1-abc-123* is *1-ABC-123*) en ook
+    wanneer het voertuig gearchiveerd is. Zet **Tonen** op **Ook gearchiveerde voertuigen**: staat het er,
+    haal het dan terug in plaats van een nieuw voertuig aan te maken.
 
 **Waarom is de keuzelijst bij Soort leeg?**
 Omdat de lijst met soorten nog leeg is. Vul ze aan bij **Platformbeheer → Basistabellen → Soorten voertuig**.
-
-**Ik heb een omschrijving gewijzigd en na een tijdje stond de oude tekst er weer.**
-De omschrijving wordt beheerd in uw huidige toepassing en bij elke overname opnieuw overgenomen. Wijzig ze
-daar. De andere velden — merk, soort, chassisnummer, data, tankinhoud — blijven wél staan.
 
 **Ik zie geen melding over keuringen, terwijl er voertuigen zijn.**
 Dan is bij geen enkel voertuig **Volgende keuring** ingevuld, of valt geen enkele datum binnen 30 dagen. Vul
@@ -157,6 +171,6 @@ de datums in op de fiches.
 Omdat het voertuig geen tank heeft, of omdat de inhoud nog niet ingevuld is. **Leeg** en **0** betekenen hier
 iets anders — zie hierboven.
 
-**Kan ik een voertuig aan een werkorder koppelen?**
-Dat veld bestaat op de werkorder en wordt vandaag nauwelijks gebruikt. Dit scherm gaat over het beheer van de
-vloot zelf.
+## Zie ook
+
+- [Basistabellen](basistabellen.md) — de lijst **Soorten voertuig**

@@ -34,4 +34,8 @@ export const DEMO = {
   btwCode: '12P',
   // Het contracttype dat DemoDataGenerator een hoofdletter geeft ("regenput" → "Regenput").
   basistabel: 'Regenput',
+  // Het voertuig waarvan DemoDataGenerator de omschrijving aanvult ("Scania kolkenzuiger"): journaal en onderhoud.
+  voertuig: '1-DEM-001',
+  // Het voertuig met de VERLOPEN keuring: de fiche toont dan haar melding in het keuringsblok.
+  voertuigKeuring: '1-DEM-003',
 };

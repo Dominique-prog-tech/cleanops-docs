@@ -74,6 +74,9 @@ l'adaptez sur la ligne, rien ne change au tarif lui-même, ni aux autres devis.
 La fiche d'un tarif porte l'onglet **Historique**. Il montre ce qui a été modifié sur ce tarif, quand, par qui —
 et de quelle valeur vers quelle autre.
 
+Vous le voyez aussi sans ouvrir la fiche : sélectionnez un tarif dans la liste et ouvrez à droite le volet
+**Journal**. Si vous choisissez un autre tarif, le journal suit.
+
 ![L'Historique d'un tarif : Modifié, avec le Prix unitaire de l'ancienne vers la nouvelle valeur](../images/tarief-logboek-fr.png "Historique")
 
 ## Erreurs fréquentes

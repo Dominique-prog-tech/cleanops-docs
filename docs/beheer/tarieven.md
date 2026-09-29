@@ -73,6 +73,9 @@ lijn aan, dan verandert er niets aan het tarief zelf, en ook niet aan andere off
 Op de fiche van een tarief staat het tabblad **Logboek**. Het toont wat er aan dat tarief gewijzigd is,
 wanneer, door wie — en van welke waarde naar welke.
 
+Hetzelfde ziet u zonder de fiche te openen: klik een tarief in de lijst aan en open rechts de strook
+**Journaal**. Kiest u een ander tarief, dan volgt het journaal mee.
+
 ![Het Logboek van een tarief: Gewijzigd, met de Eenheidsprijs van de oude naar de nieuwe waarde](../images/tarief-logboek.png "Logboek")
 
 ## Veelgemaakte fouten

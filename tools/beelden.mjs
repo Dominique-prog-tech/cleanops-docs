@@ -69,6 +69,40 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Voertuigen: lijst + FICHE (blokken, tabbladen) + onderhoudsvenster + journaal-rail op de lijst + de herinnering.
+  // ⚠️ De journaal-lade eerst DICHT: ze onthoudt dat ze open stond (DrawerId), en na het journaalbeeld toonde het Franse
+  // lijstbeeld haar open en het Nederlandse niet (29/09/2026).
+  { naam: 'voertuigen-lijst', route: '/beheer/voertuigen', verwacht: tekstTaal('Nieuw voertuig', 'Nouveau véhicule'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  // ⚠️ Het merkteken is de TITEL van het keuringsblok: die staat enkel op de fiche, niet op de lijst.
+  { naam: 'voertuig-fiche', route: '/beheer/voertuigen', verwacht: tekstTaal('Inschrijving en keuring', 'Immatriculation et contrôle'),
+    na: async p => { await openRij(p, DEMO.voertuigKeuring); } },
+  // ⚠️ Het merkteken is de KOP van het venster, niet "Controlepunten": die staat ook als kolomkop op het tabblad.
+  { naam: 'voertuig-onderhoud', route: '/beheer/voertuigen', verwacht: tekstTaal('Onderhoudsbeurt bewerken', "Modifier l'entretien"),
+    na: async p => {
+      await openRij(p, DEMO.voertuig);
+      await p.getByText(tekstTaal('^Onderhoud$', '^Entretien$')).first().click();
+      await p.getByRole('row').filter({ hasText: 'Periodiek onderhoud' }).first().dblclick();
+    } },
+  { naam: 'voertuigen-journaal', route: '/beheer/voertuigen', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
+    na: async p => {
+      await p.getByRole('gridcell', { name: DEMO.voertuig, exact: true }).first().click();
+      const strook = p.locator('.adm-detail-drawer__rail').first();
+      if (await strook.isVisible()) await strook.click();
+      // ⚠️ Het journaal van een voertuig opent op BIJLAGEN (leeg in de demo); het logboek is het tweede tabblad. Enkel
+      // wisselen als het logboek nog niet getoond wordt — het paneel onthoudt zijn laatste tabblad.
+      await p.waitForTimeout(800);
+      if (!(await p.getByText(tekstTaal('^Gewijzigd$', '^Modifié$')).first().isVisible())) {
+        await p.getByText(/^(Bijlagen|Pièces jointes)$/).last().click();
+        await p.getByText(/^(Logboek|Historique)$/).last().click();
+      }
+    } },
+  // ⚠️ Een ELEMENT en niet de pagina: de startpagina draagt ook de testfase-meldingen, en die horen niet in de handleiding.
+  { naam: 'voertuigen-keuringsherinnering', route: '/', verwacht: tekstTaal('wachten op hun keuring', 'attendent leur contrôle'),
+    element: '.alert[role=alert]:has-text("keuring"), .alert[role=alert]:has-text("contrôle technique")' },
   // Bedrijfsfiche: één fiche, één beeld. ⚠️ HOGER dan de standaard (hoogte): op 900 px vielen Logo en Rappels half weg
   // (29/09/2026). Het merkteken is daarom "Rappels"-tekst onderaan, niet de kop bovenaan.
   { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1180,
@@ -175,8 +209,12 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       await page.addStyleTag({ content: VERBERG }).catch(() => {});
       await page.mouse.move(0, (s.hoogte ?? HOOG) - 1);   // geen zweeftoestand van de muis op het beeld
 
-      const tekst = await page.locator('body').innerText();
-      const besluit = schermBesluit({ tekst, isElementSchot: false, magKortZijn: Boolean(s.magKortZijn) });
+      // Een recept mag één ELEMENT fotograferen (element) in plaats van de pagina: dan meten de alt-controle en het
+      // schermbesluit ook enkel dat element. Voor een melding die tussen andere blokken staat die niet in de handleiding
+      // horen — de testfase-meldingen op de startpagina (29/09/2026, Voertuigen).
+      const doelElement = s.element ? page.locator(s.element).first() : null;
+      const tekst = await (doelElement ?? page.locator('body')).innerText();
+      const besluit = schermBesluit({ tekst, isElementSchot: Boolean(doelElement), magKortZijn: Boolean(s.magKortZijn) });
       if (!besluit.ok) { mislukt.push(`${bestand} — ${besluit.reden}`); continue; }
 
       const alt = ALT[bestand];
@@ -186,16 +224,16 @@ for (const taal of ['nl-BE', 'fr-BE']) {
         if (altTermen(alt, NIET_SCHERMTEKST_BASIS).length === 0)
           altMissers.push(`${bestand} — de alt-tekst draagt geen enkele schermterm met een hoofdletter; de controle meet niets`);
         // De veldwaarden staan niet in innerText (DevExpress): lees ze mee, zoals de kern vraagt.
-        const waarden = await page.locator('input, textarea').evaluateAll(els => els.map(e => e.value).join('\n'));
+        const waarden = await (doelElement ?? page).locator('input, textarea').evaluateAll(els => els.map(e => e.value).join('\n'));
         const mist = ontbrekendeTermen(alt, `${tekst}\n${waarden}`, NIET_SCHERMTEKST_BASIS);
         if (mist.length) altMissers.push(`${bestand} — de alt-tekst belooft ${mist.join(', ')}, niet op het scherm`);
       }
 
-      const png = await page.screenshot();
+      const png = doelElement ? await doelElement.screenshot() : await page.screenshot();
       const doel = join(BEELDEN, `${bestand}.png`);
       const vorm = vormBesluit({
         bestaandeMaat: existsSync(doel) ? pngMaat(readFileSync(doel)) : null,
-        nieuweMaat: pngMaat(png), isElementSchot: false,
+        nieuweMaat: pngMaat(png), isElementSchot: Boolean(doelElement),
       });
       if (vorm.besluit === 'weigeren') { geweigerd.push(`${bestand} — ${vorm.reden}`); continue; }
       writeFileSync(doel, png);
