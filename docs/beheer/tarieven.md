@@ -75,11 +75,6 @@ wanneer, door wie — en van welke waarde naar welke.
 
 ![Het Logboek van een tarief: Gewijzigd, met de Eenheidsprijs van de oude naar de nieuwe waarde](../images/tarief-logboek.png "Logboek")
 
-!!! note "In de testfase"
-    Zolang uw bedrijf nog in zijn huidige toepassing werkt, is CleanOps een testomgeving. Bij elke overname
-    krijgen de tarieven weer de waarde uit uw huidige toepassing, en verdwijnen de tarieven die u hier
-    aanmaakte. Bovenaan elk scherm staat dan het label **Testfase**.
-
 ## Veelgemaakte fouten
 
 !!! warning

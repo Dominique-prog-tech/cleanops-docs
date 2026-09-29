@@ -84,19 +84,10 @@ paneel toont het journaal van die ene termijn, met de code en de taal als titel.
 Het tabblad **Logboek** toont wie de termijn wanneer gewijzigd heeft, en van welke waarde naar welke — handig
 wanneer een vervaldag anders uitvalt dan u verwachtte.
 
-!!! note "In de testfase"
-    Zolang uw bedrijf nog in zijn huidige toepassing werkt, is CleanOps een testomgeving. Bij elke overname
-    krijgen de betalingstermijnen weer de waarde uit uw huidige toepassing, en verdwijnen de termijnen die u
-    hier aanmaakte. Bovenaan elk scherm staat dan het label **Testfase**.
-
 ## Veelgestelde vragen
 
 **Waarom staat `30DFD` twee keer in de lijst?**
 Eén keer per taal. De omschrijving verschilt, de berekening niet. Zie de kolom **Taal**.
-
-**Ik heb een termijn gewijzigd en na een tijdje stond de oude waarde er weer.**
-Dan was er intussen een overname vanuit uw huidige toepassing. In de testfase zet elke overname de termijnen
-terug zoals ze daar staan — ook die met het merkteken **eigen** verdwijnen dan.
 
 **Een factuur vervalt op een andere datum dan ik verwachtte.**
 Open de termijn en kijk naar het voorbeeld onderaan het venster: dat rekent met dezelfde regel als de

@@ -85,20 +85,10 @@ bande : le panneau montre le journal de cette condition, avec le code et la lang
 L'onglet **Historique** indique qui a modifié la condition et quand, et de quelle valeur vers quelle autre —
 utile lorsqu'une échéance tombe autrement que prévu.
 
-!!! note "Pendant la phase de test"
-    Tant que votre entreprise travaille encore dans son application actuelle, CleanOps est un environnement de
-    test. À chaque reprise, les conditions de paiement reprennent la valeur de votre application actuelle, et
-    les conditions que vous avez créées ici disparaissent. L'étiquette **Phase de test** figure alors en haut de
-    chaque écran.
-
 ## Questions fréquentes
 
 **Pourquoi `30DFD` figure-t-il deux fois dans la liste ?**
 Une fois par langue. La description diffère, le calcul non. Voyez la colonne **Langue**.
-
-**J'ai modifié une condition et après un certain temps l'ancienne valeur était revenue.**
-Entre-temps, une reprise depuis votre application actuelle a eu lieu. Pendant la phase de test, chaque reprise
-remet les conditions telles qu'elles y figurent — celles marquées **propre** disparaissent alors aussi.
 
 **Une facture échoit à une autre date que celle que j'attendais.**
 Ouvrez la condition et regardez l'exemple en bas de la fenêtre : il applique la même règle que la

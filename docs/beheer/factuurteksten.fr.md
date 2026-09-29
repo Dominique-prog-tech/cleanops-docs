@@ -86,8 +86,7 @@ texte et cliquez sur **Rétablir**.
 ## Où vous retrouvez le texte
 
 Sur la fiche d'une facture, le bloc **Texte de pied de page** figure en bas — vous y lisez ce qui est
-réellement apparu sur cette facture. S'il n'y a rien, le bloc n'apparaît pas. (L'écran **Factures** sera
-libéré plus tard pendant la phase de test.)
+réellement apparu sur cette facture. S'il n'y a rien, le bloc n'apparaît pas. (L'écran **Factures** sera libéré plus tard.)
 
 ## Le journal
 
@@ -100,23 +99,13 @@ texte, le journal suit.
 L'onglet **Historique** indique qui a modifié le texte et quand, et de quelle valeur vers quelle autre. Pour une
 mention légale, c'est plus qu'une question d'ordre : il montre quand la phrase figurant sur vos factures a
 changé, et par qui. Toutes les modifications de tous les textes se trouvent dans le **Journal d'audit**
-(Administration → Historique ; cet écran sera libéré plus tard pendant la phase de test).
-
-!!! note "Pendant la phase de test"
-    Tant que votre entreprise travaille encore dans son application actuelle, CleanOps est un environnement de
-    test. À chaque reprise, les textes de facture reprennent la valeur de votre application actuelle, et les
-    textes que vous avez créés ici disparaissent. L'étiquette **Phase de test** figure alors en haut de chaque
-    écran.
+(Administration → Historique ; cet écran sera libéré plus tard).
 
 ## Questions fréquentes
 
 **Lequel des douze textes figure réellement sur ma facture ?**
 Uniquement celui portant la marque **TVA 6 %**, et uniquement sur les factures comportant de la TVA à 6 %.
 Les autres sont disponibles comme référence ; ils ne sont pas utilisés automatiquement aujourd'hui.
-
-**J'ai modifié un texte et après un certain temps l'ancien était de retour.**
-Entre-temps, une reprise depuis votre application actuelle a eu lieu. Pendant la phase de test, chaque reprise
-remet les textes tels qu'ils y figurent — ceux marqués **propre** disparaissent alors aussi.
 
 **Pourquoi ma facture francophone à 6 % ne porte-t-elle aucune mention ?**
 Parce qu'il n'existe pas encore de texte français portant la marque **TVA 6 %**. Créez-en un et cochez-le.

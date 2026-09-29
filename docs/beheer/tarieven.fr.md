@@ -76,11 +76,6 @@ et de quelle valeur vers quelle autre.
 
 ![L'Historique d'un tarif : Modifié, avec le Prix unitaire de l'ancienne vers la nouvelle valeur](../images/tarief-logboek-fr.png "Historique")
 
-!!! note "En phase de test"
-    Tant que votre entreprise travaille encore dans son application actuelle, CleanOps est un environnement de
-    test. À chaque reprise, les tarifs reprennent la valeur de votre application actuelle, et les tarifs que vous
-    avez créés ici disparaissent. L'étiquette **Phase de test** figure alors en haut de chaque écran.
-
 ## Erreurs fréquentes
 
 !!! warning

@@ -85,8 +85,7 @@ Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde teksten
 ## Waar u de tekst terugziet
 
 Op de fiche van een factuur staat onderaan het blok **Slottekst** — daar leest u wat er werkelijk op die
-factuur is komen te staan. Staat er niets, dan is het blok er ook niet. (Het scherm **Facturen** komt in de
-testfase later vrij.)
+factuur is komen te staan. Staat er niets, dan is het blok er ook niet. (Het scherm **Facturen** wordt later vrijgegeven.)
 
 ## Het journaal
 
@@ -98,22 +97,13 @@ wisselt het journaal mee.
 
 Het tabblad **Logboek** toont wie de tekst wanneer gewijzigd heeft, en van welke waarde naar welke. Bij een
 wettelijke vermelding is dat meer dan netheid: het laat zien wanneer de zin op uw facturen veranderd is, en
-door wie. Alle wijzigingen aan alle teksten samen vindt u in het **Actielogboek** (Platformbeheer → Historiek; dat scherm komt in de testfase later vrij).
-
-!!! note "In de testfase"
-    Zolang uw bedrijf nog in zijn huidige toepassing werkt, is CleanOps een testomgeving. Bij elke overname
-    krijgen de factuurteksten weer de waarde uit uw huidige toepassing, en verdwijnen de teksten die u hier
-    aanmaakte. Bovenaan elk scherm staat dan het label **Testfase**.
+door wie. Alle wijzigingen aan alle teksten samen vindt u in het **Actielogboek** (Platformbeheer → Historiek; dat scherm wordt later vrijgegeven).
 
 ## Veelgestelde vragen
 
 **Welke van de twaalf teksten komt er nu eigenlijk op mijn factuur?**
 Alleen die met het merkteken **6 % btw**, en alleen op facturen waarop 6 % btw voorkomt. De andere staan
 klaar als naslag; ze worden vandaag niet automatisch gebruikt.
-
-**Ik heb een tekst gewijzigd en na een tijdje stond de oude er weer.**
-Dan was er intussen een overname vanuit uw huidige toepassing. In de testfase zet elke overname de teksten
-terug zoals ze daar staan — ook die met het merkteken **eigen** verdwijnen dan.
 
 **Waarom staat er op mijn Franstalige factuur met 6 % geen vermelding?**
 Omdat er nog geen Franse tekst met het merkteken **6 % btw** bestaat. Maak er een en zet het vinkje.
