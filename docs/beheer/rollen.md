@@ -23,7 +23,8 @@ hem die rol.
 
 **Tenant-beheerder 🔒** is de beheerder van uw omgeving. Deze rol heeft automatisch álle rechten, ook de rechten die er
 later bij komen. U kunt ze niet bewerken en niet verwijderen. Enkel een Tenant-beheerder kan rollen beheren: dat recht
-kunt u aan geen andere rol geven.
+kunt u aan geen andere rol geven. Daarom kunt u de **laatste** Tenant-beheerder niet uitvinken: CleanOps weigert dat en
+zegt waarom. Geef eerst een tweede persoon de rol.
 
 **Financieel** krijgt elke klant vanzelf. Ze draagt standaard twee rechten: **Facturatie bekijken** en **Openstaande
 posten bekijken**. Wie ook facturen maakt, heeft daarnaast **Facturen opmaken** nodig — vink dat aan bij deze rol, of
@@ -60,9 +61,6 @@ de rechten die hij enkel via deze rol had. Geef die personen dus eerst een ander
 Een recht dat u **uitvinkt**, verbergt het scherm én blokkeert het. De menu-ingang verdwijnt, en wie het adres rechtstreeks intypt komt er evenmin binnen. U hoeft dus niet apart na te denken over "zichtbaar" en "toegankelijk" — dat is één en dezelfde instelling.
 
 ## Veelgemaakte fouten
-
-!!! warning
-    **Vink de laatste Tenant-beheerder niet uit.** CleanOps houdt dat niet tegen. Heeft niemand in uw omgeving die rol nog, dan kan niemand bij u nog rollen beheren — ook u niet. Geef eerst een tweede persoon de rol Tenant-beheerder. Is het toch gebeurd, neem dan contact op met ADM-Concept.
 
 !!! info
     **Een nieuwe of afgenomen rol geldt vanaf de volgende aanmelding.** Iemand die op dit moment werkt, merkt het pas nadat hij zich afmeldt en opnieuw aanmeldt. Vraag de persoon dat te doen wanneer het dringend is.
