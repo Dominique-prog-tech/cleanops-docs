@@ -36,6 +36,20 @@ per onderdeel drie kolommen:
 
 Onder de tabel staat het totaal: *Klaar — n rijen verwerkt in totaal.*
 
+### In de testfase: eerst wissen
+
+Staat de klant in de **testfase** (zie [Overstap](overstap.md)), dan is de eerste regel van de tabel
+**Testgegevens gewist**. Vóór de overzetting gaat alles weg wat in CleanOps aangemaakt werd — ook wat testers
+ingaven, met hun bijlagen — en daarna krijgt al de rest weer de waarde uit de huidige toepassing. Na afloop is de
+klant in CleanOps dus exact zijn huidige toepassing. Het aantal gewiste rijen, per tabel, staat in het
+[actielogboek](actielogboek.md).
+
+Staat de klant op **CleanOps schrijft**, dan ontbreekt die regel: na de overstap wist de conversie niets.
+
+!!! warning
+    **Mislukt het wissen, dan start de overzetting niet.** U ziet dan enkel de regel *Testgegevens gewist* met
+    **Mislukt**. Er is dan niets half gebeurd; laat ADM-Concept de reden nakijken voor u opnieuw probeert.
+
 ## De aanmeldingen aanmaken
 
 Onder het rapport staat **Gebruikers importeren uit de legacy**. Die actie haalt de actieve

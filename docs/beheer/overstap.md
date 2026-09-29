@@ -3,9 +3,10 @@
 !!! info "Voor ADM-operators"
     Dit scherm is voorbehouden aan medewerkers van ADM-Concept. Als klant van CleanOps ziet u het niet in uw menu.
 
-Zolang een klant in zijn huidige toepassing werkt, is die toepassing de enige die gegevens wijzigt. CleanOps
-leest wat de conversie overbrengt, en is voor die klant **alleen-lezen**. Op dit scherm zet u bij de overstap de
-schakelaar om: vanaf dan wijzigt de klant zijn gegevens in CleanOps, en maakt CleanOps zelf de werkorders.
+Zolang een klant in zijn huidige toepassing werkt, is die toepassing de bron van zijn gegevens. CleanOps is dan
+een **testomgeving**: alles mag er gewijzigd worden, maar elke conversie zet de klant terug op de gegevens van zijn
+huidige toepassing en wist wat in CleanOps aangemaakt werd. Op dit scherm zet u bij de overstap de schakelaar om:
+vanaf dan werkt de klant echt in CleanOps, en maakt CleanOps zelf de werkorders.
 
 ## Het scherm openen
 
@@ -22,14 +23,15 @@ en klik bij de juiste klant op **Gebruiken →**.
 
 De kaart toont voor de gekozen klant wie de gegevens beheert:
 
-- **De huidige toepassing** — dit is de standaard. CleanOps is alleen-lezen: wat de conversie overneemt, kan u
-  hier niet wijzigen, en de nachtelijke generatie slaat deze klant over. Bovenaan elk scherm staat het label
-  **Alleen-lezen**.
+- **De huidige toepassing** — dit is de standaard: de **testfase**. In CleanOps mag alles gewijzigd worden, maar
+  elke [conversie](conversie.md) wist eerst wat hier aangemaakt werd en zet daarna de rest terug op de gegevens van
+  de huidige toepassing. De nachtelijke generatie slaat deze klant over. Bovenaan elk scherm staat het label
+  **Testfase**.
 - **CleanOps** — CleanOps is de schrijver. De gegevens worden hier gewijzigd, en de werkorders uit de
   periodieke contracten ontstaan elke nacht vanzelf.
 
 Onder de kaart staat wanneer en door wie de schakelaar voor het laatst omgezet werd. Staat er *Nooit omgezet*,
-dan geldt de standaard: de huidige toepassing schrijft.
+dan geldt de standaard: de testfase.
 
 ## Overstappen naar CleanOps
 
@@ -44,8 +46,8 @@ Vanaf dat moment kan de klant in CleanOps bewaren, en maakt CleanOps vanaf de vo
 
 ## Terugkeren naar de huidige toepassing
 
-Klik op **Terug: de huidige toepassing schrijft…** en bevestig met **Terugkeren**. CleanOps wordt weer
-alleen-lezen voor deze klant.
+Klik op **Terug: de huidige toepassing schrijft…** en bevestig met **Terugkeren**. De klant staat dan weer in de
+testfase.
 
 ## Wat de wijziging meteen raakt
 
@@ -59,9 +61,10 @@ alleen-lezen voor deze klant.
     **Zet de schakelaar niet om zonder eerst te converteren.** Na de overstap overschrijft een nieuwe conversie
     wat de klant intussen in CleanOps gewijzigd heeft. De laatste conversie hoort dus vóór het omzetten, niet erna.
 
-!!! warning
-    **Terugkeren maakt niets ongedaan in de huidige toepassing.** Wat er in CleanOps aangemaakt of gewijzigd werd
-    terwijl CleanOps de schrijver was, bestaat in de huidige toepassing niet.
+!!! danger "Terugkeren wist bij de volgende conversie alles wat in CleanOps aangemaakt werd"
+    In de testfase begint elke conversie met het wissen van wat in CleanOps aangemaakt werd: klanten, werkorders,
+    facturen, bijlagen, … Voor een klant die echt overgestapt was, zijn dat zijn gegevens. Keer dus enkel terug als
+    u zeker weet dat die weg mogen — en draai daarna geen conversie tot dat vaststaat.
 
 !!! warning
     **Controleer welke klant er actief staat.** De schakelaar geldt enkel voor de gekozen klant; elke klant stapt

@@ -37,6 +37,20 @@ tableau de trois colonnes par élément :
 
 Sous le tableau figure le total : *Terminé — n lignes traitées au total.*
 
+### En phase de test : d'abord effacer
+
+Si le client est en **phase de test** (voir [Basculement](overstap.fr.md)), la première ligne du tableau est
+**Testgegevens gewist** (données de test effacées). Avant la reprise, tout ce qui a été créé dans CleanOps
+disparaît — y compris ce que les testeurs ont saisi, avec leurs pièces jointes — puis tout le reste reprend la
+valeur de l'application actuelle. À la fin, le client est donc exactement son application actuelle dans CleanOps.
+Le nombre de lignes effacées, par table, figure dans le [journal d'audit](actielogboek.fr.md).
+
+Si le client est sur **CleanOps écrit**, cette ligne n'apparaît pas : après le basculement, la reprise n'efface rien.
+
+!!! warning
+    **Si l'effacement échoue, la reprise ne démarre pas.** Vous ne voyez alors que la ligne *Testgegevens gewist*
+    avec **Échec**. Rien n'a été fait à moitié ; faites vérifier la raison par ADM-Concept avant de réessayer.
+
 ## Créer les connexions
 
 Sous le rapport se trouve **Importer les utilisateurs depuis l'hérité**. Cette action récupère les utilisateurs

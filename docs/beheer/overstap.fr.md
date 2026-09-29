@@ -3,10 +3,11 @@
 !!! info "Pour les opérateurs ADM"
     Cet écran est réservé aux collaborateurs d'ADM-Concept. En tant que client de CleanOps, vous ne le voyez pas dans votre menu.
 
-Tant qu'un client travaille dans son application actuelle, celle-ci est la seule à modifier les données.
-CleanOps lit ce que la reprise apporte, et est **en lecture seule** pour ce client. Sur cet écran, vous inversez
-l'interrupteur au moment du basculement : dès lors, le client modifie ses données dans CleanOps, et CleanOps crée
-lui-même les ordres de travail.
+Tant qu'un client travaille dans son application actuelle, celle-ci est la source de ses données. CleanOps est
+alors un **environnement de test** : on peut tout y modifier, mais chaque reprise remet le client aux données de
+son application actuelle et efface ce qui a été créé dans CleanOps. Sur cet écran, vous inversez l'interrupteur au
+moment du basculement : dès lors, le client travaille vraiment dans CleanOps, et CleanOps crée lui-même les ordres
+de travail.
 
 ## Ouvrir l'écran
 
@@ -23,14 +24,15 @@ L'interrupteur vaut par client. Si vous lisez *Choisissez d'abord un locataire*,
 
 La carte indique, pour le client choisi, qui gère les données :
 
-- **L'application actuelle** — c'est la valeur par défaut. CleanOps est en lecture seule : ce que la reprise
-  apporte ne peut pas y être modifié, et la génération de nuit ignore ce client. En haut de chaque écran figure
-  l'étiquette **Lecture seule**.
+- **L'application actuelle** — c'est la valeur par défaut : la **phase de test**. Tout peut être modifié dans
+  CleanOps, mais chaque [reprise](conversie.fr.md) efface d'abord ce qui a été créé ici, puis remet le reste aux
+  données de l'application actuelle. La génération de nuit ignore ce client. En haut de chaque écran figure
+  l'étiquette **Phase de test**.
 - **CleanOps** — CleanOps est l'auteur. Les données sont modifiées ici, et les ordres de travail issus des
   contrats périodiques sont créés automatiquement chaque nuit.
 
 Sous la carte figurent la date et l'auteur du dernier changement. Si vous lisez *Jamais modifié*, la valeur par
-défaut s'applique : l'application actuelle écrit.
+défaut s'applique : la phase de test.
 
 ## Basculer vers CleanOps
 
@@ -48,8 +50,8 @@ nuit suivante.
 
 ## Revenir à l'application actuelle
 
-Cliquez sur **Revenir : l'application actuelle écrit…** et confirmez avec **Revenir**. CleanOps repasse en
-lecture seule pour ce client.
+Cliquez sur **Revenir : l'application actuelle écrit…** et confirmez avec **Revenir**. Le client repasse alors
+en phase de test.
 
 ## Ce que le changement touche immédiatement
 
@@ -64,9 +66,10 @@ lecture seule pour ce client.
     reprise écraserait ce que le client a modifié entre-temps dans CleanOps. La dernière reprise se fait donc
     avant le basculement, pas après.
 
-!!! warning
-    **Revenir n'annule rien dans l'application actuelle.** Ce qui a été créé ou modifié dans CleanOps pendant que
-    CleanOps était l'auteur n'existe pas dans l'application actuelle.
+!!! danger "Revenir efface, à la prochaine reprise, tout ce qui a été créé dans CleanOps"
+    En phase de test, chaque reprise commence par effacer ce qui a été créé dans CleanOps : clients, ordres de
+    travail, factures, pièces jointes, … Pour un client qui avait vraiment basculé, ce sont ses données. Ne revenez
+    donc que si vous êtes sûr qu'elles peuvent disparaître — et ne lancez pas de reprise tant que ce n'est pas établi.
 
 !!! warning
     **Vérifiez quel client est actif.** L'interrupteur ne vaut que pour le client choisi ; chaque client bascule
