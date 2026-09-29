@@ -69,6 +69,16 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Btw-codes: zelfde vorm (lijst + venster + journaal van één code).
+  { naam: 'btw-codes-lijst', route: '/beheer/btw-codes', verwacht: tekstTaal('Nieuwe btw-code', 'Nouveau code TVA') },
+  { naam: 'btw-code-venster', route: '/beheer/btw-codes', verwacht: tekstTaal('Btw-code bewerken', 'Modifier le code TVA'),
+    na: async p => { await p.getByRole('gridcell', { name: DEMO.btwCode, exact: true }).first().dblclick(); } },
+  { naam: 'btw-codes-journaal', route: '/beheer/btw-codes', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
+    na: async p => {
+      await p.getByRole('gridcell', { name: DEMO.btwCode, exact: true }).first().click();
+      const strook = p.locator('.adm-detail-drawer__rail').first();
+      if (await strook.isVisible()) await strook.click();
+    } },
   // Betalingstermijnen: zelfde vorm als Factuurteksten (lijst + venster + journaal van één termijn).
   { naam: 'betalingstermijnen-lijst', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Nieuwe termijn', 'Nouvelle condition') },
   { naam: 'betalingstermijn-venster', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Voorbeeld:', 'Exemple :'),

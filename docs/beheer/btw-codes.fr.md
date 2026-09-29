@@ -3,7 +3,7 @@
 Les taux de TVA que vous choisissez sur un devis, un ordre de travail ou une ligne de facture. Chaque code
 porte un pourcentage ; ce pourcentage détermine le calcul de la TVA.
 
-<!-- AFBEELDING: l'aperçu des codes TVA avec les quatre colonnes -->
+![La liste Codes TVA avec les colonnes Code, Description (NL), Description (FR) et Pourcentage, le champ de recherche et le bouton Nouveau code TVA](../images/btw-codes-lijst-fr.png "Codes TVA")
 
 ## Ouvrir l'écran
 
@@ -24,9 +24,15 @@ Cliquez sur **Administration** en bas du menu, puis sur la tuile **Codes TVA**.
 
 ## Ajouter ou modifier un code TVA
 
-<!-- AFBEELDING: la fenêtre de modification d'un code TVA -->
+Cliquez sur **Nouveau code TVA**, ou double-cliquez sur une ligne existante.
 
-Cliquez sur **Nouveau code TVA**, ou ouvrez une ligne existante.
+![La fenêtre Modifier le code TVA avec Code, Pourcentage, Description (NL) et Description (FR)](../images/btw-code-venster-fr.png "Un code TVA")
+
+| Champ | Ce que vous complétez |
+|---|---|
+| **Code** *(obligatoire)* | 5 caractères au maximum, par exemple `21P`. Figé dès que le code existe. Un code qui ne diffère d'un code existant que par les majuscules (`21p` à côté de `21P`) est refusé. |
+| **Pourcentage** | de 0 à 99,99. |
+| **Description (NL)** / **(FR)** | 30 caractères au maximum. Celle dans la langue principale de votre entreprise est obligatoire. |
 
 !!! warning "Un pourcentage modifié ne touche pas les factures existantes"
     Chaque facture conserve le pourcentage avec lequel elle a été établie. Si vous augmentez un taux ici,
@@ -39,22 +45,25 @@ La **description française** peut rester vide si votre entreprise travaille uni
 
 ## Le journal
 
-<!-- AFBEELDING: le journal ouvert, avec les modifications des codes TVA -->
+À droite de l'écran se trouve une bande **Journal**. Sélectionnez un code dans la liste et ouvrez la bande : le
+panneau montre le journal de ce code.
 
-À droite de l'écran se trouve une bande portant **journal**. Cliquez dessus et le panneau s'ouvre.
+![Le journal du code 12P à côté de la liste Codes TVA, avec l'onglet Historique : Modifié, avec la Description (NL) de l'ancienne vers la nouvelle valeur](../images/btw-codes-journaal-fr.png "Journal")
 
-Le journal indique qui a modifié quel code et quand, et de quelle valeur vers quelle autre. Pour la TVA,
-c'est particulièrement utile : un pourcentage modifié explique pourquoi deux factures d'un même client
+L'onglet **Historique** indique qui a modifié le code et quand, et de quelle valeur vers quelle autre. Pour la
+TVA, c'est particulièrement utile : un pourcentage modifié explique pourquoi deux factures d'un même client
 portent un montant différent.
 
-## Supprimer un code TVA
+## Archiver ou rétablir un code TVA
 
-Ouvrez la ligne et utilisez **Supprimer**. Le code disparaît des listes de choix mais subsiste dans la
-corbeille.
+Ouvrez la ligne et utilisez **Archiver**. Le code disparaît des listes de choix, mais il continue d'exister.
 
-!!! warning "Ne supprimez pas un code figurant sur des factures"
-    Les factures existantes renvoient à leur code TVA. Si vous le supprimez, cette référence subsiste sans
-    description lisible. Le pourcentage sur la facture reste correct — il figure sur la facture elle-même.
+!!! note "Ce qui porte déjà le code ne remarque rien"
+    Les ordres de travail, devis et factures qui portent déjà le code archivé le gardent, et la facturation
+    continue à calculer avec lui. Archiver, c'est *ne plus choisir*, pas *retirer*.
+
+Vous le voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi les codes archivés**, ouvrez le
+code et cliquez sur **Rétablir**.
 
 ## Questions fréquentes
 

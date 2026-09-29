@@ -3,7 +3,7 @@
 De btw-tarieven die u kiest op een offerte, een werkorder of een factuurlijn. Elke code draagt een
 percentage; dat percentage bepaalt de btw-berekening.
 
-<!-- AFBEELDING: het overzicht van de btw-codes met de vier kolommen -->
+![De lijst Btw-codes met de kolommen Code, Omschrijving (NL), Omschrijving (FR) en Percentage, het zoekveld en de knop Nieuwe btw-code](../images/btw-codes-lijst.png "Btw-codes")
 
 ## Het scherm openen
 
@@ -24,9 +24,15 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Btw-code
 
 ## Een btw-code toevoegen of wijzigen
 
-<!-- AFBEELDING: het venster om een btw-code te bewerken -->
+Klik op **Nieuwe btw-code**, of dubbelklik op een bestaande rij.
 
-Klik op **Nieuwe btw-code**, of open een bestaande rij.
+![Het venster Btw-code bewerken met Code, Percentage, Omschrijving (NL) en Omschrijving (FR)](../images/btw-code-venster.png "Een btw-code")
+
+| Veld | Wat u invult |
+|---|---|
+| **Code** *(verplicht)* | maximaal 5 tekens, bijvoorbeeld `21P`. Ligt vast zodra de code bestaat. Een code die enkel in hoofdletters verschilt van een bestaande (`21p` naast `21P`), wordt geweigerd. |
+| **Percentage** | van 0 tot 99,99. |
+| **Omschrijving (NL)** / **(FR)** | maximaal 30 tekens. Die in de hoofdtaal van uw bedrijf is verplicht. |
 
 !!! warning "Een gewijzigd percentage raakt bestaande facturen niet"
     Elke factuur bewaart het percentage waarmee ze opgemaakt is. Verhoogt u hier een tarief, dan verandert er
@@ -37,23 +43,27 @@ Klik op **Nieuwe btw-code**, of open een bestaande rij.
 
 De **Franse omschrijving** mag u leeg laten als uw bedrijf enkel in het Nederlands werkt.
 
-## Het logboek
+## Het journaal
 
-<!-- AFBEELDING: het logboek open, met de wijzigingen aan de btw-codes -->
+Rechts op het scherm zit een strook **Journaal**. Klik een code in de lijst aan en open de strook: het paneel
+toont het journaal van die ene code.
 
-Rechts op het scherm zit een strook met **logboek**. Klik erop en het paneel schuift open.
+![Het journaal van de code 12P naast de lijst Btw-codes, met het tabblad Logboek: Gewijzigd, met de Omschrijving (NL) van de oude naar de nieuwe waarde](../images/btw-codes-journaal.png "Journaal")
 
-Het logboek toont wie welke code wanneer gewijzigd heeft, en van welke waarde naar welke. Bij btw is dat
-bijzonder nuttig: een gewijzigd percentage verklaart waarom twee facturen van dezelfde klant een ander
+Het tabblad **Logboek** toont wie de code wanneer gewijzigd heeft, en van welke waarde naar welke. Bij btw is
+dat bijzonder nuttig: een gewijzigd percentage verklaart waarom twee facturen van dezelfde klant een ander
 bedrag dragen.
 
-## Een btw-code verwijderen
+## Een btw-code archiveren of terughalen
 
-Open de rij en gebruik **Verwijderen**. De code verdwijnt uit de keuzelijsten maar blijft in de prullenbak.
+Open de rij en gebruik **Archiveren**. De code verdwijnt uit de keuzelijsten, maar blijft bestaan.
 
-!!! warning "Verwijder geen code die op facturen staat"
-    Bestaande facturen verwijzen naar hun btw-code. Verwijdert u die, dan blijft de verwijzing achter zonder
-    leesbare omschrijving. Het percentage op de factuur blijft wel kloppen — dat staat op de factuur zelf.
+!!! note "Wat de code al draagt, merkt niets"
+    Werkorders, offertes en facturen die de gearchiveerde code al dragen, houden hem, en de facturatie rekent er
+    gewoon mee. Archiveren is *niet meer kiezen*, niet *weghalen*.
+
+Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde codes**, open de code en klik op
+**Terughalen**.
 
 ## Veelgestelde vragen
 
@@ -62,7 +72,7 @@ Maak een nieuwe code aan met het juiste percentage. Wijzig geen bestaande code, 
 onderscheid met wat er eerder gefactureerd is.
 
 **Twee facturen van dezelfde klant hebben een ander btw-bedrag bij hetzelfde werk.**
-Kijk in het logboek of het percentage van die code tussentijds gewijzigd is. Elke factuur rekent met het
+Kijk in het journaal of het percentage van die code tussentijds gewijzigd is. Elke factuur rekent met het
 percentage van het moment waarop ze opgemaakt werd.
 
 **De Franse kolom is bij ons overal leeg.**

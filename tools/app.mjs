@@ -30,4 +30,6 @@ export const DEMO = {
   gewijzigdeFactuurtekst: 'VOORW',
   // De termijn die DemoDataGenerator rechtzet ("einde der maand" → "einde maand"): venster én journaal.
   termijn: '30DEM',
+  // De btw-code waarvan DemoDataGenerator de omschrijving rechtzet ("12%btw" → "12 % btw").
+  btwCode: '12P',
 };
