@@ -69,6 +69,16 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Basistabellen: zelfde vorm; het scherm opent op de lijst Contracttypes.
+  { naam: 'basistabellen-lijst', route: '/beheer/basistabellen', verwacht: tekstTaal('Nieuw item', 'Nouvel élément') },
+  { naam: 'basistabel-venster', route: '/beheer/basistabellen', verwacht: tekstTaal('Item bewerken', "Modifier l'élément"),
+    na: async p => { await p.getByRole('gridcell', { name: DEMO.basistabel, exact: true }).first().dblclick(); } },
+  { naam: 'basistabellen-journaal', route: '/beheer/basistabellen', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
+    na: async p => {
+      await p.getByRole('gridcell', { name: DEMO.basistabel, exact: true }).first().click();
+      const strook = p.locator('.adm-detail-drawer__rail').first();
+      if (await strook.isVisible()) await strook.click();
+    } },
   // Btw-codes: zelfde vorm (lijst + venster + journaal van één code).
   { naam: 'btw-codes-lijst', route: '/beheer/btw-codes', verwacht: tekstTaal('Nieuwe btw-code', 'Nouveau code TVA') },
   { naam: 'btw-code-venster', route: '/beheer/btw-codes', verwacht: tekstTaal('Btw-code bewerken', 'Modifier le code TVA'),

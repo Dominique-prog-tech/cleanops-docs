@@ -32,4 +32,6 @@ export const DEMO = {
   termijn: '30DEM',
   // De btw-code waarvan DemoDataGenerator de omschrijving rechtzet ("12%btw" → "12 % btw").
   btwCode: '12P',
+  // Het contracttype dat DemoDataGenerator een hoofdletter geeft ("regenput" → "Regenput").
+  basistabel: 'Regenput',
 };
