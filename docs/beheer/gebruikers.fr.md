@@ -56,4 +56,4 @@ En fin de ligne figurent les actions applicables à cet utilisateur :
 ## Voir aussi
 
 - [Rôles](rollen.fr.md) — ce qu'un rôle autorise exactement
-- [Journal d'audit](actielogboek.fr.md) — qui a fait quoi
+- [Journal des actions](actielogboek.fr.md) — qui a fait quoi

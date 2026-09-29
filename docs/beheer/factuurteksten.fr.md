@@ -98,7 +98,7 @@ texte, le journal suit.
 
 L'onglet **Historique** indique qui a modifié le texte et quand, et de quelle valeur vers quelle autre. Pour une
 mention légale, c'est plus qu'une question d'ordre : il montre quand la phrase figurant sur vos factures a
-changé, et par qui. Toutes les modifications de tous les textes se trouvent dans le **Journal d'audit**
+changé, et par qui. Toutes les modifications de tous les textes se trouvent dans le **Journal des actions**
 (Administration → Historique ; cet écran sera libéré plus tard).
 
 ## Questions fréquentes

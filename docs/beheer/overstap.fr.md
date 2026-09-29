@@ -80,4 +80,4 @@ en phase de test.
 - [Conversion](conversie.fr.md) — transférer le dernier état avant le basculement
 - [Génération des ordres de travail](generatie.fr.md) — ne tourne qu'une fois CleanOps devenu l'auteur
 - [Registre des clients](klantenregister.fr.md) — choisir le client sur lequel vous travaillez
-- [Journal d'audit](actielogboek.fr.md) — qui a inversé l'interrupteur, et quand
+- [Journal des actions](actielogboek.fr.md) — qui a inversé l'interrupteur, et quand

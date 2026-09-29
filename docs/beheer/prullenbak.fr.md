@@ -53,3 +53,4 @@ corbeille**. Votre administrateur attribue ces droits dans [Rôles](rollen.fr.md
 ## Voir aussi
 
 - [Rôles](rollen.fr.md) — les droits pour consulter et restaurer
+- [Journal des actions](actielogboek.fr.md) — vérifier qui a supprimé quelque chose

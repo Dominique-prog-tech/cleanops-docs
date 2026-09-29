@@ -139,6 +139,18 @@ const SCHOTEN = [
     } },
   // Prullenbak: de demo legt er een klant en twee medewerkers in (één met 01/01/2000, de zin uit de handleiding).
   { naam: 'prullenbak', route: '/prullenbak', verwacht: new RegExp(DEMO.prullenbakKlant) },
+  // Actielogboek: ⚠️ ZOEKEN op "Demo" is geen versiering maar de grendel. De operator die het beeld maakt, ziet het HELE
+  // logboek, ook de regels van Van Parys (echte kentekens, echte offertes). De demovuller schrijft vijf regels onder de
+  // gebruiker "Demo"; het recept wacht tot ELKE zichtbare rij "Demo" draagt, en weigert anders het beeld (29/09/2026).
+  { naam: 'actielogboek', route: '/beheer/audit', verwacht: new RegExp(DEMO.prullenbakKlant),
+    na: async p => {
+      const zoek = p.getByPlaceholder(/Zoeken|Rechercher/).first();
+      await zoek.fill('Demo'); await zoek.press('Enter');
+      await p.waitForFunction(() => {
+        const rijen = [...document.querySelectorAll('[role=row]')].filter(r => r.querySelector('[role=gridcell]'));
+        return rijen.length > 0 && rijen.every(r => r.innerText.includes('Demo'));
+      }, null, { timeout: 15000 });
+    } },
   // Rollen: het fundering-scherm. ⚠️ Een ELEMENT (de drie kolommen) en niet de pagina: bovenaan staat een tenant-keuzelijst
   // die enkel een ADM-operator ziet — een klant nooit. Die lijst staat bij het openen op "— kies een tenant —", ook als
   // de demo de actieve tenant is; eerst de demo kiezen, dan de rol Financieel (29/09/2026). De demo heeft geen

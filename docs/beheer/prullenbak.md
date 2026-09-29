@@ -53,3 +53,4 @@ bekijken**. Uw beheerder geeft die rechten bij [Rollen](rollen.md).
 ## Zie ook
 
 - [Rollen](rollen.md) — de rechten om te kijken en te herstellen
+- [Actielogboek](actielogboek.md) — nagaan wie iets verwijderde
