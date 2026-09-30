@@ -1,133 +1,142 @@
 # Clients
 
-Le fichier clients de CleanOps. Vous y trouvez tous les clients de votre entreprise, avec leurs coordonnées,
-leurs contrats périodiques et les adresses où les travaux sont exécutés.
+Le fichier clients de CleanOps : tous les clients de votre entreprise, avec leurs coordonnées, les adresses où
+le travail est exécuté, et tout ce qui leur est rattaché — contrats, devis, factures et postes ouverts.
 
-<!-- AFBEELDING: l'aperçu des clients avec la barre de recherche et quelques lignes -->
+![La liste des clients de la démo, avec l'étiquette bloqué chez Garage Demo & Zonen et pas de nouvelles missions chez Camping Zonnedal](images/klanten-lijst-fr.png "Clients")
 
 ## Ouvrir l'écran
 
-Cliquez sur **Clients** dans le menu de gauche.
+Dans le menu de gauche, sous **CRM**, cliquez sur **Clients**.
 
 ## La liste
 
-La liste affiche par client le numéro, le nom de recherche, le nom, le code postal, la commune, le délai de
-paiement et l'adresse e-mail.
+Pour chaque client, vous voyez le numéro, le nom de recherche, le nom, un numéro de téléphone (le GSM, sinon le
+fixe), le code postal, la commune, le délai de paiement et l'adresse e-mail. Si **bloqué** ou **pas de nouvelles
+missions** figure à côté du nom, le client porte cette mention sur sa fiche.
 
-- **Rechercher** — tapez dans la barre de recherche au-dessus de la liste. La recherche porte sur toutes les
-  colonnes affichées, donc aussi bien sur le nom que sur la commune.
-- **Trier** — cliquez sur un titre de colonne.
-- **Exporter** — via le bouton en haut à droite de la liste ; vous obtenez l'aperçu actuel sous forme de
-  fichier.
-- **Ouvrir** — cliquez sur une ligne pour voir la fiche complète.
+- **Rechercher** — le curseur est déjà dans le champ de recherche. Vous pouvez taper plusieurs mots ; chaque mot
+  doit figurer quelque part chez le client. *janssens gent* trouve donc les clients qui s'appellent Janssens et
+  habitent à Gand. La recherche porte sur le numéro, le nom de recherche, le nom (les deux lignes), la rue, le
+  code postal, la commune, le numéro de TVA, l'adresse e-mail et les numéros de téléphone. Un numéro de téléphone
+  se trouve avec ou sans espaces.
+- **Trier** — cliquez sur un titre de colonne ; un second clic inverse l'ordre.
+- **Exporter** — le bouton en haut à droite vous donne la liste, telle qu'elle est filtrée, sous forme de fichier.
+- **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de ce client.
+- **Journal** — le volet à droite montre les pièces jointes et l'historique du client que vous sélectionnez dans
+  la liste, sans ouvrir la fiche.
 
-La liste récupère une page à la fois depuis la base de données au lieu de tout charger d'un coup. Même avec
-des dizaines de milliers de clients, l'écran reste donc rapide.
+## Un nouveau client
 
-## Ajouter ou modifier un client
-
-Cliquez sur **Nouveau client**, ou sur **Modifier** dans la ligne d'un client existant. Dans les deux cas, la
-même fenêtre s'ouvre.
-
-<!-- AFBEELDING: la fenêtre de modification d'un client, champs remplis -->
-
-Les champs :
-
-| Champ | Explication |
-|---|---|
-| Nom de recherche | Le nom que vous utilisez en pratique — souvent une abréviation ou le nom sans forme juridique. |
-| Nom / Nom (2e ligne) | Le nom officiel tel qu'il doit figurer sur les documents. |
-| Rue, N°, Code postal, Commune, Pays | L'adresse de facturation. Les adresses de travail se saisissent séparément sur la fiche. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. |
-| Langue | Détermine la langue des documents pour ce client, comme le bon de livraison. |
-| Numéro de TVA | |
-| Contact, Téléphone, GSM, E-mail | |
-| Délai de paiement | |
-| Bloqué | Le client reste visible mais est traité comme bloqué. |
-| Reçoit des rappels | Désactivez ceci pour les clients que vous ne souhaitez pas relancer automatiquement. |
-| Pas de nouvelles missions | Marque un client pour lequel plus aucun nouveau travail n'est accepté. |
-
-Cliquez sur **Enregistrer** pour sauvegarder, ou sur **Annuler** pour fermer la fenêtre sans modifications.
-
-## Supprimer un client
-
-**Supprimer** retire le client de la liste, mais ne jette rien définitivement : le client passe dans la
-corbeille et peut être restauré de là.
+Cliquez sur **Nouveau client**. Vous obtenez une fiche vide ; les champs marqués d'un astérisque sont
+obligatoires. Après **Enregistrer**, la fiche du nouveau client s'ouvre, avec ses onglets.
 
 ## La fiche client
 
-Ouvrez une ligne et vous obtenez tout ce qui concerne ce client sur un seul écran. Son nom figure en haut,
-puis une rangée d'onglets. À gauche **Fiche** et **Adresses** — le client lui-même. À droite, après un
-espace, ce qui est rattaché au client : contrats, devis, factures, postes ouverts, notes, pièces jointes et
-historique.
+En haut figurent le nom de recherche et le numéro du client, puis une rangée d'onglets. À gauche **Fiche** et
+**Adresses** — le client lui-même. À droite, ce qui est rattaché au client : **Contrats**, **Devis**,
+**Factures**, **Postes ouverts** et **Notes**, et en fin de rangée **Pièces jointes** et **Historique**.
 
-Chaque onglet reste visible, même vide ; le nombre figure entre parenthèses dans son titre. « Contrats (0) »
-est donc une réponse, pas un onglet manquant.
+Chaque onglet reste visible, même vide ; le nombre figure entre parenthèses dans son titre. « Devis (0) »
+signifie donc qu'il n'y a pas de devis.
 
-<!-- AFBEELDING: la fiche client avec les onglets contrats et adresses d'exécution -->
+![La fiche de Résidence Les Tilleuls sur l'onglet Fiche, avec les onglets au-dessus et les remarques en bas](images/klant-fiche-fr.png "Fiche client")
 
-**Contrats** — les contrats périodiques de ce client, avec le numéro, la description, la fréquence et la date
-de début. Ce sont ces contrats qui donnent naissance aux ordres de travail. **Nouveau contrat** en ajoute un.
-Le nouveau contrat apparaît immédiatement dans cet onglet.
+### L'onglet Fiche
 
-**Adresses d'exécution** — les adresses où le travail est effectué, avec la rue, le numéro, le code postal, la
-commune et le téléphone. Elles ne coïncident pas nécessairement avec l'adresse de facturation : un client
-possédant plusieurs bâtiments a une seule adresse de facturation et plusieurs adresses de travail. **Nouvelle
-adresse** en ajoute une ; ouvrir une ligne vous mène à l'adresse même, où vous la modifiez ou la supprimez.
+| Champ | Explication |
+|---|---|
+| Nom de recherche | Le nom en majuscules. CleanOps le forme lui-même à partir du nom ; il détermine l'ordre dans la liste. |
+| Délai de paiement * | Le délai qui sert à calculer l'échéance d'une facture. Vous choisissez parmi les délais de paiement de l'Administration. |
+| Nom *, Nom (2e ligne) | Le nom tel qu'il figure sur les documents, 30 caractères au plus chacun. |
+| Rue *, N°, Code postal *, Commune *, Pays | L'adresse du client. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. |
+| Langue * | La langue des documents pour ce client. |
+| Type de client | **Entreprise** ou **Particulier**. Une entreprise a besoin d'un numéro de TVA. |
+| Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle. **Rechercher** remplit le nom et l'adresse depuis la BCE ; ce que la BCE ne connaît pas reste tel quel. |
+| Contact | La personne de contact chez le client. |
+| Téléphone, GSM, Fax, E-mail | Un numéro de téléphone, de GSM ou une adresse e-mail doit être valide ; le fax non. |
+| Bloqué | Le client reste utilisable, mais figure avec une étiquette dans la liste et se remarque dans la planification. CleanOps le signale lors d'un nouvel ordre de travail. |
+| Reçoit des rappels | Désactivez ceci pour un client que vous ne souhaitez pas relancer. |
+| Pas de nouvelles missions | Lors d'un nouvel ordre de travail pour ce client, CleanOps demande d'abord une confirmation. |
+| Remarques | Du texte libre sur le client, comme les coordonnées de personnes ou des accords. |
 
-**Devis** — les devis de ce client, avec le numéro, la date, la description, le total et le statut.
+Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire, CleanOps indique lequel. Une
+adresse e-mail, un numéro de téléphone ou un numéro de TVA incorrect est refusé — même si vous ne l'avez pas
+modifié vous-même ; corrigez-le d'abord. **Annuler** vous ramène à la liste sans sauvegarder.
+
+### L'onglet Adresses
+
+Les adresses d'exécution : les lieux où le travail est effectué. Un client possédant plusieurs bâtiments a une
+adresse sur sa fiche et plusieurs adresses d'exécution. Si une autre adresse du même client a la même rue, le même
+numéro et le même code postal, **double** figure à côté.
+
+**Nouvelle adresse** en ajoute une ; ouvrir une ligne vous mène à l'adresse même.
+
+![Une adresse d'exécution de Résidence Les Tilleuls, avec une instruction de travail, le matériel à emporter et l'accessibilité par jour](images/klant-adres-fr.png "Adresse d'exécution")
+
+Sur une adresse d'exécution, la rue, le code postal et la commune sont obligatoires. Par ailleurs :
+
+- **Remarques**, **Instruction de travail (sur l'ordre)** et **Matériel à emporter** — qui choisit cette adresse
+  sur un ordre de travail y retrouve ces textes : les remarques comme remarque interne, l'instruction et le
+  matériel dans leur propre champ. Ce qui figurait déjà sur l'ordre de travail reste en place.
+- **Accessibilité** — par jour *Normal*, *Difficile* ou *Impossible*. Qui choisit cette adresse sur un nouvel
+  ordre de travail voit les jours où elle est difficile ou impossible d'accès.
+- **N'accepte plus de nouvelles commandes** — lors d'un nouvel ordre de travail à cette adresse, CleanOps demande
+  d'abord une confirmation.
+
+**Supprimer** place l'adresse dans la [corbeille](beheer/prullenbak.fr.md). **← Client** vous ramène à l'onglet
+Adresses.
+
+### Ce qui est rattaché au client
+
+**Contrats** — les contrats périodiques de ce client, avec le numéro, la description, la fréquence et la date de
+début. Ce sont ces contrats qui donnent naissance aux ordres de travail.
+
+**Devis** — avec le numéro, la date, la description, le total et le statut.
 
 **Factures** — les factures et notes de crédit, avec le numéro, le type, la date, le total, l'échéance et la
 communication. La communication est la référence structurée que le client mentionne lors de son paiement.
 
-**Postes ouverts** — ce qui reste dû par ce client. Le total figure à côté du titre ; s'il dépasse zéro, il
-s'affiche en rouge. Pour chaque poste, vous voyez le document, la date, l'échéance, le solde ouvert et le
-nombre de rappels envoyés.
+**Postes ouverts** — ce qui reste dû par ce client. En haut figure le solde ouvert, en rouge s'il dépasse zéro.
+Pour chaque poste, vous voyez le document, la date, l'échéance, le solde ouvert et le nombre de rappels. En
+dessous figure l'**historique des rappels** : les rappels envoyés, avec la date, le document et le niveau.
 
-**Historique des rappels** — les rappels envoyés, avec la date, le document et le niveau.
+**Notes** — les annotations datées sur ce client, avec la date à laquelle elles ont été notées et la date à
+laquelle vous vouliez les revoir (**Rappeler le**).
 
-**Notes** — des annotations libres sur ce client, avec la date à laquelle vous souhaitez les revoir
-(**Rappeler le**) et la date à laquelle elles ont été notées.
-
-**Pièces jointes** — les documents de ce client. **Pièce jointe** ajoute un fichier ; pour chacune, vous
-adaptez la description ou vous la supprimez. Un fichier peut peser jusqu'à 25 Mo.
+**Pièces jointes** — les documents de ce client. **Pièce jointe** ajoute un fichier, jusqu'à 25 Mo ; pour chacune,
+vous adaptez la description ou vous la supprimez.
 
 **Historique** — qui a modifié quel champ de ce client, quand, et de quelle valeur vers quelle autre. Le plus
-récent figure en haut. La ligne la plus ancienne est généralement **Créé**, à la date à laquelle le client
-est né dans CleanOps ; tous les champs y figurent tels qu'ils étaient alors.
-
-<!-- AFBEELDING: les onglets postes ouverts et historique sur une fiche client -->
+récent figure en haut.
 
 Chaque onglet dispose de son propre bouton d'exportation, ce qui vous permet d'exporter un élément séparément.
 
 ### Les boutons en bas
 
-Vous ne voyez un bouton que si vous avez le droit de créer ce qu'il crée, et que la partie correspondante
-(ordres de travail, devis, facturation) est ouverte pour vous.
-
-- **Nouvel ordre de travail** — ouvre un écran où vous composez l'ordre de travail. Après **Enregistrer**,
-  vous arrivez sur le nouvel ordre ; il figure alors dans la planification.
-- **Nouveau devis** — ouvre un nouveau devis pour ce client. Après **Enregistrer**, vous arrivez sur le
-  nouveau devis ; il figure aussi dans l'onglet **Devis** du client.
-- **Facture d'acompte** — ouvre une fenêtre où vous saisissez une description, un montant net et un code TVA.
-  **Créer** ne devient actif que lorsque le montant dépasse zéro. Vous lisez ensuite en haut le numéro de la
-  facture, et celle-ci figure dans l'onglet **Factures**.
-
-Ce que vous créez depuis la fiche apparaît dans l'onglet correspondant. Le message en haut se ferme avec
-**Fermer**.
-
-**← Clients**, en haut à gauche, vous ramène à la liste.
+À côté d'**Enregistrer** et d'**Annuler**, la fiche peut porter trois boutons : **Nouvel ordre de travail**,
+**Nouveau devis** et **Facture d'acompte**. Vous n'en voyez un que si vous avez le droit de créer ce qu'il crée,
+et que la partie vers laquelle il mène est ouverte pour vous. Ce que vous créez ainsi apparaît dans l'onglet
+correspondant.
 
 !!! info "Tous les boutons ne sont pas visibles par tout le monde"
-    Les boutons et les onglets que vous voyez dépendent de vos droits. Un écran qui n'est pas encore disponible
-    n'apparaît pas dans votre menu — et les boutons qui y mènent ne vous sont donc pas montrés non plus. Si
-    votre collègue voit un bouton que vous n'avez pas, c'est une différence de droits et non un problème.
+    Les boutons que vous voyez et les lignes que vous pouvez ouvrir dépendent de vos droits. Une partie qui n'est
+    pas encore disponible n'apparaît pas dans votre menu — et les boutons qui y mènent ne vous sont donc pas
+    montrés non plus. Si votre collègue voit un bouton que vous n'avez pas, c'est une différence de droits et non
+    un problème.
+
+## Supprimer un client
+
+**Supprimer**, en bas de la fiche, place le client dans la [corbeille](beheer/prullenbak.fr.md), d'où vous le
+restaurez. Si le client a des contrats en cours, la question indique combien : ils ne génèrent plus d'ordres de
+travail tant que le client est dans la corbeille.
 
 ## Questions fréquentes
 
-**Pourquoi est-ce que je vois « Choisissez d'abord un tenant » ?**
-C'est qu'aucun environnement n'a encore été choisi. Il s'agit d'une tâche d'administrateur ; prévenez votre
-personne de contact chez ADM-Concept.
+**Je ne peux pas enregistrer un client : « Adresse e-mail invalide » (ou numéro de téléphone).**
+Le champ contient une valeur incorrecte, par exemple une espace au milieu d'une adresse e-mail. Corrigez le champ
+et enregistrez à nouveau.
 
 **Je ne retrouve pas un client.**
-Vérifiez que vous ne recherchez pas une partie du nom officiel alors que le nom de recherche est différent.
-Sinon, recherchez par code postal ou par commune. Si le client n'y est vraiment plus, consultez la corbeille.
+Cherchez sur une partie du nom, la rue, le code postal ou le numéro de téléphone. Si le client n'y est vraiment
+plus, consultez la [corbeille](beheer/prullenbak.fr.md).

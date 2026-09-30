@@ -36,6 +36,13 @@ export const DEMO = {
   basistabel: 'Regenput',
   // Het voertuig waarvan DemoDataGenerator de omschrijving aanvult ("Scania kolkenzuiger"): journaal en onderhoud.
   voertuig: '1-DEM-001',
+  // De uitgewerkte demoklant (DemoDataGenerator.VoorbeeldKlant): opmerkingen, fax, drie adressen waarvan twee dubbel.
+  klant: 'Tuincentrum De Linde',
+  // Het adres van die klant MET werkinstructie en bereikbaarheid — herkenbaar aan zijn telefoonnummer (het dubbele heeft er geen).
+  klantAdresTelefoon: '09 386 12 45',
+  // Hetzelfde in het Frans, voor de Franse beelden (DemoDataGenerator.VoorbeeldKlantFr).
+  klantFr: 'Résidence Les Tilleuls',
+  klantAdresTelefoonFr: '069 22 33 44',
   // Het voertuig met de VERLOPEN keuring: de fiche toont dan haar melding in het keuringsblok.
   voertuigKeuring: '1-DEM-003',
   // De verwijderde demo-klant (DemoDataGenerator.VerzinPrullenbakAsync): het merkteken van het prullenbakbeeld.

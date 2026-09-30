@@ -1,131 +1,139 @@
 # Klanten
 
-Het klantenbestand van CleanOps. Hier staan alle klanten van uw bedrijf, met hun gegevens, hun periodieke
-contracten en de adressen waar de werken uitgevoerd worden.
+Het klantenbestand van CleanOps: alle klanten van uw bedrijf, met hun gegevens, de adressen waar gewerkt wordt,
+en alles wat aan hen hangt — contracten, offertes, facturen en openstaande posten.
 
-<!-- AFBEELDING: het klantenoverzicht met de zoekbalk en enkele rijen -->
+![De klantenlijst van de demo, met het label geblokkeerd bij Garage Demo & Zonen en geen nieuwe opdrachten bij Camping Zonnedal](images/klanten-lijst.png "Klanten")
 
 ## Het scherm openen
 
-Klik links in het menu op **Klanten**.
+Klik links in het menu, onder **CRM**, op **Klanten**.
 
 ## De lijst
 
-De lijst toont per klant het nummer, de zoeknaam, de naam, de postcode, de gemeente, de betaaltermijn en het
-e-mailadres.
+Per klant ziet u het nummer, de zoeknaam, de naam, een telefoonnummer (de gsm, en anders het vaste nummer), de
+postcode, de gemeente, de betaaltermijn en het e-mailadres. Staat er naast de naam **geblokkeerd** of **geen
+nieuwe opdrachten**, dan draagt de klant die aanduiding op zijn fiche.
 
-- **Zoeken** — typ in de zoekbalk boven de lijst. Er wordt gezocht in alle getoonde kolommen, dus zowel op
-  naam als op gemeente.
-- **Sorteren** — klik op een kolomtitel.
-- **Exporteren** — via de knop rechtsboven de lijst; u krijgt het huidige overzicht als bestand.
-- **Openen** — klik op een rij om de volledige fiche te zien.
+- **Zoeken** — de cursor staat meteen in het zoekveld. U mag meerdere woorden typen; elk woord moet ergens bij
+  de klant voorkomen. *janssens gent* vindt dus de klanten die Janssens heten en in Gent wonen. Er wordt gezocht
+  in het nummer, de zoeknaam, de naam (beide regels), de straat, de postcode, de gemeente, het btw-nummer, het
+  e-mailadres en de telefoonnummers. Een telefoonnummer vindt u met of zonder spaties.
+- **Sorteren** — klik op een kolomtitel; nog eens klikken keert de volgorde om.
+- **Exporteren** — via de knop rechtsboven krijgt u de lijst zoals ze nu gefilterd is als bestand.
+- **Openen** — dubbelklik op een rij om de fiche van die klant te openen.
+- **Journaal** — de strook rechts toont de bijlagen en het logboek van de klant die u in de lijst aanklikt,
+  zonder de fiche te openen.
 
-De lijst haalt telkens een pagina op uit de databank in plaats van alles in één keer. Ook met tienduizenden
-klanten blijft het scherm dus snel.
+## Een nieuwe klant
 
-## Een klant toevoegen of wijzigen
-
-Klik op **Nieuwe klant**, of op **Bewerken** in de rij van een bestaande klant. In beide gevallen opent
-hetzelfde venster.
-
-<!-- AFBEELDING: het bewerkvenster van een klant, met de velden ingevuld -->
-
-De velden:
-
-| Veld | Toelichting |
-|---|---|
-| Zoeknaam | De naam waarop u in de praktijk zoekt — vaak een afkorting of de naam zonder rechtsvorm. |
-| Naam / Naam (2e regel) | De officiële naam zoals hij op documenten moet komen. |
-| Straat, Nr, Postcode, Gemeente, Land | Het facturatieadres. Werkadressen legt u apart vast op de fiche. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. |
-| Taal | Bepaalt de taal van de documenten voor deze klant, zoals de leveringsbon. |
-| Btw-nummer | |
-| Contact, Telefoon, Gsm, E-mail | |
-| Betaaltermijn | |
-| Geblokkeerd | De klant blijft zichtbaar maar wordt als geblokkeerd behandeld. |
-| Ontvangt rappels | Zet dit af voor klanten die u niet automatisch wilt aanmanen. |
-| Geen nieuwe opdrachten | Markeert een klant waarvoor geen nieuw werk meer aangenomen wordt. |
-
-Klik op **Opslaan** om te bewaren, of op **Annuleren** om het venster te sluiten zonder wijzigingen.
-
-## Een klant verwijderen
-
-**Verwijderen** haalt de klant uit de lijst, maar gooit niets definitief weg: de klant verhuist naar de
-prullenbak en kan van daaruit hersteld worden.
+Klik op **Nieuwe klant**. U krijgt een lege fiche; de velden met een sterretje zijn verplicht. Na **Opslaan**
+opent de fiche van de nieuwe klant, met de tabbladen erbij.
 
 ## De klantfiche
 
-Klik een rij open en u krijgt alles van die ene klant op één scherm. Bovenaan staat zijn naam, daaronder een
-rij tabbladen. Links **Fiche** en **Adressen** — dat is de klant zelf. Rechts daarvan, na een tussenruimte,
-staat wat aan de klant hángt: contracten, offertes, facturen, openstaande posten, notities, bijlagen en
-historiek.
+Bovenaan staan de zoeknaam en het klantnummer, daaronder een rij tabbladen. Links **Fiche** en **Adressen** —
+dat is de klant zelf. Rechts daarvan staat wat aan de klant hangt: **Contracten**, **Offertes**, **Facturen**,
+**Openstaand** en **Notities**, en achteraan **Bijlagen** en **Logboek**.
 
-Elk tabblad blijft staan, ook als er niets in zit; het aantal staat tussen haakjes in de titel. "Contracten
-(0)" is dus een antwoord, en geen ontbrekend tabblad.
+Elk tabblad blijft staan, ook als er niets in zit; het aantal staat tussen haakjes in de titel. "Offertes (0)"
+betekent dus dat er geen offertes zijn.
 
-<!-- AFBEELDING: de klantfiche met de tabbladen contracten en uitvoeringsadressen -->
+![De fiche van Tuincentrum De Linde op het tabblad Fiche, met de tabbladen erboven en onderaan de opmerkingen](images/klant-fiche.png "Klantfiche")
+
+### Het tabblad Fiche
+
+| Veld | Toelichting |
+|---|---|
+| Zoeknaam | De naam in hoofdletters. CleanOps maakt ze zelf uit de naam; ze bepaalt de volgorde in de lijst. |
+| Betaaltermijn * | De termijn waarmee de vervaldag van een factuur berekend wordt. U kiest uit de betalingstermijnen van Platformbeheer. |
+| Naam *, Naam (2e regel) | De naam zoals hij op documenten komt, elk hoogstens 30 tekens. |
+| Straat *, Nr, Postcode *, Gemeente *, Land | Het adres van de klant. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. |
+| Taal * | De taal van de documenten voor deze klant. |
+| Klanttype | **Bedrijf** of **Particulier**. Een bedrijf heeft een btw-nummer nodig. |
+| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer getoetst. Met **Ophalen** vult CleanOps de naam en het adres in uit de KBO; wat de KBO niet kent, blijft staan zoals het was. |
+| Contact | De contactpersoon bij de klant. |
+| Telefoon, Gsm, Fax, E-mail | Een telefoonnummer, gsm-nummer of e-mailadres moet geldig zijn; de fax niet. |
+| Geblokkeerd | De klant blijft gewoon bruikbaar, maar staat met een label in de lijst en valt op in de planning. Bij een nieuwe werkorder meldt CleanOps het. |
+| Ontvangt rappels | Zet dit af voor een klant die u niet wilt aanmanen. |
+| Geen nieuwe opdrachten | Bij een nieuwe werkorder voor deze klant vraagt CleanOps eerst een bevestiging. |
+| Opmerkingen | Vrije tekst bij de klant, zoals contactgegevens van personen of afspraken. |
+
+Klik op **Opslaan** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. Een e-mailadres,
+telefoonnummer of btw-nummer dat niet klopt, wordt geweigerd — ook als u het zelf niet gewijzigd hebt; verbeter
+het dan eerst. **Annuleren** brengt u terug naar de lijst zonder te bewaren.
+
+### Het tabblad Adressen
+
+De uitvoeringsadressen: de plaatsen waar het werk gebeurt. Een klant met meerdere panden heeft één adres op zijn
+fiche en meerdere uitvoeringsadressen. Heeft een ander adres van dezelfde klant dezelfde straat, hetzelfde
+nummer en dezelfde postcode, dan staat er **dubbel** bij.
+
+Met **Nieuw adres** voegt u er één toe; een rij openen brengt u naar het adres zelf.
+
+![Een uitvoeringsadres van Tuincentrum De Linde, met een werkinstructie, het mee te nemen materiaal en de bereikbaarheid per dag](images/klant-adres.png "Uitvoeringsadres")
+
+Op een uitvoeringsadres zijn straat, postcode en gemeente verplicht. Verder:
+
+- **Opmerkingen**, **Werkinstructie (komt op de opdracht)** en **Mee te nemen materiaal** — wie dit adres kiest
+  op een werkorder, krijgt deze teksten daar aangevuld: de opmerkingen als interne opmerking, de werkinstructie
+  en het materiaal in hun eigen veld. Wat al op de werkorder stond, blijft staan.
+- **Bereikbaarheid** — per dag *Gewoon*, *Moeilijk* of *Niet mogelijk*. Wie dit adres kiest op een nieuwe
+  werkorder, ziet op welke dagen het moeilijk of niet bereikbaar is.
+- **Aanvaardt geen nieuwe opdrachten meer** — bij een nieuwe werkorder op dit adres vraagt CleanOps eerst een
+  bevestiging.
+
+**Verwijderen** legt het adres in de [prullenbak](beheer/prullenbak.md). Met **← Klant** keert u terug naar
+het tabblad Adressen.
+
+### Wat aan de klant hangt
 
 **Contracten** — de periodieke contracten van deze klant, met nummer, omschrijving, frequentie en startdatum.
-Uit deze contracten ontstaan de werkorders. Met **Nieuw contract** voegt u er één toe. Het nieuwe contract
-verschijnt meteen in dit tabblad.
+Uit deze contracten ontstaan de werkorders.
 
-**Uitvoeringsadressen** — de adressen waar het werk gebeurt, met straat, nummer, postcode, gemeente en
-telefoon. Ze zijn niet noodzakelijk hetzelfde als het facturatieadres: een klant met meerdere panden heeft
-één facturatieadres en meerdere werkadressen. Met **Nieuw adres** voegt u er één toe; een rij openen brengt
-u op het adres zelf, waar u het wijzigt of verwijdert.
-
-**Offertes** — de offertes van deze klant, met nummer, datum, omschrijving, totaal en status.
+**Offertes** — met nummer, datum, omschrijving, totaal en status.
 
 **Facturen** — de facturen en creditnota's, met nummer, type, datum, totaal, vervaldag en mededeling. De
 mededeling is de gestructureerde referentie die de klant bij zijn betaling vermeldt.
 
-**Openstaande posten** — wat er van deze klant nog openstaat. Naast de titel staat het totaal; is dat groter
-dan nul, dan staat het in het rood. Per post ziet u het document, de datum, de vervaldag, het openstaande
-bedrag en het aantal verstuurde rappels.
+**Openstaand** — wat er van deze klant nog openstaat. Bovenaan staat het openstaande saldo, in het rood als het
+groter is dan nul. Per post ziet u het document, de datum, de vervaldag, het openstaande bedrag en het aantal
+rappels. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document en niveau.
 
-**Rappelhistoriek** — de verstuurde rappels, met datum, document en niveau.
+**Notities** — de gedateerde aantekeningen bij deze klant, met de datum waarop ze genoteerd zijn en de datum
+waarop u ze wilde terugzien (**Onthoud op**).
 
-**Notities** — losse aantekeningen bij deze klant, met de datum waarop u ze wil terugzien (**Onthoud op**) en
-de datum waarop ze genoteerd zijn.
+**Bijlagen** — de documenten bij deze klant. Met **Bijlage** voegt u een bestand toe, tot 25 MB; per bijlage
+past u de omschrijving aan of haalt u ze weg.
 
-**Bijlagen** — de documenten bij deze klant. Met **Bijlage** voegt u een bestand toe; per bijlage past u de
-omschrijving aan of haalt u ze weg. Een bestand mag tot 25 MB groot zijn.
-
-**Historiek** — wie welk veld van deze klant gewijzigd heeft, wanneer, en van welke waarde naar welke. Het
-nieuwste staat bovenaan. De oudste regel is meestal **Aangemaakt**, op de dag dat de klant in CleanOps
-ontstaan is; daar staan alle velden bij zoals ze toen waren.
-
-<!-- AFBEELDING: de tabbladen openstaande posten en historiek op een klantfiche -->
+**Logboek** — wie welk veld van deze klant gewijzigd heeft, wanneer, en van welke waarde naar welke. Het nieuwste
+staat bovenaan.
 
 Elk tabblad heeft een eigen exportknop, zodat u één onderdeel apart kunt uitvoeren.
 
 ### De knoppen onderaan
 
-U ziet een knop enkel wanneer u het recht hebt om te maken wat hij maakt, én het bijbehorende onderdeel
-(werkorders, offertes, facturatie) voor u vrijgegeven is.
-
-- **Nieuwe werkorder** — opent een scherm waarin u de werkorder samenstelt. Na **Opslaan** komt u op de
-  nieuwe werkorder terecht; hij staat dan in de planning.
-- **Nieuwe offerte** — opent een nieuwe offerte voor deze klant. Na **Opslaan** komt u op de nieuwe offerte
-  terecht; ze staat ook in het tabblad **Offertes** van de klant.
-- **Voorschotfactuur** — opent een venster waarin u een omschrijving, een netto bedrag en een btw-code
-  invult. **Aanmaken** wordt pas actief zodra het bedrag groter is dan nul. Daarna leest u bovenaan het
-  nummer van de factuur, en ze staat in het tabblad **Facturen**.
-
-Wat u vanaf de fiche aanmaakt, komt in het bijbehorende tabblad terecht. De melding bovenaan sluit u met
-**Sluiten**.
-
-Met **← Klanten** links bovenaan keert u terug naar de lijst.
+Naast **Opslaan** en **Annuleren** kan de fiche drie knoppen dragen: **Nieuwe werkorder**, **Nieuwe offerte** en
+**Voorschotfactuur**. U ziet er een enkel wanneer u het recht hebt om te maken wat hij maakt, én het onderdeel
+waar hij naartoe leidt voor u vrijgegeven is. Wat u zo aanmaakt, verschijnt in het bijbehorende tabblad.
 
 !!! info "Niet elke knop is voor iedereen zichtbaar"
-    Welke knoppen en welke tabbladen u ziet, hangt af van wat u mag. Een scherm dat nog niet vrijgegeven is,
-    verschijnt niet in uw menu — en de knoppen die ernaartoe leiden, toont CleanOps u dan ook niet. Ziet uw
-    collega een knop die u niet heeft, dan is dat het verschil in rechten en niet een storing.
+    Welke knoppen u ziet en welke rijen u kunt openen, hangt af van wat u mag. Een onderdeel dat nog niet
+    vrijgegeven is, verschijnt niet in uw menu — en de knoppen die ernaartoe leiden, toont CleanOps u dan ook
+    niet. Ziet uw collega een knop die u niet heeft, dan is dat het verschil in rechten en geen storing.
+
+## Een klant verwijderen
+
+**Verwijderen** onderaan de fiche legt de klant in de [prullenbak](beheer/prullenbak.md); van daaruit haalt u hem
+terug. Heeft de klant lopende contracten, dan zegt de vraag hoeveel: die maken geen werkorders meer zolang de
+klant in de prullenbak ligt.
 
 ## Veelgestelde vragen
 
-**Waarom zie ik "Kies eerst een tenant"?**
-Dan is er nog geen omgeving gekozen. Dat is beheerderswerk; verwittig uw contactpersoon bij ADM-Concept.
+**Ik kan een klant niet opslaan: "Ongeldig e-mailadres" (of telefoonnummer).**
+Het veld bevat een waarde die niet klopt, bijvoorbeeld een spatie midden in een e-mailadres. Verbeter het veld
+en sla opnieuw op.
 
 **Ik vind een klant niet terug.**
-Controleer of u niet per ongeluk op een deel van de officiële naam zoekt terwijl de zoeknaam anders is. Zoek
-anders op postcode of gemeente. Staat de klant er echt niet meer, kijk dan in de prullenbak.
+Zoek op een deel van de naam, de straat, de postcode of het telefoonnummer. Staat de klant er echt niet meer,
+kijk dan in de [prullenbak](beheer/prullenbak.md).

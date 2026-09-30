@@ -69,6 +69,27 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Klanten (vrijgave 30/09/2026): lijst, fiche en een uitvoeringsadres — uit de tien demoklanten
+  // (DemoDataGenerator.VerzinKlantenAsync). Het merkteken van de lijst is het LABEL "geblokkeerd": dat staat enkel naast
+  // Garage Demo & Zonen, dus het bewijst dat de demo gevuld is en de lijst hertekend.
+  { naam: 'klanten-lijst', route: '/klanten', verwacht: tekstTaal('geblokkeerd', 'bloqué'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  // ⚠️ HOGER dan de standaard: de opmerkingen staan onderaan het tabblad Fiche, en die horen op het beeld.
+  // ⚠️ PER TAAL EEN ANDERE KLANT: de Franse ronde neemt de Franstalige voorbeeldklant, anders staan er Nederlandse
+  // opmerkingen en instructies op een Frans beeld (handleiding-schrijfregels §4, gezien op 30/09/2026).
+  { naam: 'klant-fiche', route: '/klanten', verwacht: tekstTaal('Opmerkingen', 'Remarques'), hoogte: 1180,
+    na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant); } },
+  { naam: 'klant-adres', route: '/klanten', verwacht: tekstTaal('Bereikbaarheid', 'Accessibilité'), hoogte: 1180,
+    na: async (p, taal) => {
+      const fr = taal === 'fr-BE';
+      await openRij(p, fr ? DEMO.klantFr : DEMO.klant);
+      await p.getByText(/^(Adressen|Adresses) \(/).first().click();
+      await p.getByRole('row').filter({ hasText: fr ? DEMO.klantAdresTelefoonFr : DEMO.klantAdresTelefoon }).first().dblclick();
+      await p.waitForURL(/\/adres\/[0-9a-f-]{36}$/, { timeout: 15000 });
+    } },
   // Voertuigen: lijst + FICHE (blokken, tabbladen) + onderhoudsvenster + journaal-rail op de lijst + de herinnering.
   // ⚠️ De journaal-lade eerst DICHT: ze onthoudt dat ze open stond (DrawerId), en na het journaalbeeld toonde het Franse
   // lijstbeeld haar open en het Nederlandse niet (29/09/2026).
@@ -230,7 +251,8 @@ for (const taal of ['nl-BE', 'fr-BE']) {
       await page.setViewportSize({ width: BREED, height: s.hoogte ?? HOOG });
       await page.goto(`${BASIS}${s.route}`); await page.waitForLoadState('networkidle');
       await page.waitForTimeout(600);
-      if (s.na) await s.na(page);
+      // De taal gaat mee: een recept mag per taal een ander demorecord kiezen (klanten: Nederlands- en Franstalige klant).
+      if (s.na) await s.na(page, taal);
       try { await page.getByText(s.verwacht).first().waitFor({ state: 'visible', timeout: 15000 }); }
       catch { mislukt.push(`${bestand} — het merkteken ${s.verwacht} verscheen niet: dit is niet het beloofde scherm`); continue; }
       await page.waitForTimeout(400);
