@@ -1,101 +1,141 @@
 # Collaborateurs
 
 Les personnes que vous planifiez en équipes et sur les ordres de travail. Pour chaque collaborateur, CleanOps
-conserve les données, indique qui est chauffeur ou convoyeur, et quels jours la personne travaille.
+conserve les coordonnées, indique qui est chauffeur ou convoyeur, quels jours la personne travaille, et ses
+congés.
 
-<!-- AFBEELDING: l'aperçu des collaborateurs avec la barre de recherche et quelques lignes -->
+![La liste des collaborateurs de la démo, avec Tom Verbeke et Pieter Claeys en tête grâce à leur priorité](images/medewerkers-lijst-fr.png "Collaborateurs")
 
 ## Ouvrir l'écran
 
-Cliquez sur **Collaborateurs** dans le menu de gauche.
+Dans le menu de gauche, sous **CRM**, cliquez sur **Collaborateurs**.
 
 ## La liste
 
-La liste affiche par collaborateur le code, le nom, la commune, le numéro de téléphone, ainsi que s'il est
-chauffeur et s'il est actif.
+Pour chaque collaborateur, vous voyez le code, le nom, la commune, un numéro de téléphone (le GSM, sinon le fixe),
+et si la personne est chauffeur et active. En tête figurent les collaborateurs avec la **priorité** la plus élevée,
+puis les autres par nom.
 
-- **Rechercher** — tapez dans la barre de recherche au-dessus de la liste. La recherche porte sur toutes les
-  colonnes affichées, donc aussi sur la commune.
-- **Afficher** — en haut, vous choisissez entre les collaborateurs actifs et tous les collaborateurs. Le
-  compteur à côté indique combien sont affichés sur le total. Passez à tous pour retrouver également ceux qui
-  ne travaillent plus.
-- **Trier** — cliquez sur un titre de colonne.
-- **Exporter** — via le bouton en haut à droite de la liste ; vous recevez l'aperçu actuel sous forme de
-  fichier.
-- **Ouvrir** — cliquez sur une ligne pour voir la fiche complète.
+- **Rechercher** — le curseur est déjà dans le champ de recherche. La recherche porte sur le code, le nom, la
+  commune et le numéro de téléphone.
+- **Afficher** — est réglé sur **Actifs**. Choisissez **Pensionnés** pour les retraités, ou **Tous** pour
+  retrouver aussi ceux qui ne sont plus actifs. Le compteur à côté indique combien de collaborateurs sont affichés
+  sur le total.
+- **Trier** — cliquez sur un titre de colonne ; un second clic inverse l'ordre.
+- **Exporter** — le bouton en haut à droite vous donne la liste, telle qu'elle est filtrée, sous forme de fichier.
+- **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de ce collaborateur.
+- **Journal** — le volet à droite montre les pièces jointes et l'historique du collaborateur que vous sélectionnez
+  dans la liste, sans ouvrir la fiche.
 
-## Ajouter ou modifier un collaborateur
+## Un nouveau collaborateur
 
-Cliquez sur **Nouveau collaborateur**, ou ouvrez une ligne existante. Dans les deux cas, vous obtenez la même
-fiche.
+Cliquez sur **Nouveau collaborateur**. Vous obtenez une fiche vide ; les champs marqués d'un astérisque sont
+obligatoires. Après **Enregistrer**, la fiche du nouveau collaborateur s'ouvre, avec ses onglets.
 
-<!-- AFBEELDING: la fiche collaborateur avec les quatre blocs -->
+## La fiche collaborateur
+
+En haut figurent le nom et le code, puis les onglets **Fiche**, **Congés**, **Pièces jointes** et **Historique**.
+Le nombre de périodes de congé figure entre parenthèses dans le titre : « Congés (4) ».
+
+![La fiche de Julien Lambert sur l'onglet Fiche, avec en bas le bloc Affectation et régime de travail](images/medewerker-fiche-fr.png "Fiche collaborateur")
+
+### L'onglet Fiche
 
 La fiche se compose de quatre blocs.
 
-### Identification
+**Identification**
 
-Le **code** et le **nom** sont obligatoires. Le code est la clé courte par laquelle le collaborateur est
-reconnu partout dans l'application — sur un ordre de travail, dans une équipe, sur un bon de travail.
+| Champ | Explication |
+|---|---|
+| Code * | La clé courte par laquelle le collaborateur est reconnu partout : sur un ordre de travail, dans une équipe, sur un bon de travail. 5 caractères au maximum. |
+| Nom * | 30 caractères au maximum. |
+| Fonction | Dans la liste « Fonctions collaborateur » des [tables de base](beheer/basistabellen.fr.md). |
 
 !!! note "Le code est figé après la création"
-    Sur un collaborateur existant, le champ du code est grisé. C'est la clé à laquelle sont rattachés tous
-    les ordres de travail, plannings et bons de travail de cette personne ; la modifier ensuite détacherait
-    ces références. Si un code est erroné, créez un nouveau collaborateur et désactivez l'ancien.
+    Sur un collaborateur existant, le champ du code est grisé. Tous les ordres de travail, équipes et bons de
+    travail de la personne sont rattachés à ce code ; le modifier ensuite détacherait ces références. Si un code
+    est erroné, créez un nouveau collaborateur et mettez l'ancien sur inactif.
 
-### Adresse
+**Adresse** — rue, numéro, code postal, commune et pays ; le code postal et la commune sont obligatoires. Après le
+code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper
+vous-même.
 
-Rue, numéro, code postal, commune et pays. Le code postal et la commune se complètent mutuellement : si vous
-choisissez un code postal, la commune apparaît automatiquement. Le champ Commune propose ensuite les localités de ce code postal — pour 9800 par exemple Deinze, Astene, Vinkt et les autres sections. Vous pouvez aussi taper vous-même un nom.
+**Contact** — téléphone, GSM et e-mail. Un numéro ou une adresse e-mail saisi doit être valide ; les laisser vides
+est permis.
 
-### Contact
+**Affectation et régime de travail**
 
-Téléphone, GSM et e-mail. Lors de l'enregistrement, CleanOps vérifie qu'un numéro et une adresse e-mail
-saisis sont valides. Les laisser vides est permis ; les remplir à moitié ne l'est pas.
+| Champ | Explication |
+|---|---|
+| Actif | Si la personne fait partie de l'effectif. Celui qui ne travaille plus est mis sur inactif ; la fiche et tout l'historique subsistent. |
+| Retraité | Une mention distincte d'Actif, pour afficher les retraités séparément. |
+| Date d'entrée en service | Le premier jour de travail. Avant ce jour, le collaborateur n'est pas compté lors de la composition des équipes. |
+| Chauffeur, Convoyeur | Le rôle lors d'une mission. Une personne peut être les deux. |
+| Exclure du comptage d'équipe | Le collaborateur n'est pas compté lors de la composition des équipes. |
+| Priorité | Détermine l'ordre : plus elle est élevée, plus la personne figure haut, dans cette liste et partout où vous choisissez un collaborateur. Vos chauffeurs habituels se retrouvent ainsi en tête. |
+| Pas dans les listes de choix | Pour un emplacement comme *En attente* : une ligne du planning qui n'est pas une personne. |
+| Régime de travail | Les jours où la personne travaille, avec à côté le pourcentage d'une semaine à temps plein. Les congés ne comptent que ces jours-là. |
 
-### Affectation et régime de travail
+Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire, CleanOps indique lequel.
+**Annuler** vous ramène à la liste sans enregistrer.
 
-<!-- AFBEELDING: le bloc Affectation et régime de travail avec les cases et le régime -->
+### L'onglet Congés
 
-Vous indiquez ici comment le collaborateur est affecté.
+Les congés, maladies et autres absences du collaborateur, les plus récents en tête : du, au, type, demi-journée,
+le nombre de jours et la description.
 
-- **Actif** — si la personne fait partie de l'effectif. Celui qui ne travaille plus est mis sur inactif ; la
-  fiche et tout l'historique subsistent.
-- **Retraité** — un indicateur distinct d'Actif, afin de distinguer qui est temporairement absent de qui est
-  pensionné.
-- **Chauffeur** et **Convoyeur** — le rôle lors d'une mission. Une personne peut être les deux.
-- **Exclure du comptage d'équipe** — ce collaborateur n'est pas proposé lors de la composition des équipes.
-  Si un collaborateur actif n'y apparaît pas, regardez ici.
-- **Priorité** — détermine l'ordre dans les listes de choix : plus élevé apparaît en premier. Vos chauffeurs
-  habituels se retrouvent ainsi en tête là où vous les choisissez, au lieu d'être classés alphabétiquement
-  parmi les autres.
-- **Régime de travail** — les jours où la personne travaille, avec à côté le pourcentage d'une semaine à
-  temps plein.
+![L'onglet Congés de Julien Lambert, avec ses périodes de congé et le nombre de jours par période](images/medewerker-verlof-fr.png "Congés")
 
-## L'historique
+**Nouveau congé** encode une période ; double-cliquez sur une ligne pour la modifier.
 
-En fin de fiche se trouve l'onglet **Historique** : qui a modifié quel champ et quand, et de quelle valeur
-vers quelle autre. L'historique est en lecture seule — rien ne peut y être supprimé ni corrigé.
+![La fenêtre Modifier le congé pour le congé d'automne de Julien Lambert, avec la période, le type, la description et en dessous le nombre de jours de congé](images/medewerker-verlof-venster-fr.png "Encoder un congé")
 
-<!-- AFBEELDING: l'onglet Historique avec quelques lignes de modification -->
+| Champ | Explication |
+|---|---|
+| Du *, Au * | Le premier et le dernier jour. Au ne peut pas précéder Du. |
+| Type | **Congé**, **Maladie** ou **Autre**. |
+| Demi-journée | La période compte une demi-journée de moins. |
+| Description * | 50 caractères au maximum, par exemple *Congé d'été*. |
+| Remarques | Texte libre. |
+
+Sous les champs figure le nombre de **jours de congé** de la période. CleanOps les calcule lui-même : les jours où
+le collaborateur travaille selon son régime de travail, sans les jours fériés. Une personne qui travaille du lundi
+au jeudi compte donc 4 jours pour une semaine complète.
+
+Si le collaborateur figure déjà sur des ordres de travail ouverts ou dans une équipe durant cette période, la
+fenêtre le signale. Le congé peut être encodé normalement ; le message vous indique où vérifier le planning.
+
+**Supprimer** dans la fenêtre retire la période définitivement, après confirmation. Le
+[journal des actions](beheer/actielogboek.fr.md) garde la trace de qui l'a encodée, modifiée ou supprimée.
+
+### L'onglet Pièces jointes
+
+Les documents de ce collaborateur, comme une attestation ou un certificat médical. **Pièce jointe** ajoute un
+fichier, jusqu'à 25 Mo ; pour chacune, vous modifiez la description ou la retirez. Pour un certificat médical,
+indiquez la période dans la description : vous le retrouverez ainsi avec le bon congé.
+
+### L'onglet Historique
+
+Qui a modifié quel champ de ce collaborateur, quand, et de quelle valeur vers quelle autre. Le plus récent figure
+en tête.
 
 ## Supprimer un collaborateur
 
-En bas de la fiche se trouve **Supprimer**. Le collaborateur disparaît de la liste mais subsiste dans la
-corbeille, d'où un administrateur peut le restaurer.
+**Supprimer**, en bas de la fiche, place le collaborateur dans la [corbeille](beheer/prullenbak.fr.md), d'où vous le
+restaurez.
 
-Mieux vaut ne pas supprimer une personne ayant figuré sur un ordre de travail : mettez-la sur inactif. Tout
-ce qui s'y rattache reste alors lisible, et elle n'apparaît plus dans les listes de choix.
+Mieux vaut ne pas supprimer une personne qui a figuré sur un ordre de travail : mettez-la sur inactif. Tout ce qui
+s'y rattache reste alors lisible.
 
 ## Questions fréquentes
 
 **Un collaborateur ne figure pas dans la liste.**
-Regardez **Afficher** en haut : ce champ est réglé par défaut sur les collaborateurs actifs. Passez à tous.
-Si la personne n'y figure toujours pas, consultez la corbeille.
+Regardez **Afficher** en haut : ce champ est réglé sur les collaborateurs actifs. Choisissez **Tous**. Si la
+personne n'y figure toujours pas, consultez la [corbeille](beheer/prullenbak.fr.md).
 
 **Un collaborateur actif n'apparaît pas lors de la composition d'une équipe.**
-Vérifiez sur sa fiche la case **Exclure du comptage d'équipe**.
+Vérifiez sur sa fiche **Exclure du comptage d'équipe** et la **Date d'entrée en service**.
 
-**Mes chauffeurs habituels figurent en bas des listes de choix.**
-Attribuez-leur une **priorité** plus élevée sur leur fiche. Les listes de choix trient sur la priorité avant
-de trier alphabétiquement.
+**Une semaine de congé compte moins de 5 jours.**
+CleanOps ne compte que les jours du régime de travail, et pas les jours fériés. Consultez le régime de travail sur
+la fiche du collaborateur.

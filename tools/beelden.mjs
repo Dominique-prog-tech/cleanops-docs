@@ -90,6 +90,36 @@ const SCHOTEN = [
       await p.getByRole('row').filter({ hasText: fr ? DEMO.klantAdresTelefoonFr : DEMO.klantAdresTelefoon }).first().dblclick();
       await p.waitForURL(/\/adres\/[0-9a-f-]{36}$/, { timeout: 15000 });
     } },
+  // Medewerkers (vrijgave 30/09/2026): lijst, fiche, het tabblad Verlof en het verlofvenster — uit de tien demomedewerkers
+  // (DemoDataGenerator.VerzinMedewerkersAsync). ⚠️ PER TAAL EEN ANDERE MEDEWERKER, zoals bij Klanten: de verlofomschrijvingen
+  // van Julien Lambert zijn Frans.
+  // ⚠️ Het merkteken van de lijst is de TWEEDE rij (Pieter Claeys), niet de voorbeeldmedewerker: die staat bovenaan, is dus de
+  // gefocuste rij, en draagt daarmee óók de titel van de VERBORGEN journaalstrook — getByText(...).first() nam die en wachtte
+  // vergeefs tot ze zichtbaar werd (30/09/2026).
+  { naam: 'medewerkers-lijst', route: '/medewerkers', verwacht: /Pieter Claeys/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  // ⚠️ HOGER dan de standaard: het blok Inzet en werkregime staat onderaan het tabblad Fiche, en dat hoort op het beeld.
+  { naam: 'medewerker-fiche', route: '/medewerkers', verwacht: tekstTaal('Inzet en werkregime', 'Affectation et régime de travail'),
+    hoogte: 1180,
+    na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.medewerkerFr : DEMO.medewerker); } },
+  // ⚠️ Het merkteken is een OMSCHRIJVING in het raster, niet de tabtitel: die staat er al vóór de periodes geladen zijn.
+  { naam: 'medewerker-verlof', route: '/medewerkers', verwacht: tekstTaal('Herfstverlof', "Congé d'automne"),
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.medewerkerFr : DEMO.medewerker);
+      await p.getByText(/^(Verlof|Congés) \(/).first().click();
+    } },
+  // Het venster van een BESTAANDE periode: dan staan de velden ingevuld en het aantal verlofdagen eronder (4 voor een week van
+  // vier werkdagen). ⚠️ Het merkteken is de KOP van het venster, niet een veldnaam: "Omschrijving" staat ook als kolomkop.
+  { naam: 'medewerker-verlof-venster', route: '/medewerkers', verwacht: tekstTaal('Verlof wijzigen', 'Modifier le congé'),
+    na: async (p, taal) => {
+      const fr = taal === 'fr-BE';
+      await openRij(p, fr ? DEMO.medewerkerFr : DEMO.medewerker);
+      await p.getByText(/^(Verlof|Congés) \(/).first().click();
+      await p.getByRole('row').filter({ hasText: fr ? "Congé d'automne" : 'Herfstverlof' }).first().dblclick();
+    } },
   // Voertuigen: lijst + FICHE (blokken, tabbladen) + onderhoudsvenster + journaal-rail op de lijst + de herinnering.
   // ⚠️ De journaal-lade eerst DICHT: ze onthoudt dat ze open stond (DrawerId), en na het journaalbeeld toonde het Franse
   // lijstbeeld haar open en het Nederlandse niet (29/09/2026).

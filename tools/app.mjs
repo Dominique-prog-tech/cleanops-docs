@@ -43,6 +43,10 @@ export const DEMO = {
   // Hetzelfde in het Frans, voor de Franse beelden (DemoDataGenerator.VoorbeeldKlantFr).
   klantFr: 'Résidence Les Tilleuls',
   klantAdresTelefoonFr: '069 22 33 44',
+  // De uitgewerkte demomedewerker (DemoDataGenerator.VoorbeeldMedewerker): werkt ma–do, vier verlofperiodes; en zijn Franstalige
+  // tegenhanger voor de Franse beelden (VoorbeeldMedewerkerFr), met Franse verlofomschrijvingen.
+  medewerker: 'Tom Verbeke',
+  medewerkerFr: 'Julien Lambert',
   // Het voertuig met de VERLOPEN keuring: de fiche toont dan haar melding in het keuringsblok.
   voertuigKeuring: '1-DEM-003',
   // De verwijderde demo-klant (DemoDataGenerator.VerzinPrullenbakAsync): het merkteken van het prullenbakbeeld.
