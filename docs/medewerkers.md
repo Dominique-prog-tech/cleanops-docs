@@ -95,7 +95,7 @@ Met **Nieuw verlof** boekt u een periode; dubbelklik op een rij om ze te wijzige
 | Opmerkingen | Vrije tekst. |
 
 Onder de velden staat hoeveel **verlofdagen** de periode telt. CleanOps rekent ze zelf: de dagen waarop de
-medewerker volgens het werkregime werkt, zonder de feestdagen. Wie van maandag tot donderdag werkt, krijgt voor een
+medewerker volgens het werkregime werkt, zonder de [feestdagen en sluitingsdagen](beheer/feestdagen.md). Wie van maandag tot donderdag werkt, krijgt voor een
 volledige week dus 4 dagen.
 
 Staat de medewerker in die periode al op open werkorders of in een ploeg, dan meldt het venster dat. Het verlof

@@ -11,7 +11,7 @@ Klik links in het menu op **Platformbeheer**.
 De schermen staan als tegels, gegroepeerd per onderwerp. Gaat u met de muis over een tegel, dan verschijnt een
 zin die zegt waarvoor het scherm dient.
 
-![De zeven tegels voor de stamgegevens: Bedrijfsfiche, Basistabellen, Btw-codes, Tarieven, Betalingstermijnen, Factuurteksten en Voertuigen](images/platformbeheer-stamgegevens.png "Stamgegevens")
+![De acht tegels voor de stamgegevens: Bedrijfsfiche, Basistabellen, Btw-codes, Tarieven, Betalingstermijnen, Factuurteksten, Feestdagen en Voertuigen](images/platformbeheer-stamgegevens.png "Stamgegevens")
 
 **Stamgegevens** — wat de rest van CleanOps voedt: een offertelijn kiest hier haar tarief, een factuur haar
 btw-code en betalingstermijn. Bij een nieuwe inrichting begint u hier.
@@ -23,6 +23,7 @@ btw-code en betalingstermijn. Bij een nieuwe inrichting begint u hier.
 - [Tarieven](beheer/tarieven.md) — omschrijving en eenheidsprijs voor een offertelijn
 - [Betalingstermijnen](beheer/betalingstermijnen.md) — hoe de vervaldag van een factuur berekend wordt
 - [Factuurteksten](beheer/factuurteksten.md) — de standaardteksten onderaan een factuur
+- [Feestdagen](beheer/feestdagen.md) — de wettelijke feestdagen en uw eigen sluitingsdagen
 - [Voertuigen](beheer/voertuigen.md) — uw vloot, het onderhoud en de keuring
 
 **Toegang**

@@ -11,7 +11,7 @@ Cliquez sur **Administration** dans le menu de gauche.
 Les écrans se présentent sous forme de tuiles, groupées par thème. Si vous passez la souris sur une tuile, une
 phrase apparaît qui précise l'usage de l'écran.
 
-![Les sept tuiles des données de base : Fiche d'entreprise, Tables de base, Codes TVA, Tarifs, Conditions de paiement, Textes de facture et Véhicules](images/platformbeheer-stamgegevens-fr.png "Données de base")
+![Les huit tuiles des données de base : Fiche d'entreprise, Tables de base, Codes TVA, Tarifs, Conditions de paiement, Textes de facture, Jours fériés et Véhicules](images/platformbeheer-stamgegevens-fr.png "Données de base")
 
 **Données de base** — ce qui alimente le reste de CleanOps : une ligne de devis y choisit son tarif, une facture son
 code TVA et sa condition de paiement. Lors d'une nouvelle installation, c'est par là que vous commencez.
@@ -23,6 +23,7 @@ code TVA et sa condition de paiement. Lors d'une nouvelle installation, c'est pa
 - [Tarifs](beheer/tarieven.fr.md) — description et prix unitaire pour une ligne de devis
 - [Conditions de paiement](beheer/betalingstermijnen.fr.md) — comment l'échéance d'une facture est calculée
 - [Textes de facture](beheer/factuurteksten.fr.md) — les textes standard au bas d'une facture
+- [Jours fériés](beheer/feestdagen.fr.md) — les jours fériés légaux et vos propres jours de fermeture
 - [Véhicules](beheer/voertuigen.fr.md) — votre parc, l'entretien et le contrôle technique
 
 **Accès**

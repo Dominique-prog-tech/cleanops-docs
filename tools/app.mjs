@@ -47,6 +47,9 @@ export const DEMO = {
   // tegenhanger voor de Franse beelden (VoorbeeldMedewerkerFr), met Franse verlofomschrijvingen.
   medewerker: 'Tom Verbeke',
   medewerkerFr: 'Julien Lambert',
+  // De sluitingsperiode van de demo (DemoDataGenerator.VoorbeeldSluitingsdag, 28–31/12 van het huidige jaar), NL en FR.
+  sluitingsdag: 'Collectieve sluiting',
+  sluitingsdagFr: 'Fermeture collective',
   // Het voertuig met de VERLOPEN keuring: de fiche toont dan haar melding in het keuringsblok.
   voertuigKeuring: '1-DEM-003',
   // De verwijderde demo-klant (DemoDataGenerator.VerzinPrullenbakAsync): het merkteken van het prullenbakbeeld.

@@ -120,6 +120,20 @@ const SCHOTEN = [
       await p.getByText(/^(Verlof|Congés) \(/).first().click();
       await p.getByRole('row').filter({ hasText: fr ? "Congé d'automne" : 'Herfstverlof' }).first().dblclick();
     } },
+  // Feestdagen (vrijgave 30/09/2026): de lijst van het huidige jaar (wettelijke feestdagen uit ADM One + de demo-sluiting
+  // 28–31/12) en het venster van die sluitingsdag. Het merkteken is de SLUITINGSDAG: die staat er enkel met een gevulde demo,
+  // de feestdagen staan er altijd. ⚠️ De journaalstrook eerst dicht (zie klanten-lijst).
+  // ⚠️ Het merkteken is de BADGE "sluitingsdag" in de kolom Soort, niet de naam: "Collectieve sluiting" staat ook in het
+  // logboek van de verborgen journaalstrook, en getByText(...).first() nam dat onzichtbare element (30/09/2026).
+  { naam: 'feestdagen-lijst', route: '/beheer/feestdagen', verwacht: tekstTaal('^sluitingsdag$', '^jour de fermeture$'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  { naam: 'feestdag-venster', route: '/beheer/feestdagen', verwacht: tekstTaal('Sluitingsdag wijzigen', 'Modifier le jour de fermeture'),
+    na: async (p, taal) => {
+      await p.getByRole('gridcell', { name: taal === 'fr-BE' ? DEMO.sluitingsdagFr : DEMO.sluitingsdag, exact: true }).first().dblclick();
+    } },
   // Voertuigen: lijst + FICHE (blokken, tabbladen) + onderhoudsvenster + journaal-rail op de lijst + de herinnering.
   // ⚠️ De journaal-lade eerst DICHT: ze onthoudt dat ze open stond (DrawerId), en na het journaalbeeld toonde het Franse
   // lijstbeeld haar open en het Nederlandse niet (29/09/2026).

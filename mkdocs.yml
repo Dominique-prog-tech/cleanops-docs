@@ -189,6 +189,7 @@ plugins:
             Stamgegevens: Données de base
             Basistabellen: Tables de base
             Voertuigen: Véhicules
+            Feestdagen: Jours fériés
             Mijn gebruiker: Mon utilisateur
             Dashboard platform: Tableau de bord plateforme
             Supportticket indienen: Créer un ticket de support
@@ -216,6 +217,7 @@ nav:
     - Tarieven: beheer/tarieven.md
     - Betalingstermijnen: beheer/betalingstermijnen.md
     - Factuurteksten: beheer/factuurteksten.md
+    - Feestdagen: beheer/feestdagen.md
     - Voertuigen: beheer/voertuigen.md
     - Rollen: beheer/rollen.md
     - Prullenbak: beheer/prullenbak.md

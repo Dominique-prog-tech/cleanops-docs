@@ -99,7 +99,7 @@ le nombre de jours et la description.
 | Remarques | Texte libre. |
 
 Sous les champs figure le nombre de **jours de congé** de la période. CleanOps les calcule lui-même : les jours où
-le collaborateur travaille selon son régime de travail, sans les jours fériés. Une personne qui travaille du lundi
+le collaborateur travaille selon son régime de travail, sans les [jours fériés et jours de fermeture](beheer/feestdagen.fr.md). Une personne qui travaille du lundi
 au jeudi compte donc 4 jours pour une semaine complète.
 
 Si le collaborateur figure déjà sur des ordres de travail ouverts ou dans une équipe durant cette période, la
