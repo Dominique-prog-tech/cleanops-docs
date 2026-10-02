@@ -120,6 +120,24 @@ const SCHOTEN = [
       await p.getByText(/^(Verlof|Congés) \(/).first().click();
       await p.getByRole('row').filter({ hasText: fr ? "Congé d'automne" : 'Herfstverlof' }).first().dblclick();
     } },
+  // Verlofsaldi (vrijgave 02/10/2026): de lijst en het venster van één medewerker — uit de demo (VerzinMedewerkersAsync:
+  // toekenningen voor dit en vorig jaar, Lies Maes enkel vorig jaar, Nina's brugdag op 0 dagen). ⚠️ Vul de demo opnieuw vóór
+  // deze beelden: "2025 overnemen" in een test vult Lies, en dan klopt het beeld niet meer met de tekst.
+  // ⚠️ Het merkteken van de lijst is NIET de eerste rij (Bart De Smet): die is gefocust en draagt de titel van de verborgen
+  // journaalstrook — dezelfde val als bij Medewerkers.
+  { naam: 'verlofsaldi-lijst', route: '/verlofsaldi', verwacht: /Pieter Claeys/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  // Het venster: per taal de eigen voorbeeldmedewerker, zodat zijn boekingen in de taal van het beeld staan. Merkteken = de kop
+  // van het boekingenblok, die enkel in het venster staat ("Omschrijving" staat ook in de lijst van andere schermen).
+  { naam: 'verlofsaldo-venster', route: '/verlofsaldi', verwacht: tekstTaal('Boekingen van', 'Réservations de'),
+    na: async (p, taal) => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+      await p.getByRole('row').filter({ hasText: taal === 'fr-BE' ? DEMO.medewerkerFr : DEMO.medewerker }).first().dblclick();
+    } },
   // Werkorders (vrijgave 02/10/2026): lijst, fiche (bovenaan en het blok Facturatie), een nieuwe werkorder en de leveringsbon —
   // uit de demo (DemoDataGenerator.VerzinContractenEnWerkordersAsync). ⚠️ PER TAAL EEN ANDERE WERKORDER, zoals bij Klanten: de
   // Franse ronde neemt die van Résidence Les Tilleuls, anders staan er Nederlandse instructies op een Frans beeld — en de
