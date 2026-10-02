@@ -258,6 +258,13 @@ const SCHOTEN = [
       }, null, { timeout: 30000 });
       await p.waitForTimeout(800);
     } },
+  // Werkbonnen (vrijgave 02/10/2026): de bonnen van de planningsweek van de demo (Volgende week, op een WEEKDAG — zie Ploegen).
+  // Het merkteken is de omschrijving van een demowerkorder: op Vandaag staat er geen enkele bon, dus ze bewijst de klik.
+  { naam: 'werkbonnen-overzicht', route: '/werkbonnen', verwacht: /Olie-afscheider nakijken/,
+    na: async p => {
+      await p.getByText(/^(Vandaag|Aujourd'hui)$/).first().click();
+      await p.getByRole('button', { name: /^(Volgende week|Semaine prochaine)$/ }).first().click();
+    } },
   // Feestdagen (vrijgave 30/09/2026): de lijst van het huidige jaar (wettelijke feestdagen uit ADM One + de demo-sluiting
   // 28–31/12) en het venster van die sluitingsdag. Het merkteken is de SLUITINGSDAG: die staat er enkel met een gevulde demo,
   // de feestdagen staan er altijd. ⚠️ De journaalstrook eerst dicht (zie klanten-lijst).

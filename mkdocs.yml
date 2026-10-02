@@ -137,6 +137,7 @@ plugins:
             Opdrachten: Ordres de travail
             Planning: Planning
             Ploegen: Équipes
+            Werkbonnen: Bons de travail
             Personeel groeperen: Groupement du personnel
             CRM: CRM
             Klanten: Clients
@@ -217,6 +218,7 @@ nav:
   - Contracten: contracten.md
   - Planning: planning.md
   - Ploegen: ploegen.md
+  - Werkbonnen: werkbonnen.md
   - Beheer:
     - Bedrijfsfiche: beheer/bedrijfsfiche.md
     - Basistabellen: beheer/basistabellen.md
