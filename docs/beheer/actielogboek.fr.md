@@ -33,6 +33,7 @@ Vous ne voyez que ce qui s'est passé dans votre propre environnement. Le journa
   [Corbeille](prullenbak.fr.md) et restaurés ; pour les ordres de travail aussi la planification et l'ordre dans la journée
 - les données de base — tarifs, textes de facture, conditions de paiement, codes TVA, tables de base, véhicules et leur
   entretien, la fiche d'entreprise : créés, modifiés, archivés et rétablis
+- factures, factures d'acompte et notes de crédit : comptabilisées et créditées
 
 ## À quoi cela sert
 

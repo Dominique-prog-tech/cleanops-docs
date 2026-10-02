@@ -9,9 +9,8 @@ délai entre deux rappels.
     Le **délai entre deux rappels** détermine directement quels postes figurent dans la liste *Prochain rappel*
     des postes ouverts.
 
-    Le nom, l'adresse, le numéro de TVA, l'IBAN et le logo sont conservés pour les documents que CleanOps
-    établit. Aujourd'hui, CleanOps n'imprime pas encore de factures avec en-tête ; vos factures proviennent
-    encore de votre application actuelle.
+    Le nom, l'adresse, le contact, le numéro de TVA, l'IBAN, le BIC et le logo forment l'**en-tête** des factures
+    et notes de crédit que vous imprimez dans CleanOps — voir [Factures](../facturen.fr.md#imprimer).
 
 ## Ouvrir l'écran
 

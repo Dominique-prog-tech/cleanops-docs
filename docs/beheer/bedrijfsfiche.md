@@ -9,8 +9,8 @@ tussen twee rappels.
     De **wachttijd tussen twee rappels** bepaalt meteen welke posten in de lijst *Volgende rappel* van de
     openstaande posten staan.
 
-    Naam, adres, btw-nummer, IBAN en logo worden bewaard voor de documenten die CleanOps opmaakt. Vandaag drukt
-    CleanOps nog geen facturen met briefhoofd af; uw facturen komen nog uit uw huidige toepassing.
+    Naam, adres, contact, btw-nummer, IBAN, BIC en logo vormen het **briefhoofd** van de facturen en creditnota's
+    die u in CleanOps afdrukt — zie [Facturen](../facturen.md#afdrukken).
 
 ## Het scherm openen
 

@@ -277,6 +277,40 @@ const SCHOTEN = [
       await p.getByText(/Tuincentrum De Linde · (nr|n°)/).first().waitFor({ state: 'visible', timeout: 15000 });
       await p.getByText(/^(Versies|Versions) \(2\)$/).first().click();
     } },
+  // Facturatie + Facturen (vrijgave 02/10/2026): de demofacturen komen uit de ECHTE factuurmotor
+  // (DemoDataGenerator.VerzinFacturenAsync): 20260001 Camping Zonnedal (nl), 20260002 Dubois Marie (fr), 20260003 voorschot Hoeve
+  // Ter Beke, 20260004 Sporthal De Ring + creditnota 20269001 (werkorder terug te factureren). Te factureren blijven: De Linde en
+  // Les Tilleuls (de voorbeeldwerven van Werkorders — NIET factureren), Hoeve Ter Beke, Sporthal De Ring.
+  // ⚠️ Het venster-recept klikt NOOIT op "Factuur boeken".
+  { naam: 'facturatie-lijst', route: '/facturatie', verwacht: /Tuincentrum De Linde/i },
+  { naam: 'factureren-venster', route: '/facturatie', verwacht: tekstTaal('Factuur boeken', 'Comptabiliser la facture'),
+    na: async p => {
+      await p.getByRole('row').filter({ hasText: /Sporthal De Ring/i }).first()
+        .getByRole('button', { name: /^(Factureren…|Facturer…)$/ }).click();
+    } },
+  // Het merkteken van de lijst is de CREDITNOTA: die staat er enkel met de gevulde demo. De journaalstrook eerst dicht.
+  // ⚠️ EXACT (^…$): de verborgen journaalstrook draagt de titel "Creditnota 20269001" (de eerste rij is geselecteerd), en
+  // getByText(/20269001/).first() nam dat onzichtbare element — zie feestdagen-lijst (02/10/2026).
+  { naam: 'facturen-lijst', route: '/facturen', verwacht: /^20269001$/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  // De fiche en de afdruk per taal een factuur in DIE taal: de afdruk volgt de taal van de factuur, niet die van het scherm.
+  { naam: 'factuur-fiche', route: '/facturen', verwacht: tekstTaal('Btw-opbouw', 'Ventilation de la TVA'),
+    na: async (p, taal) => { await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001'); } },
+  // ⚠️ Wachten op het BEELD van de pagina in de kijker (zie planning-afdruk).
+  { naam: 'factuur-afdruk', route: '/facturen', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
+    na: async (p, taal) => {
+      await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001');
+      await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu avant impression)$/ }).first().click();
+      await p.waitForFunction(() => {
+        const img = document.querySelector('img.dxbrv-report-preview-content-img');
+        return img && img.complete && img.naturalWidth > 0;
+      }, null, { timeout: 30000 });
+      await p.waitForTimeout(800);
+    } },
   // Feestdagen (vrijgave 30/09/2026): de lijst van het huidige jaar (wettelijke feestdagen uit ADM One + de demo-sluiting
   // 28–31/12) en het venster van die sluitingsdag. Het merkteken is de SLUITINGSDAG: die staat er enkel met een gevulde demo,
   // de feestdagen staan er altijd. ⚠️ De journaalstrook eerst dicht (zie klanten-lijst).

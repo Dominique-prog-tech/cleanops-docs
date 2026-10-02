@@ -33,6 +33,7 @@ het te bekijken kunt u aan geen andere rol geven.
   [Prullenbak](prullenbak.md) en hersteld; bij werkorders ook het inplannen en de volgorde op een dag
 - de stamgegevens — tarieven, factuurteksten, betalingstermijnen, btw-codes, basistabellen, voertuigen en hun
   onderhoud, de bedrijfsfiche: aangemaakt, gewijzigd, gearchiveerd en teruggehaald
+- facturen, voorschotfacturen en creditnota's: geboekt en gecrediteerd
 
 ## Waarvoor u het gebruikt
 
