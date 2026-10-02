@@ -1,0 +1,173 @@
+# Ordres de travail
+
+Un ordre de travail est une mission pour vos équipes : ce qu'il faut faire, chez quel client, à quelle adresse,
+quand et par qui. Les ordres de travail naissent d'un [contrat](contracten.fr.md), ou vous les créez vous-même pour
+une mission ponctuelle.
+
+![La liste des ordres de travail de la démo sur Ouverts, avec des ordres encodés, planifiés et à facturer](images/werkorders-lijst-fr.png "Ordres de travail")
+
+## Ouvrir l'écran
+
+Dans le menu de gauche, sous **Travail**, cliquez sur **Ordres de travail**.
+
+## La liste
+
+Pour chaque ordre, vous voyez le numéro, le client, la date de commande, le statut, les dates **À exécuter** et
+**Planifié**, le chantier, la commune, le collaborateur et le montant.
+
+- **Statut** — la liste s'ouvre sur **Ouverts** : tout ce qui est encodé, planifié ou à facturer. Choisissez un
+  statut, ou **Tous les statuts** pour voir aussi les ordres facturés.
+- **Période sur** et **Période** — choisissez d'abord la date sur laquelle vous filtrez (**Commandé**, **Planifié**
+  ou **Exécuté**), puis la période. Avec **Planifié**, les choix fixes regardent vers l'avant ; avec **Commandé** et
+  **Exécuté**, vers l'arrière.
+- **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur le numéro, le client,
+  le chantier, l'adresse, le téléphone, le collaborateur, le véhicule, la description, les instructions, la remarque
+  interne et le numéro de facture. Les accents n'ont pas d'importance : *Liege* trouve aussi *Liège*.
+- **Trier** — cliquez sur un titre de colonne ; un second clic inverse l'ordre.
+- **Exporter** — le bouton en haut à droite vous donne la liste, telle qu'elle est filtrée, sous forme de fichier. Si la
+  sélection est trop grande pour un seul fichier, CleanOps indique combien de lignes il contient ; affinez alors votre
+  filtre.
+- **Ouvrir** — double-cliquez sur une ligne. Quand vous revenez à la liste, vos filtres sont toujours là.
+- **Journal** — le volet de droite montre les pièces jointes et l'historique de l'ordre sélectionné dans la liste.
+
+## Un nouvel ordre de travail
+
+Un nouvel ordre de travail se crée depuis la fiche du [client](klanten.fr.md) : cliquez en bas sur
+**Nouvel ordre de travail**.
+
+![L'écran Nouvel ordre de travail pour Résidence Les Tilleuls, avec les blocs Où et quand, Travail et Affectation et facturation](images/werkorder-nieuw-fr.png "Nouvel ordre de travail")
+
+| Champ | Explication |
+|---|---|
+| Adresse d'exécution | L'adresse principale du client ou l'une de ses adresses d'exécution. L'instruction de travail, le matériel et les remarques de l'adresse sont repris sur l'ordre. |
+| À exécuter | Le jour où le travail doit être fait. |
+| Chantier (nom) | Un nom reconnaissable pour le lieu, 30 caractères au maximum. |
+| Description * | Ce qu'il faut faire, 35 caractères au maximum. Ce texte figure sur la facture. |
+| Instructions au collaborateur | Ce que l'équipe doit savoir sur place. |
+| Remarque interne | Pour vos propres collaborateurs ; ce texte ne figure pas sur le bon de livraison. |
+| Collaborateur, Code TVA, Tarif | Vous pouvez les choisir maintenant, ou plus tard sur la fiche. |
+| Gros travaux, Attestation requise | Voir [les cases à cocher](#les-cases-a-cocher) plus bas. |
+
+Au-dessus des champs, CleanOps signale ce que vous devez savoir avant d'encoder :
+
+- le client est **bloqué** — vous pouvez continuer normalement ;
+- le client ou l'adresse n'accepte **plus de nouvelles commandes** — à l'**enregistrement**, CleanOps demande d'abord
+  *Enregistrer quand même ?* ;
+- l'adresse est **difficilement ou pas accessible** certains jours — à titre d'information pour choisir une date.
+
+Après **Enregistrer**, la fiche du nouvel ordre s'ouvre.
+
+## La fiche de l'ordre de travail
+
+En haut figurent le numéro et le statut. En dessous, une carte avec les faits autour de l'ordre : le client, le
+contrat dont il est issu, le devis dont il découle, la date d'encodage, le téléphone et l'e-mail de l'adresse, le
+montant avec le code TVA, et la facture. Cliquez sur le client ou le contrat pour l'ouvrir.
+
+![La fiche d'un ordre de travail de Résidence Les Tilleuls : la carte en haut, la planification avec collaborateur, convoyeur et véhicule, l'adresse, les instructions et les cases à cocher](images/werkorder-fiche-fr.png "Fiche de l'ordre de travail")
+
+### Planification et exécution
+
+| Champ | Explication |
+|---|---|
+| Statut | Découle des dates ; vous ne le choisissez pas vous-même. Voir [le statut](#le-statut). |
+| Collaborateur, Convoyeur, Véhicule | Qui fait le travail, qui l'accompagne et avec quel véhicule. Comme convoyeur, vous choisissez parmi les collaborateurs désignés pour cela. |
+| À exécuter | Si vous déplacez cette date, **Planifié** suit — tant que l'ordre n'est pas exécuté. |
+| Planifié, Exécuté | Le jour où le travail est planifié et le jour où il a été fait. |
+| Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre* ou *après* une heure. |
+| Heure de début, Heure de fin | Quand le travail a réellement commencé et fini. Une heure de fin avant l'heure de début est refusée. |
+| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. |
+| Chantier (nom), Description | Comme pour un nouvel ordre. |
+| Type de travail | Une courte description du travail, par exemple *fosse septique*. |
+| Travaux, Matériel | Cochez ce qui s'applique et cliquez sur **Insérer** : les lignes choisies vont dans **Instructions au collaborateur** ou **Remarques matériel**, où vous pouvez encore les compléter. |
+| Instructions au collaborateur, Remarques matériel | Ce que l'équipe doit faire et emporter. Les deux figurent sur le bon de livraison. |
+| Remarque interne | Pour vos propres collaborateurs. |
+
+Si l'ordre porte le code d'un collaborateur qui n'est plus dans la liste, vous voyez ce code suivi de
+*n'est plus dans la liste*. Il reste jusqu'à ce que vous choisissiez quelqu'un d'autre.
+
+### Les cases à cocher
+
+| Ligne | Case | Signification |
+|---|---|---|
+| Planning | Date fixe | L'ordre ne peut pas être déplacé. L'emporte sur *Peut commencer plus tôt* si les deux sont cochées. |
+| | Peut commencer plus tôt | Le travail peut être exécuté plus tôt que prévu. |
+| | Gros travaux | Une mission importante ; elle figure comme étiquette sur le bon de livraison. |
+| | Rappeler, Rappelé | Le client souhaite être appelé ; cochez la seconde case une fois que c'est fait. |
+| Exécution | Attestation requise, Attestation établie | Une attestation accompagne ce travail, et si elle est déjà établie. Les deux figurent comme étiquette sur le bon de livraison. |
+| | Station d'épuration | Le travail concerne une station d'épuration. |
+| | Rapport caméra requis | Un rapport caméra accompagne ce travail. |
+
+### Le statut
+
+| Statut | Quand |
+|---|---|
+| Encodé | Il n'y a pas encore de date planifiée. |
+| Planifié | Il y a une date planifiée et un collaborateur. |
+| À facturer | Il y a une date d'exécution. |
+| Facturé | L'ordre figure sur une facture, ou le client a payé en espèces. |
+
+Si vous modifiez une date, la fiche montre aussitôt le statut que l'ordre recevra à l'enregistrement.
+
+### Facturation
+
+En bas de la fiche figure ce qui sera facturé.
+
+![Le bloc Facturation d'un ordre de travail : Tarif, Référence client, Quantité, Unité, Prix unitaire, Montant et Code TVA](images/werkorder-facturatie-fr.png "Facturation")
+
+| Champ | Explication |
+|---|---|
+| Tarif | Choisissez un tarif, et CleanOps remplit l'unité, le prix unitaire, le code TVA et le commentaire de facture. La quantité reste. Si vous videz le tarif, ces champs restent. |
+| Référence client | Le numéro de commande ou la référence du client, 30 caractères au maximum. Figure sur la facture. |
+| Quantité, Unité, Prix unitaire | Ce qui est facturé. Une correction se fait avec une quantité négative. |
+| Montant | Quantité × prix unitaire, calculé par CleanOps. Le saisir à la main n'est possible que si la quantité et le prix unitaire sont tous deux à zéro, par exemple pour un forfait. |
+| Code TVA | Le code TVA de l'ordre. |
+| Payé en espèces | Le client a payé sur place. L'ordre ne passe alors pas en facturation. |
+| Commentaire facture | Un texte qui figure sur la facture pour cet ordre. |
+
+À l'enregistrement, CleanOps refuse deux choses : une unité sans quantité, et un prix unitaire négatif.
+
+S'il manque un montant ou un code TVA, la fiche affiche **Pas encore facturable** avec ce qui manque. Vous pouvez
+enregistrer l'ordre normalement, mais il n'arrive sur une facture que lorsque les deux sont remplis.
+
+Une fois l'ordre facturé, ces données sont figées. S'il faut y changer quelque chose, créditez la facture.
+
+### Le bon de livraison
+
+**Bon de livraison** ouvre le bon que l'équipe emporte et que le client signe, dans la langue du client. On y trouve
+le client, l'adresse d'exécution avec un téléphone et un e-mail, l'exécutant, l'heure, la description, les
+instructions, le matériel et les signatures. **Imprimer** n'imprime que le bon.
+
+![Le bon de livraison d'un ordre de Résidence Les Tilleuls, avec en bas les cases pour les signatures](images/leveringsbon-fr.png "Bon de livraison")
+
+Le bon montre ce qui est enregistré. Si vous avez modifié quelque chose, *enregistrez d'abord* apparaît à côté du
+bouton, et vous ne pouvez l'ouvrir qu'après **Enregistrer**.
+
+### Pièces jointes et Historique
+
+En haut à droite de la fiche figurent **Pièces jointes** — les documents de cet ordre — et **Historique** : qui a
+modifié quel champ, quand, et de quelle valeur à quelle valeur.
+
+!!! info "Tous les liens ne sont pas des liens pour tout le monde"
+    Vous ne pouvez cliquer sur le numéro du devis ou de la facture que si vous avez accès à cette partie. Sinon, il
+    figure comme texte.
+
+## Supprimer un ordre de travail
+
+**Supprimer**, en bas de la fiche, place l'ordre dans la [corbeille](beheer/prullenbak.fr.md). Un ordre facturé ne
+peut pas être supprimé.
+
+## Questions fréquentes
+
+**Je ne peux pas choisir le statut.**
+Le statut découle des dates. Remplissez une date planifiée et un collaborateur pour *Planifié*, une date d'exécution
+pour *À facturer*.
+
+**Je ne peux pas modifier le montant.**
+Le montant vaut quantité × prix unitaire. Pour un montant propre, mettez la quantité et le prix unitaire à zéro. Si
+l'ordre est facturé, il est figé.
+
+**Le bouton Bon de livraison ne fonctionne pas.**
+Vous avez modifié quelque chose qui n'est pas encore enregistré. Cliquez d'abord sur **Enregistrer**.
+
+**Je reçois « Une unité sans quantité n'est pas possible ».**
+Indiquez une quantité, ou videz l'unité.

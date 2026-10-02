@@ -141,6 +141,7 @@ plugins:
             Klanten: Clients
             Leveranciers: Fournisseurs
             Medewerkers: Collaborateurs
+            Werkorders: Ordres de travail
             Overzicht verloven: Aperçu des congés
             Verlofsaldi: Soldes de congés
             Attesten: Attestations
@@ -210,6 +211,8 @@ nav:
   - Home: index.md
   - Klanten: klanten.md
   - Medewerkers: medewerkers.md
+  - Werkorders: werkorders.md
+  - Contracten: contracten.md
   - Beheer:
     - Bedrijfsfiche: beheer/bedrijfsfiche.md
     - Basistabellen: beheer/basistabellen.md

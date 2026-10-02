@@ -54,4 +54,11 @@ export const DEMO = {
   voertuigKeuring: '1-DEM-003',
   // De verwijderde demo-klant (DemoDataGenerator.VerzinPrullenbakAsync): het merkteken van het prullenbakbeeld.
   prullenbakKlant: 'Bakkerij Voorbeeld',
+  // De uitgewerkte demowerkorder (DemoDataGenerator.VoorbeeldWerf), te factureren, met alles ingevuld; en haar Franstalige
+  // tegenhanger (VoorbeeldWerfFr). Beide herkenbaar aan hun werfnaam, die in de lijst staat.
+  werf: 'Serre De Linde',
+  werfFr: 'Cuisine Les Tilleuls',
+  // Een contractklant die NIET bovenaan de contractlijst staat: de bovenste rij is gefocust en draagt ook de titel van de
+  // verborgen journaalstrook (zie medewerkers-lijst in beelden.mjs).
+  contractLijst: 'Sporthal De Ring',
 };

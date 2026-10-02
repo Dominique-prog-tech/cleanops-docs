@@ -120,6 +120,57 @@ const SCHOTEN = [
       await p.getByText(/^(Verlof|Congés) \(/).first().click();
       await p.getByRole('row').filter({ hasText: fr ? "Congé d'automne" : 'Herfstverlof' }).first().dblclick();
     } },
+  // Werkorders (vrijgave 02/10/2026): lijst, fiche (bovenaan en het blok Facturatie), een nieuwe werkorder en de leveringsbon —
+  // uit de demo (DemoDataGenerator.VerzinContractenEnWerkordersAsync). ⚠️ PER TAAL EEN ANDERE WERKORDER, zoals bij Klanten: de
+  // Franse ronde neemt die van Résidence Les Tilleuls, anders staan er Nederlandse instructies op een Frans beeld — en de
+  // leveringsbon volgt de taal van de werkorder, niet die van het scherm.
+  { naam: 'werkorders-lijst', route: '/werkorders', verwacht: new RegExp(DEMO.werf),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  { naam: 'werkorder-fiche', route: '/werkorders', verwacht: tekstTaal('Instructies werknemer', 'Instructions au collaborateur'),
+    hoogte: 1180,
+    na: async (p, taal) => { await openWerkorder(p, taal === 'fr-BE' ? DEMO.werfFr : DEMO.werf); } },
+  // Het blok Facturatie staat onderaan de fiche (werkpunt C12): ernaartoe schuiven, het merkteken is een veld uit dat blok.
+  { naam: 'werkorder-facturatie', route: '/werkorders', verwacht: tekstTaal('Klantreferentie', 'Référence client'),
+    na: async (p, taal) => {
+      await openWerkorder(p, taal === 'fr-BE' ? DEMO.werfFr : DEMO.werf);
+      // ⚠️ Wachten tot de fiche staat, en dan in de pagina schuiven: een locator die vóór de laatste hertekening gevonden werd,
+      // hangt niet meer in de DOM (02/10/2026, "Element is not attached").
+      await p.getByText(tekstTaal('^Klantreferentie$', '^Référence client$')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.waitForTimeout(500);
+      await p.evaluate(() => [...document.querySelectorAll('h2')].find(h => /^(Facturatie|Facturation)$/.test(h.textContent.trim()))
+        ?.scrollIntoView({ block: 'start' }));
+    } },
+  // Een nieuwe werkorder begint op de klantfiche: de knop onderaan.
+  { naam: 'werkorder-nieuw', route: '/klanten', verwacht: tekstTaal('Waar en wanneer', 'Où et quand'),
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant);
+      await p.getByRole('button', { name: tekstTaal('^Nieuwe werkorder$', '^Nouvel ordre de travail$') }).first().click();
+      await p.waitForURL(/\/werkorders\/nieuw\//, { timeout: 15000 });
+    } },
+  { naam: 'leveringsbon', route: '/werkorders', verwacht: tekstTaal('Handtekening klant', 'Signature client'),
+    na: async (p, taal) => {
+      await openWerkorder(p, taal === 'fr-BE' ? DEMO.werfFr : DEMO.werf);
+      await p.getByRole('button', { name: tekstTaal('^Leveringsbon$', '^Bon de livraison$') }).first().click();
+      await p.waitForURL(/\/leveringsbon$/, { timeout: 15000 });
+    } },
+  // Contracten (vrijgave 02/10/2026): lijst, fiche met de volgende beurten, en het tabblad Werkorders.
+  { naam: 'contracten-lijst', route: '/contracten', verwacht: new RegExp(DEMO.contractLijst),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  // ⚠️ HOGER dan de standaard: op 900 viel de onderrand van het kader met de volgende beurten net weg (02/10/2026).
+  { naam: 'contract-fiche', route: '/contracten', verwacht: tekstTaal('Volgende beurten', 'Prochains passages'), hoogte: 1000,
+    na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant); } },
+  // ⚠️ Het merkteken is een KOLOMKOP van het raster: de tabtitel "Werkorders (7)" staat er al vóór het raster geladen is.
+  { naam: 'contract-werkorders', route: '/contracten', verwacht: tekstTaal('Factuurnr', 'N° facture'),
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant);
+      await p.getByText(/^(Werkorders|Ordres de travail) \(/).first().click();
+    } },
   // Feestdagen (vrijgave 30/09/2026): de lijst van het huidige jaar (wettelijke feestdagen uit ADM One + de demo-sluiting
   // 28–31/12) en het venster van die sluitingsdag. Het merkteken is de SLUITINGSDAG: die staat er enkel met een gevulde demo,
   // de feestdagen staan er altijd. ⚠️ De journaalstrook eerst dicht (zie klanten-lijst).
@@ -231,6 +282,13 @@ const SCHOTEN = [
       await p.getByText('Financieel', { exact: true }).first().click();
     } },
 ];
+
+// ⚠️ Een werkorder opent met ?terug=… achter haar id (de filters van de lijst reizen mee), dus de URL eindigt NIET op het id
+// en openRij wacht vergeefs (02/10/2026, vier keer een time-out).
+async function openWerkorder(p, tekst) {
+  await p.getByRole('row').filter({ hasText: tekst }).first().dblclick();
+  await p.waitForURL(/\/werkorders\/[0-9a-f-]{36}(\?|$)/, { timeout: 15000 });
+}
 
 async function openRij(p, tekst) {
   await p.getByRole('row').filter({ hasText: tekst }).first().dblclick();
