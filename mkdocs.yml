@@ -136,6 +136,7 @@ plugins:
             Generatie opdrachten: Génération des ordres
             Opdrachten: Ordres de travail
             Planning: Planning
+            Ploegen: Équipes
             Personeel groeperen: Groupement du personnel
             CRM: CRM
             Klanten: Clients
@@ -215,6 +216,7 @@ nav:
   - Werkorders: werkorders.md
   - Contracten: contracten.md
   - Planning: planning.md
+  - Ploegen: ploegen.md
   - Beheer:
     - Bedrijfsfiche: beheer/bedrijfsfiche.md
     - Basistabellen: beheer/basistabellen.md

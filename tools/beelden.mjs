@@ -226,6 +226,38 @@ const SCHOTEN = [
       }, null, { timeout: 30000 });
       await p.waitForTimeout(800);
     } },
+  // Ploegen (vrijgave 02/10/2026): het overzicht, het ploegvenster, een gekozen naam (slepen) en de afdruk — uit de ploegen van de
+  // planningsweek in de demo. ⚠️ Vul de demo opnieuw vóór deze beelden, en maak ze op een WEEKDAG: Ploegen opent op de lopende
+  // week, de planningsweek rekent vanaf het planbord (in het weekend al de volgende) — op zaterdag of zondag vallen ze uiteen.
+  // Het merkteken van het overzicht is een DAGOPMERKING uit die week: de lopende week staat er al vóór de klik.
+  { naam: 'ploegen-overzicht', route: '/ploegen', verwacht: /Keuring vrachtwagen 1-DEM-002/,
+    na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click(); } },
+  // De ploeg van DONDERDAG: dan werkt Nina volgens haar regime niet, en toont het venster het label "volgens regime vrij".
+  { naam: 'ploeg-venster', route: '/ploegen', verwacht: tekstTaal('Ploeg wijzigen', "Modifier l'équipe"),
+    na: async p => {
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByText(/Keuring vrachtwagen 1-DEM-002/).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.locator('[data-ploeg]').filter({ hasText: 'JLA, KDW' }).first().click();
+    } },
+  // Het klik-alternatief van het slepen: een naam gekozen, de ploegen en lege cellen van die dag omlijnd. Bart staat dinsdag vrij.
+  { naam: 'ploegen-slepen', route: '/ploegen', verwacht: tekstTaal('gekozen —', 'choisi —'),
+    na: async p => {
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByText(/Keuring vrachtwagen 1-DEM-002/).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.locator('[data-naam^="BDS|"]').first().click();
+    } },
+  // ⚠️ Wachten op het BEELD van de pagina in de kijker (zie planning-afdruk).
+  { naam: 'ploegen-afdruk', route: '/ploegen', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
+    na: async p => {
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByText(/Keuring vrachtwagen 1-DEM-002/).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('button', { name: /^(Afdrukken|Imprimer)$/ }).first().click();
+      await p.waitForFunction(() => {
+        const img = document.querySelector('img.dxbrv-report-preview-content-img');
+        return img && img.complete && img.naturalWidth > 0;
+      }, null, { timeout: 30000 });
+      await p.waitForTimeout(800);
+    } },
   // Feestdagen (vrijgave 30/09/2026): de lijst van het huidige jaar (wettelijke feestdagen uit ADM One + de demo-sluiting
   // 28–31/12) en het venster van die sluitingsdag. Het merkteken is de SLUITINGSDAG: die staat er enkel met een gevulde demo,
   // de feestdagen staan er altijd. ⚠️ De journaalstrook eerst dicht (zie klanten-lijst).

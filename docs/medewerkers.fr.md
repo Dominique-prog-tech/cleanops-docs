@@ -71,7 +71,7 @@ est permis.
 | Retraité | Une mention distincte d'Actif, pour afficher les retraités séparément. |
 | Date d'entrée en service | Le premier jour de travail. Avant ce jour, le collaborateur n'est pas compté lors de la composition des équipes. |
 | Chauffeur, Convoyeur | Le rôle lors d'une mission. Une personne peut être les deux. |
-| Exclure du comptage d'équipe | Le collaborateur n'est pas compté lors de la composition des équipes. |
+| Exclure du comptage d'équipe | Le collaborateur n'est pas compté dans les totaux des [Équipes](ploegen.fr.md#lapercu) (Planifiés, Disponibles, Libre (régime)). Il peut quand même faire partie d'une équipe. |
 | Priorité | Détermine l'ordre : plus elle est élevée, plus la personne figure haut, dans cette liste et partout où vous choisissez un collaborateur. Vos chauffeurs habituels se retrouvent ainsi en tête. |
 | Pas dans les listes de choix | Pour un emplacement comme *En attente* : une ligne du planning qui n'est pas une personne. |
 | Régime de travail | Les jours où la personne travaille, avec à côté le pourcentage d'une semaine à temps plein. Les congés ne comptent que ces jours-là. |
