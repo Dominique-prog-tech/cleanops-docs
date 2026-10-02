@@ -190,6 +190,42 @@ const SCHOTEN = [
       await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant);
       await p.getByText(/^(Werkorders|Ordres de travail) \(/).first().click();
     } },
+  // Planning (vrijgave 02/10/2026): het planbord, de planningslijst, een selectie en de afdruk — uit de planningsweek van de demo
+  // (DemoDataGenerator: de week NA die waarop het bord opent, met elk tijdsdeel, de signalen en een handplaatsing). ⚠️ Vul de
+  // demo opnieuw vóór deze beelden: een sleep- of selectieproef verzet de werkorders.
+  // ⚠️ Het merkteken is een OMSCHRIJVING uit die week ("Mestkelder ledigen"), niet de weekknop: de lopende week staat er al
+  // vóór de klik, en zonder merkteken uit de volgende week fotografeert het recept de verkeerde week.
+  // ⚠️ De weekknop op NAAM met anker: de knop "Vandaag" draagt als titel "...de volgende week", en een losse /Volgende week/
+  // kan die nemen.
+  { naam: 'planning-bord', route: '/planning', verwacht: /Mestkelder ledigen/, hoogte: 1140,
+    na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) ▶$/ }).first().click(); } },
+  { naam: 'planning-lijst', route: '/planning/lijst', verwacht: /Mestkelder ledigen/,
+    na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click(); } },
+  // Twee werkorders van TWEE medewerkers (Tom en Julien): dan staat ook Wisselen aan. Het merkteken is de teller van de
+  // selectiebalk, die enkel met een selectie verschijnt.
+  { naam: 'planning-selectie', route: '/planning/lijst', verwacht: tekstTaal('2 geselecteerd:', '2 sélectionné\\(s\\) :'),
+    na: async p => {
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByText('Mestkelder ledigen').first().waitFor({ state: 'visible', timeout: 15000 });
+      for (const werk of ['Kolken parking reinigen', 'Débouchage cuisine'])
+        await p.getByRole('row').filter({ hasText: werk }).first().locator('td.dxbl-grid-selection-cell .dxbl-checkbox').click();
+    } },
+  // ⚠️ Wachten op het BEELD van de pagina in de kijker, niet op de titel van het venster: die staat er al terwijl de PDF nog
+  // gemaakt wordt, en dan toont het beeld een lege kijker met een laadteken.
+  { naam: 'planning-afdruk', route: '/planning/lijst', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
+    na: async p => {
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByText('Mestkelder ledigen').first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('button', { name: /^(Afdrukken|Imprimer)$/ }).first().click();
+      await p.locator('img.dxbrv-report-preview-content-img').first().waitFor({ state: 'visible', timeout: 30000 });
+      // ⚠️ Enkel het beeld zelf: het laadpaneel (.dxbrv-page-loading-panel) blijft ook NA het laden zichtbaar in de DOM
+      // staan (gemeten 02/10/2026: tien seconden lang inline-block, opacity 1, met de pagina al op het scherm).
+      await p.waitForFunction(() => {
+        const img = document.querySelector('img.dxbrv-report-preview-content-img');
+        return img && img.complete && img.naturalWidth > 0;
+      }, null, { timeout: 30000 });
+      await p.waitForTimeout(800);
+    } },
   // Feestdagen (vrijgave 30/09/2026): de lijst van het huidige jaar (wettelijke feestdagen uit ADM One + de demo-sluiting
   // 28–31/12) en het venster van die sluitingsdag. Het merkteken is de SLUITINGSDAG: die staat er enkel met een gevulde demo,
   // de feestdagen staan er altijd. ⚠️ De journaalstrook eerst dicht (zie klanten-lijst).

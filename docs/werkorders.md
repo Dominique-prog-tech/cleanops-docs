@@ -68,9 +68,9 @@ adres — of van de klant, als het adres er geen heeft —, het bedrag met de bt
 | Medewerker, Bijrijder, Voertuig | Wie het werk doet, wie meerijdt en met welk voertuig. Als bijrijder kiest u uit de medewerkers die daarvoor aangeduid zijn. |
 | Uit te voeren | Verzet u deze datum, dan schuift **Gepland** mee — zolang de werkorder niet uitgevoerd is. |
 | Gepland, Uitgevoerd | De dag waarop het werk gepland staat en de dag waarop het gedaan is. |
-| Tijdsdeel | Eerste werk, Voormiddag, Namiddag, Volledige dag of Anders. Bij **Anders** verschijnt een uurafspraak: *vóór*, *tussen* of *na* een uur. |
+| Tijdsdeel | Eerste werk, Voormiddag, Namiddag, Volledige dag of Anders. Bij **Anders** verschijnt een uurafspraak: *vóór*, *tussen* of *na* een uur. Het tijdsdeel bepaalt de [volgorde in de planning](planning.md#de-volgorde-in-een-dag). |
 | Start-uur, Eind-uur | Wanneer het werk werkelijk begon en eindigde. Een eind-uur vóór het start-uur wordt geweigerd. |
-| Uitvoeringsadres | Kiest u een ander adres, dan komen zijn werkinstructie, materiaal en opmerkingen erbij; wat er al stond, blijft staan. |
+| Uitvoeringsadres | Kiest u een ander adres, dan komen zijn werkinstructie, materiaal en opmerkingen erbij; wat er al stond, blijft staan. Onder het adres openen **Kaart** en **Route** het adres en de weg ernaartoe in Google Maps. |
 | Werf (naam), Omschrijving | Zoals bij een nieuwe werkorder. |
 | Typering | Een korte typering van het werk, bijvoorbeeld *septische put + vetput*. |
 | Werkzaamheden, Materiaal | Vink aan wat van toepassing is en klik op **Invoegen**: de gekozen regels komen in **Instructies werknemer** of **Materiaal-opmerkingen**, waar u ze nog kunt aanvullen. |

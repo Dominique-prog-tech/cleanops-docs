@@ -73,9 +73,9 @@ client, si l'adresse n'en a pas —, le montant avec le code TVA, et la facture.
 | Collaborateur, Convoyeur, Véhicule | Qui fait le travail, qui l'accompagne et avec quel véhicule. Comme convoyeur, vous choisissez parmi les collaborateurs désignés pour cela. |
 | À exécuter | Si vous déplacez cette date, **Planifié** suit — tant que l'ordre n'est pas exécuté. |
 | Planifié, Exécuté | Le jour où le travail est planifié et le jour où il a été fait. |
-| Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre* ou *après* une heure. |
+| Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre* ou *après* une heure. La partie de la journée détermine l'[ordre dans le planning](planning.fr.md#lordre-dans-une-journee). |
 | Heure de début, Heure de fin | Quand le travail a réellement commencé et fini. Une heure de fin avant l'heure de début est refusée. |
-| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. |
+| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. Sous l'adresse, **Carte** et **Itinéraire** ouvrent l'adresse et le chemin pour y aller dans Google Maps. |
 | Chantier (nom), Description | Comme pour un nouvel ordre. |
 | Type de travail | Une courte description du travail, par exemple *fosse septique*. |
 | Travaux, Matériel | Cochez ce qui s'applique et cliquez sur **Insérer** : les lignes choisies vont dans **Instructions au collaborateur** ou **Remarques matériel**, où vous pouvez encore les compléter. |

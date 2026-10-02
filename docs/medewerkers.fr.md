@@ -75,7 +75,7 @@ est permis.
 | Priorité | Détermine l'ordre : plus elle est élevée, plus la personne figure haut, dans cette liste et partout où vous choisissez un collaborateur. Vos chauffeurs habituels se retrouvent ainsi en tête. |
 | Pas dans les listes de choix | Pour un emplacement comme *En attente* : une ligne du planning qui n'est pas une personne. |
 | Régime de travail | Les jours où la personne travaille, avec à côté le pourcentage d'une semaine à temps plein. Les congés ne comptent que ces jours-là. |
-| Couleur dans le planning | La couleur avec laquelle le planning affiche ce collaborateur : sa ligne sur le tableau de planning et son code dans la liste du planning. Choisissez une couleur dans la palette, ou **Aucune couleur**. L'**Aperçu** à côté montre le nom tel que le planning l'affiche. |
+| Couleur dans le planning | La couleur avec laquelle le planning affiche ce collaborateur : sa ligne sur le [tableau de planning](planning.fr.md#le-tableau-de-planning) et son code dans la [liste du planning](planning.fr.md#la-liste-du-planning). Choisissez une couleur dans la palette, ou **Aucune couleur**. L'**Aperçu** à côté montre le nom tel que le planning l'affiche. |
 
 Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire, CleanOps indique lequel.
 **Annuler** vous ramène à la liste sans enregistrer.
