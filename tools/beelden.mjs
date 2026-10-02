@@ -102,8 +102,9 @@ const SCHOTEN = [
       if (await dicht.isVisible()) await dicht.click();
     } },
   // ⚠️ HOGER dan de standaard: het blok Inzet en werkregime staat onderaan het tabblad Fiche, en dat hoort op het beeld.
+  // ⚠️ 1260 sinds 02/10/2026: de rij "Kleur in de planning" kwam erbij, en op 1180 viel ze half onder de knopbalk (gemeten).
   { naam: 'medewerker-fiche', route: '/medewerkers', verwacht: tekstTaal('Inzet en werkregime', 'Affectation et régime de travail'),
-    hoogte: 1180,
+    hoogte: 1260,
     na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.medewerkerFr : DEMO.medewerker); } },
   // ⚠️ Het merkteken is een OMSCHRIJVING in het raster, niet de tabtitel: die staat er al vóór de periodes geladen zijn.
   { naam: 'medewerker-verlof', route: '/medewerkers', verwacht: tekstTaal('Herfstverlof', "Congé d'automne"),

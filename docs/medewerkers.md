@@ -71,6 +71,7 @@ Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u ma
 | Prioriteit | Bepaalt de volgorde: hoger komt bovenaan, in deze lijst en overal waar u een medewerker kiest. Zo staan uw vaste chauffeurs vooraan. |
 | Niet in keuzelijsten | Voor een plaatshouder zoals *Afwachten*: een regel in de planning die geen persoon is. |
 | Werkregime | De dagen waarop de persoon werkt, met daarnaast het percentage van een voltijdse week. Het verlof telt enkel deze dagen. |
+| Kleur in de planning | De kleur waarmee de planning deze medewerker toont: zijn rij op het planbord en zijn code in de planningslijst. Kies een kleur uit het palet, of **Geen kleur**. Het **Voorbeeld** ernaast toont de naam zoals de planning hem toont. |
 
 Klik op **Opslaan** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. **Annuleren** brengt u
 terug naar de lijst zonder te bewaren.
