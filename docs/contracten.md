@@ -4,7 +4,7 @@ Een contract legt vast hoe vaak u bij een klant terugkomt: om de zes maanden een
 vetput. Uit een lopend contract ontstaan de [werkorders](werkorders.md) voor de komende beurten; u hoeft ze niet zelf
 aan te maken.
 
-![De contractenlijst van de demo, met de kolommen Klant, Periodiciteit, Laatste keer en On hold](images/contracten-lijst.png "Contracten")
+![De contractenlijst van de demo, met de kolommen Klant, Periodiciteit en Laatste keer, en het label on hold bij Garage Demo & Zonen](images/contracten-lijst.png "Contracten")
 
 ## Het scherm openen
 
@@ -13,8 +13,8 @@ Klik links in het menu, onder **Werk**, op **Contracten**.
 ## De lijst
 
 Per contract ziet u de klant, het contractnummer, de contractdatum, het type contract, de omschrijving, de datum
-**Vanaf**, de **Einddatum**, de **Periodiciteit**, de **Laatste keer**, de gemeente en of het contract **On hold**
-staat. De lijst staat op klantnaam.
+**Vanaf**, de **Einddatum**, de **Periodiciteit**, de **Laatste keer** en de gemeente. Staat een contract on hold, dan
+staat er **on hold** naast de klant. De lijst staat op klantnaam.
 
 - **Laatste keer** — de geplande datum van de laatste werkorder van het contract.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in wat de lijst toont, ook in de

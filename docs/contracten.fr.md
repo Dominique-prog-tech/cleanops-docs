@@ -4,7 +4,7 @@ Un contrat fixe la fréquence à laquelle vous revenez chez un client : vider un
 toutes les deux semaines. D'un contrat en cours naissent les [ordres de travail](werkorders.fr.md) des prochains
 passages ; vous n'avez pas à les créer vous-même.
 
-![La liste des contrats de la démo, avec les colonnes Nom, Périodicité, Dernière fois et En pause](images/contracten-lijst-fr.png "Contrats")
+![La liste des contrats de la démo, avec les colonnes Nom, Périodicité et Dernière fois, et l'étiquette en pause chez Garage Demo & Zonen](images/contracten-lijst-fr.png "Contrats")
 
 ## Ouvrir l'écran
 
@@ -13,8 +13,8 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Contrats**.
 ## La liste
 
 Pour chaque contrat, vous voyez le client, le numéro du contrat, la date du contrat, le type de contrat, la
-description, la date **À partir du**, la **Date de fin**, la **Périodicité**, la **Dernière fois**, la commune et si
-le contrat est **En pause**. La liste est triée par nom de client.
+description, la date **À partir du**, la **Date de fin**, la **Périodicité**, la **Dernière fois** et la commune. Si un
+contrat est en pause, **en pause** figure à côté du client. La liste est triée par nom de client.
 
 - **Dernière fois** — la date planifiée du dernier ordre de travail du contrat.
 - **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur ce que montre la

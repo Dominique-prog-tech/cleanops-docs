@@ -56,7 +56,7 @@ Na **Opslaan** opent de fiche van de nieuwe werkorder.
 
 Bovenaan staan het nummer en de status. Daaronder een kaart met de feiten rond de werkorder: de klant, het contract
 waaruit ze voortkomt, de offerte waaruit ze ontstond, de datum van ingave, de telefoon en het e-mailadres van het
-adres, het bedrag met de btw-code, en de factuur. Klik op de klant of het contract om het te openen.
+adres — of van de klant, als het adres er geen heeft —, het bedrag met de btw-code, en de factuur. Klik op de klant of het contract om het te openen.
 
 ![De werkorderfiche van Tuincentrum De Linde: de kaart bovenaan, de planning met medewerker, bijrijder en voertuig, het adres, de instructies en de vinkjes](images/werkorder-fiche.png "Werkorderfiche")
 

@@ -60,8 +60,8 @@ Après **Enregistrer**, la fiche du nouvel ordre s'ouvre.
 ## La fiche de l'ordre de travail
 
 En haut figurent le numéro et le statut. En dessous, une carte avec les faits autour de l'ordre : le client, le
-contrat dont il est issu, le devis dont il découle, la date d'encodage, le téléphone et l'e-mail de l'adresse, le
-montant avec le code TVA, et la facture. Cliquez sur le client ou le contrat pour l'ouvrir.
+contrat dont il est issu, le devis dont il découle, la date d'encodage, le téléphone et l'e-mail de l'adresse — ou du
+client, si l'adresse n'en a pas —, le montant avec le code TVA, et la facture. Cliquez sur le client ou le contrat pour l'ouvrir.
 
 ![La fiche d'un ordre de travail de Résidence Les Tilleuls : la carte en haut, la planification avec collaborateur, convoyeur et véhicule, l'adresse, les instructions et les cases à cocher](images/werkorder-fiche-fr.png "Fiche de l'ordre de travail")
 
