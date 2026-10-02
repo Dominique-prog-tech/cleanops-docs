@@ -265,6 +265,18 @@ const SCHOTEN = [
       await p.getByText(/^(Vandaag|Aujourd'hui)$/).first().click();
       await p.getByRole('button', { name: /^(Volgende week|Semaine prochaine)$/ }).first().click();
     } },
+  // Offertes (vrijgave 02/10/2026): de vier demo-offertes (DemoDataGenerator.VerzinOffertesAsync). Het merkteken van de lijst is
+  // een demoklant die enkel in de offertes staat (de lijst toont de zoeknaam, in hoofdletters). De fiche is die van Tuincentrum De
+  // Linde, twee versies: haar merkteken is de klant MET nummer, zoals enkel de fiche hem toont (KlantZoeker.KlantTekst).
+  { naam: 'offertes-lijst', route: '/offertes', verwacht: /SPORTHAL DE RING/ },
+  { naam: 'offerte-fiche', route: '/offertes', verwacht: /Tuincentrum De Linde · (nr|n°)/,
+    na: async p => { await openRij(p, 'TUINCENTRUM DE LINDE'); } },
+  { naam: 'offerte-versies', route: '/offertes', verwacht: tekstTaal('actueel', 'actuelle'),
+    na: async p => {
+      await openRij(p, 'TUINCENTRUM DE LINDE');
+      await p.getByText(/Tuincentrum De Linde · (nr|n°)/).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByText(/^(Versies|Versions) \(2\)$/).first().click();
+    } },
   // Feestdagen (vrijgave 30/09/2026): de lijst van het huidige jaar (wettelijke feestdagen uit ADM One + de demo-sluiting
   // 28–31/12) en het venster van die sluitingsdag. Het merkteken is de SLUITINGSDAG: die staat er enkel met een gevulde demo,
   // de feestdagen staan er altijd. ⚠️ De journaalstrook eerst dicht (zie klanten-lijst).
