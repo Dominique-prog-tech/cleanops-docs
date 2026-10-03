@@ -149,6 +149,7 @@ plugins:
             Werkorders: Ordres de travail
             Overzicht verloven: Aperçu des congés
             Verlofsaldi: Soldes de congés
+            Verlofkalender: Calendrier des congés
             Attesten: Attestations
             Producten: Produits
             Verwerkingen: Traitements
@@ -218,6 +219,7 @@ nav:
   - Klanten: klanten.md
   - Medewerkers: medewerkers.md
   - Verlofsaldi: verlofsaldi.md
+  - Verlofkalender: verlofkalender.md
   - Werkorders: werkorders.md
   - Contracten: contracten.md
   - Planning: planning.md

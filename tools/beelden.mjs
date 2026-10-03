@@ -139,6 +139,27 @@ const SCHOTEN = [
       if (await dicht.isVisible()) await dicht.click();
       await p.getByRole('row').filter({ hasText: taal === 'fr-BE' ? DEMO.medewerkerFr : DEMO.medewerker }).first().dblclick();
     } },
+  // Verlofkalender (03/10/2026). Het rooster op de VORIGE maand: daar staan in de demo alle soorten (ziekte, ander, een halve dag);
+  // deze maand enkel verlof. ⚠️ Het merkteken is een gekleurde ZIEKTE-cel en niet de paginatitel — die staat ook boven een lege maand.
+  { naam: 'verlofkalender-rooster', route: '/verlofkalender', verwacht: /Tom Verbeke/,
+    na: async p => {
+      await p.getByRole('button', { name: /^(Vorige maand|Mois précédent)$/ }).click();
+      await p.locator('.vk-tabel tbody .vk-ziekte').first().waitFor({ timeout: 15000 });
+    } },
+  // Slepen over vijf vrije dagen van Tom Verbeke (de 5e tot de 9e van deze maand) opent het venster met die periode. Met de MUIS van
+  // Playwright, in stappen, zodat elke cel haar mouseenter krijgt. ⚠️ Het recept klikt NOOIT op Opslaan.
+  { naam: 'verlofkalender-boeken', route: '/verlofkalender', verwacht: tekstTaal('Verlof boeken — Tom Verbeke', 'Réserver un congé — Tom Verbeke'),
+    na: async p => {
+      const rij = p.locator('.vk-tabel tbody tr').filter({ hasText: 'Tom Verbeke' }).first();
+      await rij.waitFor({ timeout: 15000 });
+      const cel = async n => { const b = await rij.locator('td').nth(n).boundingBox(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; };
+      const van = await cel(5), tot = await cel(9);
+      await p.mouse.move(van.x, van.y); await p.mouse.down();
+      await p.mouse.move(tot.x, tot.y, { steps: 12 }); await p.waitForTimeout(300);
+      await p.mouse.up();
+    } },
+  // De lijst: merkteken = de medewerker met het verlof op 0 dagen (de waarschuwing hoort op het beeld).
+  { naam: 'verlofkalender-lijst', route: '/verlofkalender/lijst', verwacht: /Nina Van Hecke/ },
   // Werkorders (vrijgave 02/10/2026): lijst, fiche (bovenaan en het blok Facturatie), een nieuwe werkorder en de leveringsbon —
   // uit de demo (DemoDataGenerator.VerzinContractenEnWerkordersAsync). ⚠️ PER TAAL EEN ANDERE WERKORDER, zoals bij Klanten: de
   // Franse ronde neemt die van Résidence Les Tilleuls, anders staan er Nederlandse instructies op een Frans beeld — en de
