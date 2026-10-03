@@ -32,7 +32,7 @@ opent de fiche van de nieuwe klant, met de tabbladen erbij.
 
 ## De klantfiche
 
-Bovenaan staan de zoeknaam en het klantnummer, daaronder een rij tabbladen. Links **Fiche** en **Adressen** —
+Bovenaan staan de naam en het klantnummer, daaronder een rij tabbladen. Links **Fiche** en **Adressen** —
 dat is de klant zelf. Rechts daarvan staat wat aan de klant hangt: **Contracten**, **Offertes**, **Facturen**,
 **Openstaand** en **Notities**, en achteraan **Bijlagen** en **Logboek**.
 

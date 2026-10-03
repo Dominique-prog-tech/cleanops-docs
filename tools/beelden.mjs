@@ -268,7 +268,8 @@ const SCHOTEN = [
   // Offertes (vrijgave 02/10/2026): de vier demo-offertes (DemoDataGenerator.VerzinOffertesAsync). Het merkteken van de lijst is
   // een demoklant die enkel in de offertes staat (de lijst toont de zoeknaam, in hoofdletters). De fiche is die van Tuincentrum De
   // Linde, twee versies: haar merkteken is de klant MET nummer, zoals enkel de fiche hem toont (KlantZoeker.KlantTekst).
-  { naam: 'offertes-lijst', route: '/offertes', verwacht: /SPORTHAL DE RING/ },
+  // Sinds 03/10/2026 tonen de lijsten de NAAM van de klant en niet de zoeknaam (CustomerDisplay) — het merkteken volgt.
+  { naam: 'offertes-lijst', route: '/offertes', verwacht: /Sporthal De Ring/ },
   { naam: 'offerte-fiche', route: '/offertes', verwacht: /Tuincentrum De Linde · (nr|n°)/,
     na: async p => { await openRij(p, 'TUINCENTRUM DE LINDE'); } },
   { naam: 'offerte-versies', route: '/offertes', verwacht: tekstTaal('actueel', 'actuelle'),
@@ -313,9 +314,9 @@ const SCHOTEN = [
     } },
   // Openstaande posten (vrijgave 03/10/2026): in de demo is de factuur van Camping Zonnedal vervallen en kreeg ze één rappel
   // (DemoDataGenerator.VerzinFacturenAsync), dus de volgende is graad 2. ⚠️ Het merkteken is de klantnaam EXACT (^…$): de verborgen
-  // journaalstrook draagt "VERK 20260001 · CAMPING ZONNEDAL" in haar titel (zie facturen-lijst). ⚠️ Vul de demo opnieuw vóór deze
+  // journaalstrook draagt "VERK 20260001 · Camping Zonnedal" in haar titel (zie facturen-lijst). ⚠️ Vul de demo opnieuw vóór deze
   // beelden: wie een rappel inboekte, verandert de graad op de brief. Het rappel-recept boekt NIETS in (het sluit het voorbeeld niet).
-  { naam: 'openstaande-posten-lijst', route: '/openstaande-posten', verwacht: /^CAMPING ZONNEDAL$/,
+  { naam: 'openstaande-posten-lijst', route: '/openstaande-posten', verwacht: /^Camping Zonnedal$/,
     na: async p => {
       const dicht = p.locator('.adm-detail-drawer__btn').first();
       if (await dicht.isVisible()) await dicht.click();

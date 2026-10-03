@@ -33,7 +33,7 @@ obligatoires. Après **Enregistrer**, la fiche du nouveau client s'ouvre, avec s
 
 ## La fiche client
 
-En haut figurent le nom de recherche et le numéro du client, puis une rangée d'onglets. À gauche **Fiche** et
+En haut figurent le nom et le numéro du client, puis une rangée d'onglets. À gauche **Fiche** et
 **Adresses** — le client lui-même. À droite, ce qui est rattaché au client : **Contrats**, **Devis**,
 **Factures**, **Postes ouverts** et **Notes**, et en fin de rangée **Pièces jointes** et **Historique**.
 
