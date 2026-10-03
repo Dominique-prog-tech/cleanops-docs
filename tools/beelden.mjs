@@ -311,6 +311,34 @@ const SCHOTEN = [
       }, null, { timeout: 30000 });
       await p.waitForTimeout(800);
     } },
+  // Openstaande posten (vrijgave 03/10/2026): in de demo is de factuur van Camping Zonnedal vervallen en kreeg ze één rappel
+  // (DemoDataGenerator.VerzinFacturenAsync), dus de volgende is graad 2. ⚠️ Het merkteken is de klantnaam EXACT (^…$): de verborgen
+  // journaalstrook draagt "VERK 20260001 · CAMPING ZONNEDAL" in haar titel (zie facturen-lijst). ⚠️ Vul de demo opnieuw vóór deze
+  // beelden: wie een rappel inboekte, verandert de graad op de brief. Het rappel-recept boekt NIETS in (het sluit het voorbeeld niet).
+  { naam: 'openstaande-posten-lijst', route: '/openstaande-posten', verwacht: /^CAMPING ZONNEDAL$/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  { naam: 'openstaande-posten-rappel', route: '/openstaande-posten', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
+    na: async p => {
+      const rij = p.getByRole('row').filter({ hasText: 'CAMPING ZONNEDAL' }).first();
+      await rij.waitFor({ timeout: 15000 });
+      await rij.locator('input[type=checkbox], .dxbl-checkbox').first().click();
+      await p.getByRole('button', { name: /^(Rappel aanmaken…|Créer un rappel…)$/ }).click();
+      await p.waitForFunction(() => {
+        const img = document.querySelector('img.dxbrv-report-preview-content-img');
+        return img && img.complete && img.naturalWidth > 0;
+      }, null, { timeout: 30000 });
+      await p.waitForTimeout(800);
+    } },
+  { naam: 'openstaande-posten-gegevens', route: '/openstaande-posten', verwacht: tekstTaal('Rappelgegevens —', 'Données de rappel —'),
+    na: async p => {
+      const rij = p.getByRole('row').filter({ hasText: 'CAMPING ZONNEDAL' }).first();
+      await rij.waitFor({ timeout: 15000 });
+      await rij.locator('input[type=checkbox], .dxbl-checkbox').first().click();
+      await p.getByRole('button', { name: /^(Rappelgegevens…|Données de rappel…)$/ }).click();
+    } },
   // Feestdagen (vrijgave 30/09/2026): de lijst van het huidige jaar (wettelijke feestdagen uit ADM One + de demo-sluiting
   // 28–31/12) en het venster van die sluitingsdag. Het merkteken is de SLUITINGSDAG: die staat er enkel met een gevulde demo,
   // de feestdagen staan er altijd. ⚠️ De journaalstrook eerst dicht (zie klanten-lijst).
