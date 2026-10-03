@@ -162,6 +162,7 @@ plugins:
             Afdruk facturen: Impression des factures
             Rappelbeheer: Gestion des rappels
             Openstaande posten: Postes ouverts
+            Klantenportaal: Portail client
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
             Documentnummers: Numéros de documents
@@ -226,6 +227,7 @@ nav:
   - Facturatie: facturatie.md
   - Facturen: facturen.md
   - Openstaande posten: openstaande-posten.md
+  - Klantenportaal: klantenportaal.md
   - Beheer:
     - Bedrijfsfiche: beheer/bedrijfsfiche.md
     - Basistabellen: beheer/basistabellen.md
