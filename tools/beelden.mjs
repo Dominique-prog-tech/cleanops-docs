@@ -336,7 +336,7 @@ const SCHOTEN = [
       const fr = taal.startsWith('fr');
       await openRij(p, '20260002');
       await p.getByRole('button', { name: /^(Heropenen…|Rouvrir…)$/ }).click({ timeout: 15000 });
-      await p.waitForURL(/\/wijzigen$/, { timeout: 15000 });
+      await p.waitForURL(/\/facturen\/wijzigen\//, { timeout: 15000 });
       await p.getByText(tekstTaal('Vrije lijnen', 'Lignes libres')).first().waitFor({ timeout: 15000 });
       await p.getByRole('button', { name: /^(\+ Regel toevoegen|\+ Ajouter une ligne)$/ }).click();
       await vulLijn(p, 1, 0, { oms: fr ? 'Déplacement' : 'Verplaatsing', aantal: 1, prijs: 25, btw: '21P' });
