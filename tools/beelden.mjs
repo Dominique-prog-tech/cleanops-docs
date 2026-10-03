@@ -312,6 +312,35 @@ const SCHOTEN = [
       }, null, { timeout: 30000 });
       await p.waitForTimeout(800);
     } },
+  // Nieuwe factuur (B2, 03/10/2026): klant kiezen zoals bij een nieuwe offerte, dan het venster met twee vrije lijnen.
+  // Per taal een klant in die taal (de tarieven en factuurteksten volgen de klant). ⚠️ Het recept klikt NOOIT op "Factuur boeken".
+  { naam: 'factuur-nieuw', route: '/facturen', verwacht: tekstTaal('Factuur boeken', 'Comptabiliser la facture'),
+    na: async (p, taal) => {
+      const fr = taal.startsWith('fr');
+      await p.getByRole('button', { name: /^(Nieuwe factuur|Nouvelle facture)$/ }).click();
+      await p.getByPlaceholder(/Naam of klantnummer|Nom ou numéro de client/).fill(fr ? 'Dubois Marie' : 'Camping Zonnedal');
+      await p.getByRole('button', { name: /^(kies|choisir)$/ }).first().click({ timeout: 15000 });
+      await p.waitForURL(/\/facturen\/nieuw\//, { timeout: 15000 });
+      await p.getByText(tekstTaal('Factuur boeken', 'Comptabiliser la facture')).first().waitFor({ timeout: 15000 });
+      await p.locator('textarea').first().fill(fr ? 'Nettoyage supplémentaire après la tempête du 28/09' : 'Extra reinigingsbeurt na de storm van 28/09');
+      await vulLijn(p, 0, 0, fr ? { oms: 'Nettoyage des vitres extérieures', aantal: 2, eenheid: 'H', prijs: 45, btw: '21P' }
+                               : { oms: 'Ramen buiten, alle verdiepingen', aantal: 2, eenheid: 'UUR', prijs: 45, btw: '21P' });
+      await p.getByRole('button', { name: /^(\+ Regel toevoegen|\+ Ajouter une ligne)$/ }).click();
+      await vulLijn(p, 0, 1, { oms: fr ? 'Déplacement' : 'Verplaatsing', aantal: 1, prijs: 25, btw: '21P' });
+    } },
+  // Heropenen (03/10/2026): factuur 20260002 (Dubois Marie) is in de demo de enige gewone factuur die nog open ligt — 20260001 is
+  // gerappelleerd, 20260003 een voorschot, 20260004 gecrediteerd. Dus voor beide talen dezelfde factuur. Een vrije lijn erbij, zodat
+  // beide blokken (werkorders en vrije lijnen) gevuld zijn. ⚠️ Het recept klikt NOOIT op "Wijzigingen boeken".
+  { naam: 'factuur-heropenen', route: '/facturen', verwacht: tekstTaal('Wijzigingen boeken', 'Comptabiliser les modifications'),
+    na: async (p, taal) => {
+      const fr = taal.startsWith('fr');
+      await openRij(p, '20260002');
+      await p.getByRole('button', { name: /^(Heropenen…|Rouvrir…)$/ }).click({ timeout: 15000 });
+      await p.waitForURL(/\/wijzigen$/, { timeout: 15000 });
+      await p.getByText(tekstTaal('Vrije lijnen', 'Lignes libres')).first().waitFor({ timeout: 15000 });
+      await p.getByRole('button', { name: /^(\+ Regel toevoegen|\+ Ajouter une ligne)$/ }).click();
+      await vulLijn(p, 1, 0, { oms: fr ? 'Déplacement' : 'Verplaatsing', aantal: 1, prijs: 25, btw: '21P' });
+    } },
   // Openstaande posten (vrijgave 03/10/2026): in de demo is de factuur van Camping Zonnedal vervallen en kreeg ze één rappel
   // (DemoDataGenerator.VerzinFacturenAsync), dus de volgende is graad 2. ⚠️ Het merkteken is de klantnaam EXACT (^…$): de verborgen
   // journaalstrook draagt "VERK 20260001 · Camping Zonnedal" in haar titel (zie facturen-lijst). ⚠️ Vul de demo opnieuw vóór deze
@@ -457,6 +486,21 @@ const SCHOTEN = [
 async function openWerkorder(p, tekst) {
   await p.getByRole('row').filter({ hasText: tekst }).first().dblclick();
   await p.waitForURL(/\/werkorders\/[0-9a-f-]{36}(\?|$)/, { timeout: 15000 });
+}
+
+// Een vrije lijn invullen in het venster Nieuwe factuur / Heropenen. ⚠️ De btw-code met het TOETSENBORD (pijl omlaag + Enter): een klik
+// op de uitklapoptie faalde in Playwright met "outside of the viewport" (03/10/2026). De prijs met selecteren + typen + Tab: een
+// DxSpinEdit neemt de waarde pas bij het verlaten over.
+async function vulLijn(p, tabel, rij, { oms, aantal, eenheid, prijs, btw }) {
+  const inp = p.locator('table').nth(tabel).locator('tbody tr').nth(rij).locator('input');
+  await inp.nth(1).fill(oms); await inp.nth(1).press('Tab');
+  for (const [i, w] of [[2, aantal], [4, prijs]]) {
+    await inp.nth(i).click(); await inp.nth(i).press('ControlOrMeta+a'); await inp.nth(i).type(String(w)); await inp.nth(i).press('Tab');
+    await p.waitForTimeout(200);
+  }
+  if (eenheid) { await inp.nth(3).fill(eenheid); await inp.nth(3).press('Tab'); }
+  await inp.nth(5).click(); await inp.nth(5).fill(btw); await p.waitForTimeout(500);
+  await inp.nth(5).press('ArrowDown'); await inp.nth(5).press('Enter'); await p.waitForTimeout(300);
 }
 
 async function openRij(p, tekst) {
