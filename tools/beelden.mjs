@@ -462,6 +462,30 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Eenheden (04/10/2026): zelfde vorm als de btw-codes, plus de keuzelijst op de tariefiche — daar kiest u ze.
+  { naam: 'eenheden-lijst', route: '/beheer/eenheden', verwacht: tekstTaal('Nieuwe eenheid', 'Nouvelle unité'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  { naam: 'eenheid-venster', route: '/beheer/eenheden', verwacht: tekstTaal('Eenheid bewerken', "Modifier l'unité"),
+    na: async p => { await p.getByRole('gridcell', { name: DEMO.eenheid, exact: true }).first().dblclick(); } },
+  { naam: 'eenheden-journaal', route: '/beheer/eenheden', verwacht: tekstTaal('Aangemaakt', 'Créé'),
+    na: async p => {
+      await p.getByRole('gridcell', { name: DEMO.eenheid, exact: true }).first().click();
+      const strook = p.locator('.adm-detail-drawer__rail').first();
+      if (await strook.isVisible()) await strook.click();
+    },
+    magKortZijn: 'het journaal van een eenheid die enkel aangemaakt is, telt één regel' },
+  // ⚠️ Het merkteken is een OPTIE van de open lijst ("ST. — Stuks"), niet het label Eenheid: dat staat er ook met de lijst dicht.
+  // Openen met de PIJL van de keuzelijst: een klik in het invoerveld opent ze niet (gemeten 04/10/2026).
+  { naam: 'eenheid-keuze', route: '/beheer/tarieven', verwacht: tekstTaal('ST. — Stuks', 'ST. — Pièces'),
+    na: async p => {
+      await openRij(p, DEMO.tarief);
+      await p.getByText(tekstTaal('^Tekst op de factuur$', '^Texte sur la facture$')).first().waitFor({ timeout: 15000 });
+      const veld = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Eenheid|Unité)$/ }) }).locator('dxbl-combo-box').first();
+      await veld.locator('button:not(.dxbl-edit-btn-clear)').last().click();
+    } },
   // Betalingstermijnen: zelfde vorm als Factuurteksten (lijst + venster + journaal van één termijn).
   { naam: 'betalingstermijnen-lijst', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Nieuwe termijn', 'Nouvelle condition') },
   { naam: 'betalingstermijn-venster', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Voorbeeld:', 'Exemple :'),

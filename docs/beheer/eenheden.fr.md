@@ -3,6 +3,8 @@
 Les unités que vous choisissez sur un tarif, un ordre de travail, une ligne de devis ou une ligne de facture : heure,
 pièces, m³, kilomètre… Le code de l'unité figure sur vos documents à côté de la quantité.
 
+![La liste Unités avec les colonnes Code, Description (NL) et Description (FR), le champ de recherche et le bouton Nouvelle unité](../images/eenheden-lijst-fr.png "Unités")
+
 ## Ouvrir l'écran
 
 Cliquez sur **Administration** en bas du menu, puis sur la tuile **Unités**.
@@ -22,6 +24,8 @@ application précédente.
 
 Cliquez sur **Nouvelle unité**, ou double-cliquez sur une ligne existante.
 
+![La fenêtre Modifier l'unité pour ST. avec Code, Description (NL) Stuks et Description (FR) Pièces](../images/eenheid-venster-fr.png "Une unité")
+
 | Champ | Ce que vous complétez |
 |---|---|
 | **Code** *(obligatoire)* | 3 caractères au maximum, par exemple `M2`. Figé dès que l'unité existe. Un code qui ne diffère d'un code existant que par les majuscules (`uur` à côté de `UUR`) est refusé — même si ce code existant est archivé. |
@@ -39,6 +43,8 @@ La **description française** peut rester vide si votre entreprise travaille uni
 Sur un tarif, un ordre de travail, une ligne de devis et une facture manuelle, vous choisissez l'unité dans cette
 liste. La liste de choix montre le code avec la description, par exemple *ST. — Pièces*.
 
+![La fiche du tarif Afvalwater avec la liste de choix Unité ouverte : MIN — Minutes, ST. — Pièces, T — Tonnes et l'unité choisie UUR](../images/eenheid-keuze-fr.png "Choisir une unité")
+
 Si un ancien document porte une unité qui ne figure pas (plus) dans la liste, par exemple *liters* saisi librement
 dans votre application précédente, elle reste telle quelle et vous la voyez dans la liste de choix. Si vous en
 choisissez une autre et enregistrez, cette ancienne valeur disparaît de la liste de choix.
@@ -47,6 +53,8 @@ choisissez une autre et enregistrez, cette ancienne valeur disparaît de la list
 
 À droite de l'écran se trouve une bande **Journal**. Sélectionnez une unité dans la liste et ouvrez la bande : le
 panneau montre qui l'a créée, modifiée, archivée ou rétablie, et quand.
+
+![Le journal de l'unité ST. à côté de la liste Unités, avec l'onglet Historique : Créé, avec le Code et les descriptions](../images/eenheden-journaal-fr.png "Journal")
 
 ## Archiver ou rétablir une unité
 

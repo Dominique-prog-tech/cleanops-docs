@@ -32,6 +32,8 @@ export const DEMO = {
   termijn: '30DEM',
   // De btw-code waarvan DemoDataGenerator de omschrijving rechtzet ("12%btw" → "12 % btw").
   btwCode: '12P',
+  // Eenheden (04/10/2026): een eenheid met een omschrijving in beide talen, voor het venster en het journaal.
+  eenheid: 'ST.',
   // Het contracttype dat DemoDataGenerator een hoofdletter geeft ("regenput" → "Regenput").
   basistabel: 'Regenput',
   // Het voertuig waarvan DemoDataGenerator de omschrijving aanvult ("Scania kolkenzuiger"): journaal en onderhoud.

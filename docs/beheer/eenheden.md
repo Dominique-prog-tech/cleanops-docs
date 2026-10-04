@@ -3,6 +3,8 @@
 De eenheden die u kiest op een tarief, een werkorder, een offertelijn of een factuurlijn: uur, stuks, m³, kilometer…
 De code van de eenheid staat op uw documenten naast de hoeveelheid.
 
+![De lijst Eenheden met de kolommen Code, Omschrijving (NL) en Omschrijving (FR), het zoekveld en de knop Nieuwe eenheid](../images/eenheden-lijst.png "Eenheden")
+
 ## Het scherm openen
 
 Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Eenheden**.
@@ -22,6 +24,8 @@ toepassing.
 
 Klik op **Nieuwe eenheid**, of dubbelklik op een bestaande rij.
 
+![Het venster Eenheid bewerken voor ST. met Code, Omschrijving (NL) Stuks en Omschrijving (FR) Pièces](../images/eenheid-venster.png "Een eenheid")
+
 | Veld | Wat u invult |
 |---|---|
 | **Code** *(verplicht)* | maximaal 3 tekens, bijvoorbeeld `M2`. Ligt vast zodra de eenheid bestaat. Een code die enkel in hoofdletters verschilt van een bestaande (`uur` naast `UUR`), wordt geweigerd — ook als die bestaande gearchiveerd is. |
@@ -38,6 +42,8 @@ De **Franse omschrijving** mag u leeg laten als uw bedrijf enkel in het Nederlan
 Op een tarief, een werkorder, een offertelijn en een manuele factuur kiest u de eenheid uit deze lijst. De
 keuzelijst toont de code met de omschrijving, bijvoorbeeld *ST. — Stuks*.
 
+![De tariefiche Afvalwater met de keuzelijst Eenheid opengeklapt: MIN — Minuten, ST. — Stuks, T — Ton en de gekozen UUR](../images/eenheid-keuze.png "Een eenheid kiezen")
+
 Draagt een oud document een eenheid die niet (meer) in de lijst staat, bijvoorbeeld een vrij getypte *liters*
 uit uw vorige toepassing, dan blijft die gewoon staan en ziet u ze in de keuzelijst. Kiest u een andere en
 bewaart u, dan verdwijnt die oude waarde uit de keuzelijst.
@@ -46,6 +52,8 @@ bewaart u, dan verdwijnt die oude waarde uit de keuzelijst.
 
 Rechts op het scherm zit een strook **Journaal**. Klik een eenheid in de lijst aan en open de strook: het paneel
 toont wie ze wanneer aangemaakt, gewijzigd, gearchiveerd of teruggehaald heeft.
+
+![Het journaal van de eenheid ST. naast de lijst Eenheden, met het tabblad Logboek: Aangemaakt, met de Code en de omschrijvingen](../images/eenheden-journaal.png "Journaal")
 
 ## Een eenheid archiveren of terughalen
 
