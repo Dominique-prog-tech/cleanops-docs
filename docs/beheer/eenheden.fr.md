@@ -41,7 +41,7 @@ liste. La liste de choix montre le code avec la description, par exemple *ST. �
 
 Si un ancien document porte une unité qui ne figure pas (plus) dans la liste, par exemple *liters* saisi librement
 dans votre application précédente, elle reste telle quelle et vous la voyez dans la liste de choix. Si vous en
-choisissez une autre, vous ne pouvez plus revenir à cette ancienne valeur.
+choisissez une autre et enregistrez, cette ancienne valeur disparaît de la liste de choix.
 
 ## Le journal
 

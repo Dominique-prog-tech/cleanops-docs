@@ -39,8 +39,8 @@ Op een tarief, een werkorder, een offertelijn en een manuele factuur kiest u de 
 keuzelijst toont de code met de omschrijving, bijvoorbeeld *ST. — Stuks*.
 
 Draagt een oud document een eenheid die niet (meer) in de lijst staat, bijvoorbeeld een vrij getypte *liters*
-uit uw vorige toepassing, dan blijft die gewoon staan en ziet u ze in de keuzelijst. Kiest u een andere, dan
-kan u niet meer naar die oude waarde terug.
+uit uw vorige toepassing, dan blijft die gewoon staan en ziet u ze in de keuzelijst. Kiest u een andere en
+bewaart u, dan verdwijnt die oude waarde uit de keuzelijst.
 
 ## Het journaal
 
