@@ -8,7 +8,7 @@ souris sur les jours.
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, sous **CRM**, cliquez sur **Calendrier des congés**. Vous le voyez avec le droit de consulter les
+Dans le menu de gauche, sous **CRM**, cliquez sur **Agenda des congés**. Vous le voyez avec le droit de consulter les
 collaborateurs. Réserver et modifier un congé demande le droit de modifier les collaborateurs.
 
 ## Le calendrier
