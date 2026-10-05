@@ -58,6 +58,23 @@ Om een logo te vervangen, kiest u gewoon een nieuwe afbeelding. Met **Verwijdere
 zitten: een post komt pas opnieuw in de lijst *Volgende rappel* wanneer zijn laatste rappel zo lang geleden is.
 Laat u het veld leeg, dan geldt 15 dagen.
 
+## Boekhouding
+
+Met **Facturen en creditnota's elke dag naar het boekhoudkantoor sturen** gaat elk document automatisch naar uw
+boekhouder. Elke ochtend stuurt CleanOps per factuur of creditnota tot en met gisteren één mail naar het **adres van
+het boekhoudkantoor**, met de elektronische factuur (UBL) en de PDF erin.
+
+| Veld | Wat u invult |
+|---|---|
+| **Facturen en creditnota's elke dag naar het boekhoudkantoor sturen** | aan of uit. |
+| **Adres van het boekhoudkantoor** | het e-mailadres waar uw boekhouder de facturen ontvangt, bijvoorbeeld de inbox van zijn boekhoudpakket. Verplicht zodra het vinkje aan staat. |
+
+!!! note "Zolang uw vorige toepassing de facturen maakt, verstuurt CleanOps niets"
+    Anders kreeg uw boekhouder elke factuur twee keer. CleanOps begint pas na de overstap, en dan precies bij de
+    documenten die uw vorige toepassing nog niet verstuurde.
+
+Lukt het versturen van een document niet, dan gaat het de volgende ochtend opnieuw mee.
+
 ## Bewaren of annuleren
 
 **Opslaan** bewaart uw wijzigingen. **Annuleren** gooit ze weg en brengt u terug naar het platformbeheer.

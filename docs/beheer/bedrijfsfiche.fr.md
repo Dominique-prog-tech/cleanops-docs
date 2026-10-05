@@ -60,6 +60,23 @@ Le **délai entre deux rappels** fixe le nombre minimum de jours entre deux rela
 ne revient dans la liste *Prochain rappel* que lorsque son dernier rappel date d'au moins ce délai. Si vous
 laissez le champ vide, 15 jours s'appliquent.
 
+## Comptabilité
+
+Avec **Envoyer chaque jour les factures et notes de crédit au bureau comptable**, chaque document part automatiquement
+chez votre comptable. Chaque matin, CleanOps envoie par facture ou note de crédit jusqu'à la veille un e-mail à
+l'**adresse du bureau comptable**, avec la facture électronique (UBL) et le PDF inclus.
+
+| Champ | Ce que vous complétez |
+|---|---|
+| **Envoyer chaque jour les factures et notes de crédit au bureau comptable** | activé ou non. |
+| **Adresse du bureau comptable** | l'adresse e-mail où votre comptable reçoit les factures, par exemple la boîte de son logiciel comptable. Obligatoire dès que la case est cochée. |
+
+!!! note "Tant que votre application précédente établit les factures, CleanOps n'envoie rien"
+    Sinon, votre comptable recevrait chaque facture deux fois. CleanOps ne commence qu'après le passage, et alors
+    exactement aux documents que votre application précédente n'avait pas encore envoyés.
+
+Si l'envoi d'un document échoue, il repart le lendemain matin.
+
 ## Enregistrer ou annuler
 
 **Enregistrer** conserve vos modifications. **Annuler** les abandonne et vous ramène à l'administration.
