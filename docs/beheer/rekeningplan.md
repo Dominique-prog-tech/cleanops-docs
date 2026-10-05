@@ -3,6 +3,8 @@
 De algemene rekeningen die u op een klant of een tarief kiest, bijvoorbeeld *701100 — Verkopen*. De rekening is een
 gegeven voor uw **boekhoudkantoor**: CleanOps rekent er zelf niet mee.
 
+![De lijst Rekeningplan met de kolommen Nummer, Omschrijving (NL) en Omschrijving (FR), het zoekveld en de knop Nieuwe rekening](../images/rekeningplan-lijst.png "Rekeningplan")
+
 ## Het scherm openen
 
 Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Rekeningplan**.
@@ -22,6 +24,8 @@ toepassing.
 
 Klik op **Nieuwe rekening**, of dubbelklik op een bestaande rij.
 
+![Het venster Rekening bewerken voor 701100 met Nummer, Omschrijving (NL) Verkopen en Omschrijving (FR) Ventes](../images/rekening-venster.png "Een rekening")
+
 | Veld | Wat u invult |
 |---|---|
 | **Nummer** *(verplicht)* | enkel cijfers, maximaal 8, bijvoorbeeld `702000`. Ligt vast zodra de rekening bestaat. Een nummer dat al bestaat, wordt geweigerd — ook als die bestaande rekening gearchiveerd is. |
@@ -37,6 +41,8 @@ De **Franse omschrijving** mag u leeg laten als uw bedrijf enkel in het Nederlan
 
 Op de fiche van een [klant](../klanten.md) en van een [tarief](tarieven.md) kiest u de **verkooprekening** uit
 deze lijst. De keuzelijst toont het nummer met de omschrijving, bijvoorbeeld *701100 — Verkopen*.
+
+![De klantfiche van Tuincentrum De Linde met de keuzelijst Verkooprekening opengeklapt: 701100 — Verkopen en 701200 — Verkopen](../images/rekening-keuze.png "Een rekening kiezen")
 
 Draagt een klant een nummer dat niet in het rekeningplan staat (uit uw vorige toepassing), dan ziet u het met de
 vermelding *niet in het plan*. U mag het laten staan en de fiche gewoon bewaren; kiest u een ander nummer,

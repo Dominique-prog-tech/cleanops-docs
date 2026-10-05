@@ -3,6 +3,8 @@
 Les comptes généraux que vous choisissez sur un client ou un tarif, par exemple *701100 — Ventes*. Le compte est une
 donnée pour votre **bureau comptable** : CleanOps ne calcule rien avec.
 
+![La liste Plan comptable avec les colonnes Numéro, Description (NL) et Description (FR), le champ de recherche et le bouton Nouveau compte](../images/rekeningplan-lijst-fr.png "Plan comptable")
+
 ## Ouvrir l'écran
 
 Cliquez sur **Administration** en bas du menu, puis sur la tuile **Plan comptable**.
@@ -22,6 +24,8 @@ application précédente.
 
 Cliquez sur **Nouveau compte**, ou double-cliquez sur une ligne existante.
 
+![La fenêtre Modifier le compte pour 701100 avec Numéro, Description (NL) Verkopen et Description (FR) Ventes](../images/rekening-venster-fr.png "Un compte")
+
 | Champ | Ce que vous complétez |
 |---|---|
 | **Numéro** *(obligatoire)* | uniquement des chiffres, 8 au maximum, par exemple `702000`. Figé dès que le compte existe. Un numéro qui existe déjà est refusé — même si ce compte existant est archivé. |
@@ -38,6 +42,8 @@ La **description française** peut rester vide si votre entreprise travaille uni
 
 Sur la fiche d'un [client](../klanten.fr.md) et d'un [tarif](tarieven.fr.md), vous choisissez le **compte de vente**
 dans cette liste. La liste de choix montre le numéro avec la description, par exemple *701100 — Ventes*.
+
+![La fiche client de la Résidence Les Tilleuls avec la liste de choix Compte de vente ouverte : 701100 — Ventes et 701200 — Ventes](../images/rekening-keuze-fr.png "Choisir un compte")
 
 Si un client porte un numéro qui ne figure pas dans le plan comptable (venant de votre application précédente),
 vous le voyez avec la mention *hors plan*. Vous pouvez le laisser et enregistrer la fiche ; si vous

@@ -35,7 +35,7 @@ a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre
 
 **Double-cliquez** sur un tarif dans la liste, ou cliquez sur **Nouveau tarif**. La fiche du tarif s'ouvre.
 
-![La fiche d'un tarif avec Code, Langue, Description, Unité, Prix unitaire, Code TVA, Texte sur la facture et Texte sur le devis](../images/tarief-fiche-fr.png "Un tarif")
+![La fiche d'un tarif avec Code, Langue, Description, Unité, Prix unitaire, Code TVA, Compte de vente, Texte sur la facture et Texte sur le devis](../images/tarief-fiche-fr.png "Un tarif")
 
 | Champ | Ce que vous encodez |
 |---|---|

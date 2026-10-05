@@ -35,7 +35,7 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 
 **Dubbelklik** op een tarief in de lijst, of klik op **Nieuw tarief**. De fiche van het tarief opent.
 
-![De fiche van een tarief met Code, Taal, Omschrijving, Eenheid, Eenheidsprijs, Btw-code, Tekst op de factuur en Tekst op de offerte](../images/tarief-fiche.png "Een tarief")
+![De fiche van een tarief met Code, Taal, Omschrijving, Eenheid, Eenheidsprijs, Btw-code, Verkooprekening, Tekst op de factuur en Tekst op de offerte](../images/tarief-fiche.png "Een tarief")
 
 | Veld | Wat u invult |
 |---|---|

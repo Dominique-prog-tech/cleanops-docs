@@ -494,6 +494,25 @@ const SCHOTEN = [
     } },
   { naam: 'dagboek-venster', route: '/beheer/dagboeken', verwacht: tekstTaal('Dagboek bewerken', 'Modifier le journal'),
     na: async p => { await p.getByRole('gridcell', { name: 'KBC', exact: true }).first().dblclick(); } },
+  // Rekeningplan (05/10/2026): lijst + venster zoals Dagboeken, en de keuzelijst Verkooprekening op de klantfiche — daar kiest u
+  // de rekening. De demo neemt het plan over van de bron; elk demobedrijf draagt de eerste rekening (DemoDataGenerator).
+  { naam: 'rekeningplan-lijst', route: '/beheer/rekeningplan', verwacht: tekstTaal('Nieuwe rekening', 'Nouveau compte'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    },
+    magKortZijn: 'het rekeningplan telt twee rekeningen, zoals de bron' },
+  { naam: 'rekening-venster', route: '/beheer/rekeningplan', verwacht: tekstTaal('Rekening bewerken', 'Modifier le compte'),
+    na: async p => { await p.getByRole('gridcell', { name: '701100', exact: true }).first().dblclick(); } },
+  // ⚠️ Het merkteken is een OPTIE van de open lijst (de TWEEDE rekening), niet het label: dat staat er ook met de lijst dicht, en de
+  // eerste rekening staat als waarde al in het veld. Openen met de PIJL, zoals bij eenheid-keuze.
+  { naam: 'rekening-keuze', route: '/klanten', verwacht: tekstTaal('701200 — Verkopen', '701200 — Ventes'), hoogte: 1180,
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant);
+      await p.getByText(tekstTaal('^Opmerkingen$', '^Remarques$')).first().waitFor({ timeout: 15000 });
+      const veld = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Verkooprekening|Compte de vente)$/ }) }).locator('dxbl-combo-box').first();
+      await veld.locator('button:not(.dxbl-edit-btn-clear)').last().click();
+    } },
   // Betalingen (05/10/2026): de lijst, het venster Betaling ingeven (klant Camping Zonnedal, één post op saldo) en het detail van
   // de afpunting van Sporthal De Ring (twee documenten). De demobetalingen komen uit DemoDataGenerator.VerzinBetalingenAsync.
   { naam: 'betalingen-lijst', route: '/betalingen', verwacht: tekstTaal('HOEVE TER BEKE', 'HOEVE TER BEKE'),
