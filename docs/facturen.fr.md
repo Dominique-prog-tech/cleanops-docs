@@ -21,12 +21,22 @@ seul l'administrateur l'a.
 | Date, Client, Total | La date du document, pour qui, et le montant TVA comprise. |
 | Échéance | Quand la facture doit être payée. |
 | Envoyée | Comment le document a été envoyé : *courrier*, *courriel* ou *Peppol*. Vide : pas encore envoyé. |
+| En comptabilité | *oui* si le document est déjà parti chez votre bureau comptable. |
 | Communication | La communication structurée. |
 | Créditée par | Le numéro de la note de crédit qui crédite cette facture. |
 
 En haut, choisissez un **Type**, un **Exercice** ou une **Période**, ou cherchez par numéro, client ou communication.
 Sélectionnez un document et ouvrez à droite le volet **Journal** pour ses pièces jointes et son historique. Double-cliquez pour
 l'ouvrir.
+
+### Vers la comptabilité
+
+Chaque matin, les factures et notes de crédit jusqu'à la veille partent d'elles-mêmes chez votre bureau comptable, si c'est activé
+sur la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#comptabilite). Avec **Vers la comptabilité…**, vous le faites tout de suite :
+la fenêtre indique d'abord combien de documents attendent et vers quelle adresse ils partent, et n'envoie que lorsque vous cliquez
+sur **Envoyer**. Si un document échoue, vous voyez pourquoi ; il repart le lendemain matin.
+
+Si l'envoi est désactivé, ou si votre application précédente établit encore les factures, la fenêtre le dit et n'envoie rien.
 
 ## Une nouvelle facture
 
@@ -89,6 +99,12 @@ Sur la facture figurent :
 
 Si vous avez imprimé la facture et l'avez envoyée par la poste, cliquez sur **Envoyé par courrier**. Dans la liste, elle figure
 alors comme envoyée, le bouton disparaît, et la facture ne peut plus être rouverte.
+
+### Essai vers la comptabilité
+
+Avec **Essai vers la comptabilité…**, ce seul document part comme ESSAI vers l'adresse de votre choix, avec la facture électronique
+(UBL) et le PDF inclus. Vous vérifiez ainsi avec votre comptable que son logiciel lit bien les factures, avant d'activer l'envoi
+quotidien. Un essai ne marque pas le document comme *en comptabilité*.
 
 ### Modifier l'en-tête
 

@@ -19,11 +19,21 @@ wijzigen en crediteren vraagt daarnaast het recht *Facturen opmaken*; dat heeft 
 | Datum, Klant, Totaal | De documentdatum, voor wie, en het bedrag met btw. |
 | Vervaldag | Wanneer de factuur betaald moet zijn. |
 | Verstuurd | Hoe het document verstuurd is: *post*, *mail* of *Peppol*. Leeg: nog niet verstuurd. |
+| In boekhouding | *ja* als het document al naar uw boekhoudkantoor ging. |
 | Mededeling | De gestructureerde mededeling. |
 | Gecrediteerd door | Het nummer van de creditnota die deze factuur crediteert. |
 
 Kies bovenaan een **Type**, een **Boekjaar** of een **Periode**, of zoek op nummer, klant of mededeling. Klik een document aan en
 open rechts de strook **Journaal** voor zijn bijlagen en logboek. Dubbelklik om het te openen.
+
+### Naar de boekhouding
+
+Elke ochtend gaan de facturen en creditnota's tot en met gisteren vanzelf naar uw boekhoudkantoor, als dat op de
+[bedrijfsfiche](beheer/bedrijfsfiche.md#boekhouding) aan staat. Met **Naar de boekhouding…** doet u het meteen: het venster zegt
+eerst hoeveel documenten wachten en naar welk adres ze gaan, en verstuurt pas als u op **Versturen** klikt. Lukt een document niet,
+dan ziet u waarom; het gaat de volgende ochtend opnieuw mee.
+
+Staat de export uit, of maakt uw vorige toepassing de facturen nog, dan zegt het venster dat en verstuurt het niets.
 
 ## Een nieuwe factuur
 
@@ -83,6 +93,12 @@ Op de factuur staan:
 
 Hebt u de factuur afgedrukt en met de post verstuurd, klik dan op **Verstuurd per post**. In de lijst staat ze dan als verstuurd,
 de knop verdwijnt, en de factuur kan niet meer heropend worden.
+
+### Proef naar de boekhouding
+
+Met **Proef naar de boekhouding…** gaat dit ene document als PROEF naar een adres naar keuze, met de elektronische factuur (UBL)
+en de PDF erin. Zo gaat u met uw boekhouder na of zijn boekhoudpakket de facturen goed inleest, vóór u de dagelijkse export
+aanzet. Een proef zet het document niet op *in boekhouding*.
 
 ### Kop wijzigen
 
