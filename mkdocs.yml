@@ -181,6 +181,7 @@ plugins:
             Bankverrichtingen: Opérations bancaires
             Ingave betalingen: Saisie des paiements
             Rekeningsplan: Plan comptable
+            Rekeningplan: Plan comptable
             Controle klantenbalans: Contrôle balance clients
             Correctieroutine: Routine de correction
             Aankoopdocumenten: Documents d'achat
@@ -259,6 +260,7 @@ nav:
       - Tarieven: beheer/tarieven.md
       - Eenheden: beheer/eenheden.md
       - Dagboeken: beheer/dagboeken.md
+      - Rekeningplan: beheer/rekeningplan.md
       - Betalingstermijnen: beheer/betalingstermijnen.md
       - Factuurteksten: beheer/factuurteksten.md
       - Feestdagen: beheer/feestdagen.md
