@@ -19,7 +19,8 @@ missions** figure à côté du nom, le client porte cette mention sur sa fiche.
   doit figurer quelque part chez le client. *janssens gent* trouve donc les clients qui s'appellent Janssens et
   habitent à Gand. La recherche porte sur le numéro, le nom de recherche, le nom (les deux lignes), la rue, le
   code postal, la commune, le numéro de TVA, l'adresse e-mail et les numéros de téléphone. Un numéro de téléphone
-  se trouve avec ou sans espaces.
+  se trouve avec ou sans espaces. Si vous tapez un numéro de compte complet (*701100*), vous trouvez aussi les
+  clients qui ont ce compte de vente.
 - **Trier** — cliquez sur un titre de colonne ; un second clic inverse l'ordre.
 - **Exporter** — le bouton en haut à droite vous donne la liste, telle qu'elle est filtrée, sous forme de fichier.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de ce client.
@@ -48,6 +49,7 @@ signifie donc qu'il n'y a pas de devis.
 |---|---|
 | Nom de recherche | Le nom en majuscules. CleanOps le forme lui-même à partir du nom ; il détermine l'ordre dans la liste. |
 | Délai de paiement * | Le délai qui sert à calculer l'échéance d'une facture. Vous choisissez parmi les délais de paiement de l'Administration. |
+| Compte de vente | Le compte général pour votre bureau comptable, choisi dans le [plan comptable](beheer/rekeningplan.fr.md). Peut rester vide. |
 | Nom *, Nom (2e ligne) | Le nom tel qu'il figure sur les documents, 30 caractères au plus chacun. |
 | Rue *, N°, Code postal *, Commune *, Pays | L'adresse du client. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. |
 | Langue * | La langue des documents pour ce client. |

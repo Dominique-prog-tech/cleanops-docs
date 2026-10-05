@@ -34,6 +34,18 @@ Cliquez sur **Nouveau compte**, ou double-cliquez sur une ligne existante.
 
 La **description française** peut rester vide si votre entreprise travaille uniquement en néerlandais.
 
+## Où vous choisissez le compte
+
+Sur la fiche d'un [client](../klanten.fr.md) et d'un [tarif](tarieven.fr.md), vous choisissez le **compte de vente**
+dans cette liste. La liste de choix montre le numéro avec la description, par exemple *701100 — Ventes*.
+
+Si un client porte un numéro qui ne figure pas dans le plan comptable (venant de votre application précédente),
+vous le voyez avec la mention *hors plan*. Vous pouvez le laisser et enregistrer la fiche ; si vous
+choisissez un autre numéro, celui-ci doit bien figurer dans le plan comptable.
+
+Dans la liste des clients, vous trouvez les clients qui ont un compte donné en tapant le numéro complet dans le
+champ de recherche. Avec **Choisir les colonnes**, vous ajoutez la colonne *Compte de vente*.
+
 ## Le journal
 
 À droite de l'écran se trouve une bande **Journal**. Sélectionnez un compte dans la liste et ouvrez la bande : le

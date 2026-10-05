@@ -42,9 +42,10 @@ a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre
 | **Code** *(obligatoire)* | 5 caractères au maximum. Fixé dès que le tarif est enregistré. |
 | **Langue** *(obligatoire)* | Nederlands ou Français. Le même code peut exister une fois dans chaque langue. Fixée dès que le tarif est enregistré. |
 | **Description** *(obligatoire)* | 35 caractères au maximum ; figure sur la ligne de devis ou de facture. |
-| **Unité** | un choix parmi les unités déjà utilisées (UUR, T, M3 …). |
+| **Unité** | un choix parmi les [unités](eenheden.fr.md) de l'Administration (UUR, T, M3 …). |
 | **Prix unitaire** | jamais négatif. Laissez-le à zéro si le prix est fixé par dossier. |
 | **Code TVA** | un choix parmi vos codes TVA ; peut rester vide. |
+| **Compte de vente** | le compte général pour votre bureau comptable, choisi dans le [plan comptable](rekeningplan.fr.md) ; peut rester vide. |
 | **Texte sur la facture** | quand vous choisissez ce tarif sur un ordre de travail, il s'ajoute à sa remarque de facturation, et donc à la facture — c'est ce que lit le client. |
 | **Texte sur le devis** | s'ajoute au texte de la ligne de devis quand vous choisissez ce tarif — le client le lit aussi. |
 
@@ -100,8 +101,8 @@ C'est possible : le prix du tarif est une valeur de départ et peut être adapt�
 l'historique du tarif s'il a lui-même été modifié entre-temps.
 
 **Il me manque une unité dans la liste de choix.**
-La liste montre les unités déjà utilisées. Ajouter une nouvelle unité n'est pas encore possible ; signalez-le
-via le système de tickets.
+Ajoutez-la dans Administration → [Unités](eenheden.fr.md). Une unité archivée n'y figure plus ; rétablissez-la
+là.
 
 ## Voir aussi
 

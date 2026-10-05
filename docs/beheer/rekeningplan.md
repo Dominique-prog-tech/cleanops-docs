@@ -33,6 +33,18 @@ Klik op **Nieuwe rekening**, of dubbelklik op een bestaande rij.
 
 De **Franse omschrijving** mag u leeg laten als uw bedrijf enkel in het Nederlands werkt.
 
+## Waar u de rekening kiest
+
+Op de fiche van een [klant](../klanten.md) en van een [tarief](tarieven.md) kiest u de **verkooprekening** uit
+deze lijst. De keuzelijst toont het nummer met de omschrijving, bijvoorbeeld *701100 — Verkopen*.
+
+Draagt een klant een nummer dat niet in het rekeningplan staat (uit uw vorige toepassing), dan ziet u het met de
+vermelding *niet in het plan*. U mag het laten staan en de fiche gewoon bewaren; kiest u een ander nummer,
+dan moet dat wel in het rekeningplan staan.
+
+In de klantenlijst vindt u de klanten met een bepaalde rekening door het volledige nummer in het zoekveld te
+typen. Via **Kolommen kiezen** zet u de kolom *Verkooprekening* erbij.
+
 ## Het journaal
 
 Rechts op het scherm zit een strook **Journaal**. Klik een rekening in de lijst aan en open de strook: het paneel

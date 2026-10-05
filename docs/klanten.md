@@ -18,7 +18,8 @@ nieuwe opdrachten**, dan draagt de klant die aanduiding op zijn fiche.
 - **Zoeken** — de cursor staat meteen in het zoekveld. U mag meerdere woorden typen; elk woord moet ergens bij
   de klant voorkomen. *janssens gent* vindt dus de klanten die Janssens heten en in Gent wonen. Er wordt gezocht
   in het nummer, de zoeknaam, de naam (beide regels), de straat, de postcode, de gemeente, het btw-nummer, het
-  e-mailadres en de telefoonnummers. Een telefoonnummer vindt u met of zonder spaties.
+  e-mailadres en de telefoonnummers. Een telefoonnummer vindt u met of zonder spaties. Typt u een volledig
+  rekeningnummer (*701100*), dan vindt u ook de klanten met die verkooprekening.
 - **Sorteren** — klik op een kolomtitel; nog eens klikken keert de volgorde om.
 - **Exporteren** — via de knop rechtsboven krijgt u de lijst zoals ze nu gefilterd is als bestand.
 - **Openen** — dubbelklik op een rij om de fiche van die klant te openen.
@@ -47,6 +48,7 @@ betekent dus dat er geen offertes zijn.
 |---|---|
 | Zoeknaam | De naam in hoofdletters. CleanOps maakt ze zelf uit de naam; ze bepaalt de volgorde in de lijst. |
 | Betaaltermijn * | De termijn waarmee de vervaldag van een factuur berekend wordt. U kiest uit de betalingstermijnen van Platformbeheer. |
+| Verkooprekening | De algemene rekening voor uw boekhoudkantoor, gekozen uit het [rekeningplan](beheer/rekeningplan.md). Mag leeg blijven. |
 | Naam *, Naam (2e regel) | De naam zoals hij op documenten komt, elk hoogstens 30 tekens. |
 | Straat *, Nr, Postcode *, Gemeente *, Land | Het adres van de klant. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. |
 | Taal * | De taal van de documenten voor deze klant. |

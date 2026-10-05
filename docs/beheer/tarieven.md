@@ -42,9 +42,10 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 | **Code** *(verplicht)* | maximaal 5 tekens. Ligt vast zodra het tarief bewaard is. |
 | **Taal** *(verplicht)* | Nederlands of Français. Dezelfde code kan in elke taal één keer bestaan. Ligt vast zodra het tarief bewaard is. |
 | **Omschrijving** *(verplicht)* | maximaal 35 tekens; komt op de offerte- of factuurlijn. |
-| **Eenheid** | een keuze uit de eenheden die al gebruikt worden (UUR, T, M3 …). |
+| **Eenheid** | een keuze uit de [eenheden](eenheden.md) van Platformbeheer (UUR, T, M3 …). |
 | **Eenheidsprijs** | niet negatief. Laat ze op nul als de prijs per dossier bepaald wordt. |
 | **Btw-code** | een keuze uit uw btw-codes; mag leeg blijven. |
+| **Verkooprekening** | de algemene rekening voor uw boekhoudkantoor, gekozen uit het [rekeningplan](rekeningplan.md); mag leeg blijven. |
 | **Tekst op de factuur** | komt bij het kiezen van dit tarief op een werkorder in haar factuuropmerking, en zo op de factuur — die leest de klant. |
 | **Tekst op de offerte** | komt bij het kiezen van dit tarief in de tekst van de offertelijn — ook die leest de klant. |
 
@@ -99,8 +100,8 @@ Dat kan kloppen: de prijs uit het tarief is een startwaarde en mag op de lijn aa
 het logboek van het tarief of het zelf tussentijds gewijzigd is.
 
 **Ik mis een eenheid in de keuzelijst.**
-De keuze toont de eenheden die al in gebruik zijn. Een nieuwe eenheid toevoegen kan nog niet; meld het via
-het ticketsysteem.
+Voeg ze toe in Platformbeheer → [Eenheden](eenheden.md). Een gearchiveerde eenheid staat er niet meer in; haal ze
+daar terug.
 
 ## Zie ook
 
