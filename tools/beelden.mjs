@@ -121,6 +121,24 @@ const SCHOTEN = [
       await p.getByText(/^(Verlof|Congés) \(/).first().click();
       await p.getByRole('row').filter({ hasText: fr ? "Congé d'automne" : 'Herfstverlof' }).first().dblclick();
     } },
+  // Leveranciers (vrijgave 05/10/2026, module Aankoop laag 1): lijst, fiche en logboek — uit de zes demoleveranciers
+  // (VerzinLeveranciersAsync). ⚠️ Het merkteken van de lijst is de TWEEDE rij (Garage Desmet), om dezelfde reden als bij de
+  // medewerkers: de eerste rij is gefocust en draagt ook de titel van de verborgen journaalstrook.
+  { naam: 'leveranciers-lijst', route: '/leveranciers', verwacht: /Garage Desmet/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  // Hoger dan de standaard: de blokken Betaling en Opmerkingen staan onderaan het tabblad Fiche. ⚠️ 1300 en niet 1180: daarop viel het
+  // blok Opmerkingen half onder de knopbalk (gezien op het eerste beeld, 05/10/2026).
+  { naam: 'leverancier-fiche', route: '/leveranciers', verwacht: tekstTaal('Standaard btw-code', 'Code TVA par défaut'),
+    hoogte: 1300,
+    na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.leverancierFr : DEMO.leverancier); } },
+  { naam: 'leverancier-logboek', route: '/leveranciers', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.leverancierFr : DEMO.leverancier);
+      await p.getByText(tekstTaal('^Logboek$', '^Historique$')).first().click();
+    } },
   // Verlofsaldi (vrijgave 02/10/2026): de lijst en het venster van één medewerker — uit de demo (VerzinMedewerkersAsync:
   // toekenningen voor dit en vorig jaar, Lies Maes enkel vorig jaar, Nina's brugdag op 0 dagen). ⚠️ Vul de demo opnieuw vóór
   // deze beelden: "2025 overnemen" in een test vult Lies, en dan klopt het beeld niet meer met de tekst.

@@ -49,6 +49,10 @@ export const DEMO = {
   // tegenhanger voor de Franse beelden (VoorbeeldMedewerkerFr), met Franse verlofomschrijvingen.
   medewerker: 'Tom Verbeke',
   medewerkerFr: 'Julien Lambert',
+  // De uitgewerkte demoleverancier (DemoDataGenerator.VoorbeeldLeverancier): IBAN, BIC, standaard btw-code, opmerking en een
+  // gewijzigde e-mail in het logboek; en zijn Franstalige tegenhanger (VoorbeeldLeverancierFr).
+  leverancier: 'Filterhandel Vandamme',
+  leverancierFr: 'Pompes Delhaye',
   // De sluitingsperiode van de demo (DemoDataGenerator.VoorbeeldSluitingsdag, 28–31/12 van het huidige jaar), NL en FR.
   sluitingsdag: 'Collectieve sluiting',
   sluitingsdagFr: 'Fermeture collective',
