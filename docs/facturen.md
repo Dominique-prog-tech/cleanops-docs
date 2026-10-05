@@ -59,6 +59,9 @@ werkordernummer; een vrije lijn heeft er geen.
 
 Een creditnota zegt welke factuur ze tegenboekt, en een gecrediteerde factuur door welke creditnota; beide zijn een link.
 
+Staat het document nog open, dan geeft **Betaling ingeven…** er meteen een betaling op in, met het openstaande bedrag al ingevuld
+(zie [Betalingen](betalingen.md)).
+
 ### Afdrukken
 
 **Afdrukvoorbeeld** toont de factuur als PDF, in de taal van de factuur. **Downloaden** bewaart ze; met het printerteken in de kijker

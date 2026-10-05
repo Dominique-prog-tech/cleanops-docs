@@ -63,6 +63,9 @@ jointes** et l'**Historique**. Une ligne provenant d'un ordre de travail en port
 Une note de crédit indique quelle facture elle contre-passe, et une facture créditée par quelle note de crédit ; les deux sont
 un lien.
 
+Si le document est encore ouvert, **Saisir un paiement…** y saisit directement un paiement, avec le montant ouvert déjà rempli
+(voir [Paiements](betalingen.fr.md)).
+
 ### Imprimer
 
 **Aperçu avant impression** affiche la facture en PDF, dans la langue de la facture. **Télécharger** l'enregistre ; l'icône

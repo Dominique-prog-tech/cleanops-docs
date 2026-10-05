@@ -47,8 +47,9 @@ geweigerd. De datum van het uittreksel kan niet in de toekomst liggen.
 Een volledig betaalde post verdwijnt uit [Openstaande posten](openstaande-posten.md), en dus uit de rappels. Was de factuur
 doorgegeven aan een incassobureau, dan zegt CleanOps het na het boeken: verwittig het bureau zo nodig.
 
-U kunt een betaling ook rechtstreeks vanuit [Openstaande posten](openstaande-posten.md) ingeven: selecteer de post en klik op
-**Betaling ingeven…**. Het openstaande bedrag staat dan al ingevuld.
+U kunt een betaling ook rechtstreeks ingeven vanuit [Openstaande posten](openstaande-posten.md) — selecteer de post en klik op
+**Betaling ingeven…** — of vanaf de fiche van een [factuur](facturen.md) die nog openstaat, met dezelfde knop. Het openstaande
+bedrag staat dan al ingevuld.
 
 ## Wat een betaling vereffende
 

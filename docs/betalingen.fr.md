@@ -48,8 +48,9 @@ contraire, est refusé. La date de l'extrait ne peut pas être dans le futur.
 Un poste entièrement payé disparaît des [Postes ouverts](openstaande-posten.fr.md), et donc des rappels. Si la facture avait été
 transmise à un bureau de recouvrement, CleanOps le signale après la comptabilisation : prévenez le bureau si nécessaire.
 
-Vous pouvez aussi saisir un paiement directement depuis les [Postes ouverts](openstaande-posten.fr.md) : sélectionnez le poste et
-cliquez sur **Saisir un paiement…**. Le montant ouvert est alors déjà rempli.
+Vous pouvez aussi saisir un paiement directement depuis les [Postes ouverts](openstaande-posten.fr.md) — sélectionnez le poste et
+cliquez sur **Saisir un paiement…** — ou depuis la fiche d'une [facture](facturen.fr.md) encore ouverte, avec le même bouton. Le
+montant ouvert est alors déjà rempli.
 
 ## Ce qu'un paiement a soldé
 
