@@ -38,7 +38,7 @@ Le délai se règle sur la [fiche entreprise](beheer/bedrijfsfiche.fr.md), sous 
 | Rappels | Combien de rappels sont partis, avec la date du dernier. |
 | Suivant | Le degré que recevra un nouveau rappel (1, 2 ou 3) ; un tiret si le poste ne reçoit pas de rappel. |
 
-À droite figurent les marques **recouvrement**, **avertissement**, **exclu**, **plan de paiement** et **client sans rappels**.
+À droite figurent les marques **recouvrement**, **avertissement**, **exclu** et **client sans rappels**.
 Le sélecteur de colonnes affiche aussi **Date**, **Total**, **Payé**, **Dernier rappel** et **Remarque** comme colonnes séparées.
 
 Cherchez par client, commune, rue, téléphone, document ou remarque. Double-cliquez sur un poste pour ouvrir la fiche client.

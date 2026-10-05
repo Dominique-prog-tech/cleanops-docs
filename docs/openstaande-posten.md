@@ -38,7 +38,7 @@ De wachttijd stelt u in op de [bedrijfsfiche](beheer/bedrijfsfiche.md), bij **Wa
 | Rappels | Hoeveel rappels er al vertrokken, met de datum van de laatste. |
 | Volgende | De graad die een nieuwe rappel krijgt (1, 2 of 3); een streepje als de post geen rappel krijgt. |
 
-Rechts staan de markeringen **incasso**, **waarschuwing**, **uitgesloten**, **afbetalingsplan** en **klant zonder rappels**.
+Rechts staan de markeringen **incasso**, **waarschuwing**, **uitgesloten** en **klant zonder rappels**.
 Met de kolomkiezer haalt u ook **Datum**, **Totaal**, **Betaald**, **Laatste rappel** en **Opmerking** als aparte kolom tevoorschijn.
 
 Zoek op klant, gemeente, straat, telefoon, document of opmerking. Dubbelklik op een post om de klantfiche te openen. Klik een post
