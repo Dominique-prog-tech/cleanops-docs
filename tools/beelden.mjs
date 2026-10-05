@@ -486,6 +486,37 @@ const SCHOTEN = [
       const veld = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Eenheid|Unité)$/ }) }).locator('dxbl-combo-box').first();
       await veld.locator('button:not(.dxbl-edit-btn-clear)').last().click();
     } },
+  // Dagboeken (05/10/2026): lijst + venster, zoals Eenheden.
+  { naam: 'dagboeken-lijst', route: '/beheer/dagboeken', verwacht: tekstTaal('Nieuw dagboek', 'Nouveau journal'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  { naam: 'dagboek-venster', route: '/beheer/dagboeken', verwacht: tekstTaal('Dagboek bewerken', 'Modifier le journal'),
+    na: async p => { await p.getByRole('gridcell', { name: 'KBC', exact: true }).first().dblclick(); } },
+  // Betalingen (05/10/2026): de lijst, het venster Betaling ingeven (klant Camping Zonnedal, één post op saldo) en het detail van
+  // de afpunting van Sporthal De Ring (twee documenten). De demobetalingen komen uit DemoDataGenerator.VerzinBetalingenAsync.
+  { naam: 'betalingen-lijst', route: '/betalingen', verwacht: tekstTaal('HOEVE TER BEKE', 'HOEVE TER BEKE'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  { naam: 'betaling-venster', route: '/betalingen', verwacht: tekstTaal('Totaal van de betaling', 'Total du paiement'),
+    na: async p => {
+      await p.getByRole('button', { name: /^(Betaling ingeven|Saisir un paiement)$/ }).first().click();
+      const venster = p.locator('.dxbl-popup:not(.dxbl-popup-hidden)').last();
+      await venster.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Klant|Client)$/ }) }).locator('input').first().fill('Camping');
+      await venster.getByText(/^(kies|choisir)$/i).first().click({ timeout: 15000 });
+      await venster.getByRole('button', { name: /^(Saldo|Solde)$/ }).first().click({ timeout: 15000 });
+      // Een volledig ingevuld voorbeeld: dagboek KBC en een uittrekselnummer. ⚠️ Het nummer TYPEN: een gemaskeerd veld neemt
+      // fill() niet aan (gemeten 05/10/2026).
+      await venster.locator('dxbl-combo-box').first().locator('button:not(.dxbl-edit-btn-clear)').last().click();
+      await p.getByRole('option', { name: /^KBC/ }).click();
+      await venster.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Nummer uittreksel|Numéro de l'extrait)$/ }) }).locator('input').first().click();
+      await p.keyboard.press('ControlOrMeta+A'); await p.keyboard.type('146'); await p.keyboard.press('Tab');
+    } },
+  { naam: 'betaling-detail', route: '/betalingen', verwacht: tekstTaal('Vereffend document', 'Document soldé'),
+    na: async p => { await p.locator('.dxbl-grid-table tbody tr', { hasText: 'SPORTHAL DE RING' }).first().dblclick(); } },
   // Betalingstermijnen: zelfde vorm als Factuurteksten (lijst + venster + journaal van één termijn).
   { naam: 'betalingstermijnen-lijst', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Nieuwe termijn', 'Nouvelle condition') },
   { naam: 'betalingstermijn-venster', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Voorbeeld:', 'Exemple :'),

@@ -3,6 +3,8 @@
 De dagboeken waarop u factureert en betalingen boekt: het verkoopdagboek van de facturen, en de financiële dagboeken
 van uw bankrekeningen en kas.
 
+![De lijst Dagboeken met Code, Omschrijving en Soort: het Aankoopdagboek, de financiële dagboeken zoals KBC en Kasdagboek, en het Verkoopdagboek met het label standaard verkoop](../images/dagboeken-lijst.png "Dagboeken")
+
 ## Het scherm openen
 
 Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Dagboeken**.
@@ -30,6 +32,8 @@ hebt, draagt het label **eigen**; de andere komen uit uw vorige toepassing.
 ## Een dagboek toevoegen of wijzigen
 
 Klik op **Nieuw dagboek**, of dubbelklik op een bestaande rij.
+
+![Het venster Dagboek bewerken voor KBC met Code, Soort Financieel en Omschrijving Kredietbank - Cera](../images/dagboek-venster.png "Een dagboek")
 
 | Veld | Wat u invult |
 |---|---|

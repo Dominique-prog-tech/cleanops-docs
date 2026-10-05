@@ -3,6 +3,8 @@
 Les montants payés par vos clients — et ceux que vous avez remboursés —, par extrait de votre banque ou de votre caisse. Vous y
 saisissez un paiement, et vous y voyez aussi les paiements de votre application précédente.
 
+![La liste Paiements de la démo avec Date de l'extrait, Journal, Extrait, Client et Montant : un lettrage sur AFP, un paiement partiel et un paiement annulé sur KBC](images/betalingen-lijst-fr.png "Paiements")
+
 ## Ouvrir l'écran
 
 Dans le menu de gauche, sous **Ventes**, cliquez sur **Paiements**. Vous le voyez avec le droit de consulter les postes ouverts.
@@ -25,6 +27,8 @@ Choisissez en haut la **Période** : les 3 derniers mois, cette année, ou tout 
 ## Saisir un paiement
 
 Cliquez sur **Saisir un paiement**.
+
+![La fenêtre Saisir un paiement avec Journal KBC, la Date et le Numéro de l'extrait et le client Camping Zonnedal, avec ses Postes ouverts et le Total du paiement](images/betaling-venster-fr.png "Saisir un paiement")
 
 1. Choisissez le **journal**, la **date** et le **numéro de l'extrait**. Ils restent pour le paiement suivant : qui traite un
    extrait en saisit plusieurs à la suite.
@@ -55,7 +59,11 @@ montant ouvert est alors déjà rempli.
 ## Ce qu'un paiement a soldé
 
 Double-cliquez sur un paiement : vous voyez le client, l'extrait, qui l'a saisi et quelles factures et notes de crédit il a
-soldées. Sur la fiche d'une [facture](facturen.fr.md) figurent à l'inverse les paiements reçus, à côté de la ventilation de la TVA.
+soldées.
+
+![La fenêtre Paiement AFP 7 de SPORTHAL DE RING : une facture et une note de crédit lettrées l'une contre l'autre, avec le bouton Annuler le paiement](images/betaling-detail-fr.png "Un paiement")
+
+Sur la fiche d'une [facture](facturen.fr.md) figurent à l'inverse les paiements reçus, à côté de la ventilation de la TVA.
 
 ## Annuler un paiement
 

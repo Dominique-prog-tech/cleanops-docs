@@ -3,6 +3,8 @@
 Les journaux dans lesquels vous facturez et saisissez les paiements : le journal de vente des factures, et les journaux
 financiers de vos comptes bancaires et de votre caisse.
 
+![La liste Journaux avec Code, Description et Type : le journal d'achat, les journaux financiers comme KBC et Kasdagboek, et le Verkoopdagboek avec l'étiquette vente par défaut](../images/dagboeken-lijst-fr.png "Journaux")
+
 ## Ouvrir l'écran
 
 Cliquez sur **Administration** en bas du menu, puis sur la tuile **Journaux**.
@@ -30,6 +32,8 @@ CleanOps porte l'étiquette **propre** ; les autres viennent de votre applicatio
 ## Ajouter ou modifier un journal
 
 Cliquez sur **Nouveau journal**, ou double-cliquez sur une ligne existante.
+
+![La fenêtre Modifier le journal pour KBC avec Code, Type Financier et Description Kredietbank - Cera](../images/dagboek-venster-fr.png "Un journal")
 
 | Champ | Ce que vous complétez |
 |---|---|

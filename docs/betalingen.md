@@ -3,6 +3,8 @@
 De bedragen die uw klanten betaalden — en die u terugbetaalde —, per uittreksel van uw bank of kas. Hier geeft u een betaling in,
 en ziet u ook de betalingen uit uw vorige toepassing.
 
+![De lijst Betalingen van de demo met Datum uittreksel, Dagboek, Uittreksel, Klant en Bedrag: een afpunting op AFP, een deelbetaling en een teruggedraaide betaling op KBC](images/betalingen-lijst.png "Betalingen")
+
 ## Het scherm openen
 
 Klik in het menu links onder **Verkoop** op **Betalingen**. U ziet het met het recht om openstaande posten te bekijken.
@@ -25,6 +27,8 @@ Kies bovenaan de **Periode**: de laatste 3 maanden, dit jaar, of de volledige hi
 ## Een betaling ingeven
 
 Klik op **Betaling ingeven**.
+
+![Het venster Betaling ingeven met Dagboek KBC, de Datum en het Nummer van het uittreksel en de klant Camping Zonnedal, met haar Openstaande posten en het Totaal van de betaling](images/betaling-venster.png "Betaling ingeven")
 
 1. Kies het **dagboek**, de **datum** en het **nummer van het uittreksel**. Ze blijven staan voor de volgende betaling: wie een
    uittreksel afwerkt, geeft er meerdere na elkaar in.
@@ -53,8 +57,11 @@ bedrag staat dan al ingevuld.
 
 ## Wat een betaling vereffende
 
-Dubbelklik een betaling: u ziet de klant, het uittreksel, wie ze ingaf en welke facturen en creditnota's ze vereffende. Op de fiche
-van een [factuur](facturen.md) staan omgekeerd de betalingen die erop kwamen, naast de btw-opbouw.
+Dubbelklik een betaling: u ziet de klant, het uittreksel, wie ze ingaf en welke facturen en creditnota's ze vereffende.
+
+![Het venster Betaling AFP 7 van SPORTHAL DE RING: een factuur en een creditnota die tegen elkaar afgepunt werden, met de knop Terugdraaien](images/betaling-detail.png "Een betaling")
+
+Op de fiche van een [factuur](facturen.md) staan omgekeerd de betalingen die erop kwamen, naast de btw-opbouw.
 
 ## Een betaling terugdraaien
 
