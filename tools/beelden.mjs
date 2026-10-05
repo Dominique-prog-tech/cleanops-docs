@@ -513,6 +513,13 @@ const SCHOTEN = [
       const veld = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Verkooprekening|Compte de vente)$/ }) }).locator('dxbl-combo-box').first();
       await veld.locator('button:not(.dxbl-edit-btn-clear)').last().click();
     } },
+  // Documentnummers (05/10/2026): de lijst (de demo zet het volgende offertenummer op 101, dus er staat een "ingesteld") en het
+  // venster van de factuurreeks. ⚠️ Het merkteken van het venster is de uitlegregel onder de velden: de knop "Volgend nummer
+  // instellen" staat er ook met het venster dicht.
+  { naam: 'documentnummers-lijst', route: '/beheer/documentnummers', verwacht: tekstTaal('ingesteld', 'défini'),
+    magKortZijn: 'drie reeksen van dit jaar, zoals de demo ze heeft' },
+  { naam: 'documentnummer-venster', route: '/beheer/documentnummers', verwacht: tekstTaal('Het nummer blijft tussen', 'Le numéro reste entre'),
+    na: async p => { await p.getByRole('row').filter({ hasText: /Factuur|Facture/ }).first().dblclick(); } },
   // Betalingen (05/10/2026): de lijst, het venster Betaling ingeven (klant Camping Zonnedal, één post op saldo) en het detail van
   // de afpunting van Sporthal De Ring (twee documenten). De demobetalingen komen uit DemoDataGenerator.VerzinBetalingenAsync.
   { naam: 'betalingen-lijst', route: '/betalingen', verwacht: tekstTaal('HOEVE TER BEKE', 'HOEVE TER BEKE'),

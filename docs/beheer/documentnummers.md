@@ -3,6 +3,8 @@
 Het volgende nummer van uw facturen, creditnota's en offertes. CleanOps nummert zelf door; hier stelt u een ander
 volgend nummer in, bijvoorbeeld om de nummering uit uw vorige pakket verder te zetten.
 
+![De lijst Documentnummers met per reeks het Boekjaar, het Dagboek, de Soort document, het Laatste nummer en het Volgend nummer; bij de offertes staat ingesteld](../images/documentnummers-lijst.png "Documentnummers")
+
 ## Het scherm openen
 
 Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Documentnummers**.
@@ -25,6 +27,8 @@ Staat er **ingesteld** naast een reeks, dan komt het volgende nummer uit uw inst
 ## Het volgende nummer instellen
 
 Klik op **Volgend nummer instellen**, of dubbelklik op een reeks.
+
+![Het venster Volgend nummer instellen voor de facturen van het verkoopdagboek, met onder de velden het laatste nummer en het bereik van de reeks](../images/documentnummer-venster.png "Volgend nummer instellen")
 
 | Veld | Wat u invult |
 |---|---|

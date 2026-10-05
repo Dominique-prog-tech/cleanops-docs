@@ -3,6 +3,8 @@
 Le numéro suivant de vos factures, notes de crédit et devis. CleanOps numérote lui-même ; ici, vous définissez un
 autre numéro suivant, par exemple pour poursuivre la numérotation de votre logiciel précédent.
 
+![La liste Numéros de documents avec, par série, l'Exercice, le Journal, le Type de document, le Dernier numéro et le Numéro suivant ; défini figure à côté des devis](../images/documentnummers-lijst-fr.png "Numéros de documents")
+
 ## Ouvrir l'écran
 
 Cliquez sur **Administration** en bas du menu, puis sur la tuile **Numéros de documents**.
@@ -25,6 +27,8 @@ Si **défini** figure à côté d'une série, le numéro suivant vient de votre 
 ## Définir le numéro suivant
 
 Cliquez sur **Définir le numéro suivant**, ou double-cliquez sur une série.
+
+![La fenêtre Définir le numéro suivant pour les factures du journal de vente, avec sous les champs le dernier numéro et la plage de la série](../images/documentnummer-venster-fr.png "Définir le numéro suivant")
 
 | Champ | Ce que vous complétez |
 |---|---|
