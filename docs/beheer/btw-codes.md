@@ -17,6 +17,8 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Btw-code
 | Omschrijving (NL) | wat u in de keuzelijsten ziet |
 | Omschrijving (FR) | idem voor wie de toepassing in het Frans gebruikt |
 | Percentage | het tarief waarmee gerekend wordt |
+| Code boekhouding | de code die uw boekhoudpakket per factuurlijn leest, bijvoorbeeld `OMZET21` |
+| Btw-categorie (UBL) | de soort btw voor de elektronische factuur: standaard, verlegd, vrijgesteld … |
 
 !!! note "Op uw documenten staat de code, niet de omschrijving"
     Een factuur en een offerte tonen de **code** met het **percentage**. De omschrijving is er voor u, om de
@@ -33,6 +35,12 @@ Klik op **Nieuwe btw-code**, of dubbelklik op een bestaande rij.
 | **Code** *(verplicht)* | maximaal 5 tekens, bijvoorbeeld `21P`. Ligt vast zodra de code bestaat. Een code die enkel in hoofdletters verschilt van een bestaande (`21p` naast `21P`), wordt geweigerd. |
 | **Percentage** | van 0 tot 99,99. |
 | **Omschrijving (NL)** / **(FR)** | maximaal 30 tekens. Die in de hoofdtaal van uw bedrijf is verplicht. |
+| **Code boekhouding** | maximaal 20 tekens. Gaat met elke factuurlijn mee naar uw boekhoudkantoor, dat er de omzetrekening mee koppelt. Vraag de juiste code aan uw boekhouder. |
+| **Btw-categorie (UBL)** | de soort btw zoals de elektronische factuur ze vraagt. *Standaard* hoort bij een percentage boven 0; de andere (verlegd, vrijgesteld, intracommunautair …) bij 0 %. |
+
+!!! note "Waarom de categorie niet uit het percentage volgt"
+    Een btw-code van 0 % kan verlegde btw (medecontractant), een vrijstelling of een intracommunautaire levering zijn. Voor
+    uw klant en uw boekhouder is dat een groot verschil, dus kiest u de categorie zelf.
 
 !!! warning "Een gewijzigd percentage raakt bestaande facturen niet"
     Elke factuur bewaart het percentage waarmee ze opgemaakt is. Verhoogt u hier een tarief, dan verandert er

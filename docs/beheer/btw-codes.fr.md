@@ -17,6 +17,8 @@ Cliquez sur **Administration** en bas du menu, puis sur la tuile **Codes TVA**.
 | Description (NL) | ce que vous voyez dans les listes de choix |
 | Description (FR) | idem pour qui utilise l'application en français |
 | Pourcentage | le taux servant au calcul |
+| Code comptable | le code que votre logiciel comptable lit par ligne de facture, par exemple `OMZET21` |
+| Catégorie TVA (UBL) | le type de TVA pour la facture électronique : taux normal, autoliquidation, exonéré … |
 
 !!! note "Sur vos documents figure le code, pas la description"
     Une facture et un devis affichent le **code** avec le **pourcentage**. La description est destinée à vous,
@@ -33,6 +35,12 @@ Cliquez sur **Nouveau code TVA**, ou double-cliquez sur une ligne existante.
 | **Code** *(obligatoire)* | 5 caractères au maximum, par exemple `21P`. Figé dès que le code existe. Un code qui ne diffère d'un code existant que par les majuscules (`21p` à côté de `21P`) est refusé. |
 | **Pourcentage** | de 0 à 99,99. |
 | **Description (NL)** / **(FR)** | 30 caractères au maximum. Celle dans la langue principale de votre entreprise est obligatoire. |
+| **Code comptable** | 20 caractères au maximum. Accompagne chaque ligne de facture vers votre bureau comptable, qui l'utilise pour lier le compte de chiffre d'affaires. Demandez le bon code à votre comptable. |
+| **Catégorie TVA (UBL)** | le type de TVA tel que le demande la facture électronique. *Taux normal* va avec un pourcentage supérieur à 0 ; les autres (autoliquidation, exonéré, intracommunautaire …) avec 0 %. |
+
+!!! note "Pourquoi la catégorie ne découle pas du pourcentage"
+    Un code TVA à 0 % peut être une autoliquidation (cocontractant), une exonération ou une livraison intracommunautaire. Pour
+    votre client et votre comptable, la différence est grande : vous choisissez donc la catégorie vous-même.
 
 !!! warning "Un pourcentage modifié ne touche pas les factures existantes"
     Chaque facture conserve le pourcentage avec lequel elle a été établie. Si vous augmentez un taux ici,
