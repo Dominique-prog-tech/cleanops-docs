@@ -169,6 +169,7 @@ plugins:
             Afdruk facturen: Impression des factures
             Rappelbeheer: Gestion des rappels
             Openstaande posten: Postes ouverts
+            Betalingen: Paiements
             Klantenportaal: Portail client
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
@@ -245,6 +246,7 @@ nav:
     - Facturatie: facturatie.md
     - Facturen: facturen.md
     - Openstaande posten: openstaande-posten.md
+    - Betalingen: betalingen.md
   # De kopjes zijn de groepen van de hub (AdministrationCatalog.Groups). "Overzetting en platform" ontbreekt bewust: dat
   # zijn ADM-interne schermen (docs/intern/). Gebruikers staat er niet: geen eigen pagina (beheer via ADM One).
   # ⚠️ "Overzicht" stond tot 05/10/2026 NIET in het menu: de pagina bestond, maar was enkel via een link bereikbaar.

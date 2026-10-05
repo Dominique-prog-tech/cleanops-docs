@@ -52,7 +52,8 @@ Draagt een lijn 6 % btw, dan komt de attestzin vanzelf onder de slottekst.
 ![Een factuur van de demo: de gegevens bovenaan, de Lijnen in een raster dat apart scrolt en de Btw-opbouw eronder](images/factuur-fiche.png "Een factuur")
 
 Bovenaan staan de klant, de datums, de betalingstermijn, de mededeling, de klantreferentie en de bedragen. Daaronder de
-**koptekst** als die er is, de **lijnen** en de **btw-opbouw**: elk raster scrolt apart. Onderaan staat de **slottekst**,
+**koptekst** als die er is, de **lijnen**, de **btw-opbouw** en ernaast de **betalingen** die erop kwamen (zie [Betalingen](betalingen.md)): elk raster
+scrolt apart. Onderaan staat de **slottekst**,
 bijvoorbeeld de 6 %-attestzin. Rechts bovenaan vindt u **Bijlagen** en **Logboek**. Bij een lijn uit een werkorder staat het
 werkordernummer; een vrije lijn heeft er geen.
 

@@ -55,7 +55,8 @@ ligne porte une TVA de 6 %, la phrase d'attestation s'ajoute d'elle-même sous l
 ![Une facture de la démo : les données en haut, les Lignes dans une grille qui défile séparément et la Ventilation de la TVA en dessous](images/factuur-fiche-fr.png "Une facture")
 
 En haut figurent le client, les dates, le délai de paiement, la communication, la référence du client et les montants. En
-dessous, le **Texte d'en-tête** s'il y en a un, les **Lignes** et la **Ventilation de la TVA** : chaque grille défile séparément.
+dessous, le **Texte d'en-tête** s'il y en a un, les **Lignes**, la **Ventilation de la TVA** et à côté les **Paiements** reçus (voir [Paiements](betalingen.fr.md)) : chaque
+grille défile séparément.
 En bas figure le **Texte de pied de page**, par exemple la phrase d'attestation à 6 %. En haut à droite se trouvent les **Pièces
 jointes** et l'**Historique**. Une ligne provenant d'un ordre de travail en porte le numéro ; une ligne libre n'en a pas.
 

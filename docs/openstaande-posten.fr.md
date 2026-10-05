@@ -89,7 +89,7 @@ figurent désormais sous **Exclus**. Avec **Réintégrer**, ils reçoivent de no
 Pas encore. Téléchargez le PDF dans l'aperçu avant impression et joignez-le à votre e-mail.
 
 **Puis-je saisir un paiement ?**
-Pas encore dans CleanOps.
+Oui : sélectionnez le poste et cliquez sur **Saisir un paiement…**. Voir [Paiements](betalingen.fr.md).
 
 **Où vois-je les rappels qu'un client a déjà reçus ?**
 Sur la [fiche client](klanten.fr.md), onglet **Postes ouverts** : l'historique des rappels s'y trouve.
@@ -99,6 +99,7 @@ Il faut pour cela le droit *Gérer les rappels*. Demandez-le à votre administra
 
 ## Voir aussi
 
+- [Paiements](betalingen.fr.md)
 - [Factures](facturen.fr.md)
 - [Clients](klanten.fr.md)
 - [Fiche entreprise](beheer/bedrijfsfiche.fr.md)

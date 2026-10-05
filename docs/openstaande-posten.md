@@ -88,7 +88,7 @@ voortaan onder **Uitgesloten**. Met **Weer opnemen** krijgen ze opnieuw rappels.
 Nog niet. Download de PDF in het afdrukvoorbeeld en voeg ze bij uw mail.
 
 **Kan ik een betaling ingeven?**
-Nog niet in CleanOps.
+Ja: selecteer de post en klik op **Betaling ingeven…**. Zie [Betalingen](betalingen.md).
 
 **Waar zie ik welke rappels een klant al kreeg?**
 Op de [klantfiche](klanten.md), tabblad **Openstaand**: daar staat de rappelhistoriek.
@@ -98,6 +98,7 @@ Daarvoor is het recht *Rappels beheren* nodig. Vraag het aan uw beheerder.
 
 ## Zie ook
 
+- [Betalingen](betalingen.md)
 - [Facturen](facturen.md)
 - [Klanten](klanten.md)
 - [Bedrijfsfiche](beheer/bedrijfsfiche.md)
