@@ -143,13 +143,19 @@ plugins:
             Facturen: Factures
             Personeel groeperen: Groupement du personnel
             CRM: CRM
+            Werk: Travail
+            Verkoop: Ventes
+            Platformbeheer: Administration
+            Toegang: Accès
+            Historiek: Historique
+            Factuurteksten: Textes de facture
             Klanten: Clients
             Leveranciers: Fournisseurs
             Medewerkers: Collaborateurs
             Werkorders: Ordres de travail
             Overzicht verloven: Aperçu des congés
             Verlofsaldi: Soldes de congés
-            Verlofkalender: Calendrier des congés
+            Verlofkalender: Agenda des congés   # de menunaam van de app sinds 04/10/2026
             Attesten: Attestations
             Producten: Produits
             Verwerkingen: Traitements
@@ -215,31 +221,47 @@ extra:
 # schijf staan onder docs/, maar komt pas in deze nav (en dus live op docs.cleanops.eu) zodra een pagina echt
 # af is. Voeg per vrijgegeven module de betreffende regel(s) hier terug toe.
 nav:
+  # Gegroepeerd zoals het menu van de APP (Navigation.cs: CRM · Werk · Verkoop, en Platformbeheer met de groepen van de hub),
+  # beslist door Dominique op 05/10/2026 — zoals nimble-docs sinds 17/09. Daarvóór was elk scherm een eigen tabblad in de
+  # kopbalk: zestien, en elke module erbij maakte er één meer. De BESTANDEN zijn niet verplaatst: de adressen blijven
+  # gelijk, dus de ?-knop en de links vanuit de app werken verder. Volgorde binnen een groep = die van het app-menu.
   - Home: index.md
-  - Klanten: klanten.md
-  - Medewerkers: medewerkers.md
-  - Verlofsaldi: verlofsaldi.md
-  - Verlofkalender: verlofkalender.md
-  - Werkorders: werkorders.md
-  - Contracten: contracten.md
-  - Planning: planning.md
-  - Ploegen: ploegen.md
-  - Werkbonnen: werkbonnen.md
-  - Offertes: offertes.md
-  - Facturatie: facturatie.md
-  - Facturen: facturen.md
-  - Openstaande posten: openstaande-posten.md
-  - Klantenportaal: klantenportaal.md
-  - Beheer:
-    - Bedrijfsfiche: beheer/bedrijfsfiche.md
-    - Basistabellen: beheer/basistabellen.md
-    - Btw-codes: beheer/btw-codes.md
-    - Tarieven: beheer/tarieven.md
-    - Eenheden: beheer/eenheden.md
-    - Betalingstermijnen: beheer/betalingstermijnen.md
-    - Factuurteksten: beheer/factuurteksten.md
-    - Feestdagen: beheer/feestdagen.md
-    - Voertuigen: beheer/voertuigen.md
-    - Rollen: beheer/rollen.md
-    - Prullenbak: beheer/prullenbak.md
-    - Actielogboek: beheer/actielogboek.md
+  # Algemene uitleg die voor elk scherm geldt, groeit hier aan (lijsten, journaal, …).
+  - Aan de slag:
+    - Klantenportaal: klantenportaal.md
+  - CRM:
+    - Klanten: klanten.md
+    - Medewerkers: medewerkers.md
+    - Verlofsaldi: verlofsaldi.md
+    - Verlofkalender: verlofkalender.md
+  - Werk:
+    - Werkorders: werkorders.md
+    - Planning: planning.md
+    - Ploegen: ploegen.md
+    - Werkbonnen: werkbonnen.md
+    - Contracten: contracten.md
+  - Verkoop:
+    - Offertes: offertes.md
+    - Facturatie: facturatie.md
+    - Facturen: facturen.md
+    - Openstaande posten: openstaande-posten.md
+  # De kopjes zijn de groepen van de hub (AdministrationCatalog.Groups). "Overzetting en platform" ontbreekt bewust: dat
+  # zijn ADM-interne schermen (docs/intern/). Gebruikers staat er niet: geen eigen pagina (beheer via ADM One).
+  # ⚠️ "Overzicht" stond tot 05/10/2026 NIET in het menu: de pagina bestond, maar was enkel via een link bereikbaar.
+  - Platformbeheer:
+    - Overzicht: platformbeheer.md
+    - Stamgegevens:
+      - Bedrijfsfiche: beheer/bedrijfsfiche.md
+      - Basistabellen: beheer/basistabellen.md
+      - Btw-codes: beheer/btw-codes.md
+      - Tarieven: beheer/tarieven.md
+      - Eenheden: beheer/eenheden.md
+      - Betalingstermijnen: beheer/betalingstermijnen.md
+      - Factuurteksten: beheer/factuurteksten.md
+      - Feestdagen: beheer/feestdagen.md
+      - Voertuigen: beheer/voertuigen.md
+    - Toegang:
+      - Rollen: beheer/rollen.md
+    - Historiek:
+      - Prullenbak: beheer/prullenbak.md
+      - Actielogboek: beheer/actielogboek.md
