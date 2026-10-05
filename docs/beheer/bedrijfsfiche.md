@@ -3,7 +3,7 @@
 De gegevens van uw eigen bedrijf: naam, adres, contactgegevens, btw-nummer en bank, uw logo, en de wachttijd
 tussen twee rappels.
 
-![De bedrijfsfiche met de blokken Identiteit en adres, Contact, Fiscaal en bank, Logo en Rappels](../images/bedrijfsfiche.png "Bedrijfsfiche")
+![De bedrijfsfiche met de blokken Identiteit en adres, Contact, Fiscaal en bank, Logo, Rappels en Boekhouding met het Adres van het boekhoudkantoor](../images/bedrijfsfiche.png "Bedrijfsfiche")
 
 !!! note "Waar CleanOps deze gegevens vandaag gebruikt"
     De **wachttijd tussen twee rappels** bepaalt meteen welke posten in de lijst *Volgende rappel* van de

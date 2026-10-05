@@ -3,7 +3,7 @@
 De btw-tarieven die u kiest op een offerte, een werkorder of een factuurlijn. Elke code draagt een
 percentage; dat percentage bepaalt de btw-berekening.
 
-![De lijst Btw-codes met de kolommen Code, Omschrijving (NL), Omschrijving (FR) en Percentage, het zoekveld en de knop Nieuwe btw-code](../images/btw-codes-lijst.png "Btw-codes")
+![De lijst Btw-codes met de kolommen Code, Omschrijving (NL), Omschrijving (FR), Percentage, Code boekhouding en Btw-categorie (UBL), het zoekveld en de knop Nieuwe btw-code](../images/btw-codes-lijst.png "Btw-codes")
 
 ## Het scherm openen
 
@@ -28,7 +28,7 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Btw-code
 
 Klik op **Nieuwe btw-code**, of dubbelklik op een bestaande rij.
 
-![Het venster Btw-code bewerken met Code, Percentage, Omschrijving (NL) en Omschrijving (FR)](../images/btw-code-venster.png "Een btw-code")
+![Het venster Btw-code bewerken met Code, Percentage, Omschrijving (NL), Omschrijving (FR), Code boekhouding en Btw-categorie (UBL)](../images/btw-code-venster.png "Een btw-code")
 
 | Veld | Wat u invult |
 |---|---|

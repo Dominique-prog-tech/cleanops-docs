@@ -4,7 +4,7 @@ Facturen toont al uw verkoopdocumenten: de facturen en creditnota's uit uw vorig
 maakt u een factuur met vrije lijnen, drukt u een factuur af, wijzigt u een factuur die nog niet verstuurd is en crediteert u ze.
 Werkorders factureert u in [Facturatie](facturatie.md).
 
-![De lijst Facturen van de demo met facturen en een creditnota, de filters Type en Boekjaar, de knop Nieuwe factuur en de kolom Gecrediteerd door](images/facturen-lijst.png "Facturen")
+![De lijst Facturen van de demo met facturen en een creditnota, de filters Type en Boekjaar, de knop Nieuwe factuur, de knop Naar de boekhouding en de kolommen In boekhouding en Gecrediteerd door](images/facturen-lijst.png "Facturen")
 
 ## Het scherm openen
 
@@ -99,6 +99,8 @@ de knop verdwijnt, en de factuur kan niet meer heropend worden.
 Met **Proef naar de boekhouding…** gaat dit ene document als PROEF naar een adres naar keuze, met de elektronische factuur (UBL)
 en de PDF erin. Zo gaat u met uw boekhouder na of zijn boekhoudpakket de facturen goed inleest, vóór u de dagelijkse export
 aanzet. Een proef zet het document niet op *in boekhouding*.
+
+![Het venster Proef naar de boekhouding met de uitleg en het Adres van de boekhouder, met de knop Versturen](images/factuur-proef.png "Proef naar de boekhouding")
 
 ### Kop wijzigen
 

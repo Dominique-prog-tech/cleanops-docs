@@ -3,7 +3,7 @@
 Les taux de TVA que vous choisissez sur un devis, un ordre de travail ou une ligne de facture. Chaque code
 porte un pourcentage ; ce pourcentage détermine le calcul de la TVA.
 
-![La liste Codes TVA avec les colonnes Code, Description (NL), Description (FR) et Pourcentage, le champ de recherche et le bouton Nouveau code TVA](../images/btw-codes-lijst-fr.png "Codes TVA")
+![La liste Codes TVA avec les colonnes Code, Description (NL), Description (FR), Pourcentage, Code comptable et Catégorie TVA (UBL), le champ de recherche et le bouton Nouveau code TVA](../images/btw-codes-lijst-fr.png "Codes TVA")
 
 ## Ouvrir l'écran
 
@@ -28,7 +28,7 @@ Cliquez sur **Administration** en bas du menu, puis sur la tuile **Codes TVA**.
 
 Cliquez sur **Nouveau code TVA**, ou double-cliquez sur une ligne existante.
 
-![La fenêtre Modifier le code TVA avec Code, Pourcentage, Description (NL) et Description (FR)](../images/btw-code-venster-fr.png "Un code TVA")
+![La fenêtre Modifier le code TVA avec Code, Pourcentage, Description (NL), Description (FR), Code comptable et Catégorie TVA (UBL)](../images/btw-code-venster-fr.png "Un code TVA")
 
 | Champ | Ce que vous complétez |
 |---|---|

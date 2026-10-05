@@ -5,7 +5,7 @@ vous avez comptabilisées dans CleanOps. Ici, vous établissez une facture avec 
 modifiez une facture qui n'a pas encore été envoyée et vous la créditez. Les ordres de travail se facturent dans
 [Facturation](facturatie.fr.md).
 
-![La liste Factures de la démo avec des factures et une note de crédit, les filtres Type et Exercice, le bouton Nouvelle facture et la colonne Créditée par](images/facturen-lijst-fr.png "Factures")
+![La liste Factures de la démo avec des factures et une note de crédit, les filtres Type et Exercice, le bouton Nouvelle facture, le bouton Vers la comptabilité et les colonnes En comptabilité et Créditée par](images/facturen-lijst-fr.png "Factures")
 
 ## Ouvrir l'écran
 
@@ -105,6 +105,8 @@ alors comme envoyée, le bouton disparaît, et la facture ne peut plus être rou
 Avec **Essai vers la comptabilité…**, ce seul document part comme ESSAI vers l'adresse de votre choix, avec la facture électronique
 (UBL) et le PDF inclus. Vous vérifiez ainsi avec votre comptable que son logiciel lit bien les factures, avant d'activer l'envoi
 quotidien. Un essai ne marque pas le document comme *en comptabilité*.
+
+![La fenêtre Essai vers la comptabilité avec l'explication et l'Adresse du comptable, avec le bouton Envoyer](images/factuur-proef-fr.png "Essai vers la comptabilité")
 
 ### Modifier l'en-tête
 

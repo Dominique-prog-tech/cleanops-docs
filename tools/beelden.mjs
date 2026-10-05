@@ -319,6 +319,15 @@ const SCHOTEN = [
       if (await dicht.isVisible()) await dicht.click();
     } },
   // De fiche en de afdruk per taal een factuur in DIE taal: de afdruk volgt de taal van de factuur, niet die van het scherm.
+  // De proefzending (05/10/2026): het venster met een voorbeeldadres, NIET verstuurd — het merkteken is de uitleg in het venster.
+  { naam: 'factuur-proef', route: '/facturen', verwacht: tekstTaal('Het wordt niet gemarkeerd', "Il n'est pas marqué"),
+    na: async (p, taal) => {
+      await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001');
+      await p.getByRole('button', { name: /^(Proef naar de boekhouding…|Essai vers la comptabilité…)$/ }).click();
+      const venster = p.locator('.dxbl-popup:not(.dxbl-popup-hidden)').last();
+      const veld = venster.locator('input').first();
+      await veld.click(); await veld.fill('boekhouder@kantoor-demo.be'); await p.keyboard.press('Tab');
+    } },
   { naam: 'factuur-fiche', route: '/facturen', verwacht: tekstTaal('Btw-opbouw', 'Ventilation de la TVA'),
     na: async (p, taal) => { await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001'); } },
   // ⚠️ Wachten op het BEELD van de pagina in de kijker (zie planning-afdruk).
@@ -440,8 +449,15 @@ const SCHOTEN = [
     element: '.alert[role=alert]:has-text("keuring"), .alert[role=alert]:has-text("contrôle technique")' },
   // Bedrijfsfiche: één fiche, één beeld. ⚠️ HOGER dan de standaard (hoogte): op 900 px vielen Logo en Rappels half weg
   // (29/09/2026). Het merkteken is daarom "Rappels"-tekst onderaan, niet de kop bovenaan.
-  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1180,
-    verwacht: tekstTaal('Wachttijd tussen twee rappels', 'Délai entre deux rappels') },
+  // ⚠️ 1240 sinds het blok Boekhouding (05/10/2026): gemeten op 1440 breed eindigt het blok op 1122 px en begint de knoppenbalk op
+  // 1155 — op 1180 viel het half weg. Het vinkje en een voorbeeldadres worden INGEVULD maar niet bewaard: zo toont het beeld de functie.
+  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1240,
+    verwacht: tekstTaal('Adres van het boekhoudkantoor', 'Adresse du bureau comptable'),
+    na: async p => {
+      await p.getByText(/^(Facturen en creditnota's elke dag naar het boekhoudkantoor sturen|Envoyer chaque jour les factures et notes de crédit au bureau comptable)$/).first().click();
+      const veld = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Adres van het boekhoudkantoor|Adresse du bureau comptable)$/ }) }).locator('input').first();
+      await veld.click(); await veld.fill('boekhouding@kantoor-demo.be'); await p.keyboard.press('Tab');
+    } },
   // Basistabellen: zelfde vorm; het scherm opent op de lijst Contracttypes.
   { naam: 'basistabellen-lijst', route: '/beheer/basistabellen', verwacht: tekstTaal('Nieuw item', 'Nouvel élément') },
   { naam: 'basistabel-venster', route: '/beheer/basistabellen', verwacht: tekstTaal('Item bewerken', "Modifier l'élément"),
@@ -453,7 +469,12 @@ const SCHOTEN = [
       if (await strook.isVisible()) await strook.click();
     } },
   // Btw-codes: zelfde vorm (lijst + venster + journaal van één code).
-  { naam: 'btw-codes-lijst', route: '/beheer/btw-codes', verwacht: tekstTaal('Nieuwe btw-code', 'Nouveau code TVA') },
+  // ⚠️ Journaal eerst dicht (05/10/2026): het Franse beeld erfde de open stand van het journaalbeeld en toonde de nieuwe kolommen niet.
+  { naam: 'btw-codes-lijst', route: '/beheer/btw-codes', verwacht: tekstTaal('Nieuwe btw-code', 'Nouveau code TVA'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
   { naam: 'btw-code-venster', route: '/beheer/btw-codes', verwacht: tekstTaal('Btw-code bewerken', 'Modifier le code TVA'),
     na: async p => { await p.getByRole('gridcell', { name: DEMO.btwCode, exact: true }).first().dblclick(); } },
   { naam: 'btw-codes-journaal', route: '/beheer/btw-codes', verwacht: tekstTaal('Gewijzigd', 'Modifié'),

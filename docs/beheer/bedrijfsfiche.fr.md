@@ -3,7 +3,7 @@
 Les données de votre propre entreprise : nom, adresse, coordonnées, numéro de TVA et banque, votre logo, et le
 délai entre deux rappels.
 
-![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo et Rappels](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
+![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels et Comptabilité avec l'Adresse du bureau comptable](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
 
 !!! note "Où CleanOps utilise ces données aujourd'hui"
     Le **délai entre deux rappels** détermine directement quels postes figurent dans la liste *Prochain rappel*
