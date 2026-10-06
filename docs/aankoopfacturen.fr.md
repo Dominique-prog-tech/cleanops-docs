@@ -55,6 +55,13 @@ dans la première ligne.
     CleanOps refuse un document portant le même numéro et la même date du même fournisseur. Vous ne comptabilisez
     ainsi pas une facture deux fois par erreur.
 
+## Une facture par Peppol
+
+Si votre fournisseur envoie sa facture par Peppol, vous ne devez pas la saisir : elle figure dans
+[Documents reçus](binnengekomen-documenten.md), et **Traiter** ouvre cette fiche déjà remplie. En haut figure alors la
+carte **Document Peppol** avec le PDF et les lignes du fournisseur ; elle reste aussi après l'enregistrement. La TVA
+du document reste : pour une telle facture, CleanOps ne la recalcule pas.
+
 ## Le numéro
 
 Le numéro court par exercice et journal d'achat, à partir de 1 ; factures et notes de crédit partagent la série. Le
@@ -89,7 +96,8 @@ montre qui a modifié quel champ, quand, et de quelle valeur vers quelle valeur.
 
 **Où sont les lignes de la facture ?**
 Une facture d'achat porte les montants par taux de TVA, comme votre application précédente. Le détail de ce qui a été
-acheté figure sur le document du fournisseur, sous Pièces jointes.
+acheté figure sur le document du fournisseur, sous Pièces jointes. Si la facture est arrivée par Peppol, les lignes
+figurent aussi en haut de la fiche, dans la carte Document Peppol.
 
 **Je ne peux plus modifier un document.**
 Regardez en haut de la fiche : s'il y est indiqué qu'un montant est déjà payé, le document est fixe. L'onglet Paiements

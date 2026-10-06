@@ -55,6 +55,13 @@ in de eerste regel.
     CleanOps weigert een document met hetzelfde nummer en dezelfde datum van dezelfde leverancier. Zo boekt u een
     factuur niet per ongeluk twee keer.
 
+## Een factuur uit Peppol
+
+Stuurt uw leverancier zijn factuur via Peppol, dan hoeft u ze niet in te typen: ze staat in
+[Binnengekomen documenten](binnengekomen-documenten.md), en **Verwerken** opent deze fiche al ingevuld. Bovenaan staat
+dan de kaart **Peppol-document** met de PDF en de lijnen van de leverancier; ze blijft er ook na het bewaren staan. De
+btw van het document blijft staan: CleanOps rekent ze bij zo'n factuur niet opnieuw uit.
+
 ## Het nummer
 
 Het nummer loopt per boekjaar en aankoopdagboek, vanaf 1; facturen en creditnota's delen de reeks. Het volgende nummer
@@ -89,7 +96,8 @@ wie welk veld wijzigde, wanneer, en van welke waarde naar welke.
 
 **Waar staan de lijnen van de factuur?**
 Een aankoopfactuur draagt de bedragen per btw-tarief, zoals uw vorige toepassing. Het detail van wat er gekocht werd,
-staat op het document van de leverancier onder Bijlagen.
+staat op het document van de leverancier onder Bijlagen. Kwam de factuur via Peppol binnen, dan staan de lijnen ook
+bovenaan de fiche, in de kaart Peppol-document.
 
 **Een document kan ik niet meer wijzigen.**
 Kijk bovenaan de fiche: staat er dat er al betaald is, dan ligt het vast. Het tabblad Betalingen toont welke betaling

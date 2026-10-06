@@ -153,6 +153,7 @@ plugins:
             Leveranciers: Fournisseurs
             Aankoop: Achats
             Aankoopfacturen: Factures d'achat
+            Binnengekomen documenten: Documents reçus
             Medewerkers: Collaborateurs
             Werkorders: Ordres de travail
             Overzicht verloven: Aperçu des congés
@@ -253,6 +254,7 @@ nav:
     - Openstaande posten: openstaande-posten.md
     - Betalingen: betalingen.md
   - Aankoop:
+    - Binnengekomen documenten: binnengekomen-documenten.md
     - Aankoopfacturen: aankoopfacturen.md
     - Openstaande posten: openstaande-posten-leveranciers.md
   # De kopjes zijn de groepen van de hub (AdministrationCatalog.Groups). "Overzetting en platform" ontbreekt bewust: dat

@@ -160,6 +160,19 @@ const SCHOTEN = [
   { naam: 'aankoopfactuur-fiche', route: '/aankoopfacturen', verwacht: tekstTaal('Tarief toevoegen', 'Ajouter un taux'),
     hoogte: 1100,
     na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.aankoopFr : DEMO.aankoop); } },
+  // Binnengekomen documenten (vrijgave 06/10/2026, Aankoop laag 4). De documenten komen uit de ONTWIKKEL-INBOX van de app
+  // (PeppolDevelopmentInbox: enkel in Development, met de vlag Peppol:OntwikkelInbox) — vier voor de demo. ⚠️ Herstart de preview vóór
+  // deze beelden als er al documenten verwerkt werden: de ontwikkel-inbox onthoudt wat bevestigd is tot de app herstart, en een
+  // verwerkt document staat niet meer in de lijst. Merkteken van de lijst: Rioolinspectie Noord bv, de onbekende leverancier.
+  { naam: 'binnengekomen-documenten-lijst', route: '/binnengekomen-documenten', verwacht: /Rioolinspectie Noord/ },
+  // Verwerken van het document van Pompes Delhaye (twee tarieven): de voorgevulde fiche met de kaart Peppol-document. Verwerken
+  // bewaart een kopie van het document, maar maakt nog geen factuur — het beeld laat niets achter dat een volgend beeld verandert.
+  { naam: 'peppol-verwerken', route: '/binnengekomen-documenten', hoogte: 1000,
+    verwacht: tekstTaal('Pompe de relevage', 'Pompe de relevage'),
+    na: async p => { await verwerk(p, /Pompes Delhaye/); } },
+  { naam: 'peppol-leverancier-aanmaken', route: '/binnengekomen-documenten',
+    verwacht: tekstTaal('Leverancier aanmaken', 'Créer le fournisseur'),
+    na: async p => { await verwerk(p, /Rioolinspectie Noord/); } },
   // Openstaande posten leveranciers (vrijgave 06/10/2026, module Aankoop laag 3): gegroepeerd per leverancier met het saldo. Merkteken:
   // Rioolservice Zeeland, de deelbetaling uit de demo (VerzinLeveranciersBetalingenAsync).
   { naam: 'openstaande-posten-leveranciers-lijst', route: '/openstaande-posten-leveranciers', verwacht: /Rioolservice Zeeland/,
@@ -695,6 +708,12 @@ async function vulLijn(p, tabel, rij, { oms, aantal, eenheid, prijs, btw }) {
   if (eenheid) { await inp.nth(3).fill(eenheid); await inp.nth(3).press('Tab'); }
   await inp.nth(5).click(); await inp.nth(5).fill(btw); await p.waitForTimeout(500);
   await inp.nth(5).press('ArrowDown'); await inp.nth(5).press('Enter'); await p.waitForTimeout(300);
+}
+
+// "Verwerken" op de rij van een binnengekomen document: de voorgevulde aankoopfactuur opent (/aankoopfacturen/nieuw?peppol=…).
+async function verwerk(p, leverancier) {
+  await p.getByRole('row').filter({ hasText: leverancier }).first().getByText(tekstTaal('^Verwerken$', '^Traiter$')).click();
+  await p.waitForURL(/\/aankoopfacturen\/nieuw\?peppol=/, { timeout: 15000 });
 }
 
 async function openRij(p, tekst) {

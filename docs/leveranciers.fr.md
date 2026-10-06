@@ -27,6 +27,10 @@ Cliquez sur **Nouveau fournisseur**. Vous obtenez une fiche vide ; les champs ma
 obligatoires. CleanOps attribue lui-même le numéro. Après **Enregistrer**, la fiche du nouveau fournisseur s'ouvre,
 avec ses onglets.
 
+Si une facture arrive par Peppol d'un fournisseur que CleanOps ne connaît pas encore, vous le créez depuis cette
+facture : la fiche est alors préremplie avec les données du document, et après **Enregistrer** vous revenez à la
+facture. Voir [Documents reçus](binnengekomen-documenten.md).
+
 ## La fiche fournisseur
 
 En haut figurent le nom et le numéro, en dessous les onglets **Fiche**, **Documents d'achat**, **Paiements**, **Pièces jointes**
