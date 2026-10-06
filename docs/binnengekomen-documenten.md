@@ -19,8 +19,8 @@ ziet u de lijst en de PDF's, maar niet de knop **Verwerken**.
 
 ## De lijst
 
-Per document ziet u wanneer het ontvangen werd, de leverancier, het nummer en het totaal. Een creditnota staat er met
-het woord *Creditnota* voor het nummer. Het oudste document staat bovenaan.
+Per document ziet u wanneer het ontvangen werd, de leverancier, het nummer en het totaal. Een creditnota draagt
+het label *Creditnota* bij het nummer en een minteken in het totaal. Het oudste document staat bovenaan.
 
 - **Bekijken** — opent de PDF van de leverancier in een nieuw venster.
 - **Verwerken** — opent een voorgevulde aankoopfactuur (zie hieronder).
