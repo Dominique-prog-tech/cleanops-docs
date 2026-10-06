@@ -16,6 +16,11 @@ await page.getByRole('button', { name: 'Demo vullen' }).click();
 await page.waitForTimeout(1000);
 const vraag = page.locator('.dxbl-popup:not(.dxbl-popup-hidden)').last();
 if (await vraag.count() && await vraag.isVisible()) { console.log('vraag:', (await vraag.innerText()).replace(/\s+/g, ' ').slice(0, 200)); }
-for (let i = 0; i < 120; i++) { const t = await page.locator('main').innerText(); if (/Eenheden|mislukt|Bron van de referentielijsten/i.test(t) && !/bezig/i.test(t)) break; await page.waitForTimeout(2000); }
-console.log((await page.locator('main').innerText()).split('\n').filter(l => /Bron|Eenhed|Dagboek|Rekening|Klanten|Betaling|Facturen|mislukt|fout|Klaar|Schakelaar/i.test(l)).slice(0, 25).join('\n'));
+// ⚠️ Wachten op een RESULTAATREGEL ("Betalingen aan leveranciers: …", hoofdlettergevoelig, met dubbelpunt). Hier stond /Eenheden/i, en
+// dat woord staat al in de UITLEG boven de knop ("eenheden"): de lus stopte meteen en sloot de browser, en het vullen lukte enkel
+// omdat het binnen de seconde klaar was (gezien 06/10/2026).
+let klaar = false;
+for (let i = 0; i < 120; i++) { const t = await page.locator('main').innerText(); if (/Betalingen aan leveranciers: |mislukt|Fout/.test(t) && !/bezig/i.test(t)) { klaar = true; break; } await page.waitForTimeout(2000); }
+if (!klaar) console.log('⚠️ na 4 minuten geen resultaatregel — kijk zelf in Platformbeheer → Conversie');
+console.log((await page.locator('main').innerText()).split('\n').filter(l => /^[A-Z][^:]{2,40}: /.test(l) || /mislukt|fout/i.test(l)).slice(0, 30).join('\n'));
 await browser.close();

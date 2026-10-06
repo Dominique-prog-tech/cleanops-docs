@@ -70,7 +70,15 @@ d'achat suivant, afin qu'il n'y ait pas de trou dans la série.
 
 !!! note "Payé = fixe"
     Si un montant est déjà payé sur un document, cela figure en haut de la fiche et vous ne pouvez plus le modifier
-    ni le supprimer.
+    ni le supprimer. Si ce paiement était une erreur, annulez-le dans [Paiements](betalingen.md) : vous pouvez ensuite
+    adapter à nouveau le document.
+
+## L'onglet Paiements
+
+Les paiements sur ce document, avec la date et le numéro de l'extrait et le montant. Au-dessus figure ce qui reste
+ouvert, comme sur l'extrait : négatif pour une facture que vous devez encore payer. S'il reste un montant ouvert,
+**Saisir un paiement** ouvre la fenêtre de [Paiements](betalingen.md) avec ce document déjà rempli. Ce qui reste ouvert
+chez tous vos fournisseurs se voit dans les [Postes ouverts fournisseurs](openstaande-posten-leveranciers.md).
 
 ## Les onglets Pièces jointes et Historique
 
@@ -84,7 +92,8 @@ Une facture d'achat porte les montants par taux de TVA, comme votre application 
 acheté figure sur le document du fournisseur, sous Pièces jointes.
 
 **Je ne peux plus modifier un document.**
-Regardez en haut de la fiche : s'il y est indiqué qu'un montant est déjà payé, le document est fixe.
+Regardez en haut de la fiche : s'il y est indiqué qu'un montant est déjà payé, le document est fixe. L'onglet Paiements
+montre de quel paiement il s'agit ; un paiement erroné s'annule dans [Paiements](betalingen.md).
 
 **L'échéance est incorrecte.**
 Laissez le champ vide pour la recalculer à partir du délai de paiement du fournisseur, ou indiquez la date du document.

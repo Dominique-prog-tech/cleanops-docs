@@ -29,7 +29,8 @@ avec ses onglets.
 
 ## La fiche fournisseur
 
-En haut figurent le nom et le numéro, en dessous les onglets **Fiche**, **Pièces jointes** et **Historique**.
+En haut figurent le nom et le numéro, en dessous les onglets **Fiche**, **Documents d'achat**, **Paiements**, **Pièces jointes**
+et **Historique**. Documents d'achat et Paiements s'affichent avec le droit *Voir les achats*.
 
 ![La fiche de Pompes Delhaye avec les blocs Identification, Adresse, Contact, Paiement et Remarques](images/leverancier-fiche-fr.png "Fiche fournisseur")
 
@@ -68,6 +69,20 @@ téléphone rempli doit être valide ; le laisser vide est permis.
 
 Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire ou qu'une valeur est incorrecte,
 CleanOps indique lequel. **Annuler** vous ramène à la liste sans enregistrer.
+
+### L'onglet Documents d'achat
+
+Toutes les [factures d'achat](aankoopfacturen.md) et notes de crédit de ce fournisseur, la plus récente en haut. Au-dessus de la
+liste figure son **solde ouvert** : ce que vous lui devez encore, comme sur l'extrait (négatif), et le nombre de documents encore
+ouverts. Avec **Saisir un paiement**, vous les payez en une fois : la fenêtre de [Paiements](betalingen.md) s'ouvre avec leur solde
+rempli. Double-cliquez sur un document pour l'ouvrir.
+
+![L'onglet Documents d'achat d'un fournisseur avec le Solde ouvert, le bouton Saisir un paiement et ses documents avec Total et Ouvert](images/leverancier-aankoopdocumenten-fr.png "Documents d'achat d'un fournisseur")
+
+### L'onglet Paiements
+
+Les paiements à ce fournisseur, le plus récent en haut, avec la date et le numéro de l'extrait et le montant. Un paiement annulé
+porte l'étiquette **annulé**. Ce qu'un paiement a soldé se voit dans [Paiements](betalingen.md).
 
 ### L'onglet Pièces jointes
 

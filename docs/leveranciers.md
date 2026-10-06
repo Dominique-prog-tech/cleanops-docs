@@ -29,7 +29,8 @@ kent CleanOps zelf toe. Na **Opslaan** opent de fiche van de nieuwe leverancier,
 
 ## De leveranciersfiche
 
-Bovenaan staan de naam en het nummer, daaronder de tabbladen **Fiche**, **Bijlagen** en **Logboek**.
+Bovenaan staan de naam en het nummer, daaronder de tabbladen **Fiche**, **Aankoopdocumenten**, **Betalingen**, **Bijlagen** en
+**Logboek**. Aankoopdocumenten en Betalingen ziet u met het recht *Aankoop bekijken*.
 
 ![De fiche van Filterhandel Vandamme met de blokken Identificatie, Adres, Contact, Betaling en Opmerkingen](images/leverancier-fiche.png "Leveranciersfiche")
 
@@ -68,6 +69,20 @@ moet geldig zijn; leeg laten mag.
 
 Klik op **Opslaan** om te bewaren. Ontbreekt er een verplicht veld of klopt een waarde niet, dan zegt CleanOps
 welk. **Annuleren** brengt u terug naar de lijst zonder te bewaren.
+
+### Het tabblad Aankoopdocumenten
+
+Alle [aankoopfacturen](aankoopfacturen.md) en creditnota's van deze leverancier, de recentste bovenaan. Boven de lijst staat zijn
+**openstaand saldo**: wat u hem nog moet betalen, zoals op het uittreksel (negatief), en hoeveel documenten nog openstaan. Met
+**Betaling ingeven** betaalt u ze in één keer: het venster van [Betalingen](betalingen.md) opent met hun saldo ingevuld.
+Dubbelklik op een document om het te openen.
+
+![Het tabblad Aankoopdocumenten van een leverancier met het Openstaand saldo, de knop Betaling ingeven en zijn documenten met Totaal en Openstaand](images/leverancier-aankoopdocumenten.png "Aankoopdocumenten van een leverancier")
+
+### Het tabblad Betalingen
+
+De betalingen aan deze leverancier, de recentste bovenaan, met de datum en het nummer van het uittreksel en het bedrag. Een
+teruggedraaide betaling draagt het label **teruggedraaid**. Wat een betaling vereffende, ziet u in [Betalingen](betalingen.md).
 
 ### Het tabblad Bijlagen
 

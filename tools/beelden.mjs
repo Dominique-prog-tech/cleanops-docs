@@ -134,6 +134,14 @@ const SCHOTEN = [
   { naam: 'leverancier-fiche', route: '/leveranciers', verwacht: tekstTaal('Standaard btw-code', 'Code TVA par défaut'),
     hoogte: 1300,
     na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.leverancierFr : DEMO.leverancier); } },
+  // Het tabblad Aankoopdocumenten (module Aankoop laag 3, 06/10/2026): saldo, Betaling ingeven en de documenten. NL Rioolservice Zeeland
+  // (een deelbetaling: Totaal en Openstaand verschillen), FR Pompes Delhaye — NIET de voorbeeldleverancier Filterhandel Vandamme: die
+  // is in de demo volledig betaald, en dan staat de knop Betaling ingeven er niet.
+  { naam: 'leverancier-aankoopdocumenten', route: '/leveranciers', verwacht: tekstTaal('Openstaand saldo', 'Solde ouvert'),
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.leverancierFr : 'Rioolservice Zeeland BV');
+      await p.getByText(/^(Aankoopdocumenten|Documents d'achat) \(/).first().click();
+    } },
   { naam: 'leverancier-logboek', route: '/leveranciers', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
     na: async (p, taal) => {
       await openRij(p, taal === 'fr-BE' ? DEMO.leverancierFr : DEMO.leverancier);
@@ -149,6 +157,13 @@ const SCHOTEN = [
   { naam: 'aankoopfactuur-fiche', route: '/aankoopfacturen', verwacht: tekstTaal('Tarief toevoegen', 'Ajouter un taux'),
     hoogte: 1100,
     na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.aankoopFr : DEMO.aankoop); } },
+  // Openstaande posten leveranciers (vrijgave 06/10/2026, module Aankoop laag 3): gegroepeerd per leverancier met het saldo. Merkteken:
+  // Rioolservice Zeeland, de deelbetaling uit de demo (VerzinLeveranciersBetalingenAsync).
+  { naam: 'openstaande-posten-leveranciers-lijst', route: '/openstaande-posten-leveranciers', verwacht: /Rioolservice Zeeland/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
   // Verlofsaldi (vrijgave 02/10/2026): de lijst en het venster van één medewerker — uit de demo (VerzinMedewerkersAsync:
   // toekenningen voor dit en vorig jaar, Lies Maes enkel vorig jaar, Nina's brugdag op 0 dagen). ⚠️ Vul de demo opnieuw vóór
   // deze beelden: "2025 overnemen" in een test vult Lies, en dan klopt het beeld niet meer met de tekst.
@@ -592,6 +607,28 @@ const SCHOTEN = [
     } },
   { naam: 'betaling-detail', route: '/betalingen', verwacht: tekstTaal('Vereffend document', 'Document soldé'),
     na: async p => { await p.locator('.dxbl-grid-table tbody tr', { hasText: 'SPORTHAL DE RING' }).first().dblclick(); } },
+  // Betalingen aan leveranciers (module Aankoop laag 3, 06/10/2026): het venster met "Betaling van: Leverancier". NL Rioolservice
+  // Zeeland (deels betaald in de demo: 800 open), FR Pompes Delhaye (de Franstalige voorbeeldleverancier, onbetaald). Merkteken: de
+  // kolom Nr leverancier, die enkel bij een leverancier in het venster staat.
+  { naam: 'betaling-leverancier-venster', route: '/betalingen', verwacht: tekstTaal('Nr leverancier', 'N° fournisseur'),
+    na: async (p, taal) => {
+      await p.getByRole('button', { name: /^(Betaling ingeven|Saisir un paiement)$/ }).first().click();
+      const venster = p.locator('.dxbl-popup:not(.dxbl-popup-hidden)').last();
+      // Dagboek KBC en een uittrekselnummer, zoals bij het klantvenster. ⚠️ Het nummer TYPEN (gemaskeerd veld, zie hierboven).
+      await venster.locator('dxbl-combo-box').first().locator('button:not(.dxbl-edit-btn-clear)').last().click();
+      await p.getByRole('option', { name: /^KBC/ }).click();
+      await venster.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Nummer uittreksel|Numéro de l'extrait)$/ }) }).locator('input').first().click();
+      await p.keyboard.press('ControlOrMeta+A'); await p.keyboard.type('149'); await p.keyboard.press('Tab');
+      // Betaling van: Leverancier — de tweede keuzelijst van het venster.
+      await venster.locator('dxbl-combo-box').nth(1).locator('button:not(.dxbl-edit-btn-clear)').last().click();
+      await p.getByRole('option', { name: /^(Leverancier|Fournisseur)$/ }).click();
+      // De leverancier: typen in de derde keuzelijst en de optie kiezen.
+      const lev = taal === 'fr-BE' ? DEMO.leverancierFr : 'Rioolservice Zeeland BV';
+      await venster.locator('dxbl-combo-box').nth(2).locator('input').first().click();
+      await p.keyboard.type(lev.split(' ')[0]);
+      await p.getByRole('option', { name: new RegExp(lev) }).first().click({ timeout: 15000 });
+      await venster.getByRole('button', { name: /^(Saldo|Solde)$/ }).first().click({ timeout: 15000 });
+    } },
   // Betalingstermijnen: zelfde vorm als Factuurteksten (lijst + venster + journaal van één termijn).
   { naam: 'betalingstermijnen-lijst', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Nieuwe termijn', 'Nouvelle condition') },
   { naam: 'betalingstermijn-venster', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Voorbeeld:', 'Exemple :'),

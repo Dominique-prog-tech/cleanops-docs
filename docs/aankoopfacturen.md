@@ -70,7 +70,15 @@ volgende aankoopdocument, zodat er geen gat in de reeks valt.
 
 !!! note "Betaald = vast"
     Is er al iets betaald op een document, dan staat het bovenaan de fiche en kunt u het niet meer wijzigen of
-    verwijderen.
+    verwijderen. Was die betaling een vergissing, draai ze dan terug in [Betalingen](betalingen.md): daarna kunt u het
+    document weer aanpassen.
+
+## Het tabblad Betalingen
+
+De betalingen op dit document, met de datum en het nummer van het uittreksel en het bedrag. Erboven staat wat er nog
+openstaat, zoals op het uittreksel: negatief voor een factuur die u nog moet betalen. Staat er nog iets open, dan opent
+**Betaling ingeven** het venster van [Betalingen](betalingen.md) met dit document al ingevuld. Wat er van al uw
+leveranciers nog openstaat, ziet u in [Openstaande posten leveranciers](openstaande-posten-leveranciers.md).
 
 ## De tabbladen Bijlagen en Logboek
 
@@ -84,7 +92,8 @@ Een aankoopfactuur draagt de bedragen per btw-tarief, zoals uw vorige toepassing
 staat op het document van de leverancier onder Bijlagen.
 
 **Een document kan ik niet meer wijzigen.**
-Kijk bovenaan de fiche: staat er dat er al betaald is, dan ligt het vast.
+Kijk bovenaan de fiche: staat er dat er al betaald is, dan ligt het vast. Het tabblad Betalingen toont welke betaling
+het is; een verkeerde betaling draait u terug in [Betalingen](betalingen.md).
 
 **De vervaldag klopt niet.**
 Laat het veld leeg om ze opnieuw uit de betaaltermijn van de leverancier te laten berekenen, of vul de datum van het
