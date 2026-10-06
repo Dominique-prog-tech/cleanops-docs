@@ -26,6 +26,10 @@ wijzigen en crediteren vraagt daarnaast het recht *Facturen opmaken*; dat heeft 
 Kies bovenaan een **Type**, een **Boekjaar** of een **Periode**, of zoek op nummer, klant of mededeling. Klik een document aan en
 open rechts de strook **Journaal** voor zijn bijlagen en logboek. Dubbelklik om het te openen.
 
+Onder de filters staat hoeveel documenten de selectie telt, met hun totaal zonder en met btw. Een creditnota telt negatief:
+met de **Periode** op **Deze maand** is het bedrag zonder btw de omzet van de maand, het getal van de tegel *gefactureerd
+deze maand* op het [dashboard](dashboard.md).
+
 ### Naar de boekhouding
 
 Elke ochtend gaan de facturen en creditnota's tot en met gisteren vanzelf naar uw boekhoudkantoor, als dat op de

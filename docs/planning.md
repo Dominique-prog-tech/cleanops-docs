@@ -89,6 +89,9 @@ Per werkorder ziet u de signalen (*Vaste datum — niet verplaatsen*, *Mag vroeg
   die week gepland zijn en hoeveel er nog in te plannen zijn.
 - **Contract** — **Alles**, **Zonder contract** of **Met contract**: werk dat uit een [contract](contracten.md)
   voortkomt, of losse opdrachten.
+- **Dag** — **Hele week**, of één dag van de week. Dan staat onder de knoppen hoeveel werkorders er die dag gepland zijn,
+  en drukt **Afdrukken** enkel die dag af. Kiest u een andere week, dan staat **Dag** terug op **Hele week**. De tegel
+  *op de planning vandaag* op het [dashboard](dashboard.md) opent de lijst op de dag van vandaag.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant, de werf, de
   omschrijving, de status en de code van de medewerker.
 - **Openen** — dubbelklik op een rij om de werkorderfiche te openen.

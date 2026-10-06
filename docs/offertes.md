@@ -22,7 +22,8 @@ Klik links in het menu, onder **Verkoop**, op **Offertes**. De lijst toont stand
 | Status | Concept, Verstuurd, Aanvaard, Verloren of Vervallen. Aanvaard staat in het groen. |
 | Opvolgen op | Wanneer u de klant opvolgt. **Rood en vet** bij een verstuurde offerte zodra die datum vandaag is of voorbij. |
 
-Bovenaan kiest u een **Status** en bij **Versies** de **Laatste** of **Alle** versies. Klik een offerte aan en open rechts
+Bovenaan kiest u een **Status** en bij **Versies** de **Laatste** of **Alle** versies. Bij **Status** staat ook
+**Op te volgen**: de verstuurde offertes waarvan de opvolgdatum vandaag is of voorbij. Klik een offerte aan en open rechts
 de strook **Journaal** voor haar bijlagen en logboek. Dubbelklik om de offerte te openen.
 
 Het getal naast **Offertes** in het menu telt de verstuurde offertes die u vandaag of eerder moest opvolgen.

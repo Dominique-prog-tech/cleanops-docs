@@ -16,6 +16,8 @@ Per werkorder ziet u het nummer, de klant, de datum waarop ze besteld werd, de s
 
 - **Status** — de lijst opent op **Openstaand**: alles wat ingegeven, gepland of te factureren is. Kies één status, of
   **Alle statussen** om ook de gefactureerde werkorders te zien.
+- **Teller** — naast de filters staat hoeveel werkorders de selectie telt. Opent u de lijst vanaf het
+  [dashboard](dashboard.md), dan is dat het getal van de tegel.
 - **Periode op** en **Periode** — kies eerst op welke datum u filtert (**Besteld**, **Gepland** of **Uitgevoerd**), en
   dan de periode. Bij **Gepland** kijken de vaste keuzes vooruit, bij **Besteld** en **Uitgevoerd** terug.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant, de werf, het adres,

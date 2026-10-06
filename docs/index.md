@@ -20,6 +20,13 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
 
 <div class="grid cards" markdown>
 
+-   :material-view-dashboard: **[Dashboard](dashboard.md)**
+
+    ---
+
+    Uw overzicht van de dag: wat er vandaag gebeurt, wat aandacht vraagt, hoe het met het geld staat en het verloop
+    over twaalf maanden. Elke tegel opent de lijst achter het getal.
+
 -   :material-account-group: **[Klanten](klanten.md)**
 
     ---
@@ -27,32 +34,32 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
     Het klantenbestand: gegevens, periodieke contracten en de adressen waar gewerkt wordt. Met de klantfiche
     van waaruit u een werkorder, offerte of voorschotfactuur start.
 
--   :material-clipboard-text-clock: **Werkorders**{ .co-binnenkort }
+-   :material-clipboard-text-clock: **[Werkorders](werkorders.md)**
 
     ---
 
     De opdrachten zelf: aanmaken, opvolgen en afwerken. Inclusief de werkorders die automatisch uit een
     periodiek contract voortkomen.
 
--   :material-calendar-month: **Planning en ploegen**{ .co-binnenkort }
+-   :material-calendar-month: **[Planning en ploegen](planning.md)**
 
     ---
 
     Het planningsbord per week en per dag, en de samenstelling van de ploegen.
 
--   :material-file-document-edit: **Offertes**{ .co-binnenkort }
+-   :material-file-document-edit: **[Offertes](offertes.md)**
 
     ---
 
     Offertes opmaken, opvolgen en omzetten naar een werkorder.
 
--   :material-cash-multiple: **Facturatie en rappels**{ .co-binnenkort }
+-   :material-cash-multiple: **[Facturatie en rappels](facturatie.md)**
 
     ---
 
     Te factureren werk, facturen en creditnota's, openstaande posten en het rappelbeheer.
 
--   :material-account-hard-hat: **Medewerkers**{ .co-binnenkort }
+-   :material-account-hard-hat: **[Medewerkers](medewerkers.md)**
 
     ---
 

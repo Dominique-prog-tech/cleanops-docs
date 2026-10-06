@@ -24,7 +24,8 @@ En haut figure un compteur : combien de véhicules vous voyez. S'ils ne sont pas
 combien il y en a au total. Un véhicule que vous avez créé vous-même porte l'étiquette **propre** ; un véhicule archivé l'étiquette
 **archivé**.
 
-Avec **Afficher**, vous choisissez entre **Véhicules actifs** et **Aussi les véhicules archivés**.
+Avec **Afficher**, vous choisissez entre **Véhicules actifs** et **Aussi les véhicules archivés**. Avec **Contrôle** sur
+**À contrôler**, vous ne voyez que les véhicules dont le contrôle est échu ou tombe dans les 30 jours.
 
 ## Le journal d'un véhicule
 
@@ -95,14 +96,12 @@ déjà le garde.
 
 ## Le contrôle technique et son rappel
 
-![Le message sur la page d'accueil indiquant que des véhicules attendent leur contrôle technique, avec le lien Voir les véhicules](../images/voertuigen-keuringsherinnering-fr.png "Rappel de contrôle")
-
 Si vous complétez **Prochain contrôle** pour un véhicule, CleanOps vous le rappelle. Dès **30 jours** avant
 cette date, vous le voyez à quatre endroits :
 
 | Où | Ce que vous voyez |
 |---|---|
-| votre page d'accueil | un message, par exemple *« 2 véhicules attendent leur contrôle technique »* |
+| le [tableau de bord](../dashboard.md) | la tuile *véhicules à contrôler* ; un clic ouvre cette liste sur **À contrôler** |
 | la liste | la date en orange, ou **en rouge et en gras** dès qu'elle est passée |
 | au-dessus de la liste | un compteur, par exemple *« 2 à contrôler »* |
 | la fiche elle-même | un message dans le bloc **Immatriculation et contrôle** |

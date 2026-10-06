@@ -232,6 +232,7 @@ nav:
   - Home: index.md
   # Algemene uitleg die voor elk scherm geldt, groeit hier aan (lijsten, journaal, …).
   - Aan de slag:
+    - Dashboard: dashboard.md
     - Klantenportaal: klantenportaal.md
   - CRM:
     - Klanten: klanten.md

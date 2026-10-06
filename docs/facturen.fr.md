@@ -29,6 +29,10 @@ En haut, choisissez un **Type**, un **Exercice** ou une **Période**, ou cherche
 Sélectionnez un document et ouvrez à droite le volet **Journal** pour ses pièces jointes et son historique. Double-cliquez pour
 l'ouvrir.
 
+Sous les filtres figure le nombre de documents de la sélection, avec leur total hors TVA et TVA comprise. Une note de crédit
+compte en négatif : avec la **Période** sur **Ce mois-ci**, le montant hors TVA est le chiffre d'affaires du mois, le chiffre
+de la tuile *facturé ce mois-ci* du [tableau de bord](dashboard.md).
+
 ### Vers la comptabilité
 
 Chaque matin, les factures et notes de crédit jusqu'à la veille partent d'elles-mêmes chez votre bureau comptable, si c'est activé

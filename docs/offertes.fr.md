@@ -23,7 +23,8 @@ devis.
 | Statut | Brouillon, Envoyé, Accepté, Perdu ou Expiré. Accepté figure en vert. |
 | Suivi le | Quand vous relancez le client. **En rouge et en gras** pour un devis envoyé dès que cette date est aujourd'hui ou passée. |
 
-En haut, choisissez un **Statut** et, sous **Versions**, la **Dernière** ou **Toutes** les versions. Sélectionnez un devis
+En haut, choisissez un **Statut** et, sous **Versions**, la **Dernière** ou **Toutes** les versions. Sous **Statut**
+figure aussi **À suivre** : les devis envoyés dont la date de suivi est aujourd'hui ou passée. Sélectionnez un devis
 et ouvrez à droite le volet **Journal** pour ses pièces jointes et son historique. Double-cliquez pour ouvrir le devis.
 
 Le nombre à côté de **Devis** dans le menu compte les devis envoyés que vous deviez relancer aujourd'hui ou avant.

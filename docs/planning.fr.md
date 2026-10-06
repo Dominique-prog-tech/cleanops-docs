@@ -93,6 +93,9 @@ le statut et RWZI.
   nombre d'ordres planifiés cette semaine et le nombre encore à planifier.
 - **Contrat** — **Tous**, **Sans contrat** ou **Avec contrat** : le travail issu d'un [contrat](contracten.fr.md), ou
   les missions ponctuelles.
+- **Jour** — **Toute la semaine**, ou un seul jour de la semaine. Sous les boutons figure alors le nombre d'ordres
+  planifiés ce jour-là, et **Imprimer** n'imprime que ce jour. Si vous choisissez une autre semaine, **Jour** revient sur
+  **Toute la semaine**. La tuile *au planning aujourd'hui* du [tableau de bord](dashboard.md) ouvre la liste sur le jour même.
 - **Rechercher** — le curseur est tout de suite dans le champ de recherche. La recherche porte sur le numéro, le
   client, le chantier, la description, le statut et le code du collaborateur.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de l'ordre de travail.

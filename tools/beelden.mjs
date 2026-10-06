@@ -44,6 +44,9 @@ const tekstTaal = (nl, fr) => new RegExp(`${nl}|${fr}`);
 // was al veranderd, het scherm nog niet hertekend — en geen enkele controle zag het, want de alt-controle had niets
 // te meten (zie hieronder).
 const SCHOTEN = [
+  // Het dashboard (06/10/2026). Het merkteken is de uitleg ONDER de omzetgrafiek: die staat er pas als de grafieken geladen zijn —
+  // de kaart erboven draagt haar titel ook tijdens het laden ("…"), en dan zou het beeld lege kaarten tonen.
+  { naam: 'dashboard', route: '/', hoogte: 1180, verwacht: tekstTaal("Facturen min creditnota's", 'Factures moins notes de crédit') },
   { naam: 'tarieven-lijst', route: '/beheer/tarieven', verwacht: tekstTaal('Nieuw tarief', 'Nouveau tarif') },
   { naam: 'tarieven-tonen', route: '/beheer/tarieven', verwacht: tekstTaal('Ook gearchiveerde tarieven', 'Aussi les tarifs archivés'),
     na: async p => { await p.getByText(tekstTaal('Actieve tarieven', 'Tarifs actifs')).first().click(); } },
@@ -487,9 +490,7 @@ const SCHOTEN = [
         await p.getByText(/^(Logboek|Historique)$/).last().click();
       }
     } },
-  // ⚠️ Een ELEMENT en niet de pagina: de startpagina draagt ook de testfase-meldingen, en die horen niet in de handleiding.
-  { naam: 'voertuigen-keuringsherinnering', route: '/', verwacht: tekstTaal('wachten op hun keuring', 'attendent leur contrôle'),
-    element: '.alert[role=alert]:has-text("keuring"), .alert[role=alert]:has-text("contrôle technique")' },
+  // (De keuringsmelding op de startpagina is sinds 06/10/2026 de tegel "voertuigen te keuren" op het dashboard — geen eigen beeld meer.)
   // Bedrijfsfiche: één fiche, één beeld. ⚠️ HOGER dan de standaard (hoogte): op 900 px vielen Logo en Rappels half weg
   // (29/09/2026). Het merkteken is daarom "Rappels"-tekst onderaan, niet de kop bovenaan.
   // ⚠️ 1240 sinds het blok Boekhouding (05/10/2026): gemeten op 1440 breed eindigt het blok op 1122 px en begint de knoppenbalk op

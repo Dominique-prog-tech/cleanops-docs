@@ -17,6 +17,8 @@ Pour chaque ordre, vous voyez le numéro, le client, la date de commande, le sta
 
 - **Statut** — la liste s'ouvre sur **Ouverts** : tout ce qui est encodé, planifié ou à facturer. Choisissez un
   statut, ou **Tous les statuts** pour voir aussi les ordres facturés.
+- **Compteur** — à côté des filtres figure le nombre d'ordres de travail de la sélection. Si vous ouvrez la liste depuis le
+  [tableau de bord](dashboard.md), c'est le chiffre de la tuile.
 - **Période sur** et **Période** — choisissez d'abord la date sur laquelle vous filtrez (**Commandé**, **Planifié**
   ou **Exécuté**), puis la période. Avec **Planifié**, les choix fixes regardent vers l'avant ; avec **Commandé** et
   **Exécuté**, vers l'arrière.

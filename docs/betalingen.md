@@ -23,8 +23,12 @@ leveranciers; met beide allebei. Betalingen ingeven en terugdraaien vraagt het r
 
 Een betaling die u in CleanOps ingaf, draagt het label **hier ingegeven**; een teruggedraaide het label **teruggedraaid**.
 
-Kies bovenaan de **Periode**: de laatste 3 maanden, dit jaar, of de volledige historiek. Met **Van** toont u enkel de klanten of
-enkel de leveranciers.
+Kies bovenaan de **Periode**: deze maand, de laatste 3 maanden, dit jaar, of de volledige historiek. Met **Van** toont u enkel
+de klanten of enkel de leveranciers.
+
+Onder de filters staat het **totaal** van de getoonde betalingen, zoals op het uittreksel. Een teruggedraaide betaling telt
+niet mee. Met **Deze maand** en **Klanten** is dat het getal van de tegel *ontvangen van klanten deze maand* op het
+[dashboard](dashboard.md).
 
 ## Een betaling ingeven
 

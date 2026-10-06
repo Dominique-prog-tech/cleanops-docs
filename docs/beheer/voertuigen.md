@@ -24,7 +24,8 @@ Bovenaan staat een teller: hoeveel voertuigen u ziet. Worden er niet alle getoon
 er in totaal zijn. Een voertuig dat u zelf aanmaakte, draagt het label **eigen**; een gearchiveerd voertuig het label
 **gearchiveerd**.
 
-Met **Tonen** kiest u tussen **Actieve voertuigen** en **Ook gearchiveerde voertuigen**.
+Met **Tonen** kiest u tussen **Actieve voertuigen** en **Ook gearchiveerde voertuigen**. Met **Keuring** op **Te keuren**
+ziet u enkel de voertuigen waarvan de keuring verlopen is of binnen 30 dagen valt.
 
 ## Het journaal van een voertuig
 
@@ -95,14 +96,12 @@ al draagt, houdt ze wel.
 
 ## De keuring en haar herinnering
 
-![De melding op de startpagina dat voertuigen op hun keuring wachten, met de link Naar de voertuigen](../images/voertuigen-keuringsherinnering.png "Keuringsherinnering")
-
 Vult u bij een voertuig **Volgende keuring** in, dan herinnert CleanOps u eraan. Vanaf **30 dagen** vóór die
 datum ziet u het op vier plaatsen:
 
 | Waar | Wat u ziet |
 |---|---|
-| uw startpagina | een melding, bijvoorbeeld *"2 voertuigen wachten op hun keuring"* |
+| het [dashboard](../dashboard.md) | de tegel *voertuigen te keuren*; een klik opent deze lijst op **Te keuren** |
 | de lijst | de datum oranje, of **rood en vet** zodra ze voorbij is |
 | boven de lijst | een teller, bijvoorbeeld *"2 te keuren"* |
 | de fiche zelf | een melding in het blok **Inschrijving en keuring** |

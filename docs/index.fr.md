@@ -21,6 +21,13 @@ rappels.
 
 <div class="grid cards" markdown>
 
+-   :material-view-dashboard: **[Tableau de bord](dashboard.md)**
+
+    ---
+
+    Votre aperçu de la journée : ce qui se passe aujourd'hui, ce qui demande votre attention, les finances et l'évolution
+    sur douze mois. Chaque tuile ouvre la liste derrière le chiffre.
+
 -   :material-account-group: **[Clients](klanten.md)**
 
     ---
@@ -28,32 +35,32 @@ rappels.
     Le fichier clients : coordonnées, contrats périodiques et adresses d'exécution. Avec la fiche client
     depuis laquelle vous lancez un ordre de travail, un devis ou une facture d'acompte.
 
--   :material-clipboard-text-clock: **Ordres de travail**{ .co-binnenkort }
+-   :material-clipboard-text-clock: **[Ordres de travail](werkorders.md)**
 
     ---
 
     Les missions elles-mêmes : créer, suivre et clôturer. Y compris les ordres qui naissent automatiquement
     d'un contrat périodique.
 
--   :material-calendar-month: **Planning et équipes**{ .co-binnenkort }
+-   :material-calendar-month: **[Planning et équipes](planning.md)**
 
     ---
 
     Le tableau de planification par semaine et par jour, et la composition des équipes.
 
--   :material-file-document-edit: **Devis**{ .co-binnenkort }
+-   :material-file-document-edit: **[Devis](offertes.md)**
 
     ---
 
     Établir des devis, les suivre et les convertir en ordre de travail.
 
--   :material-cash-multiple: **Facturation et rappels**{ .co-binnenkort }
+-   :material-cash-multiple: **[Facturation et rappels](facturatie.md)**
 
     ---
 
     Le travail à facturer, les factures et notes de crédit, les postes ouverts et la gestion des rappels.
 
--   :material-account-hard-hat: **Collaborateurs**{ .co-binnenkort }
+-   :material-account-hard-hat: **[Collaborateurs](medewerkers.md)**
 
     ---
 
