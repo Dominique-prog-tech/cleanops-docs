@@ -3,7 +3,7 @@
 De gegevens van uw eigen bedrijf: naam, adres, contactgegevens, btw-nummer en bank, uw logo, en de wachttijd
 tussen twee rappels.
 
-![De bedrijfsfiche met de blokken Identiteit en adres, Contact, Fiscaal en bank, Logo, Rappels en Boekhouding met het Adres van het boekhoudkantoor](../images/bedrijfsfiche.png "Bedrijfsfiche")
+![De bedrijfsfiche met de blokken Identiteit en adres, Contact, Fiscaal en bank, Logo, Rappels en Boekhouding met het Adres van het boekhoudkantoor en het Adres voor de aankoopfacturen](../images/bedrijfsfiche.png "Bedrijfsfiche")
 
 !!! note "Waar CleanOps deze gegevens vandaag gebruikt"
     De **wachttijd tussen twee rappels** bepaalt meteen welke posten in de lijst *Volgende rappel* van de
@@ -69,6 +69,13 @@ het boekhoudkantoor**, met de elektronische factuur (UBL) en de PDF erin.
 |---|---|
 | **Facturen en creditnota's elke dag naar het boekhoudkantoor sturen** | aan of uit. |
 | **Adres van het boekhoudkantoor** | het e-mailadres waar uw boekhouder de facturen ontvangt, bijvoorbeeld de inbox van zijn boekhoudpakket. Verplicht zodra het vinkje aan staat. |
+| **Aankoopfacturen elke dag naar het boekhoudkantoor sturen** | aan of uit. |
+| **Adres voor de aankoopfacturen** | het e-mailadres waar uw boekhouder de aankoopfacturen ontvangt. Verplicht zodra het vinkje aan staat; mag hetzelfde zijn als hierboven. |
+
+Met het tweede vinkje gaan ook de aankoopfacturen en -creditnota's die u in CleanOps registreert (met de hand of via
+Peppol) elke ochtend naar uw boekhouder, naar een eigen adres: veel boekhoudpakketten hebben een aparte mailbox voor
+aankoop. Een verstuurde aankoopfactuur kan daarna niet meer gewijzigd worden — zie
+[Aankoopfacturen](../aankoopfacturen.md#naar-de-boekhouding).
 
 !!! note "Zolang uw vorige toepassing de facturen maakt, verstuurt CleanOps niets"
     Anders kreeg uw boekhouder elke factuur twee keer. CleanOps begint pas na de overstap, en dan precies bij de

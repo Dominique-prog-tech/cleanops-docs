@@ -160,6 +160,17 @@ const SCHOTEN = [
   { naam: 'aankoopfactuur-fiche', route: '/aankoopfacturen', verwacht: tekstTaal('Tarief toevoegen', 'Ajouter un taux'),
     hoogte: 1100,
     na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.aankoopFr : DEMO.aankoop); } },
+  // De proefzending (Aankoop laag 6, 06/10/2026), zoals factuur-proef: het venster met een voorbeeldadres, NIET verstuurd — het
+  // merkteken is de uitleg in het venster.
+  { naam: 'aankoopfactuur-proef', route: '/aankoopfacturen', verwacht: tekstTaal('blijft wijzigbaar', 'reste modifiable'),
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.aankoopFr : DEMO.aankoop);
+      await p.getByRole('button', { name: /^(Proef naar de boekhouding…|Essai vers la comptabilité…)$/ }).click();
+      const venster = p.locator('.dxbl-popup:not(.dxbl-popup-hidden)').last();
+      const veld = venster.locator('input').first();
+      await veld.click(); await veld.fill('aankoop@kantoor-demo.be'); await p.keyboard.press('Tab');
+      await p.evaluate(() => document.activeElement?.blur());
+    } },
   // Binnengekomen documenten (vrijgave 06/10/2026, Aankoop laag 4). De documenten komen uit de ONTWIKKEL-INBOX van de app
   // (PeppolDevelopmentInbox: enkel in Development, met de vlag Peppol:OntwikkelInbox) — vier voor de demo. ⚠️ Herstart de preview vóór
   // deze beelden als er al documenten verwerkt werden: de ontwikkel-inbox onthoudt wat bevestigd is tot de app herstart, en een
@@ -548,12 +559,17 @@ const SCHOTEN = [
   // (29/09/2026). Het merkteken is daarom "Rappels"-tekst onderaan, niet de kop bovenaan.
   // ⚠️ 1240 sinds het blok Boekhouding (05/10/2026): gemeten op 1440 breed eindigt het blok op 1122 px en begint de knoppenbalk op
   // 1155 — op 1180 viel het half weg. Het vinkje en een voorbeeldadres worden INGEVULD maar niet bewaard: zo toont het beeld de functie.
-  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1240,
-    verwacht: tekstTaal('Adres van het boekhoudkantoor', 'Adresse du bureau comptable'),
+  // ⚠️ 1400 sinds de aankoopfacturen (06/10/2026, Aankoop laag 6): het blok Boekhouding kreeg een tweede vinkje met adres en uitleg.
+  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1400,
+    verwacht: tekstTaal('Adres voor de aankoopfacturen', "Adresse pour les factures d'achat"),
     na: async p => {
       await p.getByText(/^(Facturen en creditnota's elke dag naar het boekhoudkantoor sturen|Envoyer chaque jour les factures et notes de crédit au bureau comptable)$/).first().click();
       const veld = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Adres van het boekhoudkantoor|Adresse du bureau comptable)$/ }) }).locator('input').first();
       await veld.click(); await veld.fill('boekhouding@kantoor-demo.be'); await p.keyboard.press('Tab');
+      await p.getByText(/^(Aankoopfacturen elke dag naar het boekhoudkantoor sturen|Envoyer chaque jour les factures d'achat au bureau comptable)$/).first().click();
+      const aankoop = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Adres voor de aankoopfacturen|Adresse pour les factures d'achat)$/ }) }).locator('input').first();
+      await aankoop.click(); await aankoop.fill('aankoop@kantoor-demo.be'); await p.keyboard.press('Tab');
+      await p.evaluate(() => document.activeElement?.blur());
     } },
   // Basistabellen: zelfde vorm; het scherm opent op de lijst Contracttypes.
   { naam: 'basistabellen-lijst', route: '/beheer/basistabellen', verwacht: tekstTaal('Nieuw item', 'Nouvel élément') },

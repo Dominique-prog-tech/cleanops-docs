@@ -3,7 +3,7 @@
 Les données de votre propre entreprise : nom, adresse, coordonnées, numéro de TVA et banque, votre logo, et le
 délai entre deux rappels.
 
-![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels et Comptabilité avec l'Adresse du bureau comptable](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
+![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels et Comptabilité avec l'Adresse du bureau comptable et l'Adresse pour les factures d'achat](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
 
 !!! note "Où CleanOps utilise ces données aujourd'hui"
     Le **délai entre deux rappels** détermine directement quels postes figurent dans la liste *Prochain rappel*
@@ -71,6 +71,13 @@ l'**adresse du bureau comptable**, avec la facture électronique (UBL) et le PDF
 |---|---|
 | **Envoyer chaque jour les factures et notes de crédit au bureau comptable** | activé ou non. |
 | **Adresse du bureau comptable** | l'adresse e-mail où votre comptable reçoit les factures, par exemple la boîte de son logiciel comptable. Obligatoire dès que la case est cochée. |
+| **Envoyer chaque jour les factures d'achat au bureau comptable** | activé ou non. |
+| **Adresse pour les factures d'achat** | l'adresse e-mail où votre comptable reçoit les factures d'achat. Obligatoire dès que la case est cochée ; peut être la même que ci-dessus. |
+
+Avec la deuxième case, les factures et notes de crédit d'achat que vous enregistrez dans CleanOps (à la main ou via
+Peppol) partent aussi chaque matin chez votre comptable, vers une adresse propre : beaucoup de logiciels comptables ont
+une boîte distincte pour les achats. Une facture d'achat envoyée ne peut ensuite plus être modifiée — voir
+[Factures d'achat](../aankoopfacturen.md#vers-la-comptabilite).
 
 !!! note "Tant que votre application précédente établit les factures, CleanOps n'envoie rien"
     Sinon, votre comptable recevrait chaque facture deux fois. CleanOps ne commence qu'après le passage, et alors

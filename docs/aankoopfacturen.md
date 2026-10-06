@@ -12,8 +12,9 @@ documenten in te geven ook *Aankoop bewerken*. De rol Financieel krijgt beide.
 
 ## De lijst
 
-Per document ziet u de boekingsdatum, het nummer, de soort, de leverancier, het voertuig, de datum en het nummer van
-de leverancier, het totaal, wat nog open staat, en de vervaldag. De recentste boeking staat bovenaan.
+Per document ziet u de boekingsdatum, het nummer, de soort, de leverancier, het nummer van de leverancier, het totaal,
+wat nog open staat, de vervaldag en of het al **in boekhouding** staat. Het voertuig en de datum van de leverancier staan
+standaard verborgen: met de kolomkiezer zet u ze erbij. De recentste boeking staat bovenaan.
 
 - **Type** — enkel facturen of enkel creditnota's.
 - **Boekjaar** — het nummer begint elk boekjaar opnieuw bij 1; kies een boekjaar om één reeks te zien.
@@ -21,9 +22,26 @@ de leverancier, het totaal, wat nog open staat, en de vervaldag. De recentste bo
 - **Tonen** — *Openstaand* toont enkel wat nog betaald (of bij een creditnota verrekend) moet worden.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de leverancier, het nummer van
   de leverancier, de omschrijving en het voertuig.
-- **Exporteren** — via de knop rechtsboven krijgt u de lijst zoals ze nu gefilterd is als bestand.
+- **Exporteren** — via de knop **Exporteren** krijgt u de lijst zoals ze nu gefilterd is als bestand.
 - **Openen** — dubbelklik op een rij om het document te openen.
 - **Journaal** — de strook rechts toont de bijlagen en het logboek van het document dat u aanklikt.
+
+### Naar de boekhouding
+
+Staat het op de [bedrijfsfiche](beheer/bedrijfsfiche.md#boekhouding) aan, dan gaan de aankoopfacturen en -creditnota's die
+in CleanOps geregistreerd werden elke ochtend vanzelf naar uw boekhoudkantoor, tot en met de boekingsdatum van gisteren. Met
+**Naar de boekhouding…** doet u het meteen: het venster zegt eerst hoeveel documenten wachten, hoeveel er via Peppol
+binnenkwamen, hoeveel er geen PDF van de leverancier hebben en naar welk adres ze gaan. Het verstuurt pas als u op
+**Versturen** klikt.
+
+- Een document dat via **Peppol** binnenkwam, vertrekt zoals de leverancier het stuurde.
+- Een document dat u **met de hand** registreerde, vertrekt als elektronische factuur (UBL) met de eerste PDF uit de
+  **Bijlagen**. Zonder PDF vertrekt het toch, maar zonder beeld: hang de PDF van de leverancier er dus eerst aan.
+- De documenten uit uw vorige toepassing gaan niet mee.
+
+Eenmaal verstuurd staat het document **in boekhouding** en ligt het vast (zie [Wijzigen en verwijderen](#wijzigen-en-verwijderen)).
+Lukt een document niet, dan ziet u waarom; het gaat de volgende ochtend opnieuw mee. Staat de export uit, of is uw vorige
+toepassing nog in gebruik, dan zegt het venster dat en verstuurt het niets.
 
 ## Een nieuwe aankoopfactuur
 
@@ -71,7 +89,7 @@ stelt u in op [Documentnummers](beheer/documentnummers.md).
 
 ## Wijzigen en verwijderen
 
-Zolang er niets op betaald is, past u een document aan en bewaart u. De leverancier, het dagboek en het boekjaar
+Zolang er niets op betaald is en het niet in de boekhouding staat, past u een document aan en bewaart u. De leverancier, het dagboek en het boekjaar
 liggen vast: aan het nummer hangen ze.
 
 **Verwijderen** onderaan de fiche haalt het document definitief weg, na een bevestiging. Zijn nummer gaat naar het
@@ -81,6 +99,19 @@ volgende aankoopdocument, zodat er geen gat in de reeks valt.
     Is er al iets betaald op een document, dan staat het bovenaan de fiche en kunt u het niet meer wijzigen of
     verwijderen. Was die betaling een vergissing, draai ze dan terug in [Betalingen](betalingen.md): daarna kunt u het
     document weer aanpassen.
+
+!!! note "In boekhouding = vast"
+    Is een document al naar uw boekhoudkantoor gestuurd, dan staat er bovenaan de fiche *in boekhouding* en kunt u het
+    niet meer wijzigen of verwijderen: uw boekhouder heeft het al geboekt. Een correctie gebeurt met een creditnota.
+
+## Proef naar de boekhouding
+
+Met **Proef naar de boekhouding…** bovenaan de fiche gaat dit ene document als PROEF naar een adres naar keuze, met de
+elektronische factuur (UBL) en de PDF van de leverancier als die er is. Zo gaat u met uw boekhouder na of zijn
+boekhoudpakket uw aankoopfacturen goed inleest, vóór u de dagelijkse export aanzet. Een proef zet het document niet op
+*in boekhouding*: het blijft wijzigbaar.
+
+![Het venster Proef naar de boekhouding met de uitleg en het Adres, met de knop Versturen](images/aankoopfactuur-proef.png "Proef naar de boekhouding")
 
 ## Het tabblad Betalingen
 
@@ -103,7 +134,12 @@ bovenaan de fiche, in de kaart Peppol-document.
 
 **Een document kan ik niet meer wijzigen.**
 Kijk bovenaan de fiche: staat er dat er al betaald is, dan ligt het vast. Het tabblad Betalingen toont welke betaling
-het is; een verkeerde betaling draait u terug in [Betalingen](betalingen.md).
+het is; een verkeerde betaling draait u terug in [Betalingen](betalingen.md). Staat er *in boekhouding*, dan ging het
+document al naar uw boekhoudkantoor: corrigeer het met een creditnota.
+
+**Waar staan het voertuig en de datum van de leverancier?**
+In de lijst staan ze standaard verborgen, zodat de lijst ook op een kleiner scherm past. Zet ze aan met de kolomkiezer;
+op de fiche staan ze altijd.
 
 **De vervaldag klopt niet.**
 Laat het veld leeg om ze opnieuw uit de betaaltermijn van de leverancier te laten berekenen, of vul de datum van het

@@ -12,8 +12,9 @@ pour encoder des documents aussi *Modifier les achats*. Le rôle Financieel reç
 
 ## La liste
 
-Par document, vous voyez la date de comptabilisation, le numéro, le type, le fournisseur, le véhicule, la date et le
-numéro du fournisseur, le total, ce qui reste ouvert et l'échéance. La comptabilisation la plus récente figure en haut.
+Par document, vous voyez la date de comptabilisation, le numéro, le type, le fournisseur, le numéro du fournisseur, le
+total, ce qui reste ouvert, l'échéance et s'il est déjà **en comptabilité**. Le véhicule et la date du fournisseur sont
+masqués par défaut : le sélecteur de colonnes les affiche. La comptabilisation la plus récente figure en haut.
 
 - **Type** — uniquement les factures ou uniquement les notes de crédit.
 - **Exercice** — le numéro recommence à 1 chaque exercice ; choisissez un exercice pour voir une seule série.
@@ -21,9 +22,26 @@ numéro du fournisseur, le total, ce qui reste ouvert et l'échéance. La compta
 - **Afficher** — *Ouverts* ne montre que ce qui reste à payer (ou, pour une note de crédit, à imputer).
 - **Rechercher** — le curseur se trouve directement dans le champ de recherche. La recherche porte sur le numéro, le
   fournisseur, le numéro du fournisseur, la description et le véhicule.
-- **Exporter** — le bouton en haut à droite vous donne la liste telle qu'elle est filtrée, sous forme de fichier.
+- **Exporter** — le bouton **Exporter** vous donne la liste telle qu'elle est filtrée, sous forme de fichier.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir le document.
 - **Journal** — le volet à droite montre les pièces jointes et l'historique du document sélectionné.
+
+### Vers la comptabilité
+
+Si c'est activé sur la [fiche d'entreprise](beheer/bedrijfsfiche.md#comptabilite), les factures et notes de crédit d'achat
+enregistrées dans CleanOps partent chaque matin d'elles-mêmes chez votre bureau comptable, jusqu'à la date de
+comptabilisation de la veille. **Vers la comptabilité…** le fait tout de suite : la fenêtre indique d'abord combien de
+documents attendent, combien sont arrivés par Peppol, combien n'ont pas de PDF du fournisseur et vers quelle adresse ils
+partent. Elle n'envoie que lorsque vous cliquez sur **Envoyer**.
+
+- Un document arrivé par **Peppol** part tel que le fournisseur l'a envoyé.
+- Un document que vous avez enregistré **à la main** part comme facture électronique (UBL) avec le premier PDF des
+  **Pièces jointes**. Sans PDF, il part quand même, mais sans image : joignez donc d'abord le PDF du fournisseur.
+- Les documents de votre application précédente ne partent pas.
+
+Une fois envoyé, le document est **en comptabilité** et figé (voir [Modifier et supprimer](#modifier-et-supprimer)). Si un
+document échoue, vous voyez pourquoi ; il repart le lendemain matin. Si l'envoi est désactivé, ou si votre application
+précédente est encore en service, la fenêtre le dit et n'envoie rien.
 
 ## Une nouvelle facture d'achat
 
@@ -71,7 +89,7 @@ numéro suivant se règle dans [Numéros de documents](beheer/documentnummers.md
 
 ## Modifier et supprimer
 
-Tant que rien n'est payé, vous adaptez un document et l'enregistrez. Le fournisseur, le journal et l'exercice sont
+Tant que rien n'est payé et qu'il n'est pas en comptabilité, vous adaptez un document et l'enregistrez. Le fournisseur, le journal et l'exercice sont
 fixes : le numéro en dépend.
 
 **Supprimer** au bas de la fiche retire définitivement le document, après confirmation. Son numéro passe au document
@@ -81,6 +99,19 @@ d'achat suivant, afin qu'il n'y ait pas de trou dans la série.
     Si un montant est déjà payé sur un document, cela figure en haut de la fiche et vous ne pouvez plus le modifier
     ni le supprimer. Si ce paiement était une erreur, annulez-le dans [Paiements](betalingen.md) : vous pouvez ensuite
     adapter à nouveau le document.
+
+!!! note "En comptabilité = fixe"
+    Si un document a déjà été envoyé à votre bureau comptable, la fiche indique *en comptabilité* en haut et vous ne pouvez
+    plus le modifier ni le supprimer : votre comptable l'a déjà comptabilisé. Une correction se fait par note de crédit.
+
+## Essai vers la comptabilité
+
+**Essai vers la comptabilité…** en haut de la fiche envoie ce seul document en ESSAI vers une adresse de votre choix, avec
+la facture électronique (UBL) et le PDF du fournisseur s'il y en a un. Vous vérifiez ainsi avec votre comptable que son
+logiciel lit bien vos factures d'achat, avant d'activer l'envoi quotidien. Un essai ne met pas le document *en
+comptabilité* : il reste modifiable.
+
+![La fenêtre Essai vers la comptabilité avec l'explication et l'Adresse, avec le bouton Envoyer](images/aankoopfactuur-proef-fr.png "Essai vers la comptabilité")
 
 ## L'onglet Paiements
 
@@ -103,7 +134,12 @@ figurent aussi en haut de la fiche, dans la carte Document Peppol.
 
 **Je ne peux plus modifier un document.**
 Regardez en haut de la fiche : s'il y est indiqué qu'un montant est déjà payé, le document est fixe. L'onglet Paiements
-montre de quel paiement il s'agit ; un paiement erroné s'annule dans [Paiements](betalingen.md).
+montre de quel paiement il s'agit ; un paiement erroné s'annule dans [Paiements](betalingen.md). S'il y est indiqué *en
+comptabilité*, le document est déjà parti chez votre bureau comptable : corrigez-le par note de crédit.
+
+**Où sont le véhicule et la date du fournisseur ?**
+Dans la liste, ils sont masqués par défaut, pour que la liste tienne aussi sur un écran plus petit. Affichez-les avec le
+sélecteur de colonnes ; sur la fiche, ils figurent toujours.
 
 **L'échéance est incorrecte.**
 Laissez le champ vide pour la recalculer à partir du délai de paiement du fournisseur, ou indiquez la date du document.
