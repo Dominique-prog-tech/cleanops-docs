@@ -56,9 +56,11 @@ betekent dus dat er geen offertes zijn.
 | Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer getoetst. Met **Ophalen** vult CleanOps de naam en het adres in uit de KBO; wat de KBO niet kent, blijft staan zoals het was. |
 | Contact | De contactpersoon bij de klant. |
 | Telefoon, Gsm, Fax, E-mail | Een telefoonnummer, gsm-nummer of e-mailadres moet geldig zijn; de fax niet. |
+| E-mail facturatie, E-mail rappels, E-mail attesten | Een apart adres voor facturen, rappels en attesten, als dat een ander is dan het e-mailadres hierboven. Elk veld bevat één geldig adres. |
 | Geblokkeerd | De klant blijft gewoon bruikbaar, maar staat met een label in de lijst en valt op in de planning. Bij een nieuwe werkorder meldt CleanOps het. |
 | Ontvangt rappels | Zet dit af voor een klant die u niet wilt aanmanen. |
 | Geen nieuwe opdrachten | Bij een nieuwe werkorder voor deze klant vraagt CleanOps eerst een bevestiging. |
+| Facturen per e-mail | De klant ontvangt zijn facturen liever per e-mail dan per post. |
 | Opmerkingen | Vrije tekst bij de klant, zoals contactgegevens van personen of afspraken. |
 
 Klik op **Opslaan** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. Een e-mailadres,

@@ -57,9 +57,11 @@ signifie donc qu'il n'y a pas de devis.
 | Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle. **Rechercher** remplit le nom et l'adresse depuis la BCE ; ce que la BCE ne connaît pas reste tel quel. |
 | Contact | La personne de contact chez le client. |
 | Téléphone, GSM, Fax, E-mail | Un numéro de téléphone, de GSM ou une adresse e-mail doit être valide ; le fax non. |
+| E-mail facturation, E-mail rappels, E-mail attestations | Une adresse distincte pour les factures, les rappels et les attestations, si elle diffère de l'adresse e-mail ci-dessus. Chaque champ contient une seule adresse valide. |
 | Bloqué | Le client reste utilisable, mais figure avec une étiquette dans la liste et se remarque dans la planification. CleanOps le signale lors d'un nouvel ordre de travail. |
 | Reçoit des rappels | Désactivez ceci pour un client que vous ne souhaitez pas relancer. |
 | Pas de nouvelles missions | Lors d'un nouvel ordre de travail pour ce client, CleanOps demande d'abord une confirmation. |
+| Factures par e-mail | Le client préfère recevoir ses factures par e-mail plutôt que par courrier. |
 | Remarques | Du texte libre sur le client, comme les coordonnées de personnes ou des accords. |
 
 Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire, CleanOps indique lequel. Une
