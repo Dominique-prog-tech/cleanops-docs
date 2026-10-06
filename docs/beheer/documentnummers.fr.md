@@ -1,6 +1,6 @@
 # Numéros de documents
 
-Le numéro suivant de vos factures, notes de crédit et devis. CleanOps numérote lui-même ; ici, vous définissez un
+Le numéro suivant de vos factures, notes de crédit, devis et documents d'achat. CleanOps numérote lui-même ; ici, vous définissez un
 autre numéro suivant, par exemple pour poursuivre la numérotation de votre logiciel précédent.
 
 ![La liste Numéros de documents avec, par série, l'Exercice, le Journal, le Type de document, le Dernier numéro et le Numéro suivant ; défini figure à côté des devis](../images/documentnummers-lijst-fr.png "Numéros de documents")
@@ -17,8 +17,8 @@ numéro ou pour laquelle vous avez défini quelque chose. Les séries de cette a
 | Colonne | Ce que c'est |
 |---|---|
 | Exercice | l'année des documents (l'année civile) |
-| Journal | le journal de vente ; vide pour les devis |
-| Type de document | facture, note de crédit ou devis |
+| Journal | le journal de vente ou d'achat ; vide pour les devis |
+| Type de document | facture, note de crédit, devis ou achat |
 | Dernier numéro | le numéro le plus élevé qui existe déjà |
 | Numéro suivant | le numéro que recevra le document suivant |
 
@@ -33,8 +33,8 @@ Cliquez sur **Définir le numéro suivant**, ou double-cliquez sur une série.
 | Champ | Ce que vous complétez |
 |---|---|
 | **Exercice** *(obligatoire)* | l'année précédente, cette année ou l'année suivante |
-| **Type de document** *(obligatoire)* | facture, note de crédit ou devis |
-| **Journal de vente** *(obligatoire pour les factures et notes de crédit)* | le journal de la série |
+| **Type de document** *(obligatoire)* | facture, note de crédit, devis ou achat |
+| **Journal de vente** ou **Journal d'achat** *(obligatoire, sauf pour les devis)* | le journal de la série |
 | **Numéro suivant** *(obligatoire)* | le numéro du document suivant |
 
 !!! note "Pourquoi le numéro ne peut être que plus élevé"
@@ -49,6 +49,10 @@ Cliquez sur **Définir le numéro suivant**, ou double-cliquez sur une série.
 
 Un devis n'a ni journal ni communication : un numéro plus élevé que le dernier suffit.
 
+**Achat** — les [factures d'achat](../aankoopfacturen.md) et notes de crédit d'achat partagent une série par exercice
+et journal d'achat, qui commence à 1. Un document d'achat supprimé rend son numéro : le document suivant reçoit d'abord
+un tel numéro libéré, ensuite la série continue à partir du numéro le plus élevé ou du numéro que vous avez défini.
+
 ## Questions fréquentes
 
 **Puis-je mettre un numéro plus bas ?**
@@ -57,7 +61,8 @@ qu'il reste plus élevé que le dernier.
 
 **Que devient le numéro d'une facture supprimée ?**
 CleanOps ne supprime pas de factures : une facture pas encore envoyée se rouvre ; sinon, vous la créditez. Il n'y a
-donc pas de trou dans la numérotation.
+donc pas de trou dans la numérotation. Un document d'achat peut, lui, être supprimé tant que rien n'est payé ; son
+numéro passe alors au document d'achat suivant.
 
 **Une nouvelle année commence-t-elle d'elle-même ?**
 Oui. La première facture d'une nouvelle année reçoit *aaaa0001*, la première note de crédit *aaaa9001* et le premier

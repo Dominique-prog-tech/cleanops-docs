@@ -53,6 +53,10 @@ export const DEMO = {
   // gewijzigde e-mail in het logboek; en zijn Franstalige tegenhanger (VoorbeeldLeverancierFr).
   leverancier: 'Filterhandel Vandamme',
   leverancierFr: 'Pompes Delhaye',
+  // De uitgewerkte demo-aankoopfactuur (DemoDataGenerator.VoorbeeldAankoopNr/Fr): twee btw-tarieven, herkenbaar aan het nummer van de
+  // leverancier, dat in de lijst staat.
+  aankoop: 'IJ-2026-0418',
+  aankoopFr: 'PD-26/1187',
   // De sluitingsperiode van de demo (DemoDataGenerator.VoorbeeldSluitingsdag, 28–31/12 van het huidige jaar), NL en FR.
   sluitingsdag: 'Collectieve sluiting',
   sluitingsdagFr: 'Fermeture collective',

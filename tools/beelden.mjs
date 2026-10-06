@@ -139,6 +139,16 @@ const SCHOTEN = [
       await openRij(p, taal === 'fr-BE' ? DEMO.leverancierFr : DEMO.leverancier);
       await p.getByText(tekstTaal('^Logboek$', '^Historique$')).first().click();
     } },
+  // Aankoopfacturen (vrijgave 06/10/2026, module Aankoop laag 2): de lijst en de fiche met twee btw-tarieven — uit de zes demo-
+  // aankoopfacturen (VerzinAankoopfacturenAsync). Merkteken van de lijst: een TWEEDE rij (de eerste is gefocust, zie leveranciers).
+  { naam: 'aankoopfacturen-lijst', route: '/aankoopfacturen', verwacht: /IJzerwaren De Clercq/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  { naam: 'aankoopfactuur-fiche', route: '/aankoopfacturen', verwacht: tekstTaal('Tarief toevoegen', 'Ajouter un taux'),
+    hoogte: 1100,
+    na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.aankoopFr : DEMO.aankoop); } },
   // Verlofsaldi (vrijgave 02/10/2026): de lijst en het venster van één medewerker — uit de demo (VerzinMedewerkersAsync:
   // toekenningen voor dit en vorig jaar, Lies Maes enkel vorig jaar, Nina's brugdag op 0 dagen). ⚠️ Vul de demo opnieuw vóór
   // deze beelden: "2025 overnemen" in een test vult Lies, en dan klopt het beeld niet meer met de tekst.

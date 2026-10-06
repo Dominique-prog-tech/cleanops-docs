@@ -151,6 +151,8 @@ plugins:
             Factuurteksten: Textes de facture
             Klanten: Clients
             Leveranciers: Fournisseurs
+            Aankoop: Achats
+            Aankoopfacturen: Factures d'achat
             Medewerkers: Collaborateurs
             Werkorders: Ordres de travail
             Overzicht verloven: Aperçu des congés
@@ -249,6 +251,8 @@ nav:
     - Facturen: facturen.md
     - Openstaande posten: openstaande-posten.md
     - Betalingen: betalingen.md
+  - Aankoop:
+    - Aankoopfacturen: aankoopfacturen.md
   # De kopjes zijn de groepen van de hub (AdministrationCatalog.Groups). "Overzetting en platform" ontbreekt bewust: dat
   # zijn ADM-interne schermen (docs/intern/). Gebruikers staat er niet: geen eigen pagina (beheer via ADM One).
   # ⚠️ "Overzicht" stond tot 05/10/2026 NIET in het menu: de pagina bestond, maar was enkel via een link bereikbaar.
