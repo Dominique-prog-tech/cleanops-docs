@@ -5,7 +5,7 @@ vous avez comptabilisées dans CleanOps. Ici, vous établissez une facture avec 
 modifiez une facture qui n'a pas encore été envoyée et vous la créditez. Les ordres de travail se facturent dans
 [Facturation](facturatie.fr.md).
 
-![La liste Factures de la démo avec des factures et une note de crédit, les filtres Type et Exercice, le bouton Nouvelle facture, le bouton Vers la comptabilité et les colonnes En comptabilité et Créditée par](images/facturen-lijst-fr.png "Factures")
+![La liste Factures de la démo avec des factures et une note de crédit, les filtres Type et Exercice, le bouton Nouvelle facture, le bouton Vers la comptabilité et les colonnes Envoyée et En comptabilité](images/facturen-lijst-fr.png "Factures")
 
 ## Ouvrir l'écran
 
@@ -24,6 +24,9 @@ seul l'administrateur l'a.
 | En comptabilité | *oui* si le document est déjà parti chez votre bureau comptable. |
 | Communication | La communication structurée. |
 | Créditée par | Le numéro de la note de crédit qui crédite cette facture. |
+
+Communication et Créditée par sont masquées par défaut, pour que la liste tienne aussi sur un écran plus petit : le sélecteur
+de colonnes les affiche.
 
 En haut, choisissez un **Type**, un **Exercice** ou une **Période**, ou cherchez par numéro, client ou communication.
 Sélectionnez un document et ouvrez à droite le volet **Journal** pour ses pièces jointes et son historique. Double-cliquez pour

@@ -4,7 +4,7 @@ Facturen toont al uw verkoopdocumenten: de facturen en creditnota's uit uw vorig
 maakt u een factuur met vrije lijnen, drukt u een factuur af, wijzigt u een factuur die nog niet verstuurd is en crediteert u ze.
 Werkorders factureert u in [Facturatie](facturatie.md).
 
-![De lijst Facturen van de demo met facturen en een creditnota, de filters Type en Boekjaar, de knop Nieuwe factuur, de knop Naar de boekhouding en de kolommen In boekhouding en Gecrediteerd door](images/facturen-lijst.png "Facturen")
+![De lijst Facturen van de demo met facturen en een creditnota, de filters Type en Boekjaar, de knop Nieuwe factuur, de knop Naar de boekhouding en de kolommen Verstuurd en In boekhouding](images/facturen-lijst.png "Facturen")
 
 ## Het scherm openen
 
@@ -22,6 +22,9 @@ wijzigen en crediteren vraagt daarnaast het recht *Facturen opmaken*; dat heeft 
 | In boekhouding | *ja* als het document al naar uw boekhoudkantoor ging. |
 | Mededeling | De gestructureerde mededeling. |
 | Gecrediteerd door | Het nummer van de creditnota die deze factuur crediteert. |
+
+Mededeling en Gecrediteerd door staan standaard verborgen, zodat de lijst ook op een kleiner scherm past: met de kolomkiezer
+zet u ze erbij.
 
 Kies bovenaan een **Type**, een **Boekjaar** of een **Periode**, of zoek op nummer, klant of mededeling. Klik een document aan en
 open rechts de strook **Journaal** voor zijn bijlagen en logboek. Dubbelklik om het te openen.
