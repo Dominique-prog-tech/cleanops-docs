@@ -595,7 +595,9 @@ const SCHOTEN = [
     na: async p => {
       await p.getByRole('button', { name: /^(Betaling ingeven|Saisir un paiement)$/ }).first().click();
       const venster = p.locator('.dxbl-popup:not(.dxbl-popup-hidden)').last();
-      await venster.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Klant|Client)$/ }) }).locator('input').first().fill('Camping');
+      // ⚠️ De klantzoeker op zijn PLACEHOLDER: sinds 06/10/2026 staan klant en leverancier in één veld "Betaling van", en het opschrift
+      // "Klant" waarop dit recept zocht, bestaat niet meer.
+      await venster.getByPlaceholder(/Naam of klantnummer|Nom ou numéro de client/).first().fill('Camping');
       await venster.getByText(/^(kies|choisir)$/i).first().click({ timeout: 15000 });
       await venster.getByRole('button', { name: /^(Saldo|Solde)$/ }).first().click({ timeout: 15000 });
       // Een volledig ingevuld voorbeeld: dagboek KBC en een uittrekselnummer. ⚠️ Het nummer TYPEN: een gemaskeerd veld neemt
@@ -604,6 +606,8 @@ const SCHOTEN = [
       await p.getByRole('option', { name: /^KBC/ }).click();
       await venster.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Nummer uittreksel|Numéro de l'extrait)$/ }) }).locator('input').first().click();
       await p.keyboard.press('ControlOrMeta+A'); await p.keyboard.type('146'); await p.keyboard.press('Tab');
+      // Geen focus op het beeld: anders staat de tekst van een keuzelijst blauw geselecteerd (gezien 06/10/2026).
+      await p.evaluate(() => document.activeElement?.blur());
     } },
   { naam: 'betaling-detail', route: '/betalingen', verwacht: tekstTaal('Vereffend document', 'Document soldé'),
     na: async p => { await p.locator('.dxbl-grid-table tbody tr', { hasText: 'SPORTHAL DE RING' }).first().dblclick(); } },
@@ -628,6 +632,7 @@ const SCHOTEN = [
       await p.keyboard.type(lev.split(' ')[0]);
       await p.getByRole('option', { name: new RegExp(lev) }).first().click({ timeout: 15000 });
       await venster.getByRole('button', { name: /^(Saldo|Solde)$/ }).first().click({ timeout: 15000 });
+      await p.evaluate(() => document.activeElement?.blur());
     } },
   // Betalingstermijnen: zelfde vorm als Factuurteksten (lijst + venster + journaal van één termijn).
   { naam: 'betalingstermijnen-lijst', route: '/beheer/betalingstermijnen', verwacht: tekstTaal('Nieuwe termijn', 'Nouvelle condition') },
