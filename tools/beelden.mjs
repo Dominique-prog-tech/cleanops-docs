@@ -180,6 +180,46 @@ const SCHOTEN = [
       const dicht = p.locator('.adm-detail-drawer__btn').first();
       if (await dicht.isVisible()) await dicht.click();
     } },
+  // Betalingsvoorstel (vrijgave 06/10/2026, Aankoop laag 5): het voorstel van de demo (VerzinBetalingsvoorstelAsync: drie open
+  // documenten bij drie leveranciers), het venster Nieuw voorstel, en het SEPA-venster in zijn twee stappen. Pompes Delhaye heeft een
+  // IBAN en een gestructureerde mededeling (één overschrijving); IJzerwaren De Clercq en Rioolservice Zeeland hebben geen IBAN en
+  // staan als overgeslagen in het venster. Merkteken van de lijst: Rioolservice Zeeland, NIET de eerste rij (die is gefocust).
+  { naam: 'betalingsvoorstel-lijst', route: '/betalingsvoorstel', verwacht: /Rioolservice Zeeland/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  { naam: 'betalingsvoorstel-nieuw', route: '/betalingsvoorstel', verwacht: tekstTaal('Tot de vervaldag', "Jusqu'à l'échéance"),
+    na: async p => {
+      await p.getByRole('button', { name: /^(Nieuw voorstel|Nouvelle proposition)$/ }).first().click();
+      // Geen focus op het beeld: anders staat de dag van de datum blauw geselecteerd (gezien 06/10/2026).
+      await p.getByText(/Tot de vervaldag|Jusqu'à l'échéance/).first().waitFor();
+      // ⚠️ Het venster zet de focus pas NA het tekenen in het datumveld: eerst daarop wachten, dan pas wegnemen (een eerste versie
+      // nam de focus te vroeg weg en het beeld toonde de dag nog blauw).
+      await p.waitForFunction(() => document.activeElement?.tagName === 'INPUT', null, { timeout: 5000 }).catch(() => {});
+      await p.evaluate(() => document.activeElement?.blur());
+    } },
+  { naam: 'betalingsvoorstel-sepa', route: '/betalingsvoorstel', verwacht: tekstTaal('staan niet in het bestand', 'ne figurent pas dans le fichier'),
+    na: async p => {
+      await p.getByRole('button', { name: /^(SEPA-bestand|Fichier SEPA)$/ }).first().click();
+      await p.getByText(/staan niet in het bestand|ne figurent pas dans le fichier/).first().waitFor();
+      // ⚠️ Het venster zet de focus pas NA het tekenen in het datumveld: eerst daarop wachten, dan pas wegnemen (een eerste versie
+      // nam de focus te vroeg weg en het beeld toonde de dag nog blauw).
+      await p.waitForFunction(() => document.activeElement?.tagName === 'INPUT', null, { timeout: 5000 }).catch(() => {});
+      await p.evaluate(() => document.activeElement?.blur());
+    } },
+  // Stap 2: na een klik op de downloadknop. ⚠️ Het downloaden zelf wordt TEGENGEHOUDEN (preventDefault in de capture-fase): de app
+  // ziet de klik en toont de bevestiging, maar er komt geen bestand — en "Markeer als betaald" wordt NIET aangeklikt, anders verdwijnt
+  // het voorstel van de demo uit de volgende beelden.
+  { naam: 'betalingsvoorstel-betaald', route: '/betalingsvoorstel', verwacht: tekstTaal('Markeer als betaald', 'Marquer comme payés'),
+    na: async p => {
+      await p.getByRole('button', { name: /^(SEPA-bestand|Fichier SEPA)$/ }).first().click();
+      await p.evaluate(() => document.addEventListener('click', e => {
+        if (e.target instanceof Element && e.target.closest('a[download]')) e.preventDefault();
+      }, true));
+      await p.locator('.dxbl-popup:not(.dxbl-popup-hidden)').last()
+        .getByRole('link', { name: /^(SEPA-bestand downloaden|Télécharger le fichier SEPA)$/ }).click({ timeout: 15000 });
+    } },
   // Verlofsaldi (vrijgave 02/10/2026): de lijst en het venster van één medewerker — uit de demo (VerzinMedewerkersAsync:
   // toekenningen voor dit en vorig jaar, Lies Maes enkel vorig jaar, Nina's brugdag op 0 dagen). ⚠️ Vul de demo opnieuw vóór
   // deze beelden: "2025 overnemen" in een test vult Lies, en dan klopt het beeld niet meer met de tekst.

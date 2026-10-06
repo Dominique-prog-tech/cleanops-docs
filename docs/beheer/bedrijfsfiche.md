@@ -45,7 +45,8 @@ zoekt het nummer op in de Kruispuntbank van Ondernemingen en vult uw adres aan m
 Uw naam wordt bij het ophalen **niet** overschreven.
 
 De **IBAN** wordt eveneens op zijn controlecijfer nagekeken en in groepjes van vier bewaard
-(`BE68 5390 0754 7034`). Daarnaast de **BIC**.
+(`BE68 5390 0754 7034`). Daarnaast de **BIC**. Het SEPA-bestand van het [betalingsvoorstel](../betalingsvoorstel.md)
+betaalt uw leveranciers vanaf deze IBAN.
 
 ## Logo
 

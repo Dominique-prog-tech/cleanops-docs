@@ -46,7 +46,8 @@ adresse avec ce qui y est enregistré.
 Votre nom n'est **pas** écrasé lors de la recherche.
 
 L'**IBAN** est lui aussi vérifié sur son chiffre de contrôle et enregistré par groupes de quatre
-(`BE68 5390 0754 7034`). À côté, le **BIC**.
+(`BE68 5390 0754 7034`). À côté, le **BIC**. Le fichier SEPA de la [proposition de paiement](../betalingsvoorstel.md)
+paie vos fournisseurs depuis cet IBAN.
 
 ## Logo
 

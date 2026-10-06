@@ -20,6 +20,7 @@ leverancier. Onder elke leverancier staat zijn **saldo**; onderaan de lijst het 
 | Nr lev. en Datum lev. | het nummer en de datum op het document van de leverancier |
 | Omschrijving | wat er gekocht werd |
 | Vervaldag | met het label **vervallen** wanneer de vervaldag voorbij is |
+| Betaald | het label **betaald** voor een document dat u al betaalde, maar waarvan de betaling nog niet op een uittreksel staat |
 | Totaal | het bedrag van het document |
 | Openstaand | wat er nog betaald of verrekend moet worden |
 
@@ -46,6 +47,12 @@ Een volledig betaald document verdwijnt uit deze lijst. Een deelbetaling mag: he
     Vink de factuur en de creditnota van dezelfde leverancier samen aan. In het venster staat de factuur negatief en de
     creditnota positief; samen geven ze het bedrag dat u werkelijk overschrijft.
 
+## Betaald markeren
+
+Betaalde u een document al, bijvoorbeeld met het SEPA-bestand van het [betalingsvoorstel](betalingsvoorstel.md), maar staat
+de betaling nog niet op een uittreksel? Vink het aan, of klik op de rij, en klik op **Betaald**. Het document blijft in deze
+lijst staan tot u de betaling boekt, maar komt niet meer in een betalingsvoorstel. **Niet betaald** zet dat terug.
+
 ## Veelgestelde vragen
 
 **Ik zie de knop Betaling ingeven niet.**
@@ -63,3 +70,4 @@ Omdat ze staan zoals op het uittreksel: een factuur betalen is geld dat buitenga
 - [Betalingen](betalingen.md)
 - [Aankoopfacturen](aankoopfacturen.md)
 - [Leveranciers](leveranciers.md)
+- [Betalingsvoorstel](betalingsvoorstel.md)

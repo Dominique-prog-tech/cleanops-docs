@@ -65,7 +65,7 @@ téléphone rempli doit être valide ; le laisser vide est permis.
 | Champ | Explication |
 |---|---|
 | Délai de paiement * | Dans la liste des [délais de paiement](beheer/betalingstermijnen.md). Fixe l'échéance des factures d'achat de ce fournisseur. |
-| IBAN | Le compte sur lequel vous payez le fournisseur. Il est vérifié sur son chiffre de contrôle et affiché par groupes de quatre. |
+| IBAN | Le compte sur lequel vous payez le fournisseur. Il est vérifié sur son chiffre de contrôle et affiché par groupes de quatre. Sans IBAN, le fournisseur ne figure pas dans le fichier SEPA de la [proposition de paiement](betalingsvoorstel.md). |
 | BIC | Le code de sa banque, 8 ou 11 caractères. Dans la zone euro, vous pouvez le laisser vide. |
 | Code TVA par défaut | Dans les [codes TVA](beheer/btw-codes.md). Préremplit une nouvelle facture d'achat de ce fournisseur ; le laisser vide est permis. |
 

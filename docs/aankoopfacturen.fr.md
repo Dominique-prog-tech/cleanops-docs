@@ -43,6 +43,7 @@ déjà remplis. Après **Enregistrer**, le document reçoit son numéro et s'ouv
 | Date fournisseur * | la date sur le document du fournisseur, pas dans le futur |
 | N° fournisseur * | le numéro sur le document du fournisseur |
 | Échéance | à laisser vide : elle suit alors le délai de paiement du fournisseur (une note de crédit échoit à sa date) |
+| Communication structurée | la communication structurée du fournisseur (+++123/4567/89002+++) ; le chiffre de contrôle est vérifié. La [proposition de paiement](betalingsvoorstel.md) la reprend dans le fichier SEPA |
 | Description | ce qui a été acheté, en bref |
 | Véhicule | pour un coût de véhicule, dans la liste des [véhicules](beheer/voertuigen.md) |
 
@@ -60,7 +61,8 @@ dans la première ligne.
 Si votre fournisseur envoie sa facture par Peppol, vous ne devez pas la saisir : elle figure dans
 [Documents reçus](binnengekomen-documenten.md), et **Traiter** ouvre cette fiche déjà remplie. En haut figure alors la
 carte **Document Peppol** avec le PDF et les lignes du fournisseur ; elle reste aussi après l'enregistrement. La TVA
-du document reste : pour une telle facture, CleanOps ne la recalcule pas.
+du document reste : pour une telle facture, CleanOps ne la recalcule pas. Si le document porte une communication
+structurée, elle aussi est déjà remplie.
 
 ## Le numéro
 

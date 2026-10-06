@@ -65,7 +65,7 @@ moet geldig zijn; leeg laten mag.
 | Veld | Toelichting |
 |---|---|
 | Betaaltermijn * | Uit de lijst van de [betalingstermijnen](beheer/betalingstermijnen.md). Bepaalt de vervaldag van de aankoopfacturen van deze leverancier. |
-| IBAN | Het rekeningnummer waarop u de leverancier betaalt. Het wordt op zijn controlecijfer nagekeken en in groepjes van vier getoond. |
+| IBAN | Het rekeningnummer waarop u de leverancier betaalt. Het wordt op zijn controlecijfer nagekeken en in groepjes van vier getoond. Zonder IBAN staat de leverancier niet in het SEPA-bestand van het [betalingsvoorstel](betalingsvoorstel.md). |
 | BIC | De code van zijn bank, 8 of 11 tekens. Binnen de eurozone mag u ze leeg laten. |
 | Standaard btw-code | Uit de [btw-codes](beheer/btw-codes.md). Vult een nieuwe aankoopfactuur van deze leverancier voor; leeg laten mag. |
 

@@ -20,6 +20,7 @@ groupées par fournisseur. Sous chaque fournisseur figure son **solde** ; en bas
 | N° fourn. et Date fourn. | le numéro et la date sur le document du fournisseur |
 | Description | ce qui a été acheté |
 | Échéance | avec l'étiquette **échu** quand l'échéance est dépassée |
+| Payé | l'étiquette **payé** pour un document que vous avez déjà payé, mais dont le paiement ne figure pas encore sur un extrait |
 | Total | le montant du document |
 | Ouvert | ce qui reste à payer ou à imputer |
 
@@ -47,6 +48,13 @@ ouvert.
     Cochez ensemble la facture et la note de crédit du même fournisseur. Dans la fenêtre, la facture est négative et la note de
     crédit positive ; ensemble, elles donnent le montant que vous virez réellement.
 
+## Marquer payé
+
+Vous avez déjà payé un document, par exemple avec le fichier SEPA de la [proposition de paiement](betalingsvoorstel.md), mais
+le paiement ne figure pas encore sur un extrait ? Cochez-le, ou cliquez sur la ligne, et cliquez sur **Payé**. Le document
+reste dans cette liste jusqu'à ce que vous enregistriez le paiement, mais n'entre plus dans une proposition de paiement.
+**Non payé** annule ce marquage.
+
 ## Questions fréquentes
 
 **Je ne vois pas le bouton Saisir un paiement.**
@@ -64,3 +72,4 @@ Parce qu'ils s'affichent comme sur l'extrait : payer une facture, c'est de l'arg
 - [Paiements](betalingen.md)
 - [Factures d'achat](aankoopfacturen.md)
 - [Fournisseurs](leveranciers.md)
+- [Proposition de paiement](betalingsvoorstel.md)

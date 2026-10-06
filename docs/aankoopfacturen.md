@@ -43,6 +43,7 @@ Na **Opslaan** krijgt het document zijn nummer en opent het opnieuw, met de tabb
 | Datum leverancier * | de datum op het document van de leverancier, niet in de toekomst |
 | Nummer leverancier * | het nummer op het document van de leverancier |
 | Vervaldag | leeg laten: ze volgt dan uit de betaaltermijn van de leverancier (een creditnota vervalt op haar datum) |
+| Mededeling | de gestructureerde mededeling van de leverancier (+++123/4567/89002+++); het controlegetal wordt nagekeken. Het [betalingsvoorstel](betalingsvoorstel.md) zet ze in het SEPA-bestand |
 | Omschrijving | wat er gekocht werd, kort |
 | Voertuig | voor een kost van een voertuig, uit de lijst van de [voertuigen](beheer/voertuigen.md) |
 
@@ -60,7 +61,8 @@ in de eerste regel.
 Stuurt uw leverancier zijn factuur via Peppol, dan hoeft u ze niet in te typen: ze staat in
 [Binnengekomen documenten](binnengekomen-documenten.md), en **Verwerken** opent deze fiche al ingevuld. Bovenaan staat
 dan de kaart **Peppol-document** met de PDF en de lijnen van de leverancier; ze blijft er ook na het bewaren staan. De
-btw van het document blijft staan: CleanOps rekent ze bij zo'n factuur niet opnieuw uit.
+btw van het document blijft staan: CleanOps rekent ze bij zo'n factuur niet opnieuw uit. Draagt het document een
+gestructureerde mededeling, dan staat ook die al ingevuld.
 
 ## Het nummer
 
