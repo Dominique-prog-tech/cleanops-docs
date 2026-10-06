@@ -38,6 +38,14 @@ Cliquez sur **Nouveau code TVA**, ou double-cliquez sur une ligne existante.
 | **Code comptable** | 20 caractères au maximum. Accompagne chaque ligne de facture vers votre bureau comptable, qui l'utilise pour lier le compte de chiffre d'affaires. Demandez le bon code à votre comptable. |
 | **Catégorie TVA (UBL)** | le type de TVA tel que le demande la facture électronique. *Taux normal* va avec un pourcentage supérieur à 0 ; les autres (autoliquidation, exonéré, intracommunautaire …) avec 0 %. |
 
+!!! warning "Un code par taux"
+    Un taux est une catégorie de TVA avec un pourcentage, par exemple *Taux normal* 21 %. Un deuxième code avec le même
+    taux est refusé, même si le code existant est archivé : CleanOps indique quel code porte déjà ce taux. Si vous
+    voulez un autre code comptable ou une autre description pour ce taux, modifiez ce code existant.
+
+    La raison : CleanOps calcule la TVA par code, la facture électronique par taux. Si deux codes de même taux
+    figurent sur une même facture, les deux calculs peuvent différer d'un cent.
+
 !!! note "Pourquoi la catégorie ne découle pas du pourcentage"
     Un code TVA à 0 % peut être une autoliquidation (cocontractant), une exonération ou une livraison intracommunautaire. Pour
     votre client et votre comptable, la différence est grande : vous choisissez donc la catégorie vous-même.
@@ -68,7 +76,8 @@ Ouvrez la ligne et utilisez **Archiver**. Le code disparaît des listes de choix
 
 !!! note "Ce qui porte déjà le code ne remarque rien"
     Les ordres de travail, devis et factures qui portent déjà le code archivé le gardent, et la facturation
-    continue à calculer avec lui. Archiver, c'est *ne plus choisir*, pas *retirer*.
+    continue à calculer avec lui. Archiver, c'est *ne plus choisir*, pas *retirer*. C'est pourquoi un code archivé
+    garde aussi son taux : vous ne créez pas de nouveau code avec la même catégorie et le même pourcentage.
 
 Vous le voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi les codes archivés**, ouvrez le
 code et cliquez sur **Rétablir**.
@@ -78,6 +87,10 @@ code et cliquez sur **Rétablir**.
 **J'ai besoin d'un nouveau taux, par exemple pour des travaux sur des habitations.**
 Créez un nouveau code avec le bon pourcentage. Ne modifiez pas un code existant, sinon vous perdez la
 distinction avec ce qui a été facturé auparavant.
+
+**Je veux un deuxième code à 21 %, avec un autre code comptable.**
+Ce n'est pas possible : chaque taux a un seul code. Modifiez le code comptable du code existant, ou demandez à votre
+comptable comment répartir le chiffre d'affaires autrement.
 
 **Deux factures d'un même client portent un montant de TVA différent pour le même travail.**
 Vérifiez dans le journal si le pourcentage de ce code a été modifié entre-temps. Chaque facture calcule avec

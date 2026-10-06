@@ -38,6 +38,14 @@ Klik op **Nieuwe btw-code**, of dubbelklik op een bestaande rij.
 | **Code boekhouding** | maximaal 20 tekens. Gaat met elke factuurlijn mee naar uw boekhoudkantoor, dat er de omzetrekening mee koppelt. Vraag de juiste code aan uw boekhouder. |
 | **Btw-categorie (UBL)** | de soort btw zoals de elektronische factuur ze vraagt. *Standaard* hoort bij een percentage boven 0; de andere (verlegd, vrijgesteld, intracommunautair …) bij 0 %. |
 
+!!! warning "Eén code per tarief"
+    Een tarief is een btw-categorie mét een percentage, bijvoorbeeld *Standaard* 21 %. Een tweede code met hetzelfde
+    tarief wordt geweigerd, ook als de bestaande gearchiveerd is: CleanOps zegt welke code het tarief al heeft.
+    Wilt u voor dat tarief een andere code boekhouding of omschrijving, wijzig dan die bestaande code.
+
+    De reden: CleanOps rekent de btw per code uit, de elektronische factuur per tarief. Staan twee codes met
+    hetzelfde tarief op één factuur, dan kunnen die twee een cent verschillen.
+
 !!! note "Waarom de categorie niet uit het percentage volgt"
     Een btw-code van 0 % kan verlegde btw (medecontractant), een vrijstelling of een intracommunautaire levering zijn. Voor
     uw klant en uw boekhouder is dat een groot verschil, dus kiest u de categorie zelf.
@@ -68,7 +76,8 @@ Open de rij en gebruik **Archiveren**. De code verdwijnt uit de keuzelijsten, ma
 
 !!! note "Wat de code al draagt, merkt niets"
     Werkorders, offertes en facturen die de gearchiveerde code al dragen, houden hem, en de facturatie rekent er
-    gewoon mee. Archiveren is *niet meer kiezen*, niet *weghalen*.
+    gewoon mee. Archiveren is *niet meer kiezen*, niet *weghalen*. Daarom houdt een gearchiveerde code ook haar
+    tarief bezet: u maakt geen nieuwe code met dezelfde categorie en hetzelfde percentage.
 
 Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde codes**, open de code en klik op
 **Terughalen**.
@@ -78,6 +87,10 @@ Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde codes**
 **Ik heb een nieuw tarief nodig, bijvoorbeeld voor werken aan woningen.**
 Maak een nieuwe code aan met het juiste percentage. Wijzig geen bestaande code, anders verliest u het
 onderscheid met wat er eerder gefactureerd is.
+
+**Ik wil een tweede code van 21 %, met een andere code boekhouding.**
+Dat kan niet: elk tarief heeft één code. Wijzig de code boekhouding van de bestaande code, of vraag uw boekhouder
+hoe hij de omzet anders kan splitsen.
 
 **Twee facturen van dezelfde klant hebben een ander btw-bedrag bij hetzelfde werk.**
 Kijk in het journaal of het percentage van die code tussentijds gewijzigd is. Elke factuur rekent met het
