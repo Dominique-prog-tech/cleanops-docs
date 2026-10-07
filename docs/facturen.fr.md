@@ -102,11 +102,45 @@ Sur la facture figurent :
 - le texte de pied de page et les mentions légales : à 6 %, la phrase d'attestation ; à 0 %, l'autoliquidation par le
   cocontractant.
 
-### Envoyer par e-mail
+### Envoyer
 
-**Envoyer par e-mail…** envoie la facture au client avec le PDF en pièce jointe. Une fenêtre s'ouvre, déjà remplie :
+**Envoyer…** choisit lui-même comment la facture part :
 
-![La fenêtre Envoyer par e-mail pour une facture de Dubois Marie avec À, Cc, Cci, Objet, le Message, la Pièce jointe et l'Expéditeur, avec le bouton Envoyer](images/factuur-mailen-fr.png "Envoyer par e-mail")
+- Si le client est sur le **réseau Peppol**, elle part en facture électronique via Peppol, directement dans sa comptabilité.
+- Sinon, elle part **par e-mail**, avec le PDF en pièce jointe. La fenêtre d'e-mail indique en haut pourquoi ce n'est pas
+  Peppol : le client n'a pas de numéro de TVA, il n'est pas sur le réseau, ou le réseau n'a pas pu être vérifié.
+
+CleanOps recherche le client sur le réseau avec son numéro GLN, sinon avec son numéro d'entreprise belge (voir [Clients](klanten.fr.md)).
+
+!!! warning "Tant que votre application précédente gère les factures"
+    Pendant cette période, CleanOps n'envoie rien via Peppol : c'est votre application précédente qui le fait. Pour un client
+    Peppol, la fenêtre l'indique, et elle n'ouvre pas d'e-mail à la place.
+
+#### Via Peppol
+
+![La fenêtre Envoyer par Peppol pour une facture de Hoeve Ter Beke, avec l'explication et le bouton Envoyer](images/factuur-peppol-fr.png "Envoyer par Peppol")
+
+La fenêtre montre à qui part la facture électronique, avec l'identifiant Peppol du client. Il n'y a rien à remplir : la facture
+électronique est la facture elle-même, avec le PDF. Votre entreprise y figure comme sur la [fiche entreprise](beheer/bedrijfsfiche.fr.md)
+sous **Peppol**.
+
+Cliquez sur **Envoyer**. La facture électronique part réellement. La facture est ensuite marquée comme envoyée, avec *Peppol*,
+et ne peut plus être rouverte. À droite de *Peppol* figure si elle est arrivée :
+
+| Statut | Signification |
+|---|---|
+| Accepté | Le réseau Peppol a accepté la facture électronique — pas encore qu'elle est arrivée. |
+| En file d'attente | Un incident temporaire ; ADM One l'envoie lui-même dès que possible. Ne la renvoyez pas. |
+| Remis | Elle est arrivée chez le client, généralement en moins d'une minute. |
+| Échoué ou Refusé | Elle n'est pas arrivée ; la raison figure à côté du statut. |
+
+Une facture électronique qui n'a pas échoué ne repart pas sous le même numéro : la fenêtre le dit. Pour corriger, faites une
+note de crédit et une nouvelle facture. Toutes les factures électroniques et leur statut figurent dans
+[Envoyés via Peppol](verzonden-via-peppol.fr.md).
+
+#### Par e-mail
+
+![La fenêtre Envoyer par e-mail pour une facture de Dubois Marie, avec en haut pourquoi ce n'est pas Peppol, et À, Cc, Cci, Objet, le Message, la Pièce jointe et l'Expéditeur, avec le bouton Envoyer](images/factuur-mailen-fr.png "Envoyer par e-mail")
 
 - **À** — l'adresse e-mail de facturation du client, sinon son adresse e-mail habituelle (voir [Clients](klanten.fr.md)).
 - **Cc** — les autres adresses du client figurent comme case à cocher. En dessous, vous ajoutez d'autres adresses, séparées par
@@ -126,8 +160,8 @@ cette facture, par exemple l'échéance d'une ancienne facture, la fenêtre la n
 Une facture déjà envoyée peut être renvoyée ; CleanOps vous demande d'abord si vous le souhaitez. Dans l'**Aperçu avant
 impression**, **Envoyer par courriel** envoie la même facture via la même fenêtre.
 
-!!! tip "Factures par e-mail"
-    Si **Factures par e-mail** est coché pour le client et que la facture n'a pas encore été envoyée, **Envoyer par e-mail…** est
+!!! tip "Le bouton bleu"
+    Si la facture n'a pas encore été envoyée et que le client est sur Peppol ou a coché **Factures par e-mail**, **Envoyer…** est
     le bouton bleu.
 
 ### L'onglet E-mails
@@ -202,8 +236,17 @@ Une facture déjà créditée ne peut pas l'être une seconde fois.
 
 ## Questions fréquentes
 
-**Puis-je envoyer une facture via Peppol ?**
-Pas encore. Envoyez la facture avec **Envoyer par e-mail…**, ou imprimez-la et cliquez sur **Envoyé par courrier**.
+**Pourquoi une facture part-elle par e-mail et pas via Peppol ?**
+La fenêtre d'e-mail l'indique en haut : le client n'a pas de numéro de TVA, il n'est pas sur le réseau Peppol, ou le réseau n'a
+pas pu être vérifié. Dans ce dernier cas, réessayez un peu plus tard.
+
+**Pour un client Peppol, CleanOps dit qu'il n'envoie pas.**
+Tant que votre application précédente gère les factures, c'est elle qui envoie les factures électroniques. CleanOps prend le
+relais le jour du passage.
+
+**Je veux renvoyer une facture électronique.**
+Ce n'est possible que si l'envoi précédent est **Échoué** ou **Refusé**. Une facture électronique arrivée ne repart pas sous le
+même numéro — le client la comptabiliserait deux fois. Faites une note de crédit et une nouvelle facture.
 
 **L'e-mail est parti d'une adresse d'ADM One et non de notre propre adresse.**
 L'adresse d'expéditeur n'est pas approuvée par ADM One, ou aucun expéditeur n'a été choisi. Voir
@@ -230,5 +273,6 @@ une note de crédit l'année suivie de 9001 (20269001).
 - [Postes ouverts](openstaande-posten.fr.md)
 - [Clients](klanten.fr.md)
 - [Textes d'e-mail](beheer/mailteksten.fr.md)
+- [Envoyés via Peppol](verzonden-via-peppol.fr.md)
 - [Textes de facture](beheer/factuurteksten.fr.md)
 - [Fiche entreprise](beheer/bedrijfsfiche.fr.md)

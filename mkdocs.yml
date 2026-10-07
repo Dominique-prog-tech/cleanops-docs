@@ -141,6 +141,7 @@ plugins:
             Offertes: Devis
             Facturatie: Facturation
             Facturen: Factures
+            Verzonden via Peppol: Envoyés via Peppol
             Personeel groeperen: Groupement du personnel
             CRM: CRM
             Werk: Travail
@@ -253,6 +254,7 @@ nav:
     - Offertes: offertes.md
     - Facturatie: facturatie.md
     - Facturen: facturen.md
+    - Verzonden via Peppol: verzonden-via-peppol.md
     - Openstaande posten: openstaande-posten.md
     - Betalingen: betalingen.md
   - Aankoop:

@@ -96,11 +96,43 @@ Op de factuur staan:
 - op een factuur de vraag om te betalen met de gestructureerde mededeling — niet op een creditnota;
 - de slottekst en de wettelijke vermeldingen: bij 6 % de attestzin, bij 0 % de verlegging naar de medecontractant.
 
-### Mailen
+### Versturen
 
-**Mailen…** stuurt de factuur met de PDF als bijlage naar de klant. Een venster opent met alles al ingevuld:
+**Versturen…** kiest zelf hoe de factuur vertrekt:
 
-![Het venster Mailen voor een factuur van Camping Zonnedal met Aan, een vinkje voor het tweede adres onder Cc, Bcc, Onderwerp, het Bericht, de Bijlage en de Afzender, met de knop Versturen](images/factuur-mailen.png "Mailen")
+- Staat de klant op het **Peppol-netwerk**, dan gaat ze als e-factuur via Peppol, rechtstreeks naar zijn boekhouding.
+- Anders gaat ze **per mail**, met de PDF als bijlage. Het mailvenster zegt bovenaan waarom het geen Peppol is: de klant heeft
+  geen btw-nummer, hij staat niet op het netwerk, of het netwerk kon niet nagekeken worden.
+
+CleanOps zoekt de klant op het netwerk op met zijn GLN-nummer, anders met zijn Belgisch ondernemingsnummer (zie [Klanten](klanten.md)).
+
+!!! warning "Zolang uw vorige toepassing de facturen beheert"
+    In die periode verstuurt CleanOps niets via Peppol: dat doet uw vorige toepassing. Bij een Peppol-klant zegt het venster dat,
+    en het opent geen mail in de plaats.
+
+#### Via Peppol
+
+![Het venster Via Peppol versturen voor een factuur van Hoeve Ter Beke, met de uitleg en de knop Versturen](images/factuur-peppol.png "Via Peppol versturen")
+
+Het venster toont naar wie de e-factuur gaat, met het Peppol-ID van de klant. Er valt niets in te vullen: de e-factuur is de
+factuur zelf, met de PDF erin. Uw bedrijf staat erin zoals op de [bedrijfsfiche](beheer/bedrijfsfiche.md) onder **Peppol**.
+
+Klik op **Versturen**. De e-factuur vertrekt echt. Daarna staat de factuur op verstuurd, met *Peppol*, en kan ze niet meer
+heropend worden. Rechts van *Peppol* staat of ze aankwam:
+
+| Status | Wat het betekent |
+|---|---|
+| Aangeboden | Het Peppol-netwerk nam de e-factuur aan — nog niet dat ze aankwam. |
+| In de wachtrij | Een tijdelijke storing; ADM One verstuurt ze zelf zodra het kan. Niet opnieuw versturen. |
+| Afgeleverd | Ze kwam aan bij de klant, doorgaans binnen de minuut. |
+| Mislukt of Geweigerd | Ze kwam niet aan; de reden staat bij de status. |
+
+Een e-factuur die niet mislukte, vertrekt niet nog eens met hetzelfde nummer: het venster zegt dat. Om te corrigeren maakt u
+een creditnota en een nieuwe factuur. Alle e-facturen en hun status staan in [Verzonden via Peppol](verzonden-via-peppol.md).
+
+#### Per mail
+
+![Het venster Mailen voor een factuur van Camping Zonnedal, met bovenaan waarom het geen Peppol is, en Aan, een vinkje voor het tweede adres onder Cc, Bcc, Onderwerp, het Bericht, de Bijlage en de Afzender, met de knop Versturen](images/factuur-mailen.png "Mailen")
 
 - **Aan** — het e-mailadres voor facturen van de klant, anders zijn gewone e-mailadres (zie [Klanten](klanten.md)).
 - **Cc** — de andere adressen van de klant staan er als vinkje. Daaronder vult u nog andere adressen in, gescheiden door een
@@ -120,8 +152,9 @@ bijvoorbeeld de vervaldag van een oude factuur, dan noemt het venster welk. Kijk
 Een factuur die al verstuurd is, kunt u opnieuw mailen; CleanOps vraagt eerst of u dat wilt. In het **Afdrukvoorbeeld** stuurt
 **Doorsturen per mail** dezelfde factuur door via hetzelfde venster.
 
-!!! tip "Facturen per e-mail"
-    Staat bij de klant **Facturen per e-mail** aangevinkt en is de factuur nog niet verstuurd, dan is **Mailen…** de blauwe knop.
+!!! tip "De blauwe knop"
+    Is de factuur nog niet verstuurd en staat de klant op Peppol of heeft hij **Facturen per e-mail** aangevinkt, dan is
+    **Versturen…** de blauwe knop.
 
 ### Het tabblad Mails
 
@@ -192,8 +225,16 @@ Een factuur die al gecrediteerd is, kan niet nog eens gecrediteerd worden.
 
 ## Veelgestelde vragen
 
-**Kan ik een factuur via Peppol versturen?**
-Nog niet. Mail de factuur met **Mailen…**, of druk ze af en klik op **Verstuurd per post**.
+**Waarom gaat een factuur per mail en niet via Peppol?**
+Het mailvenster zegt het bovenaan: de klant heeft geen btw-nummer, hij staat niet op het Peppol-netwerk, of het netwerk kon niet
+nagekeken worden. In dat laatste geval: probeer het wat later opnieuw.
+
+**Bij een Peppol-klant zegt CleanOps dat het niet verstuurt.**
+Zolang uw vorige toepassing de facturen beheert, verstuurt die de e-facturen. CleanOps neemt het over op de dag van de overstap.
+
+**Ik wil een e-factuur opnieuw versturen.**
+Dat kan enkel als de vorige keer **Mislukt** of **Geweigerd** was. Een e-factuur die aankwam, vertrekt niet nog eens met
+hetzelfde nummer — de klant zou ze twee keer boeken. Maak een creditnota en een nieuwe factuur.
 
 **De mail vertrok van een adres van ADM One en niet van ons eigen adres.**
 Het afzenderadres is niet aanvaard bij ADM One, of er is geen afzender gekozen. Zie [Mailafzenders](beheer/mailafzenders.md).
@@ -218,5 +259,6 @@ creditnota het jaar met 9001 (20269001).
 - [Openstaande posten](openstaande-posten.md)
 - [Klanten](klanten.md)
 - [Mailteksten](beheer/mailteksten.md)
+- [Verzonden via Peppol](verzonden-via-peppol.md)
 - [Factuurteksten](beheer/factuurteksten.md)
 - [Bedrijfsfiche](beheer/bedrijfsfiche.md)

@@ -57,6 +57,7 @@ betekent dus dat er geen offertes zijn.
 | Contact | De contactpersoon bij de klant. |
 | Telefoon, Gsm, Fax, E-mail | Een telefoonnummer, gsm-nummer of e-mailadres moet geldig zijn; de fax niet. |
 | E-mail facturatie, E-mail rappels, E-mail attesten | Een apart adres voor facturen, rappels en attesten, als dat een ander is dan het e-mailadres hierboven. Elk veld bevat één geldig adres. |
+| GLN / Peppol-ID | Het adres van de klant op het Peppol-netwerk: een GLN-nummer van 13 cijfers, of een volledig Peppol-ID zoals `0208:0123456749`. Leeg: CleanOps zoekt de klant op met zijn btw-nummer. Staat er iets anders, dan zegt de fiche dat het niet bruikbaar is. Met **Peppol nakijken** ziet u of de klant op het netwerk staat en of hij facturen en creditnota's ontvangt — zo weet u of **Versturen…** op een factuur via Peppol of per mail gaat (zie [Facturen](facturen.md#versturen)). |
 | Geblokkeerd | De klant blijft gewoon bruikbaar, maar staat met een label in de lijst en valt op in de planning. Bij een nieuwe werkorder meldt CleanOps het. |
 | Ontvangt rappels | Zet dit af voor een klant die u niet wilt aanmanen. |
 | Geen nieuwe opdrachten | Bij een nieuwe werkorder voor deze klant vraagt CleanOps eerst een bevestiging. |

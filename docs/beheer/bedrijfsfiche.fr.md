@@ -1,9 +1,9 @@
 # Fiche d'entreprise
 
-Les données de votre propre entreprise : nom, adresse, coordonnées, numéro de TVA et banque, votre logo, et le
-délai entre deux rappels.
+Les données de votre propre entreprise : nom, adresse, coordonnées, numéro de TVA et banque, votre logo, le
+délai entre deux rappels, et comment votre entreprise figure dans une facture électronique via Peppol.
 
-![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels et Comptabilité avec l'Adresse du bureau comptable et l'Adresse pour les factures d'achat](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
+![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels, Comptabilité avec l'Adresse du bureau comptable et l'Adresse pour les factures d'achat, et Peppol](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
 
 !!! note "Où CleanOps utilise ces données aujourd'hui"
     Le **délai entre deux rappels** détermine directement quels postes figurent dans la liste *Prochain rappel*
@@ -84,6 +84,21 @@ une boîte distincte pour les achats. Une facture d'achat envoyée ne peut ensui
     exactement aux documents que votre application précédente n'avait pas encore envoyés.
 
 Si l'envoi d'un document échoue, il repart le lendemain matin.
+
+## Peppol
+
+Le bloc **Peppol** indique comment votre entreprise figure comme expéditeur dans une facture électronique, lorsque vous envoyez une
+facture via Peppol (voir [Factures](../facturen.fr.md#envoyer)).
+
+| Champ | Ce que vous remplissez |
+|---|---|
+| **Identifiant Peppol** | votre adresse sur le réseau Peppol, par exemple `0208:0123456749` — 0208 suivi de votre numéro d'entreprise. |
+| **Nom** | le nom dans la facture électronique, par exemple votre nom légal. |
+| **Rue et numéro**, **Code postal**, **Commune**, **Pays** | l'adresse dans la facture électronique. |
+| **E-mail**, **IBAN**, **Site web** | votre contact et le compte sur lequel le client paie. |
+
+Un champ vide reprend la donnée de la fiche ci-dessus. Si vous ne remplissez rien, votre entreprise figure dans la facture
+électronique comme sur votre en-tête. Lors d'un passage, CleanOps reprend ces données de votre application précédente.
 
 ## Enregistrer ou annuler
 

@@ -1,9 +1,9 @@
 # Bedrijfsfiche
 
 De gegevens van uw eigen bedrijf: naam, adres, contactgegevens, btw-nummer en bank, uw logo, en de wachttijd
-tussen twee rappels.
+tussen twee rappels, en hoe uw bedrijf in een e-factuur via Peppol staat.
 
-![De bedrijfsfiche met de blokken Identiteit en adres, Contact, Fiscaal en bank, Logo, Rappels en Boekhouding met het Adres van het boekhoudkantoor en het Adres voor de aankoopfacturen](../images/bedrijfsfiche.png "Bedrijfsfiche")
+![De bedrijfsfiche met de blokken Identiteit en adres, Contact, Fiscaal en bank, Logo, Rappels, Boekhouding met het Adres van het boekhoudkantoor en het Adres voor de aankoopfacturen, en Peppol](../images/bedrijfsfiche.png "Bedrijfsfiche")
 
 !!! note "Waar CleanOps deze gegevens vandaag gebruikt"
     De **wachttijd tussen twee rappels** bepaalt meteen welke posten in de lijst *Volgende rappel* van de
@@ -82,6 +82,21 @@ aankoop. Een verstuurde aankoopfactuur kan daarna niet meer gewijzigd worden —
     documenten die uw vorige toepassing nog niet verstuurde.
 
 Lukt het versturen van een document niet, dan gaat het de volgende ochtend opnieuw mee.
+
+## Peppol
+
+Het blok **Peppol** zegt hoe uw bedrijf als verzender in een e-factuur staat, wanneer u een factuur via Peppol verstuurt (zie
+[Facturen](../facturen.md#versturen)).
+
+| Veld | Wat u invult |
+|---|---|
+| **Peppol-ID** | uw adres op het Peppol-netwerk, bijvoorbeeld `0208:0123456749` — 0208 gevolgd door uw ondernemingsnummer. |
+| **Naam** | de naam in de e-factuur, bijvoorbeeld uw wettelijke naam. |
+| **Straat en nummer**, **Postcode**, **Gemeente**, **Land** | het adres in de e-factuur. |
+| **E-mail**, **IBAN**, **Website** | uw contact en de rekening waarop de klant betaalt. |
+
+Een leeg veld neemt het gegeven van de fiche hierboven over. Vult u niets in, dan staat uw bedrijf in de e-factuur zoals op uw
+briefhoofd. Bij een overstap neemt CleanOps deze gegevens over uit uw vorige toepassing.
 
 ## Bewaren of annuleren
 

@@ -110,7 +110,7 @@ const SCHOTEN = [
   // ⚠️ HOGER dan de standaard: de opmerkingen staan onderaan het tabblad Fiche, en die horen op het beeld.
   // ⚠️ PER TAAL EEN ANDERE KLANT: de Franse ronde neemt de Franstalige voorbeeldklant, anders staan er Nederlandse
   // opmerkingen en instructies op een Frans beeld (handleiding-schrijfregels §4, gezien op 30/09/2026).
-  { naam: 'klant-fiche', route: '/klanten', verwacht: tekstTaal('Opmerkingen', 'Remarques'), hoogte: 1180,
+  { naam: 'klant-fiche', route: '/klanten', verwacht: tekstTaal('Opmerkingen', 'Remarques'), hoogte: 1260,
     na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant); } },
   { naam: 'klant-adres', route: '/klanten', verwacht: tekstTaal('Bereikbaarheid', 'Accessibilité'), hoogte: 1180,
     na: async (p, taal) => {
@@ -505,10 +505,41 @@ const SCHOTEN = [
     na: async (p, taal) => {
       await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001');
       await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
-      await p.getByRole('button', { name: /^(Mailen…|Envoyer par e-mail…)$/ }).first().click();
+      // Sinds laag 6 (07/10/2026) heet de knop Versturen… en kiest CleanOps zelf: deze klanten staan niet op Peppol, dus het mailvenster —
+      // met bovenaan de reden.
+      await p.getByRole('button', { name: /^(Versturen…|Envoyer…)$/ }).first().click();
       await bevestigIndienGevraagd(p, /^(Mailen|Envoyer par e-mail)$/);
       await p.locator('#mailvenster-editor .dxbl-html-editor, #mailvenster-editor [contenteditable]').first().waitFor({ timeout: 15000 });
       await p.waitForTimeout(800);
+    } },
+  // Peppol versturen (mailpakket laag 6, 07/10/2026). Factuur 20260003 van Hoeve Ter Beke: haar ondernemingsnummer staat in
+  // Peppol:OntwikkelDeelnemers (appsettings.Development.json), dus de ontwikkelgrendel zegt "op het netwerk" en simuleert de aflevering.
+  // ⚠️ Het lijst-recept VERSTUURT (via de grendel — in Development vertrekt nooit iets): het venster-recept moet ervóór draaien, en na het
+  // lijst-recept is 20260003 verstuurd. Vul de demo opnieuw vóór een tweede ronde.
+  { naam: 'factuur-peppol', route: '/facturen', verwacht: tekstTaal('Via Peppol naar', 'Par Peppol à'),
+    na: async p => {
+      await openRij(p, '20260003');
+      await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('button', { name: /^(Versturen…|Envoyer…)$/ }).first().click();
+      await p.getByText(/^(Via Peppol naar|Par Peppol à)/).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.waitForTimeout(500);
+    } },
+  { naam: 'verzonden-via-peppol-lijst', route: '/facturen', verwacht: tekstTaal('Afgeleverd', 'Remis'),
+    na: async p => {
+      await openRij(p, '20260003');
+      await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('button', { name: /^(Versturen…|Envoyer…)$/ }).first().click();
+      await p.getByText(/^(Via Peppol naar|Par Peppol à)/).first().waitFor({ state: 'visible', timeout: 15000 });
+      // De tweede taal vindt 20260003 al verstuurd: dan staat Versturen uit, en sluit het venster gewoon.
+      const versturen = p.locator('.dxbl-modal-footer button, .dxbl-popup-footer button').filter({ hasText: /^(Versturen|Envoyer)$/ }).first();
+      if (await versturen.isEnabled().catch(() => false)) {
+        await versturen.click();
+        await p.getByText(/(Aangeboden aan het Peppol-netwerk|Proposé au réseau Peppol)/).first().waitFor({ timeout: 15000 });
+      } else {
+        await p.keyboard.press('Escape');
+      }
+      await p.goto(new URL('/verzonden-via-peppol', p.url()).toString());
+      await p.getByText(/^(Afgeleverd|Remis)$/).first().waitFor({ state: 'visible', timeout: 15000 });
     } },
   // Het tabblad Mails: de mail die de demo voor 20260001 in het logboek zette (afgeleverd, met de PDF). In beide talen dezelfde factuur —
   // de enige gemailde. Merkteken = de status, die staat er pas als het tabblad zijn lijst toont.
@@ -650,7 +681,8 @@ const SCHOTEN = [
   // ⚠️ 1240 sinds het blok Boekhouding (05/10/2026): gemeten op 1440 breed eindigt het blok op 1122 px en begint de knoppenbalk op
   // 1155 — op 1180 viel het half weg. Het vinkje en een voorbeeldadres worden INGEVULD maar niet bewaard: zo toont het beeld de functie.
   // ⚠️ 1400 sinds de aankoopfacturen (06/10/2026, Aankoop laag 6): het blok Boekhouding kreeg een tweede vinkje met adres en uitleg.
-  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1400,
+  // ⚠️ 1700 sinds het blok Peppol (mailpakket laag 6, 07/10/2026).
+  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1700,
     verwacht: tekstTaal('Adres voor de aankoopfacturen', "Adresse pour les factures d'achat"),
     na: async p => {
       await p.getByText(/^(Facturen en creditnota's elke dag naar het boekhoudkantoor sturen|Envoyer chaque jour les factures et notes de crédit au bureau comptable)$/).first().click();
