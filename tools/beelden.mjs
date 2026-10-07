@@ -430,6 +430,23 @@ const SCHOTEN = [
   { naam: 'offertes-lijst', route: '/offertes', verwacht: /Sporthal De Ring/ },
   { naam: 'offerte-fiche', route: '/offertes', verwacht: /Tuincentrum De Linde · (nr|n°)/,
     na: async p => { await openRij(p, 'TUINCENTRUM DE LINDE'); } },
+  // Mailen (mailpakket laag 4, 07/10/2026): het venster op de CONCEPT-offerte van Camping Zonnedal (hoofdadres als Aan, het
+  // facturatieadres als cc-vinkje). Een Nederlandstalige klant, dus ook in de Franse ronde de Nederlandse bijlagenaam. ⚠️ Het recept
+  // klikt NOOIT op Versturen.
+  { naam: 'offerte-mailen', route: '/offertes', verwacht: tekstTaal('Bijlage: offerte-', 'Pièce jointe : offerte-'),
+    na: async p => {
+      await openRij(p, 'CAMPING ZONNEDAL');
+      await p.getByRole('button', { name: /^(Mailen…|Envoyer par e-mail…)$/ }).first().click({ timeout: 15000 });
+      await p.locator('#mailvenster-editor .dxbl-html-editor, #mailvenster-editor [contenteditable]').first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(800);
+    } },
+  // Het tabblad Mails op de verstuurde offerte van De Linde (versie 2): de mail die de demo in het logboek zette (afgeleverd, met de PDF).
+  { naam: 'offerte-mails', route: '/offertes', verwacht: tekstTaal('Afgeleverd', 'Remis'),
+    na: async p => {
+      await openRij(p, 'TUINCENTRUM DE LINDE');
+      await p.getByText(/Tuincentrum De Linde · (nr|n°)/).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByText(/^(Mails|E-mails)$/).first().click();
+    } },
   { naam: 'offerte-versies', route: '/offertes', verwacht: tekstTaal('actueel', 'actuelle'),
     na: async p => {
       await openRij(p, 'TUINCENTRUM DE LINDE');

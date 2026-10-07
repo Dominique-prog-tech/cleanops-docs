@@ -93,6 +93,8 @@ encore enregistrées ne sont pas reprises ; utilisez pour cela **Enregistrer com
 | Bouton | Ce qu'il fait |
 |---|---|
 | Statut… | Change le statut, par exemple en **Accepté** ou **Perdu**, sans ouvrir le devis pour le modifier. |
+| Envoyer par e-mail… | Envoie le devis au client avec le PDF — voir [Envoyer par e-mail](#envoyer-par-e-mail). |
+| Envoyer un rappel… | Remplace **Envoyer par e-mail…** tant que le devis est **Envoyé**. Renvoie le devis avec le texte de rappel — voir [Un rappel](#un-rappel). |
 | Créer un ordre de travail | Crée un ordre de travail à l'adresse du client, avec la description et les lignes du devis comme travail et le montant hors TVA. Les pièces jointes du devis sont reprises. Le devis passe à **Accepté**. Si un ordre de travail a déjà été créé à partir de ce devis, le nouveau ne reçoit pas de montant et CleanOps l'indique. |
 | Dupliquer… | Crée un nouveau devis avec son propre numéro à partir de celui-ci, pour le même client ou un autre. Les lignes, la description et les remarques pour le client sont reprises ; la référence et la remarque interne non. |
 | Aperçu avant impression | Affiche le devis en PDF, dans la langue du client. **Télécharger** l'enregistre. L'aperçu montre le devis enregistré. |
@@ -103,21 +105,66 @@ encore enregistrées ne sont pas reprises ; utilisez pour cela **Enregistrer com
 | Statut | Signification |
 |---|---|
 | Brouillon | En préparation, pas encore chez le client. |
-| Envoyé | Chez le client. La date de suivi compte. |
+| Envoyé | Chez le client. **Envoyer par e-mail…** met un brouillon automatiquement sur Envoyé. La date de suivi compte. |
 | Accepté | Le client est d'accord. **Créer un ordre de travail** met lui-même le devis sur Accepté. |
 | Perdu | Le client ne donne pas suite au devis. |
 | Expiré | Le devis n'est plus valable. |
 
+## Envoyer par e-mail
+
+**Envoyer par e-mail…** envoie le devis au client avec le PDF en pièce jointe. La fenêtre s'ouvre, déjà remplie :
+
+![La fenêtre Envoyer par e-mail pour un devis de Camping Zonnedal avec À, l'adresse de facturation cochable sous Cc, Objet, le Message, la Pièce jointe et l'Expéditeur, avec le bouton Envoyer](images/offerte-mailen-fr.png "Envoyer par e-mail")
+
+- **À** — l'adresse e-mail du client. Ses autres adresses, comme celle de facturation, figurent comme case à cocher sous
+  **Cc**.
+- **Objet** et **Message** — le texte d'e-mail d'un devis, dans la langue du client, avec le numéro et la date jusqu'à
+  laquelle le devis est valable. Vous réglez ce texte dans [Textes d'e-mail](beheer/mailteksten.fr.md) ; ici, vous
+  l'adaptez pour cet e-mail seulement.
+- En bas figurent la **Pièce jointe** et l'**Expéditeur**. À partir de la version 2, la pièce jointe porte le numéro de
+  version, par exemple *devis-12-version-2.pdf*.
+
+Cliquez sur **Envoyer**. L'e-mail part réellement chez le client. Un devis en **Brouillon** passe ensuite sur **Envoyé** ;
+un devis accepté, perdu ou expiré garde son statut.
+
+Quelques points à savoir :
+
+- L'e-mail porte le devis **enregistré**, comme l'aperçu avant impression. Enregistrez donc d'abord vos modifications.
+- L'envoi n'est possible que pour la **version actuelle**. Une version plus ancienne n'a pas de bouton
+  **Envoyer par e-mail…**.
+- Si le devis n'imprime pas ses totaux, l'e-mail ne mentionne pas non plus le total.
+- Dans l'**Aperçu avant impression**, un bouton permet aussi d'envoyer le devis par e-mail.
+
+### Un rappel
+
+Tant que le devis est **Envoyé**, **Envoyer un rappel…** le renvoie avec le texte de rappel de
+[Textes d'e-mail](beheer/mailteksten.fr.md) et le PDF. Un rappel ne change rien au devis : le statut et la date de suivi
+restent. Si vous voulez relancer plus tard, adaptez vous-même la date de suivi.
+
+Sur un devis envoyé, **Envoyer un rappel…** remplace donc **Envoyer par e-mail…**. Pour renvoyer le devis lui-même,
+utilisez **Envoyer par courriel** dans l'**Aperçu avant impression** ; CleanOps demande d'abord si vous voulez le renvoyer.
+
+### L'onglet E-mails
+
+En haut à droite, **E-mails** montre ce qui a été envoyé par e-mail pour cette version du devis : quand, à qui, si
+l'e-mail a été remis, le texte tel qu'il est parti (**Afficher le texte**) et le PDF joint.
+
+![L'onglet E-mails d'un devis : un e-mail avec le statut Remis, l'objet, À, le PDF envoyé et Afficher le texte](images/offerte-mails-fr.png "E-mails")
+
 ## Pièces jointes et Historique
 
-En haut à droite figurent les **Pièces jointes** — les documents du devis, comme un plan ou une photo — et
+En haut à droite figurent aussi les **Pièces jointes** — les documents du devis, comme un plan ou une photo — et
 l'**Historique** : qui a modifié quoi et quand.
 
 ## Questions fréquentes
 
-**Puis-je envoyer un devis par e-mail depuis CleanOps ?**
-Pas encore. Téléchargez le PDF dans l'**Aperçu avant impression** et joignez-le à votre e-mail. Mettez ensuite le statut
-sur **Envoyé**.
+**Je ne vois pas de bouton Envoyer par e-mail… ou Envoyer un rappel….**
+Vous consultez une version plus ancienne, ou vous n'avez pas le droit de modifier les devis. L'un des deux figure toujours :
+**Envoyer un rappel…** pour un devis **Envoyé**, sinon **Envoyer par e-mail…**.
+
+**Pourquoi le total ne figure-t-il pas dans l'e-mail ?**
+Le devis n'imprime pas ses totaux (la case sous **Sur l'impression**). L'e-mail le tait aussi, et la fenêtre indique que
+ces données restent vides.
 
 **Un tarif ne figure pas dans la liste.**
 Vous ne voyez que les tarifs non archivés dans la langue du client. S'il n'y a aucun tarif dans cette langue, l'écran
@@ -133,4 +180,5 @@ Il faut pour cela le droit de modifier les ordres de travail.
 
 - [Clients](klanten.fr.md)
 - [Ordres de travail](werkorders.fr.md)
+- [Textes d'e-mail](beheer/mailteksten.fr.md)
 - [Tarifs](beheer/tarieven.fr.md)

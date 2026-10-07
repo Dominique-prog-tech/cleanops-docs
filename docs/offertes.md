@@ -91,6 +91,8 @@ bewaard zijn, gaan daarbij niet mee; gebruik daarvoor **Bewaren als nieuwe versi
 | Knop | Wat hij doet |
 |---|---|
 | Status… | Zet de status, bijvoorbeeld op **Aanvaard** of **Verloren**, zonder de offerte te openen voor wijzigingen. |
+| Mailen… | Mailt de offerte met de PDF naar de klant — zie [Mailen](#mailen). |
+| Herinnering mailen… | Staat er in de plaats van **Mailen…** zolang de offerte op **Verstuurd** staat. Mailt de offerte opnieuw, met de herinneringstekst — zie [Een herinnering](#een-herinnering). |
 | Werkorder maken | Maakt een werkorder op het adres van de klant, met de omschrijving en de lijnen van de offerte als werk en het bedrag zonder btw. De bijlagen van de offerte gaan mee. De offerte komt op **Aanvaard**. Is er al een werkorder uit deze offerte gemaakt, dan krijgt de nieuwe geen bedrag en zegt CleanOps dat. |
 | Dupliceren… | Maakt een nieuwe offerte met een eigen nummer op basis van deze, voor dezelfde of een andere klant. De lijnen, de omschrijving en de opmerkingen voor de klant gaan mee; de referentie en de interne opmerking niet. |
 | Afdrukvoorbeeld | Toont de offerte als PDF, in de taal van de klant. **Downloaden** bewaart ze. Het voorbeeld toont de bewaarde offerte. |
@@ -101,20 +103,64 @@ bewaard zijn, gaan daarbij niet mee; gebruik daarvoor **Bewaren als nieuwe versi
 | Status | Betekenis |
 |---|---|
 | Concept | Nog in opmaak, niet naar de klant. |
-| Verstuurd | Bij de klant. De opvolgdatum telt. |
+| Verstuurd | Bij de klant. **Mailen…** zet een concept vanzelf op Verstuurd. De opvolgdatum telt. |
 | Aanvaard | De klant gaat akkoord. **Werkorder maken** zet de offerte zelf op Aanvaard. |
 | Verloren | De klant gaat niet in op de offerte. |
 | Vervallen | De offerte is niet meer geldig. |
 
+## Mailen
+
+**Mailen…** stuurt de offerte met de PDF als bijlage naar de klant. Het venster opent met alles al ingevuld:
+
+![Het venster Mailen voor een offerte van Camping Zonnedal met Aan, het facturatieadres als vinkje onder Cc, Onderwerp, het Bericht, de Bijlage en de Afzender, met de knop Versturen](images/offerte-mailen.png "Mailen")
+
+- **Aan** — het e-mailadres van de klant. Zijn andere adressen, zoals dat voor facturen, staan er als vinkje onder **Cc**.
+- **Onderwerp** en **Bericht** — de mailtekst voor een offerte, in de taal van de klant, met het nummer en de datum tot
+  wanneer de offerte geldig is. U stelt die tekst in bij [Mailteksten](beheer/mailteksten.md); hier past u ze aan voor deze
+  ene mail.
+- Onderaan staan de **Bijlage** en de **Afzender**. Vanaf versie 2 draagt de bijlage het versienummer, bijvoorbeeld
+  *offerte-12-versie-2.pdf*.
+
+Klik op **Versturen**. De mail vertrekt echt naar de klant. Een offerte in concept staat daarna op **Verstuurd**; een
+aanvaarde, verloren of vervallen offerte houdt haar status.
+
+Een paar dingen om te weten:
+
+- De mail draagt de **bewaarde** offerte, net als het afdrukvoorbeeld. Bewaar dus eerst wat u wijzigde.
+- Mailen kan enkel op de **actuele versie**. Een oudere versie heeft geen knop **Mailen…**.
+- Toont de offerte haar totalen niet op de afdruk, dan noemt de mail het totaal ook niet.
+- Ook in het **Afdrukvoorbeeld** staat een knop om de offerte door te sturen per mail.
+
+### Een herinnering
+
+Zolang de offerte op **Verstuurd** staat, mailt **Herinnering mailen…** ze opnieuw, met de herinneringstekst uit
+[Mailteksten](beheer/mailteksten.md) en de PDF erbij. Een herinnering verandert niets aan de offerte: de status en de
+opvolgdatum blijven. Wilt u later opnieuw opvolgen, pas dan zelf de opvolgdatum aan.
+
+Op een verstuurde offerte staat daarom **Herinnering mailen…** in de plaats van **Mailen…**. Wilt u de offerte zelf opnieuw
+mailen, gebruik dan **Doorsturen per mail** in het **Afdrukvoorbeeld**; CleanOps vraagt eerst of u ze opnieuw wilt mailen.
+
+### Het tabblad Mails
+
+Rechts bovenaan toont **Mails** wat er over deze versie van de offerte gemaild werd: wanneer, aan wie, of de mail
+afgeleverd is, de tekst zoals ze vertrok (**Tekst tonen**) en de PDF die meeging.
+
+![Het tabblad Mails van een offerte: een mail met de status Afgeleverd, het onderwerp, Aan, de verstuurde PDF en Tekst tonen](images/offerte-mails.png "Mails")
+
 ## Bijlagen en Logboek
 
-Rechts bovenaan staan **Bijlagen** — documenten bij de offerte, zoals een plan of een foto — en **Logboek**: wie wat
+Rechts bovenaan staan ook **Bijlagen** — documenten bij de offerte, zoals een plan of een foto — en **Logboek**: wie wat
 wijzigde en wanneer.
 
 ## Veelgestelde vragen
 
-**Kan ik een offerte vanuit CleanOps mailen?**
-Nog niet. Download de PDF in het **Afdrukvoorbeeld** en voeg ze bij uw mail. Zet daarna de status op **Verstuurd**.
+**Ik zie geen knop Mailen… of Herinnering mailen….**
+U bekijkt een oudere versie, of u hebt niet het recht om offertes te bewerken. Er staat altijd één van de twee: op een
+offerte op **Verstuurd** **Herinnering mailen…**, anders **Mailen…**.
+
+**Waarom staat het totaal niet in de mail?**
+De offerte drukt haar totalen niet af (het vinkje onder **Op de afdruk**). Dan verzwijgt de mail het ook, en het venster
+zegt dat die gegevens leeg blijven.
 
 **Een tarief staat niet in de keuzelijst.**
 U ziet enkel de tarieven in de taal van de klant die niet gearchiveerd zijn. Staat er geen enkel tarief in die taal, dan
@@ -131,3 +177,4 @@ Daarvoor is het recht om werkorders te bewerken nodig.
 - [Klanten](klanten.md)
 - [Werkorders](werkorders.md)
 - [Tarieven](beheer/tarieven.md)
+- [Mailteksten](beheer/mailteksten.md)
