@@ -120,6 +120,16 @@ const SCHOTEN = [
       await p.getByRole('row').filter({ hasText: fr ? DEMO.klantAdresTelefoonFr : DEMO.klantAdresTelefoon }).first().dblclick();
       await p.waitForURL(/\/adres\/[0-9a-f-]{36}$/, { timeout: 15000 });
     } },
+  // Het memovenster op de klantfiche (07/10/2026): de memo MET herinneringsdatum (DemoDataGenerator.VerzinMemosAsync), zodat het vinkje
+  // Afgehandeld op het beeld staat. Per taal de eigen voorbeeldklant, zoals klant-fiche.
+  { naam: 'klant-memo', route: '/klanten', verwacht: tekstTaal('Memo — ', 'Mémo — '),
+    na: async (p, taal) => {
+      const fr = taal === 'fr-BE';
+      await openRij(p, fr ? DEMO.klantFr : DEMO.klant);
+      await p.getByText(/^(Memo's|Mémos) \(/).first().click();
+      await p.getByRole('row').filter({ hasText: fr ? 'Le syndic demande' : 'Vraagt een offerte' }).first().dblclick();
+      await p.waitForTimeout(500);
+    } },
   // Medewerkers (vrijgave 30/09/2026): lijst, fiche, het tabblad Verlof en het verlofvenster — uit de tien demomedewerkers
   // (DemoDataGenerator.VerzinMedewerkersAsync). ⚠️ PER TAAL EEN ANDERE MEDEWERKER, zoals bij Klanten: de verlofomschrijvingen
   // van Julien Lambert zijn Frans.
@@ -622,6 +632,14 @@ const SCHOTEN = [
       await p.locator('.adm-journaal-switch .adm-section-switch-btn').first().click();
       // ⚠️ Het keuzemenu is een DevExpress-uitklapper ELDERS in de pagina (popup-portal), niet onder de knop: zoek op de rol.
       await p.getByRole('menuitem', { name: /^\s*(Mails|E-mails)\s*$/ }).click();
+    } },
+  // Op te volgen memo's (07/10/2026): de demo heeft drie memo's die op te volgen zijn, dus de lijst opent met drie rijen en het menu
+  // draagt een 3. Het merkteken is de memo van Camping Zonnedal: die staat er enkel met een gevulde demo. De journaalstrook dicht.
+  // Een gemengde lijst, ook op het Franse beeld: de klanten schrijven elk in hun taal, zoals bij een tweetalig ruimbedrijf.
+  { naam: 'op-te-volgen-memos-lijst', route: '/op-te-volgen-memos', verwacht: /de uitbater betaalt de openstaande factuur/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
     } },
   { naam: 'openstaande-posten-gegevens', route: '/openstaande-posten', verwacht: tekstTaal('Rappelgegevens —', 'Données de rappel —'),
     na: async p => {

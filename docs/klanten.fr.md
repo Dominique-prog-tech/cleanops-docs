@@ -36,10 +36,10 @@ obligatoires. Après **Enregistrer**, la fiche du nouveau client s'ouvre, avec s
 
 En haut figurent le nom et le numéro du client, puis une rangée d'onglets. À gauche **Fiche** et
 **Adresses** — le client lui-même. À droite, ce qui est rattaché au client : **Contrats**, **Devis**,
-**Factures**, **Postes ouverts** et **Notes**, et en fin de rangée **Pièces jointes** et **Historique**.
+**Factures**, **Postes ouverts** et **Mémos**, et en fin de rangée **Pièces jointes** et **Historique**.
 
 Chaque onglet reste visible, même vide ; le nombre figure entre parenthèses dans son titre. « Devis (0) »
-signifie donc qu'il n'y a pas de devis.
+signifie donc qu'il n'y a pas de devis. Seul l'onglet **Mémos** n'est visible qu'avec le droit de voir les postes ouverts.
 
 ![La fiche de Résidence Les Tilleuls sur l'onglet Fiche, avec les onglets au-dessus et les remarques en bas](images/klant-fiche-fr.png "Fiche client")
 
@@ -106,8 +106,8 @@ communication. La communication est la référence structurée que le client men
 Pour chaque poste, vous voyez le document, la date, l'échéance, le solde ouvert et le nombre de rappels. En
 dessous figure l'**historique des rappels** : les rappels envoyés, avec la date, le document et le niveau.
 
-**Notes** — les annotations datées sur ce client, avec la date à laquelle elles ont été notées et la date à
-laquelle vous vouliez les revoir (**Rappeler le**).
+**Mémos** — ce qui a été convenu avec ce client, avec la date et éventuellement une date de rappel. Voir
+[Mémos](#memos) ci-dessous.
 
 **Pièces jointes** — les documents de ce client. **Pièce jointe** ajoute un fichier, jusqu'à 25 Mo ; pour chacune,
 vous adaptez la description ou vous la supprimez.
@@ -116,6 +116,23 @@ vous adaptez la description ou vous la supprimez.
 récent figure en haut.
 
 Chaque onglet dispose de son propre bouton d'exportation, ce qui vous permet d'exporter un élément séparément.
+
+### Mémos
+
+Dans l'onglet **Mémos**, vous notez ce qui a été convenu avec le client, par exemple sur un paiement. Cliquez sur **Nouveau mémo**,
+ou double-cliquez sur un mémo pour le modifier.
+
+![La fenêtre d'un mémo chez Résidence Les Tilleuls, avec Date, Rappeler le, la case Traité et le texte](images/klant-memo-fr.png "Un mémo")
+
+| Champ | Ce qu'il contient |
+|---|---|
+| Date | Le jour du mémo, aujourd'hui par défaut. Au plus 10 jours après aujourd'hui. |
+| Rappeler le | Le jour où vous voulez revoir le mémo. Ce jour-là, il figure dans [Mémos à suivre](op-te-volgen-memos.fr.md). Pas avant la date. |
+| Traité | Uniquement pour un mémo avec une date de rappel : ce qui devait être fait l'a-t-il été ? |
+| Texte | Ce qui a été convenu. Obligatoire. |
+
+La colonne **Statut** indique pour chaque mémo **À suivre**, **À venir** ou **Traité**. La suppression est définitive. Vous créez
+et modifiez des mémos avec le droit de gérer les rappels.
 
 ### Les boutons en bas
 

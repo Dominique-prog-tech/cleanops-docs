@@ -35,10 +35,10 @@ opent de fiche van de nieuwe klant, met de tabbladen erbij.
 
 Bovenaan staan de naam en het klantnummer, daaronder een rij tabbladen. Links **Fiche** en **Adressen** —
 dat is de klant zelf. Rechts daarvan staat wat aan de klant hangt: **Contracten**, **Offertes**, **Facturen**,
-**Openstaand** en **Notities**, en achteraan **Bijlagen** en **Logboek**.
+**Openstaand** en **Memo's**, en achteraan **Bijlagen** en **Logboek**.
 
 Elk tabblad blijft staan, ook als er niets in zit; het aantal staat tussen haakjes in de titel. "Offertes (0)"
-betekent dus dat er geen offertes zijn.
+betekent dus dat er geen offertes zijn. Enkel **Memo's** ziet u alleen met het recht om de openstaande posten te bekijken.
 
 ![De fiche van Tuincentrum De Linde op het tabblad Fiche, met de tabbladen erboven en onderaan de opmerkingen](images/klant-fiche.png "Klantfiche")
 
@@ -105,8 +105,8 @@ mededeling is de gestructureerde referentie die de klant bij zijn betaling verme
 groter is dan nul. Per post ziet u het document, de datum, de vervaldag, het openstaande bedrag en het aantal
 rappels. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document en niveau.
 
-**Notities** — de gedateerde aantekeningen bij deze klant, met de datum waarop ze genoteerd zijn en de datum
-waarop u ze wilde terugzien (**Onthoud op**).
+**Memo's** — wat er met deze klant afgesproken is, met de datum en eventueel een herinneringsdatum. Zie
+[Memo's](#memos) hieronder.
 
 **Bijlagen** — de documenten bij deze klant. Met **Bijlage** voegt u een bestand toe, tot 25 MB; per bijlage
 past u de omschrijving aan of haalt u ze weg.
@@ -115,6 +115,23 @@ past u de omschrijving aan of haalt u ze weg.
 staat bovenaan.
 
 Elk tabblad heeft een eigen exportknop, zodat u één onderdeel apart kunt uitvoeren.
+
+### Memo's
+
+Op het tabblad **Memo's** noteert u wat er met de klant afgesproken is, bijvoorbeeld over een betaling. Klik op **Nieuwe memo**,
+of dubbelklik op een memo om ze te wijzigen.
+
+![Het venster van een memo bij Tuincentrum De Linde, met Datum, Herinneren op, het vinkje Afgehandeld en de tekst](images/klant-memo.png "Een memo")
+
+| Veld | Wat erin hoort |
+|---|---|
+| Datum | De dag van de memo, standaard vandaag. Hoogstens 10 dagen na vandaag. |
+| Herinneren op | De dag waarop u de memo terug wilt zien. Die dag staat ze in [Op te volgen memo's](op-te-volgen-memos.md). Niet vóór de datum. |
+| Afgehandeld | Enkel bij een memo met een herinneringsdatum: is er gedaan wat er moest gebeuren? |
+| Tekst | Wat er afgesproken is. Verplicht. |
+
+De kolom **Status** zegt per memo **Op te volgen**, **Komend** of **Afgehandeld**. Verwijderen is definitief. Memo's maken en
+wijzigen doet u met het recht om de rappels te beheren.
 
 ### De knoppen onderaan
 

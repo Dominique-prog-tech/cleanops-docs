@@ -109,6 +109,12 @@ Vink één post aan en klik op **Rappelgegevens…**.
 Vink een of meer posten aan en klik op **Uitsluiten van rappels**: ze verdwijnen uit Vervallen en Volgende rappel, en staan
 voortaan onder **Uitgesloten**. Met **Weer opnemen** krijgen ze opnieuw rappels.
 
+## Memo's
+
+Belt u een klant op over een openstaande factuur, noteer dan meteen wat er afgesproken is. Vink een post aan en klik op
+**Memo's…**: u ziet de memo's van die klant en maakt er een met **Nieuwe memo**. Met een datum bij **Herinneren op** verschijnt
+de memo die dag in [Op te volgen memo's](op-te-volgen-memos.md). Kiest u posten van meer dan één klant, dan staat de knop uit.
+
 ## Veelgestelde vragen
 
 **Moet ik een gemailde rappel nog inboeken?**
@@ -138,4 +144,5 @@ Daarvoor is het recht *Rappels beheren* nodig. Vraag het aan uw beheerder.
 - [Facturen](facturen.md)
 - [Mailteksten](beheer/mailteksten.md)
 - [Klanten](klanten.md)
+- [Op te volgen memo's](op-te-volgen-memos.md)
 - [Bedrijfsfiche](beheer/bedrijfsfiche.md)

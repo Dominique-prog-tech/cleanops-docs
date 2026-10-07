@@ -110,6 +110,13 @@ Cochez un seul poste et cliquez sur **Données de rappel…**.
 Cochez un ou plusieurs postes et cliquez sur **Exclure des rappels** : ils disparaissent de Échus et Prochain rappel, et
 figurent désormais sous **Exclus**. Avec **Réintégrer**, ils reçoivent de nouveau des rappels.
 
+## Mémos
+
+Vous appelez un client au sujet d'une facture ouverte ? Notez tout de suite ce qui a été convenu. Cochez un poste et cliquez sur
+**Mémos…** : vous voyez les mémos de ce client et vous en créez un avec **Nouveau mémo**. Avec une date dans **Rappeler le**, le
+mémo apparaît ce jour-là dans [Mémos à suivre](op-te-volgen-memos.fr.md). Si vous choisissez des postes de plus d'un client, le
+bouton est désactivé.
+
 ## Questions fréquentes
 
 **Dois-je encore enregistrer un rappel envoyé par e-mail ?**
@@ -140,4 +147,5 @@ Il faut pour cela le droit *Gérer les rappels*. Demandez-le à votre administra
 - [Factures](facturen.fr.md)
 - [Textes d'e-mail](beheer/mailteksten.fr.md)
 - [Clients](klanten.fr.md)
+- [Mémos à suivre](op-te-volgen-memos.fr.md)
 - [Fiche entreprise](beheer/bedrijfsfiche.fr.md)
