@@ -1,7 +1,7 @@
 # Postes ouverts
 
 Postes ouverts est votre gestion des rappels : les factures et notes de crédit qui ne sont pas encore (entièrement) payées. Ici,
-vous voyez ce qui est échu, vous créez un rappel et vous suivez qui vous avez déjà relancé.
+vous voyez ce qui est échu, vous envoyez ou imprimez un rappel et vous suivez qui vous avez déjà relancé.
 
 ![La liste Postes ouverts de la démo dans la sélection Échus, avec les colonnes Téléphone, Document, Échéance, Solde ouvert, Rappels et Suivant](images/openstaande-posten-lijst-fr.png "Postes ouverts")
 
@@ -43,14 +43,38 @@ Le sélecteur de colonnes affiche aussi **Date**, **Total**, **Payé**, **Dernie
 
 Cherchez par client, commune, rue, téléphone, document ou remarque. Double-cliquez sur un poste pour ouvrir la fiche client.
 Sélectionnez un poste et ouvrez à droite le volet **Journal** pour son historique : qui a modifié quoi, et chaque rappel
-enregistré.
+enregistré. Choisissez en haut du volet **E-mails** pour ce qui a été envoyé par e-mail pour la facture de ce poste : la facture
+elle-même et les rappels, avec leur statut de remise.
 
-## Créer un rappel
+![Le volet d'un poste sur l'onglet E-mails : le rappel envoyé et la facture envoyée, chacun avec le statut Remis, l'objet, À et le PDF envoyé](images/openstaande-posten-mails-fr.png "E-mails d'un poste")
 
-Cochez le poste et cliquez sur **Créer un rappel…**. L'aperçu avant impression affiche la lettre de rappel, avec la facture
-derrière sur une nouvelle page.
+## Envoyer un rappel par e-mail
 
-![L'Aperçu avant impression d'une lettre de rappel : l'en-tête, le client, le degré, la facture, le solde ouvert et la communication, avec le bouton Télécharger](images/openstaande-posten-rappel-fr.png "Lettre de rappel")
+Cochez le poste et cliquez sur **Rappel par e-mail…**. Une fenêtre s'ouvre, déjà remplie :
+
+![La fenêtre Envoyer par e-mail pour le deuxième rappel d'un client avec À, Cc, Cci, Objet, le Message, la Pièce jointe et l'Expéditeur, avec le bouton Envoyer](images/openstaande-posten-rappel-mailen-fr.png "Rappel par e-mail")
+
+- **À** — l'adresse e-mail de rappel du client, sinon son adresse de facturation, sinon son adresse e-mail habituelle (voir
+  [Clients](klanten.fr.md)).
+- **Cc** et **Cci** — les autres adresses du client figurent comme case à cocher. Vous ajoutez une autre adresse en la tapant,
+  séparée par un point-virgule ; la copie fixe du texte d'e-mail y figure déjà.
+- **Objet** et **Message** — le texte d'e-mail du **degré** : premier, deuxième ou dernier rappel, dans la langue de la facture,
+  avec le numéro, la date, l'échéance, le solde ouvert et la communication structurée remplis. À partir du quatrième rappel, le
+  client reçoit à nouveau le texte du troisième. Vous réglez ces textes dans [Textes d'e-mail](beheer/mailteksten.fr.md) ; ici,
+  vous les adaptez pour cet e-mail seulement.
+- En bas figurent la **Pièce jointe** — la lettre de rappel avec la facture derrière, en un seul PDF — et l'**Expéditeur** (voir
+  [Expéditeurs](beheer/mailafzenders.fr.md)).
+
+Cliquez sur **Envoyer**. L'e-mail part réellement chez le client. Dès qu'il est parti, CleanOps enregistre le rappel **tout seul** :
+le nombre de rappels augmente d'un, avec la date du jour, et le rappel entre dans l'historique des rappels du client. L'historique
+indique à quelle adresse il a été envoyé. Un e-mail qui ne part pas n'enregistre rien.
+
+## Imprimer un rappel
+
+Cochez le poste et cliquez sur **Imprimer un rappel…**. L'aperçu avant impression affiche la lettre de rappel, avec la facture
+derrière sur une nouvelle page. C'est le même PDF que celui qui part avec **Rappel par e-mail…**.
+
+![L'Aperçu avant impression d'une lettre de rappel : l'en-tête, le client, le degré, la facture, le solde ouvert et la communication, avec les boutons Envoyer par courriel et Télécharger](images/openstaande-posten-rappel-fr.png "Lettre de rappel")
 
 - Le **degré** suit le nombre de rappels envoyés : **Rappel**, **Deuxième rappel**, et à partir du troisième **Dernier
   rappel**.
@@ -58,12 +82,15 @@ derrière sur une nouvelle page.
   facture.
 - La lettre est dans la langue de la facture.
 
-Cliquez sur **Télécharger** pour enregistrer le PDF et le joindre à votre e-mail. Fermez ensuite l'aperçu : CleanOps demande
-**Enregistrer le rappel ?**. Cliquez sur **Enregistrer le rappel** : le nombre de rappels augmente d'un, avec la date du jour,
-et le rappel entre dans l'historique des rappels du client. Cliquez sur **Annuler** si vous vouliez seulement regarder.
+Cliquez sur **Télécharger** pour enregistrer le PDF, ou imprimez-le. Si vous voulez quand même l'envoyer par e-mail, cliquez sur
+**Envoyer par courriel** : la fenêtre de **Rappel par e-mail…** s'ouvre, et ce rappel s'enregistre tout seul.
 
-Pas de rappel pour une note de crédit, un poste exclu, ou un client dont la case **Reçoit des rappels** est décochée. Le bouton
-est alors désactivé et indique pourquoi.
+Si vous fermez l'aperçu sans l'envoyer, CleanOps demande **Enregistrer le rappel ?**. Cliquez sur **Enregistrer le rappel** si
+vous imprimez la lettre ou l'envoyez vous-même : le nombre de rappels augmente d'un, avec la date du jour, et le rappel entre dans
+l'historique des rappels. Cliquez sur **Annuler** si vous vouliez seulement regarder.
+
+Pas de rappel pour une note de crédit, un poste exclu, ou un client dont la case **Reçoit des rappels** est décochée. Les boutons
+sont alors désactivés et indiquent pourquoi.
 
 ## Données de rappel
 
@@ -85,8 +112,18 @@ figurent désormais sous **Exclus**. Avec **Réintégrer**, ils reçoivent de no
 
 ## Questions fréquentes
 
-**Puis-je envoyer un rappel par e-mail depuis CleanOps ?**
-Pas encore. Téléchargez le PDF dans l'aperçu avant impression et joignez-le à votre e-mail.
+**Dois-je encore enregistrer un rappel envoyé par e-mail ?**
+Non. Un rappel envoyé avec **Rappel par e-mail…** ou **Envoyer par courriel** s'enregistre tout seul. Seul un rappel imprimé ou
+envoyé par vous-même s'enregistre à la fermeture de l'aperçu avant impression.
+
+**Mon rappel est-il arrivé ?**
+Sélectionnez le poste et choisissez dans le volet **Journal** l'onglet **E-mails**, ou ouvrez la facture et cliquez sur
+**E-mails**. Un e-mail qui n'a pas atteint le client porte le statut **Rejeté** ou **Indésirable**. Vérifiez alors l'adresse du
+client et renvoyez l'e-mail.
+
+**Quelqu'un d'autre vient d'enregistrer un rappel pendant que ma fenêtre était ouverte.**
+CleanOps refuse alors l'e-mail : le texte et la lettre correspondaient au degré précédent. Fermez la fenêtre et cliquez à nouveau
+sur **Rappel par e-mail…**.
 
 **Puis-je saisir un paiement ?**
 Oui : sélectionnez le poste et cliquez sur **Saisir un paiement…**. Voir [Paiements](betalingen.fr.md).
@@ -94,12 +131,13 @@ Oui : sélectionnez le poste et cliquez sur **Saisir un paiement…**. Voir [Pai
 **Où vois-je les rappels qu'un client a déjà reçus ?**
 Sur la [fiche client](klanten.fr.md), onglet **Postes ouverts** : l'historique des rappels s'y trouve.
 
-**Je ne vois pas le bouton Créer un rappel.**
+**Je ne vois pas les boutons Rappel par e-mail et Imprimer un rappel.**
 Il faut pour cela le droit *Gérer les rappels*. Demandez-le à votre administrateur.
 
 ## Voir aussi
 
 - [Paiements](betalingen.fr.md)
 - [Factures](facturen.fr.md)
+- [Textes d'e-mail](beheer/mailteksten.fr.md)
 - [Clients](klanten.fr.md)
 - [Fiche entreprise](beheer/bedrijfsfiche.fr.md)

@@ -5,9 +5,15 @@ document, en néerlandais et en français.
 
 ![La liste Textes d'e-mail avec les colonnes Type, Objet, Nederlands, Français et Expéditeur, avec par langue texte standard ou texte propre](../images/mailteksten-lijst-fr.png "Textes d'e-mail")
 
-CleanOps utilise les textes **Facture** et **Note de crédit** lorsque vous envoyez une facture avec
-**Envoyer par e-mail…** sur la facture (voir [Factures](../facturen.fr.md)). Les autres types ne sont pas encore
-envoyés par e-mail.
+CleanOps utilise les textes lorsque vous envoyez par e-mail :
+
+- **Facture** et **Note de crédit** — avec **Envoyer par e-mail…** sur la facture (voir [Factures](../facturen.fr.md)) ;
+- **Devis** et **Rappel de devis** — avec **Envoyer par e-mail…** et **Envoyer un rappel…** sur le devis (voir
+  [Devis](../offertes.fr.md)) ;
+- **Premier rappel**, **Deuxième rappel** et **Dernier rappel** — avec **Rappel par e-mail…** dans Postes ouverts, selon le
+  degré du rappel (voir [Postes ouverts](../openstaande-posten.fr.md)).
+
+Le texte **Attestation** n'est pas encore envoyé par e-mail.
 
 ## Ouvrir l'écran
 

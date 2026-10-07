@@ -132,10 +132,11 @@ impression**, **Envoyer par courriel** envoie la même facture via la même fen�
 
 ### L'onglet E-mails
 
-En haut à droite, **E-mails** montre ce qui a été envoyé par e-mail pour cette facture : quand, à qui, si l'e-mail a été
-délivré, le texte tel qu'il est parti (**Afficher le texte**) et le PDF joint.
+En haut à droite, **E-mails** montre ce qui a été envoyé par e-mail pour cette facture, rappels compris (voir
+[Postes ouverts](openstaande-posten.fr.md)) : quand, à qui, si l'e-mail a été délivré, le texte tel qu'il est parti
+(**Afficher le texte**) et le PDF joint.
 
-![L'onglet E-mails d'une facture : un e-mail avec le statut Remis, l'objet, À et Cc, le PDF envoyé et Afficher le texte](images/factuur-mails-fr.png "E-mails")
+![L'onglet E-mails d'une facture : le rappel envoyé et la facture envoyée, chacun avec le statut Remis, l'objet, À et Cc, le PDF envoyé et Afficher le texte](images/factuur-mails-fr.png "E-mails")
 
 Un e-mail qui n'a pas atteint le client porte le statut **Rejeté** ou **Indésirable**. Vérifiez alors l'adresse du client et renvoyez
 l'e-mail.

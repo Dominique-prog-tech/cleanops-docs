@@ -5,8 +5,14 @@ document, in het Nederlands en het Frans.
 
 ![De lijst Mailteksten met de kolommen Soort, Onderwerp, Nederlands, Français en Afzender, met per taal standaardtekst of eigen tekst](../images/mailteksten-lijst.png "Mailteksten")
 
-CleanOps gebruikt de teksten **Factuur** en **Creditnota** wanneer u een factuur mailt met **Mailen…** op de
-factuur (zie [Facturen](../facturen.md)). De andere soorten worden nog niet gemaild.
+CleanOps gebruikt de teksten wanneer u mailt:
+
+- **Factuur** en **Creditnota** — met **Mailen…** op de factuur (zie [Facturen](../facturen.md));
+- **Offerte** en **Offerteherinnering** — met **Mailen…** en **Herinnering mailen…** op de offerte (zie [Offertes](../offertes.md));
+- **Eerste**, **Tweede** en **Derde herinnering** — met **Rappel mailen…** op Openstaande posten, volgens de graad van de rappel
+  (zie [Openstaande posten](../openstaande-posten.md)).
+
+De tekst **Attest** wordt nog niet gemaild.
 
 ## Het scherm openen
 

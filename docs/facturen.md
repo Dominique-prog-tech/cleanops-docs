@@ -125,10 +125,11 @@ Een factuur die al verstuurd is, kunt u opnieuw mailen; CleanOps vraagt eerst of
 
 ### Het tabblad Mails
 
-Rechts bovenaan toont **Mails** wat er over deze factuur gemaild werd: wanneer, aan wie, of de mail afgeleverd is, de tekst
-zoals ze vertrok (**Tekst tonen**) en de PDF die meeging.
+Rechts bovenaan toont **Mails** wat er over deze factuur gemaild werd, ook de rappels (zie
+[Openstaande posten](openstaande-posten.md)): wanneer, aan wie, of de mail afgeleverd is, de tekst zoals ze vertrok
+(**Tekst tonen**) en de PDF die meeging.
 
-![Het tabblad Mails van een factuur: een mail met de status Afgeleverd, het onderwerp, Aan en Cc, de verstuurde PDF en Tekst tonen](images/factuur-mails.png "Mails")
+![Het tabblad Mails van een factuur: de gemailde rappel en de gemailde factuur, elk met de status Afgeleverd, het onderwerp, Aan en Cc, de verstuurde PDF en Tekst tonen](images/factuur-mails.png "Mails")
 
 Een mail die de klant niet bereikte, staat op **Geweigerd** of **Spam**. Kijk dan het adres van de klant na en mail opnieuw.
 

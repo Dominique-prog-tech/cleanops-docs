@@ -551,6 +551,8 @@ const SCHOTEN = [
   // (DemoDataGenerator.VerzinFacturenAsync), dus de volgende is graad 2. ⚠️ Het merkteken is de klantnaam EXACT (^…$): de verborgen
   // journaalstrook draagt "VERK 20260001 · Camping Zonnedal" in haar titel (zie facturen-lijst). ⚠️ Vul de demo opnieuw vóór deze
   // beelden: wie een rappel inboekte, verandert de graad op de brief. Het rappel-recept boekt NIETS in (het sluit het voorbeeld niet).
+// Sinds laag 5 (07/10/2026) is die eerste rappel GEMAILD (DemoDataGenerator.VerzinRappelMailAsync): het tabblad Mails van de post toont
+// de factuurmail en de rappel. Het mail-recept klikt NOOIT op Versturen.
   { naam: 'openstaande-posten-lijst', route: '/openstaande-posten', verwacht: /^Camping Zonnedal$/,
     na: async p => {
       const dicht = p.locator('.adm-detail-drawer__btn').first();
@@ -561,12 +563,34 @@ const SCHOTEN = [
       const rij = p.getByRole('row').filter({ hasText: 'CAMPING ZONNEDAL' }).first();
       await rij.waitFor({ timeout: 15000 });
       await rij.locator('input[type=checkbox], .dxbl-checkbox').first().click();
-      await p.getByRole('button', { name: /^(Rappel aanmaken…|Créer un rappel…)$/ }).click();
+      await p.getByRole('button', { name: /^(Rappel afdrukken…|Imprimer un rappel…)$/ }).click();
       await p.waitForFunction(() => {
         const img = document.querySelector('img.dxbrv-report-preview-content-img');
         return img && img.complete && img.naturalWidth > 0;
       }, null, { timeout: 30000 });
       await p.waitForTimeout(800);
+    } },
+  { naam: 'openstaande-posten-rappel-mailen', route: '/openstaande-posten', verwacht: tekstTaal('Bijlage: herinnering-', 'Pièce jointe : herinnering-'),
+    na: async p => {
+      const rij = p.getByRole('row').filter({ hasText: 'CAMPING ZONNEDAL' }).first();
+      await rij.waitFor({ timeout: 15000 });
+      await rij.locator('input[type=checkbox], .dxbl-checkbox').first().click();
+      await p.getByRole('button', { name: /^(Rappel mailen…|Rappel par e-mail…)$/ }).click();
+      await p.locator('#mailvenster-editor .dxbl-html-editor, #mailvenster-editor [contenteditable]').first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(800);
+    } },
+  // ⚠️ De journaalstrook OPEN (de lijst-recepten sluiten ze) en op het tabblad Mails — dat staat NA het logboek (PostMailsJournaalTab), dus
+  // de strook opent op Logboek en het recept kiest Mails in het keuzemenu bovenaan.
+  { naam: 'openstaande-posten-mails', route: '/openstaande-posten', verwacht: tekstTaal('Afgeleverd', 'Remis'),
+    na: async p => {
+      const rij = p.getByRole('row').filter({ hasText: 'CAMPING ZONNEDAL' }).first();
+      await rij.waitFor({ timeout: 15000 });
+      await rij.locator('td').nth(3).click();
+      const rail = p.locator('.adm-detail-drawer__rail').first();
+      if (await rail.isVisible()) await rail.click();
+      await p.locator('.adm-journaal-switch .adm-section-switch-btn').first().click();
+      // ⚠️ Het keuzemenu is een DevExpress-uitklapper ELDERS in de pagina (popup-portal), niet onder de knop: zoek op de rol.
+      await p.getByRole('menuitem', { name: /^\s*(Mails|E-mails)\s*$/ }).click();
     } },
   { naam: 'openstaande-posten-gegevens', route: '/openstaande-posten', verwacht: tekstTaal('Rappelgegevens —', 'Données de rappel —'),
     na: async p => {
