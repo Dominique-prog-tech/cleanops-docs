@@ -71,7 +71,7 @@ Draagt een lijn 6 % btw, dan komt de attestzin vanzelf onder de slottekst.
 Bovenaan staan de klant, de datums, de betalingstermijn, de mededeling, de klantreferentie en de bedragen. Daaronder de
 **koptekst** als die er is, de **lijnen**, de **btw-opbouw** en ernaast de **betalingen** die erop kwamen (zie [Betalingen](betalingen.md)): elk raster
 scrolt apart. Onderaan staat de **slottekst**,
-bijvoorbeeld de 6 %-attestzin. Rechts bovenaan vindt u **Bijlagen** en **Logboek**. Bij een lijn uit een werkorder staat het
+bijvoorbeeld de 6 %-attestzin. Rechts bovenaan vindt u **Bijlagen**, **Mails** en **Logboek**. Bij een lijn uit een werkorder staat het
 werkordernummer; een vrije lijn heeft er geen.
 
 Een creditnota zegt welke factuur ze tegenboekt, en een gecrediteerde factuur door welke creditnota; beide zijn een link.
@@ -95,6 +95,42 @@ Op de factuur staan:
 - de koptekst, de lijnen, de btw per percentage en de totalen;
 - op een factuur de vraag om te betalen met de gestructureerde mededeling — niet op een creditnota;
 - de slottekst en de wettelijke vermeldingen: bij 6 % de attestzin, bij 0 % de verlegging naar de medecontractant.
+
+### Mailen
+
+**Mailen…** stuurt de factuur met de PDF als bijlage naar de klant. Een venster opent met alles al ingevuld:
+
+![Het venster Mailen voor een factuur van Camping Zonnedal met Aan, een vinkje voor het tweede adres onder Cc, Bcc, Onderwerp, het Bericht, de Bijlage en de Afzender, met de knop Versturen](images/factuur-mailen.png "Mailen")
+
+- **Aan** — het e-mailadres voor facturen van de klant, anders zijn gewone e-mailadres (zie [Klanten](klanten.md)).
+- **Cc** — de andere adressen van de klant staan er als vinkje. Daaronder vult u nog andere adressen in, gescheiden door een
+  puntkomma; de vaste kopie uit de mailtekst staat er al.
+- **Bcc** — een onzichtbare kopie, bijvoorbeeld voor uw eigen archief.
+- **Onderwerp** en **Bericht** — de mailtekst voor een factuur of creditnota, in de taal van de factuur, met het nummer, het
+  bedrag, de vervaldag en de gestructureerde mededeling ingevuld. U stelt die tekst in bij [Mailteksten](beheer/mailteksten.md);
+  hier past u ze aan voor deze ene mail.
+- Onderaan staan de **Bijlage** (de factuur als PDF) en de **Afzender** (zie [Mailafzenders](beheer/mailafzenders.md)).
+
+Klik op **Versturen**. De mail vertrekt echt naar de klant. Daarna staat de factuur op verstuurd, met *mail*, en kan ze niet
+meer heropend worden.
+
+Heeft de klant geen e-mailadres, dan zegt het venster dat: vul zelf een adres in. Blijft een gegeven leeg voor deze factuur,
+bijvoorbeeld de vervaldag van een oude factuur, dan noemt het venster welk. Kijk die zin dan na vóór u verstuurt.
+
+Een factuur die al verstuurd is, kunt u opnieuw mailen; CleanOps vraagt eerst of u dat wilt. In het **Afdrukvoorbeeld** stuurt
+**Doorsturen per mail** dezelfde factuur door via hetzelfde venster.
+
+!!! tip "Facturen per e-mail"
+    Staat bij de klant **Facturen per e-mail** aangevinkt en is de factuur nog niet verstuurd, dan is **Mailen…** de blauwe knop.
+
+### Het tabblad Mails
+
+Rechts bovenaan toont **Mails** wat er over deze factuur gemaild werd: wanneer, aan wie, of de mail afgeleverd is, de tekst
+zoals ze vertrok (**Tekst tonen**) en de PDF die meeging.
+
+![Het tabblad Mails van een factuur: een mail met de status Afgeleverd, het onderwerp, Aan en Cc, de verstuurde PDF en Tekst tonen](images/factuur-mails.png "Mails")
+
+Een mail die de klant niet bereikte, staat op **Geweigerd** of **Spam**. Kijk dan het adres van de klant na en mail opnieuw.
 
 ### Verstuurd per post
 
@@ -155,9 +191,11 @@ Een factuur die al gecrediteerd is, kan niet nog eens gecrediteerd worden.
 
 ## Veelgestelde vragen
 
-**Kan ik een factuur mailen of via Peppol versturen?**
-Nog niet. Download de PDF in het **Afdrukvoorbeeld** en voeg ze bij uw mail. Klik daarna op **Verstuurd per post** als u wilt dat
-de factuur als verstuurd geldt.
+**Kan ik een factuur via Peppol versturen?**
+Nog niet. Mail de factuur met **Mailen…**, of druk ze af en klik op **Verstuurd per post**.
+
+**De mail vertrok van een adres van ADM One en niet van ons eigen adres.**
+Het afzenderadres is niet aanvaard bij ADM One, of er is geen afzender gekozen. Zie [Mailafzenders](beheer/mailafzenders.md).
 
 **Ik zie Heropenen… niet bij een factuur.**
 De factuur is verstuurd, gecrediteerd, betaald of gerappelleerd, of het is een voorschot-, saldo- of creditnota. Crediteer de
@@ -178,5 +216,6 @@ creditnota het jaar met 9001 (20269001).
 - [Facturatie](facturatie.md)
 - [Openstaande posten](openstaande-posten.md)
 - [Klanten](klanten.md)
+- [Mailteksten](beheer/mailteksten.md)
 - [Factuurteksten](beheer/factuurteksten.md)
 - [Bedrijfsfiche](beheer/bedrijfsfiche.md)

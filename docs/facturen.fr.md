@@ -75,7 +75,7 @@ En haut figurent le client, les dates, le délai de paiement, la communication, 
 dessous, le **Texte d'en-tête** s'il y en a un, les **Lignes**, la **Ventilation de la TVA** et à côté les **Paiements** reçus (voir [Paiements](betalingen.fr.md)) : chaque
 grille défile séparément.
 En bas figure le **Texte de pied de page**, par exemple la phrase d'attestation à 6 %. En haut à droite se trouvent les **Pièces
-jointes** et l'**Historique**. Une ligne provenant d'un ordre de travail en porte le numéro ; une ligne libre n'en a pas.
+jointes**, les **E-mails** et l'**Historique**. Une ligne provenant d'un ordre de travail en porte le numéro ; une ligne libre n'en a pas.
 
 Une note de crédit indique quelle facture elle contre-passe, et une facture créditée par quelle note de crédit ; les deux sont
 un lien.
@@ -101,6 +101,44 @@ Sur la facture figurent :
 - sur une facture, la demande de paiement avec la communication structurée — pas sur une note de crédit ;
 - le texte de pied de page et les mentions légales : à 6 %, la phrase d'attestation ; à 0 %, l'autoliquidation par le
   cocontractant.
+
+### Envoyer par e-mail
+
+**Envoyer par e-mail…** envoie la facture au client avec le PDF en pièce jointe. Une fenêtre s'ouvre, déjà remplie :
+
+![La fenêtre Envoyer par e-mail pour une facture de Dubois Marie avec À, Cc, Cci, Objet, le Message, la Pièce jointe et l'Expéditeur, avec le bouton Envoyer](images/factuur-mailen-fr.png "Envoyer par e-mail")
+
+- **À** — l'adresse e-mail de facturation du client, sinon son adresse e-mail habituelle (voir [Clients](klanten.fr.md)).
+- **Cc** — les autres adresses du client figurent comme case à cocher. En dessous, vous ajoutez d'autres adresses, séparées par
+  un point-virgule ; la copie fixe du texte d'e-mail y figure déjà.
+- **Cci** — une copie invisible, par exemple pour votre propre archive.
+- **Objet** et **Message** — le texte d'e-mail pour une facture ou une note de crédit, dans la langue de la facture, avec le
+  numéro, le montant, l'échéance et la communication structurée remplis. Vous réglez ce texte dans
+  [Textes d'e-mail](beheer/mailteksten.fr.md) ; ici, vous l'adaptez pour cet e-mail seulement.
+- En bas figurent la **Pièce jointe** (la facture en PDF) et l'**Expéditeur** (voir [Expéditeurs](beheer/mailafzenders.fr.md)).
+
+Cliquez sur **Envoyer**. L'e-mail part réellement chez le client. La facture est ensuite marquée comme envoyée, avec *courriel*,
+et ne peut plus être rouverte.
+
+Si le client n'a pas d'adresse e-mail, la fenêtre l'indique : saisissez vous-même une adresse. Si une donnée reste vide pour
+cette facture, par exemple l'échéance d'une ancienne facture, la fenêtre la nomme. Vérifiez alors cette phrase avant d'envoyer.
+
+Une facture déjà envoyée peut être renvoyée ; CleanOps vous demande d'abord si vous le souhaitez. Dans l'**Aperçu avant
+impression**, **Envoyer par courriel** envoie la même facture via la même fenêtre.
+
+!!! tip "Factures par e-mail"
+    Si **Factures par e-mail** est coché pour le client et que la facture n'a pas encore été envoyée, **Envoyer par e-mail…** est
+    le bouton bleu.
+
+### L'onglet E-mails
+
+En haut à droite, **E-mails** montre ce qui a été envoyé par e-mail pour cette facture : quand, à qui, si l'e-mail a été
+délivré, le texte tel qu'il est parti (**Afficher le texte**) et le PDF joint.
+
+![L'onglet E-mails d'une facture : un e-mail avec le statut Remis, l'objet, À et Cc, le PDF envoyé et Afficher le texte](images/factuur-mails-fr.png "E-mails")
+
+Un e-mail qui n'a pas atteint le client porte le statut **Rejeté** ou **Indésirable**. Vérifiez alors l'adresse du client et renvoyez
+l'e-mail.
 
 ### Envoyé par courrier
 
@@ -163,9 +201,12 @@ Une facture déjà créditée ne peut pas l'être une seconde fois.
 
 ## Questions fréquentes
 
-**Puis-je envoyer une facture par e-mail ou via Peppol ?**
-Pas encore. Téléchargez le PDF dans l'**Aperçu avant impression** et joignez-le à votre e-mail. Cliquez ensuite sur **Envoyé par
-courrier** si vous voulez que la facture compte comme envoyée.
+**Puis-je envoyer une facture via Peppol ?**
+Pas encore. Envoyez la facture avec **Envoyer par e-mail…**, ou imprimez-la et cliquez sur **Envoyé par courrier**.
+
+**L'e-mail est parti d'une adresse d'ADM One et non de notre propre adresse.**
+L'adresse d'expéditeur n'est pas approuvée par ADM One, ou aucun expéditeur n'a été choisi. Voir
+[Expéditeurs](beheer/mailafzenders.fr.md).
 
 **Je ne vois pas Rouvrir… sur une facture.**
 La facture a été envoyée, créditée, payée ou a fait l'objet d'un rappel, ou il s'agit d'une facture d'acompte, de solde ou d'une
@@ -187,5 +228,6 @@ une note de crédit l'année suivie de 9001 (20269001).
 - [Facturation](facturatie.fr.md)
 - [Postes ouverts](openstaande-posten.fr.md)
 - [Clients](klanten.fr.md)
+- [Textes d'e-mail](beheer/mailteksten.fr.md)
 - [Textes de facture](beheer/factuurteksten.fr.md)
 - [Fiche entreprise](beheer/bedrijfsfiche.fr.md)

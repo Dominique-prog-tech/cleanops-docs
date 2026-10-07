@@ -11,7 +11,7 @@ Cliquez sur **Administration** dans le menu de gauche.
 Les écrans se présentent sous forme de tuiles, groupées par thème. Si vous passez la souris sur une tuile, une
 phrase apparaît qui précise l'usage de l'écran.
 
-![Les huit tuiles des données de base : Fiche d'entreprise, Tables de base, Codes TVA, Tarifs, Conditions de paiement, Textes de facture, Jours fériés et Véhicules](images/platformbeheer-stamgegevens-fr.png "Données de base")
+![Les quatorze tuiles des données de base : Fiche d'entreprise, Tables de base, Codes TVA, Tarifs, Unités, Journaux, Plan comptable, Numéros de documents, Conditions de paiement, Textes de facture, Textes d'e-mail, Expéditeurs, Jours fériés et Véhicules](images/platformbeheer-stamgegevens-fr.png "Données de base")
 
 **Données de base** — ce qui alimente le reste de CleanOps : une ligne de devis y choisit son tarif, une facture son
 code TVA et sa condition de paiement. Lors d'une nouvelle installation, c'est par là que vous commencez.
@@ -21,8 +21,14 @@ code TVA et sa condition de paiement. Lors d'une nouvelle installation, c'est pa
   fonctions, matériel et modes de paiement, textes standard et types de véhicule
 - [Codes TVA](beheer/btw-codes.fr.md) — les taux de TVA sur les devis et les factures
 - [Tarifs](beheer/tarieven.fr.md) — description et prix unitaire pour une ligne de devis
+- [Unités](beheer/eenheden.fr.md) — les unités sur les tarifs, ordres de travail, devis et factures : heure, pièces, m³ …
+- [Journaux](beheer/dagboeken.fr.md) — les journaux de vente, d'achat et financiers
+- [Plan comptable](beheer/rekeningplan.fr.md) — les comptes généraux sur les clients et les tarifs, pour le bureau comptable
+- [Numéros de documents](beheer/documentnummers.fr.md) — le numéro suivant par série et par exercice
 - [Conditions de paiement](beheer/betalingstermijnen.fr.md) — comment l'échéance d'une facture est calculée
 - [Textes de facture](beheer/factuurteksten.fr.md) — les textes standard au bas d'une facture
+- [Textes d'e-mail](beheer/mailteksten.fr.md) — l'objet et le texte des e-mails que CleanOps envoie
+- [Expéditeurs](beheer/mailafzenders.fr.md) — les adresses depuis lesquelles vos e-mails partent, et si ADM One les accepte
 - [Jours fériés](beheer/feestdagen.fr.md) — les jours fériés légaux et vos propres jours de fermeture
 - [Véhicules](beheer/voertuigen.fr.md) — votre parc, l'entretien et le contrôle technique
 

@@ -72,6 +72,33 @@ const SCHOTEN = [
       const strook = p.locator('.adm-detail-drawer__rail').first();
       if (await strook.isVisible()) await strook.click();
     } },
+  // Mailteksten en Mailafzenders (mailpakket, vrijgave 07/10/2026). De demo heeft GEEN eigen tekst (standaardteksten, wat een nieuwe klant
+  // ziet) maar wel een afzender op Factuur en Creditnota: die naam in de kolom Afzender is het merkteken dat de demo gevuld is.
+  { naam: 'mailteksten-lijst', route: '/beheer/mailteksten', verwacht: /Ruimdienst Demo facturatie/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+    } },
+  // De fiche van Factuur, op het tabblad van de taal van het scherm (NL: Nederlands staat al open; FR: Français aanklikken).
+  // ⚠️ Beide taaltabbladen staan in de DOM, en in de Franse ronde draagt het VERBORGEN tabblad Nederlands dezelfde badge "Texte standard
+  // de CleanOps" — eerst in de DOM, dus het merkteken van de hoofdlus (eerste treffer, zichtbaar) faalde (07/10/2026). Daarom wacht het
+  // recept zelf op een ZICHTBARE badge, en is het merkteken de terugknop, die maar één keer op het scherm staat.
+  { naam: 'mailtekst-fiche', route: '/beheer/mailteksten/invoice', verwacht: tekstTaal('← Mailteksten', "← Textes d'e-mail"),
+    na: async (p, taal) => {
+      if (taal.startsWith('fr')) await p.getByText(/^Français$/).first().click();
+      await wachtOpZichtbaar(p, tekstTaal('Standaardtekst van CleanOps', 'Texte standard de CleanOps'));
+      await p.waitForTimeout(800);
+    } },
+  // ⚠️ De kolom ADM One vult zich NA het tonen (de hub wordt nagevraagd): wachten tot "wordt nagevraagd…" weg is. De demo-afzender draagt
+  // een verzonnen domein, dus ADM One zegt "niet aanvaard" — en de melding boven de lijst legt uit wat dat betekent.
+  // ⚠️ Merkteken = die status, NIET het adres: de verborgen journaalstrook draagt het adres van de eerste rij in haar titel, en die kwam
+  // eerst (07/10/2026, zelfde val als facturen-lijst). De status bewijst bovendien dat ADM One geantwoord heeft.
+  { naam: 'mailafzenders-lijst', route: '/beheer/mailafzenders', verwacht: tekstTaal('niet aanvaard', 'non approuvée'),
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+      await p.waitForFunction(() => !/wordt nagevraagd…|vérification…/.test(document.querySelector('main')?.innerText ?? ''), null, { timeout: 15000 });
+    } },
   // Klanten (vrijgave 30/09/2026): lijst, fiche en een uitvoeringsadres — uit de tien demoklanten
   // (DemoDataGenerator.VerzinKlantenAsync). Het merkteken van de lijst is het LABEL "geblokkeerd": dat staat enkel naast
   // Garage Demo & Zonen, dus het bewijst dat de demo gevuld is en de lijst hertekend.
@@ -446,11 +473,33 @@ const SCHOTEN = [
       await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001');
       await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
       await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu avant impression)$/ }).first().click();
+      // ⚠️ Sinds de mailvrijgave (07/10/2026) is 20260001 in de demo GEMAILD: dan vraagt de fiche eerst "Al verstuurd — toch openen?".
+      await bevestigIndienGevraagd(p, /^(Openen|Ouvrir)$/);
       await p.waitForFunction(() => {
         const img = document.querySelector('img.dxbrv-report-preview-content-img');
         return img && img.complete && img.naturalWidth > 0;
       }, null, { timeout: 30000 });
       await p.waitForTimeout(800);
+    } },
+  // Mailen (mailpakket, vrijgave 07/10/2026). NL: factuur 20260001 van Camping Zonnedal — de demo gaf die klant een FACTURATIEadres,
+  // dus het venster toont Aan = facturatie en het hoofdadres als cc-vinkje; ze is al gemaild, dus eerst de vraag "Al verstuurd". FR:
+  // 20260002 van Dubois Marie (Franse tekst, nog niet verstuurd). ⚠️ Het recept klikt NOOIT op Versturen.
+  { naam: 'factuur-mailen', route: '/facturen', verwacht: tekstTaal('Bijlage: factuur-', 'Pièce jointe : facture-'),
+    na: async (p, taal) => {
+      await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001');
+      await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('button', { name: /^(Mailen…|Envoyer par e-mail…)$/ }).first().click();
+      await bevestigIndienGevraagd(p, /^(Mailen|Envoyer par e-mail)$/);
+      await p.locator('#mailvenster-editor .dxbl-html-editor, #mailvenster-editor [contenteditable]').first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(800);
+    } },
+  // Het tabblad Mails: de mail die de demo voor 20260001 in het logboek zette (afgeleverd, met de PDF). In beide talen dezelfde factuur —
+  // de enige gemailde. Merkteken = de status, die staat er pas als het tabblad zijn lijst toont.
+  { naam: 'factuur-mails', route: '/facturen', verwacht: tekstTaal('Afgeleverd', 'Remis'),
+    na: async p => {
+      await openRij(p, '20260001');
+      await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByText(/^(Mails|E-mails)$/).first().click();
     } },
   // Nieuwe factuur (B2, 03/10/2026): klant kiezen zoals bij een nieuwe offerte, dan het venster met twee vrije lijnen.
   // Per taal een klant in die taal (de tarieven en factuurteksten volgen de klant). ⚠️ Het recept klikt NOOIT op "Factuur boeken".
@@ -770,6 +819,24 @@ async function vulLijn(p, tabel, rij, { oms, aantal, eenheid, prijs, btw }) {
 async function verwerk(p, leverancier) {
   await p.getByRole('row').filter({ hasText: leverancier }).first().getByText(tekstTaal('^Verwerken$', '^Traiter$')).click();
   await p.waitForURL(/\/aankoopfacturen\/nieuw\?peppol=/, { timeout: 15000 });
+}
+
+// Wacht tot MINSTENS ÉÉN element met deze tekst zichtbaar is — voor een scherm waar dezelfde tekst ook in een verborgen deel staat (een
+// tabblad dat niet open is), zodat ".first()" het onzichtbare kan nemen. Gooit na 15 s: het recept faalt dan, en dat hoort zo.
+async function wachtOpZichtbaar(p, tekst) {
+  const kandidaten = p.getByText(tekst);
+  for (let i = 0; i < 30; i++) {
+    for (const el of await kandidaten.all()) if (await el.isVisible()) return;
+    await p.waitForTimeout(500);
+  }
+  throw new Error(`geen zichtbaar element met ${tekst}`);
+}
+
+// Een bevestigingsvraag (DevExpress-dialoog) beantwoorden ALS ze er staat — met de knop die de handeling doorzet. Staat er geen vraag,
+// dan gebeurt er niets: de vraag komt enkel bij een document dat al verstuurd is.
+async function bevestigIndienGevraagd(p, knop) {
+  const ja = p.locator('.dxbl-modal:not(.dxbl-popup-hidden), .dx-overlay-content').getByRole('button', { name: knop }).first();
+  try { await ja.waitFor({ state: 'visible', timeout: 2500 }); await ja.click(); } catch { /* geen vraag */ }
 }
 
 async function openRij(p, tekst) {

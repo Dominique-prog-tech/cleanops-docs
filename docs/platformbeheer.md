@@ -11,7 +11,7 @@ Klik links in het menu op **Platformbeheer**.
 De schermen staan als tegels, gegroepeerd per onderwerp. Gaat u met de muis over een tegel, dan verschijnt een
 zin die zegt waarvoor het scherm dient.
 
-![De acht tegels voor de stamgegevens: Bedrijfsfiche, Basistabellen, Btw-codes, Tarieven, Betalingstermijnen, Factuurteksten, Feestdagen en Voertuigen](images/platformbeheer-stamgegevens.png "Stamgegevens")
+![De veertien tegels voor de stamgegevens: Bedrijfsfiche, Basistabellen, Btw-codes, Tarieven, Eenheden, Dagboeken, Rekeningplan, Documentnummers, Betalingstermijnen, Factuurteksten, Mailteksten, Mailafzenders, Feestdagen en Voertuigen](images/platformbeheer-stamgegevens.png "Stamgegevens")
 
 **Stamgegevens** — wat de rest van CleanOps voedt: een offertelijn kiest hier haar tarief, een factuur haar
 btw-code en betalingstermijn. Bij een nieuwe inrichting begint u hier.
@@ -21,8 +21,14 @@ btw-code en betalingstermijn. Bij een nieuwe inrichting begint u hier.
   materialen en betaalwijzen, standaardteksten en soorten voertuig
 - [Btw-codes](beheer/btw-codes.md) — de btw-tarieven op offertes en facturen
 - [Tarieven](beheer/tarieven.md) — omschrijving en eenheidsprijs voor een offertelijn
+- [Eenheden](beheer/eenheden.md) — de eenheden op tarieven, werkorders, offertes en facturen: uur, stuks, m³ …
+- [Dagboeken](beheer/dagboeken.md) — de verkoop-, aankoop- en financiële dagboeken
+- [Rekeningplan](beheer/rekeningplan.md) — de algemene rekeningen op klanten en tarieven, voor het boekhoudkantoor
+- [Documentnummers](beheer/documentnummers.md) — het volgende documentnummer per reeks en per boekjaar
 - [Betalingstermijnen](beheer/betalingstermijnen.md) — hoe de vervaldag van een factuur berekend wordt
 - [Factuurteksten](beheer/factuurteksten.md) — de standaardteksten onderaan een factuur
+- [Mailteksten](beheer/mailteksten.md) — het onderwerp en de tekst van de mails die CleanOps verstuurt
+- [Mailafzenders](beheer/mailafzenders.md) — de adressen waarvan uw mails vertrekken, en of ADM One ze aanvaardt
 - [Feestdagen](beheer/feestdagen.md) — de wettelijke feestdagen en uw eigen sluitingsdagen
 - [Voertuigen](beheer/voertuigen.md) — uw vloot, het onderhoud en de keuring
 

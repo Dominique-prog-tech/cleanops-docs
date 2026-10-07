@@ -149,6 +149,8 @@ plugins:
             Toegang: Accès
             Historiek: Historique
             Factuurteksten: Textes de facture
+            Mailteksten: Textes d'e-mail
+            Mailafzenders: Expéditeurs
             Klanten: Clients
             Leveranciers: Fournisseurs
             Aankoop: Achats
@@ -274,6 +276,8 @@ nav:
       - Documentnummers: beheer/documentnummers.md
       - Betalingstermijnen: beheer/betalingstermijnen.md
       - Factuurteksten: beheer/factuurteksten.md
+      - Mailteksten: beheer/mailteksten.md
+      - Mailafzenders: beheer/mailafzenders.md
       - Feestdagen: beheer/feestdagen.md
       - Voertuigen: beheer/voertuigen.md
     - Toegang:
