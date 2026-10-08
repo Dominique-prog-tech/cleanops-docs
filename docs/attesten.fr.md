@@ -15,7 +15,7 @@ sur sa fiche, dans l'onglet **Attestations** (voir [Ordres de travail](werkorder
 
 En haut figurent les ordres de travail qui demandent une attestation (la case **Attestation requise** sur l'ordre de
 travail) ou qui en ont déjà une. Cliquez sur un ordre de travail : en dessous apparaissent les **Attestations de l'ordre
-de travail**. Double-cliquez sur un ordre de travail pour ouvrir sa fiche.
+de travail**. Double-cliquez sur un ordre de travail pour ouvrir sa fiche ; **← Attestations** vous ramène à cette liste, avec vos filtres.
 
 | Filtre | Ce qu'il fait |
 |---|---|

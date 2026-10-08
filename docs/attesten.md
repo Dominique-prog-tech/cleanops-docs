@@ -15,7 +15,7 @@ tabblad **Attesten** (zie [Werkorders](werkorders.md)).
 
 Bovenaan staan de werkorders die een attest vragen (het vinkje **Attest vereist** op de werkorder) of er al een hebben.
 Klik een werkorder aan: daaronder verschijnen **Attesten van werkorder** met zijn attesten. Dubbelklik op een werkorder om
-de werkorderfiche te openen.
+de werkorderfiche te openen; **← Attesten** brengt u terug naar deze lijst, met uw filters.
 
 | Filter | Wat het doet |
 |---|---|

@@ -77,6 +77,45 @@ numéro et le même code postal, **double** figure à côté.
 
 **Nouvelle adresse** en ajoute une ; ouvrir une ligne vous mène à l'adresse même.
 
+#### Fusionner des adresses
+
+Si deux adresses ou plus désignent le même bâtiment — **double** figure souvent à côté —, cochez-les et cliquez sur
+**Fusionner…**. La fenêtre montre pour chaque adresse le nombre de contrats, d'ordres de travail ouverts et d'ordres
+clôturés qui y sont liés. Choisissez sous **Reste** l'adresse que vous gardez ; celle à laquelle le plus est lié est
+proposée.
+
+![La fenêtre Fusionner des adresses chez Résidence Les Tilleuls : deux fois Rue des Tilleuls 14, l'adresse qui reste choisie, avec ce qui est complété et ce qui n'est pas repris](images/klant-adressen-samenvoegen-fr.png "Fusionner des adresses")
+
+En dessous figure ce qui se passe, avant que vous confirmiez :
+
+- Les contrats et ordres de travail des autres adresses passent à l'adresse qui reste. Les ordres encore à exécuter
+  reçoivent aussi son adresse ; un ordre clôturé garde l'adresse de l'époque.
+- **Complété** — un champ vide sur l'adresse qui reste reçoit la valeur d'une autre adresse : téléphone, e-mail,
+  remarques, instruction de travail, matériel ou accessibilité.
+- **Ne sera pas repris** — si l'adresse qui reste a déjà une valeur, celle-ci est gardée. La valeur de l'autre adresse
+  est indiquée, pour que vous puissiez la reprendre vous-même.
+- Si une autre adresse est sur **N'accepte plus de nouvelles commandes**, la fenêtre le signale. L'adresse qui reste ne
+  le reprend pas ; activez-le vous-même si nécessaire.
+
+**Fusionner** place les autres adresses dans la [corbeille](beheer/prullenbak.fr.md). La modification figure dans
+l'historique de chaque contrat et de chaque ordre de travail qui a reçu une autre adresse.
+
+#### Déplacer des adresses vers un autre client
+
+Si une adresse appartient à un autre client — le bâtiment a été vendu, ou elle figure chez le mauvais client —,
+cochez-la et cliquez sur **Déplacer vers un client…**. Cherchez le nouveau client par son nom ou son numéro et cliquez
+sur **choisir**. La fenêtre indique alors ce qui part et ce qui reste :
+
+- Les **contrats en cours** (aussi ceux en attente) et les **ordres de travail encore à exécuter** partent chez le
+  nouveau client. Ces ordres reçoivent la langue du nouveau client ; un numéro de téléphone repris du client actuel
+  devient celui du nouveau.
+- Les **ordres de travail clôturés** et les **contrats terminés ou archivés** restent chez le client actuel : la
+  facturation y appartient.
+- Si un ordre qui part porte un numéro de commande du client actuel, celui-ci reste en place. La fenêtre le signale,
+  pour que vous puissiez le vérifier.
+
+![La fenêtre Déplacer des adresses vers un autre client : l'adresse de Résidence Les Tilleuls part chez un autre client, avec ce qui part et ce qui reste](images/klant-adres-verplaatsen-fr.png "Déplacer des adresses")
+
 ![Une adresse d'exécution de Résidence Les Tilleuls, avec une instruction de travail, le matériel à emporter et l'accessibilité par jour](images/klant-adres-fr.png "Adresse d'exécution")
 
 Sur une adresse d'exécution, la rue, le code postal et la commune sont obligatoires. Par ailleurs :
@@ -91,6 +130,19 @@ Sur une adresse d'exécution, la rue, le code postal et la commune sont obligato
 
 **Supprimer** place l'adresse dans la [corbeille](beheer/prullenbak.fr.md). **← Client** vous ramène à l'onglet
 Adresses.
+
+#### L'onglet Ordres de travail d'une adresse
+
+Sur une adresse existante, l'onglet **Ordres de travail** figure à côté d'**Adresse** : tous les ordres de travail à
+cette adresse, du plus récent au plus ancien, avec la planification, le statut, le collaborateur et le convoyeur, les
+instructions, le matériel, la remarque interne et le numéro de facture. Vous voyez ainsi ce qui était nécessaire les
+fois précédentes. Si du travail d'un autre client est lié à cette adresse — après un déplacement, le travail clôturé
+reste chez le client précédent —, une colonne **Client** s'ajoute.
+
+Double-cliquez sur un ordre pour l'ouvrir ; **← Adresse** vous ramène à cet onglet. L'onglet est visible pour qui peut
+ouvrir les ordres de travail.
+
+![L'onglet Ordres de travail d'une adresse d'exécution de Résidence Les Tilleuls : les ordres à cette adresse, du plus récent au plus ancien, avec leurs instructions](images/klant-adres-werkorders-fr.png "Ordres de travail d'une adresse")
 
 ### Ce qui est rattaché au client
 

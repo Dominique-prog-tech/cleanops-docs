@@ -76,6 +76,44 @@ nummer en dezelfde postcode, dan staat er **dubbel** bij.
 
 Met **Nieuw adres** voegt u er één toe; een rij openen brengt u naar het adres zelf.
 
+#### Adressen samenvoegen
+
+Zijn twee of meer adressen hetzelfde pand — vaak staat er **dubbel** bij —, vink ze aan en klik **Samenvoegen…**. Het
+venster toont per adres hoeveel contracten, open werkorders en afgesloten werkorders eraan hangen. Kies bij **Blijft** het
+adres dat u houdt; voorgekozen is het adres waar het meeste aan hangt.
+
+![Het venster Adressen samenvoegen bij Tuincentrum De Linde: twee keer Kortrijksesteenweg 100, het blijvende adres gekozen, met wat er aangevuld wordt en wat niet meegaat](images/klant-adressen-samenvoegen.png "Adressen samenvoegen")
+
+Daaronder staat wat er gebeurt, vóór u bevestigt:
+
+- De contracten en werkorders van de andere adressen gaan naar het blijvende adres. Werkorders die nog moeten gebeuren,
+  krijgen ook zijn adres; een afgesloten werkorder houdt het adres van toen.
+- **Aangevuld** — een veld dat leeg is op het blijvende adres, krijgt de waarde van een ander adres: telefoon, e-mail,
+  opmerkingen, werkinstructie, materiaal of bereikbaarheid.
+- **Gaat niet mee** — heeft het blijvende adres zelf een waarde, dan blijft die. De waarde van het andere adres staat
+  erbij, zodat u ze zelf kunt overnemen.
+- Staat een ander adres op **Aanvaardt geen nieuwe opdrachten meer**, dan zegt het venster dat. Het blijvende adres
+  neemt dat niet over; zet het zelf aan als het moet.
+
+Met **Samenvoegen** gaan de andere adressen naar de [prullenbak](beheer/prullenbak.md). De wijziging staat in het
+logboek van elk contract en elke werkorder die een ander adres kreeg.
+
+#### Adressen naar een andere klant verplaatsen
+
+Hoort een adres bij een andere klant — het pand werd verkocht, of het staat bij de verkeerde klant —, vink het aan en
+klik **Verplaatsen naar klant…**. Zoek de nieuwe klant op naam of nummer en klik **kies**. Het venster zegt dan wat er
+meegaat en wat blijft:
+
+- De **lopende contracten** (ook die on hold) en de **werkorders die nog moeten gebeuren** gaan mee naar de nieuwe
+  klant. Die werkorders krijgen de taal van de nieuwe klant; een telefoonnummer dat van de huidige klant kwam, wordt dat
+  van de nieuwe.
+- **Afgesloten werkorders** en **beëindigde of gearchiveerde contracten** blijven bij de huidige klant: daar hoort de
+  facturatie.
+- Draagt een meegaande werkorder een bestelnummer van de huidige klant, dan blijft dat staan. Het venster waarschuwt
+  ervoor, zodat u het kunt nakijken.
+
+![Het venster Adressen naar een andere klant verplaatsen: het adres van Tuincentrum De Linde gaat naar een andere klant, met wat meegaat en wat blijft](images/klant-adres-verplaatsen.png "Adressen verplaatsen")
+
 ![Een uitvoeringsadres van Tuincentrum De Linde, met een werkinstructie, het mee te nemen materiaal en de bereikbaarheid per dag](images/klant-adres.png "Uitvoeringsadres")
 
 Op een uitvoeringsadres zijn straat, postcode en gemeente verplicht. Verder:
@@ -90,6 +128,18 @@ Op een uitvoeringsadres zijn straat, postcode en gemeente verplicht. Verder:
 
 **Verwijderen** legt het adres in de [prullenbak](beheer/prullenbak.md). Met **← Klant** keert u terug naar
 het tabblad Adressen.
+
+#### Het tabblad Werkorders van een adres
+
+Op een bestaand adres staat naast **Adres** het tabblad **Werkorders**: alle werkorders op dat adres, de nieuwste eerst,
+met de planning, de status, de medewerker en de bijrijder, de instructies, het materiaal, de interne opmerking en het
+factuurnummer. Zo ziet u wat er de vorige keren nodig was. Hangt er werk van een andere klant aan dit adres — na een
+verplaatsing blijft afgesloten werk bij de vorige klant —, dan staat er een kolom **Klant** bij.
+
+Dubbelklik op een werkorder om ze te openen; **← Adres** brengt u terug naar dit tabblad. Het tabblad staat er voor wie
+de werkorders mag openen.
+
+![Het tabblad Werkorders van een uitvoeringsadres van Tuincentrum De Linde: de werkorders op dat adres, de nieuwste eerst, met hun instructies](images/klant-adres-werkorders.png "Werkorders van een adres")
 
 ### Wat aan de klant hangt
 

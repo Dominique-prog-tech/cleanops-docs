@@ -120,6 +120,45 @@ const SCHOTEN = [
       await p.getByRole('row').filter({ hasText: fr ? DEMO.klantAdresTelefoonFr : DEMO.klantAdresTelefoon }).first().dblclick();
       await p.waitForURL(/\/adres\/[0-9a-f-]{36}$/, { timeout: 15000 });
     } },
+  // Adressen samenvoegen en verplaatsen, en het tabblad Werkorders van een adres (vrijgave 08/10/2026). De vensters worden enkel
+  // GEOPEND, nooit bevestigd: de beeldronde verandert niets aan de demo. Per taal de eigen voorbeeldklant, zoals klant-adres.
+  // ⚠️ Het samenvoegvenster: de twee DUBBELE adressen van de voorbeeldklant (DemoDataGenerator: het tweede heeft een e-mail die het
+  // eerste mist en een ander telefoonnummer) — zo staan "Aangevuld" én "Gaat niet mee" op het beeld; dat laatste is het merkteken.
+  { naam: 'klant-adressen-samenvoegen', route: '/klanten', verwacht: tekstTaal('Gaat niet mee', 'Ne sera pas repris'), hoogte: 1000,
+    na: async (p, taal) => {
+      const fr = taal === 'fr-BE';
+      await openRij(p, fr ? DEMO.klantFr : DEMO.klant);
+      await p.getByText(/^(Adressen|Adresses) \(/).first().click();
+      const dubbel = p.getByRole('row').filter({ hasText: fr ? 'Rue des Tilleuls' : 'Kortrijksesteenweg' });
+      await dubbel.first().waitFor();
+      for (let i = 0; i < 2; i++) { await dubbel.nth(i).getByRole('checkbox').first().click({ force: true }); await p.waitForTimeout(300); }
+      await p.getByRole('button', { name: fr ? 'Fusionner…' : 'Samenvoegen…' }).click();
+    } },
+  // Het verplaatsvenster: het uitgewerkte adres (contract en werkorders) naar een andere demoklant, gekozen in de klantzoeker. Het
+  // merkteken is de zin "Gaat mee naar" — die verschijnt pas NA de keuze van de klant.
+  { naam: 'klant-adres-verplaatsen', route: '/klanten', verwacht: tekstTaal('Gaat mee naar', 'Vont à'),
+    na: async (p, taal) => {
+      const fr = taal === 'fr-BE';
+      await openRij(p, fr ? DEMO.klantFr : DEMO.klant);
+      await p.getByText(/^(Adressen|Adresses) \(/).first().click();
+      const rij = p.getByRole('row').filter({ hasText: fr ? DEMO.klantAdresTelefoonFr : DEMO.klantAdresTelefoon }).first();
+      await rij.waitFor();
+      await rij.getByRole('checkbox').first().click({ force: true });
+      await p.getByRole('button', { name: fr ? 'Déplacer vers un client…' : 'Verplaatsen naar klant…' }).click();
+      const zoeker = p.locator('.dxbl-popup:not(.dxbl-popup-hidden) input').first();
+      await zoeker.fill(fr ? 'Dubois' : 'Zonnedal');
+      await p.getByText(fr ? 'choisir' : 'kies', { exact: true }).first().click();
+    } },
+  // Het tabblad Werkorders van het uitgewerkte adres: de werkorders van het contract van de voorbeeldklant hangen eraan.
+  { naam: 'klant-adres-werkorders', route: '/klanten', verwacht: tekstTaal('Instructies', 'Instructions'),
+    na: async (p, taal) => {
+      const fr = taal === 'fr-BE';
+      await openRij(p, fr ? DEMO.klantFr : DEMO.klant);
+      await p.getByText(/^(Adressen|Adresses) \(/).first().click();
+      await p.getByRole('row').filter({ hasText: fr ? DEMO.klantAdresTelefoonFr : DEMO.klantAdresTelefoon }).first().dblclick();
+      await p.waitForURL(/\/adres\/[0-9a-f-]{36}$/, { timeout: 15000 });
+      await p.getByText(/^(Werkorders|Ordres de travail) \(/).first().click();
+    } },
   // Het memovenster op de klantfiche (07/10/2026): de memo MET herinneringsdatum (DemoDataGenerator.VerzinMemosAsync), zodat het vinkje
   // Afgehandeld op het beeld staat. Per taal de eigen voorbeeldklant, zoals klant-fiche.
   { naam: 'klant-memo', route: '/klanten', verwacht: tekstTaal('Memo — ', 'Mémo — '),
