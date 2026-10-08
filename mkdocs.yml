@@ -164,6 +164,7 @@ plugins:
             Verlofkalender: Agenda des congés   # de menunaam van de app sinds 04/10/2026
             Attesten: Attestations
             Producten: Produits
+            Producten (attesten): Produits (attestations)
             Verwerkingen: Traitements
             Verwerkingsbedrijven: Entreprises de traitement
             Raadplegen en bewerken: Consulter et modifier
@@ -250,6 +251,7 @@ nav:
     - Ploegen: ploegen.md
     - Werkbonnen: werkbonnen.md
     - Contracten: contracten.md
+    - Attesten: attesten.md
   - Verkoop:
     - Offertes: offertes.md
     - Facturatie: facturatie.md
@@ -274,6 +276,9 @@ nav:
       - Btw-codes: beheer/btw-codes.md
       - Tarieven: beheer/tarieven.md
       - Eenheden: beheer/eenheden.md
+      - Producten (attesten): beheer/attest-producten.md
+      - Verwerkingen: beheer/verwerkingen.md
+      - Verwerkingsbedrijven: beheer/verwerkingsbedrijven.md
       - Dagboeken: beheer/dagboeken.md
       - Rekeningplan: beheer/rekeningplan.md
       - Documentnummers: beheer/documentnummers.md

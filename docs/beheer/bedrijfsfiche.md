@@ -98,6 +98,20 @@ Het blok **Peppol** zegt hoe uw bedrijf als verzender in een e-factuur staat, wa
 Een leeg veld neemt het gegeven van de fiche hierboven over. Vult u niets in, dan staat uw bedrijf in de e-factuur zoals op uw
 briefhoofd. Bij een overstap neemt CleanOps deze gegevens over uit uw vorige toepassing.
 
+## Verwerkingsattesten
+
+Het blok **Verwerkingsattesten** draagt twee gegevens die op elk [verwerkingsattest](../attesten.md) komen:
+
+| Veld | Wat u invult |
+|---|---|
+| **Registratienummer** | het registratienummer dat in het briefhoofd van het attest staat, maximaal 50 tekens. |
+| **Ondertekenaar attesten** | de naam onderaan het attest, na "Voor" en de naam van uw bedrijf — bijvoorbeeld *Jan Peeters, zaakvoerder*. Maximaal 60 tekens. |
+
+Een leeg veld staat niet op het attest. Bij een overstap neemt CleanOps ze niet over: uw vorige toepassing had ze in het
+sjabloon van het attest staan. Vul ze hier één keer in.
+
+![Het blok Verwerkingsattesten op de bedrijfsfiche met Registratienummer en Ondertekenaar attesten](../images/bedrijfsfiche-attesten.png "Verwerkingsattesten")
+
 ## Bewaren of annuleren
 
 **Opslaan** bewaart uw wijzigingen. **Annuleren** gooit ze weg en brengt u terug naar het platformbeheer.

@@ -10,9 +10,8 @@ CleanOps gebruikt de teksten wanneer u mailt:
 - **Factuur** en **Creditnota** — met **Mailen…** op de factuur (zie [Facturen](../facturen.md));
 - **Offerte** en **Offerteherinnering** — met **Mailen…** en **Herinnering mailen…** op de offerte (zie [Offertes](../offertes.md));
 - **Eerste**, **Tweede** en **Derde herinnering** — met **Rappel mailen…** op Openstaande posten, volgens de graad van de rappel
-  (zie [Openstaande posten](../openstaande-posten.md)).
-
-De tekst **Attest** wordt nog niet gemaild.
+  (zie [Openstaande posten](../openstaande-posten.md));
+- **Attest** — met **Mailen…** op een verwerkingsattest (zie [Attesten](../attesten.md)).
 
 ## Het scherm openen
 

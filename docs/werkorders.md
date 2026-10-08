@@ -90,7 +90,7 @@ de lijst* erbij. Ze blijft staan tot u iemand anders kiest.
 | | Mag vroeger | Het werk mag vroeger uitgevoerd worden dan gepland. |
 | | Groot werk | Een grote opdracht; het staat als label op de leveringsbon. |
 | | Terugbellen, Teruggebeld | De klant wil gebeld worden; vink het tweede aan zodra dat gebeurd is. |
-| Uitvoering | Attest vereist, Attest gemaakt | Er hoort een attest bij dit werk, en of het al opgemaakt is. Beide staan als label op de leveringsbon. |
+| Uitvoering | Attest vereist, Attest gemaakt | Er hoort een attest bij dit werk. **Attest gemaakt** zet u niet zelf: het staat aan zodra de werkorder een attest heeft (zie [Attesten](#attesten) hieronder). Beide staan als label op de leveringsbon. |
 | | RWZI | Rioolwaterzuiveringsinstallatie. |
 | | Cameraverslag vereist | Er hoort een cameraverslag bij dit werk. |
 
@@ -138,6 +138,14 @@ de instructies, het materiaal en de handtekeningen. Met **Afdrukken** drukt u en
 
 De bon toont wat bewaard is. Hebt u iets gewijzigd, dan staat naast de knop *eerst opslaan* en kunt u hem pas
 openen na **Opslaan**.
+
+### Attesten
+
+Rechts bovenaan de fiche staat het tabblad **Attesten**, met het aantal verwerkingsattesten van deze werkorder. Met
+**Nieuw attest** maakt u er een; dubbelklik op een attest om het te openen, af te drukken of te mailen. Alles over het
+attest zelf staat bij [Attesten](attesten.md).
+
+![Het tabblad Attesten (2) op de werkorderfiche, met Product, Hoeveelheid, EURAL-code, Verwerkingsbedrijf en Verzonden, en de knop Nieuw attest](images/werkorder-attesten.png "Attesten van een werkorder")
 
 ### Bijlagen en Logboek
 

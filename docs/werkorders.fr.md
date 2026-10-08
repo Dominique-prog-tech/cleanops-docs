@@ -95,7 +95,7 @@ Si l'ordre porte le code d'un collaborateur qui n'est plus dans la liste, vous v
 | | Peut commencer plus tôt | Le travail peut être exécuté plus tôt que prévu. |
 | | Gros travaux | Une mission importante ; elle figure comme étiquette sur le bon de livraison. |
 | | Rappeler, Rappelé | Le client souhaite être appelé ; cochez la seconde case une fois que c'est fait. |
-| Exécution | Attestation requise, Attestation établie | Une attestation accompagne ce travail, et si elle est déjà établie. Les deux figurent comme étiquette sur le bon de livraison. |
+| Exécution | Attestation requise, Attestation établie | Une attestation accompagne ce travail. Vous ne cochez pas **Attestation établie** vous-même : elle est cochée dès que l'ordre de travail a une attestation (voir [Attestations](#attestations) plus bas). Les deux figurent comme étiquette sur le bon de livraison. |
 | | Station d'épuration | Le travail concerne une station d'épuration. |
 | | Rapport caméra requis | Un rapport caméra accompagne ce travail. |
 
@@ -143,6 +143,14 @@ instructions, le matériel et les signatures. **Imprimer** n'imprime que le bon.
 
 Le bon montre ce qui est enregistré. Si vous avez modifié quelque chose, *enregistrez d'abord* apparaît à côté du
 bouton, et vous ne pouvez l'ouvrir qu'après **Enregistrer**.
+
+### Attestations
+
+En haut à droite de la fiche figure l'onglet **Attestations**, avec le nombre d'attestations de traitement de cet ordre de
+travail. **Nouvelle attestation** en établit une ; double-cliquez sur une attestation pour l'ouvrir, l'imprimer ou
+l'envoyer par e-mail. Tout sur l'attestation elle-même se trouve dans [Attestations](attesten.fr.md).
+
+![L'onglet Attestations (1) sur la fiche de l'ordre de travail, avec Produit, Quantité, Code EURAL, Entreprise de traitement et Envoyée, et le bouton Nouvelle attestation](images/werkorder-attesten-fr.png "Attestations d'un ordre de travail")
 
 ### Pièces jointes et Historique
 

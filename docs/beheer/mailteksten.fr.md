@@ -11,9 +11,8 @@ CleanOps utilise les textes lorsque vous envoyez par e-mail :
 - **Devis** et **Rappel de devis** — avec **Envoyer par e-mail…** et **Envoyer un rappel…** sur le devis (voir
   [Devis](../offertes.fr.md)) ;
 - **Premier rappel**, **Deuxième rappel** et **Dernier rappel** — avec **Rappel par e-mail…** dans Postes ouverts, selon le
-  degré du rappel (voir [Postes ouverts](../openstaande-posten.fr.md)).
-
-Le texte **Attestation** n'est pas encore envoyé par e-mail.
+  degré du rappel (voir [Postes ouverts](../openstaande-posten.fr.md)) ;
+- **Attestation** — avec **Envoyer par e-mail…** sur une attestation de traitement (voir [Attestations](../attesten.fr.md)).
 
 ## Ouvrir l'écran
 

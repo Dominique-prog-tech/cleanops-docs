@@ -330,6 +330,46 @@ const SCHOTEN = [
       await p.evaluate(() => [...document.querySelectorAll('h2')].find(h => /^(Facturatie|Facturation)$/.test(h.textContent.trim()))
         ?.scrollIntoView({ block: 'start' }));
     } },
+  // Attesten (module Attesten, vrijgave 08/10/2026). De demo draagt attesten bij de twee uitgewerkte werkorders
+  // (DemoDataGenerator.VerzinAttestenAsync): de Nederlandstalige (Tuincentrum De Linde) twee, slib en vet; de Franstalige
+  // (Résidence Les Tilleuls) één. Beide te factureren, dus zichtbaar bij "nog niet gefactureerd". De lijst toont geen werf: de rij
+  // kiezen op de KLANT.
+  { naam: 'attesten-lijst', route: '/attesten', verwacht: tekstTaal('Attesten van werkorder', "Attestations de l'ordre de travail"),
+    na: async (p, taal) => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+      await kiesAttestKlant(p, taal);
+    },
+    magKortZijn: 'de demo telt twee werkorders met een attest' },
+  { naam: 'werkorder-attesten', route: '/werkorders', verwacht: tekstTaal('Nieuw attest', 'Nouvelle attestation'),
+    na: async (p, taal) => {
+      await openWerkorder(p, taal === 'fr-BE' ? DEMO.werfFr : DEMO.werf);
+      await p.getByText(/^(Attesten|Attestations) \(\d+\)$/).first().click();
+    },
+    magKortZijn: 'een werkorder draagt een of twee attesten' },
+  { naam: 'attest-fiche', route: '/attesten', verwacht: tekstTaal('Werfopmerking', 'Remarque chantier'),
+    na: async (p, taal) => { await openAttest(p, taal); } },
+  // ⚠️ Wachten op het BEELD van de pagina in de kijker (zie factuur-afdruk).
+  { naam: 'attest-afdruk', route: '/attesten', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
+    na: async (p, taal) => {
+      await openAttest(p, taal);
+      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu avant impression)$/ }).first().click();
+      await p.waitForFunction(() => {
+        const img = document.querySelector('img.dxbrv-report-preview-content-img');
+        return img && img.complete && img.naturalWidth > 0;
+      }, null, { timeout: 30000 });
+      await p.waitForTimeout(800);
+    } },
+  // Mailen: de demo gaf Tuincentrum De Linde een ATTESTadres, dus Aan = het attestadres en Cc = het hoofdadres. De demo-attesten staan
+  // op "verzonden", dus eerst de vraag "Al verzonden — toch mailen?". ⚠️ Het recept klikt NOOIT op Versturen.
+  { naam: 'attest-mailen', route: '/attesten', verwacht: tekstTaal('Bijlage: attest-', 'Pièce jointe : attestation-'),
+    na: async (p, taal) => {
+      await openAttest(p, taal);
+      await p.getByRole('button', { name: /^(Mailen…|Envoyer par e-mail…)$/ }).first().click();
+      await bevestigIndienGevraagd(p, /^(Mailen|Envoyer par e-mail)$/);
+      await p.locator('#mailvenster-editor .dxbl-html-editor, #mailvenster-editor [contenteditable]').first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(800);
+    } },
   // Een nieuwe werkorder begint op de klantfiche: de knop onderaan.
   { naam: 'werkorder-nieuw', route: '/klanten', verwacht: tekstTaal('Waar en wanneer', 'Où et quand'),
     na: async (p, taal) => {
@@ -712,6 +752,16 @@ const SCHOTEN = [
       await p.evaluate(() => document.activeElement?.blur());
     } },
   // Basistabellen: zelfde vorm; het scherm opent op de lijst Contracttypes.
+  // Het blok Verwerkingsattesten (vrijgave attesten, 08/10/2026), onderaan de fiche: ernaartoe schuiven. De demo vult het
+  // registratienummer en de ondertekenaar in (DemoDataGenerator).
+  { naam: 'bedrijfsfiche-attesten', route: '/beheer/bedrijfsfiche', verwacht: tekstTaal('Ondertekenaar attesten', 'Signataire des attestations'),
+    na: async p => {
+      await p.getByText(/^(Ondertekenaar attesten|Signataire des attestations)$/).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.waitForTimeout(400);
+      await p.evaluate(() => [...document.querySelectorAll('h6')].find(h => /^(Verwerkingsattesten|Attestations de traitement)$/.test(h.textContent.trim()))
+        ?.scrollIntoView({ block: 'center' }));
+      await p.waitForTimeout(400);
+    } },
   { naam: 'basistabellen-lijst', route: '/beheer/basistabellen', verwacht: tekstTaal('Nieuw item', 'Nouvel élément') },
   { naam: 'basistabel-venster', route: '/beheer/basistabellen', verwacht: tekstTaal('Item bewerken', "Modifier l'élément"),
     na: async p => { await p.getByRole('gridcell', { name: DEMO.basistabel, exact: true }).first().dblclick(); } },
@@ -760,6 +810,21 @@ const SCHOTEN = [
       const veld = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Eenheid|Unité)$/ }) }).locator('dxbl-combo-box').first();
       await veld.locator('button:not(.dxbl-edit-btn-clear)').last().click();
     } },
+  // De drie lijsten van de attesten (vrijgave 08/10/2026): lijst + venster, zoals Eenheden. De demo verzint ze
+  // (DemoDataGenerator.VerzinAttestenAsync): vier producten, drie verwerkingen, twee verwerkingsbedrijven.
+  { naam: 'attest-producten-lijst', route: '/beheer/attest-producten', verwacht: tekstTaal('Nieuw product', 'Nouveau produit'),
+    na: sluitJournaal, magKortZijn: 'de demo telt vier producten' },
+  { naam: 'attest-product-venster', route: '/beheer/attest-producten', verwacht: tekstTaal('Product bewerken', 'Modifier le produit'),
+    na: async p => { await p.getByRole('gridcell', { name: 'Vet uit vetafscheider', exact: true }).first().dblclick(); } },
+  { naam: 'verwerkingen-lijst', route: '/beheer/verwerkingen', verwacht: tekstTaal('Nieuwe verwerking', 'Nouveau traitement'),
+    na: sluitJournaal, magKortZijn: 'de demo telt drie verwerkingen' },
+  { naam: 'verwerking-venster', route: '/beheer/verwerkingen', verwacht: tekstTaal('Verwerking bewerken', 'Modifier le traitement'),
+    na: async p => { await p.getByRole('gridcell', { name: 'SLIB', exact: true }).first().dblclick(); } },
+  { naam: 'verwerkingsbedrijven-lijst', route: '/beheer/verwerkingsbedrijven', verwacht: tekstTaal('Nieuw verwerkingsbedrijf', 'Nouvelle entreprise'),
+    na: sluitJournaal, magKortZijn: 'de demo telt twee verwerkingsbedrijven' },
+  { naam: 'verwerkingsbedrijf-venster', route: '/beheer/verwerkingsbedrijven',
+    verwacht: tekstTaal('Verwerkingsbedrijf bewerken', "Modifier l'entreprise de traitement"),
+    na: async p => { await p.getByRole('gridcell', { name: 'Demo Waterzuivering nv', exact: true }).first().dblclick(); } },
   // Dagboeken (05/10/2026): lijst + venster, zoals Eenheden.
   { naam: 'dagboeken-lijst', route: '/beheer/dagboeken', verwacht: tekstTaal('Nieuw dagboek', 'Nouveau journal'),
     na: async p => {
@@ -928,6 +993,26 @@ async function wachtOpZichtbaar(p, tekst) {
 async function bevestigIndienGevraagd(p, knop) {
   const ja = p.locator('.dxbl-modal:not(.dxbl-popup-hidden), .dx-overlay-content').getByRole('button', { name: knop }).first();
   try { await ja.waitFor({ state: 'visible', timeout: 2500 }); await ja.click(); } catch { /* geen vraag */ }
+}
+
+// De strook Journaal dicht, zodat de lijst de volle breedte krijgt (zelfde handeling als bij Eenheden).
+async function sluitJournaal(p) {
+  const dicht = p.locator('.adm-detail-drawer__btn').first();
+  if (await dicht.isVisible()) await dicht.click();
+}
+
+// Lijst Attesten: de uitgewerkte demowerkorder van de juiste taal kiezen, op haar klant.
+async function kiesAttestKlant(p, taal) {
+  await p.getByRole('gridcell', { name: taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant, exact: true }).first().click();
+  await p.getByText(/^(Attesten van werkorder|Attestations de l'ordre de travail) /).first().waitFor({ timeout: 15000 });
+  await p.waitForTimeout(800);
+}
+
+// Het eerste attest van die werkorder openen (het slib van de septische put), op zijn eigen fiche.
+async function openAttest(p, taal) {
+  await kiesAttestKlant(p, taal);
+  await p.getByRole('gridcell', { name: 'Slib septische put', exact: true }).first().dblclick();
+  await p.waitForURL(/\/attesten\/[0-9a-f-]{36}/, { timeout: 15000 });
 }
 
 async function openRij(p, tekst) {

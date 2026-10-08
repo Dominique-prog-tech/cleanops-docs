@@ -100,6 +100,21 @@ facture via Peppol (voir [Factures](../facturen.fr.md#envoyer)).
 Un champ vide reprend la donnée de la fiche ci-dessus. Si vous ne remplissez rien, votre entreprise figure dans la facture
 électronique comme sur votre en-tête. Lors d'un passage, CleanOps reprend ces données de votre application précédente.
 
+## Attestations de traitement
+
+Le bloc **Attestations de traitement** porte deux données qui figurent sur chaque
+[attestation de traitement](../attesten.fr.md) :
+
+| Champ | Ce que vous indiquez |
+|---|---|
+| **N° d'enregistrement** | le numéro d'enregistrement qui figure dans l'en-tête de l'attestation, 50 caractères au plus. |
+| **Signataire des attestations** | le nom en bas de l'attestation, après « Pour » et le nom de votre entreprise — par exemple *Jean Dupont, gérant*. 60 caractères au plus. |
+
+Un champ vide ne figure pas sur l'attestation. Lors d'une migration, CleanOps ne les reprend pas : votre application
+précédente les avait dans le modèle de l'attestation. Remplissez-les ici une fois.
+
+![Le bloc Attestations de traitement sur la fiche entreprise avec N° d'enregistrement et Signataire des attestations](../images/bedrijfsfiche-attesten-fr.png "Attestations de traitement")
+
 ## Enregistrer ou annuler
 
 **Enregistrer** conserve vos modifications. **Annuler** les abandonne et vous ramène à l'administration.

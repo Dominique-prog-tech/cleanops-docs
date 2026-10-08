@@ -41,6 +41,8 @@ Klik bij de klant op **Factureren…**. Het venster toont zijn te factureren wer
 - Vink uit wat (nog) niet op de factuur mag; met **Alles** en **Niets** kiest u in één keer. Wat u uitvinkt, blijft te factureren.
 - Onder de omschrijving staat in het rood wat ontbreekt: **attest ontbreekt**, **geen bedrag**, **geen btw-code**. Een werkorder
   zonder bedrag of btw-code kan niet geboekt worden.
+- Klik op **attest ontbreekt**, of op het groene **attest** als er al een is, om de [attesten](attesten.md) van die werkorder in
+  een nieuw tabblad te openen. Uw keuze in het venster blijft staan.
 - **cameraverslag vereist** en **contract** zijn vermeldingen.
 - Klik op het nummer om de werkorder in een nieuw tabblad te openen en recht te zetten.
 

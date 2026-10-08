@@ -44,6 +44,8 @@ Cliquez sur **Facturer…** à côté du client. La fenêtre affiche ses ordres 
   que vous décochez reste à facturer.
 - Sous la description figure en rouge ce qui manque : **attestation manquante**, **sans montant**, **sans code TVA**. Un ordre
   de travail sans montant ou sans code TVA ne peut pas être comptabilisé.
+- Cliquez sur **attestation manquante**, ou sur **attestation** en vert s'il y en a déjà une, pour ouvrir les
+  [attestations](attesten.fr.md) de cet ordre de travail dans un nouvel onglet. Votre choix dans la fenêtre reste tel quel.
 - **rapport caméra requis** et **contrat** sont des mentions.
 - Cliquez sur le numéro pour ouvrir l'ordre de travail dans un nouvel onglet et le corriger.
 
