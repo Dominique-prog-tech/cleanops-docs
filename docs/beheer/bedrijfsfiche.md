@@ -9,8 +9,8 @@ tussen twee rappels, en hoe uw bedrijf in een e-factuur via Peppol staat.
     De **wachttijd tussen twee rappels** bepaalt meteen welke posten in de lijst *Volgende rappel* van de
     openstaande posten staan.
 
-    Naam, adres, contact, btw-nummer, IBAN, BIC en logo vormen het **briefhoofd** van de facturen en creditnota's
-    die u in CleanOps afdrukt — zie [Facturen](../facturen.md#afdrukken).
+    Naam, adres, contact, btw-nummer, IBAN, BIC en logo vormen het **briefhoofd** van de facturen, creditnota's,
+    offertes, rappelbrieven en attesten die u in CleanOps afdrukt of mailt — zie [Facturen](../facturen.md#afdrukken).
 
 ## Het scherm openen
 

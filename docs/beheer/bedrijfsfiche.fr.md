@@ -9,8 +9,9 @@ délai entre deux rappels, et comment votre entreprise figure dans une facture �
     Le **délai entre deux rappels** détermine directement quels postes figurent dans la liste *Prochain rappel*
     des postes ouverts.
 
-    Le nom, l'adresse, le contact, le numéro de TVA, l'IBAN, le BIC et le logo forment l'**en-tête** des factures
-    et notes de crédit que vous imprimez dans CleanOps — voir [Factures](../facturen.fr.md#imprimer).
+    Le nom, l'adresse, le contact, le numéro de TVA, l'IBAN, le BIC et le logo forment l'**en-tête** des factures,
+    notes de crédit, devis, lettres de rappel et attestations que vous imprimez ou envoyez par e-mail dans CleanOps —
+    voir [Factures](../facturen.fr.md#imprimer).
 
 ## Ouvrir l'écran
 
