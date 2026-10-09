@@ -158,7 +158,9 @@ mededeling is de gestructureerde referentie die de klant bij zijn betaling verme
 
 **Openstaand** — wat er van deze klant nog openstaat. Bovenaan staat het openstaande saldo, in het rood als het
 groter is dan nul. Per post ziet u het document, de datum, de vervaldag, het openstaande bedrag en het aantal
-rappels. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document en niveau.
+rappels. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document, niveau en wie ze verstuurde.
+Is ze leeg terwijl een post al rappels telt, dan komen die rappels van vóór het logboek van uw vorige toepassing: die
+staan enkel als aantal bij de post.
 
 **Memo's** — wat er met deze klant afgesproken is, met de datum en eventueel een herinneringsdatum. Zie
 [Memo's](#memos) hieronder.

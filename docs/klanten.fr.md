@@ -163,7 +163,9 @@ communication. La communication est la référence structurée que le client men
 
 **Postes ouverts** — ce qui reste dû par ce client. En haut figure le solde ouvert, en rouge s'il dépasse zéro.
 Pour chaque poste, vous voyez le document, la date, l'échéance, le solde ouvert et le nombre de rappels. En
-dessous figure l'**historique des rappels** : les rappels envoyés, avec la date, le document et le niveau.
+dessous figure l'**historique des rappels** : les rappels envoyés, avec la date, le document, le niveau et qui les a
+envoyés. S'il est vide alors qu'un poste compte déjà des rappels, ceux-ci datent d'avant le journal de votre application
+précédente : ils figurent uniquement comme nombre à côté du poste.
 
 **Mémos** — ce qui a été convenu avec ce client, avec la date et éventuellement une date de rappel. Voir
 [Mémos](#memos) ci-dessous.
