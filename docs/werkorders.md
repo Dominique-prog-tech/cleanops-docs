@@ -42,7 +42,7 @@ Een nieuwe werkorder maakt u op de fiche van de [klant](klanten.md): klik ondera
 
 | Veld | Toelichting |
 |---|---|
-| Uitvoeringsadres | Het hoofdadres van de klant of een van zijn uitvoeringsadressen. Heeft de klant precies één uitvoeringsadres, dan staat dat al gekozen (ook bij een werkorder uit een offerte). De werkinstructie, het materiaal en de opmerkingen van het adres komen op de werkorder. Staat het adres er nog niet, klik dan op **Nieuw uitvoeringsadres**; met **Adres openen** past u het gekozen adres aan. Na **Opslaan** keert u terug, met dat adres gekozen en alles wat u al invulde. |
+| Uitvoeringsadres | Het hoofdadres van de klant of een van zijn uitvoeringsadressen. Heeft de klant precies één uitvoeringsadres, dan staat dat al gekozen (ook bij een werkorder uit een offerte). De werkinstructie, het materiaal en de opmerkingen van het adres komen op de werkorder. Staat het adres er nog niet, klik dan op **Nieuw uitvoeringsadres**; met **Adres openen** past u het gekozen adres aan. Na **Opslaan** keert u terug, met dat adres gekozen en alles wat u al invulde. Lopen er op het gekozen adres contracten, dan noemt een melding ze; hoort de opdracht bij een contract, koppel ze dan na het opslaan met **Koppelen…** op de fiche. |
 | Uit te voeren | De dag waarop het werk moet gebeuren. |
 | Werf (naam) | Een herkenbare naam voor de plaats, hoogstens 30 tekens. |
 | Omschrijving * | Wat er moet gebeuren, hoogstens 35 tekens. Kiest u een tarief terwijl het veld leeg is of nog de tekst van een vorig tarief draagt, dan vult CleanOps de omschrijving van het tarief in; u kunt ze aanpassen. Op de factuur staat bij een tarief de tarieftekst, zonder tarief deze omschrijving. |
