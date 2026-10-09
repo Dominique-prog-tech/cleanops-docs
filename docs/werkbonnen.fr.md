@@ -35,7 +35,7 @@ Les bons sont classés par chauffeur, puis par jour, et dans la journée dans le
 |---|---|
 | Client | Le nom du client, avec le nom du chantier s'il y en a un. |
 | Adresse, téléphone, e-mail | L'adresse d'exécution et son téléphone, sinon celui du client ; si l'ordre porte un autre numéro, il s'y ajoute. L'e-mail est celui de l'adresse d'exécution, sinon celui du client. |
-| En haut à droite | Le numéro de l'ordre de travail, la partie de la journée, l'accord d'heure (par exemple *Avant 17:00*) et la date demandée par le client (*Demandé le*). |
+| En haut à droite | Le numéro de l'ordre de travail, la partie de la journée (sauf *Autre*), l'accord d'heure (par exemple *Avant 17:00*) et la date demandée par le client (*Demandé le*). |
 | Travail | La description du travail, les instructions et le matériel de l'ordre de travail. |
 | Étiquettes | *appeler d'abord* (tant que le client n'a pas été rappelé), *attestation requise*, *gros travaux*, *rapport caméra*, *station d'épuration*, le véhicule et le convoyeur. |
 | Début, Fin, Notes | Des cases que le chauffeur remplit à la main. Si l'heure de début ou de fin figure déjà sur l'ordre de travail, elle est sur la ligne. |
@@ -44,9 +44,9 @@ Les bons sont classés par chauffeur, puis par jour, et dans la journée dans le
 
 **Imprimer** ouvre la fenêtre d'impression de votre navigateur. Sur papier :
 
-- chaque chauffeur commence sur une **nouvelle page** : il emporte sa propre pile ;
-- un bon n'est **jamais coupé** sur deux pages ;
-- le **jour** reste avec le premier bon de ce jour.
+- chaque chauffeur a **une page par jour**, avec en haut son nom, son code et le jour : il emporte sa propre pile, et un
+  deuxième jour ne commence pas au milieu d'une page ;
+- un bon n'est **jamais coupé** sur deux pages.
 
 Seuls les bons sont imprimés, pas le menu ni les boutons. **Imprimer** est grisé tant qu'il n'y a pas de bons.
 
