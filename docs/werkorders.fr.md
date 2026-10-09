@@ -45,7 +45,7 @@ Un nouvel ordre de travail se crée depuis la fiche du [client](klanten.fr.md) :
 
 | Champ | Explication |
 |---|---|
-| Adresse d'exécution | L'adresse principale du client ou l'une de ses adresses d'exécution. Si le client a exactement une adresse d'exécution, elle est déjà choisie (aussi pour un ordre issu d'un devis). L'instruction de travail, le matériel et les remarques de l'adresse sont repris sur l'ordre. |
+| Adresse d'exécution | L'adresse principale du client ou l'une de ses adresses d'exécution. Si le client a exactement une adresse d'exécution, elle est déjà choisie (aussi pour un ordre issu d'un devis). L'instruction de travail, le matériel et les remarques de l'adresse sont repris sur l'ordre. Si l'adresse n'existe pas encore, cliquez sur **Nouvelle adresse d'exécution** ; **Ouvrir l'adresse** vous permet de modifier l'adresse choisie. Après **Enregistrer**, vous revenez avec cette adresse choisie et tout ce que vous aviez déjà rempli. |
 | À exécuter | Le jour où le travail doit être fait. |
 | Chantier (nom) | Un nom reconnaissable pour le lieu, 30 caractères au maximum. |
 | Description * | Ce qu'il faut faire, 35 caractères au maximum. Si vous choisissez un tarif alors que le champ est vide ou porte encore le texte d'un tarif précédent, CleanOps y inscrit la description du tarif ; vous pouvez la modifier. Sur la facture figure le texte du tarif s'il y en a un, sinon cette description. |
@@ -93,7 +93,7 @@ facturé ne peut plus être lié.
 | Planifié, Exécuté | Le jour où le travail est planifié et le jour où il a été fait. |
 | Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre* ou *après* une heure. La partie de la journée détermine l'[ordre dans le planning](planning.fr.md#lordre-dans-une-journee). |
 | Heure de début, Heure de fin | Quand le travail a réellement commencé et fini. Une heure de fin avant l'heure de début est refusée. |
-| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. Sous l'adresse figure son numéro de téléphone (ou celui du client, si l'adresse n'en a pas), et **Carte** et **Itinéraire** ouvrent l'adresse et le chemin pour y aller dans Google Maps. |
+| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. Sous l'adresse figure son numéro de téléphone (ou celui du client, si l'adresse n'en a pas), et **Carte** et **Itinéraire** ouvrent l'adresse et le chemin pour y aller dans Google Maps. **Nouvelle adresse d'exécution** et **Ouvrir l'adresse** créent ou modifient une adresse ; après **Enregistrer**, elle est choisie — enregistrez alors l'ordre de travail. |
 | Chantier (nom), Description | Comme pour un nouvel ordre. |
 | Type de travail | Une courte description du travail, par exemple *fosse septique*. |
 | Travaux, Matériel | Cochez ce qui s'applique et cliquez sur **Insérer** : les lignes choisies vont dans **Instructions au collaborateur** ou **Remarques matériel**, où vous pouvez encore les compléter. |

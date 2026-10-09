@@ -41,7 +41,7 @@ Een nieuwe werkorder maakt u op de fiche van de [klant](klanten.md): klik ondera
 
 | Veld | Toelichting |
 |---|---|
-| Uitvoeringsadres | Het hoofdadres van de klant of een van zijn uitvoeringsadressen. Heeft de klant precies één uitvoeringsadres, dan staat dat al gekozen (ook bij een werkorder uit een offerte). De werkinstructie, het materiaal en de opmerkingen van het adres komen op de werkorder. |
+| Uitvoeringsadres | Het hoofdadres van de klant of een van zijn uitvoeringsadressen. Heeft de klant precies één uitvoeringsadres, dan staat dat al gekozen (ook bij een werkorder uit een offerte). De werkinstructie, het materiaal en de opmerkingen van het adres komen op de werkorder. Staat het adres er nog niet, klik dan op **Nieuw uitvoeringsadres**; met **Adres openen** past u het gekozen adres aan. Na **Opslaan** keert u terug, met dat adres gekozen en alles wat u al invulde. |
 | Uit te voeren | De dag waarop het werk moet gebeuren. |
 | Werf (naam) | Een herkenbare naam voor de plaats, hoogstens 30 tekens. |
 | Omschrijving * | Wat er moet gebeuren, hoogstens 35 tekens. Kiest u een tarief terwijl het veld leeg is of nog de tekst van een vorig tarief draagt, dan vult CleanOps de omschrijving van het tarief in; u kunt ze aanpassen. Op de factuur staat bij een tarief de tarieftekst, zonder tarief deze omschrijving. |
@@ -87,7 +87,7 @@ ontkoppelen, en een gefactureerde werkorder koppelt u niet meer.
 | Gepland, Uitgevoerd | De dag waarop het werk gepland staat en de dag waarop het gedaan is. |
 | Tijdsdeel | Eerste werk, Voormiddag, Namiddag, Volledige dag of Anders. Bij **Anders** verschijnt een uurafspraak: *vóór*, *tussen* of *na* een uur. Het tijdsdeel bepaalt de [volgorde in de planning](planning.md#de-volgorde-in-een-dag). |
 | Start-uur, Eind-uur | Wanneer het werk werkelijk begon en eindigde. Een eind-uur vóór het start-uur wordt geweigerd. |
-| Uitvoeringsadres | Kiest u een ander adres, dan komen zijn werkinstructie, materiaal en opmerkingen erbij; wat er al stond, blijft staan. Onder het adres staat zijn telefoonnummer (of dat van de klant, als het adres er geen heeft), en openen **Kaart** en **Route** het adres en de weg ernaartoe in Google Maps. |
+| Uitvoeringsadres | Kiest u een ander adres, dan komen zijn werkinstructie, materiaal en opmerkingen erbij; wat er al stond, blijft staan. Onder het adres staat zijn telefoonnummer (of dat van de klant, als het adres er geen heeft), en openen **Kaart** en **Route** het adres en de weg ernaartoe in Google Maps. Met **Nieuw uitvoeringsadres** en **Adres openen** maakt of wijzigt u een adres; na **Opslaan** staat het gekozen — bewaar dan de werkorder. |
 | Werf (naam), Omschrijving | Zoals bij een nieuwe werkorder. |
 | Typering | Een korte typering van het werk, bijvoorbeeld *septische put + vetput*. |
 | Werkzaamheden, Materiaal | Vink aan wat van toepassing is en klik op **Invoegen**: de gekozen regels komen in **Instructies werknemer** of **Materiaal-opmerkingen**, waar u ze nog kunt aanvullen. |

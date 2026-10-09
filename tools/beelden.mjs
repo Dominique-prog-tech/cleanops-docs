@@ -350,7 +350,8 @@ const SCHOTEN = [
   // uit de demo (DemoDataGenerator.VerzinContractenEnWerkordersAsync). ⚠️ PER TAAL EEN ANDERE WERKORDER, zoals bij Klanten: de
   // Franse ronde neemt die van Résidence Les Tilleuls, anders staan er Nederlandse instructies op een Frans beeld — en de
   // leveringsbon volgt de taal van de werkorder, niet die van het scherm.
-  { naam: 'werkorders-lijst', route: '/werkorders', verwacht: new RegExp(DEMO.werf),
+  // ⚠️ Sinds werklijst A3 (09/10/2026) staat de kolom Werf standaard verborgen: het merkteken is de klant, niet de werfnaam.
+  { naam: 'werkorders-lijst', route: '/werkorders', verwacht: /Tuincentrum De Linde/,
     na: async p => {
       const dicht = p.locator('.adm-detail-drawer__btn').first();
       if (await dicht.isVisible()) await dicht.click();
@@ -447,12 +448,15 @@ const SCHOTEN = [
   { naam: 'planning-bord', route: '/planning', verwacht: /Mestkelder ledigen/, hoogte: 1140,
     na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) ▶$/ }).first().click(); } },
   { naam: 'planning-lijst', route: '/planning/lijst', verwacht: /Mestkelder ledigen/,
-    na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click(); } },
+    // ⚠️ Sinds werklijst C14 (09/10/2026) een periodeknop met pijlen "← Vorige | Volgende →" i.p.v. het weeklabel.
+    na: async p => { await p.getByRole('button', { name: /^(Volgende|Suivant) →$/ }).first().click(); } },
   // Twee werkorders van TWEE medewerkers (Tom en Julien): dan staat ook Wisselen aan. Het merkteken is de teller van de
   // selectiebalk, die enkel met een selectie verschijnt.
-  { naam: 'planning-selectie', route: '/planning/lijst', verwacht: tekstTaal('2 geselecteerd:', '2 sélectionné\\(s\\) :'),
+  // ⚠️ De teller van de fundering zegt "2 geselecteerd" — zonder dubbelpunt (gemeten 09/10/2026; sinds welke AppKit-versie is niet
+  // nagegaan); het merkteken "2 geselecteerd:" verscheen dus niet meer. In het Frans enkel het begin: de exacte vorm daar is niet nagemeten.
+  { naam: 'planning-selectie', route: '/planning/lijst', verwacht: tekstTaal('2 geselecteerd\\b', '2 sélectionné'),
     na: async p => {
-      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByRole('button', { name: /^(Volgende|Suivant) →$/ }).first().click();
       await p.getByText('Mestkelder ledigen').first().waitFor({ state: 'visible', timeout: 15000 });
       for (const werk of ['Kolken parking reinigen', 'Débouchage cuisine'])
         await p.getByRole('row').filter({ hasText: werk }).first().locator('td.dxbl-grid-selection-cell .dxbl-checkbox').click();
@@ -461,7 +465,7 @@ const SCHOTEN = [
   // gemaakt wordt, en dan toont het beeld een lege kijker met een laadteken.
   { naam: 'planning-afdruk', route: '/planning/lijst', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
     na: async p => {
-      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByRole('button', { name: /^(Volgende|Suivant) →$/ }).first().click();
       await p.getByText('Mestkelder ledigen').first().waitFor({ state: 'visible', timeout: 15000 });
       await p.getByRole('button', { name: /^(Afdrukken|Imprimer)$/ }).first().click();
       await p.locator('img.dxbrv-report-preview-content-img').first().waitFor({ state: 'visible', timeout: 30000 });
@@ -990,8 +994,15 @@ const SCHOTEN = [
 
 // ⚠️ Een werkorder opent met ?terug=… achter haar id (de filters van de lijst reizen mee), dus de URL eindigt NIET op het id
 // en openRij wacht vergeefs (02/10/2026, vier keer een time-out).
-async function openWerkorder(p, tekst) {
-  await p.getByRole('row').filter({ hasText: tekst }).first().dblclick();
+// ⚠️ Sinds werklijst A3 (09/10/2026) staat de kolom Werf standaard VERBORGEN: de rij is niet meer te herkennen aan haar werfnaam. De
+// zoekbalk zoekt er wel op (EfWorkOrderQuery: SiteName), en elke demowerf komt precies één keer voor — dus zoeken, wachten op die ENE
+// rij, en ze openen. Meer of minder dan één rij is geen beeld maar een time-out.
+async function openWerkorder(p, werf) {
+  const zoek = p.getByPlaceholder(/Zoeken|Rechercher/).first();
+  await zoek.fill(werf); await zoek.press('Enter');
+  await p.waitForFunction(() =>
+    [...document.querySelectorAll('[role=row]')].filter(r => r.querySelector('[role=gridcell]')).length === 1, null, { timeout: 15000 });
+  await p.locator('[role=row]').filter({ has: p.locator('[role=gridcell]') }).first().dblclick();
   await p.waitForURL(/\/werkorders\/[0-9a-f-]{36}(\?|$)/, { timeout: 15000 });
 }
 
