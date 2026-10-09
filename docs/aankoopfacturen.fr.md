@@ -66,7 +66,8 @@ déjà remplis. Après **Enregistrer**, le document reçoit son numéro et s'ouv
 | Véhicule | pour un coût de véhicule, dans la liste des [véhicules](beheer/voertuigen.md) |
 
 **TVA** — une ligne par taux de TVA. Choisissez le **code TVA** et indiquez la **base** : CleanOps propose la TVA. Si le
-document du fournisseur porte un autre montant de TVA, tapez-le par-dessus. Avec **+ Ajouter un taux**, vous mettez un
+document du fournisseur porte un autre montant de TVA, tapez-le par-dessus. S'il ne porte qu'un total, comme un ticket de
+caisse, tapez le **total** : CleanOps en calcule la base et la TVA selon le code choisi. Avec **+ Ajouter un taux**, vous mettez un
 deuxième taux sur le même document, par exemple 21 % et 6 %. Si le fournisseur a un code TVA par défaut, il figure déjà
 dans la première ligne.
 

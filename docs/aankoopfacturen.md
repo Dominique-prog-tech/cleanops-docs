@@ -66,7 +66,8 @@ Na **Bewaren** krijgt het document zijn nummer en opent het opnieuw, met de tabb
 | Voertuig | voor een kost van een voertuig, uit de lijst van de [voertuigen](beheer/voertuigen.md) |
 
 **Btw** — per btw-tarief een regel. Kies de **btw-code** en vul de **basis** in: CleanOps stelt de btw voor. Staat er
-op het document van de leverancier een ander btw-bedrag, typ dat dan over. Met **+ Tarief toevoegen** zet u een tweede
+op het document van de leverancier een ander btw-bedrag, typ dat dan over. Staat er enkel een totaal op, zoals op een
+kasticket, typ dan het **totaal**: CleanOps rekent er de basis en de btw uit volgens de gekozen code. Met **+ Tarief toevoegen** zet u een tweede
 tarief op hetzelfde document, bijvoorbeeld 21 % en 6 %. Heeft de leverancier een standaard btw-code, dan staat die al
 in de eerste regel.
 
