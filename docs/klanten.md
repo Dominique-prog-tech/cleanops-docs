@@ -54,7 +54,7 @@ bekijken.
 | Betaaltermijn * | De termijn waarmee de vervaldag van een factuur berekend wordt. U kiest uit de betalingstermijnen van Platformbeheer. |
 | Verkooprekening | De algemene rekening voor uw boekhoudkantoor, gekozen uit het [rekeningplan](beheer/rekeningplan.md). Mag leeg blijven. |
 | Naam *, Naam (2e regel) | De naam zoals hij op documenten komt, elk hoogstens 30 tekens. |
-| Straat *, Nr, Postcode *, Gemeente *, Land | Het adres van de klant. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. |
+| Straat *, Nr, Postcode *, Gemeente *, Land | Het adres van de klant. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. Onder de gemeente openen **Kaart** en **Route** het adres in Google Maps, in een nieuw tabblad. |
 | Taal * | De taal van de documenten voor deze klant. |
 | Klanttype | **Bedrijf** of **Particulier**. Een bedrijf heeft een btw-nummer nodig. |
 | Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer getoetst. Met **Ophalen** toont CleanOps eerst wat de KBO weet — naam, type, oprichting, juridische situatie, rechtsvorm en adres, en in het rood **stopgezet** als de onderneming niet meer actief is. Met **Overnemen** komen naam en adres (met toevoeging en bus bij het huisnummer) op de fiche; wat de KBO niet kent, blijft staan. Bewaren doet u daarna zelf. ⚠️ De KBO geeft de maatschappelijke zetel, niet altijd het adres waar u factureert. |
@@ -120,7 +120,8 @@ meegaat en wat blijft:
 
 ![Een uitvoeringsadres van Tuincentrum De Linde, met een werkinstructie, het mee te nemen materiaal en de bereikbaarheid per dag](images/klant-adres.png "Uitvoeringsadres")
 
-Op een uitvoeringsadres zijn straat, postcode en gemeente verplicht. Verder:
+Op een uitvoeringsadres zijn straat, postcode en gemeente verplicht; onder de gemeente staan **Kaart** en **Route**, zoals op de
+klantfiche. Verder:
 
 - **Opmerkingen**, **Werkinstructie (komt op de opdracht)** en **Mee te nemen materiaal** — wie dit adres kiest
   op een werkorder, krijgt deze teksten daar aangevuld: de opmerkingen als interne opmerking, de werkinstructie

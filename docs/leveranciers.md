@@ -55,7 +55,8 @@ Bovenaan staan de naam en het nummer, daaronder de tabbladen **Fiche**, **Aankoo
     ligt. De melding zegt bij welke leverancier het al staat.
 
 **Adres** — straat en nummer (in één veld), postcode, gemeente en land; alle vier zijn verplicht. Na de postcode
-biedt Gemeente de plaatsen van die postcode aan; u mag ook zelf typen.
+biedt Gemeente de plaatsen van die postcode aan; u mag ook zelf typen. Daaronder openen **Kaart** en **Route** het adres in
+Google Maps, in een nieuw tabblad.
 
 **Contact** — contactpersoon, e-mail, twee telefoonnummers en fax. Een ingevuld e-mailadres of telefoonnummer
 moet geldig zijn; leeg laten mag.

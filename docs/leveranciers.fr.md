@@ -55,7 +55,8 @@ et **Historique**. Documents d'achat et Paiements s'affichent avec le droit *Voi
     corbeille. Le message indique chez quel fournisseur il figure.
 
 **Adresse** — rue et numéro (dans un seul champ), code postal, commune et pays ; les quatre sont obligatoires.
-Après le code postal, Commune propose les localités de ce code ; vous pouvez aussi taper vous-même.
+Après le code postal, Commune propose les localités de ce code ; vous pouvez aussi taper vous-même. En dessous, **Carte** et
+**Itinéraire** ouvrent l'adresse dans Google Maps, dans un nouvel onglet.
 
 **Contact** — personne de contact, e-mail, deux numéros de téléphone et fax. Une adresse e-mail ou un numéro de
 téléphone rempli doit être valide ; le laisser vide est permis.

@@ -56,7 +56,7 @@ postes ouverts.
 | Délai de paiement * | Le délai qui sert à calculer l'échéance d'une facture. Vous choisissez parmi les délais de paiement de l'Administration. |
 | Compte de vente | Le compte général pour votre bureau comptable, choisi dans le [plan comptable](beheer/rekeningplan.fr.md). Peut rester vide. |
 | Nom *, Nom (2e ligne) | Le nom tel qu'il figure sur les documents, 30 caractères au plus chacun. |
-| Rue *, N°, Code postal *, Commune *, Pays | L'adresse du client. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. |
+| Rue *, N°, Code postal *, Commune *, Pays | L'adresse du client. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. Sous la commune, **Carte** et **Itinéraire** ouvrent l'adresse dans Google Maps, dans un nouvel onglet. |
 | Langue * | La langue des documents pour ce client. |
 | Type de client | **Entreprise** ou **Particulier**. Une entreprise a besoin d'un numéro de TVA. |
 | Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle. **Rechercher** montre d'abord ce que sait la BCE — nom, type, création, situation juridique, forme juridique et adresse, et en rouge **arrêtée** si l'entreprise n'est plus active. **Reprendre** place le nom et l'adresse (avec l'ajout et la boîte au numéro) sur la fiche ; ce que la BCE ne connaît pas reste tel quel. Vous enregistrez ensuite vous-même. ⚠️ La BCE donne le siège social, pas toujours l'adresse de facturation. |
@@ -123,7 +123,8 @@ sur **choisir**. La fenêtre indique alors ce qui part et ce qui reste :
 
 ![Une adresse d'exécution de Résidence Les Tilleuls, avec une instruction de travail, le matériel à emporter et l'accessibilité par jour](images/klant-adres-fr.png "Adresse d'exécution")
 
-Sur une adresse d'exécution, la rue, le code postal et la commune sont obligatoires. Par ailleurs :
+Sur une adresse d'exécution, la rue, le code postal et la commune sont obligatoires ; sous la commune figurent **Carte** et
+**Itinéraire**, comme sur la fiche client. Par ailleurs :
 
 - **Remarques**, **Instruction de travail (sur l'ordre)** et **Matériel à emporter** — qui choisit cette adresse
   sur un ordre de travail y retrouve ces textes : les remarques comme remarque interne, l'instruction et le
