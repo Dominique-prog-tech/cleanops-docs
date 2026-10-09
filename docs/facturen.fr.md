@@ -121,6 +121,11 @@ CleanOps recherche le client sur le réseau avec son numéro GLN, sinon avec son
 
 ![La fenêtre Envoyer par Peppol pour une facture de Hoeve Ter Beke, avec l'explication et le bouton Envoyer](images/factuur-peppol-fr.png "Envoyer par Peppol")
 
+Si la facture a déjà été envoyée — par e-mail, par la poste ou par Peppol avec votre application précédente —, CleanOps demande
+d'abord si vous voulez quand même l'envoyer par Peppol. Si elle est déjà partie par Peppol avec l'application précédente, la
+question précise aussi que cet envoi n'est pas reconnu comme doublon : l'envoyer à nouveau la remet une deuxième fois chez le
+client.
+
 La fenêtre montre à qui part la facture électronique, avec l'identifiant Peppol du client. Il n'y a rien à remplir : la facture
 électronique est la facture elle-même, avec le PDF. Votre entreprise y figure comme sur la [fiche entreprise](beheer/bedrijfsfiche.fr.md)
 sous **Peppol**.

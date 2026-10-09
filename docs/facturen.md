@@ -115,6 +115,10 @@ CleanOps zoekt de klant op het netwerk op met zijn GLN-nummer, anders met zijn B
 
 ![Het venster Via Peppol versturen voor een factuur van Hoeve Ter Beke, met de uitleg en de knop Versturen](images/factuur-peppol.png "Via Peppol versturen")
 
+Is de factuur al verstuurd — per mail, per post of met uw vorige toepassing via Peppol —, dan vraagt CleanOps eerst of u ze
+toch via Peppol wilt versturen. Ging ze met de vorige toepassing al via Peppol, dan zegt de vraag ook dat die verzending niet
+als dubbel herkend wordt: opnieuw versturen zet ze een tweede keer bij de klant.
+
 Het venster toont naar wie de e-factuur gaat, met het Peppol-ID van de klant. Er valt niets in te vullen: de e-factuur is de
 factuur zelf, met de PDF erin. Uw bedrijf staat erin zoals op de [bedrijfsfiche](beheer/bedrijfsfiche.md) onder **Peppol**.
 
