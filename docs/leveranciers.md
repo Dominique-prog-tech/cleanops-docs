@@ -46,7 +46,7 @@ Bovenaan staan de naam en het nummer, daaronder de tabbladen **Fiche**, **Aankoo
 |---|---|
 | Naam * | Hoogstens 30 tekens. De lijst sorteert op deze naam. |
 | Naam (2e regel) | Een tweede regel, bijvoorbeeld een afdeling. |
-| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer nagekeken; een buitenlands nummer niet. Met **Ophalen** ernaast vult u naam en adres in uit de KBO. |
+| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer nagekeken; een buitenlands nummer niet. **Ophalen** ernaast toont eerst wat de KBO weet (met **stopgezet** in het rood als de onderneming niet meer actief is); **Overnemen** zet naam en adres op de fiche. |
 | Taal * | Nederlands of Frans. |
 
 !!! note "Een btw-nummer staat maar bij één leverancier"

@@ -56,7 +56,7 @@ betekent dus dat er geen offertes zijn. Enkel **Memo's** ziet u alleen met het r
 | Straat *, Nr, Postcode *, Gemeente *, Land | Het adres van de klant. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. |
 | Taal * | De taal van de documenten voor deze klant. |
 | Klanttype | **Bedrijf** of **Particulier**. Een bedrijf heeft een btw-nummer nodig. |
-| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer getoetst. Met **Ophalen** vult CleanOps de naam en het adres in uit de KBO; wat de KBO niet kent, blijft staan zoals het was. |
+| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer getoetst. Met **Ophalen** toont CleanOps eerst wat de KBO weet — naam, type, oprichting, juridische situatie, rechtsvorm en adres, en in het rood **stopgezet** als de onderneming niet meer actief is. Met **Overnemen** komen naam en adres (met toevoeging en bus bij het huisnummer) op de fiche; wat de KBO niet kent, blijft staan. Bewaren doet u daarna zelf. ⚠️ De KBO geeft de maatschappelijke zetel, niet altijd het adres waar u factureert. |
 | Contact | De contactpersoon bij de klant. |
 | Telefoon, Gsm, Fax, E-mail | Een telefoonnummer, gsm-nummer of e-mailadres moet geldig zijn; de fax niet. |
 | E-mail facturatie, E-mail rappels, E-mail attesten | Een apart adres voor facturen, rappels en attesten, als dat een ander is dan het e-mailadres hierboven. Elk veld bevat één geldig adres. |

@@ -58,7 +58,7 @@ signifie donc qu'il n'y a pas de devis. Seul l'onglet **Mémos** n'est visible q
 | Rue *, N°, Code postal *, Commune *, Pays | L'adresse du client. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. |
 | Langue * | La langue des documents pour ce client. |
 | Type de client | **Entreprise** ou **Particulier**. Une entreprise a besoin d'un numéro de TVA. |
-| Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle. **Rechercher** remplit le nom et l'adresse depuis la BCE ; ce que la BCE ne connaît pas reste tel quel. |
+| Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle. **Rechercher** montre d'abord ce que sait la BCE — nom, type, création, situation juridique, forme juridique et adresse, et en rouge **arrêtée** si l'entreprise n'est plus active. **Reprendre** place le nom et l'adresse (avec l'ajout et la boîte au numéro) sur la fiche ; ce que la BCE ne connaît pas reste tel quel. Vous enregistrez ensuite vous-même. ⚠️ La BCE donne le siège social, pas toujours l'adresse de facturation. |
 | Contact | La personne de contact chez le client. |
 | Téléphone, GSM, Fax, E-mail | Un numéro de téléphone, de GSM ou une adresse e-mail doit être valide ; le fax non. |
 | E-mail facturation, E-mail rappels, E-mail attestations | Une adresse distincte pour les factures, les rappels et les attestations, si elle diffère de l'adresse e-mail ci-dessus. Chaque champ contient une seule adresse valide. |
