@@ -25,6 +25,11 @@ Kies bovenaan een **Selectie**:
 | Klant zonder rappels | De posten van klanten bij wie het vinkje **Ontvangt rappels** uit staat op de [klantfiche](klanten.md). |
 | Alle openstaande | Alles wat openstaat, ook de creditnota's. |
 
+Vervallen, Volgende rappel en Klant zonder rappels tonen enkel klanten die **netto iets schuldig** zijn. Heeft een klant een
+openstaande creditnota die groter is dan zijn openstaande facturen, dan staat hij daar niet — een rappel zou hem aanmanen
+voor iets wat hij niet verschuldigd is. U vindt zijn posten wel bij **Alle openstaande**. Het getal naast **Openstaande
+posten** in het menu telt op dezelfde manier.
+
 De wachttijd stelt u in op de [bedrijfsfiche](beheer/bedrijfsfiche.md), bij **Wachttijd tussen twee rappels**. Leeg betekent
 15 dagen.
 

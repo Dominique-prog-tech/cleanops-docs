@@ -25,6 +25,11 @@ En haut, choisissez une **Sélection** :
 | Client sans rappels | Les postes des clients dont la case **Reçoit des rappels** est décochée sur la [fiche client](klanten.fr.md). |
 | Tous les postes ouverts | Tout ce qui est ouvert, y compris les notes de crédit. |
 
+Échus, Prochain rappel et Client sans rappels ne montrent que les clients qui **doivent encore quelque chose** au total. Si
+un client a une note de crédit ouverte plus élevée que ses factures ouvertes, il n'y figure pas — un rappel lui réclamerait
+ce qu'il ne doit pas. Ses postes restent visibles dans **Tous les postes ouverts**. Le nombre à côté de **Postes ouverts**
+dans le menu compte de la même façon.
+
 Le délai se règle sur la [fiche entreprise](beheer/bedrijfsfiche.fr.md), sous **Délai entre deux rappels**. Vide signifie
 15 jours.
 
