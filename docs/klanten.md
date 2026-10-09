@@ -11,9 +11,11 @@ Klik links in het menu, onder **CRM**, op **Klanten**.
 
 ## De lijst
 
-Per klant ziet u het nummer, de zoeknaam, de naam, een telefoonnummer (de gsm, en anders het vaste nummer), de
-postcode, de gemeente, de betaaltermijn en het e-mailadres. Staat er naast de naam **geblokkeerd** of **geen
-nieuwe opdrachten**, dan draagt de klant die aanduiding op zijn fiche.
+Per klant ziet u het nummer, de zoeknaam, de naam, de straat en het huisnummer, een telefoonnummer (de gsm, en
+anders het vaste nummer), de postcode, de gemeente en het e-mailadres. Zo houdt u klanten met dezelfde naam uit
+elkaar. Het **btw-nummer** en de **betaaltermijn** staan standaard verborgen: met de kolomkiezer zet u ze erbij.
+Staat er naast de naam **geblokkeerd** of **geen nieuwe opdrachten**, dan draagt de klant die aanduiding op zijn
+fiche.
 
 - **Zoeken** — de cursor staat meteen in het zoekveld. U mag meerdere woorden typen; elk woord moet ergens bij
   de klant voorkomen. *janssens gent* vindt dus de klanten die Janssens heten en in Gent wonen. Er wordt gezocht

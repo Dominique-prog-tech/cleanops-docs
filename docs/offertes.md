@@ -30,7 +30,8 @@ Het getal naast **Offertes** in het menu telt de verstuurde offertes die u vanda
 
 ## Een nieuwe offerte
 
-Klik op **Nieuwe offerte**, zoek de klant op naam of klantnummer en klik op **kies**. Op de
+Klik op **Nieuwe offerte**, zoek de klant op naam of klantnummer en klik op **kies**. Onder elke naam staat het
+adres, zodat u klanten met dezelfde naam uit elkaar houdt. Op de
 [klantfiche](klanten.md#de-knoppen-onderaan) staat dezelfde knop.
 
 Een nieuwe offerte krijgt de datum van vandaag, **Geldig tot** over 30 dagen en **Opvolgen op** over 10 dagen. Ze begint

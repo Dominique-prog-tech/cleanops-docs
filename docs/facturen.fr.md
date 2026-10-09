@@ -51,6 +51,7 @@ Avec **Nouvelle facture**, vous établissez une facture pour quelque chose qui n
 déplacement ou une livraison de matériel.
 
 1. En haut de la liste, cliquez sur **Nouvelle facture**, cherchez le client par nom ou par numéro et cliquez sur **choisir**.
+   Sous chaque nom figure l'adresse.
 2. Indiquez la **Date de facture** (aujourd'hui par défaut) et, si besoin, la **Référence du client**, le **Texte d'en-tête** et le
    **Texte de pied de page**. **Insérer un texte de facture** ajoute un texte des [textes de facture](beheer/factuurteksten.fr.md)
    à la fin du champ, dans la langue du client.

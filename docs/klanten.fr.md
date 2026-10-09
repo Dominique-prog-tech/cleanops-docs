@@ -11,9 +11,11 @@ Dans le menu de gauche, sous **CRM**, cliquez sur **Clients**.
 
 ## La liste
 
-Pour chaque client, vous voyez le numéro, le nom de recherche, le nom, un numéro de téléphone (le GSM, sinon le
-fixe), le code postal, la commune, le délai de paiement et l'adresse e-mail. Si **bloqué** ou **pas de nouvelles
-missions** figure à côté du nom, le client porte cette mention sur sa fiche.
+Pour chaque client, vous voyez le numéro, le nom de recherche, le nom, la rue et le numéro, un numéro de téléphone
+(le GSM, sinon le fixe), le code postal, la commune et l'adresse e-mail. Vous distinguez ainsi les clients qui
+portent le même nom. Le **numéro de TVA** et le **délai de paiement** sont masqués par défaut : le sélecteur de
+colonnes les affiche. Si **bloqué** ou **pas de nouvelles missions** figure à côté du nom, le client porte cette
+mention sur sa fiche.
 
 - **Rechercher** — le curseur est déjà dans le champ de recherche. Vous pouvez taper plusieurs mots ; chaque mot
   doit figurer quelque part chez le client. *janssens gent* trouve donc les clients qui s'appellent Janssens et

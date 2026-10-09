@@ -31,7 +31,7 @@ Le nombre à côté de **Devis** dans le menu compte les devis envoyés que vous
 
 ## Un nouveau devis
 
-Cliquez sur **Nouveau devis**, cherchez le client par nom ou numéro de client et cliquez sur **choisir**. Le même bouton
+Cliquez sur **Nouveau devis**, cherchez le client par nom ou numéro de client et cliquez sur **choisir**. Sous chaque nom figure l'adresse, pour distinguer les clients qui portent le même nom. Le même bouton
 figure sur la [fiche client](klanten.fr.md#les-boutons-en-bas).
 
 Un nouveau devis reçoit la date du jour, **Valable jusqu'au** dans 30 jours et **Suivi le** dans 10 jours. Il commence

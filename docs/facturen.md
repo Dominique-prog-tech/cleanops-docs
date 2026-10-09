@@ -47,7 +47,8 @@ Staat de export uit, of maakt uw vorige toepassing de facturen nog, dan zegt het
 Met **Nieuwe factuur** maakt u een factuur voor iets dat geen werkorder heeft, bijvoorbeeld een verplaatsing of een
 materiaallevering.
 
-1. Klik bovenaan de lijst op **Nieuwe factuur**, zoek de klant op naam of nummer en klik op **kies**.
+1. Klik bovenaan de lijst op **Nieuwe factuur**, zoek de klant op naam of nummer en klik op **kies**. Onder elke naam
+   staat het adres.
 2. Vul de **Factuurdatum** in (standaard vandaag), en eventueel de **Klantreferentie**, de **Koptekst** en de **Slottekst**. Met
    **Factuurtekst invoegen** zet u een tekst uit de [factuurteksten](beheer/factuurteksten.md) achteraan in het veld, in de taal
    van de klant.
