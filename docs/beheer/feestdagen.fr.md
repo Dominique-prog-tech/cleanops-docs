@@ -42,7 +42,8 @@ Les jours de fermeture sont décidés par votre entreprise : un pont, la fermetu
 ![La fenêtre Modifier le jour de fermeture, avec la période et la description en néerlandais et en français](../images/feestdag-venster-fr.png "Jour de fermeture")
 
 - **Ajouter** — cliquez sur **Nouveau jour de fermeture**. Du et Au sont obligatoires (pour un seul jour, indiquez
-  deux fois la même date), ainsi qu'une description dans au moins une langue.
+  deux fois la même date), ainsi qu'une description dans au moins une langue. Avec **Couleur sur le planning des équipes**,
+  vous choisissez la couleur du jour sur le [planning des équipes](../ploegen.fr.md), ou aucune couleur.
 - **Modifier** — double-cliquez sur la ligne.
 - **Supprimer** — ouvrez la ligne et cliquez sur **Supprimer**. Après confirmation, le jour de fermeture disparaît
   définitivement.

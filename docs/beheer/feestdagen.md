@@ -42,7 +42,8 @@ Sluitingsdagen beslist uw bedrijf zelf: een brugdag, de collectieve sluiting, he
 ![Het venster Sluitingsdag wijzigen, met de periode en de omschrijving in het Nederlands en het Frans](../images/feestdag-venster.png "Sluitingsdag")
 
 - **Toevoegen** — klik op **Nieuwe sluitingsdag**. Van en Tot zijn verplicht (voor één dag vult u tweemaal dezelfde
-  datum in), en een omschrijving in minstens één taal.
+  datum in), en een omschrijving in minstens één taal. Met **Kleur op het ploegenbord** kiest u de kleur waarmee de dag op
+  het [ploegenbord](../ploegen.md) staat, of *Geen kleur*.
 - **Wijzigen** — dubbelklik op de rij.
 - **Verwijderen** — open de rij en klik op **Verwijderen**. Na een bevestiging is de sluitingsdag definitief weg.
 
