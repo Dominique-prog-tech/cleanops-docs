@@ -96,8 +96,9 @@ n'a touché entrent en ligne de compte. Un ordre exécuté, planifié ou modifi�
 ### L'onglet Ordres de travail
 
 Tous les ordres de travail de ce contrat, avec leurs dates, leur statut, le collaborateur, la quantité, l'unité, le
-prix unitaire, le montant, la date de facturation et le numéro de facture. Le **tarif** (code et description)
-s'active via **Choisir les colonnes** ; il est masqué par défaut, car le tableau deviendrait plus large que la fiche.
+prix unitaire, le montant, la date de facturation et le numéro de facture. Le **tarif** (code et description), la date planifiée, le convoyeur,
+les instructions, le matériel et la remarque interne s'activent via **Choisir les colonnes** ; ils sont masqués par
+défaut, car le tableau deviendrait plus large que la fiche.
 Double-cliquez sur une ligne pour ouvrir l'ordre. Un ordre de travail isolé que quelqu'un a lié à la main à ce contrat y figure aussi ; il ne compte pas comme un passage
 (voir [Ordres de travail](werkorders.fr.md)).
 

@@ -96,8 +96,9 @@ altijd staan.
 ### Het tabblad Werkorders
 
 Alle werkorders van dit contract, met hun datums, status, medewerker, aantal, eenheid, eenheidsprijs, bedrag, de
-datum van facturatie en het factuurnummer. Het **tarief** (code en omschrijving) zet u aan via **Kolommen kiezen**;
-het staat standaard uit omdat de tabel anders breder wordt dan de fiche. Dubbelklik op een rij om de werkorder te openen. Ook een losse werkorder die iemand met
+datum van facturatie en het factuurnummer. Het **tarief** (code en omschrijving), de geplande datum, de bijrijder, de
+instructies, het materiaal en de interne opmerking zet u aan via **Kolommen kiezen**; ze staan standaard uit omdat de
+tabel anders breder wordt dan de fiche. Dubbelklik op een rij om de werkorder te openen. Ook een losse werkorder die iemand met
 de hand aan dit contract koppelde, staat hier; ze telt niet als beurt (zie [Werkorders](werkorders.md)).
 
 Met **Werkorders nu aanmaken** onderaan het tabblad Contract maakt CleanOps meteen de werkorders van dit contract voor de komende 90 dagen,
