@@ -54,7 +54,7 @@ onglets : **Contrat**, **Ordres de travail** et **Historique**.
 | Fin | À partir de cette date, plus aucun passage ne s'ajoute. Ne peut pas précéder le début. |
 | En pause | Suspend le contrat : aucun ordre de travail ne s'ajoute tant que la case est cochée. |
 | Remarques (sur chaque bon de travail) | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 35 premiers caractères la description de l'ordre. |
-| Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. |
+| Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. |
 | Fréquence | Le rythme — voir ci-dessous. |
 
 ### Le rythme

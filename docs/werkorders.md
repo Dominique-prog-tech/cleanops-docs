@@ -138,7 +138,7 @@ Onderaan de fiche staat wat er gefactureerd wordt.
 
 | Veld | Toelichting |
 |---|---|
-| Tarief | Kies een tarief, en CleanOps vult de eenheid, de eenheidsprijs, de btw-code en de factuuropmerking in, en de omschrijving als u daar zelf niets typte. Het aantal blijft staan. Maakt u het tarief leeg, dan blijven die velden staan. |
+| Tarief | De lijst toont de tarieven in de taal van de werkorder. Kies een tarief, en CleanOps vult de eenheid, de eenheidsprijs, de btw-code en de factuuropmerking in, en de omschrijving als u daar zelf niets typte. Het aantal blijft staan. Maakt u het tarief leeg, dan blijven die velden staan. |
 | Klantreferentie | Het bestelnummer of de referentie van de klant, hoogstens 30 tekens. Komt op de factuur. |
 | Aantal, Eenheid, Eenheidsprijs | Wat er gefactureerd wordt. Een correctie boekt u met een negatief aantal. |
 | Bedrag | Aantal × eenheidsprijs, door CleanOps gerekend. Met de hand invullen kan enkel als aantal en eenheidsprijs allebei nul zijn, bijvoorbeeld voor een forfait. |

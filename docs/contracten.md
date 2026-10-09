@@ -53,7 +53,7 @@ tabbladen: **Contract**, **Werkorders** en **Logboek**.
 | Einde | Vanaf deze datum komen er geen beurten meer bij. Mag niet vóór de start liggen. |
 | On hold | Pauzeert het contract: er komen geen werkorders bij tot u het vinkje weghaalt. |
 | Opmerkingen (komen op elke werkbon) | Een vaste tekst voor elke werkorder uit dit contract, zoals *sleutel aan het onthaal vragen*. Ze wordt de instructie voor de ploeg, en haar eerste 35 tekens de omschrijving van de werkorder. |
-| Btw-code, Tarief | Komen op de werkorders van dit contract. |
+| Btw-code, Tarief | Komen op de werkorders van dit contract. De lijst Tarief toont de tarieven in de taal van de klant. |
 | Frequentie | Het ritme — zie hieronder. |
 
 ### Het ritme
