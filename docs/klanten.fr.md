@@ -190,10 +190,13 @@ et modifiez des mémos avec le droit de gérer les rappels.
 
 ### Les boutons en bas
 
-À côté d'**Enregistrer** et d'**Annuler**, la fiche peut porter trois boutons : **Nouvel ordre de travail**,
-**Nouveau devis** et **Facture d'acompte**. Vous n'en voyez un que si vous avez le droit de créer ce qu'il crée,
-et que la partie vers laquelle il mène est ouverte pour vous. Ce que vous créez ainsi apparaît dans l'onglet
-correspondant.
+À côté d'**Enregistrer** et d'**Annuler**, la fiche peut porter quatre boutons.
+
+- **Ordres de travail** ouvre la [liste des ordres de travail](werkorders.md) avec uniquement les ordres de ce client,
+  tous statuts confondus. Vous le voyez si vous pouvez ouvrir les ordres de travail.
+- **Nouvel ordre de travail**, **Nouveau devis** et **Facture d'acompte** n'apparaissent que si vous avez le droit de
+  créer ce qu'ils créent, et que la partie vers laquelle ils mènent est ouverte pour vous. Ce que vous créez ainsi
+  apparaît dans l'onglet correspondant.
 
 !!! info "Tous les boutons ne sont pas visibles par tout le monde"
     Les boutons que vous voyez et les lignes que vous pouvez ouvrir dépendent de vos droits. Une partie qui n'est

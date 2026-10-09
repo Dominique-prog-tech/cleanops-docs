@@ -186,9 +186,13 @@ wijzigen doet u met het recht om de rappels te beheren.
 
 ### De knoppen onderaan
 
-Naast **Opslaan** en **Annuleren** kan de fiche drie knoppen dragen: **Nieuwe werkorder**, **Nieuwe offerte** en
-**Voorschotfactuur**. U ziet er een enkel wanneer u het recht hebt om te maken wat hij maakt, én het onderdeel
-waar hij naartoe leidt voor u vrijgegeven is. Wat u zo aanmaakt, verschijnt in het bijbehorende tabblad.
+Naast **Opslaan** en **Annuleren** kan de fiche vier knoppen dragen.
+
+- **Werkorders** opent de [werkorderlijst](werkorders.md) met enkel de werkorders van deze klant, over alle statussen.
+  U ziet hem wanneer u de werkorders mag openen.
+- **Nieuwe werkorder**, **Nieuwe offerte** en **Voorschotfactuur** ziet u enkel wanneer u het recht hebt om te maken
+  wat ze maken, én het onderdeel waar ze naartoe leiden voor u vrijgegeven is. Wat u zo aanmaakt, verschijnt in het
+  bijbehorende tabblad.
 
 !!! info "Niet elke knop is voor iedereen zichtbaar"
     Welke knoppen u ziet en welke rijen u kunt openen, hangt af van wat u mag. Een onderdeel dat nog niet

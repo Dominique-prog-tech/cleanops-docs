@@ -26,7 +26,13 @@ statut l'indique déjà ; le numéro de facture se retrouve aussi via **Recherch
 - **Période sur** et **Période** — choisissez d'abord la date sur laquelle vous filtrez (**Commandé**, **Planifié**
   ou **Exécuté**), puis la période. Avec **Planifié**, les choix fixes regardent vers l'avant ; avec **Commandé** et
   **Exécuté**, vers l'arrière.
-- **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur le numéro, le client,
+- **Tarif** — tapez une partie de la description et choisissez le tarif : la liste ne montre alors que les ordres de
+  travail avec ce tarif. Les tarifs archivés y figurent aussi, car des ordres plus anciens les portent encore. La croix
+  efface votre choix.
+- **Client** — le bouton **Ordres de travail** de la [fiche client](klanten.md#les-boutons-en-bas) ouvre cette liste
+  avec uniquement les ordres de ce client, tous statuts confondus. En haut figure alors **Client :** suivi du nom ; la
+  croix à côté affiche à nouveau les ordres de tous les clients.
+- **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur le numéro, le client (par nom ou numéro de client),
   le chantier, l'adresse, le téléphone, le collaborateur, le véhicule, la description, les instructions, la remarque
   interne, le numéro de facture et le numéro de contrat. Les accents et les espaces n'ont pas d'importance : *Liege* trouve
   aussi *Liège*, et *0475123456* trouve aussi *0475 12 34 56*.

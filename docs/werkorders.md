@@ -24,7 +24,12 @@ de status dat al; het factuurnummer vindt u ook via **Zoeken**.
   [dashboard](dashboard.md), dan is dat het getal van de tegel.
 - **Periode op** en **Periode** — kies eerst op welke datum u filtert (**Besteld**, **Gepland** of **Uitgevoerd**), en
   dan de periode. Bij **Gepland** kijken de vaste keuzes vooruit, bij **Besteld** en **Uitgevoerd** terug.
-- **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant, de werf, het adres,
+- **Tarief** — typ een deel van de omschrijving en kies het tarief: de lijst toont dan enkel de werkorders met dat
+  tarief. Ook gearchiveerde tarieven staan erin, want oudere werkorders dragen ze nog. Het kruisje wist uw keuze.
+- **Klant** — de knop **Werkorders** op de [klantfiche](klanten.md#de-knoppen-onderaan) opent deze lijst met enkel de
+  werkorders van die klant, over alle statussen. Bovenaan staat dan **Klant:** met de naam; het kruisje ernaast toont
+  weer de werkorders van alle klanten.
+- **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant (op naam of klantnummer), de werf, het adres,
   het telefoonnummer, de medewerker, het voertuig, de omschrijving, de instructies, de interne opmerking, het
   factuurnummer en het contractnummer. Accenten en spaties maken niet uit: *Liege* vindt ook *Liège*, en *0475123456*
   vindt ook *0475 12 34 56*.
