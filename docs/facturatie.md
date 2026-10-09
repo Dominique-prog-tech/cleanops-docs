@@ -43,8 +43,10 @@ Klik bij de klant op **Factureren…**. Het venster toont zijn te factureren wer
   zonder bedrag of btw-code kan niet geboekt worden.
 - Klik op **attest ontbreekt**, of op het groene **attest** als er al een is, om de [attesten](attesten.md) van die werkorder in
   een nieuw tabblad te openen. Uw keuze in het venster blijft staan.
-- **cameraverslag vereist** en **contract** zijn vermeldingen.
+- **cameraverslag vereist** is een vermelding; **contract** opent het contract in een nieuw tabblad.
 - Klik op het nummer om de werkorder in een nieuw tabblad te openen en recht te zetten.
+- Per werkorder ziet u ook de **btw-code**, het **aantal** en de **eenheidsprijs** (leeg als ze 0 zijn). Let op 6 %: dan hoort er
+  een attest bij.
 
 Klik op **Factuur boeken** en bevestig. De factuur krijgt het volgende nummer; rechtzetten kan daarna enkel met een creditnota. De
 factuur opent meteen met het afdrukvoorbeeld (zie [Facturen](facturen.md#afdrukken)).
