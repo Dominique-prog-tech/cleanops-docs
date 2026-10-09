@@ -28,7 +28,7 @@ anderen op naam.
 ## Een nieuwe medewerker
 
 Klik op **Nieuwe medewerker**. U krijgt een lege fiche; de velden met een sterretje zijn verplicht. Na
-**Opslaan** opent de fiche van de nieuwe medewerker, met de tabbladen erbij.
+**Bewaren** opent de fiche van de nieuwe medewerker, met de tabbladen erbij.
 
 ## De medewerkerfiche
 
@@ -73,7 +73,7 @@ Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u ma
 | Werkregime | De dagen waarop de persoon werkt, met daarnaast het percentage van een voltijdse week. Het verlof telt enkel deze dagen. |
 | Kleur in de planning | De kleur waarmee de planning deze medewerker toont: zijn rij op het [planbord](planning.md#het-planbord) en zijn code in de [planningslijst](planning.md#de-planningslijst). Kies een kleur uit het palet, of **Geen kleur**. Het **Voorbeeld** ernaast toont de naam zoals de planning hem toont. |
 
-Klik op **Opslaan** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. **Annuleren** brengt u
+Klik op **Bewaren** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. **Annuleren** brengt u
 terug naar de lijst zonder te bewaren.
 
 ### Het tabblad Verlof

@@ -34,7 +34,7 @@ soort opent.
 
 Dubbelklik op een soort. De fiche heeft een tabblad per taal en het tabblad **Verzending**.
 
-![De mailtekst Factuur op het tabblad Nederlands: het Onderwerp, de Tekst in een opmaakeditor, rechts de beschikbare variabelen, en de knop Opslaan](../images/mailtekst-fiche.png "Een mailtekst")
+![De mailtekst Factuur op het tabblad Nederlands: het Onderwerp, de Tekst in een opmaakeditor, rechts de beschikbare variabelen, en de knop Bewaren](../images/mailtekst-fiche.png "Een mailtekst")
 
 Op het tabblad **Nederlands** of **Français**:
 
@@ -44,7 +44,7 @@ Op het tabblad **Nederlands** of **Français**:
 - Onder de tekst ziet u **Standaardtekst van CleanOps** of **Eigen tekst**. **Standaardtekst terugzetten**
   zet de standaardtekst van die taal terug.
 
-Klik op **Opslaan**. Wijkt de tekst af van de standaardtekst, dan wordt ze uw eigen tekst.
+Klik op **Bewaren**. Wijkt de tekst af van de standaardtekst, dan wordt ze uw eigen tekst.
 
 ### De plaatshouders
 
@@ -67,7 +67,7 @@ kopiëren. Bij het mailen vult CleanOps ze in met de gegevens van het document. 
     Een bedrag komt zonder munt in de mail. Schrijf dus "€ {{document.total}}" of "{{document.total}} euro".
     Bij een creditnota staat het bedrag zonder minteken: de zin zegt al dat het om een creditnota gaat.
 
-Een variabele die CleanOps voor die soort niet kent, bijvoorbeeld door een tikfout, wordt bij het opslaan
+Een variabele die CleanOps voor die soort niet kent, bijvoorbeeld door een tikfout, wordt bij het bewaren
 geweigerd. CleanOps noemt ze dan.
 
 ### Het tabblad Verzending

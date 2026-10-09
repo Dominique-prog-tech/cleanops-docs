@@ -30,7 +30,7 @@ fiche.
 
 ## Een nieuwe klant
 
-Klik op **Nieuwe klant**. U krijgt een lege fiche; de velden met een sterretje zijn verplicht. Na **Opslaan**
+Klik op **Nieuwe klant**. U krijgt een lege fiche; de velden met een sterretje zijn verplicht. Na **Bewaren**
 opent de fiche van de nieuwe klant, met de tabbladen erbij. CleanOps maakt meteen ook een eerste uitvoeringsadres uit
 het adres en de telefoon van de klant, en zegt dat bovenaan; u vindt het onder **Adressen**.
 
@@ -67,7 +67,7 @@ betekent dus dat er geen offertes zijn. Enkel **Memo's** ziet u alleen met het r
 | Facturen per e-mail | De klant ontvangt zijn facturen liever per e-mail dan per post. |
 | Opmerkingen | Vrije tekst bij de klant, zoals contactgegevens van personen of afspraken. |
 
-Klik op **Opslaan** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. Een e-mailadres,
+Klik op **Bewaren** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. Een e-mailadres,
 telefoonnummer of btw-nummer dat niet klopt, wordt geweigerd — ook als u het zelf niet gewijzigd hebt; verbeter
 het dan eerst. **Annuleren** brengt u terug naar de lijst zonder te bewaren.
 
@@ -188,7 +188,7 @@ wijzigen doet u met het recht om de rappels te beheren.
 
 ### De knoppen onderaan
 
-Naast **Opslaan** en **Annuleren** kan de fiche vier knoppen dragen.
+Naast **Bewaren** en **Annuleren** kan de fiche vier knoppen dragen.
 
 - **Werkorders** opent de [werkorderlijst](werkorders.md) met enkel de werkorders van deze klant, over alle statussen.
   U ziet hem wanneer u de werkorders mag openen.
@@ -209,7 +209,7 @@ klant in de prullenbak ligt.
 
 ## Veelgestelde vragen
 
-**Ik kan een klant niet opslaan: "Ongeldig e-mailadres" (of telefoonnummer).**
+**Ik kan een klant niet bewaren: "Ongeldig e-mailadres" (of telefoonnummer).**
 Het veld bevat een waarde die niet klopt, bijvoorbeeld een spatie midden in een e-mailadres. Verbeter het veld
 en sla opnieuw op.
 

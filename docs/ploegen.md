@@ -39,7 +39,7 @@ Klik een lege cel onder de soort en de dag. Het venster toont wie die dag kan:
 - Wie die dag al in een andere ploeg zit of verlof heeft, staat niet in de lijst.
 - Wie volgens zijn werkregime vrij is, staat er wél in, met het label *volgens regime vrij*: u kunt hem toch kiezen.
 
-Klik op **Opslaan**. Zonder chauffeur zegt het venster wat er ontbreekt.
+Klik op **Bewaren**. Zonder chauffeur zegt het venster wat er ontbreekt.
 
 ### Een ploeg wijzigen of verwijderen
 
@@ -47,7 +47,7 @@ Klik de ploeg. Het venster opent met de huidige keuze. Dag en soort liggen vast;
 maak ze daar opnieuw.
 
 Kan een lid intussen niet meer — bijvoorbeeld omdat het verlof heeft genomen — dan staat het er met de reden bij.
-Haal het weg; zolang het erin staat, kunt u niet opslaan.
+Haal het weg; zolang het erin staat, kunt u niet bewaren.
 
 Met **Verwijderen** verdwijnt de ploeg, na een bevestiging. Dat kan niet ongedaan gemaakt worden.
 
@@ -75,7 +75,7 @@ opmerking wordt gewist.
 
 **Verlof boeken** opent eerst een venster waarin u de medewerker kiest. Met **Verder** opent het verlofvenster van de
 [medewerkerfiche](medewerkers.md#het-tabblad-verlof), met dezelfde velden en dezelfde berekening van de verlofdagen. Na
-het opslaan staat het verlof meteen in het overzicht.
+het bewaren staat het verlof meteen in het overzicht.
 
 ## Afdrukken
 

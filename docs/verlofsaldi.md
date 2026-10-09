@@ -61,7 +61,7 @@ toekenning, en onderaan zijn verlofboekingen van dat jaar, de jongste bovenaan.
 | Wettelijk, Anciënniteit, Extra | Van 0 tot 366, met hoogstens één cijfer na de komma. De pijltjes gaan per halve dag. |
 | Correctie | Van −366 tot 366, met hoogstens één cijfer na de komma. |
 
-**Totaal**, **Opgenomen** en **Resterend** onder de velden rekenen mee terwijl u typt. Klik op **Opslaan** om te
+**Totaal**, **Opgenomen** en **Resterend** onder de velden rekenen mee terwijl u typt. Klik op **Bewaren** om te
 bewaren, of op **Annuleren** om het venster te sluiten zonder iets te wijzigen.
 
 Met de knop **2025 overnemen** (het jaar vóór het gekozen jaar) zet u voor deze ene medewerker wettelijk, anciënniteit
@@ -86,7 +86,7 @@ ervoor: wettelijk, anciënniteit en extra — niet de correctie, want die hoort 
 
 De kolom **Op 0 dagen** toont hoeveel het er zijn. In het venster van de medewerker staat daarover een melding met de
 knop **Naar de medewerker**, die het tabblad **Verlof** van zijn fiche opent. Open daar de boeking en klik op
-**Opslaan**: CleanOps rekent dan de dagen volgens het werkregime.
+**Bewaren**: CleanOps rekent dan de dagen volgens het werkregime.
 
 Valt de boeking op een dag waarop de medewerker volgens zijn werkregime niet werkt, dan blijft ze terecht op 0.
 

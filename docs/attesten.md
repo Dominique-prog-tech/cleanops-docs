@@ -27,13 +27,13 @@ Een klant zoekt u in het zoekveld. In de kolom **Attesten** staat het aantal att
 *ontbreekt*.
 
 !!! tip "Werken met Zonder attest"
-    Zet **Attest** op *Zonder attest* en maak de attesten één voor één. Keert u na het opslaan terug naar de lijst, dan is de
+    Zet **Attest** op *Zonder attest* en maak de attesten één voor één. Keert u na het bewaren terug naar de lijst, dan is de
     werkorder die u net afwerkte eruit verdwenen.
 
 ## Een attest maken of wijzigen
 
 Klik onder de werkorder op **Nieuw attest**, of dubbelklik op een bestaand attest. Het attest opent op zijn eigen fiche;
-**Opslaan** en **Annuleren** brengen u terug naar waar u vandaan kwam.
+**Bewaren** en **Annuleren** brengen u terug naar waar u vandaan kwam.
 
 ![De fiche van Attest 900118/1 met de werkorder bovenaan, en Datum, Product, Hoeveelheid, Eenheid, Verwerking, Verwerkingsbedrijf, Herkomst en Werfopmerking](images/attest-fiche.png "Een attest")
 
@@ -71,7 +71,7 @@ Het **registratienummer** in het briefhoofd en de **ondertekenaar** onderaan kom
 [bedrijfsfiche](beheer/bedrijfsfiche.md#verwerkingsattesten); laat u ze leeg, dan staan ze niet op het attest. Het attest
 staat in de taal van de werkorder: Nederlands of Frans.
 
-Het voorbeeld toont wat bewaard is. Hebt u iets gewijzigd, dan staat naast de knop *eerst opslaan*.
+Het voorbeeld toont wat bewaard is. Hebt u iets gewijzigd, dan staat naast de knop *eerst bewaren*.
 
 ## Mailen
 

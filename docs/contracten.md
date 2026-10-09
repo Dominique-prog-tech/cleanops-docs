@@ -30,7 +30,7 @@ Een afgelopen contract blijft in de lijst staan, met zijn einddatum.
 
 Een nieuw contract maakt u op de fiche van de [klant](klanten.md): open het tabblad **Contracten** en klik op
 **Nieuw contract**. Het contract begint met vandaag als contractdatum en begindatum, en maandelijks op de eerste
-als ritme. Na **Opslaan** opent het nieuwe contract.
+als ritme. Na **Bewaren** opent het nieuwe contract.
 
 ## De contractfiche
 
@@ -88,7 +88,7 @@ Zo rekent CleanOps de beurten:
 ### Als u het ritme wijzigt
 
 Wijzigt u het ritme van een contract dat al werkorders voor de komende tijd heeft, dan vraagt CleanOps na het
-opslaan of die opnieuw berekend moeten worden: **Opnieuw berekenen** of **Laten staan**. Enkel de werkorders die
+bewaren of die opnieuw berekend moeten worden: **Opnieuw berekenen** of **Laten staan**. Enkel de werkorders die
 niemand aanraakte, komen daarvoor in aanmerking. Een werkorder die uitgevoerd, ingepland of aangepast is, blijft
 altijd staan.
 

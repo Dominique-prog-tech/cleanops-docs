@@ -121,7 +121,7 @@ andere rij kiest.
 
 ### Eén werkorder toewijzen
 
-Klik in de rij op **Toewijzen**. Kies de **Medewerker** en de **Geplande dag**, en klik op **Opslaan**. Maakt u de
+Klik in de rij op **Toewijzen**. Kies de **Medewerker** en de **Geplande dag**, en klik op **Bewaren**. Maakt u de
 geplande dag leeg, dan komt de werkorder terug bij het werk zonder datum.
 
 ### Meerdere werkorders tegelijk
@@ -181,7 +181,7 @@ Kijk of ze een geplande datum heeft: zonder datum staat ze links onder **Zonder 
 plannen** in de lijst. Is ze al uitgevoerd, dan staat ze niet meer op de planning.
 
 **Hoe zet ik een werkorder terug zonder datum?**
-In de planningslijst: **Toewijzen**, maak de **Geplande dag** leeg en klik op **Opslaan**.
+In de planningslijst: **Toewijzen**, maak de **Geplande dag** leeg en klik op **Bewaren**.
 
 **De knop Wisselen staat grijs.**
 De aangevinkte werkorders horen bij één medewerker, of bij meer dan twee. Vink het werk van precies twee medewerkers

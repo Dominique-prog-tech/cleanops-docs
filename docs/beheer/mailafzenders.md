@@ -37,7 +37,7 @@ Klik op **Nieuwe afzender**, of dubbelklik op een rij.
 | **E-mailadres** *(verplicht)* | het adres waarvan de mail vertrekt. Een adres staat maar één keer in de lijst. |
 | **Weergavenaam** | de naam die de klant als afzender ziet, bijvoorbeeld "Uw firma — facturatie" |
 
-Klik op **Opslaan**.
+Klik op **Bewaren**.
 
 ## Een afzender archiveren of terughalen
 

@@ -28,7 +28,7 @@ is een keuzelijst.
 
 ## Contact
 
-Telefoon, e-mail en website. CleanOps controleert bij het opslaan of een ingevuld nummer en e-mailadres geldig
+Telefoon, e-mail en website. CleanOps controleert bij het bewaren of een ingevuld nummer en e-mailadres geldig
 zijn. Leeg laten mag; half ingevuld niet.
 
 ## Fiscaal en bank
@@ -114,7 +114,7 @@ sjabloon van het attest staan. Vul ze hier één keer in.
 
 ## Bewaren of annuleren
 
-**Opslaan** bewaart uw wijzigingen. **Annuleren** gooit ze weg en brengt u terug naar het platformbeheer.
+**Bewaren** bewaart uw wijzigingen. **Annuleren** gooit ze weg en brengt u terug naar het platformbeheer.
 
 ## Veelgestelde vragen
 

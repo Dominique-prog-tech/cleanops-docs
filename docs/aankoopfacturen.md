@@ -46,7 +46,7 @@ toepassing nog in gebruik, dan zegt het venster dat en verstuurt het niets.
 ## Een nieuwe aankoopfactuur
 
 Klik op **Nieuwe aankoopfactuur**. Het dagboek, de soort *Factuur* en de boekingsdatum van vandaag staan al ingevuld.
-Na **Opslaan** krijgt het document zijn nummer en opent het opnieuw, met de tabbladen erbij.
+Na **Bewaren** krijgt het document zijn nummer en opent het opnieuw, met de tabbladen erbij.
 
 ![De fiche van een aankoopfactuur van IJzerwaren De Clercq met het blok Document en twee btw-regels, 21 % en 6 %](images/aankoopfactuur-fiche.png "Een aankoopfactuur")
 

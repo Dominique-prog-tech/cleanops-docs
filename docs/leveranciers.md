@@ -25,10 +25,10 @@ gesorteerd.
 ## Een nieuwe leverancier
 
 Klik op **Nieuwe leverancier**. U krijgt een lege fiche; de velden met een sterretje zijn verplicht. Het nummer
-kent CleanOps zelf toe. Na **Opslaan** opent de fiche van de nieuwe leverancier, met de tabbladen erbij.
+kent CleanOps zelf toe. Na **Bewaren** opent de fiche van de nieuwe leverancier, met de tabbladen erbij.
 
 Kwam er een factuur via Peppol binnen van een leverancier die CleanOps nog niet kent, dan maakt u hem aan vanuit die
-factuur: de fiche is dan voorgevuld met de gegevens van het document, en na **Opslaan** gaat u terug naar de factuur.
+factuur: de fiche is dan voorgevuld met de gegevens van het document, en na **Bewaren** gaat u terug naar de factuur.
 Zie [Binnengekomen documenten](binnengekomen-documenten.md).
 
 ## De leveranciersfiche
@@ -71,7 +71,7 @@ moet geldig zijn; leeg laten mag.
 
 **Opmerkingen** — vrije tekst, bijvoorbeeld afspraken over leveringen.
 
-Klik op **Opslaan** om te bewaren. Ontbreekt er een verplicht veld of klopt een waarde niet, dan zegt CleanOps
+Klik op **Bewaren** om te bewaren. Ontbreekt er een verplicht veld of klopt een waarde niet, dan zegt CleanOps
 welk. **Annuleren** brengt u terug naar de lijst zonder te bewaren.
 
 ### Het tabblad Aankoopdocumenten

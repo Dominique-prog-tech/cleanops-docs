@@ -49,7 +49,7 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 | **Tekst op de factuur** | komt bij het kiezen van dit tarief op een werkorder in haar factuuropmerking, en zo op de factuur — die leest de klant. |
 | **Tekst op de offerte** | komt bij het kiezen van dit tarief in de tekst van de offertelijn — ook die leest de klant. |
 
-Klik op **Opslaan**. Na het aanmaken van een nieuw tarief opent zijn fiche vanzelf.
+Klik op **Bewaren**. Na het aanmaken van een nieuw tarief opent zijn fiche vanzelf.
 
 ## Een tarief archiveren of terughalen
 

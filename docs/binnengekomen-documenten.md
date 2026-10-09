@@ -44,7 +44,7 @@ Bovenaan staat de kaart **Peppol-document**: van wie het komt, wanneer het binne
 zoals de leverancier ze op zijn factuur zette. Die lijnen kunt u niet wijzigen; de aankoopfactuur draagt de bedragen
 per btw-tarief.
 
-Kijk alles na, vul eventueel een **Omschrijving** of een **Voertuig** aan en klik op **Opslaan**. De factuur krijgt
+Kijk alles na, vul eventueel een **Omschrijving** of een **Voertuig** aan en klik op **Bewaren**. De factuur krijgt
 haar nummer, en het document verdwijnt uit de lijst.
 
 !!! note "De btw van de leverancier telt"
@@ -72,7 +72,7 @@ voorgevuld met de naam, het adres, het btw-nummer, het e-mailadres, de IBAN en d
 
 ![De melding dat Leverancier Rioolinspectie Noord bv nog niet bestaat, met de knop Leverancier aanmaken](images/peppol-leverancier-aanmaken.png "Een onbekende leverancier")
 
-Vul de **Betaaltermijn** aan (die staat niet op een factuur) en klik op **Opslaan**. U gaat meteen terug naar de
+Vul de **Betaaltermijn** aan (die staat niet op een factuur) en klik op **Bewaren**. U gaat meteen terug naar de
 aankoopfactuur, en daar staat de nieuwe leverancier al ingevuld.
 
 ### Al met de hand ingegeven

@@ -84,7 +84,7 @@ twee velden en geen totaal:
     Bij een trekker of een oplegger vult u niets in. **Leeg** betekent *niet van toepassing*; **0** zou
     betekenen dat het voertuig een tank heeft die niets kan bevatten.
 
-Klik op **Opslaan** om uw wijzigingen te bewaren, of op **Annuleren** om ze weg te gooien.
+Klik op **Bewaren** om uw wijzigingen te bewaren, of op **Annuleren** om ze weg te gooien.
 
 ## De soorten zelf beheren
 

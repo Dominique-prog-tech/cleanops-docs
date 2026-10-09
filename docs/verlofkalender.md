@@ -35,7 +35,7 @@ de omschrijving te zien.
 ![Het venster Verlof boeken voor Tom Verbeke na het slepen over vijf dagen, met Van en Tot ingevuld en de verlofdagen geteld](images/verlofkalender-boeken.png "Verlof boeken")
 
 Het venster is hetzelfde als op de [medewerkerfiche](medewerkers.md#het-tabblad-verlof): kies de soort, vul een omschrijving
-in en klik op **Opslaan**. CleanOps telt de verlofdagen volgens het werkregime en de feestdagen.
+in en klik op **Bewaren**. CleanOps telt de verlofdagen volgens het werkregime en de feestdagen.
 
 ## De lijst
 

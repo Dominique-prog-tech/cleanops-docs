@@ -35,7 +35,7 @@ adres, zodat u klanten met dezelfde naam uit elkaar houdt. Op de
 [klantfiche](klanten.md#de-knoppen-onderaan) staat dezelfde knop.
 
 Een nieuwe offerte krijgt de datum van vandaag, **Geldig tot** over 30 dagen en **Opvolgen op** over 10 dagen. Ze begint
-als **Concept**. Het nummer krijgt ze bij het opslaan: het volgende nummer van het jaar van de offertedatum.
+als **Concept**. Het nummer krijgt ze bij het bewaren: het volgende nummer van het jaar van de offertedatum.
 
 ## De offerte
 
@@ -67,9 +67,9 @@ Elke lijn is een onderdeel van het aanbod.
 
 **+ Regel toevoegen** zet er een lege lijn onder. Onderaan staan het totaal zonder en met btw.
 
-### Opslaan
+### Bewaren
 
-Een offerte in concept bewaart u met **Opslaan**. Is ze al verstuurd, aanvaard of verloren, dan vraagt CleanOps wat u wilt:
+Een offerte in concept bewaart u met **Bewaren**. Is ze al verstuurd, aanvaard of verloren, dan vraagt CleanOps wat u wilt:
 
 - **Bewaren als nieuwe versie**: de klant houdt de versie die hij kreeg, en uw wijzigingen worden een nieuwe versie met
   hetzelfde nummer.

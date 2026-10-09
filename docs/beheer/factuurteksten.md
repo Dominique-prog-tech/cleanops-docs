@@ -65,7 +65,7 @@ Dubbelklik op een rij, of gebruik **Nieuwe tekst**. Het venster toont de hele te
 | **Tekst** *(verplicht)* | de volledige tekst, zoals hij onderaan de factuur komt. |
 | **Wettelijke vermelding bij 6 % btw** | zie hierboven: één tekst per taal. |
 
-Klik op **Opslaan**. Teksten die u hier zelf aanmaakt, dragen het merkteken **eigen**.
+Klik op **Bewaren**. Teksten die u hier zelf aanmaakt, dragen het merkteken **eigen**.
 
 ## Een tekst archiveren of terughalen
 
