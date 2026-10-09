@@ -73,6 +73,9 @@ Het tijdsdeel kiest u op de [werkorderfiche](werkorders.md#planning-en-uitvoerin
 Heeft de werkorder een **vaste datum**, dan vraagt CleanOps *Toch verplaatsen?* zodra u ze naar een andere dag
 sleept. Een andere plaats op dezelfde dag vraagt niets.
 
+Sleept u een werkorder naar een medewerker op een dag dat hij afwezig is (verlof, ziekte), dan blijft de werkorder daar
+staan en waarschuwt CleanOps erbij.
+
 !!! info "Een datum weghalen"
     Zonder datum terugzetten gaat niet op het bord. Dat doet u in de planningslijst: open **Toewijzen** en maak de
     **Geplande dag** leeg. De werkorder gaat dan terug naar *Ingegeven*.

@@ -48,7 +48,7 @@ Een nieuwe werkorder maakt u op de fiche van de [klant](klanten.md): klik ondera
 | Omschrijving * | Wat er moet gebeuren, hoogstens 35 tekens. Kiest u een tarief terwijl het veld leeg is of nog de tekst van een vorig tarief draagt, dan vult CleanOps de omschrijving van het tarief in; u kunt ze aanpassen. Op de factuur staat bij een tarief de tarieftekst, zonder tarief deze omschrijving. |
 | Instructies werknemer | Wat de ploeg ter plaatse moet weten. |
 | Interne opmerking | Voor uw eigen mensen; deze tekst komt niet op de leveringsbon. |
-| Medewerker, Btw-code, Tarief | Mag u nu al kiezen, of later op de fiche. |
+| Medewerker, Btw-code, Tarief | Mag u nu al kiezen, of later op de fiche. Is de medewerker afwezig op de datum *Uit te voeren* (verlof, ziekte), dan zegt een melding dat; u kunt hem toch kiezen. |
 | Groot werk, Attest vereist | Zie [de vinkjes](#de-vinkjes) hieronder. |
 
 Boven de velden meldt CleanOps wat u moet weten vóór u inboekt:
@@ -83,7 +83,7 @@ ontkoppelen, en een gefactureerde werkorder koppelt u niet meer.
 | Veld | Toelichting |
 |---|---|
 | Status | Volgt uit de datums, u kiest hem niet zelf. Zie [de status](#de-status). |
-| Medewerker, Bijrijder, Voertuig | Wie het werk doet, wie meerijdt en met welk voertuig. Als bijrijder kiest u uit de medewerkers die daarvoor aangeduid zijn. |
+| Medewerker, Bijrijder, Voertuig | Wie het werk doet, wie meerijdt en met welk voertuig. Als bijrijder kiest u uit de medewerkers die daarvoor aangeduid zijn. Is de medewerker afwezig op de geplande dag, dan staat er een melding onder zijn naam. |
 | Uit te voeren | Verzet u deze datum, dan schuift **Gepland** mee — zolang de werkorder niet uitgevoerd is. |
 | Gepland, Uitgevoerd | De dag waarop het werk gepland staat en de dag waarop het gedaan is. |
 | Tijdsdeel | Eerste werk, Voormiddag, Namiddag, Volledige dag of Anders. Bij **Anders** verschijnt een uurafspraak: *vóór*, *tussen* of *na* een uur. Het tijdsdeel bepaalt de [volgorde in de planning](planning.md#de-volgorde-in-een-dag). |

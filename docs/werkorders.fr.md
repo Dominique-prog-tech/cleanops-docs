@@ -52,7 +52,7 @@ Un nouvel ordre de travail se crée depuis la fiche du [client](klanten.fr.md) :
 | Description * | Ce qu'il faut faire, 35 caractères au maximum. Si vous choisissez un tarif alors que le champ est vide ou porte encore le texte d'un tarif précédent, CleanOps y inscrit la description du tarif ; vous pouvez la modifier. Sur la facture figure le texte du tarif s'il y en a un, sinon cette description. |
 | Instructions au collaborateur | Ce que l'équipe doit savoir sur place. |
 | Remarque interne | Pour vos propres collaborateurs ; ce texte ne figure pas sur le bon de livraison. |
-| Collaborateur, Code TVA, Tarif | Vous pouvez les choisir maintenant, ou plus tard sur la fiche. |
+| Collaborateur, Code TVA, Tarif | Vous pouvez les choisir maintenant, ou plus tard sur la fiche. Si le collaborateur est absent à la date *À exécuter* (congé, maladie), un message le signale ; vous pouvez quand même le choisir. |
 | Gros travaux, Attestation requise | Voir [les cases à cocher](#les-cases-a-cocher) plus bas. |
 
 Au-dessus des champs, CleanOps signale ce que vous devez savoir avant d'encoder :
@@ -89,7 +89,7 @@ facturé ne peut plus être lié.
 | Champ | Explication |
 |---|---|
 | Statut | Découle des dates ; vous ne le choisissez pas vous-même. Voir [le statut](#le-statut). |
-| Collaborateur, Convoyeur, Véhicule | Qui fait le travail, qui l'accompagne et avec quel véhicule. Comme convoyeur, vous choisissez parmi les collaborateurs désignés pour cela. |
+| Collaborateur, Convoyeur, Véhicule | Qui fait le travail, qui l'accompagne et avec quel véhicule. Comme convoyeur, vous choisissez parmi les collaborateurs désignés pour cela. Si le collaborateur est absent le jour planifié, un message figure sous son nom. |
 | À exécuter | Si vous déplacez cette date, **Planifié** suit — tant que l'ordre n'est pas exécuté. |
 | Planifié, Exécuté | Le jour où le travail est planifié et le jour où il a été fait. |
 | Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre* ou *après* une heure. La partie de la journée détermine l'[ordre dans le planning](planning.fr.md#lordre-dans-une-journee). |

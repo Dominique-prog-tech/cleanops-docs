@@ -76,6 +76,9 @@ Vous choisissez la partie de journée sur la [fiche de l'ordre de travail](werko
 Si l'ordre porte une **date fixe**, CleanOps demande *Le déplacer quand même ?* dès que vous le glissez vers un autre
 jour. Une autre place le même jour ne demande rien.
 
+Si vous glissez un ordre de travail vers un collaborateur un jour où il est absent (congé, maladie), l'ordre reste à cette
+place et CleanOps vous avertit.
+
 !!! info "Retirer une date"
     Remettre un ordre sans date ne se fait pas sur le tableau. Vous le faites dans la liste du planning : ouvrez
     **Attribuer** et videz le **Jour planifié**. L'ordre redevient alors *Encodé*.
