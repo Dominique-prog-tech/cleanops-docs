@@ -36,7 +36,7 @@ Cliquez sur **Nouvel expéditeur**, ou double-cliquez sur une ligne.
 | Champ | Ce que vous remplissez |
 |---|---|
 | **Adresse e-mail** *(obligatoire)* | l'adresse depuis laquelle l'e-mail part. Une adresse ne figure qu'une fois dans la liste. |
-| **Nom affiché** | le nom que le client voit comme expéditeur, par exemple « Votre entreprise — facturation » |
+| **Nom affiché** *(obligatoire)* | le nom que le client voit comme expéditeur, par exemple « Votre entreprise — facturation » |
 
 Cliquez sur **Enregistrer**.
 
