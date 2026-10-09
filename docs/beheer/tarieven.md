@@ -16,10 +16,12 @@ het zoekveld: typ een code of een deel van de omschrijving.
 | Kolom | Wat het is |
 |---|---|
 | Code | de korte sleutel waarmee u het tarief kiest, bijvoorbeeld `121` |
+| Taal | **NL** of **FR**: een tarief bestaat per taal, en een werkorder kiest het in de taal van de klant |
 | Omschrijving | de tekst die op de offerte- of factuurlijn komt |
 | Eenheid | waarin u rekent: uur, stuk, ton, m³ … |
 | Eenheidsprijs | de prijs per eenheid |
 | Btw-code | de btw-code die standaard meekomt |
+| Verkooprekening | de algemene rekening voor het boekhoudkantoor — standaard verborgen: zet ze aan via **Kolommen kiezen** |
 
 Bovenaan staat een teller, bijvoorbeeld **105 van 114**: hoeveel tarieven u nu ziet, en hoeveel er in
 totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.

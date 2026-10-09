@@ -16,10 +16,12 @@ dans le champ de recherche : tapez un code ou une partie de la description.
 | Colonne | Ce que c'est |
 |---|---|
 | Code | la clé courte avec laquelle vous choisissez le tarif, par exemple `121` |
+| Langue | **NL** ou **FR** : un tarif existe par langue, et un ordre de travail le choisit dans la langue du client |
 | Description | le texte qui figure sur la ligne de devis ou de facture |
 | Unité | ce en quoi vous comptez : heure, pièce, tonne, m³ … |
 | Prix unitaire | le prix par unité |
 | Code TVA | le code TVA repris par défaut |
+| Compte de vente | le compte général pour le bureau comptable — masqué par défaut : affichez-le via **Choisir les colonnes** |
 
 En haut se trouve un compteur, par exemple **105 sur 114** : combien de tarifs vous voyez, et combien il y en
 a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre**.
