@@ -12,12 +12,14 @@ betaling in te geven ook *Betalingen ingeven*.
 ## De lijst
 
 De lijst toont de [aankoopfacturen](aankoopfacturen.md) en creditnota's die nog niet (volledig) betaald zijn, gegroepeerd per
-leverancier. Onder elke leverancier staat zijn **saldo**; onderaan de lijst het totaal van alle leveranciers.
+leverancier, met zijn telefoonnummer naast de naam. Onder elke leverancier staat zijn **saldo**; onderaan de lijst het totaal van
+alle leveranciers.
 
 | Kolom | Wat het is |
 |---|---|
 | Document | het dagboek, het boekjaar en het nummer, met het label **creditnota** voor een creditnota |
 | Nr lev. en Datum lev. | het nummer en de datum op het document van de leverancier |
+| Datum | de boekingsdatum; haal ze tevoorschijn met de kolomkiezer |
 | Omschrijving | wat er gekocht werd |
 | Vervaldag | met het label **vervallen** wanneer de vervaldag voorbij is |
 | Betaald | het label **betaald** voor een document dat u al betaalde, maar waarvan de betaling nog niet op een uittreksel staat |

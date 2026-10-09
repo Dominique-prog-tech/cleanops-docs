@@ -12,12 +12,14 @@ paiement aussi *Saisir des paiements*.
 ## La liste
 
 La liste montre les [factures d'achat](aankoopfacturen.md) et notes de crédit qui ne sont pas encore (entièrement) payées,
-groupées par fournisseur. Sous chaque fournisseur figure son **solde** ; en bas de la liste, le total de tous les fournisseurs.
+groupées par fournisseur, avec son numéro de téléphone à côté du nom. Sous chaque fournisseur figure son **solde** ; en bas de la
+liste, le total de tous les fournisseurs.
 
 | Colonne | Ce que c'est |
 |---|---|
 | Document | le journal, l'exercice et le numéro, avec l'étiquette **note de crédit** pour une note de crédit |
 | N° fourn. et Date fourn. | le numéro et la date sur le document du fournisseur |
+| Date | la date de comptabilisation ; affichez-la avec le sélecteur de colonnes |
 | Description | ce qui a été acheté |
 | Échéance | avec l'étiquette **échu** quand l'échéance est dépassée |
 | Payé | l'étiquette **payé** pour un document que vous avez déjà payé, mais dont le paiement ne figure pas encore sur un extrait |

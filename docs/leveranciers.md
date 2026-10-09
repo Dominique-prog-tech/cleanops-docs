@@ -79,7 +79,8 @@ welk. **Annuleren** brengt u terug naar de lijst zonder te bewaren.
 Alle [aankoopfacturen](aankoopfacturen.md) en creditnota's van deze leverancier, de recentste bovenaan. Boven de lijst staat zijn
 **openstaand saldo**: wat u hem nog moet betalen, zoals op het uittreksel (negatief), en hoeveel documenten nog openstaan. Met
 **Betaling ingeven** betaalt u ze in één keer: het venster van [Betalingen](betalingen.md) opent met hun saldo ingevuld.
-Dubbelklik op een document om het te openen.
+De kolom **Vereffend op** toont de dag waarop een document volledig betaald raakte — de dag van de laatste betaling, of de
+boekingsdatum als het al betaald was vóór het geboekt werd. Dubbelklik op een document om het te openen.
 
 ![Het tabblad Aankoopdocumenten van een leverancier met het Openstaand saldo, de knop Betaling ingeven en zijn documenten met Totaal en Openstaand](images/leverancier-aankoopdocumenten.png "Aankoopdocumenten van een leverancier")
 

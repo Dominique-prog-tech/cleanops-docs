@@ -79,7 +79,8 @@ CleanOps indique lequel. **Annuler** vous ramène à la liste sans enregistrer.
 Toutes les [factures d'achat](aankoopfacturen.md) et notes de crédit de ce fournisseur, la plus récente en haut. Au-dessus de la
 liste figure son **solde ouvert** : ce que vous lui devez encore, comme sur l'extrait (négatif), et le nombre de documents encore
 ouverts. Avec **Saisir un paiement**, vous les payez en une fois : la fenêtre de [Paiements](betalingen.md) s'ouvre avec leur solde
-rempli. Double-cliquez sur un document pour l'ouvrir.
+rempli. La colonne **Soldé le** montre le jour où un document a été entièrement payé — le jour du dernier paiement, ou la date de
+comptabilisation s'il était déjà payé avant d'être comptabilisé. Double-cliquez sur un document pour l'ouvrir.
 
 ![L'onglet Documents d'achat d'un fournisseur avec le Solde ouvert, le bouton Saisir un paiement et ses documents avec Total et Ouvert](images/leverancier-aankoopdocumenten-fr.png "Documents d'achat d'un fournisseur")
 
