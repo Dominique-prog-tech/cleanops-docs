@@ -82,7 +82,8 @@ jour. Une autre place le même jour ne demande rien.
 
 ## La liste du planning
 
-La même semaine sous forme de liste, groupée par jour. Le travail sans date se trouve sous **Encore à planifier**.
+Les mêmes ordres sous forme de liste, groupés par jour — par défaut ceux de cette semaine. Le travail sans date se
+trouve sous **Encore à planifier**.
 
 ![La liste du planning de la démo : la semaine par jour, avec les signaux, le collaborateur dans sa couleur et le bouton Attribuer](images/planning-lijst-fr.png "Liste du planning")
 
@@ -90,15 +91,21 @@ Pour chaque ordre, vous voyez les signaux (*Date fixe — ne pas déplacer*, *Pe
 *Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro, le client, le chantier, la description,
 le type de travail, le statut et RWZI.
 
-- **La semaine** — **← Semaine précédente**, **Semaine suivante →** et **Cette semaine**. Sous les boutons figurent le
-  nombre d'ordres planifiés cette semaine et le nombre encore à planifier.
+- **Période** — choisissez **Aujourd'hui**, **Semaine passée**, **Cette semaine** (par défaut), **Semaine
+  prochaine**, **Ce mois-ci** ou **Mois prochain**, ou indiquez sous *Période libre* un **Du** et un **Au** puis cliquez
+  sur **Appliquer**. Une période dure au maximum trois mois. **← Précédent** et **Suivant →** avancent de la longueur de
+  la période : une semaine à la fois, un mois à la fois. Sous les boutons figurent le nombre d'ordres planifiés sur
+  cette période et le nombre encore à planifier.
 - **Contrat** — **Tous**, **Sans contrat** ou **Avec contrat** : le travail issu d'un [contrat](contracten.fr.md), ou
   les missions ponctuelles.
-- **Jour** — **Toute la semaine**, ou un seul jour de la semaine. Sous les boutons figure alors le nombre d'ordres
-  planifiés ce jour-là, et **Imprimer** n'imprime que ce jour. Si vous choisissez une autre semaine, **Jour** revient sur
-  **Toute la semaine**. La tuile *au planning aujourd'hui* du [tableau de bord](dashboard.md) ouvre la liste sur le jour même.
-- **Rechercher** — le curseur est tout de suite dans le champ de recherche. La recherche porte sur le numéro, le
-  client, le chantier, la description, le type de travail, le statut et le code du collaborateur.
+- **Jour** — **Toute la semaine** (ou **Toute la période**), ou un seul jour de la période. Sous les boutons figure
+  alors le nombre d'ordres planifiés ce jour-là, et **Imprimer** n'imprime que ce jour. Si vous choisissez une autre
+  période, **Jour** revient sur toute la période. La tuile *au planning aujourd'hui* du [tableau de bord](dashboard.md) ouvre la liste sur le jour même.
+- **Collaborateur** — **Tous**, **Tous les attribués** (avec une date et un collaborateur), **Non attribués**, ou un
+  seul collaborateur : vous ne voyez alors que son travail.
+- **Rechercher** — le curseur est tout de suite dans le champ de recherche. La recherche porte sur le jour (par exemple
+  *06/10*), le numéro, le client, le chantier, la description, le type de travail, le statut et le code du
+  collaborateur ; chaque mot doit figurer quelque part. Les compteurs et **Imprimer** suivent la recherche.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de l'ordre de travail.
 
 ### Attribuer un ordre
@@ -122,7 +129,7 @@ Cochez les ordres de travail. Au-dessus de la liste apparaît ce que vous pouvez
 Avec **Attribuer** et **Déplacer**, la place manuelle dans la journée disparaît : l'ordre vient à sa partie de
 journée. Avec **Échanger**, l'ordre dans la journée reste.
 
-Si vous choisissez un autre filtre de contrat, la sélection disparaît. Ainsi, un bouton ne touche jamais du travail
+Si vous choisissez une autre période, un autre filtre ou une autre recherche, la sélection disparaît. Ainsi, un bouton ne touche jamais du travail
 que vous ne voyez plus.
 
 ### L'itinéraire du jour
@@ -137,10 +144,13 @@ l'itinéraire en parties qui se suivent : **Partie 1**, **Partie 2**, …
 ### Imprimer
 
 **Imprimer** crée l'aperçu *Planning par date et par collaborateur* : ce que la liste montre maintenant, donc la même
-semaine et le même filtre de contrat. Par jour et par collaborateur figurent la partie de journée, le numéro, le
+période, le même jour, contrat, collaborateur et la même recherche. L'en-tête mentionne le collaborateur et la recherche
+si vous en avez choisi. Par jour et par collaborateur figurent la partie de journée avec la date demandée par le client
+(*Demandé le*), le numéro, le
 client et le chantier, l'adresse, le téléphone de l'adresse (sinon celui du client, et celui de l'ordre en plus s'il est différent — avec
 *Rappeler* si le client souhaite être appelé), la description,
-les instructions et le matériel, et le véhicule. Le travail sans date se trouve à la fin sous *À planifier*.
+les instructions et le matériel, et le véhicule. Sous chaque ordre figurent des cases vides **Heure de début**,
+**Heure de fin** et **Notes**, que l'équipe remplit à la main. Le travail sans date se trouve à la fin sous *À planifier*.
 
 L'aperçu s'ouvre dans une fenêtre **Aperçu avant impression**. **Télécharger** l'enregistre en PDF ; avec l'icône
 d'imprimante de la visionneuse, vous l'imprimez.

@@ -79,7 +79,8 @@ sleept. Een andere plaats op dezelfde dag vraagt niets.
 
 ## De planningslijst
 
-Dezelfde week als een lijst, gegroepeerd per dag. Het werk zonder datum staat onder **Nog in te plannen**.
+Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van deze week. Het werk zonder datum staat onder
+**Nog in te plannen**.
 
 ![De planningslijst van de demo: de week per dag, met de signalen, de medewerker in zijn kleur en de knop Toewijzen](images/planning-lijst.png "Planningslijst")
 
@@ -87,15 +88,22 @@ Per werkorder ziet u de signalen (*Vaste datum — niet verplaatsen*, *Mag vroeg
 *Klant geblokkeerd*), de medewerker in zijn kleur, het nummer, de klant, de werf, de omschrijving, de typering, de
 status en RWZI.
 
-- **De week** — **← Vorige week**, **Volgende week →** en **Deze week**. Onder de knoppen staat hoeveel werkorders er
-  die week gepland zijn en hoeveel er nog in te plannen zijn.
+- **Periode** — kies **Vandaag**, **Vorige week**, **Deze week** (de standaard), **Volgende week**, **Deze maand** of
+  **Volgende maand**, of vul onder *Eigen periode* een **Van** en **Tot en met** in en klik op **Toepassen**. Een periode
+  is hoogstens drie maanden lang. **← Vorige** en **Volgende →** schuiven op met de lengte van de periode: een week per
+  week, een maand per maand. Onder de knoppen staat hoeveel werkorders er in die periode gepland zijn en hoeveel er nog
+  in te plannen zijn.
 - **Contract** — **Alles**, **Zonder contract** of **Met contract**: werk dat uit een [contract](contracten.md)
   voortkomt, of losse opdrachten.
-- **Dag** — **Hele week**, of één dag van de week. Dan staat onder de knoppen hoeveel werkorders er die dag gepland zijn,
-  en drukt **Afdrukken** enkel die dag af. Kiest u een andere week, dan staat **Dag** terug op **Hele week**. De tegel
+- **Dag** — **Hele week** (of **Hele periode**), of één dag van de periode. Dan staat onder de knoppen hoeveel
+  werkorders er die dag gepland zijn, en drukt **Afdrukken** enkel die dag af. Kiest u een andere periode, dan staat
+  **Dag** terug op de hele periode. De tegel
   *op de planning vandaag* op het [dashboard](dashboard.md) opent de lijst op de dag van vandaag.
-- **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant, de werf, de
-  omschrijving, de typering, de status en de code van de medewerker.
+- **Medewerker** — **Alle**, **Alle toegewezen** (met een datum én een medewerker), **Niet toegewezen**, of één
+  medewerker: dan ziet u enkel zijn werk.
+- **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in de dag (bijvoorbeeld *06/10*), het nummer,
+  de klant, de werf, de omschrijving, de typering, de status en de code van de medewerker; elk woord moet ergens
+  voorkomen. De tellers en **Afdrukken** volgen de zoekterm.
 - **Openen** — dubbelklik op een rij om de werkorderfiche te openen.
 
 ### Eén werkorder toewijzen
@@ -119,7 +127,7 @@ Vink de werkorders aan. Boven de lijst verschijnt wat u met die selectie kunt do
 Bij **Toekennen** en **Verplaatsen** vervalt de handmatige plaats in de dag: de werkorder komt op haar tijdsdeel. Bij
 **Wisselen** blijft de volgorde in de dag.
 
-Kiest u een ander contractfilter, dan vervalt de selectie. Zo raakt een knop nooit werk dat u niet meer ziet.
+Kiest u een andere periode, een ander filter of een andere zoekterm, dan vervalt de selectie. Zo raakt een knop nooit werk dat u niet meer ziet.
 
 ### De dagroute
 
@@ -132,11 +140,13 @@ delen die op elkaar aansluiten: **Deel 1**, **Deel 2**, …
 
 ### Afdrukken
 
-**Afdrukken** maakt het overzicht *Planning per datum en werknemer*: wat de lijst nu toont, dus dezelfde week en
-hetzelfde contractfilter. Per dag en per medewerker staan het tijdsdeel, het nummer, de klant en de werf, het adres,
+**Afdrukken** maakt het overzicht *Planning per datum en werknemer*: wat de lijst nu toont, dus dezelfde periode, dag,
+contract, medewerker en zoekterm. De kop vermeldt de medewerker en de zoekterm als u er een koos. Per dag en per
+medewerker staan het tijdsdeel met de datum die de klant vroeg (*Gevraagd op*), het nummer, de klant en de werf, het adres,
 de telefoon van het adres (anders die van de klant, en die van de werkorder erbij als ze anders is — met
 *Terugbellen* als de klant gebeld wil worden), de omschrijving, de instructies en het materiaal, en
-het voertuig. Het werk zonder datum staat achteraan onder *Nog in te plannen*.
+het voertuig. Onder elke werkorder staan lege vakken **Starttijd**, **Eindtijd** en **Notities**, die de ploeg met de
+hand invult. Het werk zonder datum staat achteraan onder *Nog in te plannen*.
 
 Het overzicht opent in een **Afdrukvoorbeeld**. Met **Downloaden** bewaart u het als PDF; met het printerteken in de
 kijker drukt u het af.
