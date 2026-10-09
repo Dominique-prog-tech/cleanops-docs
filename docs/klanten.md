@@ -38,10 +38,11 @@ het adres en de telefoon van de klant, en zegt dat bovenaan; u vindt het onder *
 
 Bovenaan staan de naam en het klantnummer, daaronder een rij tabbladen. Links **Fiche** en **Adressen** —
 dat is de klant zelf. Rechts daarvan staat wat aan de klant hangt: **Contracten**, **Offertes**, **Facturen**,
-**Openstaand** en **Memo's**, en achteraan **Bijlagen** en **Logboek**.
+**Openstaand**, **Betalingen** en **Memo's**, en achteraan **Bijlagen** en **Logboek**.
 
 Elk tabblad blijft staan, ook als er niets in zit; het aantal staat tussen haakjes in de titel. "Offertes (0)"
-betekent dus dat er geen offertes zijn. Enkel **Memo's** ziet u alleen met het recht om de openstaande posten te bekijken.
+betekent dus dat er geen offertes zijn. Enkel **Betalingen** en **Memo's** ziet u alleen met het recht om de openstaande posten te
+bekijken.
 
 ![De fiche van Tuincentrum De Linde op het tabblad Fiche, met de tabbladen erboven en onderaan de opmerkingen](images/klant-fiche.png "Klantfiche")
 
@@ -154,13 +155,17 @@ Uit deze contracten ontstaan de werkorders.
 **Offertes** — met nummer, datum, omschrijving, totaal en status.
 
 **Facturen** — de facturen en creditnota's, met nummer, type, datum, totaal, vervaldag, wat er nog **openstaat** (leeg als
-alles betaald is) en mededeling. De mededeling is de gestructureerde referentie die de klant bij zijn betaling vermeldt.
+alles betaald is), **Vereffend op** en mededeling. Vereffend op is de dag waarop de factuur volledig betaald raakte: de dag van de
+laatste betaling, of de factuurdatum als ze al vooraf betaald was. De mededeling is de gestructureerde referentie die de klant bij zijn betaling vermeldt.
 
 **Openstaand** — wat er van deze klant nog openstaat. Bovenaan staat het openstaande saldo, in het rood als het
 groter is dan nul. Per post ziet u het document, de datum, de vervaldag, het oorspronkelijke en het openstaande bedrag en
 het aantal rappels. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document, niveau en wie ze verstuurde.
 Is ze leeg terwijl een post al rappels telt, dan komen die rappels van vóór het logboek van uw vorige toepassing: die
 staan enkel als aantal bij de post.
+
+**Betalingen** — de betalingen van deze klant, de nieuwste eerst: datum en nummer van het uittreksel, dagboek, bedrag en
+opmerking. Een teruggedraaide betaling draagt het label **teruggedraaid**. Zie ook [Betalingen](betalingen.md).
 
 **Memo's** — wat er met deze klant afgesproken is, met de datum en eventueel een herinneringsdatum. Zie
 [Memo's](#memos) hieronder.

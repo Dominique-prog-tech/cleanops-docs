@@ -40,10 +40,11 @@ première adresse d'exécution à partir de l'adresse et du téléphone du clien
 
 En haut figurent le nom et le numéro du client, puis une rangée d'onglets. À gauche **Fiche** et
 **Adresses** — le client lui-même. À droite, ce qui est rattaché au client : **Contrats**, **Devis**,
-**Factures**, **Postes ouverts** et **Mémos**, et en fin de rangée **Pièces jointes** et **Historique**.
+**Factures**, **Postes ouverts**, **Paiements** et **Mémos**, et en fin de rangée **Pièces jointes** et **Historique**.
 
 Chaque onglet reste visible, même vide ; le nombre figure entre parenthèses dans son titre. « Devis (0) »
-signifie donc qu'il n'y a pas de devis. Seul l'onglet **Mémos** n'est visible qu'avec le droit de voir les postes ouverts.
+signifie donc qu'il n'y a pas de devis. Seuls les onglets **Paiements** et **Mémos** ne sont visibles qu'avec le droit de voir les
+postes ouverts.
 
 ![La fiche de Résidence Les Tilleuls sur l'onglet Fiche, avec les onglets au-dessus et les remarques en bas](images/klant-fiche-fr.png "Fiche client")
 
@@ -159,7 +160,8 @@ début. Ce sont ces contrats qui donnent naissance aux ordres de travail.
 **Devis** — avec le numéro, la date, la description, le total et le statut.
 
 **Factures** — les factures et notes de crédit, avec le numéro, le type, la date, le total, l'échéance, ce qui reste
-**ouvert** (vide si tout est payé) et la communication. La communication est la référence structurée que le client mentionne lors de son paiement.
+**ouvert** (vide si tout est payé), **Soldé le** et la communication. Soldé le est le jour où la facture a été entièrement payée : le
+jour du dernier paiement, ou la date de la facture si elle était déjà payée d'avance. La communication est la référence structurée que le client mentionne lors de son paiement.
 
 **Postes ouverts** — ce qui reste dû par ce client. En haut figure le solde ouvert, en rouge s'il dépasse zéro.
 Pour chaque poste, vous voyez le document, la date, l'échéance, le montant initial et le solde ouvert, et le nombre de
@@ -167,6 +169,9 @@ rappels. En
 dessous figure l'**historique des rappels** : les rappels envoyés, avec la date, le document, le niveau et qui les a
 envoyés. S'il est vide alors qu'un poste compte déjà des rappels, ceux-ci datent d'avant le journal de votre application
 précédente : ils figurent uniquement comme nombre à côté du poste.
+
+**Paiements** — les paiements de ce client, le plus récent en premier : date et numéro de l'extrait, journal, montant et
+remarque. Un paiement annulé porte le label **annulé**. Voir aussi [Paiements](betalingen.md).
 
 **Mémos** — ce qui a été convenu avec ce client, avec la date et éventuellement une date de rappel. Voir
 [Mémos](#memos) ci-dessous.
