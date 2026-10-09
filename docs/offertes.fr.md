@@ -98,7 +98,7 @@ réactiver une version antérieure et créer un ordre de travail à partir du de
 | Envoyer par e-mail… | Envoie le devis au client avec le PDF — voir [Envoyer par e-mail](#envoyer-par-e-mail). |
 | Envoyer un rappel… | Remplace **Envoyer par e-mail…** tant que le devis est **Envoyé**. Renvoie le devis avec le texte de rappel — voir [Un rappel](#un-rappel). |
 | Créer un ordre de travail | Crée un ordre de travail à l'adresse du client, avec la description et les lignes du devis comme travail et le montant hors TVA. Les pièces jointes du devis sont reprises. Le devis passe à **Accepté**. Si un ordre de travail a déjà été créé à partir de ce devis, le nouveau ne reçoit pas de montant et CleanOps l'indique. |
-| Dupliquer… | Crée un nouveau devis avec son propre numéro à partir de celui-ci, pour le même client ou un autre. Les lignes, la description et les remarques pour le client sont reprises ; la référence et la remarque interne non. |
+| Dupliquer… | Crée un nouveau devis avec son propre numéro à partir de celui-ci, pour le même client ou un autre. Les lignes, la description et les remarques pour le client sont reprises ; la référence et la remarque interne non. Le doublon porte votre nom comme utilisateur. |
 | Aperçu avant impression | Affiche le devis en PDF, dans la langue du client. **Télécharger** l'enregistre. L'aperçu montre le devis enregistré. |
 | Supprimer | Déplace le devis vers la [corbeille](beheer/prullenbak.fr.md), après confirmation. |
 

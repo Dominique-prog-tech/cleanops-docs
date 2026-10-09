@@ -97,7 +97,7 @@ maken en een werkorder maken uit de offerte.
 | Mailen… | Mailt de offerte met de PDF naar de klant — zie [Mailen](#mailen). |
 | Herinnering mailen… | Staat er in de plaats van **Mailen…** zolang de offerte op **Verstuurd** staat. Mailt de offerte opnieuw, met de herinneringstekst — zie [Een herinnering](#een-herinnering). |
 | Werkorder maken | Maakt een werkorder op het adres van de klant, met de omschrijving en de lijnen van de offerte als werk en het bedrag zonder btw. De bijlagen van de offerte gaan mee. De offerte komt op **Aanvaard**. Is er al een werkorder uit deze offerte gemaakt, dan krijgt de nieuwe geen bedrag en zegt CleanOps dat. |
-| Dupliceren… | Maakt een nieuwe offerte met een eigen nummer op basis van deze, voor dezelfde of een andere klant. De lijnen, de omschrijving en de opmerkingen voor de klant gaan mee; de referentie en de interne opmerking niet. |
+| Dupliceren… | Maakt een nieuwe offerte met een eigen nummer op basis van deze, voor dezelfde of een andere klant. De lijnen, de omschrijving en de opmerkingen voor de klant gaan mee; de referentie en de interne opmerking niet. U staat als gebruiker op het duplicaat. |
 | Afdrukvoorbeeld | Toont de offerte als PDF, in de taal van de klant. **Downloaden** bewaart ze. Het voorbeeld toont de bewaarde offerte. |
 | Verwijderen | Verplaatst de offerte naar de [prullenbak](beheer/prullenbak.md), na een bevestiging. |
 
