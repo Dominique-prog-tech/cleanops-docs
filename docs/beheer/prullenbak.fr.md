@@ -11,10 +11,12 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Cor
 Tout ce que vous supprimez avec le bouton **Supprimer** sur une fiche :
 
 - clients et adresses de clients
+- fournisseurs
 - collaborateurs
 - devis
 - contrats
 - ordres de travail
+- rapports caméra
 
 CleanOps demande d'abord une confirmation et précise que vous retrouverez l'enregistrement dans la corbeille.
 
@@ -42,8 +44,22 @@ fichier Excel, CSV ou PDF. Si rien n'a été supprimé, la mention **La corbeill
 Cliquez en fin de ligne sur **Restaurer**. L'enregistrement est immédiatement remis à sa place et disparaît de la
 corbeille. Qui l'a restauré et quand figure dans l'historique de l'enregistrement.
 
-Restaurer requiert le droit **Restaurer des enregistrements**. Consulter la corbeille requiert le droit **Voir la
-corbeille**. Votre administrateur attribue ces droits dans [Rôles](rollen.fr.md).
+Restaurer requiert le droit **Restaurer des enregistrements**, ainsi que le droit de modifier ce type
+d'enregistrement — le même droit qui permet de le supprimer :
+
+| Type | Droit de modification |
+|---|---|
+| Clients, adresses de clients | Modifier les clients |
+| Fournisseurs | Modifier les fournisseurs |
+| Collaborateurs | Modifier les collaborateurs |
+| Devis | Modifier les devis |
+| Contrats | Modifier les contrats |
+| Ordres de travail, rapports caméra | Modifier les ordres de travail |
+
+Si ce second droit manque, l'enregistrement reste dans la corbeille et CleanOps indique le droit qui vous manque.
+
+Consulter la corbeille requiert le droit **Voir la corbeille**. Votre administrateur attribue ces droits dans
+[Rôles](rollen.fr.md).
 
 ## Erreurs fréquentes
 

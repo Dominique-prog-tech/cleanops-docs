@@ -11,10 +11,12 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Prullenbak**.
 Alles wat u verwijdert met de knop **Verwijderen** op een fiche:
 
 - klanten en klantadressen
+- leveranciers
 - medewerkers
 - offertes
 - contracten
 - werkorders
+- cameraverslagen
 
 CleanOps vraagt eerst een bevestiging en zegt daarbij dat u het record in de prullenbak terugvindt.
 
@@ -42,8 +44,21 @@ PDF-bestand. Is er niets verwijderd, dan staat er **De prullenbak is leeg.**
 Klik achteraan de rij op **Herstellen**. Het record staat meteen terug op zijn plaats en verdwijnt uit de prullenbak.
 Wie het herstelde en wanneer, staat in het logboek van het record.
 
-Herstellen vraagt het recht **Verwijderde records herstellen**. Kijken in de prullenbak vraagt het recht **Prullenbak
-bekijken**. Uw beheerder geeft die rechten bij [Rollen](rollen.md).
+Herstellen vraagt het recht **Verwijderde records herstellen**, en daarnaast het recht om dat soort record te bewerken —
+hetzelfde recht waarmee u het verwijdert:
+
+| Type | Recht om te bewerken |
+|---|---|
+| Klanten, klantadressen | Klanten bewerken |
+| Leveranciers | Leveranciers bewerken |
+| Medewerkers | Medewerkers bewerken |
+| Offertes | Offertes bewerken |
+| Contracten | Contracten bewerken |
+| Werkorders, cameraverslagen | Werkorders bewerken |
+
+Ontbreekt dat tweede recht, dan blijft het record in de prullenbak en meldt CleanOps welk recht u mist.
+
+Kijken in de prullenbak vraagt het recht **Prullenbak bekijken**. Uw beheerder geeft die rechten bij [Rollen](rollen.md).
 
 ## Veelgemaakte fouten
 
