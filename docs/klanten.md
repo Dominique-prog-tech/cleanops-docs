@@ -140,7 +140,8 @@ met de planning, de status, de medewerker en de bijrijder, de instructies, het m
 factuurnummer. Zo ziet u wat er de vorige keren nodig was. Hangt er werk van een andere klant aan dit adres — na een
 verplaatsing blijft afgesloten werk bij de vorige klant —, dan staat er een kolom **Klant** bij.
 
-Dubbelklik op een werkorder om ze te openen; **← Adres** brengt u terug naar dit tabblad. Het tabblad staat er voor wie
+Dubbelklik op een werkorder om ze te openen; **← Adres** brengt u terug naar dit tabblad. Klik op het factuurnummer om de
+factuur te openen. Het tabblad staat er voor wie
 de werkorders mag openen.
 
 ![Het tabblad Werkorders van een uitvoeringsadres van Tuincentrum De Linde: de werkorders op dat adres, de nieuwste eerst, met hun instructies](images/klant-adres-werkorders.png "Werkorders van een adres")

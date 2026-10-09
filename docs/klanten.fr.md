@@ -145,7 +145,8 @@ instructions, le matériel, la remarque interne et le numéro de facture. Vous v
 fois précédentes. Si du travail d'un autre client est lié à cette adresse — après un déplacement, le travail clôturé
 reste chez le client précédent —, une colonne **Client** s'ajoute.
 
-Double-cliquez sur un ordre pour l'ouvrir ; **← Adresse** vous ramène à cet onglet. L'onglet est visible pour qui peut
+Double-cliquez sur un ordre pour l'ouvrir ; **← Adresse** vous ramène à cet onglet. Cliquez sur le numéro de facture
+pour ouvrir la facture. L'onglet est visible pour qui peut
 ouvrir les ordres de travail.
 
 ![L'onglet Ordres de travail d'une adresse d'exécution de Résidence Les Tilleuls : les ordres à cette adresse, du plus récent au plus ancien, avec leurs instructions](images/klant-adres-werkorders-fr.png "Ordres de travail d'une adresse")
