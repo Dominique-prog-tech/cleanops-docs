@@ -24,7 +24,7 @@ de werkorderfiche te openen; **← Attesten** brengt u terug naar deze lijst, me
 | **Periode** | op de uitvoeringsdatum van de werkorder. |
 
 Een klant zoekt u in het zoekveld. In de kolom **Attesten** staat het aantal attesten van de werkorder, of in het rood
-*ontbreekt*.
+*ontbreekt*. De **eenheidsprijs** zet u aan via **Kolommen kiezen**.
 
 !!! tip "Werken met Zonder attest"
     Zet **Attest** op *Zonder attest* en maak de attesten één voor één. Keert u na het bewaren terug naar de lijst, dan is de

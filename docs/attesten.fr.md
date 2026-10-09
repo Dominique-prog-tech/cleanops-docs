@@ -24,7 +24,7 @@ de travail**. Double-cliquez sur un ordre de travail pour ouvrir sa fiche ; **�
 | **Période** | sur la date d'exécution de l'ordre de travail. |
 
 Vous cherchez un client dans le champ de recherche. La colonne **Attestations** donne le nombre d'attestations de l'ordre
-de travail, ou en rouge *manquante*.
+de travail, ou en rouge *manquante*. Le **prix unitaire** s'active via **Choisir les colonnes**.
 
 !!! tip "Travailler avec Sans attestation"
     Mettez **Attestation** sur *Sans attestation* et établissez les attestations une par une. Quand vous revenez à la liste

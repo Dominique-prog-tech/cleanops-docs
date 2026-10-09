@@ -18,7 +18,8 @@ staat er **on hold** naast de klant. De lijst staat op klantnaam.
 
 - **Laatste keer** — de geplande datum van de laatste werkorder van het contract.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in wat de lijst toont, ook in de
-  periodiciteit: *Jaarlijks* vindt alle jaarlijkse contracten.
+  periodiciteit: *Jaarlijks* vindt alle jaarlijkse contracten. Daarnaast vindt u een contract op de straat, de gemeente,
+  de gsm en het vaste nummer van de klant, ook al staan die niet in de lijst.
 - **Sorteren** — klik op een kolomtitel; nog eens klikken keert de volgorde om.
 - **Exporteren** — via de knop rechtsboven krijgt u de lijst zoals ze nu gefilterd is als bestand.
 - **Openen** — dubbelklik op een rij om het contract te openen.
@@ -95,7 +96,8 @@ altijd staan.
 ### Het tabblad Werkorders
 
 Alle werkorders van dit contract, met hun datums, status, medewerker, aantal, eenheid, eenheidsprijs, bedrag, de
-datum van facturatie en het factuurnummer. Dubbelklik op een rij om de werkorder te openen. Ook een losse werkorder die iemand met
+datum van facturatie en het factuurnummer. Het **tarief** (code en omschrijving) zet u aan via **Kolommen kiezen**;
+het staat standaard uit omdat de tabel anders breder wordt dan de fiche. Dubbelklik op een rij om de werkorder te openen. Ook een losse werkorder die iemand met
 de hand aan dit contract koppelde, staat hier; ze telt niet als beurt (zie [Werkorders](werkorders.md)).
 
 Met **Werkorders nu aanmaken** onderaan het tabblad Contract maakt CleanOps meteen de werkorders van dit contract voor de komende 90 dagen,

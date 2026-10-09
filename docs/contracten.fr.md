@@ -19,7 +19,8 @@ contrat est en pause, **en pause** figure à côté du client. La liste est tri�
 
 - **Dernière fois** — la date planifiée du dernier ordre de travail du contrat.
 - **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur ce que montre la
-  liste, y compris la périodicité : *Annuel* trouve tous les contrats annuels.
+  liste, y compris la périodicité : *Annuel* trouve tous les contrats annuels. Vous trouvez aussi un contrat par la rue,
+  la commune, le GSM et le numéro fixe du client, même s'ils ne figurent pas dans la liste.
 - **Trier** — cliquez sur un titre de colonne ; un second clic inverse l'ordre.
 - **Exporter** — le bouton en haut à droite vous donne la liste, telle qu'elle est filtrée, sous forme de fichier.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir le contrat.
@@ -95,8 +96,9 @@ n'a touché entrent en ligne de compte. Un ordre exécuté, planifié ou modifi�
 ### L'onglet Ordres de travail
 
 Tous les ordres de travail de ce contrat, avec leurs dates, leur statut, le collaborateur, la quantité, l'unité, le
-prix unitaire, le montant, la date de facturation et le numéro de facture. Double-cliquez sur une ligne pour ouvrir
-l'ordre. Un ordre de travail isolé que quelqu'un a lié à la main à ce contrat y figure aussi ; il ne compte pas comme un passage
+prix unitaire, le montant, la date de facturation et le numéro de facture. Le **tarif** (code et description)
+s'active via **Choisir les colonnes** ; il est masqué par défaut, car le tableau deviendrait plus large que la fiche.
+Double-cliquez sur une ligne pour ouvrir l'ordre. Un ordre de travail isolé que quelqu'un a lié à la main à ce contrat y figure aussi ; il ne compte pas comme un passage
 (voir [Ordres de travail](werkorders.fr.md)).
 
 Avec **Créer les ordres de travail** en bas de l'onglet Contrat, CleanOps crée aussitôt les ordres de travail de ce contrat pour les 90
