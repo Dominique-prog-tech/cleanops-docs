@@ -13,7 +13,8 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Ordres de travail**.
 ## La liste
 
 Pour chaque ordre, vous voyez le numéro, le client, la date de commande, le statut, les dates **Planifié** et
-**Exécuté**, la commune, le **tarif** (le travail à faire), le collaborateur et le montant.
+**Exécuté**, la commune, le **tarif** (le travail à faire), le collaborateur et le montant. Un ordre avec **Gros
+travaux** apparaît en vert clair.
 
 Contrat, À exécuter, Chantier, Quantité, Unité, Prix unit., Facture, Date facture et Comptant sont masqués par défaut,
 pour que la liste tienne aussi sur un écran plus petit : le sélecteur de colonnes les affiche. Si un ordre est facturé, le
