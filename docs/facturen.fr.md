@@ -167,7 +167,7 @@ impression**, **Envoyer par courriel** envoie la même facture via la même fen�
 ### L'onglet E-mails
 
 En haut à droite, **E-mails** montre ce qui a été envoyé par e-mail pour cette facture, rappels compris (voir
-[Postes ouverts](openstaande-posten.fr.md)) : quand, à qui, si l'e-mail a été délivré, le texte tel qu'il est parti
+[Postes ouverts](openstaande-posten.fr.md)) : quand, à qui, si l'e-mail a été délivré (et sinon, pourquoi), le texte tel qu'il est parti
 (**Afficher le texte**) et le PDF joint.
 
 ![L'onglet E-mails d'une facture : le rappel envoyé et la facture envoyée, chacun avec le statut Remis, l'objet, À et Cc, le PDF envoyé et Afficher le texte](images/factuur-mails-fr.png "E-mails")
@@ -213,9 +213,12 @@ les [Postes ouverts](openstaande-posten.fr.md) suivent le nouveau contenu.
 Le prix d'une ligne d'ordre de travail se modifie sur l'ordre lui-même : retirez-le de la facture, corrigez l'ordre (le numéro est
 un lien vers l'ordre) et ajoutez-le à nouveau.
 
-**Rouvrir…** n'apparaît pas pour une facture envoyée, créditée, (partiellement) payée ou ayant fait l'objet d'un rappel, pour une
-facture d'acompte ou de solde, pour une note de crédit ni pour une facture de votre application précédente. Créditez-la alors et
-établissez-en une nouvelle.
+**Rouvrir…** n'apparaît pas pour une facture envoyée, créditée, (partiellement) payée, ayant fait l'objet d'un rappel ou déjà
+transmise au bureau comptable, pour une facture d'acompte ou de solde, pour une note de crédit ni pour une facture de votre
+application précédente. Créditez-la alors et établissez-en une nouvelle.
+
+Si la facture date de plus de 51 jours, un avertissement s'affiche en haut : la déclaration TVA de cette période peut déjà avoir
+été déposée. Ne modifiez alors que les textes, pas les montants — ou créditez la facture et établissez-en une nouvelle.
 
 ### Statut de crédit
 
@@ -253,8 +256,8 @@ L'adresse d'expéditeur n'est pas approuvée par ADM One, ou aucun expéditeur n
 [Expéditeurs](beheer/mailafzenders.fr.md).
 
 **Je ne vois pas Rouvrir… sur une facture.**
-La facture a été envoyée, créditée, payée ou a fait l'objet d'un rappel, ou il s'agit d'une facture d'acompte, de solde ou d'une
-note de crédit. Créditez la facture et établissez-en une nouvelle.
+La facture a été envoyée, créditée, payée, a fait l'objet d'un rappel ou a déjà été transmise au bureau comptable, ou il s'agit
+d'une facture d'acompte, de solde ou d'une note de crédit. Créditez la facture et établissez-en une nouvelle.
 
 **Pourquoi les lignes d'ordre de travail sont-elles figées quand je rouvre une facture ?**
 Leur prix vient de l'ordre de travail. Retirez l'ordre de la facture, corrigez-le et ajoutez-le à nouveau.

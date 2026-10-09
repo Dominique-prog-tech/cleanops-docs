@@ -159,7 +159,7 @@ Een factuur die al verstuurd is, kunt u opnieuw mailen; CleanOps vraagt eerst of
 ### Het tabblad Mails
 
 Rechts bovenaan toont **Mails** wat er over deze factuur gemaild werd, ook de rappels (zie
-[Openstaande posten](openstaande-posten.md)): wanneer, aan wie, of de mail afgeleverd is, de tekst zoals ze vertrok
+[Openstaande posten](openstaande-posten.md)): wanneer, aan wie, of de mail afgeleverd is (en zo niet, waarom), de tekst zoals ze vertrok
 (**Tekst tonen**) en de PDF die meeging.
 
 ![Het tabblad Mails van een factuur: de gemailde rappel en de gemailde factuur, elk met de status Afgeleverd, het onderwerp, Aan en Cc, de verstuurde PDF en Tekst tonen](images/factuur-mails.png "Mails")
@@ -204,8 +204,12 @@ volgen de nieuwe inhoud.
 De prijs van een werkorderlijn wijzigt u op de werkorder zelf: haal ze van de factuur, zet de werkorder recht (het nummer is een
 link naar de werkorder) en voeg ze opnieuw toe.
 
-**Heropenen…** staat er niet bij een factuur die verstuurd, gecrediteerd, (deels) betaald of gerappelleerd is, bij een voorschot-
-of saldofactuur, bij een creditnota en bij een factuur uit uw vorige toepassing. Crediteer ze dan en maak een nieuwe.
+**Heropenen…** staat er niet bij een factuur die verstuurd, gecrediteerd, (deels) betaald of gerappelleerd is, of die al naar
+het boekhoudkantoor ging, bij een voorschot- of saldofactuur, bij een creditnota en bij een factuur uit uw vorige toepassing.
+Crediteer ze dan en maak een nieuwe.
+
+Is de factuur ouder dan 51 dagen, dan staat er bovenaan een waarschuwing: de btw-aangifte van die periode kan al ingediend zijn.
+Verander dan enkel teksten, geen bedragen — of crediteer de factuur en maak een nieuwe.
 
 ### Creditnotastatus
 
@@ -240,8 +244,8 @@ hetzelfde nummer — de klant zou ze twee keer boeken. Maak een creditnota en ee
 Het afzenderadres is niet aanvaard bij ADM One, of er is geen afzender gekozen. Zie [Mailafzenders](beheer/mailafzenders.md).
 
 **Ik zie Heropenen… niet bij een factuur.**
-De factuur is verstuurd, gecrediteerd, betaald of gerappelleerd, of het is een voorschot-, saldo- of creditnota. Crediteer de
-factuur en maak een nieuwe.
+De factuur is verstuurd, gecrediteerd, betaald, gerappelleerd of al naar het boekhoudkantoor gegaan, of het is een voorschot-,
+saldo- of creditnota. Crediteer de factuur en maak een nieuwe.
 
 **Waarom staan de werkorderlijnen vast bij het heropenen?**
 Hun prijs komt van de werkorder. Haal de werkorder van de factuur, zet ze recht en voeg ze opnieuw toe.
