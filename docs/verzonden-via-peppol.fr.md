@@ -14,7 +14,9 @@ facturation.
 ## La liste
 
 Choisissez en haut la **Période** (les 7 ou 30 derniers jours, les 90 derniers jours ou les 12 derniers mois) et éventuellement un
-**Statut**.
+**Statut**. Deux choix regroupent : **Non remis** (tout ce qui n'est pas encore arrivé) et **Échoué ou refusé** (ce qui est à
+renvoyer). Si, dans la période, un document n'a pas été remis ou attend encore la confirmation du destinataire, un message
+au-dessus de la liste indique combien.
 
 | Colonne | Contenu |
 |---|---|

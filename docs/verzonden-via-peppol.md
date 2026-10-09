@@ -12,6 +12,9 @@ Klik links in het menu, onder **Verkoop**, op **Verzonden via Peppol**. U ziet h
 ## De lijst
 
 Kies bovenaan de **Periode** (de laatste 7 of 30 dagen, de laatste 90 dagen of de laatste 12 maanden) en eventueel een **Status**.
+Twee keuzes groeperen: **Niet afgeleverd** (alles wat nog niet aankwam) en **Mislukt of geweigerd** (wat opnieuw moet). Raakte er
+in de periode iets niet afgeleverd, of wacht er nog iets op de bevestiging van de ontvanger, dan zegt een melding boven de lijst
+hoeveel.
 
 | Kolom | Wat erin staat |
 |---|---|
