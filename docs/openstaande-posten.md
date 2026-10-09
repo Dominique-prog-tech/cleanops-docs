@@ -93,7 +93,8 @@ Sluit u het voorbeeld zonder te mailen, dan vraagt CleanOps **Rappel inboeken?**
 afdrukt of zelf verstuurt: het aantal rappels gaat één omhoog, met de datum van vandaag, en de rappel komt in de rappelhistoriek.
 Klik op **Annuleren** als u enkel wilde kijken.
 
-Geen rappel voor een creditnota, een post die uitgesloten is, of een klant bij wie **Ontvangt rappels** uit staat. De knoppen staan
+Geen rappel voor een creditnota, een post die uitgesloten is, een klant bij wie **Ontvangt rappels** uit staat, of een klant die
+netto niets schuldig is (badge *niets schuldig* in **Alle openstaande**). De knoppen staan
 dan uit, en zeggen waarom.
 
 ## Rappelgegevens
