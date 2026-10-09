@@ -29,7 +29,8 @@ werkorder verdwijnt van de planning.
 ### Een werkorder op het bord
 
 Elke kaart toont het nummer, het tijdsdeel en de uurafspraak (bijvoorbeeld *Voormiddag* of *Tussen 13:00 en 15:00*),
-de klant en de gemeente, en de omschrijving. Wijst u een kaart aan, dan ziet u ook de werf en de signalen.
+de klant en de gemeente, de omschrijving en de typering (bijvoorbeeld *vetput +/- 3 T*) — die laatste enkel als ze iets
+anders zegt dan de omschrijving. Wijst u een kaart aan, dan ziet u ook de werf, de typering en de signalen.
 
 | Teken | Betekenis |
 |---|---|
@@ -83,7 +84,8 @@ Dezelfde week als een lijst, gegroepeerd per dag. Het werk zonder datum staat on
 ![De planningslijst van de demo: de week per dag, met de signalen, de medewerker in zijn kleur en de knop Toewijzen](images/planning-lijst.png "Planningslijst")
 
 Per werkorder ziet u de signalen (*Vaste datum — niet verplaatsen*, *Mag vroeger uitgevoerd worden*, *Groot werk*,
-*Klant geblokkeerd*), de medewerker in zijn kleur, het nummer, de klant, de werf, de omschrijving, de status en RWZI.
+*Klant geblokkeerd*), de medewerker in zijn kleur, het nummer, de klant, de werf, de omschrijving, de typering, de
+status en RWZI.
 
 - **De week** — **← Vorige week**, **Volgende week →** en **Deze week**. Onder de knoppen staat hoeveel werkorders er
   die week gepland zijn en hoeveel er nog in te plannen zijn.
@@ -93,7 +95,7 @@ Per werkorder ziet u de signalen (*Vaste datum — niet verplaatsen*, *Mag vroeg
   en drukt **Afdrukken** enkel die dag af. Kiest u een andere week, dan staat **Dag** terug op **Hele week**. De tegel
   *op de planning vandaag* op het [dashboard](dashboard.md) opent de lijst op de dag van vandaag.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant, de werf, de
-  omschrijving, de status en de code van de medewerker.
+  omschrijving, de typering, de status en de code van de medewerker.
 - **Openen** — dubbelklik op een rij om de werkorderfiche te openen.
 
 ### Eén werkorder toewijzen

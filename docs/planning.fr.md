@@ -31,8 +31,9 @@ exécuté disparaît du planning.
 ### Un ordre de travail sur le tableau
 
 Chaque carte montre le numéro, la partie de journée et le rendez-vous horaire (par exemple *Matin* ou
-*Entre 13:00 et 15:00*), le client et la commune, et la description. Si vous pointez une carte, vous voyez aussi le
-chantier et les signaux.
+*Entre 13:00 et 15:00*), le client et la commune, la description et le type de travail (par exemple *vetput +/- 3 T*)
+— ce dernier seulement s'il dit autre chose que la description. Si vous pointez une carte, vous voyez aussi le
+chantier, le type de travail et les signaux.
 
 | Signe | Signification |
 |---|---|
@@ -87,7 +88,7 @@ La même semaine sous forme de liste, groupée par jour. Le travail sans date se
 
 Pour chaque ordre, vous voyez les signaux (*Date fixe — ne pas déplacer*, *Peut être exécuté plus tôt*,
 *Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro, le client, le chantier, la description,
-le statut et RWZI.
+le type de travail, le statut et RWZI.
 
 - **La semaine** — **← Semaine précédente**, **Semaine suivante →** et **Cette semaine**. Sous les boutons figurent le
   nombre d'ordres planifiés cette semaine et le nombre encore à planifier.
@@ -97,7 +98,7 @@ le statut et RWZI.
   planifiés ce jour-là, et **Imprimer** n'imprime que ce jour. Si vous choisissez une autre semaine, **Jour** revient sur
   **Toute la semaine**. La tuile *au planning aujourd'hui* du [tableau de bord](dashboard.md) ouvre la liste sur le jour même.
 - **Rechercher** — le curseur est tout de suite dans le champ de recherche. La recherche porte sur le numéro, le
-  client, le chantier, la description, le statut et le code du collaborateur.
+  client, le chantier, la description, le type de travail, le statut et le code du collaborateur.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de l'ordre de travail.
 
 ### Attribuer un ordre
