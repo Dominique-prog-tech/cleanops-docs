@@ -85,8 +85,10 @@ Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van dez
 ![De planningslijst van de demo: de week per dag, met de signalen, de medewerker in zijn kleur en de knop Toewijzen](images/planning-lijst.png "Planningslijst")
 
 Per werkorder ziet u de signalen (*Vaste datum — niet verplaatsen*, *Mag vroeger uitgevoerd worden*, *Groot werk*,
-*Klant geblokkeerd*), de medewerker in zijn kleur, het nummer, de klant, de werf, de omschrijving, de typering, de
-status en RWZI.
+*Klant geblokkeerd*), de medewerker in zijn kleur, het nummer, de datum die de klant vroeg (**Gevraagd**), de klant, de
+werf, de omschrijving, de typering, de status en RWZI. Met de kolomkiezer (het pictogram naast **Exporteren**) zet u er
+**Wanneer** (tijdsdeel en afgesproken uur), **Besteld**, **Straat + nr**, **Postcode** en **Gemeente** bij; op een kolom
+klikken sorteert erop, bijvoorbeeld op gemeente.
 
 - **Periode** — kies **Vandaag**, **Vorige week**, **Deze week** (de standaard), **Volgende week**, **Deze maand** of
   **Volgende maand**, of vul onder *Eigen periode* een **Van** en **Tot en met** in en klik op **Toepassen**. Een periode
@@ -101,9 +103,11 @@ status en RWZI.
   *op de planning vandaag* op het [dashboard](dashboard.md) opent de lijst op de dag van vandaag.
 - **Medewerker** — **Alle**, **Alle toegewezen** (met een datum én een medewerker), **Niet toegewezen**, of één
   medewerker: dan ziet u enkel zijn werk.
-- **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in de dag (bijvoorbeeld *06/10*), het nummer,
-  de klant, de werf, de omschrijving, de typering, de status en de code van de medewerker; elk woord moet ergens
-  voorkomen. De tellers en **Afdrukken** volgen de zoekterm.
+- **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant, de straat, het
+  huisnummer, de postcode, de gemeente, de telefoon, de medewerker, het voertuig, de werkzaamheden, de omschrijving, het
+  contract en de interne opmerking, en ook in de dag (bijvoorbeeld *06/10*), de werf, de typering, de status en de
+  andere kolommen — ook als die kolom niet getoond wordt. Hoofdletters, accenten en spaties tellen niet; elk woord moet
+  ergens voorkomen. De tellers en **Afdrukken** volgen de zoekterm.
 - **Openen** — dubbelklik op een rij om de werkorderfiche te openen. Met **← Planning** komt u terug in dezelfde
   periode, met dezelfde filters.
 

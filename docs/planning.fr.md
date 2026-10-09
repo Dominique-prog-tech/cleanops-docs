@@ -88,8 +88,10 @@ trouve sous **Encore à planifier**.
 ![La liste du planning de la démo : la semaine par jour, avec les signaux, le collaborateur dans sa couleur et le bouton Attribuer](images/planning-lijst-fr.png "Liste du planning")
 
 Pour chaque ordre, vous voyez les signaux (*Date fixe — ne pas déplacer*, *Peut être exécuté plus tôt*,
-*Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro, le client, le chantier, la description,
-le type de travail, le statut et RWZI.
+*Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro, la date demandée par le client
+(**Demandé**), le client, le chantier, la description, le type de travail, le statut et RWZI. Avec le sélecteur de colonnes
+(l'icône à côté d'**Exporter**), vous ajoutez **Quand** (partie de journée et heure convenue), **Commandé**,
+**Rue + n°**, **Code postal** et **Localité** ; un clic sur une colonne trie sur celle-ci, par exemple sur la localité.
 
 - **Période** — choisissez **Aujourd'hui**, **Semaine passée**, **Cette semaine** (par défaut), **Semaine
   prochaine**, **Ce mois-ci** ou **Mois prochain**, ou indiquez sous *Période libre* un **Du** et un **Au** puis cliquez
@@ -103,9 +105,11 @@ le type de travail, le statut et RWZI.
   période, **Jour** revient sur toute la période. La tuile *au planning aujourd'hui* du [tableau de bord](dashboard.md) ouvre la liste sur le jour même.
 - **Collaborateur** — **Tous**, **Tous les attribués** (avec une date et un collaborateur), **Non attribués**, ou un
   seul collaborateur : vous ne voyez alors que son travail.
-- **Rechercher** — le curseur est tout de suite dans le champ de recherche. La recherche porte sur le jour (par exemple
-  *06/10*), le numéro, le client, le chantier, la description, le type de travail, le statut et le code du
-  collaborateur ; chaque mot doit figurer quelque part. Les compteurs et **Imprimer** suivent la recherche.
+- **Rechercher** — le curseur est tout de suite dans le champ de recherche. La recherche porte sur le numéro, le client,
+  la rue, le numéro de maison, le code postal, la localité, le téléphone, le collaborateur, le véhicule, les travaux, la
+  description, le contrat et la remarque interne, ainsi que sur le jour (par exemple *06/10*), le chantier, le type de
+  travail, le statut et les autres colonnes — même si la colonne n'est pas affichée. Majuscules, accents et espaces ne
+  comptent pas ; chaque mot doit figurer quelque part. Les compteurs et **Imprimer** suivent la recherche.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de l'ordre de travail. Avec **← Planning**, vous revenez
   à la même période, avec les mêmes filtres.
 
