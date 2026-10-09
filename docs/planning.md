@@ -126,7 +126,8 @@ geplande dag leeg, dan komt de werkorder terug bij het werk zonder datum.
 
 ### Meerdere werkorders tegelijk
 
-Vink de werkorders aan. Boven de lijst verschijnt wat u met die selectie kunt doen.
+Vink de werkorders aan. Boven de lijst verschijnt wat u met die selectie kunt doen. Het vakje in de kop vinkt alles op de
+pagina aan; een pagina telt 200 werkorders, zodat ook een drukke week er in één keer op staat.
 
 ![De planningslijst met twee aangevinkte werkorders en de knoppen Toekennen, Verplaatsen, Wisselen en Status RWZI](images/planning-selectie.png "Selectie")
 

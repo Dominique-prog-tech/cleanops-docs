@@ -129,7 +129,8 @@ Cliquez sur **Attribuer** dans la ligne. Choisissez le **Collaborateur** et le *
 
 ### Plusieurs ordres à la fois
 
-Cochez les ordres de travail. Au-dessus de la liste apparaît ce que vous pouvez faire avec cette sélection.
+Cochez les ordres de travail. Au-dessus de la liste apparaît ce que vous pouvez faire avec cette sélection. La case de
+l'en-tête coche tout ce qui figure sur la page ; une page compte 200 ordres, de sorte qu'une semaine chargée y tient en une fois.
 
 ![La liste du planning avec deux ordres cochés et les boutons Attribuer, Déplacer, Échanger et Statut RWZI](images/planning-selectie-fr.png "Sélection")
 
