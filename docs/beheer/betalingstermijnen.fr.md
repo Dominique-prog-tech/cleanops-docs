@@ -52,7 +52,7 @@ Cliquez sur **Nouvelle condition**, ou double-cliquez sur une ligne existante.
 
 | Champ | Ce que vous complétez |
 |---|---|
-| **Code** *(obligatoire)* | 10 caractères au maximum — c'est ce qui tient sur une fiche client. Figé dès que la condition existe. |
+| **Code** *(obligatoire)* | 10 caractères au maximum — c'est ce qui tient sur une fiche client —, enregistré en majuscules. Figé dès que la condition existe. Un code qui ne diffère d'un code existant dans la même langue que par les majuscules est refusé. |
 | **Langue** *(obligatoire)* | néerlandais ou français. Également figée : le code et la langue forment ensemble la clé. |
 | **Description** *(obligatoire)* | 50 caractères au maximum. |
 | **Compter à partir de** | la date de facture, ou la fin du mois. |

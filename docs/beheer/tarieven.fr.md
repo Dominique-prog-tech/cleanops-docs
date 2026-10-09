@@ -39,7 +39,7 @@ a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre
 
 | Champ | Ce que vous encodez |
 |---|---|
-| **Code** *(obligatoire)* | 5 caractères au maximum. Fixé dès que le tarif est enregistré. |
+| **Code** *(obligatoire)* | 5 caractères au maximum, enregistré en majuscules. Fixé dès que le tarif est enregistré. Un code qui ne diffère d'un code existant dans la même langue que par les majuscules (`rv1` à côté de `RV1`) est refusé. |
 | **Langue** *(obligatoire)* | Nederlands ou Français. Le même code peut exister une fois dans chaque langue. Fixée dès que le tarif est enregistré. |
 | **Description** *(obligatoire)* | 35 caractères au maximum ; figure sur la ligne de devis ou de facture. |
 | **Unité** | un choix parmi les [unités](eenheden.fr.md) de l'Administration (UUR, T, M3 …). |

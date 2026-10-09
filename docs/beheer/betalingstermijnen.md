@@ -52,7 +52,7 @@ Klik op **Nieuwe termijn**, of dubbelklik op een bestaande rij.
 
 | Veld | Wat u invult |
 |---|---|
-| **Code** *(verplicht)* | maximaal 10 tekens — zoveel past er op een klantfiche. Ligt vast zodra de termijn bestaat. |
+| **Code** *(verplicht)* | maximaal 10 tekens — zoveel past er op een klantfiche —, in hoofdletters bewaard. Ligt vast zodra de termijn bestaat. Een code die enkel in hoofdletters verschilt van een bestaande in dezelfde taal, wordt geweigerd. |
 | **Taal** *(verplicht)* | Nederlands of Frans. Ligt ook vast: code en taal vormen samen de sleutel. |
 | **Omschrijving** *(verplicht)* | maximaal 50 tekens. |
 | **Tellen vanaf** | de factuurdatum, of het einde van de maand. |

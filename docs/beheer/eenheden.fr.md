@@ -28,7 +28,7 @@ Cliquez sur **Nouvelle unité**, ou double-cliquez sur une ligne existante.
 
 | Champ | Ce que vous complétez |
 |---|---|
-| **Code** *(obligatoire)* | 3 caractères au maximum, par exemple `M2`. Figé dès que l'unité existe. Un code qui ne diffère d'un code existant que par les majuscules (`uur` à côté de `UUR`) est refusé — même si ce code existant est archivé. |
+| **Code** *(obligatoire)* | 3 caractères au maximum, par exemple `M2`, enregistré en majuscules. Figé dès que l'unité existe. Un code qui ne diffère d'un code existant que par les majuscules (`uur` à côté de `UUR`) est refusé — même si ce code existant est archivé. |
 | **Description (NL)** / **(FR)** | 30 caractères au maximum. Celle dans la langue principale de votre entreprise est obligatoire. |
 
 !!! note "Pourquoi le code est figé"

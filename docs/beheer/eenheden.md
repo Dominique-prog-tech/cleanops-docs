@@ -28,7 +28,7 @@ Klik op **Nieuwe eenheid**, of dubbelklik op een bestaande rij.
 
 | Veld | Wat u invult |
 |---|---|
-| **Code** *(verplicht)* | maximaal 3 tekens, bijvoorbeeld `M2`. Ligt vast zodra de eenheid bestaat. Een code die enkel in hoofdletters verschilt van een bestaande (`uur` naast `UUR`), wordt geweigerd — ook als die bestaande gearchiveerd is. |
+| **Code** *(verplicht)* | maximaal 3 tekens, bijvoorbeeld `M2`, in hoofdletters bewaard. Ligt vast zodra de eenheid bestaat. Een code die enkel in hoofdletters verschilt van een bestaande (`uur` naast `UUR`), wordt geweigerd — ook als die bestaande gearchiveerd is. |
 | **Omschrijving (NL)** / **(FR)** | maximaal 30 tekens. Die in de hoofdtaal van uw bedrijf is verplicht. |
 
 !!! note "Waarom de code vastligt"

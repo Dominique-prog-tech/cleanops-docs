@@ -39,7 +39,7 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 
 | Veld | Wat u invult |
 |---|---|
-| **Code** *(verplicht)* | maximaal 5 tekens. Ligt vast zodra het tarief bewaard is. |
+| **Code** *(verplicht)* | maximaal 5 tekens, in hoofdletters bewaard. Ligt vast zodra het tarief bewaard is. Een code die enkel in hoofdletters verschilt van een bestaande in dezelfde taal (`rv1` naast `RV1`), wordt geweigerd. |
 | **Taal** *(verplicht)* | Nederlands of Français. Dezelfde code kan in elke taal één keer bestaan. Ligt vast zodra het tarief bewaard is. |
 | **Omschrijving** *(verplicht)* | maximaal 35 tekens; komt op de offerte- of factuurlijn. |
 | **Eenheid** | een keuze uit de [eenheden](eenheden.md) van Platformbeheer (UUR, T, M3 …). |
