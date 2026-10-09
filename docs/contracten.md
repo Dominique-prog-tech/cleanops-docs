@@ -2,7 +2,7 @@
 
 Een contract legt vast hoe vaak u bij een klant terugkomt: om de zes maanden een put ledigen, om de twee weken een
 vetput. Uit een lopend contract ontstaan de [werkorders](werkorders.md) voor de komende beurten; u hoeft ze niet zelf
-aan te maken.
+aan te maken. CleanOps maakt ze elke nacht voor de komende 90 dagen, en meteen wanneer u een nieuw contract bewaart.
 
 ![De contractenlijst van de demo, met de kolommen Klant, Periodiciteit en Laatste keer, en het label on hold bij Garage Demo & Zonen](images/contracten-lijst.png "Contracten")
 
@@ -96,6 +96,10 @@ altijd staan.
 
 Alle werkorders van dit contract, met hun datums, status, medewerker, aantal, eenheid, eenheidsprijs, bedrag, de
 datum van facturatie en het factuurnummer. Dubbelklik op een rij om de werkorder te openen.
+
+Met **Werkorders nu aanmaken** onderaan het tabblad Contract maakt CleanOps meteen de werkorders van dit contract voor de komende 90 dagen,
+met dezelfde regels als 's nachts. Daarna toont het tabblad Werkorders de lijst, met erboven hoeveel er bijkwamen. Zolang uw vorige toepassing de werkorders
+nog maakt, maakt CleanOps er geen, en dat staat er dan ook.
 
 ![Het tabblad Werkorders van het contract van Tuincentrum De Linde, met de gefactureerde en de geplande beurten](images/contract-werkorders.png "Werkorders van een contract")
 

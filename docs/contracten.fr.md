@@ -2,7 +2,8 @@
 
 Un contrat fixe la fréquence à laquelle vous revenez chez un client : vider une fosse tous les six mois, un dégraisseur
 toutes les deux semaines. D'un contrat en cours naissent les [ordres de travail](werkorders.fr.md) des prochains
-passages ; vous n'avez pas à les créer vous-même.
+passages ; vous n'avez pas à les créer vous-même. CleanOps les crée chaque nuit pour les 90 prochains jours, et aussitôt
+que vous enregistrez un nouveau contrat.
 
 ![La liste des contrats de la démo, avec les colonnes Nom, Périodicité et Dernière fois, et l'étiquette en pause chez Garage Demo & Zonen](images/contracten-lijst-fr.png "Contrats")
 
@@ -96,6 +97,10 @@ n'a touché entrent en ligne de compte. Un ordre exécuté, planifié ou modifi�
 Tous les ordres de travail de ce contrat, avec leurs dates, leur statut, le collaborateur, la quantité, l'unité, le
 prix unitaire, le montant, la date de facturation et le numéro de facture. Double-cliquez sur une ligne pour ouvrir
 l'ordre.
+
+Avec **Créer les ordres de travail** en bas de l'onglet Contrat, CleanOps crée aussitôt les ordres de travail de ce contrat pour les 90
+prochains jours, avec les mêmes règles que la nuit. L'onglet Ordres de travail montre ensuite la liste, avec au-dessus le nombre d'ordres ajoutés. Tant que
+votre application précédente crée encore les ordres de travail, CleanOps n'en crée pas, et c'est indiqué.
 
 ![L'onglet Ordres de travail du contrat de Résidence Les Tilleuls, avec les passages facturés et à facturer](images/contract-werkorders-fr.png "Ordres de travail d'un contrat")
 
