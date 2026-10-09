@@ -96,7 +96,8 @@ n'a touché entrent en ligne de compte. Un ordre exécuté, planifié ou modifi�
 
 Tous les ordres de travail de ce contrat, avec leurs dates, leur statut, le collaborateur, la quantité, l'unité, le
 prix unitaire, le montant, la date de facturation et le numéro de facture. Double-cliquez sur une ligne pour ouvrir
-l'ordre.
+l'ordre. Un ordre de travail isolé que quelqu'un a lié à la main à ce contrat y figure aussi ; il ne compte pas comme un passage
+(voir [Ordres de travail](werkorders.fr.md)).
 
 Avec **Créer les ordres de travail** en bas de l'onglet Contrat, CleanOps crée aussitôt les ordres de travail de ce contrat pour les 90
 prochains jours, avec les mêmes règles que la nuit. L'onglet Ordres de travail montre ensuite la liste, avec au-dessus le nombre d'ordres ajoutés. Tant que

@@ -71,6 +71,18 @@ client, si l'adresse n'en a pas —, le montant avec le code TVA, et la facture.
 
 ![La fiche d'un ordre de travail de Résidence Les Tilleuls : la carte en haut, la planification avec collaborateur, convoyeur et véhicule, l'adresse, les instructions et les cases à cocher](images/werkorder-fiche-fr.png "Fiche de l'ordre de travail")
 
+### Lier un ordre de travail isolé à un contrat
+
+Si un ordre de travail que vous avez créé vous-même appartient tout de même à un contrat, cliquez sur **Lier…** à côté de
+**Contrat : non** et choisissez l'un des contrats en cours du client (un contrat en pause porte la mention *(en pause)*). S'il y a
+déjà un ordre de travail ouvert pour ce contrat, la fenêtre l'indique, avec sa date : vérifiez qu'il ne s'agit pas d'un doublon.
+**Lier** enregistre tout de suite.
+
+Le lien est une étiquette. Le tarif, l'adresse et les instructions de l'ordre de travail restent tels quels, et l'ordre ne compte
+pas comme un passage du contrat : les passages que le contrat crée lui-même s'y ajoutent normalement. La fiche indique *(lié à la
+main)*, et **Détacher** retire le lien. Un ordre de travail issu du contrat lui-même ne peut pas être détaché, et un ordre
+facturé ne peut plus être lié.
+
 ### Planification et exécution
 
 | Champ | Explication |

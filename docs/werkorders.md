@@ -66,6 +66,17 @@ adres — of van de klant, als het adres er geen heeft —, het bedrag met de bt
 
 ![De werkorderfiche van Tuincentrum De Linde: de kaart bovenaan, de planning met medewerker, bijrijder en voertuig, het adres, de instructies en de vinkjes](images/werkorder-fiche.png "Werkorderfiche")
 
+### Een losse werkorder aan een contract koppelen
+
+Hoort een werkorder die u zelf aanmaakte toch bij een contract, klik dan naast **Contract: nee** op **Koppelen…** en kies een van
+de lopende contracten van de klant (een gepauzeerd contract staat er met *(gepauzeerd)* bij). Loopt er al een open werkorder van
+dat contract, dan noemt het venster die, met haar datum: kijk na of het geen dubbel is. **Koppelen** bewaart meteen.
+
+De koppeling is een label. Het tarief, het adres en de instructies van de werkorder blijven zoals ze zijn, en de werkorder telt
+niet als een beurt van het contract: de beurten die het contract zelf maakt, komen er gewoon bij. De fiche zegt *(met de hand
+gekoppeld)*, en met **Ontkoppelen** haalt u de koppeling weer weg. Een werkorder die uit het contract zelf komt, kunt u niet
+ontkoppelen, en een gefactureerde werkorder koppelt u niet meer.
+
 ### Planning en uitvoering
 
 | Veld | Toelichting |

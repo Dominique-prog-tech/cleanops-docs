@@ -95,7 +95,8 @@ altijd staan.
 ### Het tabblad Werkorders
 
 Alle werkorders van dit contract, met hun datums, status, medewerker, aantal, eenheid, eenheidsprijs, bedrag, de
-datum van facturatie en het factuurnummer. Dubbelklik op een rij om de werkorder te openen.
+datum van facturatie en het factuurnummer. Dubbelklik op een rij om de werkorder te openen. Ook een losse werkorder die iemand met
+de hand aan dit contract koppelde, staat hier; ze telt niet als beurt (zie [Werkorders](werkorders.md)).
 
 Met **Werkorders nu aanmaken** onderaan het tabblad Contract maakt CleanOps meteen de werkorders van dit contract voor de komende 90 dagen,
 met dezelfde regels als 's nachts. Daarna toont het tabblad Werkorders de lijst, met erboven hoeveel er bijkwamen. Zolang uw vorige toepassing de werkorders
