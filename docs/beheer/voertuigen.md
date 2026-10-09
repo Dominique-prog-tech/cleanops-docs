@@ -124,7 +124,7 @@ Klik op **Nieuwe beurt**, of dubbelklik op een bestaande beurt om ze te wijzigen
 | **Uitgevoerd op** *(verplicht)* | de datum van de beurt. |
 | **Kilometerstand** | niet negatief. Leeg laten mag: een oplegger heeft geen teller. |
 | **Controlepunten** | vink aan wat er gedaan is: hydraulische olie, olie smeren, olie vervangen, controle onderdelen, luchtfilter, brandstoffilter, inspecties. |
-| **Nota** | vrije tekst. |
+| **Nota** | vrije tekst, ook over meerdere regels. |
 
 **Een beurt archiveren of terughalen.** In het venster van een beurt staat **Archiveren**. De beurt verdwijnt
 dan uit de lijst, maar blijft bewaard. Zet bovenaan het tabblad **Tonen** op **Ook gearchiveerde beurten**,

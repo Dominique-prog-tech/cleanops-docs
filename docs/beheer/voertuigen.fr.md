@@ -124,7 +124,7 @@ Cliquez sur **Nouvel entretien**, ou double-cliquez sur un entretien existant po
 | **Effectué le** *(obligatoire)* | la date du passage. |
 | **Kilométrage** | pas négatif. Il peut rester vide : une semi-remorque n'a pas de compteur. |
 | **Points de contrôle** | cochez ce qui a été fait : huile hydraulique, graissage, vidange d'huile, contrôle des pièces, filtre à air, filtre à carburant, inspections. |
-| **Note** | texte libre. |
+| **Note** | texte libre, aussi sur plusieurs lignes. |
 
 **Archiver ou rétablir un entretien.** Dans la fenêtre d'un entretien figure **Archiver**. L'entretien
 disparaît alors de la liste, mais reste conservé. Mettez en haut de l'onglet **Afficher** sur **Aussi les
