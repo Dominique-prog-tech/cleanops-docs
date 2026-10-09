@@ -84,7 +84,9 @@ Het tabblad **Versies** toont alle versies van de offerte, de nieuwste bovenaan.
 ![Het tabblad Versies van een offerte met twee versies, waarvan versie 2 de actuele](images/offerte-versies.png "Versies")
 
 **Nieuwe versie beginnen** kopieert de bewaarde offerte naar een nieuwe versie in concept. Wijzigingen die nog niet
-bewaard zijn, gaan daarbij niet mee; gebruik daarvoor **Bewaren als nieuwe versie**.
+bewaard zijn, gaan daarbij niet mee; gebruik daarvoor **Bewaren als nieuwe versie**. Staan er zulke wijzigingen op het
+scherm, dan vraagt CleanOps eerst of u ze wilt achterlaten — net als bij **Dupliceren**, een oudere versie weer actief
+maken en een werkorder maken uit de offerte.
 
 ## De andere knoppen
 

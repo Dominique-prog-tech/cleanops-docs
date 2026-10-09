@@ -86,7 +86,9 @@ ancienne, **Activer** en refait la version actuelle.
 ![L'onglet Versions d'un devis avec deux versions, dont la version 2 est l'actuelle](images/offerte-versies-fr.png "Versions")
 
 **Commencer une nouvelle version** copie le devis enregistré vers une nouvelle version en brouillon. Les modifications non
-encore enregistrées ne sont pas reprises ; utilisez pour cela **Enregistrer comme nouvelle version**.
+encore enregistrées ne sont pas reprises ; utilisez pour cela **Enregistrer comme nouvelle version**. Si de telles
+modifications figurent à l'écran, CleanOps demande d'abord si vous voulez les abandonner — comme pour **Dupliquer**,
+réactiver une version antérieure et créer un ordre de travail à partir du devis.
 
 ## Les autres boutons
 
