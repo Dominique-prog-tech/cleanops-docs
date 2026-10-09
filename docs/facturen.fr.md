@@ -113,6 +113,9 @@ Sur la facture figurent :
   Peppol : le client n'a pas de numéro de TVA, il n'est pas sur le réseau, ou le réseau n'a pas pu être vérifié.
 
 CleanOps recherche le client sur le réseau avec son numéro GLN, sinon avec son numéro d'entreprise belge (voir [Clients](klanten.fr.md)).
+Un numéro GLN dont le chiffre de contrôle est erroné ne compte pas ; CleanOps utilise alors le numéro d'entreprise. La facture
+électronique porte aussi la référence client comme numéro de commande et le délai de paiement en toutes lettres, par exemple
+*30 jours après la date de facture*.
 
 !!! warning "Tant que votre application précédente gère les factures"
     Pendant cette période, CleanOps n'envoie rien via Peppol : c'est votre application précédente qui le fait. Pour un client

@@ -107,6 +107,8 @@ Op de factuur staan:
   geen btw-nummer, hij staat niet op het netwerk, of het netwerk kon niet nagekeken worden.
 
 CleanOps zoekt de klant op het netwerk op met zijn GLN-nummer, anders met zijn Belgisch ondernemingsnummer (zie [Klanten](klanten.md)).
+Een GLN-nummer waarvan het controlecijfer niet klopt, telt niet; dan gebruikt CleanOps het ondernemingsnummer. De e-factuur draagt
+ook de klantreferentie als bestelnummer en de betaaltermijn in woorden, bijvoorbeeld *30 dagen na factuurdatum*.
 
 !!! warning "Zolang uw vorige toepassing de facturen beheert"
     In die periode verstuurt CleanOps niets via Peppol: dat doet uw vorige toepassing. Bij een Peppol-klant zegt het venster dat,
