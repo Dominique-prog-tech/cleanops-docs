@@ -26,8 +26,9 @@ wijzigen en crediteren vraagt daarnaast het recht *Facturen opmaken*; dat heeft 
 Mededeling en Gecrediteerd door staan standaard verborgen, zodat de lijst ook op een kleiner scherm past: met de kolomkiezer
 zet u ze erbij.
 
-Kies bovenaan een **Type**, een **Boekjaar** of een **Periode**, of zoek op nummer, klant of mededeling. Klik een document aan en
-open rechts de strook **Journaal** voor zijn bijlagen en logboek. Dubbelklik om het te openen.
+Kies bovenaan een **Type**, een **Boekjaar** of een **Periode**, of zoek op nummer, klant of mededeling. Met **Verzending** op
+*Niet verstuurd* ziet u wat nog niet gemaild, via Peppol of per post verstuurd is. Klik een document aan en open rechts de strook
+**Journaal** voor zijn bijlagen en logboek. Dubbelklik om het te openen.
 
 Onder de filters staat hoeveel documenten de selectie telt, met hun totaal zonder en met btw. Een creditnota telt negatief:
 met de **Periode** op **Deze maand** is het bedrag zonder btw de omzet van de maand, het getal van de tegel *gefactureerd

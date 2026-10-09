@@ -28,7 +28,8 @@ seul l'administrateur l'a.
 Communication et Créditée par sont masquées par défaut, pour que la liste tienne aussi sur un écran plus petit : le sélecteur
 de colonnes les affiche.
 
-En haut, choisissez un **Type**, un **Exercice** ou une **Période**, ou cherchez par numéro, client ou communication.
+En haut, choisissez un **Type**, un **Exercice** ou une **Période**, ou cherchez par numéro, client ou communication. Avec
+**Envoi** sur *Non envoyés*, vous voyez ce qui n'a pas encore été envoyé par e-mail, via Peppol ou par courrier.
 Sélectionnez un document et ouvrez à droite le volet **Journal** pour ses pièces jointes et son historique. Double-cliquez pour
 l'ouvrir.
 
