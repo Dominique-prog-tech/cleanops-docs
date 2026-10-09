@@ -44,7 +44,7 @@ Een nieuwe werkorder maakt u op de fiche van de [klant](klanten.md): klik ondera
 | Uitvoeringsadres | Het hoofdadres van de klant of een van zijn uitvoeringsadressen. Heeft de klant precies één uitvoeringsadres, dan staat dat al gekozen (ook bij een werkorder uit een offerte). De werkinstructie, het materiaal en de opmerkingen van het adres komen op de werkorder. |
 | Uit te voeren | De dag waarop het werk moet gebeuren. |
 | Werf (naam) | Een herkenbare naam voor de plaats, hoogstens 30 tekens. |
-| Omschrijving * | Wat er moet gebeuren, hoogstens 35 tekens. Deze tekst komt op de factuur. |
+| Omschrijving * | Wat er moet gebeuren, hoogstens 35 tekens. Kiest u een tarief terwijl het veld leeg is of nog de tekst van een vorig tarief draagt, dan vult CleanOps de omschrijving van het tarief in; u kunt ze aanpassen. Op de factuur staat bij een tarief de tarieftekst, zonder tarief deze omschrijving. |
 | Instructies werknemer | Wat de ploeg ter plaatse moet weten. |
 | Interne opmerking | Voor uw eigen mensen; deze tekst komt niet op de leveringsbon. |
 | Medewerker, Btw-code, Tarief | Mag u nu al kiezen, of later op de fiche. |
@@ -117,7 +117,7 @@ Onderaan de fiche staat wat er gefactureerd wordt.
 
 | Veld | Toelichting |
 |---|---|
-| Tarief | Kies een tarief, en CleanOps vult de eenheid, de eenheidsprijs, de btw-code en de factuuropmerking in. Het aantal blijft staan. Maakt u het tarief leeg, dan blijven die velden staan. |
+| Tarief | Kies een tarief, en CleanOps vult de eenheid, de eenheidsprijs, de btw-code en de factuuropmerking in, en de omschrijving als u daar zelf niets typte. Het aantal blijft staan. Maakt u het tarief leeg, dan blijven die velden staan. |
 | Klantreferentie | Het bestelnummer of de referentie van de klant, hoogstens 30 tekens. Komt op de factuur. |
 | Aantal, Eenheid, Eenheidsprijs | Wat er gefactureerd wordt. Een correctie boekt u met een negatief aantal. |
 | Bedrag | Aantal × eenheidsprijs, door CleanOps gerekend. Met de hand invullen kan enkel als aantal en eenheidsprijs allebei nul zijn, bijvoorbeeld voor een forfait. |

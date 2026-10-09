@@ -48,7 +48,7 @@ Un nouvel ordre de travail se crée depuis la fiche du [client](klanten.fr.md) :
 | Adresse d'exécution | L'adresse principale du client ou l'une de ses adresses d'exécution. Si le client a exactement une adresse d'exécution, elle est déjà choisie (aussi pour un ordre issu d'un devis). L'instruction de travail, le matériel et les remarques de l'adresse sont repris sur l'ordre. |
 | À exécuter | Le jour où le travail doit être fait. |
 | Chantier (nom) | Un nom reconnaissable pour le lieu, 30 caractères au maximum. |
-| Description * | Ce qu'il faut faire, 35 caractères au maximum. Ce texte figure sur la facture. |
+| Description * | Ce qu'il faut faire, 35 caractères au maximum. Si vous choisissez un tarif alors que le champ est vide ou porte encore le texte d'un tarif précédent, CleanOps y inscrit la description du tarif ; vous pouvez la modifier. Sur la facture figure le texte du tarif s'il y en a un, sinon cette description. |
 | Instructions au collaborateur | Ce que l'équipe doit savoir sur place. |
 | Remarque interne | Pour vos propres collaborateurs ; ce texte ne figure pas sur le bon de livraison. |
 | Collaborateur, Code TVA, Tarif | Vous pouvez les choisir maintenant, ou plus tard sur la fiche. |
@@ -122,7 +122,7 @@ En bas de la fiche figure ce qui sera facturé.
 
 | Champ | Explication |
 |---|---|
-| Tarif | Choisissez un tarif, et CleanOps remplit l'unité, le prix unitaire, le code TVA et le commentaire de facture. La quantité reste. Si vous videz le tarif, ces champs restent. |
+| Tarif | Choisissez un tarif, et CleanOps remplit l'unité, le prix unitaire, le code TVA et le commentaire de facture, ainsi que la description si vous n'y avez rien tapé vous-même. La quantité reste. Si vous videz le tarif, ces champs restent. |
 | Référence client | Le numéro de commande ou la référence du client, 30 caractères au maximum. Figure sur la facture. |
 | Quantité, Unité, Prix unitaire | Ce qui est facturé. Une correction se fait avec une quantité négative. |
 | Montant | Quantité × prix unitaire, calculé par CleanOps. Le saisir à la main n'est possible que si la quantité et le prix unitaire sont tous deux à zéro, par exemple pour un forfait. |
