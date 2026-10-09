@@ -150,6 +150,12 @@ note de crédit et une nouvelle facture. Toutes les factures électroniques et l
   numéro, le montant, l'échéance et la communication structurée remplis. Vous réglez ce texte dans
   [Textes d'e-mail](beheer/mailteksten.fr.md) ; ici, vous l'adaptez pour cet e-mail seulement.
 - En bas figurent la **Pièce jointe** (la facture en PDF) et l'**Expéditeur** (voir [Expéditeurs](beheer/mailafzenders.fr.md)).
+- **Attestations** — si la facture porte des ordres de travail avec une [attestation](attesten.fr.md), ces attestations
+  figurent en dessous, à cocher. Aucune n'est cochée d'avance. Celles que vous cochez partent en PDF et sont ensuite
+  **envoyées**. Une note de crédit ne propose pas d'attestations.
+- **Joindre un fichier** — glissez votre propre fichier dans la zone ou cliquez dessus, par exemple un bon de commande ou une
+  photo. 10 Mo maximum par fichier et 20 Mo pour toutes les pièces jointes ensemble ; un fichier trop grand est refusé tout
+  de suite, avec la raison. La croix retire un fichier.
 
 Cliquez sur **Envoyer**. L'e-mail part réellement chez le client. La facture est ensuite marquée comme envoyée, avec *courriel*,
 et ne peut plus être rouverte.

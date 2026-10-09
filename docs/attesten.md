@@ -84,7 +84,11 @@ Klik op **Mailen…**, of op **Doorsturen per mail** in het afdrukvoorbeeld. Het
 ![Het venster Mailen met Aan het attestadres, Cc het hoofdadres, het Onderwerp Uw attest en de Bijlage](images/attest-mailen.png "Mailen")
 
 U kunt de ontvanger, de cc, het onderwerp en de tekst nog aanpassen. De tekst komt uit
-[Mailteksten](beheer/mailteksten.md), soort **Attest**. Het attest gaat als PDF mee.
+[Mailteksten](beheer/mailteksten.md), soort **Attest**. Het attest gaat als PDF mee. Met **Bestand meesturen** voegt u er
+zelf een bestand aan toe (hooguit 10 MB per bestand, 20 MB samen).
+
+Een attest kan ook mee met de **factuurmail**: daar staan de attesten van de werkorders op de factuur om aan te vinken (zie
+[Facturen](facturen.md)). Ook dan staat het attest daarna op **verzonden**.
 
 Na het versturen staat het attest op **verzonden** (bovenaan de fiche en in de kolom **Verzonden**) en vindt u de mail op
 het tabblad **Mails**. Wijzigt u het attest daarna, dan staat het weer op *nog niet verzonden*: het moet opnieuw naar de

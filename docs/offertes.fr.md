@@ -125,6 +125,8 @@ réactiver une version antérieure et créer un ordre de travail à partir du de
   l'adaptez pour cet e-mail seulement.
 - En bas figurent la **Pièce jointe** et l'**Expéditeur**. À partir de la version 2, la pièce jointe porte le numéro de
   version, par exemple *devis-12-version-2.pdf*.
+- **Joindre un fichier** — glissez votre propre fichier dans la zone ou cliquez dessus, par exemple un plan. 10 Mo maximum par
+  fichier et 20 Mo ensemble.
 
 Cliquez sur **Envoyer**. L'e-mail part réellement chez le client. Un devis en **Brouillon** passe ensuite sur **Envoyé** ;
 un devis accepté, perdu ou expiré garde son statut.

@@ -68,6 +68,7 @@ Vink de post aan en klik op **Rappel mailen…**. Een venster opent met alles al
   aan voor deze ene mail.
 - Onderaan staan de **Bijlage** — de rappelbrief met de factuur erachter, in één PDF — en de **Afzender** (zie
   [Mailafzenders](beheer/mailafzenders.md)).
+- **Bestand meesturen** — sleep een eigen bestand in het vak of klik erop. Hooguit 10 MB per bestand en 20 MB samen.
 
 Klik op **Versturen**. De mail vertrekt echt naar de klant. Zodra ze vertrokken is, boekt CleanOps de rappel **vanzelf** in: het
 aantal rappels gaat één omhoog, met de datum van vandaag, en de rappel komt in de rappelhistoriek van de klant. In het logboek staat

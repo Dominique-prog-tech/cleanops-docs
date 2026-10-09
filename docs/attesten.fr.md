@@ -85,7 +85,11 @@ Cliquez sur **Envoyer par e-mail…**, ou sur **Envoyer par courriel** dans l'ap
 ![La fenêtre Envoyer par e-mail avec le destinataire, l'Objet Votre attestation et la Pièce jointe](images/attest-mailen-fr.png "Envoyer par e-mail")
 
 Vous pouvez encore adapter le destinataire, la copie, l'objet et le texte. Le texte vient des
-[Textes d'e-mail](beheer/mailteksten.fr.md), type **Attestation**. L'attestation part en PDF.
+[Textes d'e-mail](beheer/mailteksten.fr.md), type **Attestation**. L'attestation part en PDF. **Joindre un fichier** vous
+permet d'y ajouter votre propre fichier (10 Mo maximum par fichier, 20 Mo ensemble).
+
+Une attestation peut aussi partir avec l'**e-mail de la facture** : les attestations des ordres de travail de la facture y
+figurent, à cocher (voir [Factures](facturen.fr.md)). Elle est alors aussi **envoyée**.
 
 Après l'envoi, l'attestation est **envoyée** (en haut de la fiche et dans la colonne **Envoyée**) et vous trouvez l'e-mail
 dans l'onglet **E-mails**. Si vous modifiez ensuite l'attestation, elle redevient *pas encore envoyée* : elle doit repartir

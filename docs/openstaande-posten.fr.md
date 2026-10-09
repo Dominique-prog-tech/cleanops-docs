@@ -69,6 +69,8 @@ Cochez le poste et cliquez sur **Rappel par e-mail…**. Une fenêtre s'ouvre, d
   vous les adaptez pour cet e-mail seulement.
 - En bas figurent la **Pièce jointe** — la lettre de rappel avec la facture derrière, en un seul PDF — et l'**Expéditeur** (voir
   [Expéditeurs](beheer/mailafzenders.fr.md)).
+- **Joindre un fichier** — glissez votre propre fichier dans la zone ou cliquez dessus. 10 Mo maximum par fichier et 20 Mo
+  ensemble.
 
 Cliquez sur **Envoyer**. L'e-mail part réellement chez le client. Dès qu'il est parti, CleanOps enregistre le rappel **tout seul** :
 le nombre de rappels augmente d'un, avec la date du jour, et le rappel entre dans l'historique des rappels du client. L'historique

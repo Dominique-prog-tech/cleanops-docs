@@ -142,6 +142,12 @@ een creditnota en een nieuwe factuur. Alle e-facturen en hun status staan in [Ve
   bedrag, de vervaldag en de gestructureerde mededeling ingevuld. U stelt die tekst in bij [Mailteksten](beheer/mailteksten.md);
   hier past u ze aan voor deze ene mail.
 - Onderaan staan de **Bijlage** (de factuur als PDF) en de **Afzender** (zie [Mailafzenders](beheer/mailafzenders.md)).
+- **Attesten** — draagt de factuur werkorders met een [attest](attesten.md), dan staan die attesten eronder om aan te vinken.
+  Geen enkel staat vooraf aangevinkt. Wat u aanvinkt, gaat als PDF mee en staat daarna op **verzonden**. Een creditnota biedt
+  geen attesten aan.
+- **Bestand meesturen** — sleep een eigen bestand in het vak of klik erop, bijvoorbeeld een bestelbon of een foto. Hooguit 10 MB
+  per bestand en 20 MB voor alle bijlagen samen; een te groot bestand weigert het venster meteen, met de reden. Met het kruisje
+  haalt u een bestand weer weg.
 
 Klik op **Versturen**. De mail vertrekt echt naar de klant. Daarna staat de factuur op verstuurd, met *mail*, en kan ze niet
 meer heropend worden.

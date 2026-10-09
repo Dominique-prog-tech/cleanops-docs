@@ -122,6 +122,8 @@ maken en een werkorder maken uit de offerte.
   ene mail.
 - Onderaan staan de **Bijlage** en de **Afzender**. Vanaf versie 2 draagt de bijlage het versienummer, bijvoorbeeld
   *offerte-12-versie-2.pdf*.
+- **Bestand meesturen** — sleep een eigen bestand in het vak of klik erop, bijvoorbeeld een plan. Hooguit 10 MB per bestand en
+  20 MB samen.
 
 Klik op **Versturen**. De mail vertrekt echt naar de klant. Een offerte in concept staat daarna op **Verstuurd**; een
 aanvaarde, verloren of vervallen offerte houdt haar status.
