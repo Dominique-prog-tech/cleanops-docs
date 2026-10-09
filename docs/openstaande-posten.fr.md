@@ -51,6 +51,15 @@ Sélectionnez un poste et ouvrez à droite le volet **Journal** pour son histori
 enregistré. Choisissez en haut du volet **E-mails** pour ce qui a été envoyé par e-mail pour la facture de ce poste : la facture
 elle-même et les rappels, avec leur statut de remise.
 
+### Solde par client
+
+Choisissez en haut **Affichage : Par client (solde)** pour la liste des soldes : une ligne par client, avec son nom, son numéro
+de client et son **solde** — ce que ses postes de la sélection choisie représentent encore ensemble. Le total figure en bas. La
+flèche devant un client déplie ses postes ; tout y fonctionne comme dans la liste habituelle. Choisissez **Tous les postes
+ouverts** pour le solde complet ; avec **Échus**, seul ce qui est échu compte. Un solde de 0,00 € signifie que les postes de ce
+client s'annulent, par exemple une facture et une note de crédit. La sélection et l'affichage restent en place quand vous ouvrez
+une fiche client et revenez.
+
 ![Le volet d'un poste sur l'onglet E-mails : le rappel envoyé et la facture envoyée, chacun avec le statut Remis, l'objet, À et le PDF envoyé](images/openstaande-posten-mails-fr.png "E-mails d'un poste")
 
 ## Envoyer un rappel par e-mail

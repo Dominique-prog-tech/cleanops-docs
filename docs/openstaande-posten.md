@@ -50,6 +50,14 @@ Zoek op klant, gemeente, straat, telefoon, document of opmerking. Dubbelklik op 
 aan en open rechts de strook **Journaal** voor zijn logboek: wie wat wijzigde en elke ingeboekte rappel. Kies bovenaan in de strook
 **Mails** voor wat er over de factuur van die post gemaild werd: de factuur zelf en de rappels, met of ze afgeleverd zijn.
 
+### Saldo per klant
+
+Kies bovenaan **Weergave: Per klant (saldo)** voor de saldolijst: één regel per klant, met zijn naam, zijn klantnummer en
+zijn **saldo** — wat zijn posten in de gekozen selectie samen nog openstaan. Onderaan staat het totaal. Met het pijltje vóór een
+klant klapt u zijn posten open; daar werkt alles zoals in de gewone lijst. Kies **Alle openstaande** voor het volledige saldo;
+bij **Vervallen** telt enkel wat vervallen is. Een saldo van € 0,00 betekent dat de posten van die klant elkaar opheffen,
+bijvoorbeeld een factuur en een creditnota. Selectie en weergave blijven staan wanneer u een klantfiche opent en terugkeert.
+
 ![De strook van een post op het tabblad Mails: de gemailde rappel en de gemailde factuur, elk met de status Afgeleverd, het onderwerp, Aan en de verstuurde PDF](images/openstaande-posten-mails.png "Mails van een post")
 
 ## Een rappel mailen
