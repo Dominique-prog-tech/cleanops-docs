@@ -55,7 +55,9 @@ factuur opent meteen met het afdrukvoorbeeld (zie [Facturen](facturen.md#afdrukk
 - De **btw** wordt per btw-code opgeteld.
 - De **vervaldag** volgt uit de betalingstermijn van de klant.
 - De factuur krijgt een **gestructureerde mededeling** en een openstaande post.
-- Draagt een lijn **6 % btw**, dan komt de attestzin op de factuur. Bij **0 %** komt de verleggingsvermelding op de afdruk.
+- Draagt een lijn **6 % btw**, dan komt de attestzin op de factuur, in de taal van de klant. Is er in die taal geen
+  attestzin, dan wordt er niet geboekt (zie [Factuurteksten](beheer/factuurteksten.md)). Bij **0 %** komt de
+  verleggingsvermelding op de afdruk.
 - De werkorders gaan op **Gefactureerd**, met het factuurnummer erbij.
 
 Is het nettototaal negatief, dan wordt het document een **creditnota**.

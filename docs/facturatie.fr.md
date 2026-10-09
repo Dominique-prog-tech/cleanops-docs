@@ -59,8 +59,9 @@ que par une note de crédit. La facture s'ouvre aussitôt avec l'aperçu avant i
 - La **TVA** est additionnée par code TVA.
 - L'**échéance** découle du délai de paiement du client.
 - La facture reçoit une **communication structurée** et un poste ouvert.
-- Si une ligne porte **6 % de TVA**, la phrase d'attestation figure sur la facture. À **0 %**, la mention d'autoliquidation
-  figure sur l'impression.
+- Si une ligne porte **6 % de TVA**, la phrase d'attestation figure sur la facture, dans la langue du client. S'il n'y a
+  pas de phrase d'attestation dans cette langue, rien n'est comptabilisé (voir [Textes de facture](beheer/factuurteksten.fr.md)).
+  À **0 %**, la mention d'autoliquidation figure sur l'impression.
 - Les ordres de travail passent à **Facturé**, avec le numéro de facture.
 
 Si le total net est négatif, le document devient une **note de crédit**.

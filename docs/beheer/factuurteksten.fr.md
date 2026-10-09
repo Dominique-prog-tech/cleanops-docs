@@ -9,6 +9,10 @@ conditions générales, l'attestation pour une rénovation à 6 %.
     Le texte portant la marque **TVA 6 %** est placé **automatiquement** au bas de chaque facture comportant
     de la TVA à 6 %. Vous n'avez rien à choisir et vous ne pouvez pas l'oublier.
 
+    CleanOps prend le texte dans la **langue du client**. S'il manque — par exemple un client francophone alors qu'il
+    n'existe qu'un texte en néerlandais —, la facture **n'est pas comptabilisée** et CleanOps indique la langue à créer.
+    Une facture sans la mention légale ne se rappelle pas ; ajouter un texte se fait tout de suite.
+
     Cela distingue cet écran des autres listes de l'Administration : ce que vous modifiez ici figurera
     littéralement sur une facture adressée à votre client.
 

@@ -9,6 +9,10 @@ algemene voorwaarden, het attest bij een renovatie aan 6 %.
     De tekst met het merkteken **6 % btw** wordt **automatisch** onderaan elke factuur gezet waarop 6 % btw
     voorkomt. U hoeft daar niets te kiezen en u kunt het ook niet vergeten.
 
+    CleanOps neemt de tekst in de **taal van de klant**. Ontbreekt die — bijvoorbeeld een Franstalige klant terwijl er
+    enkel een Nederlandse tekst is — dan wordt de factuur **niet geboekt** en zegt CleanOps welke taal u moet aanmaken.
+    Een factuur zonder de wettelijke vermelding kunt u niet terugroepen; een tekst toevoegen kan meteen.
+
     Dat maakt dit scherm anders dan de andere lijsten in Platformbeheer: wat u hier wijzigt, staat straks
     letterlijk op een factuur aan uw klant.
 
