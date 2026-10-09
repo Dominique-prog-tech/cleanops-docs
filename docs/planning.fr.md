@@ -86,7 +86,7 @@ place et CleanOps vous avertit.
 ## La liste du planning
 
 Les mêmes ordres sous forme de liste, groupés par jour — par défaut ceux de cette semaine. Le travail sans date se
-trouve sous **Encore à planifier**.
+trouve sous **Encore à planifier**. Avec **Nouvel ordre de travail** en haut à droite, vous choisissez un client et en créez un tout de suite (voir [Ordres de travail](werkorders.fr.md#un-nouvel-ordre-de-travail)).
 
 ![La liste du planning de la démo : la semaine par jour, avec les signaux, le collaborateur dans sa couleur et le bouton Attribuer](images/planning-lijst-fr.png "Liste du planning")
 

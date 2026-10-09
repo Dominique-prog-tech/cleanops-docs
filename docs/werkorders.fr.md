@@ -47,7 +47,9 @@ statut l'indique déjà ; le numéro de facture se retrouve aussi via **Recherch
 ## Un nouvel ordre de travail
 
 Un nouvel ordre de travail se crée depuis la fiche du [client](klanten.fr.md) : cliquez en bas sur
-**Nouvel ordre de travail**.
+**Nouvel ordre de travail**. Ou commencez dans cette liste ou dans la [liste du planning](planning.fr.md#la-liste-du-planning) : cliquez en haut à droite sur
+**Nouvel ordre de travail**, cherchez le client par nom ou numéro et cliquez sur **choisir**. **Annuler** vous ramène alors à la
+liste, avec vos filtres.
 
 ![L'écran Nouvel ordre de travail pour Résidence Les Tilleuls, avec les blocs Où et quand, Travail et Affectation et facturation](images/werkorder-nieuw-fr.png "Nouvel ordre de travail")
 

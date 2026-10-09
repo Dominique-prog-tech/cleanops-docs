@@ -83,7 +83,7 @@ staan en waarschuwt CleanOps erbij.
 ## De planningslijst
 
 Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van deze week. Het werk zonder datum staat onder
-**Nog in te plannen**.
+**Nog in te plannen**. Met **Nieuwe werkorder** rechtsboven kiest u een klant en maakt u er meteen een aan (zie [Werkorders](werkorders.md#een-nieuwe-werkorder)).
 
 ![De planningslijst van de demo: de week per dag, met de signalen, de medewerker in zijn kleur en de knop Toewijzen](images/planning-lijst.png "Planningslijst")
 
