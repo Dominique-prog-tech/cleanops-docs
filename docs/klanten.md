@@ -129,8 +129,9 @@ Op een uitvoeringsadres zijn straat, postcode en gemeente verplicht. Verder:
 - **Aanvaardt geen nieuwe opdrachten meer** — bij een nieuwe werkorder op dit adres vraagt CleanOps eerst een
   bevestiging.
 
-**Verwijderen** legt het adres in de [prullenbak](beheer/prullenbak.md). Met **← Klant** keert u terug naar
-het tabblad Adressen.
+**Verwijderen** legt het adres in de [prullenbak](beheer/prullenbak.md). Hangen er lopende contracten of open werkorders aan,
+dan zegt de vraag dat eerst: een lopend contract blijft er werkorders naartoe maken, ook als het adres niet meer op de klantfiche
+staat. Is het een dubbel adres, gebruik dan liever **Samenvoegen…**. Met **← Klant** keert u terug naar het tabblad Adressen.
 
 #### Het tabblad Werkorders van een adres
 

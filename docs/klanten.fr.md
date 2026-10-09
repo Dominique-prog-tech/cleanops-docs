@@ -132,8 +132,10 @@ Sur une adresse d'exécution, la rue, le code postal et la commune sont obligato
 - **N'accepte plus de nouvelles commandes** — lors d'un nouvel ordre de travail à cette adresse, CleanOps demande
   d'abord une confirmation.
 
-**Supprimer** place l'adresse dans la [corbeille](beheer/prullenbak.fr.md). **← Client** vous ramène à l'onglet
-Adresses.
+**Supprimer** place l'adresse dans la [corbeille](beheer/prullenbak.fr.md). Si des contrats en cours ou des ordres de travail
+ouverts y sont liés, la question le dit d'abord : un contrat en cours continue à générer des ordres vers cette adresse, même
+si elle n'apparaît plus sur la fiche client. Pour une adresse en double, utilisez plutôt **Fusionner…**. **← Client** vous
+ramène à l'onglet Adresses.
 
 #### L'onglet Ordres de travail d'une adresse
 
