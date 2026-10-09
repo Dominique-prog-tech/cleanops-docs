@@ -128,7 +128,8 @@ réactiver une version antérieure et créer un ordre de travail à partir du de
   laquelle le devis est valable. Vous réglez ce texte dans [Textes d'e-mail](beheer/mailteksten.fr.md) ; ici, vous
   l'adaptez pour cet e-mail seulement.
 - En bas figurent la **Pièce jointe** et l'**Expéditeur**. À partir de la version 2, la pièce jointe porte le numéro de
-  version, par exemple *devis-12-version-2.pdf*.
+  version, par exemple *devis-12-version-2.pdf*. **Voir** à côté de la pièce jointe l'ouvre dans un aperçu ; ce que vous avez déjà modifié dans la fenêtre reste en place.
+  En haut à droite, **Fiche client ↗** ouvre la fiche du client dans un nouvel onglet.
 - **Joindre un fichier** — glissez votre propre fichier dans la zone ou cliquez dessus, par exemple un plan. 10 Mo maximum par
   fichier et 20 Mo ensemble.
 

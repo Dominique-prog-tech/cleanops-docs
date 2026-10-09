@@ -75,7 +75,8 @@ Vink de post aan en klik op **Rappel mailen…**. Een venster opent met alles al
   krijgt de klant opnieuw de tekst van de derde. U stelt de teksten in bij [Mailteksten](beheer/mailteksten.md); hier past u ze
   aan voor deze ene mail.
 - Onderaan staan de **Bijlage** — de rappelbrief met de factuur erachter, in één PDF — en de **Afzender** (zie
-  [Mailafzenders](beheer/mailafzenders.md)).
+  [Mailafzenders](beheer/mailafzenders.md)). Met **Bekijken** naast de bijlage opent u ze in een afdrukvoorbeeld; wat u in het venster al aanpaste, blijft staan.
+  Rechts bovenaan opent **Klantfiche ↗** de fiche van de klant in een nieuw tabblad.
 - **Bestand meesturen** — sleep een eigen bestand in het vak of klik erop. Hooguit 10 MB per bestand en 20 MB samen.
 
 Klik op **Versturen**. De mail vertrekt echt naar de klant. Zodra ze vertrokken is, boekt CleanOps de rappel **vanzelf** in: het

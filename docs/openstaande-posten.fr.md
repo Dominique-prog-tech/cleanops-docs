@@ -77,7 +77,8 @@ Cochez le poste et cliquez sur **Rappel par e-mail…**. Une fenêtre s'ouvre, d
   client reçoit à nouveau le texte du troisième. Vous réglez ces textes dans [Textes d'e-mail](beheer/mailteksten.fr.md) ; ici,
   vous les adaptez pour cet e-mail seulement.
 - En bas figurent la **Pièce jointe** — la lettre de rappel avec la facture derrière, en un seul PDF — et l'**Expéditeur** (voir
-  [Expéditeurs](beheer/mailafzenders.fr.md)).
+  [Expéditeurs](beheer/mailafzenders.fr.md)). **Voir** à côté de la pièce jointe l'ouvre dans un aperçu ; ce que vous avez déjà modifié dans la fenêtre reste en place.
+  En haut à droite, **Fiche client ↗** ouvre la fiche du client dans un nouvel onglet.
 - **Joindre un fichier** — glissez votre propre fichier dans la zone ou cliquez dessus. 10 Mo maximum par fichier et 20 Mo
   ensemble.
 

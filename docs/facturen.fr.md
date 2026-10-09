@@ -159,7 +159,8 @@ note de crédit et une nouvelle facture. Toutes les factures électroniques et l
 - **Objet** et **Message** — le texte d'e-mail pour une facture ou une note de crédit, dans la langue de la facture, avec le
   numéro, le montant, l'échéance et la communication structurée remplis. Vous réglez ce texte dans
   [Textes d'e-mail](beheer/mailteksten.fr.md) ; ici, vous l'adaptez pour cet e-mail seulement.
-- En bas figurent la **Pièce jointe** (la facture en PDF) et l'**Expéditeur** (voir [Expéditeurs](beheer/mailafzenders.fr.md)).
+- En bas figurent la **Pièce jointe** (la facture en PDF) et l'**Expéditeur** (voir [Expéditeurs](beheer/mailafzenders.fr.md)). **Voir** à côté de la pièce jointe l'ouvre dans un aperçu ; ce que vous avez déjà modifié dans la fenêtre reste en place.
+  En haut à droite, **Fiche client ↗** ouvre la fiche du client dans un nouvel onglet.
 - **Attestations** — si la facture porte des ordres de travail avec une [attestation](attesten.fr.md), ces attestations
   figurent en dessous, à cocher. Aucune n'est cochée d'avance. Celles que vous cochez partent en PDF et sont ensuite
   **envoyées**. Une note de crédit ne propose pas d'attestations.

@@ -125,7 +125,8 @@ maken en een werkorder maken uit de offerte.
   wanneer de offerte geldig is. U stelt die tekst in bij [Mailteksten](beheer/mailteksten.md); hier past u ze aan voor deze
   ene mail.
 - Onderaan staan de **Bijlage** en de **Afzender**. Vanaf versie 2 draagt de bijlage het versienummer, bijvoorbeeld
-  *offerte-12-versie-2.pdf*.
+  *offerte-12-versie-2.pdf*. Met **Bekijken** naast de bijlage opent u ze in een afdrukvoorbeeld; wat u in het venster al aanpaste, blijft staan.
+  Rechts bovenaan opent **Klantfiche ↗** de fiche van de klant in een nieuw tabblad.
 - **Bestand meesturen** — sleep een eigen bestand in het vak of klik erop, bijvoorbeeld een plan. Hooguit 10 MB per bestand en
   20 MB samen.
 

@@ -149,7 +149,8 @@ een creditnota en een nieuwe factuur. Alle e-facturen en hun status staan in [Ve
 - **Onderwerp** en **Bericht** — de mailtekst voor een factuur of creditnota, in de taal van de factuur, met het nummer, het
   bedrag, de vervaldag en de gestructureerde mededeling ingevuld. U stelt die tekst in bij [Mailteksten](beheer/mailteksten.md);
   hier past u ze aan voor deze ene mail.
-- Onderaan staan de **Bijlage** (de factuur als PDF) en de **Afzender** (zie [Mailafzenders](beheer/mailafzenders.md)).
+- Onderaan staan de **Bijlage** (de factuur als PDF) en de **Afzender** (zie [Mailafzenders](beheer/mailafzenders.md)). Met **Bekijken** naast de bijlage opent u ze in een afdrukvoorbeeld; wat u in het venster al aanpaste, blijft staan.
+  Rechts bovenaan opent **Klantfiche ↗** de fiche van de klant in een nieuw tabblad.
 - **Attesten** — draagt de factuur werkorders met een [attest](attesten.md), dan staan die attesten eronder om aan te vinken.
   Geen enkel staat vooraf aangevinkt. Wat u aanvinkt, gaat als PDF mee en staat daarna op **verzonden**. Een creditnota biedt
   geen attesten aan.
