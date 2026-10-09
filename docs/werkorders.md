@@ -69,7 +69,8 @@ Na **Bewaren** opent de fiche van de nieuwe werkorder.
 
 Bovenaan staan het nummer en de status. Daaronder een kaart met de feiten rond de werkorder: de klant, het contract
 waaruit ze voortkomt, de offerte waaruit ze ontstond, de datum van ingave, de telefoon van de werkorder, het e-mailadres van het
-adres — of van de klant, als het adres er geen heeft —, het bedrag met de btw-code, en de factuur. Klik op de klant of het contract om het te openen.
+adres — of van de klant, als het adres er geen heeft —, het bedrag met de btw-code, en de factuur. Klik op de klant of het contract om het te openen. Is de klant geblokkeerd, dan
+staat er **Klant geblokkeerd** naast de naam; u kunt gewoon verder.
 
 ![De werkorderfiche van Tuincentrum De Linde: de kaart bovenaan, de planning met medewerker, bijrijder en voertuig, het adres, de instructies en de vinkjes](images/werkorder-fiche.png "Werkorderfiche")
 
@@ -108,7 +109,7 @@ de lijst* erbij. Ze blijft staan tot u iemand anders kiest.
 
 | Rij | Vinkje | Betekenis |
 |---|---|---|
-| Planning | Vaste datum | De werkorder mag niet verplaatst worden. Wint van *Mag vroeger* als beide aangevinkt zijn. |
+| Planning | Vaste datum | De werkorder mag niet verplaatst worden. Wint van *Mag vroeger* als beide aangevinkt zijn. Wijzigt u op de fiche de geplande datum, dan herinnert een melding u aan de afgesproken dag. |
 | | Mag vroeger | Het werk mag vroeger uitgevoerd worden dan gepland. |
 | | Groot werk | Een grote opdracht; het staat als label op de leveringsbon. |
 | | Terugbellen, Teruggebeld | De klant wil gebeld worden; vink het tweede aan zodra dat gebeurd is. |

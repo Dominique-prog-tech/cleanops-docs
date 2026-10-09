@@ -75,7 +75,8 @@ Après **Enregistrer**, la fiche du nouvel ordre s'ouvre.
 
 En haut figurent le numéro et le statut. En dessous, une carte avec les faits autour de l'ordre : le client, le
 contrat dont il est issu, le devis dont il découle, la date d'encodage, le téléphone de l'ordre, l'e-mail de l'adresse — ou du
-client, si l'adresse n'en a pas —, le montant avec le code TVA, et la facture. Cliquez sur le client ou le contrat pour l'ouvrir.
+client, si l'adresse n'en a pas —, le montant avec le code TVA, et la facture. Cliquez sur le client ou le contrat pour l'ouvrir. Si le client est bloqué,
+**Client bloqué** figure à côté du nom ; vous pouvez continuer normalement.
 
 ![La fiche d'un ordre de travail de Résidence Les Tilleuls : la carte en haut, la planification avec collaborateur, convoyeur et véhicule, l'adresse, les instructions et les cases à cocher](images/werkorder-fiche-fr.png "Fiche de l'ordre de travail")
 
@@ -115,7 +116,7 @@ Si l'ordre porte le code d'un collaborateur qui n'est plus dans la liste, vous v
 
 | Ligne | Case | Signification |
 |---|---|---|
-| Planning | Date fixe | L'ordre ne peut pas être déplacé. L'emporte sur *Peut commencer plus tôt* si les deux sont cochées. |
+| Planning | Date fixe | L'ordre ne peut pas être déplacé. L'emporte sur *Peut commencer plus tôt* si les deux sont cochées. Si vous modifiez la date planifiée sur la fiche, un message rappelle le jour convenu. |
 | | Peut commencer plus tôt | Le travail peut être exécuté plus tôt que prévu. |
 | | Gros travaux | Une mission importante ; elle figure comme étiquette sur le bon de livraison. |
 | | Rappeler, Rappelé | Le client souhaite être appelé ; cochez la seconde case une fois que c'est fait. |
