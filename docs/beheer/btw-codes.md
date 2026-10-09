@@ -48,7 +48,9 @@ Klik op **Nieuwe btw-code**, of dubbelklik op een bestaande rij.
 
 !!! note "Waarom de categorie niet uit het percentage volgt"
     Een btw-code van 0 % kan verlegde btw (medecontractant), een vrijstelling of een intracommunautaire levering zijn. Voor
-    uw klant en uw boekhouder is dat een groot verschil, dus kiest u de categorie zelf.
+    uw klant en uw boekhouder is dat een groot verschil, dus kiest u de categorie zelf. Ook de afgedrukte factuur volgt ze:
+    de vermelding "Btw te voldoen door de medecontractant" staat er enkel bij een 0 %-code met categorie *Verlegd* (of zonder
+    categorie).
 
 !!! warning "Een gewijzigd percentage raakt bestaande facturen niet"
     Elke factuur bewaart het percentage waarmee ze opgemaakt is. Verhoogt u hier een tarief, dan verandert er

@@ -48,7 +48,9 @@ Cliquez sur **Nouveau code TVA**, ou double-cliquez sur une ligne existante.
 
 !!! note "Pourquoi la catégorie ne découle pas du pourcentage"
     Un code TVA à 0 % peut être une autoliquidation (cocontractant), une exonération ou une livraison intracommunautaire. Pour
-    votre client et votre comptable, la différence est grande : vous choisissez donc la catégorie vous-même.
+    votre client et votre comptable, la différence est grande : vous choisissez donc la catégorie vous-même. La facture
+    imprimée la suit aussi : la mention d'autoliquidation (cocontractant) n'y figure que pour un code à 0 % de catégorie
+    *Autoliquidation* (ou sans catégorie).
 
 !!! warning "Un pourcentage modifié ne touche pas les factures existantes"
     Chaque facture conserve le pourcentage avec lequel elle a été établie. Si vous augmentez un taux ici,
