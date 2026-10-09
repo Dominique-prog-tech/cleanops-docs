@@ -36,7 +36,7 @@ Le délai se règle sur la [fiche entreprise](beheer/bedrijfsfiche.fr.md), sous 
 | Colonne | Contenu |
 |---|---|
 | N° client, Client | Pour qui, avec la rue et la commune en dessous, et la remarque s'il y en a une. |
-| Téléphone | Le GSM du client, sinon son numéro fixe. |
+| Téléphone | Le GSM du client, et son numéro fixe en petit en dessous. S'il n'a pas de GSM, uniquement le numéro fixe. La recherche porte sur les deux. |
 | Document | Le journal et le numéro. Cliquez dessus pour ouvrir la facture. |
 | Échéance | Quand le poste devait être payé. |
 | Solde ouvert | Ce qui reste ouvert ; **en rouge** si le poste est échu. |

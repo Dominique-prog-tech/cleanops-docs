@@ -36,7 +36,7 @@ De wachttijd stelt u in op de [bedrijfsfiche](beheer/bedrijfsfiche.md), bij **Wa
 | Kolom | Wat erin staat |
 |---|---|
 | Klantnr, Klant | Voor wie, met de straat en de gemeente eronder, en de opmerking als die er is. |
-| Telefoon | Het gsm-nummer van de klant, anders zijn vaste nummer. |
+| Telefoon | Het gsm-nummer van de klant, en zijn vaste nummer klein eronder. Heeft hij geen gsm, dan enkel het vaste nummer. Op beide kunt u zoeken. |
 | Document | Het dagboek en het nummer. Klik erop om de factuur te openen. |
 | Vervaldag | Wanneer de post betaald moest zijn. |
 | Openstaand | Wat er nog openstaat; **in het rood** als de post vervallen is. |
