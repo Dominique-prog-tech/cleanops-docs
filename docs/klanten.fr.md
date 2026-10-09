@@ -30,7 +30,9 @@ missions** figure à côté du nom, le client porte cette mention sur sa fiche.
 ## Un nouveau client
 
 Cliquez sur **Nouveau client**. Vous obtenez une fiche vide ; les champs marqués d'un astérisque sont
-obligatoires. Après **Enregistrer**, la fiche du nouveau client s'ouvre, avec ses onglets.
+obligatoires. Après **Enregistrer**, la fiche du nouveau client s'ouvre, avec ses onglets. CleanOps crée aussitôt une
+première adresse d'exécution à partir de l'adresse et du téléphone du client, et l'indique en haut ; vous la trouvez sous
+**Adresses**.
 
 ## La fiche client
 

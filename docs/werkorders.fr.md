@@ -45,7 +45,7 @@ Un nouvel ordre de travail se crée depuis la fiche du [client](klanten.fr.md) :
 
 | Champ | Explication |
 |---|---|
-| Adresse d'exécution | L'adresse principale du client ou l'une de ses adresses d'exécution. L'instruction de travail, le matériel et les remarques de l'adresse sont repris sur l'ordre. |
+| Adresse d'exécution | L'adresse principale du client ou l'une de ses adresses d'exécution. Si le client a exactement une adresse d'exécution, elle est déjà choisie (aussi pour un ordre issu d'un devis). L'instruction de travail, le matériel et les remarques de l'adresse sont repris sur l'ordre. |
 | À exécuter | Le jour où le travail doit être fait. |
 | Chantier (nom) | Un nom reconnaissable pour le lieu, 30 caractères au maximum. |
 | Description * | Ce qu'il faut faire, 35 caractères au maximum. Ce texte figure sur la facture. |

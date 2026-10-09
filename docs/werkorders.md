@@ -41,7 +41,7 @@ Een nieuwe werkorder maakt u op de fiche van de [klant](klanten.md): klik ondera
 
 | Veld | Toelichting |
 |---|---|
-| Uitvoeringsadres | Het hoofdadres van de klant of een van zijn uitvoeringsadressen. De werkinstructie, het materiaal en de opmerkingen van het adres komen op de werkorder. |
+| Uitvoeringsadres | Het hoofdadres van de klant of een van zijn uitvoeringsadressen. Heeft de klant precies één uitvoeringsadres, dan staat dat al gekozen (ook bij een werkorder uit een offerte). De werkinstructie, het materiaal en de opmerkingen van het adres komen op de werkorder. |
 | Uit te voeren | De dag waarop het werk moet gebeuren. |
 | Werf (naam) | Een herkenbare naam voor de plaats, hoogstens 30 tekens. |
 | Omschrijving * | Wat er moet gebeuren, hoogstens 35 tekens. Deze tekst komt op de factuur. |

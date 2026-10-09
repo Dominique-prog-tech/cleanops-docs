@@ -29,7 +29,8 @@ nieuwe opdrachten**, dan draagt de klant die aanduiding op zijn fiche.
 ## Een nieuwe klant
 
 Klik op **Nieuwe klant**. U krijgt een lege fiche; de velden met een sterretje zijn verplicht. Na **Opslaan**
-opent de fiche van de nieuwe klant, met de tabbladen erbij.
+opent de fiche van de nieuwe klant, met de tabbladen erbij. CleanOps maakt meteen ook een eerste uitvoeringsadres uit
+het adres en de telefoon van de klant, en zegt dat bovenaan; u vindt het onder **Adressen**.
 
 ## De klantfiche
 
