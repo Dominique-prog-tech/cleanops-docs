@@ -23,7 +23,7 @@ En haut, choisissez une **Sélection** :
 | Prochain rappel | Les postes qui ont déjà reçu un rappel, datant d'au moins le délai entre deux rappels. |
 | Exclus | Les postes que vous avez exclus des rappels. |
 | Client sans rappels | Les postes des clients dont la case **Reçoit des rappels** est décochée sur la [fiche client](klanten.fr.md). |
-| Tous les postes ouverts | Tout ce qui est ouvert, y compris les notes de crédit. |
+| Tous les postes ouverts | Tout ce qui est ouvert, y compris les notes de crédit et les factures créditées (label *crédité*). Le total est le solde de tous les clients ensemble. |
 
 Échus, Prochain rappel et Client sans rappels ne montrent que les clients qui **doivent encore quelque chose** au total. Si
 un client a une note de crédit ouverte plus élevée que ses factures ouvertes, il n'y figure pas — un rappel lui réclamerait
@@ -105,7 +105,7 @@ Si vous fermez l'aperçu sans l'envoyer, CleanOps demande **Enregistrer le rappe
 vous imprimez la lettre ou l'envoyez vous-même : le nombre de rappels augmente d'un, avec la date du jour, et le rappel entre dans
 l'historique des rappels. Cliquez sur **Annuler** si vous vouliez seulement regarder.
 
-Pas de rappel pour une note de crédit, un poste exclu, un client dont la case **Reçoit des rappels** est décochée, ou un client
+Pas de rappel pour une note de crédit, un poste crédité, un poste exclu, un client dont la case **Reçoit des rappels** est décochée, ou un client
 qui ne doit rien au total (badge *ne doit rien* dans **Tous les postes ouverts**). Les boutons
 sont alors désactivés et indiquent pourquoi.
 

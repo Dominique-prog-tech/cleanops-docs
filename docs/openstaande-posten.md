@@ -23,7 +23,7 @@ Kies bovenaan een **Selectie**:
 | Volgende rappel | De posten die al een rappel kregen, waarvan die rappel minstens de wachttijd oud is. |
 | Uitgesloten | De posten die u uitsloot van rappels. |
 | Klant zonder rappels | De posten van klanten bij wie het vinkje **Ontvangt rappels** uit staat op de [klantfiche](klanten.md). |
-| Alle openstaande | Alles wat openstaat, ook de creditnota's. |
+| Alle openstaande | Alles wat openstaat, ook de creditnota's en de gecrediteerde facturen (label *gecrediteerd*). Het totaal is het saldo van alle klanten samen. |
 
 Vervallen, Volgende rappel en Klant zonder rappels tonen enkel klanten die **netto iets schuldig** zijn. Heeft een klant een
 openstaande creditnota die groter is dan zijn openstaande facturen, dan staat hij daar niet — een rappel zou hem aanmanen
@@ -102,7 +102,7 @@ Sluit u het voorbeeld zonder te mailen, dan vraagt CleanOps **Rappel inboeken?**
 afdrukt of zelf verstuurt: het aantal rappels gaat één omhoog, met de datum van vandaag, en de rappel komt in de rappelhistoriek.
 Klik op **Annuleren** als u enkel wilde kijken.
 
-Geen rappel voor een creditnota, een post die uitgesloten is, een klant bij wie **Ontvangt rappels** uit staat, of een klant die
+Geen rappel voor een creditnota, een gecrediteerde post, een post die uitgesloten is, een klant bij wie **Ontvangt rappels** uit staat, of een klant die
 netto niets schuldig is (badge *niets schuldig* in **Alle openstaande**). De knoppen staan
 dan uit, en zeggen waarom.
 
