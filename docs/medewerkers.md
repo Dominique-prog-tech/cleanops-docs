@@ -99,6 +99,10 @@ Onder de velden staat hoeveel **verlofdagen** de periode telt. CleanOps rekent z
 medewerker volgens het werkregime werkt, zonder de [feestdagen en sluitingsdagen](beheer/feestdagen.md). Wie van maandag tot donderdag werkt, krijgt voor een
 volledige week dus 4 dagen.
 
+Bij soort **Verlof** staat eronder ook het **saldo na deze boeking**: wat de medewerker dat jaar nog overhoudt als u
+bewaart. Dat ziet enkel wie het recht heeft om de [verlofsaldi](verlofsaldi.md) te bekijken. Is er voor dat jaar nog geen
+toekenning, dan zegt het venster dat.
+
 Staat de medewerker in die periode al op open werkorders of in een ploeg, dan meldt het venster dat. Het verlof
 boeken kan gewoon; de melding zegt u waar u de planning moet nakijken.
 

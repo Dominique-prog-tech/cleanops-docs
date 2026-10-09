@@ -103,6 +103,10 @@ Sous les champs figure le nombre de **jours de congé** de la période. CleanOps
 le collaborateur travaille selon son régime de travail, sans les [jours fériés et jours de fermeture](beheer/feestdagen.fr.md). Une personne qui travaille du lundi
 au jeudi compte donc 4 jours pour une semaine complète.
 
+Pour le type **Congé**, le **solde après cette réservation** figure en dessous : ce qu'il reste au collaborateur cette
+année-là si vous enregistrez. Seul celui qui a le droit de consulter les [soldes de congés](verlofsaldi.fr.md) le voit.
+S'il n'y a pas encore d'attribution pour cette année, la fenêtre le signale.
+
 Si le collaborateur figure déjà sur des ordres de travail ouverts ou dans une équipe durant cette période, la
 fenêtre le signale. Le congé peut être encodé normalement ; le message vous indique où vérifier le planning.
 
