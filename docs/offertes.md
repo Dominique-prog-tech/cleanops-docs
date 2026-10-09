@@ -34,6 +34,9 @@ Klik op **Nieuwe offerte**, zoek de klant op naam of klantnummer en klik op **ki
 adres, zodat u klanten met dezelfde naam uit elkaar houdt. Op de
 [klantfiche](klanten.md#de-knoppen-onderaan) staat dezelfde knop.
 
+Is de klant **geblokkeerd**, of aanvaardt hij **geen nieuwe zaken**, dan staat dat bovenaan de nieuwe offerte. Bij *geen nieuwe
+zaken* vraagt **Bewaren** eerst *Toch bewaren?*. Hetzelfde gebeurt wanneer u met **Wijzigen…** een andere klant kiest.
+
 Een nieuwe offerte krijgt de datum van vandaag, **Geldig tot** over 30 dagen en **Opvolgen op** over 10 dagen. Ze begint
 als **Concept**. Het nummer krijgt ze bij het bewaren: het volgende nummer van het jaar van de offertedatum.
 

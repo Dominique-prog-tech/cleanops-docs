@@ -34,6 +34,10 @@ Le nombre à côté de **Devis** dans le menu compte les devis envoyés que vous
 Cliquez sur **Nouveau devis**, cherchez le client par nom ou numéro de client et cliquez sur **choisir**. Sous chaque nom figure l'adresse, pour distinguer les clients qui portent le même nom. Le même bouton
 figure sur la [fiche client](klanten.fr.md#les-boutons-en-bas).
 
+Si le client est **bloqué**, ou n'accepte **plus de nouvelles affaires**, c'est indiqué en haut du nouveau devis. Dans le second
+cas, **Enregistrer** demande d'abord *Enregistrer quand même ?*. Il en va de même quand vous choisissez un autre client avec
+**Changer…**.
+
 Un nouveau devis reçoit la date du jour, **Valable jusqu'au** dans 30 jours et **Suivi le** dans 10 jours. Il commence
 comme **Brouillon**. Il reçoit son numéro à l'enregistrement : le numéro suivant de l'année de la date du devis.
 
