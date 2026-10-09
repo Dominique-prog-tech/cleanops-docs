@@ -86,9 +86,14 @@ Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van dez
 
 Per werkorder ziet u de signalen (*Vaste datum — niet verplaatsen*, *Mag vroeger uitgevoerd worden*, *Groot werk*,
 *Klant geblokkeerd*), de medewerker in zijn kleur, het nummer, de datum die de klant vroeg (**Gevraagd**), de klant, de
-werf, de omschrijving, de typering, de status en RWZI. Met de kolomkiezer (het pictogram naast **Exporteren**) zet u er
-**Wanneer** (tijdsdeel en afgesproken uur), **Besteld**, **Straat + nr**, **Postcode** en **Gemeente** bij; op een kolom
-klikken sorteert erop, bijvoorbeeld op gemeente.
+werf, de omschrijving, de typering en de status. Met de kolomkiezer (het pictogram naast **Exporteren**) zet u er
+**Wanneer** (tijdsdeel en afgesproken uur), **Besteld**, **Straat + nr**, **Postcode**, **Gemeente** en **RWZI** bij; op een
+kolom klikken sorteert erop, bijvoorbeeld op gemeente.
+
+Rechts staat de strook **Journaal**. Klap ze open om de gekozen werkorder te zien zonder de lijst te verlaten: de klant, het
+adres en de telefoon, de gevraagde datum en de tijden, wie en met welk voertuig, de omschrijving, de instructies voor de
+werknemer, het materiaal en de interne opmerking — en daaronder de bijlagen en het logboek. Ze blijft open terwijl u een
+andere rij kiest.
 
 - **Periode** — kies **Vandaag**, **Vorige week**, **Deze week** (de standaard), **Volgende week**, **Deze maand** of
   **Volgende maand**, of vul onder *Eigen periode* een **Van** en **Tot en met** in en klik op **Toepassen**. Een periode

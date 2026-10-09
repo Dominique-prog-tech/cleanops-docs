@@ -89,9 +89,15 @@ trouve sous **Encore à planifier**.
 
 Pour chaque ordre, vous voyez les signaux (*Date fixe — ne pas déplacer*, *Peut être exécuté plus tôt*,
 *Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro, la date demandée par le client
-(**Demandé**), le client, le chantier, la description, le type de travail, le statut et RWZI. Avec le sélecteur de colonnes
+(**Demandé**), le client, le chantier, la description, le type de travail et le statut. Avec le sélecteur de colonnes
 (l'icône à côté d'**Exporter**), vous ajoutez **Quand** (partie de journée et heure convenue), **Commandé**,
-**Rue + n°**, **Code postal** et **Localité** ; un clic sur une colonne trie sur celle-ci, par exemple sur la localité.
+**Rue + n°**, **Code postal**, **Localité** et **RWZI** ; un clic sur une colonne trie sur celle-ci, par exemple sur la
+localité.
+
+À droite se trouve le volet **Journal**. Dépliez-le pour voir l'ordre sélectionné sans quitter la liste : le client,
+l'adresse et le téléphone, la date demandée et les heures, qui et avec quel véhicule, la description, les instructions
+pour le collaborateur, le matériel et la remarque interne — et en dessous les pièces jointes et l'historique. Il reste
+ouvert quand vous choisissez une autre ligne.
 
 - **Période** — choisissez **Aujourd'hui**, **Semaine passée**, **Cette semaine** (par défaut), **Semaine
   prochaine**, **Ce mois-ci** ou **Mois prochain**, ou indiquez sous *Période libre* un **Du** et un **Au** puis cliquez
