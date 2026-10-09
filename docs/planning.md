@@ -37,7 +37,7 @@ anders zegt dan de omschrijving. Wijst u een kaart aan, dan ziet u ook de werf, 
 | 📌 | Vaste datum — niet verplaatsen. |
 | ↩ | Mag vroeger uitgevoerd worden. |
 | ⇅ | Met de hand geplaatst: de werkorder blijft staan waar de planner ze zette, ook vóór een vroeger tijdsdeel. |
-| ✎ | Opent de werkorderfiche. |
+| ✎ | Opent de werkorderfiche. Met **← Planning** komt u terug in dezelfde week. |
 
 De rand links op de kaart zegt meer over de werkorder:
 
@@ -104,7 +104,8 @@ status en RWZI.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in de dag (bijvoorbeeld *06/10*), het nummer,
   de klant, de werf, de omschrijving, de typering, de status en de code van de medewerker; elk woord moet ergens
   voorkomen. De tellers en **Afdrukken** volgen de zoekterm.
-- **Openen** — dubbelklik op een rij om de werkorderfiche te openen.
+- **Openen** — dubbelklik op een rij om de werkorderfiche te openen. Met **← Planning** komt u terug in dezelfde
+  periode, met dezelfde filters.
 
 ### Eén werkorder toewijzen
 

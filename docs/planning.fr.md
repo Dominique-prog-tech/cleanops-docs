@@ -40,7 +40,7 @@ chantier, le type de travail et les signaux.
 | 📌 | Date fixe — ne pas déplacer. |
 | ↩ | Peut être exécuté plus tôt. |
 | ⇅ | Placé à la main : l'ordre reste là où le planificateur l'a mis, même devant une partie de journée plus tôt. |
-| ✎ | Ouvre la fiche de l'ordre de travail. |
+| ✎ | Ouvre la fiche de l'ordre de travail. Avec **← Planning**, vous revenez à la même semaine. |
 
 Le bord gauche de la carte en dit plus sur l'ordre :
 
@@ -106,7 +106,8 @@ le type de travail, le statut et RWZI.
 - **Rechercher** — le curseur est tout de suite dans le champ de recherche. La recherche porte sur le jour (par exemple
   *06/10*), le numéro, le client, le chantier, la description, le type de travail, le statut et le code du
   collaborateur ; chaque mot doit figurer quelque part. Les compteurs et **Imprimer** suivent la recherche.
-- **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de l'ordre de travail.
+- **Ouvrir** — double-cliquez sur une ligne pour ouvrir la fiche de l'ordre de travail. Avec **← Planning**, vous revenez
+  à la même période, avec les mêmes filtres.
 
 ### Attribuer un ordre
 
