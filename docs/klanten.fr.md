@@ -127,10 +127,10 @@ Sur une adresse d'exécution, la rue, le code postal et la commune sont obligato
 - **Remarques**, **Instruction de travail (sur l'ordre)** et **Matériel à emporter** — qui choisit cette adresse
   sur un ordre de travail y retrouve ces textes : les remarques comme remarque interne, l'instruction et le
   matériel dans leur propre champ. Ce qui figurait déjà sur l'ordre de travail reste en place.
-- **Accessibilité** — par jour *Normal*, *Difficile* ou *Impossible*. Qui choisit cette adresse sur un nouvel
-  ordre de travail voit les jours où elle est difficile ou impossible d'accès.
+- **Accessibilité** — par jour *Normal*, *Difficile* ou *Impossible*. Qui choisit cette adresse sur un ordre de
+  travail voit les jours où elle est difficile ou impossible d'accès.
 - **N'accepte plus de nouvelles commandes** — lors d'un nouvel ordre de travail à cette adresse, CleanOps demande
-  d'abord une confirmation.
+  d'abord une confirmation. Sur un ordre de travail existant, c'est un message sous l'adresse.
 
 **Supprimer** place l'adresse dans la [corbeille](beheer/prullenbak.fr.md). Si des contrats en cours ou des ordres de travail
 ouverts y sont liés, la question le dit d'abord : un contrat en cours continue à générer des ordres vers cette adresse, même

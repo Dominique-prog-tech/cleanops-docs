@@ -124,10 +124,10 @@ Op een uitvoeringsadres zijn straat, postcode en gemeente verplicht. Verder:
 - **Opmerkingen**, **Werkinstructie (komt op de opdracht)** en **Mee te nemen materiaal** — wie dit adres kiest
   op een werkorder, krijgt deze teksten daar aangevuld: de opmerkingen als interne opmerking, de werkinstructie
   en het materiaal in hun eigen veld. Wat al op de werkorder stond, blijft staan.
-- **Bereikbaarheid** — per dag *Gewoon*, *Moeilijk* of *Niet mogelijk*. Wie dit adres kiest op een nieuwe
-  werkorder, ziet op welke dagen het moeilijk of niet bereikbaar is.
+- **Bereikbaarheid** — per dag *Gewoon*, *Moeilijk* of *Niet mogelijk*. Wie dit adres kiest op een werkorder,
+  ziet op welke dagen het moeilijk of niet bereikbaar is.
 - **Aanvaardt geen nieuwe opdrachten meer** — bij een nieuwe werkorder op dit adres vraagt CleanOps eerst een
-  bevestiging.
+  bevestiging. Op een bestaande werkorder staat het als melding onder het adres.
 
 **Verwijderen** legt het adres in de [prullenbak](beheer/prullenbak.md). Hangen er lopende contracten of open werkorders aan,
 dan zegt de vraag dat eerst: een lopend contract blijft er werkorders naartoe maken, ook als het adres niet meer op de klantfiche
