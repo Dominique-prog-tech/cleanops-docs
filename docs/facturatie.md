@@ -62,7 +62,10 @@ factuur opent meteen met het afdrukvoorbeeld (zie [Facturen](facturen.md#afdrukk
   verleggingsvermelding op de afdruk.
 - De werkorders gaan op **Gefactureerd**, met het factuurnummer erbij.
 
-Is het nettototaal negatief, dan wordt het document een **creditnota**.
+Is het nettototaal negatief, dan wordt het document een **creditnota**. Het venster zegt dat vooraf: de zin onder de lijst
+spreekt van de creditnota en de knop heet **Creditnota boeken**. Staan er werkorders met een positief én een negatief bedrag
+aangevinkt, dan meldt het venster dat ze op één document verrekend worden; wilt u een aparte creditnota, vink dan de negatieve uit
+en boek ze daarna apart.
 
 ## Voorschotten
 

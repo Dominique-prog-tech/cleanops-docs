@@ -66,7 +66,10 @@ que par une note de crédit. La facture s'ouvre aussitôt avec l'aperçu avant i
   À **0 %**, la mention d'autoliquidation figure sur l'impression.
 - Les ordres de travail passent à **Facturé**, avec le numéro de facture.
 
-Si le total net est négatif, le document devient une **note de crédit**.
+Si le total net est négatif, le document devient une **note de crédit**. La fenêtre le dit d'avance : la phrase sous la liste
+parle de la note de crédit et le bouton s'appelle **Comptabiliser la note de crédit**. Si des ordres avec un montant positif et
+négatif sont cochés, la fenêtre signale qu'ils sont compensés sur un seul document ; pour une note de crédit séparée, décochez
+les ordres négatifs et comptabilisez-les ensuite à part.
 
 ## Acomptes
 
