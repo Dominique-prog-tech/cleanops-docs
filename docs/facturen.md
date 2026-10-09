@@ -234,7 +234,8 @@ creditnota.
 
 Klik op **Crediteren**. Het venster zegt wat er gebeurt. Vink **Werkorders opnieuw te factureren** aan als u hetzelfde werk opnieuw
 wilt factureren, bijvoorbeeld na een fout op de factuur: de werkorders staan dan weer in [Facturatie](facturatie.md). Klik op
-**Crediteren**. De creditnota krijgt het volgende nummer uit de reeks van de creditnota's en opent meteen.
+**Crediteren**. De creditnota krijgt het volgende nummer uit de reeks van de creditnota's en opent meteen, met het
+afdrukvoorbeeld open — net als na het boeken in Facturatie.
 
 Een factuur die al gecrediteerd is, kan niet nog eens gecrediteerd worden.
 

@@ -245,7 +245,8 @@ Supprimer une facture n'est pas possible : la numérotation des factures ne comp
 Cliquez sur **Créer une note de crédit**. La fenêtre explique ce qui va se passer. Cochez **Remettre les ordres de travail « à
 facturer »** si vous voulez refacturer le même travail, par exemple après une erreur sur la facture : les ordres de travail
 figurent alors à nouveau dans [Facturation](facturatie.fr.md). Cliquez sur **Créditer**. La note de crédit reçoit le numéro
-suivant de la série des notes de crédit et s'ouvre aussitôt.
+suivant de la série des notes de crédit et s'ouvre aussitôt, avec l'aperçu avant impression ouvert — comme après la
+comptabilisation dans Facturation.
 
 Une facture déjà créditée ne peut pas l'être une seconde fois.
 
