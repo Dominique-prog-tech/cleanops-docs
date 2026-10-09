@@ -46,6 +46,7 @@ Klik op **Nieuw item**, of dubbelklik op een bestaande rij. In beide gevallen kr
 |---|---|
 | **Omschrijving (NL)** / **(FR)** | wat de gebruiker in de keuzelijsten ziet, maximaal 100 tekens. Die in de hoofdtaal van uw bedrijf is verplicht. |
 | **Volgorde** | 0 tot 32767 — zie hieronder. |
+| **Prioriteit selectie** | enkel bij **Werkzaamheden**, 0 tot 32767 — zie hieronder. |
 
 Werkt u tweetalig, vul dan beide omschrijvingen in; anders blijft de keuze leeg voor wie de toepassing in de
 andere taal gebruikt.
@@ -55,6 +56,14 @@ andere taal gebruikt.
 **Volgorde** telt enkel bij drie lijsten: **Werkzaamheden**, **Materialen & betaalwijzen** en **Functies
 medewerker**. Daar komt het hoogste getal bovenaan, zodat wat u dagelijks kiest vooraan staat. De andere
 lijsten staan altijd **alfabetisch**, ongeacht de volgorde die u invult — zoals in uw huidige toepassing.
+
+### De prioriteit selectie
+
+Vinkt u op een werkorder meerdere **werkzaamheden** aan, dan vult CleanOps de **Typering** van de werkorder met de
+werkzaamheid die de hoogste **prioriteit selectie** heeft: *sifonputjes* (2000) en *vetput* (6000) samen geven
+*vetput*. Een typering die er al staat, blijft staan. Geeft u een nieuwe werkzaamheid geen prioriteit, dan staat
+ze op 0 en geeft ze nooit de typering zolang er een andere bij aangevinkt is. In de lijst ziet u de prioriteit in
+een eigen kolom, enkel bij **Werkzaamheden**: bij de andere lijsten doet ze niets.
 
 ## Een item archiveren of terughalen
 

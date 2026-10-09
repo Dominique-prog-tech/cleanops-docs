@@ -48,6 +48,7 @@ même fenêtre.
 |---|---|
 | **Description (NL)** / **(FR)** | ce que l'utilisateur voit dans les listes de choix, 100 caractères au maximum. Celle dans la langue principale de votre entreprise est obligatoire. |
 | **Ordre** | 0 à 32767 — voir ci-dessous. |
+| **Priorité de sélection** | uniquement pour les **Travaux**, 0 à 32767 — voir ci-dessous. |
 
 Si vous travaillez en deux langues, complétez les deux descriptions ; sinon, le choix reste vide pour qui
 utilise l'application dans l'autre langue.
@@ -58,6 +59,14 @@ L'**ordre** ne compte que pour trois listes : **Travaux**, **Matériel & modes d
 collaborateur**. Le nombre le plus élevé y apparaît en premier, pour que ce que vous choisissez chaque jour
 figure en tête. Les autres listes sont toujours **alphabétiques**, quel que soit l'ordre saisi — comme dans
 votre application actuelle.
+
+### La priorité de sélection
+
+Si vous cochez plusieurs **travaux** sur un ordre de travail, CleanOps remplit le **Type de travail** de l'ordre avec le
+travail qui a la **priorité de sélection** la plus élevée : *sifonputjes* (2000) et *vetput* (6000) ensemble donnent
+*vetput*. Un type de travail déjà présent est conservé. Si vous ne donnez pas de priorité à un nouveau travail, il reste à 0
+et ne donne jamais le type de travail tant qu'un autre est coché avec lui. Dans la liste, la priorité figure dans une colonne
+propre, uniquement pour les **Travaux** : pour les autres listes, elle n'a aucun effet.
 
 ## Archiver ou rétablir un élément
 
