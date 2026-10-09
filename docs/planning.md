@@ -157,9 +157,11 @@ delen die op elkaar aansluiten: **Deel 1**, **Deel 2**, …
 contract, medewerker en zoekterm. De kop vermeldt de medewerker en de zoekterm als u er een koos. Per dag en per
 medewerker staan het tijdsdeel met de datum die de klant vroeg (*Gevraagd op*), het nummer, de klant en de werf, het adres,
 de telefoon van het adres (anders die van de klant, en die van de werkorder erbij als ze anders is — met
-*Terugbellen* als de klant gebeld wil worden), de omschrijving, de instructies en het materiaal, en
-het voertuig. Onder elke werkorder staan lege vakken **Starttijd**, **Eindtijd** en **Notities**, die de ploeg met de
-hand invult. Het werk zonder datum staat achteraan onder *Nog in te plannen*.
+*Terugbellen* zolang de klant nog teruggebeld moet worden), de omschrijving, de instructies en het materiaal (met
+*Materiaal:* ervoor), en het voertuig — die kolom staat er enkel als minstens één werkorder op het blad een voertuig heeft.
+Onder elke werkorder staan lege vakken **Starttijd**, **Eindtijd** en **Notities**, die de ploeg met de
+hand invult. Het werk zonder datum staat achteraan onder *Nog in te plannen*. Een dag of een medewerker staat nooit alleen
+onderaan een blad: de kop gaat mee naar het volgende blad, bij zijn werkorders.
 
 Het overzicht opent in een **Afdrukvoorbeeld**. Met **Downloaden** bewaart u het als PDF; met het printerteken in de
 kijker drukt u het af.

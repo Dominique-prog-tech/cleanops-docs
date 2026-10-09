@@ -162,9 +162,11 @@ période, le même jour, contrat, collaborateur et la même recherche. L'en-têt
 si vous en avez choisi. Par jour et par collaborateur figurent la partie de journée avec la date demandée par le client
 (*Demandé le*), le numéro, le
 client et le chantier, l'adresse, le téléphone de l'adresse (sinon celui du client, et celui de l'ordre en plus s'il est différent — avec
-*Rappeler* si le client souhaite être appelé), la description,
-les instructions et le matériel, et le véhicule. Sous chaque ordre figurent des cases vides **Heure de début**,
+*Rappeler* tant que le client doit encore être rappelé), la description,
+les instructions et le matériel (précédé de *Matériel :*), et le véhicule — cette colonne n'apparaît que si au moins un
+ordre de la feuille a un véhicule. Sous chaque ordre figurent des cases vides **Heure de début**,
 **Heure de fin** et **Notes**, que l'équipe remplit à la main. Le travail sans date se trouve à la fin sous *À planifier*.
+Un jour ou un collaborateur ne reste jamais seul en bas d'une page : l'en-tête passe à la page suivante, avec ses ordres.
 
 L'aperçu s'ouvre dans une fenêtre **Aperçu avant impression**. **Télécharger** l'enregistre en PDF ; avec l'icône
 d'imprimante de la visionneuse, vous l'imprimez.
