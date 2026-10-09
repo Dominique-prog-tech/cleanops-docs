@@ -42,7 +42,8 @@ gauche, encore sans droits ni utilisateurs.
 
 ## Modifier les droits d'un rôle
 
-Cliquez à gauche sur le rôle. Au milieu figurent les **Droits**, groupés par partie de CleanOps. Cochez ce que ce rôle
+Cliquez à gauche sur le rôle. Au milieu figurent les **Droits**, groupés comme le menu : **CRM**, **Travail**, **Ventes** et **Achats**,
+plus **Administration** et **Corbeille**. Cochez ce que ce rôle
 peut faire et cliquez sur **Enregistrer les droits**. En cas de succès, la mention **✓ enregistré** s'affiche.
 
 ## Donner un rôle à quelqu'un

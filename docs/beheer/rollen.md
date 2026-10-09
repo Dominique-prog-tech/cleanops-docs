@@ -40,7 +40,8 @@ zonder rechten en zonder gebruikers.
 
 ## De rechten van een rol wijzigen
 
-Klik links op de rol. In het midden staan de **Rechten**, gegroepeerd per onderdeel van CleanOps. Vink aan wat deze rol
+Klik links op de rol. In het midden staan de **Rechten**, gegroepeerd zoals het menu: **CRM**, **Werk**, **Verkoop** en **Aankoop**,
+plus **Platformbeheer** en **Prullenbak**. Vink aan wat deze rol
 mag en klik op **Rechten bewaren**. Bij een geslaagde bewaring verschijnt **✓ bewaard**.
 
 ## Een rol aan iemand geven
