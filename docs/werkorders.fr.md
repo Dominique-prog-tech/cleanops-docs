@@ -12,8 +12,12 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Ordres de travail**.
 
 ## La liste
 
-Pour chaque ordre, vous voyez le numéro, le client, la date de commande, le statut, les dates **À exécuter** et
-**Planifié**, le chantier, la commune, le collaborateur et le montant.
+Pour chaque ordre, vous voyez le numéro, le client, la date de commande, le statut, les dates **Planifié** et
+**Exécuté**, la commune, le **tarif** (le travail à faire), le collaborateur et le montant.
+
+Contrat, À exécuter, Chantier, Quantité, Unité, Prix unit., Facture, Date facture et Comptant sont masqués par défaut,
+pour que la liste tienne aussi sur un écran plus petit : le sélecteur de colonnes les affiche. Si un ordre est facturé, le
+statut l'indique déjà ; le numéro de facture se retrouve aussi via **Rechercher**.
 
 - **Statut** — la liste s'ouvre sur **Ouverts** : tout ce qui est encodé, planifié ou à facturer. Choisissez un
   statut, ou **Tous les statuts** pour voir aussi les ordres facturés.

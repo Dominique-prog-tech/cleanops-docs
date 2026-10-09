@@ -11,8 +11,12 @@ Klik links in het menu, onder **Werk**, op **Werkorders**.
 
 ## De lijst
 
-Per werkorder ziet u het nummer, de klant, de datum waarop ze besteld werd, de status, de datums **Uit te voeren** en
-**Gepland**, de werf, de gemeente, de medewerker en het bedrag.
+Per werkorder ziet u het nummer, de klant, de datum waarop ze besteld werd, de status, de datums **Gepland** en
+**Uitgevoerd**, de gemeente, het **tarief** (wat er gedaan wordt), de medewerker en het bedrag.
+
+Contract, Uit te voeren, Werf, Aantal, Eenheid, Eenheidsprijs, Factuur, Factuurdatum en Contant staan standaard verborgen,
+zodat de lijst ook op een kleiner scherm past: met de kolomkiezer zet u ze erbij. Is een werkorder gefactureerd, dan zegt
+de status dat al; het factuurnummer vindt u ook via **Zoeken**.
 
 - **Status** — de lijst opent op **Openstaand**: alles wat ingegeven, gepland of te factureren is. Kies één status, of
   **Alle statussen** om ook de gefactureerde werkorders te zien.
