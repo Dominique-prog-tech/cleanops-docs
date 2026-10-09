@@ -34,7 +34,7 @@ Les bons sont classés par chauffeur, puis par jour, et dans la journée dans le
 | Partie | Contenu |
 |---|---|
 | Client | Le nom du client, avec le nom du chantier s'il y en a un. |
-| Adresse, téléphone, e-mail | L'adresse d'exécution et son téléphone. L'e-mail est celui de l'adresse d'exécution, sinon celui du client. |
+| Adresse, téléphone, e-mail | L'adresse d'exécution et son téléphone, sinon celui du client ; si l'ordre porte un autre numéro, il s'y ajoute. L'e-mail est celui de l'adresse d'exécution, sinon celui du client. |
 | En haut à droite | Le numéro de l'ordre de travail, la partie de la journée, l'accord d'heure (par exemple *Avant 17:00*) et la date demandée par le client (*Demandé le*). |
 | Travail | La description du travail, les instructions et le matériel de l'ordre de travail. |
 | Étiquettes | *appeler d'abord* (tant que le client n'a pas été rappelé), *attestation requise*, *gros travaux*, *rapport caméra*, *station d'épuration*, le véhicule et le convoyeur. |

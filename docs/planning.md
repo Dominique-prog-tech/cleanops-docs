@@ -134,7 +134,8 @@ delen die op elkaar aansluiten: **Deel 1**, **Deel 2**, …
 
 **Afdrukken** maakt het overzicht *Planning per datum en werknemer*: wat de lijst nu toont, dus dezelfde week en
 hetzelfde contractfilter. Per dag en per medewerker staan het tijdsdeel, het nummer, de klant en de werf, het adres,
-de telefoon (met *Terugbellen* als de klant gebeld wil worden), de omschrijving, de instructies en het materiaal, en
+de telefoon van het adres (anders die van de klant, en die van de werkorder erbij als ze anders is — met
+*Terugbellen* als de klant gebeld wil worden), de omschrijving, de instructies en het materiaal, en
 het voertuig. Het werk zonder datum staat achteraan onder *Nog in te plannen*.
 
 Het overzicht opent in een **Afdrukvoorbeeld**. Met **Downloaden** bewaart u het als PDF; met het printerteken in de

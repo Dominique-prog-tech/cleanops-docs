@@ -33,7 +33,7 @@ De bonnen staan per chauffeur, dan per dag, en binnen de dag in dezelfde volgord
 | Deel | Wat erin staat |
 |---|---|
 | Klant | De naam van de klant, met de werfnaam als die er is. |
-| Adres, telefoon, e-mail | Het uitvoeringsadres en zijn telefoon. De e-mail is die van het uitvoeringsadres, anders die van de klant. |
+| Adres, telefoon, e-mail | Het uitvoeringsadres en zijn telefoon, anders die van de klant; staat er op de werkorder een ander nummer, dan komt dat erbij. De e-mail is die van het uitvoeringsadres, anders die van de klant. |
 | Rechts bovenaan | Het nummer van de werkorder, het tijdsdeel, de uurafspraak (bijvoorbeeld *Vóór 17:00*) en de datum die de klant vroeg (*Gevraagd op*). |
 | Werk | De omschrijving van het werk, de instructies en het materiaal van de werkorder. |
 | Labels | *eerst bellen* (als er nog niet teruggebeld is), *attest vereist*, *groot werk*, *cameraverslag*, *RWZI*, het voertuig en de bijrijder. |

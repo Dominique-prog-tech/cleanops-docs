@@ -138,7 +138,8 @@ l'itinéraire en parties qui se suivent : **Partie 1**, **Partie 2**, …
 
 **Imprimer** crée l'aperçu *Planning par date et par collaborateur* : ce que la liste montre maintenant, donc la même
 semaine et le même filtre de contrat. Par jour et par collaborateur figurent la partie de journée, le numéro, le
-client et le chantier, l'adresse, le téléphone (avec *Rappeler* si le client souhaite être appelé), la description,
+client et le chantier, l'adresse, le téléphone de l'adresse (sinon celui du client, et celui de l'ordre en plus s'il est différent — avec
+*Rappeler* si le client souhaite être appelé), la description,
 les instructions et le matériel, et le véhicule. Le travail sans date se trouve à la fin sous *À planifier*.
 
 L'aperçu s'ouvre dans une fenêtre **Aperçu avant impression**. **Télécharger** l'enregistre en PDF ; avec l'icône

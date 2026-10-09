@@ -66,7 +66,7 @@ Après **Enregistrer**, la fiche du nouvel ordre s'ouvre.
 ## La fiche de l'ordre de travail
 
 En haut figurent le numéro et le statut. En dessous, une carte avec les faits autour de l'ordre : le client, le
-contrat dont il est issu, le devis dont il découle, la date d'encodage, le téléphone et l'e-mail de l'adresse — ou du
+contrat dont il est issu, le devis dont il découle, la date d'encodage, le téléphone de l'ordre, l'e-mail de l'adresse — ou du
 client, si l'adresse n'en a pas —, le montant avec le code TVA, et la facture. Cliquez sur le client ou le contrat pour l'ouvrir.
 
 ![La fiche d'un ordre de travail de Résidence Les Tilleuls : la carte en haut, la planification avec collaborateur, convoyeur et véhicule, l'adresse, les instructions et les cases à cocher](images/werkorder-fiche-fr.png "Fiche de l'ordre de travail")
@@ -81,7 +81,7 @@ client, si l'adresse n'en a pas —, le montant avec le code TVA, et la facture.
 | Planifié, Exécuté | Le jour où le travail est planifié et le jour où il a été fait. |
 | Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre* ou *après* une heure. La partie de la journée détermine l'[ordre dans le planning](planning.fr.md#lordre-dans-une-journee). |
 | Heure de début, Heure de fin | Quand le travail a réellement commencé et fini. Une heure de fin avant l'heure de début est refusée. |
-| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. Sous l'adresse, **Carte** et **Itinéraire** ouvrent l'adresse et le chemin pour y aller dans Google Maps. |
+| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. Sous l'adresse figure son numéro de téléphone (ou celui du client, si l'adresse n'en a pas), et **Carte** et **Itinéraire** ouvrent l'adresse et le chemin pour y aller dans Google Maps. |
 | Chantier (nom), Description | Comme pour un nouvel ordre. |
 | Type de travail | Une courte description du travail, par exemple *fosse septique*. |
 | Travaux, Matériel | Cochez ce qui s'applique et cliquez sur **Insérer** : les lignes choisies vont dans **Instructions au collaborateur** ou **Remarques matériel**, où vous pouvez encore les compléter. |
@@ -140,7 +140,8 @@ Une fois l'ordre facturé, ces données sont figées. S'il faut y changer quelqu
 ### Le bon de livraison
 
 **Bon de livraison** ouvre le bon que l'équipe emporte et que le client signe, dans la langue du client. On y trouve
-le client, l'adresse d'exécution avec un téléphone et un e-mail, l'exécutant, l'heure, la description, les
+le client, l'adresse d'exécution avec son téléphone et son e-mail (sinon ceux du client ; un autre numéro sur
+l'ordre s'y ajoute), l'exécutant, l'heure, la description, les
 instructions, le matériel et les signatures. **Imprimer** n'imprime que le bon.
 
 ![Le bon de livraison d'un ordre de Résidence Les Tilleuls, avec en bas les cases pour les signatures](images/leveringsbon-fr.png "Bon de livraison")

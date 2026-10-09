@@ -61,7 +61,7 @@ Na **Opslaan** opent de fiche van de nieuwe werkorder.
 ## De werkorderfiche
 
 Bovenaan staan het nummer en de status. Daaronder een kaart met de feiten rond de werkorder: de klant, het contract
-waaruit ze voortkomt, de offerte waaruit ze ontstond, de datum van ingave, de telefoon en het e-mailadres van het
+waaruit ze voortkomt, de offerte waaruit ze ontstond, de datum van ingave, de telefoon van de werkorder, het e-mailadres van het
 adres — of van de klant, als het adres er geen heeft —, het bedrag met de btw-code, en de factuur. Klik op de klant of het contract om het te openen.
 
 ![De werkorderfiche van Tuincentrum De Linde: de kaart bovenaan, de planning met medewerker, bijrijder en voertuig, het adres, de instructies en de vinkjes](images/werkorder-fiche.png "Werkorderfiche")
@@ -76,7 +76,7 @@ adres — of van de klant, als het adres er geen heeft —, het bedrag met de bt
 | Gepland, Uitgevoerd | De dag waarop het werk gepland staat en de dag waarop het gedaan is. |
 | Tijdsdeel | Eerste werk, Voormiddag, Namiddag, Volledige dag of Anders. Bij **Anders** verschijnt een uurafspraak: *vóór*, *tussen* of *na* een uur. Het tijdsdeel bepaalt de [volgorde in de planning](planning.md#de-volgorde-in-een-dag). |
 | Start-uur, Eind-uur | Wanneer het werk werkelijk begon en eindigde. Een eind-uur vóór het start-uur wordt geweigerd. |
-| Uitvoeringsadres | Kiest u een ander adres, dan komen zijn werkinstructie, materiaal en opmerkingen erbij; wat er al stond, blijft staan. Onder het adres openen **Kaart** en **Route** het adres en de weg ernaartoe in Google Maps. |
+| Uitvoeringsadres | Kiest u een ander adres, dan komen zijn werkinstructie, materiaal en opmerkingen erbij; wat er al stond, blijft staan. Onder het adres staat zijn telefoonnummer (of dat van de klant, als het adres er geen heeft), en openen **Kaart** en **Route** het adres en de weg ernaartoe in Google Maps. |
 | Werf (naam), Omschrijving | Zoals bij een nieuwe werkorder. |
 | Typering | Een korte typering van het werk, bijvoorbeeld *septische put + vetput*. |
 | Werkzaamheden, Materiaal | Vink aan wat van toepassing is en klik op **Invoegen**: de gekozen regels komen in **Instructies werknemer** of **Materiaal-opmerkingen**, waar u ze nog kunt aanvullen. |
@@ -135,7 +135,8 @@ Is de werkorder gefactureerd, dan liggen deze gegevens vast. Moet er iets aan ve
 ### De leveringsbon
 
 Met **Leveringsbon** opent de bon die de ploeg meeneemt en de klant ondertekent, in de taal van de klant. Daarop
-staan de klant, het uitvoeringsadres met een telefoonnummer en e-mailadres, de uitvoerder, het uur, de omschrijving,
+staan de klant, het uitvoeringsadres met zijn telefoonnummer en e-mailadres (anders die van de klant; een ander
+nummer op de werkorder komt erbij), de uitvoerder, het uur, de omschrijving,
 de instructies, het materiaal en de handtekeningen. Met **Afdrukken** drukt u enkel de bon af.
 
 ![De leveringsbon van werkorder 900118 voor Tuincentrum De Linde, met onderaan de vakken voor de handtekeningen](images/leveringsbon.png "Leveringsbon")
