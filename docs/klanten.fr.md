@@ -158,11 +158,12 @@ début. Ce sont ces contrats qui donnent naissance aux ordres de travail.
 
 **Devis** — avec le numéro, la date, la description, le total et le statut.
 
-**Factures** — les factures et notes de crédit, avec le numéro, le type, la date, le total, l'échéance et la
-communication. La communication est la référence structurée que le client mentionne lors de son paiement.
+**Factures** — les factures et notes de crédit, avec le numéro, le type, la date, le total, l'échéance, ce qui reste
+**ouvert** (vide si tout est payé) et la communication. La communication est la référence structurée que le client mentionne lors de son paiement.
 
 **Postes ouverts** — ce qui reste dû par ce client. En haut figure le solde ouvert, en rouge s'il dépasse zéro.
-Pour chaque poste, vous voyez le document, la date, l'échéance, le solde ouvert et le nombre de rappels. En
+Pour chaque poste, vous voyez le document, la date, l'échéance, le montant initial et le solde ouvert, et le nombre de
+rappels. En
 dessous figure l'**historique des rappels** : les rappels envoyés, avec la date, le document, le niveau et qui les a
 envoyés. S'il est vide alors qu'un poste compte déjà des rappels, ceux-ci datent d'avant le journal de votre application
 précédente : ils figurent uniquement comme nombre à côté du poste.

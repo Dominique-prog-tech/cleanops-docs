@@ -153,12 +153,12 @@ Uit deze contracten ontstaan de werkorders.
 
 **Offertes** — met nummer, datum, omschrijving, totaal en status.
 
-**Facturen** — de facturen en creditnota's, met nummer, type, datum, totaal, vervaldag en mededeling. De
-mededeling is de gestructureerde referentie die de klant bij zijn betaling vermeldt.
+**Facturen** — de facturen en creditnota's, met nummer, type, datum, totaal, vervaldag, wat er nog **openstaat** (leeg als
+alles betaald is) en mededeling. De mededeling is de gestructureerde referentie die de klant bij zijn betaling vermeldt.
 
 **Openstaand** — wat er van deze klant nog openstaat. Bovenaan staat het openstaande saldo, in het rood als het
-groter is dan nul. Per post ziet u het document, de datum, de vervaldag, het openstaande bedrag en het aantal
-rappels. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document, niveau en wie ze verstuurde.
+groter is dan nul. Per post ziet u het document, de datum, de vervaldag, het oorspronkelijke en het openstaande bedrag en
+het aantal rappels. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document, niveau en wie ze verstuurde.
 Is ze leeg terwijl een post al rappels telt, dan komen die rappels van vóór het logboek van uw vorige toepassing: die
 staan enkel als aantal bij de post.
 
