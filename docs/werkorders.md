@@ -25,8 +25,9 @@ de status dat al; het factuurnummer vindt u ook via **Zoeken**.
 - **Periode op** en **Periode** — kies eerst op welke datum u filtert (**Besteld**, **Gepland** of **Uitgevoerd**), en
   dan de periode. Bij **Gepland** kijken de vaste keuzes vooruit, bij **Besteld** en **Uitgevoerd** terug.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant, de werf, het adres,
-  het telefoonnummer, de medewerker, het voertuig, de omschrijving, de instructies, de interne opmerking en het
-  factuurnummer. Accenten maken niet uit: *Liege* vindt ook *Liège*.
+  het telefoonnummer, de medewerker, het voertuig, de omschrijving, de instructies, de interne opmerking, het
+  factuurnummer en het contractnummer. Accenten en spaties maken niet uit: *Liege* vindt ook *Liège*, en *0475123456*
+  vindt ook *0475 12 34 56*.
 - **Sorteren** — klik op een kolomtitel; nog eens klikken keert de volgorde om.
 - **Exporteren** — via de knop rechtsboven krijgt u de lijst zoals ze nu gefilterd is als bestand. Is de selectie te
   groot voor één bestand, dan zegt CleanOps hoeveel regels erin staan; verfijn dan uw filter.

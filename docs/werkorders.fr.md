@@ -28,7 +28,8 @@ statut l'indique déjà ; le numéro de facture se retrouve aussi via **Recherch
   **Exécuté**, vers l'arrière.
 - **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur le numéro, le client,
   le chantier, l'adresse, le téléphone, le collaborateur, le véhicule, la description, les instructions, la remarque
-  interne et le numéro de facture. Les accents n'ont pas d'importance : *Liege* trouve aussi *Liège*.
+  interne, le numéro de facture et le numéro de contrat. Les accents et les espaces n'ont pas d'importance : *Liege* trouve
+  aussi *Liège*, et *0475123456* trouve aussi *0475 12 34 56*.
 - **Trier** — cliquez sur un titre de colonne ; un second clic inverse l'ordre.
 - **Exporter** — le bouton en haut à droite vous donne la liste, telle qu'elle est filtrée, sous forme de fichier. Si la
   sélection est trop grande pour un seul fichier, CleanOps indique combien de lignes il contient ; affinez alors votre
