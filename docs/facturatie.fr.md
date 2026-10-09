@@ -68,8 +68,10 @@ Si le total net est négatif, le document devient une **note de crédit**.
 ## Acomptes
 
 Vous établissez une facture d'acompte sur la [fiche client](klanten.fr.md#les-boutons-en-bas) avec **Facture d'acompte**. Si
-vous facturez ensuite le travail de ce client, CleanOps déduit automatiquement l'acompte ouvert : la facture devient une
-**facture de solde**.
+vous facturez ensuite le travail de ce client, la fenêtre de choix montre l'acompte ouvert avec une case **Déduire…**. Cochée,
+CleanOps déduit l'acompte et la facture devient une **facture de solde**. La case est cochée d'office si le travail choisi couvre
+l'acompte, et décochée pour un travail plus petit. Si vous la cochez quand même alors que l'acompte est plus élevé, la fenêtre
+indique que la facture de solde devient une note de crédit et que l'acompte est épuisé. La confirmation mentionne aussi la déduction.
 
 ## Questions fréquentes
 

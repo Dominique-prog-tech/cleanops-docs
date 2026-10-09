@@ -63,7 +63,10 @@ Is het nettototaal negatief, dan wordt het document een **creditnota**.
 ## Voorschotten
 
 Een voorschotfactuur maakt u op de [klantfiche](klanten.md#de-knoppen-onderaan) met **Voorschotfactuur**. Factureert u daarna het
-werk van die klant, dan trekt CleanOps het openstaande voorschot automatisch af: de factuur wordt een **saldofactuur**.
+werk van die klant, dan toont het keuzevenster het openstaande voorschot met een vinkje **… aftrekken**. Staat het aan, dan trekt
+CleanOps het voorschot af en wordt de factuur een **saldofactuur**. Het vinkje staat vanzelf aan als het gekozen werk het voorschot
+dekt, en uit bij een kleiner werk. Zet u het toch aan terwijl het voorschot groter is, dan zegt het venster dat de saldofactuur een
+creditnota wordt en het voorschot opgebruikt is. Ook de bevestiging noemt de aftrek.
 
 ## Veelgestelde vragen
 
