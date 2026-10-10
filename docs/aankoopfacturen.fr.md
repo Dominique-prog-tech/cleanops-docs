@@ -93,6 +93,15 @@ numéro suivant se règle dans [Numéros de documents](beheer/documentnummers.md
 Tant que rien n'est payé et qu'il n'est pas en comptabilité, vous adaptez un document et l'enregistrez. Le fournisseur, le journal et l'exercice sont
 fixes : le numéro en dépend.
 
+Si le document figure dans la [proposition de paiement](betalingsvoorstel.md), le **type** est fixe lui aussi : la
+proposition déduit une note de crédit des factures du même fournisseur, et une facture qui deviendrait une note de
+crédit sans que vous le remarquiez inverse le montant. La raison est indiquée sous le champ. Retirez d'abord le
+document **de la proposition**, modifiez le type, puis composez une nouvelle proposition.
+
+Si le fournisseur se trouve entre-temps dans la [corbeille](beheer/prullenbak.md), vous adaptez toujours ses documents
+existants : corriger une échéance ou une communication doit rester possible. Vous ne créez pas de **nouveau** document
+pour un tel fournisseur ; récupérez-le d'abord.
+
 **Supprimer** au bas de la fiche retire définitivement le document, après confirmation. Son numéro passe au document
 d'achat suivant, afin qu'il n'y ait pas de trou dans la série.
 

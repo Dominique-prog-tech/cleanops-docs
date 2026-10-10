@@ -93,6 +93,15 @@ stelt u in op [Documentnummers](beheer/documentnummers.md).
 Zolang er niets op betaald is en het niet in de boekhouding staat, past u een document aan en bewaart u. De leverancier, het dagboek en het boekjaar
 liggen vast: aan het nummer hangen ze.
 
+Staat het document in het [betalingsvoorstel](betalingsvoorstel.md), dan ligt ook de **soort** vast: het voorstel
+rekent een creditnota af van de facturen van dezelfde leverancier, en een factuur die ongemerkt een creditnota wordt,
+keert het bedrag om. Onder het veld staat dan waarom. Haal het document eerst **uit het voorstel**, wijzig de soort, en
+stel daarna een nieuw voorstel samen.
+
+Ligt de leverancier intussen in de [prullenbak](beheer/prullenbak.md), dan past u zijn bestaande documenten nog altijd
+aan: een vervaldag of een mededeling verbeteren moet kunnen blijven. Een **nieuw** document maakt u voor zo'n
+leverancier niet; haal hem daarvoor eerst terug.
+
 **Verwijderen** onderaan de fiche haalt het document definitief weg, na een bevestiging. Zijn nummer gaat naar het
 volgende aankoopdocument, zodat er geen gat in de reeks valt.
 
