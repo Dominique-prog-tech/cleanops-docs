@@ -35,8 +35,8 @@ factuur van de werkorder gecrediteerd is.
   weer de werkorders van alle klanten.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant (op naam of klantnummer), de werf, het adres,
   het telefoonnummer, de medewerker, het voertuig, de omschrijving, de instructies, de interne opmerking, het
-  factuurnummer en het contractnummer. Accenten en spaties maken niet uit: *Liege* vindt ook *Liège*, en *0475123456*
-  vindt ook *0475 12 34 56*.
+  factuurnummer en het contractnummer. Accenten en spaties maken niet uit: *Liege* vindt ook *Liège*, *0475123456*
+  vindt ook *0475 12 34 56*, en *dewaele* vindt ook de klant *De Waele*.
 - **Sorteren** — klik op een kolomtitel; nog eens klikken keert de volgorde om.
 - **Exporteren** — via de knop rechtsboven krijgt u de lijst zoals ze nu gefilterd is als bestand. Is de selectie te
   groot voor één bestand, dan zegt CleanOps hoeveel regels erin staan; verfijn dan uw filter.
