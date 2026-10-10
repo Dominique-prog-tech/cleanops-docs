@@ -45,6 +45,13 @@ Cliquez sur **Nouveau journal**, ou double-cliquez sur une ligne existante.
 !!! note "Il n'y a qu'un seul journal de vente par défaut"
     Si vous le cochez pour un autre journal de vente, il se décoche automatiquement pour le précédent.
 
+!!! warning "Changer n'est possible qu'avant la première facture d'un exercice"
+    Si l'exercice en cours compte déjà des factures ou des notes de crédit dans un journal de vente, un autre journal ne peut pas
+    devenir le journal par défaut : CleanOps indique dans quel journal elles se trouvent et combien il y en a. Un deuxième journal
+    recommencerait, dans le même exercice, au premier numéro de facture, avec la même communication structurée. Changez donc au
+    début d'un exercice. Pour la même raison, CleanOps ne comptabilise pas de facture dans un exercice qui compte déjà des
+    factures dans un autre journal de vente.
+
 ## Le journal des modifications
 
 À droite de l'écran se trouve une bande **Journal**. Sélectionnez un journal dans la liste et ouvrez la bande : le
@@ -55,7 +62,8 @@ panneau montre qui l'a créé, modifié, archivé ou rétabli, et quand.
 Ouvrez la ligne et utilisez **Archiver**. Le journal disparaît des listes de choix, mais il continue d'exister : les
 factures et les paiements qui le portent déjà le gardent.
 
-Le journal de vente par défaut ne peut pas être archivé. Cochez d'abord un autre journal de vente.
+Le journal de vente par défaut ne peut pas être archivé. Cochez d'abord un autre journal de vente ; ce n'est possible
+qu'avant la première facture d'un exercice.
 
 Vous voulez rétablir un journal ? En haut de la liste, réglez **Afficher** sur **Aussi les journaux archivés**, ouvrez-le
 et cliquez sur **Rétablir**.

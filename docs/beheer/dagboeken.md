@@ -45,6 +45,12 @@ Klik op **Nieuw dagboek**, of dubbelklik op een bestaande rij.
 !!! note "Er is maar één standaard verkoopdagboek"
     Vinkt u het bij een ander verkoopdagboek aan, dan gaat het bij het vorige vanzelf uit.
 
+!!! warning "Wisselen kan enkel vóór de eerste factuur van een boekjaar"
+    Draagt het lopende boekjaar al facturen of creditnota's in een verkoopdagboek, dan kan een ander dagboek de standaard niet
+    worden: CleanOps zegt in welk dagboek ze staan en hoeveel het er zijn. Een tweede dagboek zou in hetzelfde boekjaar opnieuw
+    bij het eerste factuurnummer beginnen, met dezelfde gestructureerde mededeling. Wissel dus bij het begin van een boekjaar.
+    Om dezelfde reden boekt CleanOps geen factuur in een boekjaar dat al facturen in een ander verkoopdagboek draagt.
+
 ## Het journaal
 
 Rechts op het scherm zit een strook **Journaal**. Klik een dagboek in de lijst aan en open de strook: het paneel toont
@@ -55,7 +61,8 @@ wie het wanneer aangemaakt, gewijzigd, gearchiveerd of teruggehaald heeft.
 Open de rij en gebruik **Archiveren**. Het dagboek verdwijnt uit de keuzelijsten, maar blijft bestaan: facturen en
 betalingen die het al dragen, houden het.
 
-Het standaard verkoopdagboek kan niet gearchiveerd worden. Zet het vinkje eerst op een ander verkoopdagboek.
+Het standaard verkoopdagboek kan niet gearchiveerd worden. Zet het vinkje eerst op een ander verkoopdagboek; dat kan enkel
+vóór de eerste factuur van een boekjaar.
 
 Wilt u een dagboek terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde dagboeken**, open het en klik op
 **Terughalen**.
