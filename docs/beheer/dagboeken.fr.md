@@ -18,7 +18,7 @@ Cliquez sur **Administration** en bas du menu, puis sur la tuile **Journaux**.
 | Colonne | Ce que c'est |
 |---|---|
 | Code | la clé courte qui figure sur les factures et les paiements, par exemple `VERK` ou `KBC` |
-| Description | à quoi sert le journal, par exemple *Kredietbank* |
+| Description | à quoi sert le journal, par exemple *Zichtrekening KBC* |
 | Type | Vente, Achat, Financier ou Divers |
 
 Le journal de la facturation porte l'étiquette **vente par défaut**. Un journal que vous avez créé vous-même dans
@@ -37,7 +37,7 @@ CleanOps porte l'étiquette **propre** ; les autres viennent de votre applicatio
 
 Cliquez sur **Nouveau journal**, ou double-cliquez sur une ligne existante.
 
-![La fenêtre Modifier le journal pour KBC avec Code, Type Financier et Description Kredietbank - Cera](../images/dagboek-venster-fr.png "Un journal")
+![La fenêtre Modifier le journal pour KBC avec Code, Type Financier et Description Zichtrekening KBC](../images/dagboek-venster-fr.png "Un journal")
 
 | Champ | Ce que vous complétez |
 |---|---|

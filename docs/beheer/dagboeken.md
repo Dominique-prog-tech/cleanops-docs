@@ -18,7 +18,7 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Dagboeke
 | Kolom | Wat het is |
 |---|---|
 | Code | de korte sleutel die op facturen en betalingen staat, bijvoorbeeld `VERK` of `KBC` |
-| Omschrijving | waarvoor het dagboek dient, bijvoorbeeld *Kredietbank* |
+| Omschrijving | waarvoor het dagboek dient, bijvoorbeeld *Zichtrekening KBC* |
 | Soort | Verkoop, Aankoop, Financieel of Divers |
 
 Het dagboek van de facturatie draagt het label **standaard verkoop**. Een dagboek dat u zelf in CleanOps aangemaakt
@@ -37,7 +37,7 @@ hebt, draagt het label **eigen**; de andere komen uit uw vorige toepassing.
 
 Klik op **Nieuw dagboek**, of dubbelklik op een bestaande rij.
 
-![Het venster Dagboek bewerken voor KBC met Code, Soort Financieel en Omschrijving Kredietbank - Cera](../images/dagboek-venster.png "Een dagboek")
+![Het venster Dagboek bewerken voor KBC met Code, Soort Financieel en Omschrijving Zichtrekening KBC](../images/dagboek-venster.png "Een dagboek")
 
 | Veld | Wat u invult |
 |---|---|
