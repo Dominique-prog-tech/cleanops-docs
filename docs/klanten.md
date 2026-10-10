@@ -120,12 +120,6 @@ meegaat en wat blijft:
 - Draagt een meegaande werkorder een bestelnummer van de huidige klant, dan blijft dat staan. Het venster waarschuwt
   ervoor, zodat u het kunt nakijken.
 
-!!! note "Staat er bovenaan *Testfase*?"
-    Dan werkt u nog in uw huidige toepassing, en de volgende overname wist wat u in CleanOps aanmaakte. Een adres uit
-    uw huidige toepassing kunt u daarom niet verplaatsen naar een klant die u in CleanOps aanmaakte: die klant
-    verdwijnt bij de overname, en het adres met hem. Het venster zegt dat zodra u de klant kiest. Kies een klant uit uw
-    huidige toepassing.
-
 ![Het venster Adressen naar een andere klant verplaatsen: het adres van Tuincentrum De Linde gaat naar een andere klant, met wat meegaat en wat blijft](images/klant-adres-verplaatsen.png "Adressen verplaatsen")
 
 ![Een uitvoeringsadres van Tuincentrum De Linde, met een werkinstructie, het mee te nemen materiaal en de bereikbaarheid per dag](images/klant-adres.png "Uitvoeringsadres")
