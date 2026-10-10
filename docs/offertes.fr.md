@@ -103,7 +103,7 @@ réactiver une version antérieure et créer un ordre de travail à partir du de
 | Envoyer un rappel… | Remplace **Envoyer par e-mail…** tant que le devis est **Envoyé**. Renvoie le devis avec le texte de rappel — voir [Un rappel](#un-rappel). |
 | Créer un ordre de travail | Crée un ordre de travail à l'adresse du client, avec la description et les lignes du devis comme travail et le montant hors TVA. Les pièces jointes du devis sont reprises. Le devis passe à **Accepté**. Si un ordre de travail a déjà été créé à partir de ce devis, le nouveau ne reçoit pas de montant et CleanOps l'indique. |
 | Dupliquer… | Crée un nouveau devis avec son propre numéro à partir de celui-ci, pour le même client ou un autre. Les lignes, la description et les remarques pour le client sont reprises ; la référence et la remarque interne non. Le doublon porte votre nom comme utilisateur. |
-| Aperçu avant impression | Affiche le devis en PDF, dans la langue du client. **Télécharger** l'enregistre. L'aperçu montre le devis enregistré. |
+| Aperçu avant impression | Affiche le devis en PDF, dans la langue du client. **Télécharger** l'enregistre. L'aperçu montre le devis enregistré : si vous avez modifié quelque chose qui n'est pas encore enregistré, CleanOps demande d'abord si vous voulez enregistrer, puis affiche l'aperçu. Pour un devis déjà envoyé au client, cette question enregistre dans une **nouvelle version** ; pour écraser la version, annulez et utilisez **Écraser cette version**. |
 | Supprimer | Déplace le devis vers la [corbeille](beheer/prullenbak.fr.md), après confirmation. |
 
 ### Le statut
@@ -138,7 +138,8 @@ un devis accepté, perdu ou expiré garde son statut.
 
 Quelques points à savoir :
 
-- L'e-mail porte le devis **enregistré**, comme l'aperçu avant impression. Enregistrez donc d'abord vos modifications.
+- L'e-mail porte le devis **enregistré**, comme l'aperçu avant impression. Si vous avez modifié quelque chose qui n'est pas
+  encore enregistré, la fenêtre d'e-mail ne s'ouvre pas et CleanOps vous demande d'abord d'enregistrer.
 - L'envoi n'est possible que pour la **version actuelle**. Une version plus ancienne n'a pas de bouton
   **Envoyer par e-mail…**.
 - Si le devis n'imprime pas ses totaux, l'e-mail ne mentionne pas non plus le total.

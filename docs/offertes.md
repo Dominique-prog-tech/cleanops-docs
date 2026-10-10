@@ -101,7 +101,7 @@ maken en een werkorder maken uit de offerte.
 | Herinnering mailen… | Staat er in de plaats van **Mailen…** zolang de offerte op **Verstuurd** staat. Mailt de offerte opnieuw, met de herinneringstekst — zie [Een herinnering](#een-herinnering). |
 | Werkorder maken | Maakt een werkorder op het adres van de klant, met de omschrijving en de lijnen van de offerte als werk en het bedrag zonder btw. De bijlagen van de offerte gaan mee. De offerte komt op **Aanvaard**. Is er al een werkorder uit deze offerte gemaakt, dan krijgt de nieuwe geen bedrag en zegt CleanOps dat. |
 | Dupliceren… | Maakt een nieuwe offerte met een eigen nummer op basis van deze, voor dezelfde of een andere klant. De lijnen, de omschrijving en de opmerkingen voor de klant gaan mee; de referentie en de interne opmerking niet. U staat als gebruiker op het duplicaat. |
-| Afdrukvoorbeeld | Toont de offerte als PDF, in de taal van de klant. **Downloaden** bewaart ze. Het voorbeeld toont de bewaarde offerte. |
+| Afdrukvoorbeeld | Toont de offerte als PDF, in de taal van de klant. **Downloaden** bewaart ze. Het voorbeeld toont de bewaarde offerte: hebt u iets gewijzigd dat nog niet bewaard is, dan vraagt CleanOps eerst of u wilt bewaren, en toont daarna het voorbeeld. Bij een offerte die al naar de klant is, bewaart die vraag in een **nieuwe versie**; wilt u de versie overschrijven, annuleer dan en gebruik **Deze versie overschrijven**. |
 | Verwijderen | Verplaatst de offerte naar de [prullenbak](beheer/prullenbak.md), na een bevestiging. |
 
 ### De status
@@ -135,7 +135,8 @@ aanvaarde, verloren of vervallen offerte houdt haar status.
 
 Een paar dingen om te weten:
 
-- De mail draagt de **bewaarde** offerte, net als het afdrukvoorbeeld. Bewaar dus eerst wat u wijzigde.
+- De mail draagt de **bewaarde** offerte, net als het afdrukvoorbeeld. Hebt u iets gewijzigd dat nog niet bewaard is, dan opent
+  het mailvenster niet en vraagt CleanOps eerst te bewaren.
 - Mailen kan enkel op de **actuele versie**. Een oudere versie heeft geen knop **Mailen…**.
 - Toont de offerte haar totalen niet op de afdruk, dan noemt de mail het totaal ook niet.
 - Ook in het **Afdrukvoorbeeld** staat een knop om de offerte door te sturen per mail.
