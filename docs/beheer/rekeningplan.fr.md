@@ -1,3 +1,7 @@
+---
+description: "Plan comptable dans CleanOps : les comptes généraux que vous choisissez sur un client ou un tarif, pour votre bureau comptable."
+---
+
 # Plan comptable
 
 Les comptes généraux que vous choisissez sur un client ou un tarif, par exemple *701100 — Ventes*. Le compte est une

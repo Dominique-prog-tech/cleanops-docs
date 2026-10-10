@@ -1,3 +1,7 @@
+---
+description: "Conditions de paiement dans CleanOps : elles déterminent l'échéance d'une facture ; vous en choisissez une sur la fiche client."
+---
+
 # Conditions de paiement
 
 Une condition de paiement détermine **quand une facture échoit**. Vous en choisissez une sur une fiche

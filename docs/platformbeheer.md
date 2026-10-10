@@ -1,3 +1,7 @@
+---
+description: "Platformbeheer in CleanOps: alle instellingen en stamgegevens van uw bedrijf op één plek, gegroepeerd per onderwerp."
+---
+
 # Platformbeheer
 
 Alle instellingen en stamgegevens van uw bedrijf op één plek, gegroepeerd per onderwerp.

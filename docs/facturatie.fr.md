@@ -1,3 +1,7 @@
+---
+description: "Facturer dans CleanOps : choisir par client le travail exécuté et le comptabiliser ; la facture reçoit numéro, échéance et communication."
+---
+
 # Facturation
 
 Sur Facturation, vous facturez le travail exécuté. Vous voyez par client les ordres de travail à facturer, vous choisissez ce

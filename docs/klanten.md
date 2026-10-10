@@ -1,3 +1,7 @@
+---
+description: "Klanten beheren in CleanOps: gegevens, de adressen waar gewerkt wordt, contracten, offertes, facturen en openstaande posten per klant."
+---
+
 # Klanten
 
 Het klantenbestand van CleanOps: alle klanten van uw bedrijf, met hun gegevens, de adressen waar gewerkt wordt,

@@ -1,3 +1,7 @@
+---
+description: "Postes ouverts fournisseurs dans CleanOps : ce que vous devez encore payer, par fournisseur avec son solde, et la saisie du paiement."
+---
+
 # Postes ouverts fournisseurs
 
 Ce que vous devez encore à vos fournisseurs, par fournisseur avec son solde. C'est aussi d'ici que vous saisissez le paiement.

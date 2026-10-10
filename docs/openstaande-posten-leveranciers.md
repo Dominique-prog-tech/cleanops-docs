@@ -1,3 +1,7 @@
+---
+description: "Openstaande posten van leveranciers in CleanOps: wat u nog moet betalen, per leverancier met zijn saldo, en de betaling ingeven."
+---
+
 # Openstaande posten leveranciers
 
 Wat u uw leveranciers nog moet betalen, per leverancier met zijn saldo. Van hieruit geeft u ook de betaling in.

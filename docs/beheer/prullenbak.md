@@ -1,3 +1,7 @@
+---
+description: "De prullenbak van CleanOps: wat u verwijdert blijft herstelbaar; hier zet u een record terug op zijn plaats."
+---
+
 # Prullenbak
 
 Wat u in CleanOps verwijdert, wordt niet vernietigd maar weggelegd. Het komt in de prullenbak terecht en blijft daar herstelbaar. Op dit scherm zet u een record terug op zijn plaats.

@@ -1,3 +1,7 @@
+---
+description: "Produits pour les attestations dans CleanOps : ce que vous enlevez et évacuez — boues, graisses, eaux usées — avec le code EURAL."
+---
+
 # Produits (attestations)
 
 Les produits que vous enlevez et évacuez — boues, graisses, eaux usées… — avec leur code de déchet EURAL. Vous les

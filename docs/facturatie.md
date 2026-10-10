@@ -1,3 +1,7 @@
+---
+description: "Factureren in CleanOps: per klant het uitgevoerde werk kiezen en boeken — de factuur krijgt meteen nummer, vervaldag en mededeling."
+---
+
 # Facturatie
 
 Op Facturatie maakt u facturen van het uitgevoerde werk. U ziet per klant welke werkorders te factureren zijn, kiest wat er op

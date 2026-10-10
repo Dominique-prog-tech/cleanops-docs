@@ -1,3 +1,7 @@
+---
+description: "Paiements dans CleanOps : ce que vos clients ont payé et ce que vous avez payé à vos fournisseurs, par extrait de banque ou de caisse."
+---
+
 # Paiements
 
 Les montants payés par vos clients et ceux que vous avez payés à vos fournisseurs — et ce qui a été remboursé —, par extrait de

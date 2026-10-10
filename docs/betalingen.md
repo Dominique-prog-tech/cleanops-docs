@@ -1,3 +1,7 @@
+---
+description: "Betalingen in CleanOps: wat klanten betaalden en wat u leveranciers betaalde, per uittreksel van uw bank of kas, en een betaling ingeven."
+---
+
 # Betalingen
 
 De bedragen die uw klanten betaalden en die u uw leveranciers betaalde — en wat er terugbetaald werd —, per uittreksel van uw

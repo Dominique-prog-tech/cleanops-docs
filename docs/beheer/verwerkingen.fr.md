@@ -1,3 +1,7 @@
+---
+description: "Traitements dans CleanOps : la façon dont le déchet est traité — incinération, biométhanisation, un code R — pour l'attestation."
+---
+
 # Traitements
 
 La façon dont le déchet est traité : incinération, biométhanisation, un code R… Vous choisissez le traitement sur une

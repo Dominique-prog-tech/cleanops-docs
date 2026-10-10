@@ -1,3 +1,7 @@
+---
+description: "Le calendrier des congés de CleanOps : qui est absent et quand, par mois et par collaborateur, et comment réserver ou modifier un congé."
+---
+
 # Calendrier des congés
 
 Le calendrier des congés montre qui est absent et quand : par mois, une ligne par collaborateur et une colonne par jour.

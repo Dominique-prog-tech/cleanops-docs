@@ -1,3 +1,7 @@
+---
+description: "Ploegen samenstellen in CleanOps: per dag wie rijdt en wie meerijdt, met zicht op wie beschikbaar is, verlof heeft of vrij is."
+---
+
 # Ploegen
 
 Op Ploegen stelt u per dag de ploegen samen: wie rijdt, en wie rijdt er mee. U ziet meteen wie er die dag nog

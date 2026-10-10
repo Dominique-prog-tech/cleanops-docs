@@ -1,3 +1,7 @@
+---
+description: "Gérer les collaborateurs dans CleanOps : coordonnées, chauffeur ou convoyeur, jours de travail et congés, pour les équipes et les ordres."
+---
+
 # Collaborateurs
 
 Les personnes que vous planifiez en équipes et sur les ordres de travail. Pour chaque collaborateur, CleanOps

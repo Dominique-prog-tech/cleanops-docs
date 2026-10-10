@@ -1,3 +1,7 @@
+---
+description: "Het dashboard van CleanOps: wat er vandaag gebeurt, wat uw aandacht vraagt, hoe het met het geld staat en het verloop over twaalf maanden."
+---
+
 # Dashboard
 
 Het dashboard is het eerste scherm na het aanmelden. U ziet in één oogopslag wat er vandaag gebeurt, wat uw aandacht

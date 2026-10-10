@@ -1,3 +1,7 @@
+---
+description: "Entreprises de traitement dans CleanOps : les entreprises agréées qui traitent le déchet, avec nom et adresse pour l'attestation."
+---
+
 # Entreprises de traitement
 
 Les entreprises agréées qui traitent le déchet. Vous choisissez l'entreprise de traitement sur une

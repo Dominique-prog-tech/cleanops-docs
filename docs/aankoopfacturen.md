@@ -1,3 +1,7 @@
+---
+description: "Aankoopfacturen in CleanOps: de facturen en creditnota's van uw leveranciers, met vervaldag, bedragen per btw-tarief en het openstaande saldo."
+---
+
 # Aankoopfacturen
 
 De facturen en creditnota's van uw leveranciers. Per document houdt CleanOps de leverancier bij, zijn nummer en

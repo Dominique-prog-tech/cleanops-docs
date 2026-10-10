@@ -29,7 +29,10 @@ jobs:
       # Vaste versies — zie requirements.txt. Zonder pin haalt elke bouw binnen wat er die dag
       # nieuw staat, en MkDocs 2.0 schrapt het plugin-systeem waar onze tweetaligheid op draait.
       - run: pip install -r requirements.txt
-      - run: mkdocs build
+      # --strict (sinds 10/10/2026, toen de site voor zoekmachines openging): een link naar een pagina of een
+      # #anker dat niet bestaat laat de bouw FALEN (zie `validation:` in mkdocs.yml). De vorige versie blijft dan
+      # online staan. Zonder --strict was een dode link een regel in dit logboek die niemand las.
+      - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

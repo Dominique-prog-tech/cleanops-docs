@@ -1,3 +1,7 @@
+---
+description: "Verwerkingsbedrijven in CleanOps: de erkende bedrijven die het afval verwerken, met naam en adres voor het verwerkingsattest."
+---
+
 # Verwerkingsbedrijven
 
 De erkende bedrijven die het afval verwerken. U kiest het verwerkingsbedrijf op een [verwerkingsattest](../attesten.md);

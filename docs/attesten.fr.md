@@ -1,3 +1,7 @@
+---
+description: "Attestations de traitement dans CleanOps : la preuve pour votre client que les déchets enlevés ont été évacués et traités correctement."
+---
+
 # Attestations
 
 Une attestation de traitement prouve à votre client que les déchets que vous avez enlevés chez lui ont été évacués et

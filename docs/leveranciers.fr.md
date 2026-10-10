@@ -1,3 +1,7 @@
+---
+description: "Gérer les fournisseurs dans CleanOps : les entreprises chez qui vous achetez, comment les joindre, et comment et quand vous les payez."
+---
+
 # Fournisseurs
 
 Les entreprises chez qui vous achetez et que vous payez. Par fournisseur, CleanOps garde les données, la manière de

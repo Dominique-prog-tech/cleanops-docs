@@ -1,3 +1,7 @@
+---
+description: "Administration de CleanOps : tous les paramètres et données de base de votre entreprise au même endroit, groupés par thème."
+---
+
 # Administration
 
 Tous les paramètres et données de base de votre entreprise au même endroit, groupés par thème.

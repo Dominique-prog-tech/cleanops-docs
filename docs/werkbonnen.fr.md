@@ -1,3 +1,7 @@
+---
+description: "Imprimer les bons de travail dans CleanOps : les ordres planifiés d'une période, par chauffeur et par jour, dans l'ordre d'exécution."
+---
+
 # Bons de travail
 
 Sur Bons de travail, vous imprimez les bons que les chauffeurs emportent : tous les ordres de travail planifiés d'une

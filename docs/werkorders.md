@@ -1,3 +1,7 @@
+---
+description: "Werkorders in CleanOps: wat er moet gebeuren, bij welke klant, waar, wanneer en door wie — uit een contract of als losse opdracht."
+---
+
 # Werkorders
 
 Een werkorder is één opdracht voor uw ploegen: wat er moet gebeuren, bij welke klant, op welk adres, wanneer en door

@@ -1,3 +1,7 @@
+---
+description: "Dagboeken in CleanOps: het verkoopdagboek van uw facturen en de financiële dagboeken van uw bankrekeningen en kas."
+---
+
 # Dagboeken
 
 De dagboeken waarop u factureert en betalingen boekt: het verkoopdagboek van de facturen, en de financiële dagboeken

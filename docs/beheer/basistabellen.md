@@ -1,3 +1,7 @@
+---
+description: "Basistabellen in CleanOps: de keuzelijsten die uw bedrijf zelf beheert, zoals contracttypes, werkzaamheden en functies."
+---
+
 # Basistabellen
 
 De keuzelijsten die uw bedrijf zelf beheert. Ze vullen de keuzevelden elders in de toepassing: het

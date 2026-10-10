@@ -1,3 +1,7 @@
+---
+description: "Werkbonnen afdrukken in CleanOps: de geplande werkorders van een periode, per chauffeur en per dag, in de volgorde van afwerken."
+---
+
 # Werkbonnen
 
 Op Werkbonnen drukt u de bonnen af die de chauffeurs meekrijgen: alle geplande werkorders van een periode, per

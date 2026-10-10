@@ -1,3 +1,7 @@
+---
+description: "De bedrijfsfiche in CleanOps: naam, adres, btw-nummer, bank en logo van uw bedrijf, de wachttijd tussen rappels en uw Peppol-gegevens."
+---
+
 # Bedrijfsfiche
 
 De gegevens van uw eigen bedrijf: naam, adres, contactgegevens, btw-nummer en bank, uw logo, en de wachttijd

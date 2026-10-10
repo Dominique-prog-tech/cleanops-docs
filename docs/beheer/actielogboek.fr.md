@@ -1,3 +1,7 @@
+---
+description: "Le journal des actions de CleanOps : qui s'est connecté et qui a créé, modifié ou supprimé un enregistrement, et quand."
+---
+
 # Journal des actions
 
 Le journal des actions montre ce qui s'est passé dans CleanOps : qui s'est connecté, qui a créé, modifié ou supprimé un enregistrement. Vous le consultez lorsque vous voulez savoir qui a fait quoi, et quand.

@@ -1,3 +1,7 @@
+---
+description: "Het actielogboek van CleanOps: wie zich aanmeldde en wie een record aanmaakte, wijzigde of verwijderde, en wanneer."
+---
+
 # Actielogboek
 
 Het actielogboek toont wat er in CleanOps gebeurd is: wie zich aanmeldde, wie een record aanmaakte, wijzigde of verwijderde. U raadpleegt het wanneer u wil nagaan wie iets deed en wanneer.

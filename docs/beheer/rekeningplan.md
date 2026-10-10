@@ -1,3 +1,7 @@
+---
+description: "Rekeningplan in CleanOps: de algemene rekeningen die u op een klant of een tarief kiest, als gegeven voor uw boekhoudkantoor."
+---
+
 # Rekeningplan
 
 De algemene rekeningen die u op een klant of een tarief kiest, bijvoorbeeld *701100 — Verkopen*. De rekening is een

@@ -1,3 +1,7 @@
+---
+description: "Composer les équipes dans CleanOps : chaque jour qui conduit et qui accompagne, en voyant qui est disponible, en congé ou libre."
+---
+
 # Équipes
 
 Dans Équipes, vous composez les équipes de chaque jour : qui conduit, et qui l'accompagne. Vous voyez tout de suite

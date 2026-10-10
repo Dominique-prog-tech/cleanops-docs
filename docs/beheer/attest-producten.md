@@ -1,3 +1,7 @@
+---
+description: "Producten voor attesten in CleanOps: wat u ophaalt en afvoert — slib, vet, afvalwater — met de EURAL-afvalcode."
+---
+
 # Producten (attesten)
 
 De producten die u ophaalt en afvoert — slib, vet, afvalwater… — met hun EURAL-afvalcode. U kiest ze op een

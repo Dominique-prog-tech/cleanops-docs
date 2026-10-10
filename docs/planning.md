@@ -1,3 +1,7 @@
+---
+description: "De planning van CleanOps: werkorders verdelen over medewerkers en dagen, op het planbord of in de planningslijst, met dagroute en afdruk."
+---
+
 # Planning
 
 In de planning verdeelt u het werk over uw medewerkers en over de dagen van de week. U ziet dezelfde werkorders op

@@ -1,3 +1,7 @@
+---
+description: "Leveranciers beheren in CleanOps: de gegevens van de bedrijven waar u aankoopt, hoe u ze bereikt, en hoe en wanneer u ze betaalt."
+---
+
 # Leveranciers
 
 De bedrijven waar u aankoopt en die u betaalt. Per leverancier houdt CleanOps de gegevens bij, hoe u hem bereikt,

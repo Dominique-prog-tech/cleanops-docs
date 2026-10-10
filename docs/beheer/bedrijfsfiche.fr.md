@@ -1,3 +1,7 @@
+---
+description: "La fiche d'entreprise dans CleanOps : nom, adresse, numéro de TVA, banque et logo, le délai entre deux rappels et vos données Peppol."
+---
+
 # Fiche d'entreprise
 
 Les données de votre propre entreprise : nom, adresse, coordonnées, numéro de TVA et banque, votre logo, le

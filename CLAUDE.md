@@ -162,6 +162,10 @@ vooraf): een module is pas "klaar" als **alle vier** kloppen:
   de controle toetst enkel woorden met een hoofdletter.
 
 ### Markdown
+- **Kopblok met `description:`** bovenaan elke pagina, in NL én FR: één zin van hoogstens 160 tekens die zegt wat de
+  pagina behandelt, met het woord waarop iemand zou zoeken. Dat is wat een zoekmachine onder de titel toont (de site
+  is sinds 10/10/2026 indexeerbaar). Elke pagina een EIGEN zin; `adm-cleanops` bewaakt het (`HandleidingSiteTests`).
+- **Een nieuwe pagina hoort ook op de startpagina** (`index.md` en `index.fr.md`), in het blok van haar menugroep.
 - Eén `# H1` per pagina (de paginatitel).
 - `## H2` voor hoofdsecties, `### H3` voor subsecties.
 - Admonitions (`!!! tip`, `!!! warning`, `!!! info`, `!!! danger`) volgens
@@ -169,6 +173,10 @@ vooraf): een module is pas "klaar" als **alle vier** kloppen:
 
 ### Links
 - Tussen pagina's: relatieve paden met `.md` extensie.
+- **Een dode link laat de bouw falen**: de uitrol draait `mkdocs build --strict` met `validation:` in `mkdocs.yml`
+  (pagina én `#anker`). Wat er werkelijk online staat — ook de beelden en de externe links — meet
+  `python3 tools/linkcheck.py`.
+- Een pagina hernoemen of verplaatsen vraagt een OMLEIDING: het oude adres staat in de zoekmachines.
 - Naar afbeeldingen: **relatief**, zoals de andere docs-sites: `![volle zin](../images/bestand.png "Korte titel")`
   vanuit `docs/beheer/`, `images/bestand.png` vanuit `docs/`. Het Franse beeld heet `bestand-fr.png`.
 

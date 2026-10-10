@@ -1,3 +1,7 @@
+---
+description: "Btw-codes in CleanOps: de btw-tarieven die u kiest op een offerte, een werkorder of een factuurlijn, elk met hun percentage."
+---
+
 # Btw-codes
 
 De btw-tarieven die u kiest op een offerte, een werkorder of een factuurlijn. Elke code draagt een

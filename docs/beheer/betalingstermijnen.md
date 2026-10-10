@@ -1,3 +1,7 @@
+---
+description: "Betalingstermijnen in CleanOps: ze bepalen wanneer een factuur vervalt; u kiest de termijn op de klantfiche."
+---
+
 # Betalingstermijnen
 
 Een betalingstermijn bepaalt **wanneer een factuur vervalt**. U kiest er één op een klantfiche; hij komt

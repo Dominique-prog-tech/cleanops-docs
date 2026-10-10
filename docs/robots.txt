@@ -1,6 +1,22 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# Documentatie in opbouw — indexering tijdelijk geblokkeerd.
-# Wanneer de docs grotendeels voltooid zijn, wordt dit vervangen door
-# een Allow-policy en sitemap-verwijzing.
+Sitemap: https://docs.cleanops.eu/sitemap.xml
+
+# Indexering aangezet op 10/10/2026, beslist door Dominique.
+#
+# Van 22/05/2026 tot dan stond hier `Disallow: /` met de nota "documentatie in opbouw". Waarom het nu wél
+# mag: de handleiding telt 46 pagina's in NL en FR, één voor elk scherm van de toepassing. Het
+# technische fundament klopt — site_url is gezet, elke pagina draagt een canonical en een eigen omschrijving,
+# en NL/FR zijn met hreflang aan elkaar geknoopt. Zoekmachines zien dus twee talen van één pagina en geen
+# duplicaat. De sitemap hierboven genereert mkdocs bij elke build zelf; die hoeft niemand bij te houden.
+#
+# ⚠️ Wat hier staat is geen beveiliging. Deze site was al publiek: elke pagina was gewoon op te vragen,
+# alleen niet te vinden via een zoekmachine. Wie iets écht wil afschermen, zet het niet op deze site.
+#
+# ⚠️ WAT DIT VAN ONS VRAAGT:
+# - Een adres dat geïndexeerd is en daarna verhuist, wordt een 404 in de zoekresultaten. Bij het hernoemen
+#   of verplaatsen van een pagina hoort vanaf nu een omleiding, niet enkel een nieuwe naam.
+# - Beelden komen ALTIJD uit de tenant 'demo' (tools/beelden.mjs weigert een andere). Dat was al zo toen
+#   niemand meekeek, en het weegt nu zwaarder: een geïndexeerd beeld is niet terug te nemen.
+# - Een nieuwe pagina krijgt een eigen `description:` in haar kopblok, in NL én FR.

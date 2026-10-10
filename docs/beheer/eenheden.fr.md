@@ -1,3 +1,7 @@
+---
+description: "Unités dans CleanOps : heure, pièces, m³, kilomètre… à choisir sur un tarif, un ordre de travail, une ligne de devis ou de facture."
+---
+
 # Unités
 
 Les unités que vous choisissez sur un tarif, un ordre de travail, une ligne de devis ou une ligne de facture : heure,

@@ -1,3 +1,7 @@
+---
+description: "Proposition de paiement dans CleanOps : ce que vous payez à vos fournisseurs jusqu'à une échéance, et le fichier SEPA pour votre banque."
+---
+
 # Proposition de paiement
 
 Ce que vous payez à vos fournisseurs jusqu'à une échéance donnée, par fournisseur avec le montant à virer. C'est aussi

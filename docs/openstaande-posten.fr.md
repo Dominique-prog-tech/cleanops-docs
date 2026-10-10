@@ -1,3 +1,7 @@
+---
+description: "Postes ouverts et rappels dans CleanOps : ce qui est échu, envoyer ou imprimer un rappel, et suivre qui a déjà été relancé."
+---
+
 # Postes ouverts
 
 Postes ouverts est votre gestion des rappels : les factures et notes de crédit qui ne sont pas encore (entièrement) payées. Ici,

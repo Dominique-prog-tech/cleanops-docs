@@ -1,3 +1,7 @@
+---
+description: "Contrats périodiques dans CleanOps : fixez la fréquence de vos passages chez un client ; les ordres de travail naissent d'eux-mêmes."
+---
+
 # Contrats
 
 Un contrat fixe la fréquence à laquelle vous revenez chez un client : vider une fosse tous les six mois, un dégraisseur

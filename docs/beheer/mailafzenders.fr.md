@@ -1,3 +1,7 @@
+---
+description: "Expéditeurs dans CleanOps : les adresses depuis lesquelles vos e-mails partent ; chaque texte d'e-mail en choisit une."
+---
+
 # Expéditeurs
 
 Les expéditeurs sont les **adresses depuis lesquelles CleanOps envoie vos e-mails**. Chaque

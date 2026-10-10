@@ -1,3 +1,7 @@
+---
+description: "Verzonden via Peppol in CleanOps: nagaan of een e-factuur of creditnota bij de klant aankwam, en een mislukte verzending terugvinden."
+---
+
 # Verzonden via Peppol
 
 Verzonden via Peppol toont de facturen en creditnota's die CleanOps als e-factuur via Peppol verstuurde, en of ze bij de klant

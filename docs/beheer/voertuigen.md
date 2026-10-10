@@ -1,3 +1,7 @@
+---
+description: "Voertuigen in CleanOps: uw vloot met kenteken, merk, soort, tankinhoud, onderhoud, bijlagen en een herinnering voor de keuring."
+---
+
 # Voertuigen
 
 Hier staat **uw vloot**: per voertuig het kenteken, het merk, de soort, de tankinhoud, het onderhoud, de

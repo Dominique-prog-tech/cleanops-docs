@@ -1,3 +1,7 @@
+---
+description: "Factures d'achat dans CleanOps : les factures et notes de crédit de vos fournisseurs, avec échéance, montants par taux de TVA et solde."
+---
+
 # Factures d'achat
 
 Les factures et notes de crédit de vos fournisseurs. Par document, CleanOps garde le fournisseur, son numéro et sa

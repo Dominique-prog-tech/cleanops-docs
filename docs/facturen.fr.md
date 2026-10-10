@@ -1,3 +1,7 @@
+---
+description: "Factures et notes de crédit dans CleanOps : consulter et imprimer vos documents de vente, établir une facture à lignes libres ou créditer."
+---
+
 # Factures
 
 Factures affiche tous vos documents de vente : les factures et notes de crédit de votre application précédente et celles que

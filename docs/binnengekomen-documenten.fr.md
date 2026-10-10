@@ -1,3 +1,7 @@
+---
+description: "Documents reçus dans CleanOps : les factures et notes de crédit de vos fournisseurs via Peppol, converties en facture d'achat préremplie."
+---
+
 # Documents reçus
 
 Les factures et notes de crédit que vos fournisseurs envoient par **Peppol**, le réseau belge des factures

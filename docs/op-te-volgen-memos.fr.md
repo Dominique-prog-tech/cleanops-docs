@@ -1,3 +1,7 @@
+---
+description: "Mémos à suivre dans CleanOps : une courte note sur un client avec une date de rappel, pour n'oublier aucune promesse."
+---
+
 # Mémos à suivre
 
 Un mémo est une courte note sur un client : ce que vous avez convenu au téléphone, ce que le client a promis, ce que vous devez

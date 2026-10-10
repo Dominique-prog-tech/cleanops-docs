@@ -9,6 +9,8 @@ copyright: >
 
 theme:
   name: material
+  # Eigen sjabloon: enkel de Open Graph-koppen in overrides/main.html (wat een gedeelde link over de pagina toont).
+  custom_dir: overrides
   language: nl
   logo: images/logo.svg
   favicon: images/logo.svg
@@ -71,6 +73,20 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Dode links laten de bouw falen (met `mkdocs build --strict`, zoals de uitrol hem draait) — sinds 10/10/2026, toen de
+# site voor zoekmachines openging. Een link naar een pagina of een #anker dat niet bestaat was tot dan een stille
+# waarschuwing in het logboek van de uitrol.
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
 
 plugins:
   - search:

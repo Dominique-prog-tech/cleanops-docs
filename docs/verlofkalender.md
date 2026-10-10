@@ -1,3 +1,7 @@
+---
+description: "De verlofkalender van CleanOps: wie wanneer afwezig is, per maand en per medewerker, en hoe u verlof boekt of wijzigt."
+---
+
 # Verlofkalender
 
 De verlofkalender toont wie wanneer afwezig is: per maand een rij per medewerker en een kolom per dag. Hier ziet u in één

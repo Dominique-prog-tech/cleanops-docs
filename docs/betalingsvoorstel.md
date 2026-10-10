@@ -1,3 +1,7 @@
+---
+description: "Betalingsvoorstel in CleanOps: wat u uw leveranciers tot een vervaldag betaalt, en het SEPA-bestand voor uw bankapp aanmaken."
+---
+
 # Betalingsvoorstel
 
 Wat u uw leveranciers tot een bepaalde vervaldag betaalt, per leverancier met het bedrag om over te schrijven. Van hieruit

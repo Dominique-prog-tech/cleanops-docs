@@ -1,3 +1,7 @@
+---
+description: "Tarieven in CleanOps: uw facturatiecodes met omschrijving, eenheid, eenheidsprijs en btw-code — aanmaken, aanpassen en archiveren."
+---
+
 # Tarieven
 
 Uw facturatiecodes: elk tarief draagt een omschrijving, een eenheid, een eenheidsprijs en een btw-code.

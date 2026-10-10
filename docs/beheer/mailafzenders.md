@@ -1,3 +1,7 @@
+---
+description: "Mailafzenders in CleanOps: de adressen waarvan uw mails vertrekken; elke mailtekst kiest er één."
+---
+
 # Mailafzenders
 
 De mailafzenders zijn de **adressen waarvan CleanOps uw mails verstuurt**. Elke [mailtekst](mailteksten.md) kiest

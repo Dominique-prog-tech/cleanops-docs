@@ -1,3 +1,7 @@
+---
+description: "Mailteksten in CleanOps: het onderwerp en de tekst van de mails naar uw klanten, per soort document, in het Nederlands en het Frans."
+---
+
 # Mailteksten
 
 Mailteksten zijn het **onderwerp en de tekst van de mails die CleanOps naar uw klanten stuurt**, per soort

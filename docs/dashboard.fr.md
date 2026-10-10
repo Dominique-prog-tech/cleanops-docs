@@ -1,3 +1,7 @@
+---
+description: "Le tableau de bord de CleanOps : ce qui se passe aujourd'hui, ce qui demande votre attention, les finances et l'évolution sur douze mois."
+---
+
 # Tableau de bord
 
 Le tableau de bord est le premier écran après la connexion. Vous voyez d'un coup d'œil ce qui se passe aujourd'hui, ce

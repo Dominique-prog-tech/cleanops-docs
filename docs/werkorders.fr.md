@@ -1,3 +1,7 @@
+---
+description: "Ordres de travail dans CleanOps : quoi faire, chez quel client, où, quand et par qui — issus d'un contrat ou créés pour une mission isolée."
+---
+
 # Ordres de travail
 
 Un ordre de travail est une mission pour vos équipes : ce qu'il faut faire, chez quel client, à quelle adresse,

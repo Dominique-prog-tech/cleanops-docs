@@ -1,3 +1,7 @@
+---
+description: "Het klantenportaal van ADM-Concept, de leverancier van CleanOps: uw facturen, uw tickets en de release notes."
+---
+
 # Klantenportaal
 
 Het klantenportaal is uw omgeving bij ADM-Concept, de leverancier van CleanOps. Daar vindt u onder meer uw facturen van

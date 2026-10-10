@@ -1,3 +1,7 @@
+---
+description: "Binnengekomen documenten in CleanOps: facturen en creditnota's die leveranciers via Peppol sturen, omgezet in een voorgevulde aankoopfactuur."
+---
+
 # Binnengekomen documenten
 
 De facturen en creditnota's die uw leveranciers via **Peppol** sturen, het Belgische netwerk voor elektronische

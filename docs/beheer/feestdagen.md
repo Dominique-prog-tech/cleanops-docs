@@ -1,3 +1,7 @@
+---
+description: "Feestdagen in CleanOps: de wettelijke feestdagen en uw eigen sluitingsdagen; ze tellen niet als verlof en staan op het ploegenbord."
+---
+
 # Feestdagen
 
 De dagen waarop niet gewerkt wordt: de **wettelijke feestdagen** en uw eigen **sluitingsdagen**, zoals een brugdag of

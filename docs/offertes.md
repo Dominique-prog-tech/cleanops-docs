@@ -1,3 +1,7 @@
+---
+description: "Offertes in CleanOps: een prijsofferte maken, opvolgen tot ze aanvaard of verloren is, en van een aanvaarde offerte een werkorder maken."
+---
+
 # Offertes
 
 Op Offertes maakt u prijsoffertes voor uw klanten, volgt u ze op tot ze aanvaard of verloren zijn, en maakt u van een

@@ -1,3 +1,7 @@
+---
+description: "Jours fériés dans CleanOps : les jours fériés légaux et vos jours de fermeture ; ils ne comptent pas comme congé."
+---
+
 # Jours fériés
 
 Les jours non travaillés : les **jours fériés légaux** et vos propres **jours de fermeture**, comme un pont ou la

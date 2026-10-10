@@ -1,3 +1,7 @@
+---
+description: "Verlofsaldi in CleanOps: per jaar hoeveel verlofdagen elke medewerker krijgt, hoeveel hij opnam en wat hem overblijft."
+---
+
 # Verlofsaldi
 
 Per jaar ziet u hoeveel verlofdagen elke medewerker krijgt, hoeveel hij er al opnam en wat hem overblijft. Hier legt

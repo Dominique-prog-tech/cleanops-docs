@@ -1,3 +1,7 @@
+---
+description: "Rollen in CleanOps: een rol is een bundel rechten; u geeft een gebruiker een rol in plaats van elk recht apart."
+---
+
 # Rollen
 
 Een rol is een bundel rechten. U geeft iemand een rol in plaats van elk recht apart — zo hoeft u bij een nieuwe collega maar één keuze te maken.

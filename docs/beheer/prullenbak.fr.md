@@ -1,3 +1,7 @@
+---
+description: "La corbeille de CleanOps : ce que vous supprimez reste restaurable ; ici, vous remettez un enregistrement à sa place."
+---
+
 # Corbeille
 
 Ce que vous supprimez dans CleanOps n'est pas détruit mais mis de côté. L'élément arrive dans la corbeille et y reste restaurable. Sur cet écran, vous remettez un enregistrement à sa place.

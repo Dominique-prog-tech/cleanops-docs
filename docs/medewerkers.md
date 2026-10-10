@@ -1,3 +1,7 @@
+---
+description: "Medewerkers beheren in CleanOps: gegevens, chauffeur of bijrijder, werkdagen en verlof — voor de ploegen en de werkorders."
+---
+
 # Medewerkers
 
 De mensen die u in ploegen en op werkorders inplant. Per medewerker houdt CleanOps de gegevens bij, wie chauffeur

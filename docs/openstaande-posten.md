@@ -1,3 +1,7 @@
+---
+description: "Openstaande posten en rappelbeheer in CleanOps: wat vervallen is, een rappel mailen of afdrukken, en bijhouden wie u al aanmaande."
+---
+
 # Openstaande posten
 
 Openstaande posten is uw rappelbeheer: de facturen en creditnota's die nog niet (volledig) betaald zijn. Hier ziet u wat

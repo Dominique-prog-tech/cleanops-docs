@@ -1,3 +1,7 @@
+---
+description: "Véhicules dans CleanOps : votre parc avec plaque, marque, type, contenance, entretien, pièces jointes et rappel du contrôle technique."
+---
+
 # Véhicules
 
 Vous trouvez ici **votre parc** : pour chaque véhicule la plaque, la marque, le type, la contenance,

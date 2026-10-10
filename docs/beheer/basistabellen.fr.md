@@ -1,3 +1,7 @@
+---
+description: "Tables de base dans CleanOps : les listes de choix que votre entreprise gère elle-même, comme les types de contrat et les fonctions."
+---
+
 # Tables de base
 
 Les listes de choix que votre entreprise gère elle-même. Elles alimentent les champs de sélection ailleurs

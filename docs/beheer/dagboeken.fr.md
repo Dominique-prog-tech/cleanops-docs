@@ -1,3 +1,7 @@
+---
+description: "Journaux dans CleanOps : le journal de vente de vos factures et les journaux financiers de vos comptes bancaires et de votre caisse."
+---
+
 # Journaux
 
 Les journaux dans lesquels vous facturez et saisissez les paiements : le journal de vente des factures, et les journaux

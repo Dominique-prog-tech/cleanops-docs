@@ -1,3 +1,7 @@
+---
+description: "Numéros de documents dans CleanOps : définir le numéro suivant de vos factures, notes de crédit, devis et documents d'achat."
+---
+
 # Numéros de documents
 
 Le numéro suivant de vos factures, notes de crédit, devis et documents d'achat. CleanOps numérote lui-même ; ici, vous définissez un

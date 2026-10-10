@@ -1,3 +1,7 @@
+---
+description: "Le planning de CleanOps : répartir les ordres de travail entre collaborateurs et jours, sur le tableau ou dans la liste, avec tournée."
+---
+
 # Planning
 
 Dans le planning, vous répartissez le travail entre vos collaborateurs et sur les jours de la semaine. Vous voyez les

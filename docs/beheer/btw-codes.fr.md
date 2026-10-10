@@ -1,3 +1,7 @@
+---
+description: "Codes TVA dans CleanOps : les taux de TVA que vous choisissez sur un devis, un ordre de travail ou une ligne de facture."
+---
+
 # Codes TVA
 
 Les taux de TVA que vous choisissez sur un devis, un ordre de travail ou une ligne de facture. Chaque code

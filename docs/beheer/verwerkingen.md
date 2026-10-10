@@ -1,3 +1,7 @@
+---
+description: "Verwerkingen in CleanOps: hoe het afval verwerkt wordt — verbranding, vergisting, een R-code — zoals het op het verwerkingsattest staat."
+---
+
 # Verwerkingen
 
 Hoe het afval verwerkt wordt: verbranding, vergisting, een R-code… U kiest de verwerking op een

@@ -1,3 +1,7 @@
+---
+description: "Gérer les clients dans CleanOps : coordonnées, adresses d'exécution, contrats, devis, factures et postes ouverts par client."
+---
+
 # Clients
 
 Le fichier clients de CleanOps : tous les clients de votre entreprise, avec leurs coordonnées, les adresses où

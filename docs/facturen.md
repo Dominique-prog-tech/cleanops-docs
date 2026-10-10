@@ -1,3 +1,7 @@
+---
+description: "Facturen en creditnota's in CleanOps: al uw verkoopdocumenten raadplegen, afdrukken, een factuur met vrije lijnen maken of crediteren."
+---
+
 # Facturen
 
 Facturen toont al uw verkoopdocumenten: de facturen en creditnota's uit uw vorige toepassing en die u in CleanOps boekte. Hier

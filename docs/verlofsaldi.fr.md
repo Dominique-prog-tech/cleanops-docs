@@ -1,3 +1,7 @@
+---
+description: "Soldes de congés dans CleanOps : par année, les jours de congé attribués, pris et restants de chaque collaborateur."
+---
+
 # Soldes de congés
 
 Par année, vous voyez combien de jours de congé chaque collaborateur reçoit, combien il en a déjà pris et ce qu'il

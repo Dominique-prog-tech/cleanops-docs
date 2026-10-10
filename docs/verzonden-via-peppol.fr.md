@@ -1,3 +1,7 @@
+---
+description: "Envoyés via Peppol dans CleanOps : vérifier qu'une facture électronique est arrivée chez le client et retrouver un envoi échoué."
+---
+
 # Envoyés via Peppol
 
 Envoyés via Peppol montre les factures et notes de crédit que CleanOps a envoyées en factures électroniques via Peppol, et si

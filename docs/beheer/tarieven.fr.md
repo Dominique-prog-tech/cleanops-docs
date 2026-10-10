@@ -1,3 +1,7 @@
+---
+description: "Tarifs dans CleanOps : vos codes de facturation avec description, unité, prix unitaire et code TVA — créer, modifier et archiver."
+---
+
 # Tarifs
 
 Vos codes de facturation : chaque tarif porte une description, une unité, un prix unitaire et un code TVA.

@@ -1,3 +1,7 @@
+---
+description: "Textes d'e-mail dans CleanOps : l'objet et le texte des e-mails envoyés à vos clients, par type de document, en néerlandais et en français."
+---
+
 # Textes d'e-mail
 
 Les textes d'e-mail sont **l'objet et le texte des e-mails que CleanOps envoie à vos clients**, par type de

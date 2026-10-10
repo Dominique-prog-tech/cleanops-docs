@@ -1,3 +1,7 @@
+---
+description: "Periodieke contracten in CleanOps: leg vast hoe vaak u bij een klant terugkomt; de werkorders voor de komende beurten ontstaan vanzelf."
+---
+
 # Contracten
 
 Een contract legt vast hoe vaak u bij een klant terugkomt: om de zes maanden een put ledigen, om de twee weken een

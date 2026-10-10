@@ -1,3 +1,7 @@
+---
+description: "Eenheden in CleanOps: uur, stuks, m³, kilometer… die u kiest op een tarief, een werkorder, een offertelijn of een factuurlijn."
+---
+
 # Eenheden
 
 De eenheden die u kiest op een tarief, een werkorder, een offertelijn of een factuurlijn: uur, stuks, m³, kilometer…

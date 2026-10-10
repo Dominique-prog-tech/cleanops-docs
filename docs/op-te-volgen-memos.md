@@ -1,3 +1,7 @@
+---
+description: "Memo's opvolgen in CleanOps: een korte notitie bij een klant met een herinneringsdatum, zodat u geen belofte of terugbelafspraak vergeet."
+---
+
 # Op te volgen memo's
 
 Een memo is een korte notitie bij een klant: wat u aan de telefoon afsprak, wat de klant beloofde, wat u nog moet nakijken.

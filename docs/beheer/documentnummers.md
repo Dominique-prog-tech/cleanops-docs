@@ -1,3 +1,7 @@
+---
+description: "Documentnummers in CleanOps: het volgende nummer van uw facturen, creditnota's, offertes en aankoopdocumenten instellen."
+---
+
 # Documentnummers
 
 Het volgende nummer van uw facturen, creditnota's, offertes en aankoopdocumenten. CleanOps nummert zelf door; hier stelt u een ander

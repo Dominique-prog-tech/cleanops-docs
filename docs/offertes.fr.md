@@ -1,3 +1,7 @@
+---
+description: "Devis dans CleanOps : établir un devis, le suivre jusqu'à son acceptation ou sa perte, et transformer un devis accepté en ordre de travail."
+---
+
 # Devis
 
 Sur Devis, vous établissez des devis pour vos clients, vous les suivez jusqu'à ce qu'ils soient acceptés ou perdus, et

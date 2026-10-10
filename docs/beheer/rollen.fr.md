@@ -1,3 +1,7 @@
+---
+description: "Rôles dans CleanOps : un rôle est un ensemble de droits ; vous donnez un rôle à un utilisateur plutôt que chaque droit séparément."
+---
+
 # Rôles
 
 Un rôle est un ensemble de droits. Vous donnez un rôle à quelqu'un plutôt que chaque droit séparément — ainsi, pour un nouveau collègue, vous ne faites qu'un seul choix.

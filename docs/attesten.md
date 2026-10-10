@@ -1,3 +1,7 @@
+---
+description: "Verwerkingsattesten in CleanOps: het bewijs voor uw klant dat het opgehaalde afval correct afgevoerd en verwerkt is, per werkorder."
+---
+
 # Attesten
 
 Een verwerkingsattest bewijst aan uw klant dat het afval dat u bij hem ophaalde, correct afgevoerd en verwerkt is: welk
