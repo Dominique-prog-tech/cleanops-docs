@@ -38,9 +38,9 @@ bewaart het in de vaste schrijfwijze, bijvoorbeeld `BE 0123.456.749`. Naast het 
 zoekt het nummer op in de Kruispuntbank van Ondernemingen en vult uw adres aan met wat daar geregistreerd staat.
 
 !!! note "Komt er niets terug?"
-    De melding *"Geen gegevens ontvangen voor dit nummer"* betekent twee dingen tegelijk: ofwel bestaat het
-    nummer niet, ofwel is de dienst op dat moment onbereikbaar. Het scherm kan die twee niet uit elkaar
-    houden. Controleer het nummer, en vul anders met de hand in.
+    Het scherm zegt waarom. *"De KBO kent dit nummer niet"*: het nummer is opgezocht en staat er niet in —
+    controleer het. *"De KBO-opzoeking is even niet bereikbaar"*: er is niets opgezocht; probeer het later
+    opnieuw. In beide gevallen kunt u het adres ook met de hand invullen.
 
 Uw naam wordt bij het ophalen **niet** overschreven.
 

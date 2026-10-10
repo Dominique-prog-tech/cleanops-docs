@@ -40,9 +40,9 @@ et l'enregistre dans son écriture fixe, par exemple `BE 0123.456.749`. À côt�
 adresse avec ce qui y est enregistré.
 
 !!! note "Rien ne revient ?"
-    Le message *« Aucune donnée reçue pour ce numéro »* signifie deux choses à la fois : soit le numéro
-    n'existe pas, soit le service est momentanément injoignable. L'écran ne peut pas distinguer les deux.
-    Vérifiez le numéro, et complétez sinon à la main.
+    L'écran dit pourquoi. *« La BCE ne connaît pas ce numéro »* : le numéro a été recherché et n'y figure
+    pas — vérifiez-le. *« La recherche BCE est momentanément indisponible »* : rien n'a été recherché ;
+    réessayez plus tard. Dans les deux cas, vous pouvez aussi compléter l'adresse à la main.
 
 Votre nom n'est **pas** écrasé lors de la recherche.
 
