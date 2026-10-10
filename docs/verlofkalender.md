@@ -46,6 +46,8 @@ Klik op **Lijstweergave** voor alle verlofperiodes onder elkaar: medewerker, soo
 - Kies bovenaan een **Periode**: de lijst toont het verlof dat die periode raakt.
 - **Zoeken**, **sorteren** en **exporteren** werken zoals in de andere lijsten.
 - **Dubbelklik** op een periode om ze te wijzigen.
+- **Journaal** — de strook rechts toont het logboek van de periode die u aanklikt: wie ze boekte, en wie er later wat
+  aan wijzigde, per veld met de oude en de nieuwe waarde.
 - Een verlof op **0 dagen** krijgt een waarschuwing: het telt niet mee in het saldo. Open het en bewaar het opnieuw — zie
   [Verlofsaldi](verlofsaldi.md#boekingen-op-0-dagen).
 - Met **Kalender** gaat u terug naar het rooster.

@@ -49,6 +49,8 @@ description.
 - Choisissez une **Période** en haut : la liste montre les congés qui touchent cette période.
 - **Rechercher**, **trier** et **exporter** fonctionnent comme dans les autres listes.
 - **Double-cliquez** sur une période pour la modifier.
+- **Journal** — le volet à droite montre l'historique de la période sélectionnée : qui l'a enregistrée, et qui y a
+  modifié quoi par la suite, par champ avec l'ancienne et la nouvelle valeur.
 - Un congé à **0 jour** reçoit un avertissement : il ne compte pas dans le solde. Ouvrez-le et enregistrez-le à nouveau —
   voir [Soldes de congés](verlofsaldi.fr.md#reservations-a-0-jour).
 - **Calendrier** vous ramène au calendrier.
