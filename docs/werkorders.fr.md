@@ -63,7 +63,7 @@ liste, avec vos filtres.
 | Chantier (nom) | Un nom reconnaissable pour le lieu, 30 caractères au maximum. |
 | Description * | Ce qu'il faut faire, 35 caractères au maximum. Si vous choisissez un tarif alors que le champ est vide ou porte encore le texte d'un tarif précédent, CleanOps y inscrit la description du tarif ; vous pouvez la modifier. Sur la facture figure le texte du tarif s'il y en a un, sinon cette description. |
 | Instructions au collaborateur | Ce que l'équipe doit savoir sur place. |
-| Remarque interne | Pour vos propres collaborateurs ; ce texte ne figure pas sur le bon de livraison. |
+| Remarque interne | Pour vos propres collaborateurs ; ce texte ne figure pas sur le bon de livraison. Quand vous choisissez une adresse d'exécution, la remarque interne de l'ordre de travail précédent à cette adresse y figure d'office, avec en dessous l'ordre dont elle provient ; s'il n'en avait pas, c'est la remarque de l'adresse elle-même. Vous pouvez adapter ou effacer le texte. Ce que vous avez déjà tapé vous-même reste en place. |
 | Collaborateur, Code TVA, Tarif | Vous pouvez les choisir maintenant, ou plus tard sur la fiche. Si le collaborateur est absent à la date *À exécuter* (congé, maladie), un message le signale ; vous pouvez quand même le choisir. |
 | Gros travaux, Attestation requise | Voir [les cases à cocher](#les-cases-a-cocher) plus bas. |
 

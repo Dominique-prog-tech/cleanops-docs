@@ -58,7 +58,7 @@ op naam of nummer en klik op **kies**. **Annuleren** brengt u dan terug naar de 
 | Werf (naam) | Een herkenbare naam voor de plaats, hoogstens 30 tekens. |
 | Omschrijving * | Wat er moet gebeuren, hoogstens 35 tekens. Kiest u een tarief terwijl het veld leeg is of nog de tekst van een vorig tarief draagt, dan vult CleanOps de omschrijving van het tarief in; u kunt ze aanpassen. Op de factuur staat bij een tarief de tarieftekst, zonder tarief deze omschrijving. |
 | Instructies werknemer | Wat de ploeg ter plaatse moet weten. |
-| Interne opmerking | Voor uw eigen mensen; deze tekst komt niet op de leveringsbon. |
+| Interne opmerking | Voor uw eigen mensen; deze tekst komt niet op de leveringsbon. Kiest u een uitvoeringsadres, dan staat hier vanzelf de interne opmerking van de vorige werkorder op dat adres, met eronder uit welke werkorder ze komt; had die er geen, dan de opmerking van het adres zelf. U kunt de tekst aanpassen of wissen. Wat u zelf al typte, blijft staan. |
 | Medewerker, Btw-code, Tarief | Mag u nu al kiezen, of later op de fiche. Is de medewerker afwezig op de datum *Uit te voeren* (verlof, ziekte), dan zegt een melding dat; u kunt hem toch kiezen. |
 | Groot werk, Attest vereist | Zie [de vinkjes](#de-vinkjes) hieronder. |
 
