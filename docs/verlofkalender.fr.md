@@ -44,7 +44,7 @@ une description et enregistrez. CleanOps compte les jours de congé selon le ré
 Cliquez sur **Vue liste** pour toutes les périodes de congé l'une sous l'autre : collaborateur, type, du, au, jours et
 description.
 
-![La liste Congés de la démo avec les périodes, le filtre Période, et un congé à 0 jour avec un avertissement](images/verlofkalender-lijst-fr.png "Congés")
+![La liste Congés de la démo avec les périodes, le filtre Période, un congé à 0 jour avec un avertissement, et à droite le volet Journal](images/verlofkalender-lijst-fr.png "Congés")
 
 - Choisissez une **Période** en haut : la liste montre les congés qui touchent cette période.
 - **Rechercher**, **trier** et **exporter** fonctionnent comme dans les autres listes.

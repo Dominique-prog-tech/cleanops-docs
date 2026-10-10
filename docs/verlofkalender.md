@@ -41,7 +41,7 @@ in en klik op **Bewaren**. CleanOps telt de verlofdagen volgens het werkregime e
 
 Klik op **Lijstweergave** voor alle verlofperiodes onder elkaar: medewerker, soort, van, tot, dagen en omschrijving.
 
-![De lijst Verlof van de demo met de periodes, de filter Periode, en een verlof op 0 dagen met een waarschuwing](images/verlofkalender-lijst.png "Verlof")
+![De lijst Verlof van de demo met de periodes, de filter Periode, een verlof op 0 dagen met een waarschuwing, en rechts de strook Journaal](images/verlofkalender-lijst.png "Verlof")
 
 - Kies bovenaan een **Periode**: de lijst toont het verlof dat die periode raakt.
 - **Zoeken**, **sorteren** en **exporteren** werken zoals in de andere lijsten.
