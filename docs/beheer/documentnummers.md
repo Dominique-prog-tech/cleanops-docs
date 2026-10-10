@@ -52,6 +52,8 @@ Een offerte heeft geen dagboek en geen mededeling: daar volstaat een nummer hoge
 **Aankoop** — de [aankoopfacturen](../aankoopfacturen.md) en -creditnota's delen één reeks per boekjaar en
 aankoopdagboek, die bij 1 begint. Een verwijderd aankoopdocument geeft zijn nummer terug: het volgende document krijgt
 eerst zo'n vrijgekomen nummer, daarna loopt de reeks verder vanaf het hoogste nummer of het nummer dat u instelde.
+Het overzicht zegt hoeveel nummers er vrij liggen (bijvoorbeeld **7 vrij**). Stelt u voor die reeks een volgend nummer in, dan
+**vervallen** de vrijgekomen nummers: het venster zegt vooraf hoeveel, en het volgende document krijgt het nummer dat u instelt.
 
 ## Veelgestelde vragen
 

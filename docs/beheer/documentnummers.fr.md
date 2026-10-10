@@ -52,6 +52,9 @@ Un devis n'a ni journal ni communication : un numéro plus élevé que le dernie
 **Achat** — les [factures d'achat](../aankoopfacturen.md) et notes de crédit d'achat partagent une série par exercice
 et journal d'achat, qui commence à 1. Un document d'achat supprimé rend son numéro : le document suivant reçoit d'abord
 un tel numéro libéré, ensuite la série continue à partir du numéro le plus élevé ou du numéro que vous avez défini.
+L'aperçu indique combien de numéros sont libres (par exemple **7 libres**). Si vous définissez un numéro suivant pour cette
+série, les numéros libérés sont **supprimés** : la fenêtre indique d'avance combien, et le document suivant reçoit le numéro que
+vous définissez.
 
 ## Questions fréquentes
 
