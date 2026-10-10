@@ -162,8 +162,9 @@ naar de creditnota.
 
 Met **Leveringsbon** opent de bon die de ploeg meeneemt en de klant ondertekent, in de taal van de klant. Daarop
 staan de klant, het uitvoeringsadres met zijn telefoonnummer en e-mailadres (anders die van de klant; een ander
-nummer op de werkorder komt erbij), de uitvoerder, het uur, de omschrijving,
-de instructies, het materiaal en de handtekeningen. Met **Afdrukken** drukt u enkel de bon af.
+nummer op de werkorder komt erbij), de naam van de uitvoerder, het uur, de omschrijving,
+de instructies onder **Opdracht**, het materiaal en de handtekeningen. De datum staat er altijd als dag/maand/jaar.
+Met **Afdrukken** drukt u enkel de bon af.
 
 ![De leveringsbon van werkorder 900118 voor Tuincentrum De Linde, met onderaan de vakken voor de handtekeningen](images/leveringsbon.png "Leveringsbon")
 

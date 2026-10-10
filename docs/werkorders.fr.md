@@ -169,8 +169,9 @@ vers la note de crédit.
 
 **Bon de livraison** ouvre le bon que l'équipe emporte et que le client signe, dans la langue du client. On y trouve
 le client, l'adresse d'exécution avec son téléphone et son e-mail (sinon ceux du client ; un autre numéro sur
-l'ordre s'y ajoute), l'exécutant, l'heure, la description, les
-instructions, le matériel et les signatures. **Imprimer** n'imprime que le bon.
+l'ordre s'y ajoute), le nom de l'exécutant, l'heure, la description, les
+instructions sous **Travail demandé**, le matériel et les signatures. La date y figure toujours au format
+jour/mois/année. **Imprimer** n'imprime que le bon.
 
 ![Le bon de livraison d'un ordre de Résidence Les Tilleuls, avec en bas les cases pour les signatures](images/leveringsbon-fr.png "Bon de livraison")
 
