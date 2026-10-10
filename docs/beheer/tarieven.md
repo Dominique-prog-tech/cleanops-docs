@@ -48,7 +48,7 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 | **Eenheidsprijs** | niet negatief. Laat ze op nul als de prijs per dossier bepaald wordt. |
 | **Btw-code** | een keuze uit uw btw-codes; mag leeg blijven. |
 | **Verkooprekening** | de algemene rekening voor uw boekhoudkantoor, gekozen uit het [rekeningplan](rekeningplan.md); mag leeg blijven. |
-| **Tekst op de factuur** | komt bij het kiezen van dit tarief op een werkorder in haar factuuropmerking, en zo op de factuur — die leest de klant. |
+| **Tekst op de factuur** | komt bij het kiezen van dit tarief op een werkorder in haar factuuropmerking, en zo op de factuur — die leest de klant. Op een lijn van een [nieuwe factuur](../facturen.md) komt ze in het vak Tekst onder de lijn. |
 | **Tekst op de offerte** | komt bij het kiezen van dit tarief in de tekst van de offertelijn — ook die leest de klant. |
 
 Klik op **Bewaren**. Na het aanmaken van een nieuw tarief opent zijn fiche vanzelf.

@@ -48,7 +48,7 @@ a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre
 | **Prix unitaire** | jamais négatif. Laissez-le à zéro si le prix est fixé par dossier. |
 | **Code TVA** | un choix parmi vos codes TVA ; peut rester vide. |
 | **Compte de vente** | le compte général pour votre bureau comptable, choisi dans le [plan comptable](rekeningplan.fr.md) ; peut rester vide. |
-| **Texte sur la facture** | quand vous choisissez ce tarif sur un ordre de travail, il s'ajoute à sa remarque de facturation, et donc à la facture — c'est ce que lit le client. |
+| **Texte sur la facture** | quand vous choisissez ce tarif sur un ordre de travail, il s'ajoute à sa remarque de facturation, et donc à la facture — c'est ce que lit le client. Sur une ligne d'une [nouvelle facture](../facturen.fr.md), il se place dans le champ Texte sous la ligne. |
 | **Texte sur le devis** | s'ajoute au texte de la ligne de devis quand vous choisissez ce tarif — le client le lit aussi. |
 
 Cliquez sur **Enregistrer**. Après la création d'un nouveau tarif, sa fiche s'ouvre automatiquement.
