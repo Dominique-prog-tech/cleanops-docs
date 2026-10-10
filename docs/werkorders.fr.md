@@ -16,9 +16,10 @@ Pour chaque ordre, vous voyez le numéro, le client, la date de commande, le sta
 **Exécuté**, la commune, le **tarif** (le travail à faire), le collaborateur et le montant. Un ordre avec **Gros
 travaux** apparaît en vert clair.
 
-Contrat, À exécuter, Chantier, Quantité, Unité, Prix unit., Facture, Date facture et Comptant sont masqués par défaut,
+Contrat, À exécuter, Chantier, Quantité, Unité, Prix unit., Facture, Date facture, Note de crédit et Comptant sont masqués par défaut,
 pour que la liste tienne aussi sur un écran plus petit : le sélecteur de colonnes les affiche. Si un ordre est facturé, le
-statut l'indique déjà ; le numéro de facture se retrouve aussi via **Rechercher**.
+statut l'indique déjà ; le numéro de facture se retrouve aussi via **Rechercher**. La colonne **Note de crédit** montre le numéro
+de la note de crédit lorsque la facture de l'ordre a été créditée.
 
 - **Statut** — la liste s'ouvre sur **Ouverts** : tout ce qui est encodé, planifié ou à facturer. Choisissez un
   statut, ou **Tous les statuts** pour voir aussi les ordres facturés.
@@ -159,6 +160,8 @@ S'il manque un montant ou un code TVA, la fiche affiche **Pas encore facturable*
 enregistrer l'ordre normalement, mais il n'arrive sur une facture que lorsque les deux sont remplis.
 
 Une fois l'ordre facturé, ces données sont figées. S'il faut y changer quelque chose, créditez la facture.
+Si la facture a été créditée, la fiche l'indique sous le numéro de facture : *créditée par la note de crédit …*, avec un lien
+vers la note de crédit.
 
 ### Le bon de livraison
 

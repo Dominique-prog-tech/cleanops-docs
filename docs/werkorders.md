@@ -15,9 +15,10 @@ Per werkorder ziet u het nummer, de klant, de datum waarop ze besteld werd, de s
 **Uitgevoerd**, de gemeente, het **tarief** (wat er gedaan wordt), de medewerker en het bedrag. Een werkorder met
 **Groot werk** staat lichtgroen.
 
-Contract, Uit te voeren, Werf, Aantal, Eenheid, Eenheidsprijs, Factuur, Factuurdatum en Contant staan standaard verborgen,
+Contract, Uit te voeren, Werf, Aantal, Eenheid, Eenheidsprijs, Factuur, Factuurdatum, Creditnota en Contant staan standaard verborgen,
 zodat de lijst ook op een kleiner scherm past: met de kolomkiezer zet u ze erbij. Is een werkorder gefactureerd, dan zegt
-de status dat al; het factuurnummer vindt u ook via **Zoeken**.
+de status dat al; het factuurnummer vindt u ook via **Zoeken**. De kolom **Creditnota** toont het nummer van de creditnota als de
+factuur van de werkorder gecrediteerd is.
 
 - **Status** — de lijst opent op **Openstaand**: alles wat ingegeven, gepland of te factureren is. Kies één status, of
   **Alle statussen** om ook de gefactureerde werkorders te zien.
@@ -152,6 +153,8 @@ Ontbreekt er een bedrag of een btw-code, dan staat er **Nog niet te factureren**
 werkorder gewoon bewaren, maar ze komt pas op een factuur als beide ingevuld zijn.
 
 Is de werkorder gefactureerd, dan liggen deze gegevens vast. Moet er iets aan veranderen, crediteer dan de factuur.
+Is de factuur gecrediteerd, dan staat dat onder het factuurnummer op de fiche: *gecrediteerd met creditnota …*, met een link
+naar de creditnota.
 
 ### De leveringsbon
 
