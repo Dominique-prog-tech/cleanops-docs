@@ -59,7 +59,7 @@ que par une note de crédit. La facture s'ouvre aussitôt avec l'aperçu avant i
 
 - Chaque ordre de travail devient une ligne, avec le tarif, la quantité et le prix de l'ordre de travail.
 - La **TVA** est additionnée par code TVA.
-- L'**échéance** découle du délai de paiement du client.
+- L'**échéance** découle du délai de paiement du client. Une note de crédit échoit à sa propre date.
 - La facture reçoit une **communication structurée** et un poste ouvert.
 - Si une ligne porte **6 % de TVA**, la phrase d'attestation figure sur la facture, dans la langue du client. S'il n'y a
   pas de phrase d'attestation dans cette langue, rien n'est comptabilisé (voir [Textes de facture](beheer/factuurteksten.fr.md)).
