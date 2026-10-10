@@ -1,3 +1,7 @@
+---
+description: "Textes de facture dans CleanOps : les textes standard au bas d'une facture, comme les mentions TVA et les conditions générales."
+---
+
 # Textes de facture
 
 Les textes de facture sont les **textes standard qui peuvent figurer au bas d'une facture** : mentions TVA,
@@ -89,8 +93,8 @@ texte et cliquez sur **Rétablir**.
 
 ## Où vous retrouvez le texte
 
-Sur la fiche d'une facture, le bloc **Texte de pied de page** figure en bas — vous y lisez ce qui est
-réellement apparu sur cette facture. S'il n'y a rien, le bloc n'apparaît pas. (L'écran **Factures** sera libéré plus tard.)
+Sur la fiche d'une [facture](../facturen.md), le bloc **Texte de pied de page** figure en bas — vous y lisez ce qui est
+réellement apparu sur cette facture. S'il n'y a rien, le bloc n'apparaît pas.
 
 ## Le journal
 
@@ -102,8 +106,8 @@ texte, le journal suit.
 
 L'onglet **Historique** indique qui a modifié le texte et quand, et de quelle valeur vers quelle autre. Pour une
 mention légale, c'est plus qu'une question d'ordre : il montre quand la phrase figurant sur vos factures a
-changé, et par qui. Toutes les modifications de tous les textes se trouvent dans le **Journal des actions**
-(Administration → Historique ; cet écran sera libéré plus tard).
+changé, et par qui. Toutes les modifications de tous les textes se trouvent dans le
+[Journal des actions](actielogboek.md) (Administration → Historique).
 
 ## Questions fréquentes
 

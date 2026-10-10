@@ -2,6 +2,8 @@
 hide:
   - navigation
   - toc
+title: Handleiding voor ruimdiensten en rioolreiniging
+description: "Handleiding van CleanOps, de software voor ruimdiensten en rioolreiniging: contracten, werkorders, planning, werkbonnen, facturatie en rappels."
 ---
 
 <div class="co-hero" markdown>
@@ -13,59 +15,86 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
 
 </div>
 
-!!! info "De handleiding groeit mee met de vrijgave"
-    CleanOps is in bèta. Een module verschijnt hieronder op het moment dat ze vrijgegeven wordt aan de
-    testers — niet vooraf. Zo staat er nooit een pagina die iets anders beschrijft dan wat u op het scherm
-    ziet. Wat grijs staat, is in aanbouw.
+!!! info "De handleiding volgt de app"
+    Elke pagina beschrijft wat u in CleanOps op het scherm ziet, in het Nederlands en het Frans. Komt er een scherm
+    bij of verandert er iets, dan wijzigt de pagina mee.
 
 <div class="grid cards" markdown>
 
--   :material-view-dashboard: **[Dashboard](dashboard.md)**
+-   :material-view-dashboard: **Aan de slag**
 
     ---
 
-    Uw overzicht van de dag: wat er vandaag gebeurt, wat aandacht vraagt, hoe het met het geld staat en het verloop
-    over twaalf maanden. Elke tegel opent de lijst achter het getal.
+    Uw overzicht van de dag, en uw omgeving bij ADM-Concept voor facturen, tickets en release notes.
 
--   :material-account-group: **[Klanten](klanten.md)**
+    [Dashboard](dashboard.md) · [Klantenportaal](klantenportaal.md)
 
-    ---
-
-    Het klantenbestand: gegevens, periodieke contracten en de adressen waar gewerkt wordt. Met de klantfiche
-    van waaruit u een werkorder, offerte of voorschotfactuur start.
-
--   :material-clipboard-text-clock: **[Werkorders](werkorders.md)**
+-   :material-account-group: **CRM**
 
     ---
 
-    De opdrachten zelf: aanmaken, opvolgen en afwerken. Inclusief de werkorders die automatisch uit een
-    periodiek contract voortkomen.
+    Uw klanten met hun adressen en contracten, uw medewerkers en hun verlof, en uw leveranciers.
 
--   :material-calendar-month: **[Planning en ploegen](planning.md)**
+    [Klanten](klanten.md) · [Medewerkers](medewerkers.md) · [Verlofsaldi](verlofsaldi.md) ·
+    [Verlofkalender](verlofkalender.md) · [Leveranciers](leveranciers.md)
 
-    ---
-
-    Het planningsbord per week en per dag, en de samenstelling van de ploegen.
-
--   :material-file-document-edit: **[Offertes](offertes.md)**
+-   :material-clipboard-text-clock: **Werk**
 
     ---
 
-    Offertes opmaken, opvolgen en omzetten naar een werkorder.
+    Van periodiek contract tot uitgevoerde opdracht: werkorders, de planning van de ploegen, werkbonnen en
+    verwerkingsattesten.
 
--   :material-cash-multiple: **[Facturatie en rappels](facturatie.md)**
+    [Werkorders](werkorders.md) · [Planning](planning.md) · [Ploegen](ploegen.md) ·
+    [Werkbonnen](werkbonnen.md) · [Contracten](contracten.md) · [Attesten](attesten.md)
 
-    ---
-
-    Te factureren werk, facturen en creditnota's, openstaande posten en het rappelbeheer.
-
--   :material-account-hard-hat: **[Medewerkers](medewerkers.md)**
+-   :material-cash-multiple: **Verkoop**
 
     ---
 
-    De medewerkers en hun gegevens, en hoe ze aan ploegen en werkorders hangen.
+    Offertes, het factureren van uitgevoerd werk, e-facturen via Peppol, openstaande posten met rappels, en
+    betalingen.
+
+    [Offertes](offertes.md) · [Facturatie](facturatie.md) · [Facturen](facturen.md) ·
+    [Verzonden via Peppol](verzonden-via-peppol.md) · [Openstaande posten](openstaande-posten.md) ·
+    [Op te volgen memo's](op-te-volgen-memos.md) · [Betalingen](betalingen.md)
+
+-   :material-cart-outline: **Aankoop**
+
+    ---
+
+    De facturen van uw leveranciers — ook via Peppol —, wat u nog moet betalen, en het betalingsvoorstel met
+    SEPA-bestand.
+
+    [Binnengekomen documenten](binnengekomen-documenten.md) · [Aankoopfacturen](aankoopfacturen.md) ·
+    [Openstaande posten leveranciers](openstaande-posten-leveranciers.md) ·
+    [Betalingsvoorstel](betalingsvoorstel.md)
+
+-   :material-cog-outline: **Platformbeheer**
+
+    ---
+
+    De instellingen en stamgegevens van uw bedrijf, gegroepeerd per onderwerp. De volledige lijst staat hieronder.
+
+    [Overzicht](platformbeheer.md) · [Bedrijfsfiche](beheer/bedrijfsfiche.md) · [Tarieven](beheer/tarieven.md) ·
+    [Rollen](beheer/rollen.md)
 
 </div>
+
+## Platformbeheer: alle onderwerpen
+
+**Stamgegevens** — [Bedrijfsfiche](beheer/bedrijfsfiche.md) · [Basistabellen](beheer/basistabellen.md) ·
+[Btw-codes](beheer/btw-codes.md) · [Tarieven](beheer/tarieven.md) · [Eenheden](beheer/eenheden.md) ·
+[Producten (attesten)](beheer/attest-producten.md) · [Verwerkingen](beheer/verwerkingen.md) ·
+[Verwerkingsbedrijven](beheer/verwerkingsbedrijven.md) · [Dagboeken](beheer/dagboeken.md) ·
+[Rekeningplan](beheer/rekeningplan.md) · [Documentnummers](beheer/documentnummers.md) ·
+[Betalingstermijnen](beheer/betalingstermijnen.md) · [Factuurteksten](beheer/factuurteksten.md) ·
+[Mailteksten](beheer/mailteksten.md) · [Mailafzenders](beheer/mailafzenders.md) ·
+[Feestdagen](beheer/feestdagen.md) · [Voertuigen](beheer/voertuigen.md)
+
+**Toegang** — [Rollen](beheer/rollen.md)
+
+**Historiek** — [Prullenbak](beheer/prullenbak.md) · [Actielogboek](beheer/actielogboek.md)
 
 ## Hulp in de app zelf
 
@@ -73,3 +102,5 @@ Rechtsboven in CleanOps staat een **?**-knop. Die opent een lade met uitleg bij 
 moment staat, met onderaan een knop naar de volledige pagina in deze handleiding.
 
 De hulp volgt uw schermtaal: staat de app in het Frans, dan opent de knop de Franse pagina.
+
+Zoekt u iets bepaalds? Gebruik het zoekveld bovenaan deze pagina en typ een woord dat op uw scherm staat.

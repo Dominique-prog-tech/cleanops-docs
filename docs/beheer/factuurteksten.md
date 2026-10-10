@@ -1,3 +1,7 @@
+---
+description: "Factuurteksten in CleanOps: de standaardteksten onderaan een factuur, zoals btw-vermeldingen en algemene voorwaarden."
+---
+
 # Factuurteksten
 
 Factuurteksten zijn de **standaardteksten die onderaan een factuur kunnen staan**: btw-vermeldingen,
@@ -88,8 +92,8 @@ Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde teksten
 
 ## Waar u de tekst terugziet
 
-Op de fiche van een factuur staat onderaan het blok **Slottekst** — daar leest u wat er werkelijk op die
-factuur is komen te staan. Staat er niets, dan is het blok er ook niet. (Het scherm **Facturen** wordt later vrijgegeven.)
+Op de fiche van een [factuur](../facturen.md) staat onderaan het blok **Slottekst** — daar leest u wat er werkelijk op die
+factuur is komen te staan. Staat er niets, dan is het blok er ook niet.
 
 ## Het journaal
 
@@ -101,7 +105,7 @@ wisselt het journaal mee.
 
 Het tabblad **Logboek** toont wie de tekst wanneer gewijzigd heeft, en van welke waarde naar welke. Bij een
 wettelijke vermelding is dat meer dan netheid: het laat zien wanneer de zin op uw facturen veranderd is, en
-door wie. Alle wijzigingen aan alle teksten samen vindt u in het **Actielogboek** (Platformbeheer → Historiek; dat scherm wordt later vrijgegeven).
+door wie. Alle wijzigingen aan alle teksten samen vindt u in het [Actielogboek](actielogboek.md) (Platformbeheer → Historiek).
 
 ## Veelgestelde vragen
 
