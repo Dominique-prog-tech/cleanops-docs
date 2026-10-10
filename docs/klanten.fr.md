@@ -119,6 +119,12 @@ sur **choisir**. La fenêtre indique alors ce qui part et ce qui reste :
 - Si un ordre qui part porte un numéro de commande du client actuel, celui-ci reste en place. La fenêtre le signale,
   pour que vous puissiez le vérifier.
 
+!!! note "*Phase de test* figure en haut de l'écran ?"
+    Vous travaillez alors encore dans votre application actuelle, et la prochaine reprise efface ce que vous avez créé
+    dans CleanOps. Vous ne pouvez donc pas déplacer une adresse de votre application actuelle vers un client créé dans
+    CleanOps : ce client disparaît lors de la reprise, et l'adresse avec lui. La fenêtre le signale dès que vous
+    choisissez le client. Choisissez un client de votre application actuelle.
+
 ![La fenêtre Déplacer des adresses vers un autre client : l'adresse de Résidence Les Tilleuls part chez un autre client, avec ce qui part et ce qui reste](images/klant-adres-verplaatsen-fr.png "Déplacer des adresses")
 
 ![Une adresse d'exécution de Résidence Les Tilleuls, avec une instruction de travail, le matériel à emporter et l'accessibilité par jour](images/klant-adres-fr.png "Adresse d'exécution")
