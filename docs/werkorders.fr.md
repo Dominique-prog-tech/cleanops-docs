@@ -25,9 +25,11 @@ de la note de crédit lorsque la facture de l'ordre a été créditée.
   statut, ou **Tous les statuts** pour voir aussi les ordres facturés.
 - **Compteur** — à côté des filtres figure le nombre d'ordres de travail de la sélection. Si vous ouvrez la liste depuis le
   [tableau de bord](dashboard.md), c'est le chiffre de la tuile.
-- **Période sur** et **Période** — choisissez d'abord la date sur laquelle vous filtrez (**Commandé**, **Planifié**
-  ou **Exécuté**), puis la période. Avec **Planifié**, les choix fixes regardent vers l'avant ; avec **Commandé** et
-  **Exécuté**, vers l'arrière.
+- **Période sur** et **Période** — choisissez d'abord la date sur laquelle vous filtrez (**Commandé**, **Planifié**,
+  **Exécuté** ou **Facturé**), puis la période. Avec **Planifié**, les choix fixes regardent vers l'avant ; avec les
+  autres, vers l'arrière. **Facturé** filtre sur la date de facture du travail : vous retrouvez ainsi tout ce qui a été
+  facturé un mois donné. Les ordres de travail sans date de facture dans votre application précédente n'apparaissent pas
+  avec ce choix.
 - **Tarif** — tapez une partie de la description et choisissez le tarif : la liste ne montre alors que les ordres de
   travail avec ce tarif. Les tarifs archivés y figurent aussi, car des ordres plus anciens les portent encore. La croix
   efface votre choix.

@@ -24,8 +24,10 @@ factuur van de werkorder gecrediteerd is.
   **Alle statussen** om ook de gefactureerde werkorders te zien.
 - **Teller** — naast de filters staat hoeveel werkorders de selectie telt. Opent u de lijst vanaf het
   [dashboard](dashboard.md), dan is dat het getal van de tegel.
-- **Periode op** en **Periode** — kies eerst op welke datum u filtert (**Besteld**, **Gepland** of **Uitgevoerd**), en
-  dan de periode. Bij **Gepland** kijken de vaste keuzes vooruit, bij **Besteld** en **Uitgevoerd** terug.
+- **Periode op** en **Periode** — kies eerst op welke datum u filtert (**Besteld**, **Gepland**, **Uitgevoerd** of
+  **Gefactureerd**), en dan de periode. Bij **Gepland** kijken de vaste keuzes vooruit, bij de andere terug.
+  **Gefactureerd** filtert op de factuurdatum van het werk: zo vindt u alles wat in een bepaalde maand gefactureerd is.
+  Werkorders die in uw vorige toepassing zonder factuurdatum staan, vindt u met deze keuze niet.
 - **Tarief** — typ een deel van de omschrijving en kies het tarief: de lijst toont dan enkel de werkorders met dat
   tarief. Ook gearchiveerde tarieven staan erin, want oudere werkorders dragen ze nog. Het kruisje wist uw keuze.
 - **Klant** — de knop **Werkorders** op de [klantfiche](klanten.md#de-knoppen-onderaan) opent deze lijst met enkel de
