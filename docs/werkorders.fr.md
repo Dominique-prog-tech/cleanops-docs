@@ -148,7 +148,7 @@ En bas de la fiche figure ce qui sera facturé.
 
 | Champ | Explication |
 |---|---|
-| Tarif | La liste montre les tarifs dans la langue de l'ordre de travail. Choisissez un tarif, et CleanOps remplit l'unité, le prix unitaire, le code TVA et le commentaire de facture, ainsi que la description si vous n'y avez rien tapé vous-même. La quantité reste. Si vous videz le tarif, ces champs restent. |
+| Tarif | La liste montre les tarifs dans la langue de l'ordre de travail. C'est la langue du client : si elle change, un ordre de travail qui n'est pas encore facturé la suit au prochain enregistrement. Choisissez un tarif, et CleanOps remplit l'unité, le prix unitaire, le code TVA et le commentaire de facture, ainsi que la description si vous n'y avez rien tapé vous-même. La quantité reste. Si vous videz le tarif, ces champs restent. |
 | Référence client | Le numéro de commande ou la référence du client, 30 caractères au maximum. Figure sur la facture. |
 | Quantité, Unité, Prix unitaire | Ce qui est facturé. Une correction se fait avec une quantité négative. |
 | Montant | Quantité × prix unitaire, calculé par CleanOps. Le saisir à la main n'est possible que si la quantité et le prix unitaire sont tous deux à zéro, par exemple pour un forfait. |
