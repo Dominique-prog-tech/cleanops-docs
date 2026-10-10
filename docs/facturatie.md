@@ -49,7 +49,8 @@ Klik bij de klant op **Factureren…**. Het venster toont zijn te factureren wer
   een attest bij.
 
 Klik op **Factuur boeken** en bevestig. De factuur krijgt het volgende nummer; rechtzetten kan daarna enkel met een creditnota. De
-factuur opent meteen met het afdrukvoorbeeld (zie [Facturen](facturen.md#afdrukken)).
+factuur opent meteen met het afdrukvoorbeeld (zie [Facturen](facturen.md#afdrukken)). Is er geen enkele werkorder aangevinkt, dan
+zegt het venster dat bovenaan en wordt er niets geboekt.
 
 ### Wat er bij het boeken gebeurt
 
@@ -69,7 +70,8 @@ en boek ze daarna apart.
 
 ## Voorschotten
 
-Een voorschotfactuur maakt u op de [klantfiche](klanten.md#de-knoppen-onderaan) met **Voorschotfactuur**. Factureert u daarna het
+Een voorschotfactuur maakt u op de [klantfiche](klanten.md#de-knoppen-onderaan) met **Voorschotfactuur**: vul het **Netto bedrag**
+en de **Btw-code** in en klik op **Aanmaken**. Ontbreekt een van de twee, dan zegt het venster welke. Factureert u daarna het
 werk van die klant, dan toont het keuzevenster het openstaande voorschot met een vinkje **… aftrekken**. Staat het aan, dan trekt
 CleanOps het voorschot af en wordt de factuur een **saldofactuur**. Het vinkje staat vanzelf aan als het gekozen werk het voorschot
 dekt, en uit bij een kleiner werk. Zet u het toch aan terwijl het voorschot groter is, dan zegt het venster dat de saldofactuur een

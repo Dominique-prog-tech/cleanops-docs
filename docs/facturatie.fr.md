@@ -53,7 +53,8 @@ Cliquez sur **Facturer…** à côté du client. La fenêtre affiche ses ordres 
 
 Cliquez sur **Comptabiliser la facture** et confirmez. La facture reçoit le numéro suivant ; elle ne peut ensuite être corrigée
 que par une note de crédit. La facture s'ouvre aussitôt avec l'aperçu avant impression (voir
-[Factures](facturen.fr.md#imprimer)).
+[Factures](facturen.fr.md#imprimer)). Si aucun ordre de travail n'est coché, la fenêtre l'indique en haut et rien n'est
+comptabilisé.
 
 ### Ce qui se passe à la comptabilisation
 
@@ -73,7 +74,8 @@ les ordres négatifs et comptabilisez-les ensuite à part.
 
 ## Acomptes
 
-Vous établissez une facture d'acompte sur la [fiche client](klanten.fr.md#les-boutons-en-bas) avec **Facture d'acompte**. Si
+Vous établissez une facture d'acompte sur la [fiche client](klanten.fr.md#les-boutons-en-bas) avec **Facture d'acompte** :
+indiquez le **Montant net** et le **Code TVA**, puis cliquez sur **Créer**. S'il en manque un, la fenêtre indique lequel. Si
 vous facturez ensuite le travail de ce client, la fenêtre de choix montre l'acompte ouvert avec une case **Déduire…**. Cochée,
 CleanOps déduit l'acompte et la facture devient une **facture de solde**. La case est cochée d'office si le travail choisi couvre
 l'acompte, et décochée pour un travail plus petit. Si vous la cochez quand même alors que l'acompte est plus élevé, la fenêtre
