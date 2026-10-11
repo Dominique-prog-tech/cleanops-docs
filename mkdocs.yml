@@ -5,7 +5,7 @@ site_url: https://docs.cleanops.eu/
 copyright: >
   CleanOps &copy; 2026 — eigendom van
   <a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
-  Alle rechten voorbehouden.
+  Alle rechten voorbehouden. · <a href="https://www.cleanops.eu/">cleanops.eu</a>
 
 theme:
   name: material
@@ -111,7 +111,7 @@ plugins:
           site_description: Manuel officiel de CleanOps
           copyright: >
             CleanOps &copy; 2026 — propriété d'<a href="https://www.adm-concept.be" target="_blank" rel="noopener">ADM-Concept</a>.
-            Tous droits réservés.
+            Tous droits réservés. · <a href="https://www.cleanops.eu/fr/">cleanops.eu</a>
           theme:
             language: fr
             # ⚠️ Tweede exemplaar van het palet — dit blok wint voor /fr/. Houd het gelijk met theme.palette
