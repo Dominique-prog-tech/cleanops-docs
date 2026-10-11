@@ -50,7 +50,7 @@
 [data-md-toggle="search"]:checked ~ .md-header .md-search__form,
 [data-md-toggle="search"]:checked ~ .md-container .md-search__form {
   background-color: var(--md-default-bg-color);
-  box-shadow: 0 0 0 2px var(--md-accent-fg-color);
+  box-shadow: 0 0 0 2px var(--co-rand);
 }
 [data-md-color-scheme="slate"] .md-search__form {
   background-color: rgba(255, 255, 255, 0.06);
@@ -89,6 +89,13 @@ html {
 :root {
   --co-teal: #0d9488;
   --co-teal-licht: #5eead4;
+  /* Kleine TEKST in de merkkleur staat één tint donkerder (oktober 2026). #0d9488 op wit haalt 3,74 op 1; de norm
+     voor kleine tekst (WCAG) vraagt 4,5. Gemeten op de gebouwde site: 814 tekstlinks over de 92 pagina's, alle in
+     het lichte schema, 48 daarvan op het onthaal. #0f766e haalt 5,47; #115e59 (bij aanwijzen) 7,58. Het zijn de
+     tinten die cleanops.eu voor hetzelfde neemt. De merkkleur zelf blijft waar de norm voor kleine tekst niet
+     geldt: het verloop in de titel, de rand van een kaart, de ring rond het zoekveld. */
+  --co-teal-tekst: #0f766e;
+  --co-teal-aanwijzen: #115e59;
 }
 
 /* ⚠️ Ook op [data-md-color-primary], niet enkel op :root. Material zet dat attribuut op de BODY en declareert
@@ -97,8 +104,9 @@ html {
    specificiteit (0,1,0), maar extra.css laadt ná het palet, dus deze wint. */
 :root,
 [data-md-color-primary] {
-  --md-accent-fg-color: var(--co-teal);
-  --md-typeset-a-color: var(--co-teal);
+  --md-accent-fg-color: var(--co-teal-aanwijzen);
+  --md-typeset-a-color: var(--co-teal-tekst);
+  --co-rand: var(--co-teal);
 }
 /* ⚠️ Twee attributen, niet één. Material declareert dit als
    `[data-md-color-scheme=slate][data-md-color-primary=white]` — specificiteit (0,2,0). Mijn eerste versie stond
@@ -111,6 +119,7 @@ html {
      tint die de app zelf gebruikt voor accenten in dark mode. */
   --md-accent-fg-color: #2dd4bf;
   --md-typeset-a-color: #2dd4bf;
+  --co-rand: #2dd4bf;
 }
 
 /* Actieve pagina in de zijbalk krijgt het merkteal i.p.v. Material's standaard */
@@ -187,7 +196,7 @@ html {
   transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 .md-typeset .grid.cards > ul > li:hover {
-  border-color: var(--md-accent-fg-color);
+  border-color: var(--co-rand);
   box-shadow: 0 2px 12px rgba(13, 148, 136, 0.09);
   transform: translateY(-2px);
 }
