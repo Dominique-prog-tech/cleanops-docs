@@ -9,7 +9,7 @@ toutes les deux semaines. D'un contrat en cours naissent les [ordres de travail]
 passages ; vous n'avez pas à les créer vous-même. CleanOps les crée chaque nuit pour les 90 prochains jours, et aussitôt
 que vous enregistrez un nouveau contrat.
 
-![La liste des contrats de la démo, avec les colonnes Nom, Périodicité et Dernière fois, et l'étiquette en pause chez Garage Demo & Zonen](images/contracten-lijst-fr.png "Contrats")
+![La liste des contrats de la démo, avec les colonnes Nom, Suivi le, Périodicité et Dernière fois, la date de suivi en rouge chez Sporthal De Ring et l'étiquette en pause chez Garage Demo & Zonen](images/contracten-lijst-fr.png "Contrats")
 
 ## Ouvrir l'écran
 
@@ -17,10 +17,16 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Contrats**.
 
 ## La liste
 
-Pour chaque contrat, vous voyez le client, le numéro du contrat, la date du contrat, le type de contrat, la
+Pour chaque contrat, vous voyez le client, le numéro du contrat, **Suivi le**, le type de contrat, la
 description, la date **À partir du**, la **Date de fin**, la **Périodicité**, la **Dernière fois** et la commune. Si un
-contrat est en pause, **en pause** figure à côté du client. La liste est triée par nom de client.
+contrat est en pause, **en pause** figure à côté du client. La liste est triée par nom de client. La **Date du contrat**,
+la note **Suivi** et **En pause** s'ajoutent avec le sélecteur de colonnes.
 
+- **Suivi le** — la date à laquelle vous voulez revenir sur le contrat. Une fois ce jour atteint, la date s'affiche en
+  rouge et en gras. Passez la souris dessus pour lire la note. Voir [Suivre un contrat](#suivre-un-contrat).
+- **Suivi** — le filtre en haut. Choisissez *À suivre* pour ne voir que les contrats dont la date de suivi est atteinte.
+- **Envoyer par e-mail…** — ouvre un e-mail au client du contrat sélectionné. Vous voyez le bouton si vous pouvez
+  modifier les contrats.
 - **Dernière fois** — la date planifiée du dernier ordre de travail du contrat.
 - **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur ce que montre la
   liste, y compris la périodicité : *Annuel* trouve tous les contrats annuels. Vous trouvez aussi un contrat par la rue,
@@ -28,7 +34,7 @@ contrat est en pause, **en pause** figure à côté du client. La liste est tri�
 - **Trier** — cliquez sur un titre de colonne ; un second clic inverse l'ordre.
 - **Exporter** — le bouton en haut à droite vous donne la liste, telle qu'elle est filtrée, sous forme de fichier.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir le contrat.
-- **Journal** — le volet de droite montre l'historique du contrat sélectionné dans la liste.
+- **Journal** — le volet de droite montre l'historique et les e-mails du contrat sélectionné dans la liste.
 
 Un contrat terminé reste dans la liste, avec sa date de fin.
 
@@ -40,8 +46,8 @@ mensuel le premier du mois. Après **Enregistrer**, le nouveau contrat s'ouvre.
 
 ## La fiche du contrat
 
-En haut figurent le numéro du contrat et le client ; si le contrat est en pause, c'est indiqué. En dessous, trois
-onglets : **Contrat**, **Ordres de travail** et **Historique**.
+En haut figurent le numéro du contrat et le client ; si le contrat est en pause, c'est indiqué. En dessous, quatre
+onglets : **Contrat**, **Ordres de travail**, **Historique** et **E-mails**.
 
 ![Le contrat de Résidence Les Tilleuls : chaque année le 20 mars, avec en dessous les prochains passages](images/contract-fiche-fr.png "Fiche du contrat")
 
@@ -57,6 +63,8 @@ onglets : **Contrat**, **Ordres de travail** et **Historique**.
 | Début * | À partir de quand le rythme court. Ne peut pas précéder la date du contrat. |
 | Fin | À partir de cette date, plus aucun passage ne s'ajoute. Ne peut pas précéder le début. |
 | En pause | Suspend le contrat : aucun ordre de travail ne s'ajoute tant que la case est cochée. |
+| Suivi le | La date à laquelle vous voulez revenir sur ce contrat. Vide : pas de suivi. |
+| Suivi | De quoi il s'agit, 500 caractères au maximum. Cette note est pour vous : elle ne figure ni sur un bon de travail ni dans un e-mail. |
 | Remarques (sur chaque bon de travail) | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 35 premiers caractères la description de l'ordre. |
 | Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. |
 | Fréquence | Le rythme — voir ci-dessous. |
@@ -116,6 +124,47 @@ votre application précédente crée encore les ordres de travail, CleanOps n'en
 
 Qui a modifié quel champ de ce contrat, quand, et de quelle valeur à quelle valeur.
 
+### L'onglet E-mails
+
+Ce qui a été envoyé par e-mail au sujet de ce contrat : quand, à qui, si l'e-mail a été délivré (et sinon, pourquoi),
+et le texte tel qu'il est parti (**Afficher le texte**).
+
+## Suivre un contrat
+
+Vous voulez revenir plus tard sur un contrat — revoir un prix, discuter d'un renouvellement — ? Sur la fiche, indiquez
+**Suivi le**, avec sous **Suivi** de quoi il s'agit, et cliquez sur **Enregistrer**.
+
+À partir de ce jour :
+
+- la date s'affiche **en rouge et en gras** dans la liste ;
+- le contrat compte dans le **chiffre à côté de Contrats** dans le menu ;
+- le filtre **Suivi** sur *À suivre* montre le contrat.
+
+Un contrat en pause ou terminé compte aussi tant que la date y figure.
+
+### Écrire au client
+
+**Envoyer par e-mail…**, dans la liste et en bas de la fiche, ouvre un e-mail au client du contrat.
+
+![La fenêtre Envoyer par e-mail pour le contrat de Résidence Les Tilleuls, avec À, Objet, le Message, la zone Joindre un fichier et l'Expéditeur, avec le bouton Envoyer](images/contract-mailen-fr.png "Écrire au client au sujet d'un contrat")
+
+- **À** — l'adresse e-mail du client (voir [Clients](klanten.fr.md)). Ses autres adresses figurent comme case à cocher
+  sous **Cc**.
+- **Objet** et **Message** — le texte d'e-mail *Suivi de contrat*, dans la langue du client, avec le numéro du contrat
+  complété. Vous réglez ce texte dans [Textes d'e-mail](beheer/mailteksten.fr.md) ; ici, vous écrivez ce que vous
+  voulez dire au client.
+- **Aucune pièce jointe** n'accompagne l'e-mail. Avec **Joindre un fichier**, vous en ajoutez une vous-même : 10 Mo au
+  maximum par fichier et 20 Mo au total.
+- En haut à droite, **Fiche client ↗** ouvre la fiche du client dans un nouvel onglet.
+
+Cliquez sur **Envoyer**. L'e-mail part réellement chez le client et figure ensuite dans l'onglet **E-mails** du
+contrat. Si le client n'a pas d'adresse e-mail, la fenêtre l'indique : saisissez vous-même une adresse.
+
+### Clôturer
+
+Quand c'est réglé, videz **Suivi le** avec la croix dans le champ, ou indiquez une nouvelle date, et cliquez sur
+**Enregistrer**. Envoyer un e-mail ne vide pas la date.
+
 ## Supprimer un contrat
 
 **Supprimer**, en bas de la fiche, place le contrat dans la [corbeille](beheer/prullenbak.fr.md). Si le contrat a
@@ -130,6 +179,9 @@ glisse au jour ouvrable suivant. Le cadre sur la fiche montre quel passage compt
 
 **Je veux suspendre temporairement un contrat.**
 Cochez **En pause**. Pour l'arrêter définitivement, indiquez une **Fin**.
+
+**Un chiffre figure à côté de Contrats dans le menu.**
+Autant de contrats ont une date de suivi atteinte. Dans la liste, choisissez *À suivre* sous **Suivi** pour les voir.
 
 **Je ne retrouve pas un contrat.**
 Cherchez sur le nom du client, la description ou le numéro de contrat. S'il n'y est vraiment plus, consultez la

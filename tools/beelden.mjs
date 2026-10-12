@@ -47,6 +47,11 @@ const SCHOTEN = [
   // Het dashboard (06/10/2026). Het merkteken is de uitleg ONDER de omzetgrafiek: die staat er pas als de grafieken geladen zijn —
   // de kaart erboven draagt haar titel ook tijdens het laden ("…"), en dan zou het beeld lege kaarten tonen.
   { naam: 'dashboard', route: '/', hoogte: 1180, verwacht: tekstTaal("Facturen min creditnota's", 'Factures moins notes de crédit') },
+  // Tweestapsverificatie (passkeys aan sinds 12/10/2026): het scherm in zijn BEGINSTAND. De ontwikkelbeheerder heeft ze uit; ze
+  // aanzetten voor een beeld zou zijn aanmelding wijzigen, dus de QR-code en de passkeys staan enkel in de tekst.
+  { naam: 'tweestapsverificatie', route: '/account/2fa',
+    verwacht: tekstTaal('Tweestapsverificatie staat uit', 'La vérification en deux étapes est désactivée'),
+    magKortZijn: 'het scherm telt in zijn beginstand een uitleg, een melding en één knop' },
   { naam: 'tarieven-lijst', route: '/beheer/tarieven', verwacht: tekstTaal('Nieuw tarief', 'Nouveau tarif') },
   { naam: 'tarieven-tonen', route: '/beheer/tarieven', verwacht: tekstTaal('Ook gearchiveerde tarieven', 'Aussi les tarifs archivés'),
     na: async p => { await p.getByText(tekstTaal('Actieve tarieven', 'Tarifs actifs')).first().click(); } },
@@ -432,6 +437,16 @@ const SCHOTEN = [
   // ⚠️ HOGER dan de standaard: op 900 viel de onderrand van het kader met de volgende beurten net weg (02/10/2026).
   { naam: 'contract-fiche', route: '/contracten', verwacht: tekstTaal('Volgende beurten', 'Prochains passages'), hoogte: 1000,
     na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant); } },
+  // Mailen vanuit de opvolging (12/10/2026): het mailvenster van een contract — ZONDER bijlage. NL: Sporthal De Ring, het contract
+  // waarvan de opvolgdatum bereikt is; FR: Résidence Les Tilleuls (Franse mailtekst). ⚠️ Het recept klikt NOOIT op Versturen.
+  { naam: 'contract-mailen', route: '/contracten', verwacht: tekstTaal('Mailen — Contract', 'Envoyer par e-mail — Contrat'),
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.contractLijst);
+      await p.getByText(tekstTaal('Volgende beurten', 'Prochains passages')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('button', { name: /^(Mailen…|Envoyer par e-mail…)$/ }).first().click();
+      await p.locator('#mailvenster-editor .dxbl-html-editor, #mailvenster-editor [contenteditable]').first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(800);
+    } },
   // ⚠️ Het merkteken is een KOLOMKOP van het raster: de tabtitel "Werkorders (7)" staat er al vóór het raster geladen is.
   { naam: 'contract-werkorders', route: '/contracten', verwacht: tekstTaal('Factuurnr', 'N° facture'),
     na: async (p, taal) => {
@@ -594,7 +609,9 @@ const SCHOTEN = [
   // Mailen (mailpakket, vrijgave 07/10/2026). NL: factuur 20260001 van Camping Zonnedal — de demo gaf die klant een FACTURATIEadres,
   // dus het venster toont Aan = facturatie en het hoofdadres als cc-vinkje; ze is al gemaild, dus eerst de vraag "Al verstuurd". FR:
   // 20260002 van Dubois Marie (Franse tekst, nog niet verstuurd). ⚠️ Het recept klikt NOOIT op Versturen.
-  { naam: 'factuur-mailen', route: '/facturen', verwacht: tekstTaal('Bijlage: factuur-', 'Pièce jointe : facture-'),
+  // ⚠️ HOGER dan de standaard (12/10/2026): onder de bijlage staat nu de werkbon van de werkorder om aan te vinken, en op 900 px
+  // viel de voet met Versturen dan onder de rand.
+  { naam: 'factuur-mailen', route: '/facturen', verwacht: tekstTaal('Bijlage: factuur-', 'Pièce jointe : facture-'), hoogte: 1040,
     na: async (p, taal) => {
       await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001');
       await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
@@ -609,7 +626,10 @@ const SCHOTEN = [
   // Peppol:OntwikkelDeelnemers (appsettings.Development.json), dus de ontwikkelgrendel zegt "op het netwerk" en simuleert de aflevering.
   // ⚠️ Het lijst-recept VERSTUURT (via de grendel — in Development vertrekt nooit iets): het venster-recept moet ervóór draaien, en na het
   // lijst-recept is 20260003 verstuurd. Vul de demo opnieuw vóór een tweede ronde.
-  { naam: 'factuur-peppol', route: '/facturen', verwacht: tekstTaal('Via Peppol naar', 'Par Peppol à'),
+  // ⚠️ vroeg: dit beeld wordt in BEIDE talen genomen vóór al de rest (12/10/2026). Tot dan nam de Franse ronde het pas NA het
+  // lijst-recept van de Nederlandse ronde: het Franse beeld toonde "Déjà envoyé" met enkel Annuler, onder een alt-tekst die van
+  // "le bouton Envoyer" sprak — en de alt-controle zweeg, want "Envoyer" staat ook in de titel van het venster.
+  { naam: 'factuur-peppol', route: '/facturen', verwacht: tekstTaal('Toch mailen…', 'Envoyer par e-mail quand même…'), vroeg: true,
     na: async p => {
       await openRij(p, '20260003');
       await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
@@ -1117,10 +1137,14 @@ if (!/Actieve tenant:\s*demo\b|Tenant actif\s*:\s*demo\b/i.test(actief)) {
 }
 
 const geschreven = [], mislukt = [], geweigerd = [], altMissers = [];
-for (const taal of ['nl-BE', 'fr-BE']) {
+// ⚠️ TWEE RONDES PER TAAL: eerst de recepten met `vroeg` (in beide talen), dan al de rest. Een vroeg recept toont een toestand die
+// een later recept VERBRUIKT — het Peppol-venster vóór het versturen, dat het lijst-recept daarna echt verstuurt (via de grendel).
+const RONDES = [true, false].flatMap(vroeg => ['nl-BE', 'fr-BE'].map(taal => ({ taal, schoten: SCHOTEN.filter(s => Boolean(s.vroeg) === vroeg) })));
+for (const { taal, schoten } of RONDES) {
+  if (schoten.length === 0 || (filter && !schoten.some(s => s.naam.includes(filter)))) continue;
   await page.goto(`${BASIS}/culture/set?c=${taal}`); await page.waitForLoadState('networkidle');
   const achter = taal.startsWith('fr') ? '-fr' : '';
-  for (const s of SCHOTEN) {
+  for (const s of schoten) {
     if (filter && !s.naam.includes(filter)) continue;
     const bestand = `${s.naam}${achter}`;
     try {

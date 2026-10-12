@@ -26,10 +26,10 @@ rappels.
 
     ---
 
-    Votre aperçu de la journée, et votre espace chez ADM-Concept pour les factures, les tickets et les notes de
-    version.
+    Votre aperçu de la journée, votre espace chez ADM-Concept pour les factures, les tickets et les notes de
+    version, et la sécurité de votre compte.
 
-    [Tableau de bord](dashboard.md) · [Portail client](klantenportaal.md)
+    [Tableau de bord](dashboard.md) · [Portail client](klantenportaal.md) · [Vérification en deux étapes](tweestapsverificatie.md)
 
 -   :material-account-group: **CRM**
 

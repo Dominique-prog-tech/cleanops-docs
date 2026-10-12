@@ -25,9 +25,10 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
 
     ---
 
-    Uw overzicht van de dag, en uw omgeving bij ADM-Concept voor facturen, tickets en release notes.
+    Uw overzicht van de dag, uw omgeving bij ADM-Concept voor facturen, tickets en release notes, en de beveiliging van
+    uw account.
 
-    [Dashboard](dashboard.md) · [Klantenportaal](klantenportaal.md)
+    [Dashboard](dashboard.md) · [Klantenportaal](klantenportaal.md) · [Tweestapsverificatie](tweestapsverificatie.md)
 
 -   :material-account-group: **CRM**
 

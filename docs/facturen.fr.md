@@ -126,11 +126,12 @@ Un numéro GLN dont le chiffre de contrôle est erroné ne compte pas ; CleanOps
 
 !!! warning "Tant que votre application précédente gère les factures"
     Pendant cette période, CleanOps n'envoie rien via Peppol : c'est votre application précédente qui le fait. Pour un client
-    Peppol, la fenêtre l'indique, et elle n'ouvre pas d'e-mail à la place.
+    Peppol, la fenêtre l'indique, et elle n'ouvre pas d'e-mail à la place. Avec **Envoyer par e-mail quand même…** dans cette
+    fenêtre, vous lui envoyez délibérément un e-mail en plus.
 
 #### Via Peppol
 
-![La fenêtre Envoyer par Peppol pour une facture de Hoeve Ter Beke, avec l'explication et le bouton Envoyer](images/factuur-peppol-fr.png "Envoyer par Peppol")
+![La fenêtre Envoyer par Peppol pour une facture de Hoeve Ter Beke, avec l'explication et les boutons Envoyer, Annuler et Envoyer par e-mail quand même](images/factuur-peppol-fr.png "Envoyer par Peppol")
 
 Si la facture a déjà été envoyée — par e-mail, par la poste ou par Peppol avec votre application précédente —, CleanOps demande
 d'abord si vous voulez quand même l'envoyer par Peppol. Si elle est déjà partie par Peppol avec l'application précédente, la
@@ -155,9 +156,14 @@ Une facture électronique qui n'a pas échoué ne repart pas sous le même numé
 note de crédit et une nouvelle facture. Toutes les factures électroniques et leur statut figurent dans
 [Envoyés via Peppol](verzonden-via-peppol.fr.md).
 
+**Envoyer par e-mail quand même…**, en bas de la fenêtre, envoie en plus un e-mail au client, par exemple pour joindre les
+pièces des ordres de travail : elles ne figurent pas dans la facture électronique. La fenêtre d'e-mail indique en haut que
+l'e-mail est un exemplaire supplémentaire et ne remplace pas la facture électronique. Une facture partie par Peppol reste
+marquée *Peppol* ; l'e-mail figure dans l'onglet **E-mails**.
+
 #### Par e-mail
 
-![La fenêtre Envoyer par e-mail pour une facture de Dubois Marie, avec en haut pourquoi ce n'est pas Peppol, et À, Cc, Cci, Objet, le Message, la Pièce jointe et l'Expéditeur, avec le bouton Envoyer](images/factuur-mailen-fr.png "Envoyer par e-mail")
+![La fenêtre Envoyer par e-mail pour une facture de Dubois Marie, avec en haut pourquoi ce n'est pas Peppol, et À, Cc, Cci, Objet, le Message, la Pièce jointe, le bon de travail signé de l'Ordre de travail 900139 à cocher et l'Expéditeur, avec le bouton Envoyer](images/factuur-mailen-fr.png "Envoyer par e-mail")
 
 - **À** — l'adresse e-mail de facturation du client, sinon son adresse e-mail habituelle (voir [Clients](klanten.fr.md)).
 - **Cc** — les autres adresses du client figurent comme case à cocher. En dessous, vous ajoutez d'autres adresses, séparées par
@@ -171,12 +177,17 @@ note de crédit et une nouvelle facture. Toutes les factures électroniques et l
 - **Attestations** — si la facture porte des ordres de travail avec une [attestation](attesten.fr.md), ces attestations
   figurent en dessous, à cocher. Aucune n'est cochée d'avance. Celles que vous cochez partent en PDF et sont ensuite
   **envoyées**. Une note de crédit ne propose pas d'attestations.
+- **Pièces jointes des ordres de travail** — si des fichiers sont attachés aux ordres de travail de la facture, par exemple
+  un bon de travail signé ou une photo (voir [Ordres de travail](werkorders.fr.md)), ils figurent en dessous par ordre de
+  travail, à cocher : le plus récent d'abord, avec la taille, la date et la description. Aucun n'est coché d'avance. Vous les
+  voyez si vous pouvez consulter les ordres de travail. Une note de crédit n'en propose pas. Si quelqu'un a supprimé entre-temps
+  un fichier coché, l'e-mail ne part pas et la fenêtre dit pourquoi.
 - **Joindre un fichier** — glissez votre propre fichier dans la zone ou cliquez dessus, par exemple un bon de commande ou une
   photo. 10 Mo maximum par fichier et 20 Mo pour toutes les pièces jointes ensemble ; un fichier trop grand est refusé tout
   de suite, avec la raison. La croix retire un fichier.
 
 Cliquez sur **Envoyer**. L'e-mail part réellement chez le client. La facture est ensuite marquée comme envoyée, avec *courriel*,
-et ne peut plus être rouverte.
+et ne peut plus être rouverte. Si elle était déjà partie par Peppol, elle reste marquée *Peppol*.
 
 Si le client n'a pas d'adresse e-mail, la fenêtre l'indique : saisissez vous-même une adresse. Si une donnée reste vide pour
 cette facture, par exemple l'échéance d'une ancienne facture, la fenêtre la nomme. Vérifiez alors cette phrase avant d'envoyer.

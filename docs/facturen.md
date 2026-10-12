@@ -118,11 +118,11 @@ ook de klantreferentie als bestelnummer en de betaaltermijn in woorden, bijvoorb
 
 !!! warning "Zolang uw vorige toepassing de facturen beheert"
     In die periode verstuurt CleanOps niets via Peppol: dat doet uw vorige toepassing. Bij een Peppol-klant zegt het venster dat,
-    en het opent geen mail in de plaats.
+    en het opent geen mail in de plaats. Met **Toch mailen…** in dat venster stuurt u hem bewust een mail erbij.
 
 #### Via Peppol
 
-![Het venster Via Peppol versturen voor een factuur van Hoeve Ter Beke, met de uitleg en de knop Versturen](images/factuur-peppol.png "Via Peppol versturen")
+![Het venster Via Peppol versturen voor een factuur van Hoeve Ter Beke, met de uitleg en de knoppen Versturen, Annuleren en Toch mailen](images/factuur-peppol.png "Via Peppol versturen")
 
 Is de factuur al verstuurd — per mail, per post of met uw vorige toepassing via Peppol —, dan vraagt CleanOps eerst of u ze
 toch via Peppol wilt versturen. Ging ze met de vorige toepassing al via Peppol, dan zegt de vraag ook dat die verzending niet
@@ -144,9 +144,13 @@ heropend worden. Rechts van *Peppol* staat of ze aankwam:
 Een e-factuur die niet mislukte, vertrekt niet nog eens met hetzelfde nummer: het venster zegt dat. Om te corrigeren maakt u
 een creditnota en een nieuwe factuur. Alle e-facturen en hun status staan in [Verzonden via Peppol](verzonden-via-peppol.md).
 
+**Toch mailen…** onderaan het venster stuurt de klant daarnaast een mail, bijvoorbeeld om de bijlagen van de werkorders mee
+te sturen: die zitten niet in de e-factuur. Het mailvenster zegt bovenaan dat de mail een extra exemplaar is en de e-factuur
+niet vervangt. Een factuur die via Peppol vertrok, blijft op *Peppol* staan; de mail staat in het tabblad **Mails**.
+
 #### Per mail
 
-![Het venster Mailen voor een factuur van Camping Zonnedal, met bovenaan waarom het geen Peppol is, en Aan, een vinkje voor het tweede adres onder Cc, Bcc, Onderwerp, het Bericht, de Bijlage en de Afzender, met de knop Versturen](images/factuur-mailen.png "Mailen")
+![Het venster Mailen voor een factuur van Camping Zonnedal, met bovenaan waarom het geen Peppol is, en Aan, een vinkje voor het tweede adres onder Cc, Bcc, Onderwerp, het Bericht, de Bijlage, de getekende werkbon van Werkorder 900119 om aan te vinken en de Afzender, met de knop Versturen](images/factuur-mailen.png "Mailen")
 
 - **Aan** — het e-mailadres voor facturen van de klant, anders zijn gewone e-mailadres (zie [Klanten](klanten.md)).
 - **Cc** — de andere adressen van de klant staan er als vinkje. Daaronder vult u nog andere adressen in, gescheiden door een
@@ -160,12 +164,17 @@ een creditnota en een nieuwe factuur. Alle e-facturen en hun status staan in [Ve
 - **Attesten** — draagt de factuur werkorders met een [attest](attesten.md), dan staan die attesten eronder om aan te vinken.
   Geen enkel staat vooraf aangevinkt. Wat u aanvinkt, gaat als PDF mee en staat daarna op **verzonden**. Een creditnota biedt
   geen attesten aan.
+- **Bijlagen van de werkorders** — hangen er bestanden aan de werkorders van de factuur, bijvoorbeeld een getekende werkbon
+  of een foto (zie [Werkorders](werkorders.md)), dan staan die per werkorder eronder om aan te vinken: de nieuwste eerst, met
+  de grootte, de datum en de omschrijving. Geen enkel staat vooraf aangevinkt. U ziet ze als u werkorders mag bekijken. Een
+  creditnota biedt er geen aan. Verwijderde iemand een aangevinkt bestand intussen, dan vertrekt de mail niet en zegt het
+  venster waarom.
 - **Bestand meesturen** — sleep een eigen bestand in het vak of klik erop, bijvoorbeeld een bestelbon of een foto. Hooguit 10 MB
   per bestand en 20 MB voor alle bijlagen samen; een te groot bestand weigert het venster meteen, met de reden. Met het kruisje
   haalt u een bestand weer weg.
 
 Klik op **Versturen**. De mail vertrekt echt naar de klant. Daarna staat de factuur op verstuurd, met *mail*, en kan ze niet
-meer heropend worden.
+meer heropend worden. Vertrok ze eerder via Peppol, dan blijft er *Peppol* staan.
 
 Heeft de klant geen e-mailadres, dan zegt het venster dat: vul zelf een adres in. Blijft een gegeven leeg voor deze factuur,
 bijvoorbeeld de vervaldag van een oude factuur, dan noemt het venster welk. Kijk die zin dan na vóór u verstuurt.

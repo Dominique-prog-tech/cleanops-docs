@@ -194,6 +194,7 @@ plugins:
             Openstaande posten: Postes ouverts
             Betalingen: Paiements
             Klantenportaal: Portail client
+            Tweestapsverificatie: Vérification en deux étapes
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
             Documentnummers: Numéros de documents
@@ -255,6 +256,7 @@ nav:
   - Aan de slag:
     - Dashboard: dashboard.md
     - Klantenportaal: klantenportaal.md
+    - Tweestapsverificatie: tweestapsverificatie.md
   - CRM:
     - Klanten: klanten.md
     - Medewerkers: medewerkers.md
