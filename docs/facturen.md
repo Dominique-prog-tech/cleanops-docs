@@ -195,6 +195,7 @@ Rechts bovenaan toont **Mails** wat er over deze factuur gemaild werd, ook de ra
 ![Het tabblad Mails van een factuur: de gemailde rappel en de gemailde factuur, elk met de status Afgeleverd, het onderwerp, Aan en Cc, de verstuurde PDF en Tekst tonen](images/factuur-mails.png "Mails")
 
 Een mail die de klant niet bereikte, staat op **Geweigerd** of **Spam**. Kijk dan het adres van de klant na en mail opnieuw.
+Alle mails die niet aankwamen, staan bijeen in [Niet-afgeleverde mails](niet-afgeleverde-mails.md).
 
 ### Verstuurd per post
 
@@ -295,5 +296,6 @@ creditnota het jaar met 9001 (20269001).
 - [Klanten](klanten.md)
 - [Mailteksten](beheer/mailteksten.md)
 - [Verzonden via Peppol](verzonden-via-peppol.md)
+- [Niet-afgeleverde mails](niet-afgeleverde-mails.md)
 - [Factuurteksten](beheer/factuurteksten.md)
 - [Bedrijfsfiche](beheer/bedrijfsfiche.md)

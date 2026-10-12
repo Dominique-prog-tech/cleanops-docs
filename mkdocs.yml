@@ -158,6 +158,7 @@ plugins:
             Facturatie: Facturation
             Facturen: Factures
             Verzonden via Peppol: Envoyés via Peppol
+            Niet-afgeleverde mails: Courriers non remis
             Personeel groeperen: Groupement du personnel
             CRM: CRM
             Werk: Travail
@@ -277,6 +278,7 @@ nav:
     - Facturatie: facturatie.md
     - Facturen: facturen.md
     - Verzonden via Peppol: verzonden-via-peppol.md
+    - Niet-afgeleverde mails: niet-afgeleverde-mails.md
     - Openstaande posten: openstaande-posten.md
     - Op te volgen memo's: op-te-volgen-memos.md
     - Betalingen: betalingen.md

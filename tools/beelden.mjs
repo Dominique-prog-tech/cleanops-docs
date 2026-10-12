@@ -708,6 +708,25 @@ const SCHOTEN = [
       await p.goto(new URL('/verzonden-via-peppol', p.url()).toString());
       await p.getByText(/^(Afgeleverd|Remis)$/).first().waitFor({ state: 'visible', timeout: 15000 });
     } },
+  // Niet-afgeleverde mails (vrijgave 12/10/2026). De demo zet vier voorbeeldmails in haar maillog (DemoDataGenerator +
+  // DevelopmentMailSamples: de ontwikkelgrendel antwoordt ervoor, want het ontwikkelplatform heeft bij ADM One geen mails): een
+  // creditnota (Geweigerd) en een offerte (Mislukt) van Nederlandstalige klanten, een cameraverslag (Spam) en een al afgevinkte
+  // factuur van Franstalige klanten. Eén lijst voor het hele bedrijf, dus in beide talen dezelfde rijen. Het merkteken is de
+  // creditnota: die staat er enkel met de voorbeelden. ⚠️ Geen enkel recept vinkt af.
+  { naam: 'niet-afgeleverde-mails-lijst', route: '/niet-afgeleverde-mails', verwacht: tekstTaal('Creditnota 2026', 'Note de crédit 2026'),
+    magKortZijn: 'de demo telt drie mails die nog op te volgen zijn' },
+  // Dezelfde lijst met het filter Gezien op "Gezien en niet gezien": de afgevinkte factuur staat er dan bij, met wie en wanneer.
+  // Het merkteken is die afvinkregel ("· Demo").
+  { naam: 'niet-afgeleverde-mails-gezien', route: '/niet-afgeleverde-mails', verwacht: /·\s*Demo/,
+    na: async (p, taal) => {
+      const fr = taal === 'fr-BE';
+      await p.getByText(tekstTaal('Creditnota 2026', 'Note de crédit 2026')).first().waitFor({ state: 'visible', timeout: 15000 });
+      // Het filter is een knop (adm-filter-btn) met haar keuzes als knoppen in een uitklaplijst (adm-menu-item) — geen <select>,
+      // dus geen rol "option" (12/10 gemeten: een klik op die rol wachtte dertig seconden op niets).
+      await p.locator('button.adm-filter-btn').filter({ hasText: fr ? /^\s*Vu\s*:/ : /^\s*Gezien\s*:/ }).first().click();
+      await p.locator('button.adm-menu-item').filter({ hasText: fr ? /^\s*Vu et pas encore vu\s*$/ : /^\s*Gezien en niet gezien\s*$/ }).first().click();
+    },
+    magKortZijn: 'de demo telt vier voorbeeldmails' },
   // Het tabblad Mails: de mail die de demo voor 20260001 in het logboek zette (afgeleverd, met de PDF). In beide talen dezelfde factuur —
   // de enige gemailde. Merkteken = de status, die staat er pas als het tabblad zijn lijst toont.
   { naam: 'factuur-mails', route: '/facturen', verwacht: tekstTaal('Afgeleverd', 'Remis'),

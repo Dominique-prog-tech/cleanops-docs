@@ -208,7 +208,7 @@ En haut à droite, **E-mails** montre ce qui a été envoyé par e-mail pour cet
 ![L'onglet E-mails d'une facture : le rappel envoyé et la facture envoyée, chacun avec le statut Remis, l'objet, À et Cc, le PDF envoyé et Afficher le texte](images/factuur-mails-fr.png "E-mails")
 
 Un e-mail qui n'a pas atteint le client porte le statut **Rejeté** ou **Indésirable**. Vérifiez alors l'adresse du client et renvoyez
-l'e-mail.
+l'e-mail. Tous les e-mails qui ne sont pas arrivés sont rassemblés dans [Courriers non remis](niet-afgeleverde-mails.fr.md).
 
 ### Envoyé par courrier
 
@@ -313,5 +313,6 @@ une note de crédit l'année suivie de 9001 (20269001).
 - [Clients](klanten.fr.md)
 - [Textes d'e-mail](beheer/mailteksten.fr.md)
 - [Envoyés via Peppol](verzonden-via-peppol.fr.md)
+- [Courriers non remis](niet-afgeleverde-mails.fr.md)
 - [Textes de facture](beheer/factuurteksten.fr.md)
 - [Fiche entreprise](beheer/bedrijfsfiche.fr.md)

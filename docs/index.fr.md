@@ -59,7 +59,8 @@ rappels.
     les rappels, et les paiements.
 
     [Devis](offertes.md) · [Facturation](facturatie.md) · [Factures](facturen.md) ·
-    [Envoyés via Peppol](verzonden-via-peppol.md) · [Postes ouverts](openstaande-posten.md) ·
+    [Envoyés via Peppol](verzonden-via-peppol.md) · [Courriers non remis](niet-afgeleverde-mails.md) ·
+    [Postes ouverts](openstaande-posten.md) ·
     [Mémos à suivre](op-te-volgen-memos.md) · [Paiements](betalingen.md)
 
 -   :material-cart-outline: **Achats**
