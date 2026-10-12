@@ -124,7 +124,7 @@ de lijst* erbij. Ze blijft staan tot u iemand anders kiest.
 | | Terugbellen, Teruggebeld | De klant wil gebeld worden; vink het tweede aan zodra dat gebeurd is. |
 | Uitvoering | Attest vereist, Attest gemaakt | Er hoort een attest bij dit werk. **Attest gemaakt** zet u niet zelf: het staat aan zodra de werkorder een attest heeft (zie [Attesten](#attesten) hieronder). Beide staan als label op de leveringsbon. |
 | | RWZI | Rioolwaterzuiveringsinstallatie. |
-| | Cameraverslag vereist | Er hoort een cameraverslag bij dit werk. |
+| | Cameraverslag vereist | Er hoort een cameraverslag bij dit werk. Op de regel **Cameraverslag** eronder kiest u een verslag van het uitvoeringsadres, maakt u er een, of maakt u de koppeling los (zie [Cameraverslagen](cameraverslagen.md#op-de-werkorder)). |
 
 ### De status
 

@@ -415,6 +415,60 @@ const SCHOTEN = [
       await p.locator('#mailvenster-editor .dxbl-html-editor, #mailvenster-editor [contenteditable]').first().waitFor({ timeout: 15000 });
       await p.waitForTimeout(800);
     } },
+  // Cameraverslagen (vrijgave 12/10/2026). De demo draagt bij de twee uitgewerkte werkorders een verslag met een foto, op het
+  // uitgewerkte adres en eraan gekoppeld, en bij elke voorbeeldklant een uitgevoerde camera-inspectie ZONDER verslag (het rode
+  // signaal). Per taal de eigen voorbeeldklant, zoals klant-adres. ⚠️ Geen enkel recept bewaart, koppelt of verstuurt: de
+  // vensters worden enkel GEOPEND.
+  { naam: 'klant-adres-cameraverslagen', route: '/klanten', verwacht: tekstTaal('Nieuw cameraverslag', 'Nouveau rapport caméra'),
+    na: async (p, taal) => { await openAdresCameraverslagen(p, taal); },
+    magKortZijn: 'een adres draagt een of enkele cameraverslagen' },
+  // Het merkteken is de knop Afdrukvoorbeeld: "Vaststellingen" staat ook als kolom op het tabblad waar we vandaan komen.
+  { naam: 'cameraverslag-fiche', route: '/klanten', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
+    na: async (p, taal) => { await openCameraverslag(p, taal); } },
+  // ⚠️ Wachten op het BEELD van de pagina in de kijker (zie factuur-afdruk): de foto staat IN het document.
+  { naam: 'cameraverslag-afdruk', route: '/klanten', verwacht: tekstTaal('Doorsturen per mail', 'Envoyer par courriel'),
+    na: async (p, taal) => {
+      await openCameraverslag(p, taal);
+      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu avant impression)$/ }).first().click();
+      await p.waitForFunction(() => {
+        const img = document.querySelector('img.dxbrv-report-preview-content-img');
+        return img && img.complete && img.naturalWidth > 0;
+      }, null, { timeout: 30000 });
+      await p.waitForTimeout(800);
+    } },
+  // Mailen: Aan = het hoofdadres van de klant; de foto staat vooraf aangevinkt onder "Ook meesturen". HOGER dan de standaard, zoals
+  // factuur-mailen: met de keuze eronder valt de voet anders onder de rand. ⚠️ Het recept klikt NOOIT op Versturen.
+  { naam: 'cameraverslag-mailen', route: '/klanten', verwacht: tekstTaal('Bijlage: cameraverslag-', 'Pièce jointe : rapport-camera-'), hoogte: 1040,
+    na: async (p, taal) => {
+      await openCameraverslag(p, taal);
+      await p.getByRole('button', { name: /^(Mailen…|Envoyer par e-mail…)$/ }).first().click();
+      await p.locator('#mailvenster-editor .dxbl-html-editor, #mailvenster-editor [contenteditable]').first().waitFor({ timeout: 15000 });
+      await p.waitForTimeout(800);
+    } },
+  // De regel Cameraverslag op de UITGEWERKTE werkorder: het gekoppelde verslag met de drie knoppen. Ze staat onder de vinkjes, dus
+  // ernaartoe schuiven (zoals werkorder-facturatie); het merkteken is de knop die er enkel met een gekoppeld verslag staat.
+  { naam: 'werkorder-cameraverslag', route: '/werkorders', verwacht: tekstTaal('Ontkoppelen', 'Détacher'),
+    na: async (p, taal) => {
+      await openWerkorder(p, taal === 'fr-BE' ? DEMO.werfFr : DEMO.werf);
+      await p.getByRole('button', { name: /^(Ontkoppelen|Détacher)$/ }).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.waitForTimeout(500);
+      await p.evaluate(() => [...document.querySelectorAll('button')].find(b => /^(Ontkoppelen|Détacher)$/.test(b.innerText.trim()))
+        ?.scrollIntoView({ block: 'center' }));
+    } },
+  // Het keuzevenster, op de camera-inspectie ZONDER verslag: het biedt het verslag van het uitgewerkte adres aan. Enkel geopend.
+  { naam: 'werkorder-cameraverslag-kiezen', route: '/werkorders', verwacht: tekstTaal('Een cameraverslag kiezen', 'Choisir un rapport caméra'),
+    na: async (p, taal) => {
+      await openWerkorder(p, taal === 'fr-BE' ? DEMO.cameraInspectieFr : DEMO.cameraInspectie);
+      await p.getByRole('button', { name: /^(Kiezen…|Choisir…)$/ }).first().click();
+    } },
+  // Het factuurvenster van de voorbeeldklant: de uitgewerkte werkorder met het groene "cameraverslag", de camera-inspectie met het
+  // rode "cameraverslag ontbreekt — maken" (het merkteken). ⚠️ Het recept klikt NOOIT op "Factuur boeken".
+  { naam: 'factureren-cameraverslag', route: '/facturatie',
+    verwacht: tekstTaal('cameraverslag ontbreekt — maken', "rapport caméra manquant — l'établir"),
+    na: async (p, taal) => {
+      await p.getByRole('row').filter({ hasText: taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant }).first()
+        .getByRole('button', { name: /^(Factureren…|Facturer…)$/ }).click();
+    } },
   // Een nieuwe werkorder begint op de klantfiche: de knop onderaan.
   { naam: 'werkorder-nieuw', route: '/klanten', verwacht: tekstTaal('Waar en wanneer', 'Où et quand'),
     na: async (p, taal) => {
@@ -1083,6 +1137,25 @@ async function openAttest(p, taal) {
   await kiesAttestKlant(p, taal);
   await p.getByRole('gridcell', { name: 'Slib septische put', exact: true }).first().dblclick();
   await p.waitForURL(/\/attesten\/[0-9a-f-]{36}/, { timeout: 15000 });
+}
+
+// Het tabblad Cameraverslagen van het uitgewerkte adres van de voorbeeldklant (per taal de eigen klant) — dezelfde weg als
+// klant-adres-werkorders. Wacht op de knop van het tabblad: de URL verandert niet bij het wisselen van tabblad.
+async function openAdresCameraverslagen(p, taal) {
+  const fr = taal === 'fr-BE';
+  await openRij(p, fr ? DEMO.klantFr : DEMO.klant);
+  await p.getByText(/^(Adressen|Adresses) \(/).first().click();
+  await p.getByRole('row').filter({ hasText: fr ? DEMO.klantAdresTelefoonFr : DEMO.klantAdresTelefoon }).first().dblclick();
+  await p.waitForURL(/\/adres\/[0-9a-f-]{36}$/, { timeout: 15000 });
+  await p.getByText(/^(Cameraverslagen|Rapports caméra) \(/).first().click();
+  await p.getByRole('button', { name: /^(Nieuw cameraverslag|Nouveau rapport caméra)$/ }).first().waitFor({ state: 'visible', timeout: 15000 });
+}
+
+// De fiche van het cameraverslag van dat adres: de rij is herkenbaar aan de eerste woorden van haar vaststellingen.
+async function openCameraverslag(p, taal) {
+  await openAdresCameraverslagen(p, taal);
+  await p.getByRole('row').filter({ hasText: taal === 'fr-BE' ? DEMO.cameraverslagFr : DEMO.cameraverslag }).first().dblclick();
+  await p.waitForURL(/\/cameraverslagen\/[0-9a-f-]{36}/, { timeout: 15000 });
 }
 
 async function openRij(p, tekst) {

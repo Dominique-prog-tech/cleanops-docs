@@ -43,11 +43,12 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
 
     ---
 
-    Van periodiek contract tot uitgevoerde opdracht: werkorders, de planning van de ploegen, werkbonnen en
-    verwerkingsattesten.
+    Van periodiek contract tot uitgevoerde opdracht: werkorders, de planning van de ploegen, werkbonnen,
+    verwerkingsattesten en cameraverslagen.
 
     [Werkorders](werkorders.md) · [Planning](planning.md) · [Ploegen](ploegen.md) ·
-    [Werkbonnen](werkbonnen.md) · [Contracten](contracten.md) · [Attesten](attesten.md)
+    [Werkbonnen](werkbonnen.md) · [Contracten](contracten.md) · [Attesten](attesten.md) ·
+    [Cameraverslagen](cameraverslagen.md)
 
 -   :material-cash-multiple: **Verkoop**
 

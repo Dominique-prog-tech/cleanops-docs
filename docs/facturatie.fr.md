@@ -50,7 +50,11 @@ Cliquez sur **Facturer…** à côté du client. La fenêtre affiche ses ordres 
   de travail sans montant ou sans code TVA ne peut pas être comptabilisé.
 - Cliquez sur **attestation manquante**, ou sur **attestation** en vert s'il y en a déjà une, pour ouvrir les
   [attestations](attesten.fr.md) de cet ordre de travail dans un nouvel onglet. Votre choix dans la fenêtre reste tel quel.
-- **rapport caméra requis** est une mention ; **contrat** ouvre le contrat dans un nouvel onglet.
+- Le **rapport caméra** figure en vert lorsqu'un rapport est lié à l'ordre de travail, et en rouge sous la forme **rapport caméra
+  manquant — l'établir** lorsque l'ordre de travail en demande un et n'en a pas. Un clic ouvre le rapport, ou un nouveau rapport
+  pour cet ordre de travail, dans un nouvel onglet (voir [Rapports caméra](cameraverslagen.fr.md#dans-la-facturation)). Vous
+  pouvez facturer sans.
+- **contrat** ouvre le contrat dans un nouvel onglet.
 - Cliquez sur le numéro pour ouvrir l'ordre de travail dans un nouvel onglet et le corriger.
 - Pour chaque ordre, vous voyez aussi le **code TVA**, la **quantité** et le **prix unitaire** (vides s'ils valent 0). Attention
   au 6 % : une attestation est alors requise.

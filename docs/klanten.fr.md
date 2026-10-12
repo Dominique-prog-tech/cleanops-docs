@@ -107,7 +107,8 @@ En dessous figure ce qui se passe, avant que vous confirmiez :
   le reprend pas ; activez-le vous-même si nécessaire.
 
 **Fusionner** place les autres adresses dans la [corbeille](beheer/prullenbak.fr.md). La modification figure dans
-l'historique de chaque contrat et de chaque ordre de travail qui a reçu une autre adresse.
+l'historique de chaque contrat et de chaque ordre de travail qui a reçu une autre adresse. Les
+[rapports caméra](cameraverslagen.fr.md) des autres adresses vont eux aussi à l'adresse qui reste.
 
 #### Déplacer des adresses vers un autre client
 
@@ -122,6 +123,7 @@ sur **choisir**. La fenêtre indique alors ce qui part et ce qui reste :
   facturation y appartient.
 - Si un ordre qui part porte un numéro de commande du client actuel, celui-ci reste en place. La fenêtre le signale,
   pour que vous puissiez le vérifier.
+- Les [rapports caméra](cameraverslagen.fr.md) de l'adresse la suivent : ils appartiennent à l'adresse.
 
 ![La fenêtre Déplacer des adresses vers un autre client : l'adresse de Résidence Les Tilleuls part chez un autre client, avec ce qui part et ce qui reste](images/klant-adres-verplaatsen-fr.png "Déplacer des adresses")
 
@@ -156,6 +158,12 @@ pour ouvrir la facture. L'onglet est visible pour qui peut
 ouvrir les ordres de travail.
 
 ![L'onglet Ordres de travail d'une adresse d'exécution de Résidence Les Tilleuls : les ordres à cette adresse, du plus récent au plus ancien, avec leurs instructions](images/klant-adres-werkorders-fr.png "Ordres de travail d'une adresse")
+
+#### L'onglet Rapports caméra d'une adresse
+
+L'onglet **Rapports caméra** montre les rapports des inspections caméra à cette adresse, du plus récent au plus ancien.
+Double-cliquez sur un rapport pour l'ouvrir ; **Nouveau rapport caméra** en établit un (voir
+[Rapports caméra](cameraverslagen.fr.md)). L'onglet est visible pour qui peut voir les ordres de travail.
 
 ### Ce qui est rattaché au client
 

@@ -34,6 +34,7 @@ En haut figure la date du jour. Tous les chiffres portent sur ce jour-là.
 | devis à suivre | les devis envoyés dont la date de suivi est aujourd'hui ou passée | les [devis](offertes.md) sur **À suivre** |
 | véhicules à contrôler | les véhicules dont le contrôle technique est échu ou tombe dans les 30 jours | les [véhicules](beheer/voertuigen.md) sur **À contrôler** |
 | postes fournisseurs échus | les documents d'achat dont l'échéance est passée et qui sont encore ouverts | les [postes ouverts fournisseurs](openstaande-posten-leveranciers.md) sur **Échus** |
+| rapports caméra à établir | les ordres de travail exécutés qui sont encore à facturer, qui demandent un [rapport caméra](cameraverslagen.md) et n'en ont pas | la [Facturation](facturatie.md), où le rapport manquant figure en rouge |
 
 Un **0** reste affiché : « rien à faire » est aussi une réponse.
 

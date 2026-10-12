@@ -47,7 +47,10 @@ Klik bij de klant op **Factureren…**. Het venster toont zijn te factureren wer
   zonder bedrag of btw-code kan niet geboekt worden.
 - Klik op **attest ontbreekt**, of op het groene **attest** als er al een is, om de [attesten](attesten.md) van die werkorder in
   een nieuw tabblad te openen. Uw keuze in het venster blijft staan.
-- **cameraverslag vereist** is een vermelding; **contract** opent het contract in een nieuw tabblad.
+- Het **cameraverslag** staat er in het groen als er een aan de werkorder hangt, en in het rood als **cameraverslag ontbreekt —
+  maken** wanneer de werkorder er een vraagt en er geen heeft. Een klik opent het verslag, of een nieuw verslag voor die
+  werkorder, in een nieuw tabblad (zie [Cameraverslagen](cameraverslagen.md#in-de-facturatie)). Factureren kan ook zonder.
+- **contract** opent het contract in een nieuw tabblad.
 - Klik op het nummer om de werkorder in een nieuw tabblad te openen en recht te zetten.
 - Per werkorder ziet u ook de **btw-code**, het **aantal** en de **eenheidsprijs** (leeg als ze 0 zijn). Let op 6 %: dan hoort er
   een attest bij.

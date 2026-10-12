@@ -45,6 +45,15 @@ export const DEMO = {
   // Hetzelfde in het Frans, voor de Franse beelden (DemoDataGenerator.VoorbeeldKlantFr).
   klantFr: 'Résidence Les Tilleuls',
   klantAdresTelefoonFr: '069 22 33 44',
+  // Cameraverslagen (vrijgave 12/10/2026). Het verslag van het uitgewerkte adres, herkenbaar aan de eerste woorden van zijn
+  // vaststellingen (DemoDataGenerator.VoorbeeldVaststellingen/Fr) — die staan in de lijst van het adres.
+  cameraverslag: 'Afvoer van de septische put',
+  cameraverslagFr: 'Canalisation inspectée',
+  // De uitgevoerde camera-inspectie ZONDER verslag bij elk van de twee voorbeeldklanten (VoorbeeldCameraInspectie/Fr): het rode
+  // signaal in de facturatie, en de werkorder waarop "Kiezen…" het verslag van het adres aanbiedt. De zoekbalk van Werkorders
+  // zoekt op de omschrijving, en elke omschrijving komt één keer voor.
+  cameraInspectie: 'Camera-inspectie na ontstopping',
+  cameraInspectieFr: 'Inspection caméra après débouchage',
   // De uitgewerkte demomedewerker (DemoDataGenerator.VoorbeeldMedewerker): werkt ma–do, vier verlofperiodes; en zijn Franstalige
   // tegenhanger voor de Franse beelden (VoorbeeldMedewerkerFr), met Franse verlofomschrijvingen.
   medewerker: 'Tom Verbeke',

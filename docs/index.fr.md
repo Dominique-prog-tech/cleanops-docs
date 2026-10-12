@@ -45,10 +45,11 @@ rappels.
     ---
 
     Du contrat périodique à la mission exécutée : les ordres de travail, le planning des équipes, les bons de
-    travail et les attestations de traitement.
+    travail, les attestations de traitement et les rapports caméra.
 
     [Ordres de travail](werkorders.md) · [Planning](planning.md) · [Équipes](ploegen.md) ·
-    [Bons de travail](werkbonnen.md) · [Contrats](contracten.md) · [Attestations](attesten.md)
+    [Bons de travail](werkbonnen.md) · [Contrats](contracten.md) · [Attestations](attesten.md) ·
+    [Rapports caméra](cameraverslagen.md)
 
 -   :material-cash-multiple: **Ventes**
 

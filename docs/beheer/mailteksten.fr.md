@@ -17,6 +17,8 @@ CleanOps utilise les textes lorsque vous envoyez par e-mail :
 - **Premier rappel**, **Deuxième rappel** et **Dernier rappel** — avec **Rappel par e-mail…** dans Postes ouverts, selon le
   degré du rappel (voir [Postes ouverts](../openstaande-posten.fr.md)) ;
 - **Attestation** — avec **Envoyer par e-mail…** sur une attestation de traitement (voir [Attestations](../attesten.fr.md)) ;
+- **Rapport caméra** — avec **Envoyer par e-mail…** sur un rapport caméra (voir
+  [Rapports caméra](../cameraverslagen.fr.md#envoyer-par-e-mail)) ;
 - **Suivi de contrat** — avec **Envoyer par e-mail…** sur un contrat (voir [Contrats](../contracten.fr.md#ecrire-au-client)).
   Aucun document n'accompagne cet e-mail.
 
@@ -28,7 +30,7 @@ Cliquez en bas du menu sur **Administration**, puis sur la tuile **Textes d'e-ma
 
 | Colonne | Ce que c'est |
 |---|---|
-| Type | le document auquel le texte sert : facture, note de crédit, devis, rappel de devis, rappel 1 à 3, attestation, suivi de contrat |
+| Type | le document auquel le texte sert : facture, note de crédit, devis, rappel de devis, rappel 1 à 3, attestation, rapport caméra, suivi de contrat |
 | Objet | l'objet de l'e-mail, dans la langue de l'écran |
 | Nederlands, Français | **texte propre** si vous avez enregistré un texte propre pour cette langue, sinon **texte standard** |
 | Expéditeur | l'adresse depuis laquelle l'e-mail part — voir [Expéditeurs](mailafzenders.fr.md) |
@@ -75,6 +77,9 @@ de crédit :
     Un montant est inséré sans devise. Écrivez donc « {{document.total}} € » ou « {{document.total}} euros ».
     Pour une note de crédit, le montant figure sans signe moins : la phrase indique déjà qu'il s'agit d'une note de
     crédit.
+
+Pour **Rapport caméra**, il existe `{{document.date}}` (la date du rapport) et `{{site.address}}` (l'adresse d'exécution), en
+plus des variables du client, de votre entreprise, de l'expéditeur et de la date du jour.
 
 Pour **Suivi de contrat**, `{{document.number}}` est le numéro du contrat, et il existe `{{contract.description}}` (la
 description du contrat) et `{{site.address}}` (l'adresse d'exécution), en plus des variables du client, de votre entreprise,

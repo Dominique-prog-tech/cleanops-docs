@@ -16,6 +16,7 @@ CleanOps gebruikt de teksten wanneer u mailt:
 - **Eerste**, **Tweede** en **Derde herinnering** — met **Rappel mailen…** op Openstaande posten, volgens de graad van de rappel
   (zie [Openstaande posten](../openstaande-posten.md));
 - **Attest** — met **Mailen…** op een verwerkingsattest (zie [Attesten](../attesten.md));
+- **Cameraverslag** — met **Mailen…** op een cameraverslag (zie [Cameraverslagen](../cameraverslagen.md#mailen));
 - **Opvolging contract** — met **Mailen…** op een contract (zie [Contracten](../contracten.md#de-klant-mailen)). Bij deze
   mail gaat geen document mee.
 
@@ -27,7 +28,7 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Mailteks
 
 | Kolom | Wat het is |
 |---|---|
-| Soort | het document waarvoor de tekst dient: factuur, creditnota, offerte, offerteherinnering, rappel 1 tot 3, attest, opvolging contract |
+| Soort | het document waarvoor de tekst dient: factuur, creditnota, offerte, offerteherinnering, rappel 1 tot 3, attest, cameraverslag, opvolging contract |
 | Onderwerp | het onderwerp van de mail, in de taal van het scherm |
 | Nederlands, Français | **eigen tekst** als u voor die taal een eigen tekst bewaarde, anders **standaardtekst** |
 | Afzender | het adres waarvan de mail vertrekt — zie [Mailafzenders](mailafzenders.md) |
@@ -72,6 +73,9 @@ kopiëren. Bij het mailen vult CleanOps ze in met de gegevens van het document. 
 !!! tip "Zet de munt zelf in de zin"
     Een bedrag komt zonder munt in de mail. Schrijf dus "€ {{document.total}}" of "{{document.total}} euro".
     Bij een creditnota staat het bedrag zonder minteken: de zin zegt al dat het om een creditnota gaat.
+
+Bij **Cameraverslag** zijn er `{{document.date}}` (de datum van het verslag) en `{{site.address}}` (het uitvoeringsadres),
+naast de variabelen van de klant, uw bedrijf, de verzender en de datum van vandaag.
 
 Bij **Opvolging contract** is `{{document.number}}` het contractnummer, en zijn er `{{contract.description}}` (de
 omschrijving van het contract) en `{{site.address}}` (het uitvoeringsadres), naast de variabelen van de klant, uw bedrijf,

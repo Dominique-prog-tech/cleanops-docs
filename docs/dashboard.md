@@ -33,6 +33,7 @@ Bovenaan staat de datum van vandaag. Alle cijfers gaan over die dag.
 | offertes op te volgen | de verstuurde offertes waarvan de opvolgdatum vandaag is of voorbij | de [offertes](offertes.md) op **Op te volgen** |
 | voertuigen te keuren | de voertuigen waarvan de keuring verlopen is of binnen 30 dagen valt | de [voertuigen](beheer/voertuigen.md) op **Te keuren** |
 | vervallen posten leveranciers | de aankoopdocumenten waarvan de vervaldag voorbij is en die nog open staan | de [openstaande posten leveranciers](openstaande-posten-leveranciers.md) op **Vervallen** |
+| cameraverslagen te maken | de uitgevoerde werkorders die nog te factureren zijn, een [cameraverslag](cameraverslagen.md) vragen en er geen hebben | [Facturatie](facturatie.md), waar het ontbrekende verslag in het rood staat |
 
 Een **0** blijft staan: ook "niets te doen" is een antwoord.
 

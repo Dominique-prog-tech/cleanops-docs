@@ -131,7 +131,7 @@ Si l'ordre porte le code d'un collaborateur qui n'est plus dans la liste, vous v
 | | Rappeler, Rappelé | Le client souhaite être appelé ; cochez la seconde case une fois que c'est fait. |
 | Exécution | Attestation requise, Attestation établie | Une attestation accompagne ce travail. Vous ne cochez pas **Attestation établie** vous-même : elle est cochée dès que l'ordre de travail a une attestation (voir [Attestations](#attestations) plus bas). Les deux figurent comme étiquette sur le bon de livraison. |
 | | Station d'épuration | Le travail concerne une station d'épuration. |
-| | Rapport caméra requis | Un rapport caméra accompagne ce travail. |
+| | Rapport caméra requis | Un rapport caméra accompagne ce travail. Sur la ligne **Rapport caméra** en dessous, vous choisissez un rapport de l'adresse d'exécution, vous en établissez un, ou vous défaites le lien (voir [Rapports caméra](cameraverslagen.fr.md#sur-lordre-de-travail)). |
 
 ### Le statut
 

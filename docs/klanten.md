@@ -104,7 +104,8 @@ Daaronder staat wat er gebeurt, vóór u bevestigt:
   neemt dat niet over; zet het zelf aan als het moet.
 
 Met **Samenvoegen** gaan de andere adressen naar de [prullenbak](beheer/prullenbak.md). De wijziging staat in het
-logboek van elk contract en elke werkorder die een ander adres kreeg.
+logboek van elk contract en elke werkorder die een ander adres kreeg. Ook de [cameraverslagen](cameraverslagen.md) van de
+andere adressen gaan naar het adres dat blijft.
 
 #### Adressen naar een andere klant verplaatsen
 
@@ -119,6 +120,7 @@ meegaat en wat blijft:
   facturatie.
 - Draagt een meegaande werkorder een bestelnummer van de huidige klant, dan blijft dat staan. Het venster waarschuwt
   ervoor, zodat u het kunt nakijken.
+- De [cameraverslagen](cameraverslagen.md) van het adres gaan mee: ze horen bij het adres.
 
 ![Het venster Adressen naar een andere klant verplaatsen: het adres van Tuincentrum De Linde gaat naar een andere klant, met wat meegaat en wat blijft](images/klant-adres-verplaatsen.png "Adressen verplaatsen")
 
@@ -151,6 +153,12 @@ factuur te openen. Het tabblad staat er voor wie
 de werkorders mag openen.
 
 ![Het tabblad Werkorders van een uitvoeringsadres van Tuincentrum De Linde: de werkorders op dat adres, de nieuwste eerst, met hun instructies](images/klant-adres-werkorders.png "Werkorders van een adres")
+
+#### Het tabblad Cameraverslagen van een adres
+
+Het tabblad **Cameraverslagen** toont de verslagen van de camera-inspecties op dat adres, de nieuwste eerst.
+Dubbelklik op een verslag om het te openen; **Nieuw cameraverslag** maakt er een (zie
+[Cameraverslagen](cameraverslagen.md)). Het tabblad staat er voor wie de werkorders mag bekijken.
 
 ### Wat aan de klant hangt
 

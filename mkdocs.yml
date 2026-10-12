@@ -179,6 +179,7 @@ plugins:
             Verlofsaldi: Soldes de congés
             Verlofkalender: Agenda des congés   # de menunaam van de app sinds 04/10/2026
             Attesten: Attestations
+            Cameraverslagen: Rapports caméra
             Producten: Produits
             Producten (attesten): Produits (attestations)
             Verwerkingen: Traitements
@@ -270,6 +271,7 @@ nav:
     - Werkbonnen: werkbonnen.md
     - Contracten: contracten.md
     - Attesten: attesten.md
+    - Cameraverslagen: cameraverslagen.md
   - Verkoop:
     - Offertes: offertes.md
     - Facturatie: facturatie.md
