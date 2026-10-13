@@ -19,7 +19,7 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Dagboeke
 |---|---|
 | Code | de korte sleutel die op facturen en betalingen staat, bijvoorbeeld `VERK` of `KBC` |
 | Omschrijving | waarvoor het dagboek dient, bijvoorbeeld *Zichtrekening KBC* |
-| Soort | Verkoop, Aankoop, Financieel of Divers |
+| Soort | Verkoop, Aankoop, Financieel of Diversen |
 
 Het dagboek van de facturatie draagt het label **standaard verkoop**. Een dagboek dat u zelf in CleanOps aangemaakt
 hebt, draagt het label **eigen**; de andere komen uit uw vorige toepassing.
@@ -31,7 +31,7 @@ hebt, draagt het label **eigen**; de andere komen uit uw vorige toepassing.
 | **Financieel** | uw bankrekeningen en de kas — én de dagboeken waarmee u vereffent zonder geld te ontvangen, zoals een creditnota tegen een factuur afpunten of een onbetaalde factuur afboeken. Een betaling boekt u altijd op een financieel dagboek. |
 | **Verkoop** | uw facturen en creditnota's |
 | **Aankoop** | de facturen van uw leveranciers |
-| **Divers** | al de rest |
+| **Diversen** | al de rest |
 
 ## Een dagboek toevoegen of wijzigen
 
