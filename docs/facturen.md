@@ -47,6 +47,10 @@ dan ziet u waarom; het gaat de volgende ochtend opnieuw mee.
 
 Staat de export uit, of maakt uw vorige toepassing de facturen nog, dan zegt het venster dat en verstuurt het niets.
 
+Loopt er op dat moment al een verzending — die van elke ochtend, of een collega die net op **Versturen** klikte — dan zegt het
+venster dat ook en verstuurt het niets: zo krijgt uw boekhoudkantoor geen document twee keer. Open het venster enkele minuten
+later opnieuw om te zien wat er vertrok.
+
 ## Een nieuwe factuur
 
 Met **Nieuwe factuur** maakt u een factuur voor iets dat geen werkorder heeft, bijvoorbeeld een verplaatsing of een

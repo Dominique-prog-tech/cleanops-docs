@@ -47,6 +47,10 @@ Eenmaal verstuurd staat het document **in boekhouding** en ligt het vast (zie [W
 Lukt een document niet, dan ziet u waarom; het gaat de volgende ochtend opnieuw mee. Staat de export uit, of is uw vorige
 toepassing nog in gebruik, dan zegt het venster dat en verstuurt het niets.
 
+Loopt er op dat moment al een verzending — die van elke ochtend, of een collega die net op **Versturen** klikte — dan zegt het
+venster dat ook en verstuurt het niets: zo krijgt uw boekhoudkantoor geen document twee keer. Open het venster enkele minuten
+later opnieuw om te zien wat er vertrok.
+
 ## Een nieuwe aankoopfactuur
 
 Klik op **Nieuwe aankoopfactuur**. Het dagboek, de soort *Factuur* en de boekingsdatum van vandaag staan al ingevuld.

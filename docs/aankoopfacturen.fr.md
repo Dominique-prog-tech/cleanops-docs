@@ -47,6 +47,10 @@ Une fois envoyé, le document est **en comptabilité** et figé (voir [Modifier 
 document échoue, vous voyez pourquoi ; il repart le lendemain matin. Si l'envoi est désactivé, ou si votre application
 précédente est encore en service, la fenêtre le dit et n'envoie rien.
 
+Si un envoi est déjà en cours à ce moment-là — celui de chaque matin, ou un collègue qui vient de cliquer sur **Envoyer** — la
+fenêtre le dit aussi et n'envoie rien : votre bureau comptable ne reçoit ainsi aucun document en double. Rouvrez la fenêtre
+quelques minutes plus tard pour voir ce qui est parti.
+
 ## Une nouvelle facture d'achat
 
 Cliquez sur **Nouvelle facture d'achat**. Le journal, le type *Facture* et la date de comptabilisation du jour sont

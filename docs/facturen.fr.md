@@ -50,6 +50,10 @@ sur **Envoyer**. Si un document échoue, vous voyez pourquoi ; il repart le lend
 
 Si l'envoi est désactivé, ou si votre application précédente établit encore les factures, la fenêtre le dit et n'envoie rien.
 
+Si un envoi est déjà en cours à ce moment-là — celui de chaque matin, ou un collègue qui vient de cliquer sur **Envoyer** — la
+fenêtre le dit aussi et n'envoie rien : votre bureau comptable ne reçoit ainsi aucun document en double. Rouvrez la fenêtre
+quelques minutes plus tard pour voir ce qui est parti.
+
 ## Une nouvelle facture
 
 Avec **Nouvelle facture**, vous établissez une facture pour quelque chose qui n'a pas d'ordre de travail, par exemple un
