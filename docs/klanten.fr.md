@@ -245,3 +245,9 @@ et enregistrez à nouveau.
 **Je ne retrouve pas un client.**
 Cherchez sur une partie du nom, la rue, le code postal ou le numéro de téléphone. Si le client n'y est vraiment
 plus, consultez la [corbeille](beheer/prullenbak.fr.md).
+
+**Je reçois le message « quelqu'un d'autre a aussi modifié … entre-temps ».**
+Un collègue a enregistré le même champ pendant que votre fiche était ouverte. Aucune de vos modifications n'a été enregistrée.
+Rouvrez la fiche : vous y voyez ce qui s'y trouve maintenant et pouvez saisir à nouveau votre modification. Si votre collègue
+a modifié un autre champ que vous, vous ne recevez pas ce message : les deux modifications sont conservées.
+L'adresse (rue, numéro, code postal, commune, pays) compte ici comme un seul champ.

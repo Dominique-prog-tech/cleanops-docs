@@ -190,6 +190,13 @@ La numérotation recommence chaque année, comme dans l'application précédente
 **Je ne vois pas de bouton Créer un ordre de travail.**
 Il faut pour cela le droit de modifier les ordres de travail.
 
+**Je reçois le message « quelqu'un d'autre a aussi modifié … entre-temps ».**
+Un collègue a enregistré le même champ pendant que votre fiche était ouverte. Aucune de vos modifications n'a été enregistrée.
+Rouvrez la fiche : vous y voyez ce qui s'y trouve maintenant et pouvez saisir à nouveau votre modification. Si votre collègue
+a modifié un autre champ que vous, vous ne recevez pas ce message : les deux modifications sont conservées.
+Les lignes d'un devis comptent comme un tout : si vous et un collègue avez tous deux modifié les lignes, celui qui enregistre en
+second reçoit ce message.
+
 ## Voir aussi
 
 - [Clients](klanten.fr.md)

@@ -123,3 +123,9 @@ in de lijst te staan.
 **Waar staat het oude rekeningnummer uit mijn vorige pakket?**
 In het veld IBAN. Een Belgisch rekeningnummer van 12 cijfers is bij de overname omgerekend naar zijn IBAN: dat is
 hetzelfde nummer, met BE en twee controlecijfers ervoor.
+
+**Ik krijg de melding "iemand anders heeft … intussen ook gewijzigd".**
+Een collega bewaarde hetzelfde veld terwijl uw fiche openstond. Van uw wijzigingen is niets bewaard. Open de fiche opnieuw: u
+ziet dan wat er nu staat en kunt uw wijziging opnieuw ingeven. Wijzigde uw collega een ánder veld dan u, dan krijgt u deze
+melding niet: beide wijzigingen blijven staan.
+Het adres telt daarbij als één veld, en IBAN en BIC samen ook.

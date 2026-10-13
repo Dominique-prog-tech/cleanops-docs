@@ -186,6 +186,13 @@ De nummering begint elk jaar opnieuw, zoals in de vorige toepassing. Het jaar ko
 **Ik zie geen knop Werkorder maken.**
 Daarvoor is het recht om werkorders te bewerken nodig.
 
+**Ik krijg de melding "iemand anders heeft … intussen ook gewijzigd".**
+Een collega bewaarde hetzelfde veld terwijl uw fiche openstond. Van uw wijzigingen is niets bewaard. Open de fiche opnieuw: u
+ziet dan wat er nu staat en kunt uw wijziging opnieuw ingeven. Wijzigde uw collega een ánder veld dan u, dan krijgt u deze
+melding niet: beide wijzigingen blijven staan.
+De lijnen van een offerte tellen als één geheel: wijzigden u en een collega allebei de lijnen, dan krijgt wie als tweede bewaart
+deze melding.
+
 ## Zie ook
 
 - [Klanten](klanten.md)

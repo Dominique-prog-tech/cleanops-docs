@@ -238,3 +238,9 @@ en sla opnieuw op.
 **Ik vind een klant niet terug.**
 Zoek op een deel van de naam, de straat, de postcode of het telefoonnummer. Staat de klant er echt niet meer,
 kijk dan in de [prullenbak](beheer/prullenbak.md).
+
+**Ik krijg de melding "iemand anders heeft … intussen ook gewijzigd".**
+Een collega bewaarde hetzelfde veld terwijl uw fiche openstond. Van uw wijzigingen is niets bewaard. Open de fiche opnieuw: u
+ziet dan wat er nu staat en kunt uw wijziging opnieuw ingeven. Wijzigde uw collega een ánder veld dan u, dan krijgt u deze
+melding niet: beide wijzigingen blijven staan.
+Het adres (straat, nummer, postcode, gemeente, land) telt daarbij als één veld.

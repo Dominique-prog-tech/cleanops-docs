@@ -293,6 +293,10 @@ Het voorschot is al afgetrokken op een saldofactuur. Crediteer eerst die saldofa
 Facturen en creditnota's hebben elk hun reeks per boekjaar: een factuur krijgt het jaar met 0001 erachter (20260001), een
 creditnota het jaar met 9001 (20269001).
 
+**Bij het heropenen krijg ik de melding "iemand anders heeft deze factuur intussen gewijzigd".**
+Een collega heropende en boekte dezelfde factuur terwijl uw scherm openstond. Uw wijzigingen zijn niet geboekt. Open de factuur
+opnieuw om te zien wat er nu op staat.
+
 ## Zie ook
 
 - [Facturatie](facturatie.md)

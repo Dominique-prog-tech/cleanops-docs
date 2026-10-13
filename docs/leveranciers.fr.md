@@ -123,3 +123,9 @@ qu'une seule fois dans la liste.
 **Où se trouve l'ancien numéro de compte de mon logiciel précédent ?**
 Dans le champ IBAN. Un numéro de compte belge de 12 chiffres a été converti lors de la reprise en son IBAN : c'est
 le même numéro, précédé de BE et de deux chiffres de contrôle.
+
+**Je reçois le message « quelqu'un d'autre a aussi modifié … entre-temps ».**
+Un collègue a enregistré le même champ pendant que votre fiche était ouverte. Aucune de vos modifications n'a été enregistrée.
+Rouvrez la fiche : vous y voyez ce qui s'y trouve maintenant et pouvez saisir à nouveau votre modification. Si votre collègue
+a modifié un autre champ que vous, vous ne recevez pas ce message : les deux modifications sont conservées.
+L'adresse compte ici comme un seul champ, tout comme l'IBAN et le BIC ensemble.

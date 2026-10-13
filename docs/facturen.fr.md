@@ -310,6 +310,10 @@ ouvert.
 Les factures et les notes de crédit ont chacune leur série par exercice : une facture reçoit l'année suivie de 0001 (20260001),
 une note de crédit l'année suivie de 9001 (20269001).
 
+**À la réouverture, je reçois le message « quelqu'un d'autre a modifié cette facture entre-temps ».**
+Un collègue a rouvert et comptabilisé la même facture pendant que votre écran était ouvert. Vos modifications ne sont pas
+comptabilisées. Rouvrez la facture pour voir ce qu'elle contient maintenant.
+
 ## Voir aussi
 
 - [Facturation](facturatie.fr.md)
