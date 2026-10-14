@@ -219,6 +219,7 @@ plugins:
             Betalingsvoorwaarden: Conditions de paiement
             Btw-codes: Codes TVA
             Eenheden: Unités
+            Betaalwijzen: Modes de paiement
             Facturatiecodes: Codes de facturation
             Landcodes: Codes pays
             Postcodes: Codes postaux
@@ -305,6 +306,7 @@ nav:
       - Rekeningplan: beheer/rekeningplan.md
       - Documentnummers: beheer/documentnummers.md
       - Betalingstermijnen: beheer/betalingstermijnen.md
+      - Betaalwijzen: beheer/betaalwijzen.md
       - Factuurteksten: beheer/factuurteksten.md
       - Mailteksten: beheer/mailteksten.md
       - Mailafzenders: beheer/mailafzenders.md

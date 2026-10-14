@@ -17,7 +17,7 @@ Klik links in het menu, onder **Verkoop**, op **Facturatie**. U ziet het met de 
 ## Wat er te factureren is
 
 De lijst toont per klant de werkorders met de status **Te factureren**: werk met een uitvoeringsdatum dat nog niet op een factuur
-staat. Contant betaald werk staat er niet in, want dat is al betaald.
+staat. Werk met het vinkje **Contant betaald, niet factureren** staat er niet in. Werk met een betaalwijze (ook *Cash*) wél.
 
 | Kolom | Wat erin staat |
 |---|---|
@@ -70,6 +70,18 @@ zegt het venster dat bovenaan en wordt er niets geboekt.
   verleggingsvermelding op de afdruk.
 - De werkorders gaan op **Gefactureerd**, met het factuurnummer erbij.
 
+### Per betaalwijze een factuur
+
+Dragen de aangevinkte werkorders verschillende [betaalwijzen](beheer/betaalwijzen.md), dan maakt CleanOps **per betaalwijze een
+factuur**. Het venster toont de betaalwijze per werkorder en zegt vooraf hoeveel facturen het worden; de knop heet dan
+**Facturen boeken**. Na het boeken ziet u de nummers in een melding.
+
+- De factuur vermeldt haar betaalwijze.
+- Is de betaalwijze **ter plaatse betaald**, dan boekt CleanOps meteen de betaling op het dagboek van die betaalwijze. De factuur
+  staat betaald, vraagt geen overschrijving en komt niet in de rappels. Op de afdruk en de e-factuur staat **Betaald via …**.
+- Heeft een betaalwijze ter plaatse geen geldig dagboek, dan wordt er **niets** geboekt, ook de andere facturen niet.
+- Met een voorschot kan er maar één betaalwijze zijn: de aftrek hoort op één factuur.
+
 Is het nettototaal negatief, dan wordt het document een **creditnota**. Het venster zegt dat vooraf: de zin onder de lijst
 spreekt van de creditnota en de knop heet **Creditnota boeken**. Staan er werkorders met een positief én een negatief bedrag
 aangevinkt, dan meldt het venster dat ze op één document verrekend worden; wilt u een aparte creditnota, vink dan de negatieve uit
@@ -87,7 +99,7 @@ creditnota wordt en het voorschot opgebruikt is. Ook de bevestiging noemt de aft
 ## Veelgestelde vragen
 
 **Een werkorder staat niet in de lijst.**
-Ze heeft niet de status Te factureren, ze is contant betaald, of ze werd ná de datum Factureren tot en met uitgevoerd.
+Ze heeft niet de status Te factureren, ze draagt het vinkje Contant betaald, niet factureren, of ze werd ná de datum Factureren tot en met uitgevoerd.
 
 **De boeking wordt geweigerd.**
 CleanOps zegt waarom: een werkorder zonder bedrag of btw-code, een onbekende betalingstermijn op de klantfiche, of een werkorder die

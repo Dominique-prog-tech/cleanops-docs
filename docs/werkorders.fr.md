@@ -157,7 +157,8 @@ En bas de la fiche figure ce qui sera facturé.
 | Quantité, Unité, Prix unitaire | Ce qui est facturé. Une correction se fait avec une quantité négative. |
 | Montant | Quantité × prix unitaire, calculé par CleanOps. Le saisir à la main n'est possible que si la quantité et le prix unitaire sont tous deux à zéro, par exemple pour un forfait. |
 | Code TVA | Le code TVA de l'ordre. |
-| Payé en espèces | Le client a payé sur place. L'ordre ne passe alors pas en facturation. |
+| Mode de paiement | Comment le client paie : Payconiq, espèces, ultérieurement … (voir [Modes de paiement](beheer/betaalwijzen.fr.md)). L'ordre est facturé ; si le mode est payé sur place, la facture est directement payée. |
+| Payé en espèces, sans facture | Vient de votre application précédente : le client a payé en espèces et l'ordre ne passe **pas** en facturation. Différent du mode de paiement *Espèces*. |
 | Commentaire facture | Un texte qui figure sur la facture pour cet ordre. |
 
 À l'enregistrement, CleanOps refuse deux choses : une unité sans quantité, et un prix unitaire négatif.

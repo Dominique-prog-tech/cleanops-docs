@@ -19,7 +19,7 @@ l'a.
 ## Ce qu'il y a à facturer
 
 La liste affiche par client les ordres de travail au statut **À facturer** : du travail avec une date d'exécution qui ne figure
-pas encore sur une facture. Le travail payé au comptant n'y figure pas, car il est déjà payé.
+pas encore sur une facture. Le travail coché **Payé en espèces, sans facture** n'y figure pas. Le travail avec un mode de paiement (même *Espèces*) bien.
 
 | Colonne | Contenu |
 |---|---|
@@ -75,6 +75,18 @@ comptabilisé.
   À **0 %**, la mention d'autoliquidation figure sur l'impression.
 - Les ordres de travail passent à **Facturé**, avec le numéro de facture.
 
+### Une facture par mode de paiement
+
+Si les ordres cochés portent des [modes de paiement](beheer/betaalwijzen.fr.md) différents, CleanOps établit **une facture par mode
+de paiement**. La fenêtre montre le mode par ordre et indique d'avance combien de factures il y aura ; le bouton s'appelle alors
+**Comptabiliser les factures**. Après la comptabilisation, un message donne les numéros.
+
+- La facture mentionne son mode de paiement.
+- Si le mode est **payé sur place**, CleanOps enregistre directement le paiement dans le journal de ce mode. La facture est payée,
+  ne demande pas de virement et n'arrive pas dans les rappels. L'impression et la facture électronique indiquent **Payé via …**.
+- Si un mode payé sur place n'a pas de journal valable, **rien** n'est comptabilisé, pas non plus les autres factures.
+- Avec un acompte, un seul mode de paiement est possible : la déduction figure sur une seule facture.
+
 Si le total net est négatif, le document devient une **note de crédit**. La fenêtre le dit d'avance : la phrase sous la liste
 parle de la note de crédit et le bouton s'appelle **Comptabiliser la note de crédit**. Si des ordres avec un montant positif et
 négatif sont cochés, la fenêtre signale qu'ils sont compensés sur un seul document ; pour une note de crédit séparée, décochez
@@ -92,7 +104,7 @@ indique que la facture de solde devient une note de crédit et que l'acompte est
 ## Questions fréquentes
 
 **Un ordre de travail ne figure pas dans la liste.**
-Il n'a pas le statut À facturer, il a été payé au comptant, ou il a été exécuté après la date Facturer jusqu'au.
+Il n'a pas le statut À facturer, il porte la case Payé en espèces, sans facture, ou il a été exécuté après la date Facturer jusqu'au.
 
 **La comptabilisation est refusée.**
 CleanOps dit pourquoi : un ordre de travail sans montant ou sans code TVA, un délai de paiement inconnu sur la fiche client, ou

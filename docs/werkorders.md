@@ -150,7 +150,8 @@ Onderaan de fiche staat wat er gefactureerd wordt.
 | Aantal, Eenheid, Eenheidsprijs | Wat er gefactureerd wordt. Een correctie boekt u met een negatief aantal. |
 | Bedrag | Aantal × eenheidsprijs, door CleanOps gerekend. Met de hand invullen kan enkel als aantal en eenheidsprijs allebei nul zijn, bijvoorbeeld voor een forfait. |
 | Btw-code | De btw-code van de werkorder. |
-| Contant betaald | De klant betaalde ter plaatse. De werkorder gaat dan niet naar de facturatie. |
+| Betaalwijze | Hoe de klant betaalt: Payconiq, cash, achteraf … (zie [Betaalwijzen](beheer/betaalwijzen.md)). De werkorder wordt gefactureerd; is de betaalwijze ter plaatse betaald, dan staat de factuur meteen betaald. |
+| Contant betaald, niet factureren | Uit uw vorige toepassing: de klant betaalde contant en de werkorder gaat **niet** naar de facturatie. Iets anders dan de betaalwijze *Cash*. |
 | Factuuropmerking | Een tekst die op de factuur bij deze werkorder komt. |
 
 Bij het bewaren weigert CleanOps twee dingen: een eenheid zonder aantal, en een negatieve eenheidsprijs.
