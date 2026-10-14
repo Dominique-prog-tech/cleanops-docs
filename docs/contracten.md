@@ -17,7 +17,7 @@ Klik links in het menu, onder **Werk**, op **Contracten**.
 ## De lijst
 
 Per contract ziet u de klant, het contractnummer, **Opvolgen op**, het type contract, de omschrijving, de datum
-**Vanaf**, de **Einddatum**, de **Periodiciteit**, de **Laatste keer** en de gemeente. Staat een contract on hold, dan
+**Vanaf**, de **Einddatum**, de **Periodiciteit**, de **Laatste keer**, de **Uitvoerder** en de gemeente. Staat een contract on hold, dan
 staat er **on hold** naast de klant. De lijst staat op klantnaam. De **Contractdatum**, de notitie **Opvolging** en
 **On hold** zet u erbij met de kolomkiezer.
 
@@ -25,6 +25,8 @@ staat er **on hold** naast de klant. De lijst staat op klantnaam. De **Contractd
   vet. Houd de muis erboven om de notitie te lezen. Zie [Een contract opvolgen](#een-contract-opvolgen).
 - **Opvolging** — de filter bovenaan. Kies *Op te volgen* om enkel de contracten te zien waarvan de opvolgdatum bereikt
   is.
+- **Uitvoerder** — de filter ernaast. Kies een medewerker om enkel zijn contracten te zien, of *Niet toegewezen* voor
+  de contracten waarvan de werkorders zonder uitvoerder binnenkomen.
 - **Mailen…** — opent een mail aan de klant van het contract dat u aanklikte. U ziet de knop als u contracten mag
   bewerken.
 - **Laatste keer** — de geplande datum van de laatste werkorder van het contract.
@@ -68,6 +70,8 @@ tabbladen: **Contract**, **Werkorders**, **Logboek** en **Mails**.
 | Opmerkingen (komen op elke werkbon) | Een vaste tekst voor elke werkorder uit dit contract, zoals *sleutel aan het onthaal vragen*. Ze wordt de instructie voor de ploeg, en haar eerste 35 tekens de omschrijving van de werkorder. |
 | Btw-code, Tarief | Komen op de werkorders van dit contract. De lijst Tarief toont de tarieven in de taal van de klant. |
 | Frequentie | Het ritme — zie hieronder. |
+| Tijdsdeel | Het deel van de dag waarin de werkorders van dit contract op het planbord komen. Leeg: *Anders*, zoals voordien. |
+| Uitvoerder | De medewerker die de werkorders van dit contract krijgt: ze komen meteen in zijn rij op het planbord. Leeg: niet toegewezen. Heeft hij verlof op de dag van een beurt, dan krijgt hij ze toch — het verlof staat in hetzelfde vak op het planbord. Is hij niet meer actief, dan zegt de fiche dat en komen nieuwe werkorders zonder uitvoerder binnen. |
 
 ### Het ritme
 
@@ -99,12 +103,20 @@ Zo rekent CleanOps de beurten:
     Kan CleanOps de feestdagen even niet ophalen, dan zegt het kader dat de datums enkel met de sluitingsdagen
     rekening houden. Kijk later opnieuw.
 
+### Als u de uitvoerder of het tijdsdeel wijzigt
+
+Wijzigt u de uitvoerder of het tijdsdeel van een contract, dan vraagt CleanOps na het bewaren of de komende
+werkorders mee moeten: **Aanpassen** of **Laten staan**. Dat geldt enkel voor werkorders van vandaag of later die nog
+niet uitgevoerd of gefactureerd zijn, en die nog de oude uitvoerder of het oude tijdsdeel hebben. Gaf iemand een
+werkorder aan een andere medewerker, dan houdt die ze; verplaatste iemand ze naar een ander tijdsdeel, dan blijft dat
+tijdsdeel. Wijzigde u ook het ritme, dan volgt daarna de vraag over het ritme.
+
 ### Als u het ritme wijzigt
 
 Wijzigt u het ritme van een contract dat al werkorders voor de komende tijd heeft, dan vraagt CleanOps na het
 bewaren of die opnieuw berekend moeten worden: **Opnieuw berekenen** of **Laten staan**. Enkel de werkorders die
-niemand aanraakte, komen daarvoor in aanmerking. Een werkorder die uitgevoerd, ingepland of aangepast is, blijft
-altijd staan.
+niemand aanraakte, komen daarvoor in aanmerking. Een werkorder die uitgevoerd is, of die iemand inplande of aanpaste,
+blijft altijd staan. Een werkorder die het contract zelf aan zijn uitvoerder gaf, wordt wel opnieuw berekend.
 
 ### Het tabblad Werkorders
 

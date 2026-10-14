@@ -18,13 +18,15 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Contrats**.
 ## La liste
 
 Pour chaque contrat, vous voyez le client, le numéro du contrat, **Suivi le**, le type de contrat, la
-description, la date **À partir du**, la **Date de fin**, la **Périodicité**, la **Dernière fois** et la commune. Si un
+description, la date **À partir du**, la **Date de fin**, la **Périodicité**, la **Dernière fois**, l'**Exécutant** et la commune. Si un
 contrat est en pause, **en pause** figure à côté du client. La liste est triée par nom de client. La **Date du contrat**,
 la note **Suivi** et **En pause** s'ajoutent avec le sélecteur de colonnes.
 
 - **Suivi le** — la date à laquelle vous voulez revenir sur le contrat. Une fois ce jour atteint, la date s'affiche en
   rouge et en gras. Passez la souris dessus pour lire la note. Voir [Suivre un contrat](#suivre-un-contrat).
 - **Suivi** — le filtre en haut. Choisissez *À suivre* pour ne voir que les contrats dont la date de suivi est atteinte.
+- **Exécutant** — le filtre à côté. Choisissez un collaborateur pour ne voir que ses contrats, ou *Non attribué* pour
+  les contrats dont les ordres de travail arrivent sans exécutant.
 - **Envoyer par e-mail…** — ouvre un e-mail au client du contrat sélectionné. Vous voyez le bouton si vous pouvez
   modifier les contrats.
 - **Dernière fois** — la date planifiée du dernier ordre de travail du contrat.
@@ -68,6 +70,8 @@ onglets : **Contrat**, **Ordres de travail**, **Historique** et **E-mails**.
 | Remarques (sur chaque bon de travail) | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 35 premiers caractères la description de l'ordre. |
 | Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. |
 | Fréquence | Le rythme — voir ci-dessous. |
+| Partie de la journée | La partie de la journée où les ordres de travail de ce contrat arrivent sur le planning. Vide : *Autre*, comme avant. |
+| Exécutant | Le collaborateur qui reçoit les ordres de travail de ce contrat : ils arrivent directement dans sa ligne du planning. Vide : non attribué. S'il est en congé le jour d'un passage, il le reçoit quand même — le congé figure dans la même case du planning. S'il n'est plus actif, la fiche le signale et les nouveaux ordres arrivent sans exécutant. |
 
 ### Le rythme
 
@@ -99,11 +103,20 @@ Voici comment CleanOps calcule les passages :
     Si CleanOps ne peut momentanément pas récupérer les jours fériés, le cadre indique que les dates ne tiennent
     compte que des jours de fermeture. Réessayez plus tard.
 
+### Si vous modifiez l'exécutant ou la partie de la journée
+
+Si vous modifiez l'exécutant ou la partie de la journée d'un contrat, CleanOps demande après l'enregistrement si les
+ordres de travail à venir doivent suivre : **Adapter** ou **Laisser**. Cela ne vaut que pour les ordres d'aujourd'hui
+ou plus tard, pas encore exécutés ni facturés, qui ont encore l'ancien exécutant ou l'ancienne partie de la journée.
+Si quelqu'un a confié un ordre à un autre collaborateur, celui-ci le garde ; si quelqu'un l'a déplacé vers une autre
+partie de la journée, celle-ci reste. Si vous avez aussi modifié le rythme, la question sur le rythme suit.
+
 ### Si vous modifiez le rythme
 
 Si vous modifiez le rythme d'un contrat qui a déjà des ordres de travail pour les prochains temps, CleanOps demande
 après l'enregistrement s'il faut les recalculer : **Recalculer** ou **Laisser**. Seuls les ordres auxquels personne
-n'a touché entrent en ligne de compte. Un ordre exécuté, planifié ou modifié reste toujours.
+n'a touché entrent en ligne de compte. Un ordre exécuté, ou que quelqu'un a planifié ou modifié, reste toujours. Un
+ordre que le contrat a lui-même confié à son exécutant est bien recalculé.
 
 ### L'onglet Ordres de travail
 
