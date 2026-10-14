@@ -91,7 +91,7 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
 [Producten (attesten)](beheer/attest-producten.md) · [Verwerkingen](beheer/verwerkingen.md) ·
 [Verwerkingsbedrijven](beheer/verwerkingsbedrijven.md) · [Dagboeken](beheer/dagboeken.md) ·
 [Rekeningplan](beheer/rekeningplan.md) · [Documentnummers](beheer/documentnummers.md) ·
-[Betalingstermijnen](beheer/betalingstermijnen.md) · [Factuurteksten](beheer/factuurteksten.md) ·
+[Betalingstermijnen](beheer/betalingstermijnen.md) · [Betaalwijzen](beheer/betaalwijzen.md) · [Factuurteksten](beheer/factuurteksten.md) ·
 [Mailteksten](beheer/mailteksten.md) · [Mailafzenders](beheer/mailafzenders.md) ·
 [Feestdagen](beheer/feestdagen.md) · [Voertuigen](beheer/voertuigen.md)
 

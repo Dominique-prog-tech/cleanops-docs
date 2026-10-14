@@ -93,7 +93,7 @@ rappels.
 [Produits (attestations)](beheer/attest-producten.md) · [Traitements](beheer/verwerkingen.md) ·
 [Entreprises de traitement](beheer/verwerkingsbedrijven.md) · [Journaux](beheer/dagboeken.md) ·
 [Plan comptable](beheer/rekeningplan.md) · [Numéros de documents](beheer/documentnummers.md) ·
-[Conditions de paiement](beheer/betalingstermijnen.md) · [Textes de facture](beheer/factuurteksten.md) ·
+[Conditions de paiement](beheer/betalingstermijnen.md) · [Modes de paiement](beheer/betaalwijzen.md) · [Textes de facture](beheer/factuurteksten.md) ·
 [Textes d'e-mail](beheer/mailteksten.md) · [Expéditeurs](beheer/mailafzenders.md) ·
 [Jours fériés](beheer/feestdagen.md) · [Véhicules](beheer/voertuigen.md)
 
