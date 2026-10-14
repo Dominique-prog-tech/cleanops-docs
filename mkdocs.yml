@@ -195,6 +195,7 @@ plugins:
             Rappelbeheer: Gestion des rappels
             Openstaande posten: Postes ouverts
             Betalingen: Paiements
+            Per betaalwijze: Par mode de paiement
             Klantenportaal: Portail client
             Tweestapsverificatie: Vérification en deux étapes
             "Op te volgen memo's": "Mémos à suivre"
@@ -283,6 +284,7 @@ nav:
     - Openstaande posten: openstaande-posten.md
     - Op te volgen memo's: op-te-volgen-memos.md
     - Betalingen: betalingen.md
+    - Per betaalwijze: betalingen-per-betaalwijze.md
   - Aankoop:
     - Binnengekomen documenten: binnengekomen-documenten.md
     - Aankoopfacturen: aankoopfacturen.md

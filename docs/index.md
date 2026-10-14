@@ -60,7 +60,7 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
     [Offertes](offertes.md) · [Facturatie](facturatie.md) · [Facturen](facturen.md) ·
     [Verzonden via Peppol](verzonden-via-peppol.md) · [Niet-afgeleverde mails](niet-afgeleverde-mails.md) ·
     [Openstaande posten](openstaande-posten.md) ·
-    [Op te volgen memo's](op-te-volgen-memos.md) · [Betalingen](betalingen.md)
+    [Op te volgen memo's](op-te-volgen-memos.md) · [Betalingen](betalingen.md) · [Per betaalwijze](betalingen-per-betaalwijze.md)
 
 -   :material-cart-outline: **Aankoop**
 
