@@ -196,6 +196,7 @@ plugins:
             Openstaande posten: Postes ouverts
             Betalingen: Paiements
             Per betaalwijze: Par mode de paiement
+            Omzet per medewerker en voertuig: CA par collaborateur et véhicule
             Klantenportaal: Portail client
             Tweestapsverificatie: Vérification en deux étapes
             "Op te volgen memo's": "Mémos à suivre"
@@ -285,6 +286,7 @@ nav:
     - Op te volgen memo's: op-te-volgen-memos.md
     - Betalingen: betalingen.md
     - Per betaalwijze: betalingen-per-betaalwijze.md
+    - Omzet per medewerker en voertuig: omzet-per-medewerker-en-voertuig.md
   - Aankoop:
     - Binnengekomen documenten: binnengekomen-documenten.md
     - Aankoopfacturen: aankoopfacturen.md
