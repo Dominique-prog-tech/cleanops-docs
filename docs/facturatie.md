@@ -96,6 +96,21 @@ CleanOps het voorschot af en wordt de factuur een **saldofactuur**. Het vinkje s
 dekt, en uit bij een kleiner werk. Zet u het toch aan terwijl het voorschot groter is, dan zegt het venster dat de saldofactuur een
 creditnota wordt en het voorschot opgebruikt is. Ook de bevestiging noemt de aftrek.
 
+### Een voorschot op een offerte
+
+Op een **aanvaarde** offerte maakt u een voorschot met **Voorschotfactuur** — zie [Offertes](offertes.md#de-andere-knoppen). Vul
+een **percentage** of een **bedrag** zonder btw in; het venster toont meteen hoe CleanOps het verdeelt over de btw-tarieven van de
+offerte. Zo klopt de btw: heeft de offerte lijnen aan 21 % en aan 6 %, dan krijgt het voorschot een lijn per tarief, in dezelfde
+verhouding. Per offerte staat er hoogstens één voorschot open.
+
+Welk voorschot het keuzevenster voorstelt:
+
+- Komt het gekozen werk uit een offerte met een open voorschot, dan **dat** voorschot.
+- Anders een voorschot dat u op de klantfiche maakte, zonder offerte.
+- Een voorschot van een **andere** offerte stelt CleanOps nooit voor.
+
+De aftrek op de saldofactuur gebeurt per btw-tarief, zoals het voorschot betaald werd.
+
 ## Veelgestelde vragen
 
 **Een werkorder staat niet in de lijst.**

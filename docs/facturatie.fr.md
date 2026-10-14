@@ -101,6 +101,21 @@ CleanOps déduit l'acompte et la facture devient une **facture de solde**. La ca
 l'acompte, et décochée pour un travail plus petit. Si vous la cochez quand même alors que l'acompte est plus élevé, la fenêtre
 indique que la facture de solde devient une note de crédit et que l'acompte est épuisé. La confirmation mentionne aussi la déduction.
 
+### Un acompte sur un devis
+
+Sur un devis **accepté**, vous établissez un acompte avec **Facture d'acompte** — voir [Devis](offertes.fr.md#les-autres-boutons).
+Indiquez un **pourcentage** ou un **montant** hors TVA ; la fenêtre montre aussitôt comment CleanOps le répartit sur les taux de
+TVA du devis. La TVA est ainsi correcte : si le devis a des lignes à 21 % et à 6 %, l'acompte reçoit une ligne par taux, dans la
+même proportion. Il ne peut y avoir qu'un acompte ouvert par devis.
+
+L'acompte que propose la fenêtre de choix :
+
+- Si le travail choisi provient d'un devis avec un acompte ouvert, **cet** acompte-là.
+- Sinon un acompte établi sur la fiche client, sans devis.
+- CleanOps ne propose jamais l'acompte d'un **autre** devis.
+
+La déduction sur la facture de solde se fait par taux de TVA, comme l'acompte a été payé.
+
 ## Questions fréquentes
 
 **Un ordre de travail ne figure pas dans la liste.**
