@@ -30,6 +30,8 @@ exécuté disparaît du planning.
   plus actif ou qui est pensionné n'a une ligne que si du travail est planifié pour lui cette semaine-là.
 - **La couleur** — le nom du collaborateur apparaît dans sa couleur de planning. Vous la choisissez sur la
   [fiche collaborateur](medewerkers.fr.md#longlet-fiche).
+- **Le véhicule** — si le collaborateur a un véhicule fixe, sa plaque figure sous son nom. Vous le choisissez aussi
+  sur la fiche collaborateur.
 - **Sans date** — à gauche se trouve le travail qui n'a pas encore de date planifiée, avec leur nombre.
 
 ### Un ordre de travail sur le tableau

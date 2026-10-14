@@ -99,7 +99,7 @@ ontkoppelen, en een gefactureerde werkorder koppelt u niet meer.
 | Veld | Toelichting |
 |---|---|
 | Status | Volgt uit de datums, u kiest hem niet zelf. Zie [de status](#de-status). |
-| Medewerker, Bijrijder, Voertuig | Wie het werk doet, wie meerijdt en met welk voertuig. Als bijrijder kiest u uit de medewerkers die daarvoor aangeduid zijn. Is de medewerker afwezig op de geplande dag, dan staat er een melding onder zijn naam. |
+| Medewerker, Bijrijder, Voertuig | Wie het werk doet, wie meerijdt en met welk voertuig. Als bijrijder kiest u uit de medewerkers die daarvoor aangeduid zijn. Is de medewerker afwezig op de geplande dag, dan staat er een melding onder zijn naam. Kiest u een medewerker met een vast voertuig, dan komt dat voertuig erop als het vak leeg was of nog het voertuig van de vorige medewerker droeg; een voertuig dat u zelf koos, blijft staan. Hetzelfde gebeurt op het planbord en bij de werkorders van een contract. |
 | Uit te voeren | Verzet u deze datum, dan schuift **Gepland** mee — zolang de werkorder niet uitgevoerd is. |
 | Gepland, Uitgevoerd | De dag waarop het werk gepland staat en de dag waarop het gedaan is. Verzet u **Gepland** naar een dag die al voorbij is, dan vraagt CleanOps bij **Bewaren** eerst *Toch bewaren?*. |
 | Tijdsdeel | Eerste werk, Voormiddag, Namiddag, Volledige dag of Anders. Bij **Anders** verschijnt een uurafspraak: *vóór*, *tussen* of *na* een uur. Het tijdsdeel bepaalt de [volgorde in de planning](planning.md#de-volgorde-in-een-dag). |

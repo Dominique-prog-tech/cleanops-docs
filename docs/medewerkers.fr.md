@@ -76,6 +76,7 @@ est permis.
 | Date d'entrée en service | Le premier jour de travail. Avant ce jour, le collaborateur n'est pas compté lors de la composition des équipes. |
 | Chauffeur, Convoyeur | Le rôle lors d'une mission. Une personne peut être les deux. |
 | Exclure du comptage d'équipe | Le collaborateur n'est pas compté dans les totaux des [Équipes](ploegen.fr.md#lapercu) (Planifiés, Disponibles, Libre (régime)). Il peut quand même faire partie d'une équipe. |
+| Véhicule | Le véhicule fixe du collaborateur. Quand un ordre de travail reçoit ce collaborateur, son véhicule y figure automatiquement — voir [Ordres de travail](werkorders.fr.md). Sur le planning, la plaque figure sous son nom. Un véhicule mis hors service n'arrive plus sur du nouveau travail. |
 | Priorité | Détermine l'ordre : plus elle est élevée, plus la personne figure haut, dans cette liste et partout où vous choisissez un collaborateur. Vos chauffeurs habituels se retrouvent ainsi en tête. |
 | Pas dans les listes de choix | Pour un emplacement comme *En attente* : une ligne du planning qui n'est pas une personne. |
 | Régime de travail | Les jours où la personne travaille, avec à côté le pourcentage d'une semaine à temps plein. Les congés ne comptent que ces jours-là. |

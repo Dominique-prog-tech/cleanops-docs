@@ -28,6 +28,8 @@ werkorder verdwijnt van de planning.
   pensioen is, krijgt enkel een rij als er die week werk voor hem gepland staat.
 - **De kleur** — de naam van de medewerker staat in zijn kleur in de planning. Die kiest u op de
   [medewerkerfiche](medewerkers.md#het-tabblad-fiche).
+- **Het voertuig** — heeft de medewerker een vast voertuig, dan staat het kenteken onder zijn naam. Ook dat kiest u op
+  de medewerkerfiche.
 - **Zonder datum** — links staat het werk dat nog geen geplande datum heeft, met het aantal erbij.
 
 ### Een werkorder op het bord
