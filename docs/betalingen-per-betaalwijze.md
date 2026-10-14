@@ -18,7 +18,8 @@ Klik in het menu onder **Verkoop** op **Per betaalwijze**.
 Bovenaan kiest u de **periode**: deze week, vorige week, deze maand, vorige maand of dit jaar. Een week loopt van maandag tot
 zondag. Met **Betaalwijze** toont u er één, bijvoorbeeld enkel Payconiq. Naast de keuzes staan de datums van de periode.
 
-Onder de werkbalk staan de **totalen per betaalwijze**: hoeveel werkorders en welk bedrag inclusief btw. Die leggen u naast het
+Onder de werkbalk staan de **totalen per betaalwijze**: hoeveel werkorders en wat er geïnd is — het *bedrag uit het veld* als het
+er is, anders het bedrag inclusief btw. Die leggen u naast het
 Payconiq-overzicht of de kas.
 
 ## De lijst
@@ -30,6 +31,7 @@ Payconiq-overzicht of de kas.
 | Klant | de klant van de werkorder |
 | Betaalwijze | Payconiq, cash, achteraf … |
 | Excl. btw / Btw / Incl. btw | het bedrag van de werkorder, en met btw. Kent CleanOps de btw-code niet, dan blijft *Incl. btw* leeg. |
+| Uit het veld | wat de klant ter plaatse betaalde, zoals op de werkorder genoteerd |
 | Factuur | het factuurnummer; een klik opent de factuur |
 | Stand | **Niet gefactureerd**, **Open** of **Betaald** |
 

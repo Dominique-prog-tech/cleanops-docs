@@ -18,7 +18,8 @@ Dans le menu, sous **Ventes**, cliquez sur **Par mode de paiement**.
 En haut, vous choisissez la **période** : cette semaine, la semaine passée, ce mois-ci, le mois passé ou cette année. Une semaine
 va du lundi au dimanche. **Mode** n'affiche qu'un mode, par exemple uniquement Payconiq. Les dates de la période figurent à côté.
 
-Sous la barre d'outils figurent les **totaux par mode de paiement** : combien d'ordres et quel montant TVAC. Comparez-les au
+Sous la barre d'outils figurent les **totaux par mode de paiement** : combien d'ordres et ce qui a été encaissé — le *montant du
+terrain* s'il existe, sinon le montant TVAC. Comparez-les au
 relevé Payconiq ou à la caisse.
 
 ## La liste
@@ -30,6 +31,7 @@ relevé Payconiq ou à la caisse.
 | Client | le client de l'ordre |
 | Mode de paiement | Payconiq, espèces, ultérieurement … |
 | HTVA / TVA / TVAC | le montant de l'ordre, et avec la TVA. Si CleanOps ne connaît pas le code TVA, *TVAC* reste vide. |
+| Terrain | ce que le client a payé sur place, tel que noté sur l'ordre de travail |
 | Facture | le numéro de facture ; un clic ouvre la facture |
 | État | **Non facturé**, **Ouvert** ou **Payé** |
 

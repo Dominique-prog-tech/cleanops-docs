@@ -158,6 +158,7 @@ En bas de la fiche figure ce qui sera facturé.
 | Montant | Quantité × prix unitaire, calculé par CleanOps. Le saisir à la main n'est possible que si la quantité et le prix unitaire sont tous deux à zéro, par exemple pour un forfait. |
 | Code TVA | Le code TVA de l'ordre. |
 | Mode de paiement | Comment le client paie : Payconiq, espèces, ultérieurement … (voir [Modes de paiement](beheer/betaalwijzen.fr.md)). L'ordre est facturé ; si le mode est payé sur place, la facture est directement payée. |
+| Montant du terrain (TVAC) | Ce que le client a payé sur place, tel que le chauffeur le note. Il n'est **pas** facturé automatiquement : **Reprendre** le convertit en quantité × un nouveau prix unitaire (HTVA, avec le code TVA de l'ordre) ; la quantité reste, sans quantité elle devient 1. S'il reste un cent de différence dû à l'arrondi du prix unitaire, la fiche l'indique. Enregistrez ensuite. Même après la facturation, vous pouvez corriger le montant ; le reprendre n'est alors plus possible. |
 | Payé en espèces, sans facture | Vient de votre application précédente : le client a payé en espèces et l'ordre ne passe **pas** en facturation. Différent du mode de paiement *Espèces*. |
 | Commentaire facture | Un texte qui figure sur la facture pour cet ordre. |
 

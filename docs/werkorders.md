@@ -151,6 +151,7 @@ Onderaan de fiche staat wat er gefactureerd wordt.
 | Bedrag | Aantal × eenheidsprijs, door CleanOps gerekend. Met de hand invullen kan enkel als aantal en eenheidsprijs allebei nul zijn, bijvoorbeeld voor een forfait. |
 | Btw-code | De btw-code van de werkorder. |
 | Betaalwijze | Hoe de klant betaalt: Payconiq, cash, achteraf … (zie [Betaalwijzen](beheer/betaalwijzen.md)). De werkorder wordt gefactureerd; is de betaalwijze ter plaatse betaald, dan staat de factuur meteen betaald. |
+| Bedrag uit het veld (incl. btw) | Wat de klant ter plaatse betaalde, zoals de chauffeur het noteert. Het wordt **niet** vanzelf gefactureerd: met **Overnemen** zet CleanOps het om naar het aantal × een nieuwe eenheidsprijs (excl. btw, met de btw-code van de werkorder); het aantal blijft staan, zonder aantal wordt het 1. Blijft er door de afronding van de eenheidsprijs een cent verschil, dan zegt de fiche dat. Bewaar daarna. Ook na de facturatie kunt u het bedrag nog verbeteren; overnemen kan dan niet meer. |
 | Contant betaald, niet factureren | Uit uw vorige toepassing: de klant betaalde contant en de werkorder gaat **niet** naar de facturatie. Iets anders dan de betaalwijze *Cash*. |
 | Factuuropmerking | Een tekst die op de factuur bij deze werkorder komt. |
 

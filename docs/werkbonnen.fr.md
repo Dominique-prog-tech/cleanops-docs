@@ -43,6 +43,7 @@ Les bons sont classés par chauffeur, puis par jour, et dans la journée dans le
 | Travail | La description du travail, les instructions et le matériel de l'ordre de travail. |
 | Étiquettes | *appeler d'abord* (tant que le client n'a pas été rappelé), *attestation requise*, *gros travaux*, *rapport caméra*, *station d'épuration*, le véhicule et le convoyeur. |
 | Début, Fin, Notes | Des cases que le chauffeur remplit à la main. Si l'heure de début ou de fin figure déjà sur l'ordre de travail, elle est sur la ligne. |
+| À encaisser, Reçu | Le montant de l'ordre **TVA comprise**, et une ligne pour ce que le client a réellement payé. Si un *montant du terrain* figure déjà sur l'ordre, il est sur la ligne. Si CleanOps ne connaît pas le code TVA, le montant est *HTVA*, et c'est indiqué. |
 
 ## Imprimer
 

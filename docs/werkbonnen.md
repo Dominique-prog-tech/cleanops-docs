@@ -42,6 +42,7 @@ De bonnen staan per chauffeur, dan per dag, en binnen de dag in dezelfde volgord
 | Werk | De omschrijving van het werk, de instructies en het materiaal van de werkorder. |
 | Labels | *eerst bellen* (als er nog niet teruggebeld is), *attest vereist*, *groot werk*, *cameraverslag*, *RWZI*, het voertuig en de bijrijder. |
 | Start, Einde, Notities | Vakken die de chauffeur met de hand invult. Staat het start- of einduur al op de werkorder, dan staat het op de lijn. |
+| Te innen, Ontvangen | Het bedrag van de werkorder **inclusief btw**, en een lijn voor wat de klant werkelijk betaalde. Staat er al een *bedrag uit het veld* op de werkorder, dan staat het op de lijn. Kent CleanOps de btw-code niet, dan staat er het bedrag *excl. btw*, en dat staat er ook zo. |
 
 ## Afdrukken
 
