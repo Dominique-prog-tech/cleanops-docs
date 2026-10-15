@@ -58,8 +58,9 @@ Draagt een werkorder de code van een medewerker die niet meer in de lijst staat,
 
 Binnen een dag staan de werkorders van een medewerker in de volgorde waarin ze afgewerkt worden:
 
-- **op tijdsdeel**: **Eerste werk**, **Voormiddag**, **Volledige dag**, **Namiddag**. Bij **Anders** telt het uur van
-  de afspraak, en zonder afspraak het middaguur;
+- **op tijdsdeel**, in de volgorde van [Tijdsdelen](beheer/tijdsdelen.md) (bijvoorbeeld **Eerste werk**, **Voormiddag**,
+  **Volledige dag**, **Namiddag**). Bij een tijdsdeel **volgens uur** (bijvoorbeeld **Anders**) telt het uur van de afspraak,
+  en zonder afspraak het middaguur;
 - **bij hetzelfde tijdsdeel** op postcode;
 - **wat met de hand geplaatst is** (⇅), blijft op de plaats waar de planner het zette. Een nieuwe werkorder komt na
   de laatste handmatig geplaatste met een vroeger of hetzelfde tijdsdeel.

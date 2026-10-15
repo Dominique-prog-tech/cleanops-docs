@@ -93,7 +93,7 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
 [Rekeningplan](beheer/rekeningplan.md) · [Documentnummers](beheer/documentnummers.md) ·
 [Betalingstermijnen](beheer/betalingstermijnen.md) · [Betaalwijzen](beheer/betaalwijzen.md) · [Factuurteksten](beheer/factuurteksten.md) ·
 [Mailteksten](beheer/mailteksten.md) · [Mailafzenders](beheer/mailafzenders.md) ·
-[Feestdagen](beheer/feestdagen.md) · [Voertuigen](beheer/voertuigen.md)
+[Feestdagen](beheer/feestdagen.md) · [Tijdsdelen](beheer/tijdsdelen.md) · [Voertuigen](beheer/voertuigen.md)
 
 **Toegang** — [Rollen](beheer/rollen.md)
 

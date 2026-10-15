@@ -61,8 +61,9 @@ avec ce code en italique en dessous.
 
 Dans une journée, les ordres d'un collaborateur figurent dans l'ordre où ils seront exécutés :
 
-- **par partie de journée** : **Premier travail**, **Matin**, **Journée entière**, **Après-midi**. Pour **Autre**,
-  c'est l'heure du rendez-vous qui compte, et sans rendez-vous midi ;
+- **par partie de journée**, dans l'ordre des [Parties de la journée](beheer/tijdsdelen.md) (par exemple **Premier travail**,
+  **Matin**, **Journée entière**, **Après-midi**). Pour une partie **selon l'heure** (par exemple **Autre**), c'est l'heure
+  du rendez-vous qui compte, et sans rendez-vous midi ;
 - **pour la même partie de journée**, par code postal ;
 - **ce qui est placé à la main** (⇅) reste à l'endroit où le planificateur l'a mis. Un nouvel ordre vient après le
   dernier ordre placé à la main dont la partie de journée est plus tôt ou la même.
