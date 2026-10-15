@@ -1,5 +1,5 @@
 ---
-description: "Parties de la journée dans CleanOps : quand une intervention a lieu dans la journée (premier travail, matin …), leur ordre sur le planning et la partie selon l'heure."
+description: "Parties de la journée dans CleanOps : quand une intervention a lieu (premier travail, matin …), leur ordre sur le planning et la partie selon l'heure."
 ---
 
 # Parties de la journée
