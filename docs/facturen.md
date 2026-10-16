@@ -203,12 +203,12 @@ Alle mails die niet aankwamen, staan bijeen in [Niet-afgeleverde mails](niet-afg
 
 ### Verstuurd per post
 
-Hebt u de factuur afgedrukt en met de post verstuurd, klik dan op **Verstuurd per post**. In de lijst staat ze dan als verstuurd,
-de knop verdwijnt, en de factuur kan niet meer heropend worden.
+Hebt u de factuur afgedrukt en met de post verstuurd, kies dan **Meer… → Verstuurd per post**. In de lijst staat ze dan als verstuurd,
+die keuze verdwijnt, en de factuur kan niet meer heropend worden.
 
 ### Proef naar de boekhouding
 
-Met **Proef naar de boekhouding…** gaat dit ene document als PROEF naar een adres naar keuze, met de elektronische factuur (UBL)
+Met **Meer… → Proef naar de boekhouding…** gaat dit ene document als PROEF naar een adres naar keuze, met de elektronische factuur (UBL)
 en de PDF erin. Zo gaat u met uw boekhouder na of zijn boekhoudpakket de facturen goed inleest, vóór u de dagelijkse export
 aanzet. Een proef zet het document niet op *in boekhouding*.
 
@@ -216,12 +216,12 @@ aanzet. Een proef zet het document niet op *in boekhouding*.
 
 ### Kop wijzigen
 
-**Kop wijzigen…** past de koptekst, de slottekst en de klantreferentie aan, ook op een factuur die al verstuurd is. De
+**Meer… → Kop wijzigen…** past de koptekst, de slottekst en de klantreferentie aan, ook op een factuur die al verstuurd is. De
 gestructureerde mededeling wijzigt nooit: de klant betaalt ermee.
 
 ### Heropenen
 
-Zolang een factuur niet verstuurd is, kunt u ze nog wijzigen met **Heropenen…**. Hetzelfde venster als bij een nieuwe factuur
+Zolang een factuur niet verstuurd is, kunt u ze nog wijzigen met **Meer… → Heropenen…**. Hetzelfde venster als bij een nieuwe factuur
 opent, met de factuur erin:
 
 - de **werkorders** op de factuur. Met het kruisje haalt u er een af; die werkorder staat daarna weer in
@@ -248,15 +248,15 @@ Verander dan enkel teksten, geen bedragen — of crediteer de factuur en maak ee
 
 ### Creditnotastatus
 
-Met **Creditnotastatus…** markeert u de openstaande post van een document met de hand als gecrediteerd, of haalt u die markering
-weg. Een gecrediteerde post staat niet in de rappellijsten. De knop staat er enkel als het document een openstaande post heeft.
+Met **Meer… → Creditnotastatus…** markeert u de openstaande post van een document met de hand als gecrediteerd, of haalt u die markering
+weg. Een gecrediteerde post staat niet in de rappellijsten. Die keuze staat er enkel als het document een openstaande post heeft.
 
 ## Crediteren
 
 Een factuur verwijderen kan niet: een factuurnummer loopt zonder gaten door. Wilt u een factuur ongedaan maken, maak dan een
 creditnota.
 
-Klik op **Crediteren**. Het venster zegt wat er gebeurt. Vink **Werkorders opnieuw te factureren** aan als u hetzelfde werk opnieuw
+Kies **Meer… → Crediteren**. Het venster zegt wat er gebeurt. Vink **Werkorders opnieuw te factureren** aan als u hetzelfde werk opnieuw
 wilt factureren, bijvoorbeeld na een fout op de factuur: de werkorders staan dan weer in [Facturatie](facturatie.md). Klik op
 **Crediteren**. De creditnota krijgt het volgende nummer uit de reeks van de creditnota's en opent meteen, met het
 afdrukvoorbeeld open — net als na het boeken in Facturatie.

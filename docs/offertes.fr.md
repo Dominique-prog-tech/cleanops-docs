@@ -80,9 +80,9 @@ Chaque ligne est une partie de l'offre.
 Un devis en brouillon s'enregistre avec **Enregistrer**. S'il est déjà envoyé, accepté ou perdu, CleanOps vous demande ce
 que vous voulez :
 
-- **Enregistrer comme nouvelle version** : le client garde la version qu'il a reçue, et vos modifications deviennent une
+- **Enregistrer / nouvelle version** : le client garde la version qu'il a reçue, et vos modifications deviennent une
   nouvelle version avec le même numéro.
-- **Écraser cette version** : les modifications remplacent la version actuelle.
+- **Écraser la version** : les modifications remplacent la version actuelle.
 
 S'il manque quelque chose, comme un code TVA sur une ligne, CleanOps l'indique.
 
@@ -93,12 +93,15 @@ ancienne, **Activer** en refait la version actuelle.
 
 ![L'onglet Versions d'un devis avec deux versions, dont la version 2 est l'actuelle](images/offerte-versies-fr.png "Versions")
 
-**Commencer une nouvelle version** copie le devis enregistré vers une nouvelle version en brouillon. Les modifications non
-encore enregistrées ne sont pas reprises ; utilisez pour cela **Enregistrer comme nouvelle version**. Si de telles
+**Plus… → Commencer une nouvelle version** copie le devis enregistré vers une nouvelle version en brouillon. Les modifications non
+encore enregistrées ne sont pas reprises ; utilisez pour cela **Enregistrer / nouvelle version**. Si de telles
 modifications figurent à l'écran, CleanOps demande d'abord si vous voulez les abandonner — comme pour **Dupliquer**,
 réactiver une version antérieure et créer un ordre de travail à partir du devis.
 
 ## Les autres boutons
+
+**Statut…**, **Créer un ordre de travail**, **Facture d'acompte**, **Commencer une nouvelle version** et **Dupliquer…** se
+trouvent sous **Plus…** en bas de la fiche, pour que les boutons tiennent sur une seule ligne.
 
 | Bouton | Ce qu'il fait |
 |---|---|
@@ -108,7 +111,7 @@ réactiver une version antérieure et créer un ordre de travail à partir du de
 | Créer un ordre de travail | Crée un ordre de travail à l'adresse du client, avec la description et les lignes du devis comme travail et le montant hors TVA. Les pièces jointes du devis sont reprises. Le devis passe à **Accepté**. Si un ordre de travail a déjà été créé à partir de ce devis, le nouveau ne reçoit pas de montant et CleanOps l'indique. |
 | Facture d'acompte | Uniquement sur un devis **accepté**, si vous pouvez facturer. Un pourcentage ou un montant hors TVA, réparti sur les taux de TVA du devis — la fenêtre montre la répartition avant la création. La facturation propose cet acompte pour le travail de ce devis ; voir [Facturation](facturatie.fr.md#un-acompte-sur-un-devis). |
 | Dupliquer… | Crée un nouveau devis avec son propre numéro à partir de celui-ci, pour le même client ou un autre. Les lignes, la description et les remarques pour le client sont reprises ; la référence et la remarque interne non. Le doublon porte votre nom comme utilisateur. |
-| Aperçu avant impression | Affiche le devis en PDF, dans la langue du client. **Télécharger** l'enregistre. L'aperçu montre le devis enregistré : si vous avez modifié quelque chose qui n'est pas encore enregistré, CleanOps demande d'abord si vous voulez enregistrer, puis affiche l'aperçu. Pour un devis déjà envoyé au client, cette question enregistre dans une **nouvelle version** ; pour écraser la version, annulez et utilisez **Écraser cette version**. |
+| Aperçu avant impression | Affiche le devis en PDF, dans la langue du client. **Télécharger** l'enregistre. L'aperçu montre le devis enregistré : si vous avez modifié quelque chose qui n'est pas encore enregistré, CleanOps demande d'abord si vous voulez enregistrer, puis affiche l'aperçu. Pour un devis déjà envoyé au client, cette question enregistre dans une **nouvelle version** ; pour écraser la version, annulez et utilisez **Écraser la version**. |
 | Supprimer | Déplace le devis vers la [corbeille](beheer/prullenbak.fr.md), après confirmation. |
 
 ### Le statut
@@ -188,7 +191,7 @@ l'indique. Les tarifs se gèrent dans [Tarifs](beheer/tarieven.fr.md).
 **Pourquoi un nouveau devis porte-t-il le numéro 1 ?**
 La numérotation recommence chaque année, comme dans l'application précédente. L'année vient de la date du devis.
 
-**Je ne vois pas de bouton Créer un ordre de travail.**
+**Sous Plus…, je ne vois pas Créer un ordre de travail.**
 Il faut pour cela le droit de modifier les ordres de travail.
 
 **Je reçois le message « quelqu'un d'autre a aussi modifié … entre-temps ».**

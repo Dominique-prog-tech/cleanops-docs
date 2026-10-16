@@ -78,9 +78,9 @@ Elke lijn is een onderdeel van het aanbod.
 
 Een offerte in concept bewaart u met **Bewaren**. Is ze al verstuurd, aanvaard of verloren, dan vraagt CleanOps wat u wilt:
 
-- **Bewaren als nieuwe versie**: de klant houdt de versie die hij kreeg, en uw wijzigingen worden een nieuwe versie met
+- **Bewaren / nieuwe versie**: de klant houdt de versie die hij kreeg, en uw wijzigingen worden een nieuwe versie met
   hetzelfde nummer.
-- **Deze versie overschrijven**: de wijzigingen vervangen de huidige versie.
+- **Versie overschrijven**: de wijzigingen vervangen de huidige versie.
 
 Ontbreekt er iets, zoals een btw-code op een lijn, dan zegt CleanOps wat.
 
@@ -91,12 +91,15 @@ Het tabblad **Versies** toont alle versies van de offerte, de nieuwste bovenaan.
 
 ![Het tabblad Versies van een offerte met twee versies, waarvan versie 2 de actuele](images/offerte-versies.png "Versies")
 
-**Nieuwe versie beginnen** kopieert de bewaarde offerte naar een nieuwe versie in concept. Wijzigingen die nog niet
-bewaard zijn, gaan daarbij niet mee; gebruik daarvoor **Bewaren als nieuwe versie**. Staan er zulke wijzigingen op het
+**Meer… → Nieuwe versie beginnen** kopieert de bewaarde offerte naar een nieuwe versie in concept. Wijzigingen die nog niet
+bewaard zijn, gaan daarbij niet mee; gebruik daarvoor **Bewaren / nieuwe versie**. Staan er zulke wijzigingen op het
 scherm, dan vraagt CleanOps eerst of u ze wilt achterlaten — net als bij **Dupliceren**, een oudere versie weer actief
 maken en een werkorder maken uit de offerte.
 
 ## De andere knoppen
+
+**Status…**, **Werkorder maken**, **Voorschotfactuur**, **Nieuwe versie beginnen** en **Dupliceren…** staan onder
+**Meer…** onderaan de fiche, zodat de knoppen op één rij blijven.
 
 | Knop | Wat hij doet |
 |---|---|
@@ -106,7 +109,7 @@ maken en een werkorder maken uit de offerte.
 | Werkorder maken | Maakt een werkorder op het adres van de klant, met de omschrijving en de lijnen van de offerte als werk en het bedrag zonder btw. De bijlagen van de offerte gaan mee. De offerte komt op **Aanvaard**. Is er al een werkorder uit deze offerte gemaakt, dan krijgt de nieuwe geen bedrag en zegt CleanOps dat. |
 | Voorschotfactuur | Enkel op een **aanvaarde** offerte, als u mag factureren. Een percentage of een bedrag zonder btw, verdeeld over de btw-tarieven van de offerte — het venster toont de verdeling vóór u aanmaakt. De facturatie stelt dit voorschot voor bij het werk van deze offerte; zie [Facturatie](facturatie.md#een-voorschot-op-een-offerte). |
 | Dupliceren… | Maakt een nieuwe offerte met een eigen nummer op basis van deze, voor dezelfde of een andere klant. De lijnen, de omschrijving en de opmerkingen voor de klant gaan mee; de referentie en de interne opmerking niet. U staat als gebruiker op het duplicaat. |
-| Afdrukvoorbeeld | Toont de offerte als PDF, in de taal van de klant. **Downloaden** bewaart ze. Het voorbeeld toont de bewaarde offerte: hebt u iets gewijzigd dat nog niet bewaard is, dan vraagt CleanOps eerst of u wilt bewaren, en toont daarna het voorbeeld. Bij een offerte die al naar de klant is, bewaart die vraag in een **nieuwe versie**; wilt u de versie overschrijven, annuleer dan en gebruik **Deze versie overschrijven**. |
+| Afdrukvoorbeeld | Toont de offerte als PDF, in de taal van de klant. **Downloaden** bewaart ze. Het voorbeeld toont de bewaarde offerte: hebt u iets gewijzigd dat nog niet bewaard is, dan vraagt CleanOps eerst of u wilt bewaren, en toont daarna het voorbeeld. Bij een offerte die al naar de klant is, bewaart die vraag in een **nieuwe versie**; wilt u de versie overschrijven, annuleer dan en gebruik **Versie overschrijven**. |
 | Verwijderen | Verplaatst de offerte naar de [prullenbak](beheer/prullenbak.md), na een bevestiging. |
 
 ### De status
@@ -184,7 +187,7 @@ zegt het scherm dat. Tarieven beheert u in [Tarieven](beheer/tarieven.md).
 **Waarom heeft een nieuwe offerte nummer 1?**
 De nummering begint elk jaar opnieuw, zoals in de vorige toepassing. Het jaar komt van de offertedatum.
 
-**Ik zie geen knop Werkorder maken.**
+**Onder Meer… staat geen Werkorder maken.**
 Daarvoor is het recht om werkorders te bewerken nodig.
 
 **Ik krijg de melding "iemand anders heeft … intussen ook gewijzigd".**

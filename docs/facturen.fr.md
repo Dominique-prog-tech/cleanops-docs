@@ -216,12 +216,12 @@ l'e-mail. Tous les e-mails qui ne sont pas arrivés sont rassemblés dans [Courr
 
 ### Envoyé par courrier
 
-Si vous avez imprimé la facture et l'avez envoyée par la poste, cliquez sur **Envoyé par courrier**. Dans la liste, elle figure
-alors comme envoyée, le bouton disparaît, et la facture ne peut plus être rouverte.
+Si vous avez imprimé la facture et l'avez envoyée par la poste, choisissez **Plus… → Envoyé par courrier**. Dans la liste, elle figure
+alors comme envoyée, ce choix disparaît, et la facture ne peut plus être rouverte.
 
 ### Essai vers la comptabilité
 
-Avec **Essai vers la comptabilité…**, ce seul document part comme ESSAI vers l'adresse de votre choix, avec la facture électronique
+Avec **Plus… → Essai vers la comptabilité…**, ce seul document part comme ESSAI vers l'adresse de votre choix, avec la facture électronique
 (UBL) et le PDF inclus. Vous vérifiez ainsi avec votre comptable que son logiciel lit bien les factures, avant d'activer l'envoi
 quotidien. Un essai ne marque pas le document comme *en comptabilité*.
 
@@ -229,12 +229,12 @@ quotidien. Un essai ne marque pas le document comme *en comptabilité*.
 
 ### Modifier l'en-tête
 
-**Modifier l'en-tête…** adapte le texte d'en-tête, le texte de pied de page et la référence du client, même sur une facture déjà
+**Plus… → Modifier l'en-tête…** adapte le texte d'en-tête, le texte de pied de page et la référence du client, même sur une facture déjà
 envoyée. La communication structurée ne change jamais : le client paie avec elle.
 
 ### Rouvrir
 
-Tant qu'une facture n'a pas été envoyée, vous pouvez encore la modifier avec **Rouvrir…**. La même fenêtre que pour une nouvelle
+Tant qu'une facture n'a pas été envoyée, vous pouvez encore la modifier avec **Plus… → Rouvrir…**. La même fenêtre que pour une nouvelle
 facture s'ouvre, avec la facture :
 
 - les **Ordres de travail** de la facture. La croix en retire un ; cet ordre figure ensuite à nouveau dans
@@ -261,15 +261,15 @@ Si la facture date de plus de 51 jours, un avertissement s'affiche en haut : la 
 
 ### Statut de crédit
 
-**Statut de crédit…** marque à la main le poste ouvert d'un document comme crédité, ou retire cette marque. Un poste crédité ne
-figure pas dans les listes de rappel. Le bouton n'apparaît que si le document a un poste ouvert.
+**Plus… → Statut de crédit…** marque à la main le poste ouvert d'un document comme crédité, ou retire cette marque. Un poste crédité ne
+figure pas dans les listes de rappel. Ce choix n'apparaît que si le document a un poste ouvert.
 
 ## Créditer
 
 Supprimer une facture n'est pas possible : la numérotation des factures ne comporte pas de trous. Pour annuler une facture,
 établissez une note de crédit.
 
-Cliquez sur **Créer une note de crédit**. La fenêtre explique ce qui va se passer. Cochez **Remettre les ordres de travail « à
+Choisissez **Plus… → Créer une note de crédit**. La fenêtre explique ce qui va se passer. Cochez **Remettre les ordres de travail « à
 facturer »** si vous voulez refacturer le même travail, par exemple après une erreur sur la facture : les ordres de travail
 figurent alors à nouveau dans [Facturation](facturatie.fr.md). Cliquez sur **Créditer**. La note de crédit reçoit le numéro
 suivant de la série des notes de crédit et s'ouvre aussitôt, avec l'aperçu avant impression ouvert — comme après la
