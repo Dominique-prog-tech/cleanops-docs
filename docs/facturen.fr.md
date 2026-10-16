@@ -98,7 +98,7 @@ Si le document est encore ouvert, **Saisir un paiement…** y saisit directement
 
 ### Imprimer
 
-**Aperçu avant impression** affiche la facture en PDF, dans la langue de la facture. **Télécharger** l'enregistre ; l'icône
+**Aperçu** affiche la facture en PDF, dans la langue de la facture. **Télécharger** l'enregistre ; l'icône
 d'imprimante de la visionneuse l'imprime. Si la facture a déjà été envoyée, CleanOps vous demande d'abord si vous voulez quand
 même l'ouvrir.
 

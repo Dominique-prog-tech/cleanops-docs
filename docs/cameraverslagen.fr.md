@@ -52,7 +52,7 @@ Vous pouvez ajouter des pièces jointes dès que le rapport a été enregistré 
 
 ## Imprimer
 
-Cliquez sur **Aperçu avant impression**. Le document montre l'en-tête de votre entreprise, la date, le client, l'adresse
+Cliquez sur **Aperçu**. Le document montre l'en-tête de votre entreprise, la date, le client, l'adresse
 d'exécution, qui a fait l'inspection, les ordres de travail, les constatations et les photos, dans l'ordre où vous les avez
 ajoutées. S'il y a plus de 24 photos, le document montre les 24 premières et indique combien il en reste.
 

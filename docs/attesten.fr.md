@@ -65,7 +65,7 @@ supprimez la dernière attestation, elle se décoche. Vous ne pouvez pas cocher 
 
 ## Imprimer
 
-Cliquez sur **Aperçu avant impression**. L'attestation montre l'en-tête de votre entreprise, le numéro (ordre de travail
+Cliquez sur **Aperçu**. L'attestation montre l'en-tête de votre entreprise, le numéro (ordre de travail
 et attestation), le document de vente si l'ordre de travail est facturé, et la déclaration que vous avez enlevé et évacué
 les déchets conformément à la législation en vigueur. En dessous : le chantier, le produit avec son code EURAL, le
 traitement, l'origine et l'entreprise de traitement.
