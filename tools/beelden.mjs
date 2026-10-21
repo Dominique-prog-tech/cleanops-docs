@@ -1112,7 +1112,10 @@ async function vulLijn(p, tabel, rij, { oms, aantal, eenheid, prijs, btw }) {
   const inp = p.locator('table').nth(tabel).locator('tbody tr').nth(rij).locator('input');
   await inp.nth(1).fill(oms); await inp.nth(1).press('Tab');
   for (const [i, w] of [[2, aantal], [4, prijs]]) {
-    await inp.nth(i).click(); await inp.nth(i).press('ControlOrMeta+a'); await inp.nth(i).type(String(w)); await inp.nth(i).press('Tab');
+    // ⚠️ WACHTEN na de klik (21/10/2026): een DxSpinEdit met DisplayFormat wisselt bij de focus van "€ 0,05" naar "0,045", via de
+    //    server. Een selectie die vóór die wissel gemaakt is, valt weg, en het getypte komt ACHTER de oude waarde ("0,045045" → € 0,05).
+    //    Zo stond op 21/10 de prijs op € 0,00 en in een tweede run het aantal in het vak Eenheid. 400 ms is ruim voor de wissel.
+    await inp.nth(i).click(); await p.waitForTimeout(400); await inp.nth(i).press('ControlOrMeta+a'); await inp.nth(i).type(String(w)); await inp.nth(i).press('Tab');
     await p.waitForTimeout(200);
   }
   if (eenheid) { await inp.nth(3).fill(eenheid); await inp.nth(3).press('Tab'); }

@@ -64,7 +64,7 @@ materiaallevering.
    ze, en een tarief dat zelf geen btw-code draagt. Wat een lijn al draagt, blijft staan.
 3. Vul de **lijnen** in. Een **Tarief** kiezen vult de omschrijving, de eenheid, de prijs en de btw-code in, en zet de
    **Tekst op de factuur** van het tarief in het vak **Tekst onder de lijn**; u kunt ze daarna aanpassen. Wat in dat vak staat,
-   komt op de factuur onder de lijn. Een omschrijving langer dan 35 tekens komt daar ook volledig te staan. Met de knoppen rechts
+   komt op de factuur onder de lijn. Een omschrijving langer dan 35 tekens komt daar ook volledig te staan. Met het menu **⋯** rechts
    dupliceert of verwijdert u een lijn, met **+ Regel toevoegen** komt er een bij.
 4. Onderaan ziet u het totaal zonder btw, de btw en het totaal met btw, zoals ze geboekt worden.
 5. Klik op **Factuur boeken**. CleanOps vraagt het nog eens, met het bedrag. De factuur krijgt het volgende nummer, een vervaldag

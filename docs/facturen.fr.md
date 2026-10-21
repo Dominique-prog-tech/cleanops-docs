@@ -68,8 +68,8 @@ déplacement ou une livraison de matériel.
    porte déjà ne change pas.
 3. Remplissez les **lignes**. Choisir un **Tarif** remplit la description, l'unité, le prix et le code TVA, et place le
    **Texte sur la facture** du tarif dans le champ **Texte sous la ligne** ; vous pouvez ensuite les adapter. Ce qui figure dans ce
-   champ est imprimé sur la facture, sous la ligne. Une description de plus de 35 caractères y figure aussi en entier. Les boutons
-   à droite dupliquent ou suppriment une ligne ; **+ Ajouter une ligne** en ajoute une.
+   champ est imprimé sur la facture, sous la ligne. Une description de plus de 35 caractères y figure aussi en entier. Le menu **⋯**
+   à droite duplique ou supprime une ligne ; **+ Ajouter une ligne** en ajoute une.
 4. En bas figurent le total hors TVA, la TVA et le total TVA comprise, tels qu'ils seront comptabilisés.
 5. Cliquez sur **Comptabiliser la facture**. CleanOps vous le demande encore une fois, avec le montant. La facture reçoit le numéro
    suivant, une échéance selon le délai de paiement du client et une communication structurée, et figure dans les
