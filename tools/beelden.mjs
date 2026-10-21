@@ -392,13 +392,15 @@ const SCHOTEN = [
       await p.getByText(/^(Attesten|Attestations) \(\d+\)$/).first().click();
     },
     magKortZijn: 'een werkorder draagt een of twee attesten' },
-  { naam: 'attest-fiche', route: '/attesten', verwacht: tekstTaal('Werfopmerking', 'Remarque chantier'),
+  // ?facturatie=0 (alle): de lijst opent op "nog niet gefactureerd", en de werkorder van de Franse voorbeeldklant (900115) werd in de
+  // demo op 14/10/2026 gefactureerd — zonder deze filter staat Résidence Les Tilleuls niet in de lijst (gemeten 21/10/2026).
+  { naam: 'attest-fiche', route: '/attesten?facturatie=0', verwacht: tekstTaal('Werfopmerking', 'Remarque chantier'),
     na: async (p, taal) => { await openAttest(p, taal); } },
   // ⚠️ Wachten op het BEELD van de pagina in de kijker (zie factuur-afdruk).
-  { naam: 'attest-afdruk', route: '/attesten', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
+  { naam: 'attest-afdruk', route: '/attesten?facturatie=0', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
     na: async (p, taal) => {
       await openAttest(p, taal);
-      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu avant impression)$/ }).first().click();
+      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu)$/ }).first().click();
       await p.waitForFunction(() => {
         const img = document.querySelector('img.dxbrv-report-preview-content-img');
         return img && img.complete && img.naturalWidth > 0;
@@ -407,7 +409,7 @@ const SCHOTEN = [
     } },
   // Mailen: de demo gaf Tuincentrum De Linde een ATTESTadres, dus Aan = het attestadres en Cc = het hoofdadres. De demo-attesten staan
   // op "verzonden", dus eerst de vraag "Al verzonden — toch mailen?". ⚠️ Het recept klikt NOOIT op Versturen.
-  { naam: 'attest-mailen', route: '/attesten', verwacht: tekstTaal('Bijlage: attest-', 'Pièce jointe : attestation-'),
+  { naam: 'attest-mailen', route: '/attesten?facturatie=0', verwacht: tekstTaal('Bijlage: attest-', 'Pièce jointe : attestation-'),
     na: async (p, taal) => {
       await openAttest(p, taal);
       await p.getByRole('button', { name: /^(Mailen…|Envoyer par e-mail…)$/ }).first().click();
@@ -423,13 +425,13 @@ const SCHOTEN = [
     na: async (p, taal) => { await openAdresCameraverslagen(p, taal); },
     magKortZijn: 'een adres draagt een of enkele cameraverslagen' },
   // Het merkteken is de knop Afdrukvoorbeeld: "Vaststellingen" staat ook als kolom op het tabblad waar we vandaan komen.
-  { naam: 'cameraverslag-fiche', route: '/klanten', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
+  { naam: 'cameraverslag-fiche', route: '/klanten', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu'),   // de FR-knop heet "Aperçu" sinds 0.5.12
     na: async (p, taal) => { await openCameraverslag(p, taal); } },
   // ⚠️ Wachten op het BEELD van de pagina in de kijker (zie factuur-afdruk): de foto staat IN het document.
   { naam: 'cameraverslag-afdruk', route: '/klanten', verwacht: tekstTaal('Doorsturen per mail', 'Envoyer par courriel'),
     na: async (p, taal) => {
       await openCameraverslag(p, taal);
-      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu avant impression)$/ }).first().click();
+      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu)$/ }).first().click();
       await p.waitForFunction(() => {
         const img = document.querySelector('img.dxbrv-report-preview-content-img');
         return img && img.complete && img.naturalWidth > 0;
@@ -639,7 +641,9 @@ const SCHOTEN = [
   { naam: 'factuur-proef', route: '/facturen', verwacht: tekstTaal('Het wordt niet gemarkeerd', "Il n'est pas marqué"),
     na: async (p, taal) => {
       await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001');
-      await p.getByRole('button', { name: /^(Proef naar de boekhouding…|Essai vers la comptabilité…)$/ }).click();
+      // Sinds CleanOps 0.5.12 (21/10/2026) onder Meer… / Plus….
+      await p.getByRole('button', { name: /^(Meer…|Plus…)$/ }).click();
+      await p.getByRole('menuitem', { name: /^(Proef naar de boekhouding…|Essai vers la comptabilité…)$/ }).click();
       const venster = p.locator('.dxbl-popup:not(.dxbl-popup-hidden)').last();
       const veld = venster.locator('input').first();
       await veld.click(); await veld.fill('boekhouder@kantoor-demo.be'); await p.keyboard.press('Tab');
@@ -651,7 +655,7 @@ const SCHOTEN = [
     na: async (p, taal) => {
       await openRij(p, taal.startsWith('fr') ? '20260002' : '20260001');
       await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
-      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu avant impression)$/ }).first().click();
+      await p.getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu)$/ }).first().click();
       // ⚠️ Sinds de mailvrijgave (07/10/2026) is 20260001 in de demo GEMAILD: dan vraagt de fiche eerst "Al verstuurd — toch openen?".
       await bevestigIndienGevraagd(p, /^(Openen|Ouvrir)$/);
       await p.waitForFunction(() => {
@@ -758,7 +762,9 @@ const SCHOTEN = [
     na: async (p, taal) => {
       const fr = taal.startsWith('fr');
       await openRij(p, '20260002');
-      await p.getByRole('button', { name: /^(Heropenen…|Rouvrir…)$/ }).click({ timeout: 15000 });
+      // Sinds CleanOps 0.5.12 (21/10/2026) onder Meer… / Plus….
+      await p.getByRole('button', { name: /^(Meer…|Plus…)$/ }).click();
+      await p.getByRole('menuitem', { name: /^(Heropenen…|Rouvrir…)$/ }).click({ timeout: 15000 });
       await p.waitForURL(/\/facturen\/wijzigen\//, { timeout: 15000 });
       await p.getByText(tekstTaal('Vrije lijnen', 'Lignes libres')).first().waitFor({ timeout: 15000 });
       await p.getByRole('button', { name: /^(\+ Regel toevoegen|\+ Ajouter une ligne)$/ }).click();

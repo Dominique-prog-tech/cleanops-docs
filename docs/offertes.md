@@ -68,9 +68,10 @@ Elke lijn is een onderdeel van het aanbod.
 - Pas de **Omschrijving**, het **Aantal**, de **Eenheid** en de **E.prijs** aan waar nodig. Een lijn zonder tarief kan
   ook.
 - Kies een **Btw-code**. Die is verplicht; het percentage komt uit de btw-code.
-- **▲** en **▼** verschuiven de lijn, **⧉** maakt er een kopie van eronder, **✕** haalt ze weg.
-- **✎** opent de **beschrijving** van de lijn: een langere tekst die op de offerte en op de werkorder komt. Het potlood
-  staat vet als de lijn een beschrijving heeft.
+- De knop **⋯** achteraan de lijn opent een menu: **Omhoog** en **Omlaag** verschuiven de lijn, **Regel dupliceren** maakt
+  er een kopie van eronder, **Regel verwijderen** haalt ze weg.
+- In hetzelfde menu opent **Beschrijving** de **beschrijving** van de lijn: een langere tekst die op de offerte en op de
+  werkorder komt. Het label zegt of er al een is: *toevoegen*, *tonen* of *verbergen*.
 
 **+ Regel toevoegen** zet er een lege lijn onder. Onderaan staan het totaal zonder en met btw.
 

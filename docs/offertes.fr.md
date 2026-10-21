@@ -69,9 +69,10 @@ Chaque ligne est une partie de l'offre.
 - Adaptez la **Description**, la **Quantité**, l'**Unité** et le **P. unitaire** si nécessaire. Une ligne sans tarif est
   possible.
 - Choisissez un **Code TVA**. Il est obligatoire ; le pourcentage vient du code TVA.
-- **▲** et **▼** déplacent la ligne, **⧉** en fait une copie en dessous, **✕** la supprime.
-- **✎** ouvre la **description détaillée** de la ligne : un texte plus long qui figure sur le devis et sur l'ordre de
-  travail. Le crayon est en gras si la ligne a une description détaillée.
+- Le bouton **⋯** au bout de la ligne ouvre un menu : **Monter** et **Descendre** déplacent la ligne, **Dupliquer la
+  ligne** en fait une copie en dessous, **Supprimer la ligne** la supprime.
+- Dans le même menu, **Description** ouvre la **description détaillée** de la ligne : un texte plus long qui figure sur le
+  devis et sur l'ordre de travail. Le libellé indique s'il y en a déjà une : *ajouter*, *afficher* ou *masquer*.
 
 **+ Ajouter une ligne** ajoute une ligne vide en dessous. En bas figurent le total hors TVA et TVA comprise.
 
