@@ -55,7 +55,7 @@ komt er niet in. Het nieuwe voorstel **vervangt** het vorige.
 
 ## Documenten uit het voorstel halen of betaald markeren
 
-Vink de documenten aan, of klik op één rij, en kies:
+Vink de documenten aan; onder de werkbalk verschijnen dan de knoppen. Kies:
 
 - **Uit voorstel** — u betaalt dit document nu niet. CleanOps vraagt eerst of u het zeker weet. Het document zelf blijft
   bestaan; een nieuw voorstel neemt het opnieuw op als het dan te betalen is.

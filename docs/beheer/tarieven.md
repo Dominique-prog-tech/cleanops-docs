@@ -62,10 +62,10 @@ Klik op **Bewaren**. Na het aanmaken van een nieuw tarief opent zijn fiche vanze
 Op de fiche staat onderaan rechts **Archiveren**. Een gearchiveerd tarief verdwijnt uit de keuzelijsten, maar het
 blijft bestaan: oudere werkorders, offertes en facturen dragen de code nog.
 
-Wilt u het terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde tarieven**, open het tarief en klik op
+Wilt u het terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerd**, open het tarief en klik op
 **Terughalen**.
 
-![De keuze Tonen, opengeklapt: Actieve tarieven of Ook gearchiveerde tarieven](../images/tarieven-tonen.png "Tonen")
+![De keuze Tonen, opengeklapt: Actief of Ook gearchiveerd](../images/tarieven-tonen.png "Tonen")
 
 ## Een tarief op een offerte gebruiken
 
@@ -98,7 +98,7 @@ Hetzelfde ziet u zonder de fiche te openen: klik een tarief in de lijst aan en o
 ## Veelgestelde vragen
 
 **Ik vind een tarief niet terug dat we vroeger gebruikten.**
-Zet **Tonen** op *Ook gearchiveerde tarieven*. Waarschijnlijk is het gearchiveerd; het blijft bestaan voor de
+Zet **Tonen** op **Ook gearchiveerd**. Waarschijnlijk is het gearchiveerd; het blijft bestaan voor de
 oudere documenten die ernaar verwijzen.
 
 **De prijs op mijn offerte klopt niet met wat hier staat.**

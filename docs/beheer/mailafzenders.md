@@ -48,7 +48,7 @@ Klik op **Bewaren**.
 Open de rij en klik op **Archiveren**. De afzender verdwijnt uit de lijst en uit de keuze op een mailtekst. Een
 mailtekst die hem nog draagt, vertrekt van het standaardadres van ADM One.
 
-Wilt u hem terug? Zet **Tonen** op **Ook gearchiveerde**, open de afzender en klik op **Terughalen**.
+Wilt u hem terug? Zet **Tonen** op **Ook gearchiveerd**, open de afzender en klik op **Terughalen**.
 
 ## Het journaal
 

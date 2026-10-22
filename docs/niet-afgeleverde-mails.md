@@ -18,7 +18,7 @@ aantal niet opvragen; de lijst zegt dan waarom.
 
 ## De lijst
 
-De lijst opent op wat u nog moet opvolgen: **Status** op *Niet afgeleverd* en **Gezien** op *Nog niet gezien*.
+De lijst opent op wat u nog moet opvolgen: **Status** op *Niet afgeleverd* en **Gezien** op *Niet gezien*.
 
 | Kolom | Wat erin staat |
 |---|---|
@@ -47,7 +47,7 @@ Met het zoekveld zoekt u op de ontvanger, het onderwerp of het document. **Expor
 | Filter | Keuzes |
 |---|---|
 | **Status** | *Niet afgeleverd* (alles wat niet aankwam) · *Geweigerd / spam* · *Mislukt* · *Afgeleverd* · *Alle* |
-| **Gezien** | *Nog niet gezien* · *Gezien* · *Gezien en niet gezien* |
+| **Gezien** | *Niet gezien* · *Gezien* · *Gezien en niet gezien* |
 
 Toont de lijst *De nieuwste 2.000 mails*, kies dan een strengere selectie om oudere te zien.
 
@@ -70,7 +70,7 @@ Vink een of meer mails aan en klik op **Gezien**. Ze verdwijnen uit de lijst, en
 - **Gezien geldt voor het hele bedrijf**: wat u afvinkt, is ook voor uw collega's afgevinkt.
 - Met het filter **Gezien** op *Gezien* of *Gezien en niet gezien* vindt u de afgevinkte meldingen terug, met wie het deed
   en wanneer.
-- Vinkte u te vroeg af, vink de mail dan aan en klik op **Nog niet gezien**.
+- Vinkte u te vroeg af, vink de mail dan aan en klik op **Niet gezien**.
 
 Afvinken zegt enkel dat de melding opgevolgd is. Aan de mail of het document verandert er niets.
 

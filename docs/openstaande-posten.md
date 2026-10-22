@@ -19,7 +19,7 @@ Het getal naast **Openstaande posten** in het menu telt de posten die aan een vo
 
 ## De lijst
 
-Kies bovenaan een **Selectie**:
+Kies bovenaan, in de eerste keuzelijst, een selectie:
 
 | Selectie | Wat u ziet |
 |---|---|
@@ -56,7 +56,7 @@ aan en open rechts de strook **Journaal** voor zijn logboek: wie wat wijzigde en
 
 ### Saldo per klant
 
-Kies bovenaan **Weergave: Per klant (saldo)** voor de saldolijst: één regel per klant, met zijn naam, zijn klantnummer en
+Kies bovenaan, in de tweede keuzelijst, **Per klant** (in plaats van *Per post*) voor de saldolijst: één regel per klant, met zijn naam, zijn klantnummer en
 zijn **saldo** — wat zijn posten in de gekozen selectie samen nog openstaan. Onderaan staat het totaal. Met het pijltje vóór een
 klant klapt u zijn posten open; daar werkt alles zoals in de gewone lijst. Kies **Alle openstaande** voor het volledige saldo;
 bij **Vervallen** telt enkel wat vervallen is. Een saldo van € 0,00 betekent dat de posten van die klant elkaar opheffen,

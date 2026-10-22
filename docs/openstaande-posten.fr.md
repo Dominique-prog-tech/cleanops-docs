@@ -19,7 +19,7 @@ Le nombre à côté de **Postes ouverts** dans le menu compte les postes qui att
 
 ## La liste
 
-En haut, choisissez une **Sélection** :
+En haut, dans la première liste, choisissez une sélection :
 
 | Sélection | Ce que vous voyez |
 |---|---|
@@ -57,7 +57,7 @@ elle-même et les rappels, avec leur statut de remise.
 
 ### Solde par client
 
-Choisissez en haut **Affichage : Par client (solde)** pour la liste des soldes : une ligne par client, avec son nom, son numéro
+Choisissez en haut, dans la deuxième liste, **Par client** (au lieu de *Par poste*) pour la liste des soldes : une ligne par client, avec son nom, son numéro
 de client et son **solde** — ce que ses postes de la sélection choisie représentent encore ensemble. Le total figure en bas. La
 flèche devant un client déplie ses postes ; tout y fonctionne comme dans la liste habituelle. Choisissez **Tous les postes
 ouverts** pour le solde complet ; avec **Échus**, seul ce qui est échu compte. Un solde de 0,00 € signifie que les postes de ce

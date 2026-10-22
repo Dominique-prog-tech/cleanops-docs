@@ -15,8 +15,9 @@ Klik in het menu onder **Verkoop** op **Per betaalwijze**.
 
 ## Periode en betaalwijze
 
-Bovenaan kiest u de **periode**: deze week, vorige week, deze maand, vorige maand of dit jaar. Een week loopt van maandag tot
-zondag. Met **Betaalwijze** toont u er één, bijvoorbeeld enkel Payconiq. Naast de keuzes staan de datums van de periode.
+Bovenaan kiest u in de eerste keuzelijst de **periode**: deze week, vorige week, deze maand, vorige maand of dit jaar. Een week
+loopt van maandag tot zondag. Met de tweede keuzelijst (*Alle betaalwijzen*) toont u er één, bijvoorbeeld enkel Payconiq. Onder de
+keuzes staan de datums van de periode, met de totalen erachter.
 
 Onder de werkbalk staan de **totalen per betaalwijze**: hoeveel werkorders en wat er geïnd is — het *bedrag uit het veld* als het
 er is, anders het bedrag inclusief btw. Die leggen u naast het

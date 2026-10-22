@@ -16,9 +16,9 @@ Dans le menu, sous **Ventes**, cliquez sur **CA par collaborateur et véhicule**
 ## Période et répartition
 
 En haut, vous choisissez la **période** : cette semaine, la semaine passée, ce mois-ci, le mois passé ou cette année. Une
-semaine va du lundi au dimanche. Les dates de la période figurent à côté des choix.
+semaine va du lundi au dimanche. Les dates de la période figurent sous les listes, suivies du total.
 
-Avec **Par**, vous choisissez la répartition :
+Avec la deuxième liste, vous choisissez la répartition :
 
 - **Collaborateur** — par exécutant de l'ordre de travail. Un convoyeur ne compte pas. Le travail sans exécutant figure sous
   *(non attribué)*.

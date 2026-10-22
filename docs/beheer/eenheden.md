@@ -67,7 +67,7 @@ Open de rij en gebruik **Archiveren**. De eenheid verdwijnt uit de keuzelijsten,
     Tarieven, werkorders, offertes en facturen die de gearchiveerde eenheid al dragen, houden ze. Archiveren is
     *niet meer kiezen*, niet *weghalen*.
 
-Wilt u ze terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde eenheden**, open de eenheid en klik op
+Wilt u ze terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerd**, open de eenheid en klik op
 **Terughalen**.
 
 ## Veelgestelde vragen

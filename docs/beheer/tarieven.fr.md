@@ -62,10 +62,10 @@ Cliquez sur **Enregistrer**. Après la création d'un nouveau tarif, sa fiche s'
 En bas à droite de la fiche se trouve **Archiver**. Un tarif archivé disparaît des listes de choix, mais il
 subsiste : des ordres de travail, devis et factures plus anciens portent encore le code.
 
-Vous le voulez de retour ? En haut de la liste, mettez **Afficher** sur **Aussi les tarifs archivés**, ouvrez le
+Vous le voulez de retour ? En haut de la liste, mettez **Afficher** sur **Aussi archivés**, ouvrez le
 tarif et cliquez sur **Rétablir**.
 
-![Le choix Afficher, déplié : Tarifs actifs ou Aussi les tarifs archivés](../images/tarieven-tonen-fr.png "Afficher")
+![Le choix Afficher, déplié : Actifs ou Aussi archivés](../images/tarieven-tonen-fr.png "Afficher")
 
 ## Utiliser un tarif sur un devis
 
@@ -99,7 +99,7 @@ Vous le voyez aussi sans ouvrir la fiche : sélectionnez un tarif dans la liste 
 ## Questions fréquentes
 
 **Je ne retrouve pas un tarif que nous utilisions auparavant.**
-Mettez **Afficher** sur *Aussi les tarifs archivés*. Il a probablement été archivé ; il subsiste pour les
+Mettez **Afficher** sur **Aussi archivés**. Il a probablement été archivé ; il subsiste pour les
 documents plus anciens qui y renvoient.
 
 **Le prix sur mon devis ne correspond pas à ce qui figure ici.**

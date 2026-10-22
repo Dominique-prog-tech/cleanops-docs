@@ -16,9 +16,9 @@ Klik in het menu onder **Verkoop** op **Omzet per medewerker en voertuig**.
 ## Periode en indeling
 
 Bovenaan kiest u de **periode**: deze week, vorige week, deze maand, vorige maand of dit jaar. Een week loopt van maandag tot
-zondag. Naast de keuzes staan de datums van de periode.
+zondag. Onder de keuzes staan de datums van de periode, met het totaal erachter.
 
-Met **Per** kiest u de indeling:
+Met de tweede keuzelijst kiest u de indeling:
 
 - **Medewerker** — per uitvoerder van de werkorder. Een bijrijder telt niet mee. Werk zonder uitvoerder staat onder
   *(niet toegewezen)*.

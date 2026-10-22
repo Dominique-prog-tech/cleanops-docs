@@ -15,8 +15,9 @@ Dans le menu, sous **Ventes**, cliquez sur **Par mode de paiement**.
 
 ## Période et mode de paiement
 
-En haut, vous choisissez la **période** : cette semaine, la semaine passée, ce mois-ci, le mois passé ou cette année. Une semaine
-va du lundi au dimanche. **Mode** n'affiche qu'un mode, par exemple uniquement Payconiq. Les dates de la période figurent à côté.
+En haut, vous choisissez dans la première liste la **période** : cette semaine, la semaine passée, ce mois-ci, le mois passé ou
+cette année. Une semaine va du lundi au dimanche. La deuxième liste (*Tous les modes*) n'affiche qu'un mode, par exemple uniquement
+Payconiq. Sous les listes figurent les dates de la période, suivies des totaux.
 
 Sous la barre d'outils figurent les **totaux par mode de paiement** : combien d'ordres et ce qui a été encaissé — le *montant du
 terrain* s'il existe, sinon le montant TVAC. Comparez-les au

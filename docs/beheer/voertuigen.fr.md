@@ -28,7 +28,7 @@ En haut figure un compteur : combien de véhicules vous voyez. S'ils ne sont pas
 combien il y en a au total. Un véhicule que vous avez créé vous-même porte l'étiquette **propre** ; un véhicule archivé l'étiquette
 **archivé**.
 
-Avec **Afficher**, vous choisissez entre **Véhicules actifs** et **Aussi les véhicules archivés**. Avec **Contrôle** sur
+Avec la première liste déroulante, vous choisissez entre **Actifs** et **Aussi archivés**. Avec **Contrôle** sur
 **À contrôler**, vous ne voyez que les véhicules dont le contrôle est échu ou tombe dans les 30 jours.
 
 ## Le journal d'un véhicule
@@ -131,8 +131,7 @@ Cliquez sur **Nouvel entretien**, ou double-cliquez sur un entretien existant po
 | **Note** | texte libre, aussi sur plusieurs lignes. |
 
 **Archiver ou rétablir un entretien.** Dans la fenêtre d'un entretien figure **Archiver**. L'entretien
-disparaît alors de la liste, mais reste conservé. Mettez en haut de l'onglet **Afficher** sur **Aussi les
-entretiens archivés**, ouvrez l'entretien et cliquez sur **Rétablir** pour le remettre.
+disparaît alors de la liste, mais reste conservé. Mettez en haut de l'onglet **Afficher** sur **Aussi archivés**, ouvrez l'entretien et cliquez sur **Rétablir** pour le remettre.
 
 ## Joindre des pièces à un véhicule
 
@@ -144,7 +143,7 @@ l'immatriculation, l'assurance, une facture de réparation.
 Sur la fiche figure en bas à droite **Archiver**. Un véhicule archivé disparaît des listes de choix et du rappel
 de contrôle, mais il continue d'exister : les ordres et les bons de travail portent encore la plaque.
 
-Vous le voulez de retour ? Mettez en haut de la liste **Afficher** sur **Aussi les véhicules archivés**, ouvrez
+Vous le voulez de retour ? Mettez en haut de la liste la première liste déroulante sur **Aussi archivés**, ouvrez
 le véhicule et cliquez sur **Rétablir**.
 
 ## L'historique
@@ -160,7 +159,7 @@ quand sur ce véhicule, et de quelle valeur vers quelle autre.
 
 !!! warning "La plaque existe déjà"
     Une plaque ne peut exister qu'une fois, même en d'autres majuscules (*1-abc-123* est *1-ABC-123*) et
-    même lorsque le véhicule est archivé. Mettez **Afficher** sur **Aussi les véhicules archivés** : s'il y
+    même lorsque le véhicule est archivé. Mettez en haut de la liste la première liste déroulante sur **Aussi archivés** : s'il y
     figure, rétablissez-le plutôt que de créer un nouveau véhicule.
 
 **Pourquoi la liste de choix du Type est-elle vide ?**

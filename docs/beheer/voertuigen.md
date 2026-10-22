@@ -28,7 +28,7 @@ Bovenaan staat een teller: hoeveel voertuigen u ziet. Worden er niet alle getoon
 er in totaal zijn. Een voertuig dat u zelf aanmaakte, draagt het label **eigen**; een gearchiveerd voertuig het label
 **gearchiveerd**.
 
-Met **Tonen** kiest u tussen **Actieve voertuigen** en **Ook gearchiveerde voertuigen**. Met **Keuring** op **Te keuren**
+Met de eerste keuzelijst kiest u tussen **Actief** en **Ook gearchiveerd**. Met **Keuring** op **Te keuren**
 ziet u enkel de voertuigen waarvan de keuring verlopen is of binnen 30 dagen valt.
 
 ## Het journaal van een voertuig
@@ -131,7 +131,7 @@ Klik op **Nieuwe beurt**, of dubbelklik op een bestaande beurt om ze te wijzigen
 | **Nota** | vrije tekst, ook over meerdere regels. |
 
 **Een beurt archiveren of terughalen.** In het venster van een beurt staat **Archiveren**. De beurt verdwijnt
-dan uit de lijst, maar blijft bewaard. Zet bovenaan het tabblad **Tonen** op **Ook gearchiveerde beurten**,
+dan uit de lijst, maar blijft bewaard. Zet bovenaan het tabblad **Tonen** op **Ook gearchiveerd**,
 open de beurt en klik op **Terughalen** om ze terug te zetten.
 
 ## Bijlagen aan een voertuig hangen
@@ -144,7 +144,7 @@ verzekering, een factuur van een herstelling.
 Op de fiche staat onderaan rechts **Archiveren**. Een gearchiveerd voertuig verdwijnt uit de keuzelijsten en uit
 de keuringsherinnering, maar het blijft bestaan: werkorders en werkbonnen dragen het kenteken nog.
 
-Wilt u het terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde voertuigen**, open het voertuig en klik
+Wilt u het terug? Zet bovenaan de lijst de eerste keuzelijst op **Ook gearchiveerd**, open het voertuig en klik
 op **Terughalen**.
 
 ## Het logboek
@@ -160,7 +160,7 @@ gewijzigd heeft aan dit voertuig, en van welke waarde naar welke.
 
 !!! warning "Het kenteken bestaat al"
     Een kenteken kan maar één keer bestaan, ook in andere hoofdletters (*1-abc-123* is *1-ABC-123*) en ook
-    wanneer het voertuig gearchiveerd is. Zet **Tonen** op **Ook gearchiveerde voertuigen**: staat het er,
+    wanneer het voertuig gearchiveerd is. Zet bovenaan de lijst de eerste keuzelijst op **Ook gearchiveerd**: staat het er,
     haal het dan terug in plaats van een nieuw voertuig aan te maken.
 
 **Waarom is de keuzelijst bij Soort leeg?**

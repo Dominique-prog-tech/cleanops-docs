@@ -75,7 +75,7 @@ blijft bestaan.
     Een klant die de gearchiveerde termijn al heeft, houdt hem: zijn fiche toont hem nog, en zijn facturen
     krijgen er gewoon hun vervaldag mee. Archiveren is *niet meer kiezen*, niet *weghalen*.
 
-Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde termijnen**, open de termijn en klik
+Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerd**, open de termijn en klik
 op **Terughalen**.
 
 ## Het journaal

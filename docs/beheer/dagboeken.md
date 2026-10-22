@@ -68,7 +68,7 @@ betalingen die het al dragen, houden het.
 Het standaard verkoopdagboek kan niet gearchiveerd worden. Zet het vinkje eerst op een ander verkoopdagboek; dat kan enkel
 vóór de eerste factuur van een boekjaar.
 
-Wilt u een dagboek terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde dagboeken**, open het en klik op
+Wilt u een dagboek terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerd**, open het en klik op
 **Terughalen**.
 
 ## Veelgestelde vragen

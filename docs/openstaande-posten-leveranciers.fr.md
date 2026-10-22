@@ -43,7 +43,7 @@ montant qui bougera sur votre compte quand vous aurez tout payé.
 ## Saisir un paiement
 
 1. Cochez les documents que vous payez. Ils appartiennent à **un seul fournisseur** : un paiement concerne un seul fournisseur.
-2. Cliquez sur **Saisir un paiement**.
+2. Cliquez sur **Saisir un paiement…** — le bouton apparaît sous la barre d'outils dès que vous cochez un document.
 3. La fenêtre de [Paiements](betalingen.md) s'ouvre, avec le fournisseur choisi et le montant ouvert des documents cochés déjà
    rempli. Choisissez le journal, la date et le numéro de l'extrait, et cliquez sur **Comptabiliser**.
 
@@ -57,14 +57,15 @@ ouvert.
 ## Marquer payé
 
 Vous avez déjà payé un document, par exemple avec le fichier SEPA de la [proposition de paiement](betalingsvoorstel.md), mais
-le paiement ne figure pas encore sur un extrait ? Cochez-le, ou cliquez sur la ligne, et cliquez sur **Payé**. Le document
+le paiement ne figure pas encore sur un extrait ? Cochez-le et cliquez sur **Payé** (sous la barre d'outils). Le document
 reste dans cette liste jusqu'à ce que vous enregistriez le paiement, mais n'entre plus dans une proposition de paiement.
 **Non payé** annule ce marquage.
 
 ## Questions fréquentes
 
 **Je ne vois pas le bouton Saisir un paiement.**
-Il faut pour cela le droit *Saisir des paiements*. Demandez-le à votre administrateur.
+Cochez d'abord un document : les boutons n'apparaissent qu'à ce moment. Si vous ne voyez pas non plus de cases à cocher, il
+vous manque le droit *Saisir des paiements*. Demandez-le à votre administrateur.
 
 **CleanOps dit que je ne peux cocher que des documents du même fournisseur.**
 Un paiement concerne un seul fournisseur. Saisissez un paiement distinct pour chaque fournisseur.

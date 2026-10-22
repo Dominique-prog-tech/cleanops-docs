@@ -68,7 +68,7 @@ Open de rij en gebruik **Archiveren**. De rekening verdwijnt uit de keuzelijsten
     Klanten en tarieven die de gearchiveerde rekening al dragen, houden ze. Archiveren is *niet meer kiezen*,
     niet *weghalen*.
 
-Wilt u ze terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde rekeningen**, open de rekening en klik op
+Wilt u ze terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerd**, open de rekening en klik op
 **Terughalen**.
 
 ## Veelgestelde vragen

@@ -85,7 +85,7 @@ Open de rij en gebruik **Archiveren**. De code verdwijnt uit de keuzelijsten, ma
     gewoon mee. Archiveren is *niet meer kiezen*, niet *weghalen*. Daarom houdt een gearchiveerde code ook haar
     tarief bezet: u maakt geen nieuwe code met dezelfde categorie en hetzelfde percentage.
 
-Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde codes**, open de code en klik op
+Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerd**, open de code en klik op
 **Terughalen**.
 
 ## Veelgestelde vragen

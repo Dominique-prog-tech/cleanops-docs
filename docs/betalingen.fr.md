@@ -27,8 +27,8 @@ fournisseurs ; avec les deux, l'ensemble. Saisir et annuler des paiements demand
 
 Un paiement saisi dans CleanOps porte l'étiquette **saisi ici** ; un paiement annulé l'étiquette **annulé**.
 
-Choisissez en haut la **Période** : ce mois-ci, les 3 derniers mois, cette année, ou tout l'historique. Avec **De**, vous
-n'affichez que les clients ou que les fournisseurs.
+Choisissez en haut, dans la première liste, la période : ce mois-ci, les 3 derniers mois, cette année, ou tout (l'historique complet). Avec
+la deuxième liste (*Clients et fournisseurs*), vous n'affichez que les clients ou que les fournisseurs.
 
 Sous les filtres figure le **total** des paiements affichés, comme sur l'extrait. Un paiement annulé ne compte pas. Avec
 **Ce mois-ci** et **Clients**, c'est le chiffre de la tuile *reçu des clients ce mois-ci* du [tableau de bord](dashboard.md).

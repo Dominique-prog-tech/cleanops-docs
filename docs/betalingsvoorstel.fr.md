@@ -56,7 +56,7 @@ Un fournisseur n'entre dans la proposition que s'il reste quelque chose à payer
 
 ## Retirer des documents ou les marquer payés
 
-Cochez les documents, ou cliquez sur une seule ligne, et choisissez :
+Cochez les documents ; les boutons apparaissent alors sous la barre d'outils. Choisissez :
 
 - **Retirer de la proposition** — vous ne payez pas ce document maintenant. CleanOps vous demande d'abord confirmation. Le
   document lui-même reste ; une nouvelle proposition le reprend s'il est alors à payer.

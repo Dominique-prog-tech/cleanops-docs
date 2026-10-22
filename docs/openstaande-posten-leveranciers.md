@@ -43,7 +43,7 @@ op uw rekening zal bewegen wanneer u alles betaalt.
 ## Een betaling ingeven
 
 1. Vink de documenten aan die u betaalt. Ze horen bij **één leverancier**: één betaling gaat over één leverancier.
-2. Klik op **Betaling ingeven**.
+2. Klik op **Betaling ingeven…** — de knop verschijnt onder de werkbalk zodra u iets aanvinkt.
 3. Het venster van [Betalingen](betalingen.md) opent, met de leverancier gekozen en het openstaande bedrag van de aangevinkte
    documenten al ingevuld. Kies het dagboek, de datum en het nummer van het uittreksel, en klik op **Boeken**.
 
@@ -56,13 +56,14 @@ Een volledig betaald document verdwijnt uit deze lijst. Een deelbetaling mag: he
 ## Betaald markeren
 
 Betaalde u een document al, bijvoorbeeld met het SEPA-bestand van het [betalingsvoorstel](betalingsvoorstel.md), maar staat
-de betaling nog niet op een uittreksel? Vink het aan, of klik op de rij, en klik op **Betaald**. Het document blijft in deze
+de betaling nog niet op een uittreksel? Vink het aan en klik op **Betaald** (onder de werkbalk). Het document blijft in deze
 lijst staan tot u de betaling boekt, maar komt niet meer in een betalingsvoorstel. **Niet betaald** zet dat terug.
 
 ## Veelgestelde vragen
 
 **Ik zie de knop Betaling ingeven niet.**
-Daarvoor is het recht *Betalingen ingeven* nodig. Vraag het aan uw beheerder.
+Vink eerst een document aan: de knoppen verschijnen pas dan. Ziet u ook geen vakjes om aan te vinken, dan mist u het recht
+*Betalingen ingeven*. Vraag het aan uw beheerder.
 
 **CleanOps zegt dat ik enkel documenten van dezelfde leverancier mag aanvinken.**
 Een betaling gaat over één leverancier. Geef voor elke leverancier een eigen betaling in.

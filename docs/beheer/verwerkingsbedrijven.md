@@ -15,8 +15,8 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Verwerki
 
 ## De lijst
 
-De lijst toont het volgnummer (**Nr**, dat CleanOps vanzelf geeft), de naam, het adres en het telefoonnummer. Met
-**Tonen** ziet u ook de gearchiveerde bedrijven. Een bedrijf dat u zelf in CleanOps aangemaakt hebt, draagt het label
+De lijst toont het volgnummer (**Nr**, dat CleanOps vanzelf geeft), de naam, het adres en het telefoonnummer. Zet
+bovenaan de keuzelijst op **Ook gearchiveerd** om ook de gearchiveerde bedrijven te zien. Een bedrijf dat u zelf in CleanOps aangemaakt hebt, draagt het label
 **eigen**.
 
 ## Een verwerkingsbedrijf toevoegen of wijzigen

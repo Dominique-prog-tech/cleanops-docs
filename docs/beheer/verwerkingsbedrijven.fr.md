@@ -16,7 +16,7 @@ En bas du menu, cliquez sur **Administration** puis sur la tuile **Entreprises d
 ## La liste
 
 La liste montre le numéro d'ordre (**N°**, que CleanOps donne automatiquement), le nom, l'adresse et le numéro de
-téléphone. Avec **Afficher**, vous voyez aussi les entreprises archivées. Une entreprise que vous avez créée vous-même
+téléphone. Réglez en haut la liste déroulante sur **Aussi archivées** pour voir aussi les entreprises archivées. Une entreprise que vous avez créée vous-même
 dans CleanOps porte l'étiquette **propre**.
 
 ## Ajouter ou modifier une entreprise de traitement

@@ -85,7 +85,7 @@ Ouvrez la ligne et utilisez **Archiver**. Le code disparaît des listes de choix
     continue à calculer avec lui. Archiver, c'est *ne plus choisir*, pas *retirer*. C'est pourquoi un code archivé
     garde aussi son taux : vous ne créez pas de nouveau code avec la même catégorie et le même pourcentage.
 
-Vous le voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi les codes archivés**, ouvrez le
+Vous le voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi archivés**, ouvrez le
 code et cliquez sur **Rétablir**.
 
 ## Questions fréquentes

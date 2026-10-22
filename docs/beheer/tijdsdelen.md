@@ -58,7 +58,7 @@ aangemaakt, gewijzigd, gearchiveerd of teruggehaald heeft.
 ## Een tijdsdeel archiveren of terughalen
 
 Open de rij en gebruik **Archiveren**. Het tijdsdeel verdwijnt uit de keuzelijst, maar werkorders die het al dragen, houden
-het en tonen de naam verder. Wilt u het terug? Zet bovenaan **Tonen** op **Ook gearchiveerde tijdsdelen**, open het en klik
+het en tonen de naam verder. Wilt u het terug? Zet bovenaan **Tonen** op **Ook gearchiveerd**, open het en klik
 op **Terughalen**.
 
 ## Veelgestelde vragen

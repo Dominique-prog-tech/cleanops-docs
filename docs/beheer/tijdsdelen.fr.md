@@ -32,7 +32,7 @@ CleanOps démarre avec cinq parties de la journée : **Premier travail**, **Mati
 
 ## Ajouter ou modifier une partie de la journée
 
-Cliquez sur **Nouvelle partie de la journée**, ou double-cliquez sur une ligne existante. Une nouvelle partie vient en dernier ;
+Cliquez sur **Nouvelle partie**, ou double-cliquez sur une ligne existante. Une nouvelle partie vient en dernier ;
 pour la placer entre deux autres, adaptez l'ordre.
 
 <!-- AFBEELDING: la fenêtre Modifier la partie de la journée pour Autre, avec Selon l'heure coché -->

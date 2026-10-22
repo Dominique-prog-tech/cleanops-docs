@@ -83,7 +83,7 @@ Ouvrez la ligne et utilisez **Archiver**. Le texte disparaît de la liste mais c
 Archiver et non effacer : les factures déjà établies portent le texte en **copie**, elles ne changent donc pas.
 Le code reste utile comme référence si vous voulez vérifier plus tard quel texte a été utilisé.
 
-Vous le voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi les textes archivés**, ouvrez le
+Vous le voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi archivés**, ouvrez le
 texte et cliquez sur **Rétablir**.
 
 !!! note "Un texte archivé garde sa coche"

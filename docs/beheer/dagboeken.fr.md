@@ -69,7 +69,7 @@ factures et les paiements qui le portent déjà le gardent.
 Le journal de vente par défaut ne peut pas être archivé. Cochez d'abord un autre journal de vente ; ce n'est possible
 qu'avant la première facture d'un exercice.
 
-Vous voulez rétablir un journal ? En haut de la liste, réglez **Afficher** sur **Aussi les journaux archivés**, ouvrez-le
+Vous voulez rétablir un journal ? En haut de la liste, réglez **Afficher** sur **Aussi archivés**, ouvrez-le
 et cliquez sur **Rétablir**.
 
 ## Questions fréquentes

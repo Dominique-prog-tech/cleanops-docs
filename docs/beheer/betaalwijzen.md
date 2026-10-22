@@ -55,7 +55,7 @@ aangemaakt, gewijzigd, gearchiveerd of teruggehaald heeft.
 ## Een betaalwijze archiveren of terughalen
 
 Open de rij en gebruik **Archiveren**. De betaalwijze verdwijnt uit de keuzelijst op de werkorder, maar werkorders en facturen
-die ze al dragen, houden ze. Wilt u ze terug? Zet bovenaan **Tonen** op **Ook gearchiveerde betaalwijzen**, open ze en klik op
+die ze al dragen, houden ze. Wilt u ze terug? Zet bovenaan **Tonen** op **Ook gearchiveerd**, open ze en klik op
 **Terughalen**.
 
 ## Veelgestelde vragen

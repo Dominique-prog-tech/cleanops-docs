@@ -82,7 +82,7 @@ Open de rij en gebruik **Archiveren**. De tekst verdwijnt uit de lijst maar blij
 Archiveren en niet verwijderen: facturen die al gemaakt zijn dragen de tekst als **kopie**, dus ze veranderen
 niet mee. De code blijft wel een verwijzing waard wanneer u later wil nakijken welke tekst er gebruikt werd.
 
-Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerde teksten**, open de tekst en klik op
+Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerd**, open de tekst en klik op
 **Terughalen**.
 
 !!! note "Een gearchiveerde tekst houdt zijn vinkje"

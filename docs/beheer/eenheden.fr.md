@@ -68,7 +68,7 @@ Ouvrez la ligne et utilisez **Archiver**. L'unité disparaît des listes de choi
     Les tarifs, ordres de travail, devis et factures qui portent déjà l'unité archivée la gardent. Archiver,
     c'est *ne plus choisir*, pas *retirer*.
 
-Vous la voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi les unités archivées**, ouvrez
+Vous la voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi archivés**, ouvrez
 l'unité et cliquez sur **Rétablir**.
 
 ## Questions fréquentes

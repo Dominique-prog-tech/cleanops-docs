@@ -69,7 +69,7 @@ Ouvrez la ligne et utilisez **Archiver**. Le compte disparaît des listes de cho
     Les clients et les tarifs qui portent déjà le compte archivé le gardent. Archiver, c'est *ne plus choisir*,
     pas *retirer*.
 
-Vous le voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi les comptes archivés**, ouvrez le
+Vous le voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi archivés**, ouvrez le
 compte et cliquez sur **Rétablir**.
 
 ## Questions fréquentes

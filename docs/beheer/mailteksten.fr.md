@@ -43,7 +43,7 @@ que vous ouvrez le type.
 
 Double-cliquez sur un type. La fiche a un onglet par langue et l'onglet **Envoi**.
 
-![Le texte d'e-mail Facture sur l'onglet Français : l'Objet, le Texte dans un éditeur de mise en forme, à droite les variables disponibles, et le bouton Enregistrer](../images/mailtekst-fiche-fr.png "Un texte d'e-mail")
+![Le texte d'e-mail Facture sur l'onglet Français : en haut les variables disponibles, l'Objet, le Texte dans un éditeur de mise en forme sur toute la largeur, et le bouton Enregistrer](../images/mailtekst-fiche-fr.png "Un texte d'e-mail")
 
 Sur l'onglet **Nederlands** ou **Français** :
 
@@ -57,7 +57,7 @@ Cliquez sur **Enregistrer**. Si le texte diffère du texte standard, il devient 
 
 ### Les variables
 
-Les **variables disponibles** figurent à droite. Faites-en glisser une dans l'objet ou le texte, ou cliquez
+Les **variables disponibles** figurent en haut. Faites-en glisser une dans l'objet ou le texte, ou cliquez
 dessus pour la copier. À l'envoi, CleanOps les remplit avec les données du document. Pour une facture et une note
 de crédit :
 

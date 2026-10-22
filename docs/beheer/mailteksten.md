@@ -41,7 +41,7 @@ soort opent.
 
 Dubbelklik op een soort. De fiche heeft een tabblad per taal en het tabblad **Verzending**.
 
-![De mailtekst Factuur op het tabblad Nederlands: het Onderwerp, de Tekst in een opmaakeditor, rechts de beschikbare variabelen, en de knop Bewaren](../images/mailtekst-fiche.png "Een mailtekst")
+![De mailtekst Factuur op het tabblad Nederlands: bovenaan de beschikbare variabelen, het Onderwerp, de Tekst in een opmaakeditor over de volle breedte, en de knop Bewaren](../images/mailtekst-fiche.png "Een mailtekst")
 
 Op het tabblad **Nederlands** of **Français**:
 
@@ -55,7 +55,7 @@ Klik op **Bewaren**. Wijkt de tekst af van de standaardtekst, dan wordt ze uw ei
 
 ### De plaatshouders
 
-Rechts staan de **beschikbare variabelen**. Sleep er een naar het onderwerp of de tekst, of klik erop om ze te
+Bovenaan staan de **beschikbare variabelen**. Sleep er een naar het onderwerp of de tekst, of klik erop om ze te
 kopiëren. Bij het mailen vult CleanOps ze in met de gegevens van het document. Voor een factuur en een creditnota:
 
 | Variabele | Wordt bij het mailen |

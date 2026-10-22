@@ -8,7 +8,7 @@ Les listes de choix que votre entreprise gère elle-même. Elles alimentent les 
 dans l'application : le type sur un contrat, les travaux sur un ordre de travail, la fonction d'un
 collaborateur.
 
-![L'écran Tables de base avec les choix Liste et Afficher en haut, le champ de recherche et le bouton Nouvel élément](../images/basistabellen-lijst-fr.png "Tables de base")
+![L'écran Tables de base avec les deux listes déroulantes en haut, le champ de recherche et le bouton Nouveau](../images/basistabellen-lijst-fr.png "Tables de base")
 
 !!! note "Ce qui ne figure pas ici"
     Les pays, langues, codes postaux et données BCE proviennent de la plateforme et sont identiques pour tous
@@ -20,7 +20,7 @@ Cliquez sur **Administration** en bas du menu, puis sur la tuile **Tables de bas
 
 ## Choisir une liste
 
-En haut se trouve **Liste**. Vous y choisissez la liste de choix que vous consultez :
+En haut, dans la première liste déroulante, vous choisissez la liste que vous consultez :
 
 | Liste | Où vous la retrouvez |
 |---|---|
@@ -28,8 +28,8 @@ En haut se trouve **Liste**. Vous y choisissez la liste de choix que vous consul
 | Travaux | les travaux exécutés sur un ordre ou un bon de travail |
 | Statut de planning | une classification libre ; aucun écran ne la propose aujourd'hui |
 | Fonctions collaborateur | la fonction d'un collaborateur — reprise de votre application actuelle ; la fiche collaborateur ne l'affiche pas encore |
-| Matériel & modes de paiement | matériel et mode de paiement sur un ordre de travail |
-| Textes standard d'instructions | repris de votre application actuelle ; aucun écran ne la propose aujourd'hui |
+| Matériel & paiements | matériel et mode de paiement sur un ordre de travail |
+| Instructions standard | repris de votre application actuelle ; aucun écran ne la propose aujourd'hui |
 | Types de véhicule | le type sur une fiche véhicule |
 
 Si vous choisissez **Toutes les listes**, vous les voyez toutes ensemble. Une colonne s'ajoute alors pour
@@ -39,13 +39,13 @@ Le champ de recherche est prêt dès l'ouverture et cherche dans toutes les colo
 
 ## Ajouter ou modifier un élément
 
-Cliquez sur **Nouvel élément**, ou double-cliquez sur une ligne existante. Dans les deux cas, vous obtenez la
+Cliquez sur **Nouveau**, ou double-cliquez sur une ligne existante. Dans les deux cas, vous obtenez la
 même fenêtre.
 
 ![La fenêtre Modifier l'élément avec Description (NL), Description (FR) et Ordre](../images/basistabel-venster-fr.png "Un élément")
 
 !!! note "La création n'est possible qu'au sein d'une liste"
-    Sur **Toutes les listes**, le bouton **Nouvel élément** n'apparaît pas : il n'y a alors pas de liste où
+    Sur **Toutes les listes**, le bouton **Nouveau** n'apparaît pas : il n'y a alors pas de liste où
     créer l'élément. Choisissez d'abord une liste.
 
 | Champ | Ce que vous complétez |
@@ -59,7 +59,7 @@ utilise l'application dans l'autre langue.
 
 ### L'ordre
 
-L'**ordre** ne compte que pour trois listes : **Travaux**, **Matériel & modes de paiement** et **Fonctions
+L'**ordre** ne compte que pour trois listes : **Travaux**, **Matériel & paiements** et **Fonctions
 collaborateur**. Le nombre le plus élevé y apparaît en premier, pour que ce que vous choisissez chaque jour
 figure en tête. Les autres listes sont toujours **alphabétiques**, quel que soit l'ordre saisi — comme dans
 votre application actuelle.
@@ -80,7 +80,7 @@ Ouvrez la ligne et utilisez **Archiver**. L'élément disparaît des listes de c
     Un contrat, un ordre de travail ou un véhicule qui porte déjà l'élément archivé le garde ; les listes le
     montrent toujours. Archiver, c'est *ne plus choisir*, pas *retirer*.
 
-Vous le voulez à nouveau ? En haut, réglez **Afficher** sur **Aussi les éléments archivés**, ouvrez l'élément
+Vous le voulez à nouveau ? En haut, réglez la deuxième liste déroulante sur **Aussi archivés**, ouvrez l'élément
 et cliquez sur **Rétablir**.
 
 Un élément sans description s'appelle dans la liste *(sans nom, n° …)* : le numéro est celui de votre

@@ -76,7 +76,7 @@ clients, mais elle continue d'exister.
     Un client qui a déjà la condition archivée la garde : sa fiche la montre toujours, et ses factures en
     reçoivent normalement leur échéance. Archiver, c'est *ne plus choisir*, pas *retirer*.
 
-Vous la voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi les conditions archivées**,
+Vous la voulez à nouveau ? En haut de la liste, réglez **Afficher** sur **Aussi archivées**,
 ouvrez la condition et cliquez sur **Rétablir**.
 
 ## Le journal

@@ -7,7 +7,7 @@ description: "Basistabellen in CleanOps: de keuzelijsten die uw bedrijf zelf beh
 De keuzelijsten die uw bedrijf zelf beheert. Ze vullen de keuzevelden elders in de toepassing: het
 contracttype op een contract, de werkzaamheden op een werkorder, de functie van een medewerker.
 
-![Het scherm Basistabellen met de keuzes Lijst en Tonen bovenaan, het zoekveld en de knop Nieuw item](../images/basistabellen-lijst.png "Basistabellen")
+![Het scherm Basistabellen met de twee keuzelijsten bovenaan, het zoekveld en de knop Nieuw](../images/basistabellen-lijst.png "Basistabellen")
 
 !!! note "Wat hier níét staat"
     Landen, talen, postcodes en KBO-gegevens komen van het platform en zijn voor alle klanten dezelfde. Die
@@ -19,7 +19,7 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Basistab
 
 ## Een lijst kiezen
 
-Bovenaan staat **Lijst**. Daar kiest u welke keuzelijst u bekijkt:
+Bovenaan, in de eerste keuzelijst, kiest u welke lijst u bekijkt:
 
 | Lijst | Waar u ze terugvindt |
 |---|---|
@@ -28,7 +28,7 @@ Bovenaan staat **Lijst**. Daar kiest u welke keuzelijst u bekijkt:
 | Planningstatus | een vrije classificatie; ze wordt vandaag op geen enkel scherm gekozen |
 | Functies medewerker | de functie van een medewerker — overgenomen uit uw huidige toepassing; de medewerkersfiche toont ze nog niet |
 | Materialen & betaalwijzen | materiaal en betaalwijze op een werkorder |
-| Standaardteksten instructies | overgenomen uit uw huidige toepassing; ze wordt vandaag op geen enkel scherm gekozen |
+| Standaardinstructies | overgenomen uit uw huidige toepassing; ze wordt vandaag op geen enkel scherm gekozen |
 | Soorten voertuig | de soort op een voertuigfiche |
 
 Kiest u **Alle lijsten**, dan ziet u alle lijsten samen. Er komt dan een kolom bij die zegt bij welke lijst een
@@ -38,12 +38,12 @@ Het zoekveld staat meteen klaar en zoekt in alle kolommen.
 
 ## Een item toevoegen of wijzigen
 
-Klik op **Nieuw item**, of dubbelklik op een bestaande rij. In beide gevallen krijgt u hetzelfde venster.
+Klik op **Nieuw**, of dubbelklik op een bestaande rij. In beide gevallen krijgt u hetzelfde venster.
 
 ![Het venster Item bewerken met Omschrijving (NL), Omschrijving (FR) en Volgorde](../images/basistabel-venster.png "Een item")
 
 !!! note "Aanmaken kan enkel binnen één lijst"
-    Op de stand **Alle lijsten** blijft de knop **Nieuw item** weg: er is dan geen lijst om het item in te
+    Op de stand **Alle lijsten** blijft de knop **Nieuw** weg: er is dan geen lijst om het item in te
     maken. Kies eerst een lijst.
 
 | Veld | Wat u invult |
@@ -77,7 +77,7 @@ Open de rij en gebruik **Archiveren**. Het item verdwijnt uit de keuzelijsten, m
     Een contract, werkorder of voertuig dat het gearchiveerde item al draagt, houdt het; de lijsten tonen het
     nog. Archiveren is *niet meer kiezen*, niet *weghalen*.
 
-Wilt u het terug? Zet bovenaan **Tonen** op **Ook gearchiveerde items**, open het item en klik op
+Wilt u het terug? Zet bovenaan de tweede keuzelijst op **Ook gearchiveerd**, open het item en klik op
 **Terughalen**.
 
 Een item zonder omschrijving heet in de lijst *(zonder naam, nr …)*: het nummer is dat uit uw huidige

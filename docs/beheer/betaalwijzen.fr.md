@@ -29,7 +29,7 @@ CleanOps démarre avec trois modes : **Payconiq** et **Espèces** (sur place) et
 
 ## Ajouter ou modifier un mode de paiement
 
-Cliquez sur **Nouveau mode de paiement**, ou double-cliquez sur une ligne existante.
+Cliquez sur **Nouveau mode**, ou double-cliquez sur une ligne existante.
 
 <!-- AFBEELDING: la fenêtre Modifier le mode de paiement pour Espèces, avec Payé sur place coché et le journal KAS -->
 
@@ -56,7 +56,7 @@ l'a créé, modifié, archivé ou rétabli, et quand.
 ## Archiver ou rétablir un mode de paiement
 
 Ouvrez la ligne et utilisez **Archiver**. Le mode disparaît de la liste de choix de l'ordre de travail, mais les ordres et les
-factures qui le portent déjà le gardent. Pour le récupérer : réglez **Afficher** sur **Aussi les modes archivés**, ouvrez-le et
+factures qui le portent déjà le gardent. Pour le récupérer : réglez **Afficher** sur **Aussi archivés**, ouvrez-le et
 cliquez sur **Rétablir**.
 
 ## Questions fréquentes
