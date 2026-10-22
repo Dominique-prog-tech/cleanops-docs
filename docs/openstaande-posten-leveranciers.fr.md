@@ -10,7 +10,7 @@ Ce que vous devez encore à vos fournisseurs, par fournisseur avec son solde. C'
 
 ## Ouvrir l'écran
 
-Cliquez à gauche dans le menu, sous **Achats**, sur **Postes ouverts**. Il vous faut le droit *Voir les achats* ; pour saisir un
+Cliquez à gauche dans le menu, sous **Achats**, sur **Postes ouverts**. L'écran s'intitule Postes ouverts fournisseurs. Il vous faut le droit *Voir les achats* ; pour saisir un
 paiement aussi *Saisir des paiements*.
 
 ## La liste

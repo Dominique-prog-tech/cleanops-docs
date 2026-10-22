@@ -44,35 +44,58 @@ première adresse d'exécution à partir de l'adresse et du téléphone du clien
 
 En haut figurent le nom et le numéro du client, puis une rangée d'onglets. À gauche **Fiche** et
 **Adresses** — le client lui-même. À droite, ce qui est rattaché au client : **Contrats**, **Devis**,
-**Factures**, **Postes ouverts**, **Paiements** et **Mémos**, et en fin de rangée **Pièces jointes** et **Historique**.
+**Factures**, **Postes ouverts** et **Paiements**, et en fin de rangée **Journal**. Sous Journal figurent **Mémos**,
+**Pièces jointes** et **Historique**.
 
 Chaque onglet reste visible, même vide ; le nombre figure entre parenthèses dans son titre. « Devis (0) »
-signifie donc qu'il n'y a pas de devis. Seuls les onglets **Paiements** et **Mémos** ne sont visibles qu'avec le droit de voir les
-postes ouverts.
+signifie donc qu'il n'y a pas de devis. **Factures** est visible avec le droit de consulter les factures ; **Postes ouverts**,
+**Paiements** et **Mémos** avec le droit de voir les postes ouverts.
 
 ![La fiche de Résidence Les Tilleuls sur l'onglet Fiche, avec les onglets au-dessus et les remarques en bas](images/klant-fiche-fr.png "Fiche client")
 
 ### L'onglet Fiche
 
+La fiche est répartie en cinq blocs : **Identification**, **Adresse**, **Contact**, **Facturation et rappels** et **Remarques**.
+
+**Identification**
+
 | Champ | Explication |
 |---|---|
+| Nom *, Nom (2e ligne) | Le nom tel qu'il figure sur les documents, 30 caractères au plus chacun. |
+| Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle. **Rechercher** montre d'abord ce que sait la BCE — nom, type, création, situation juridique, forme juridique et adresse, et en rouge **arrêtée** si l'entreprise n'est plus active. **Reprendre** place le nom et l'adresse (avec l'ajout et la boîte au numéro) sur la fiche ; ce que la BCE ne connaît pas reste tel quel. Vous enregistrez ensuite vous-même. Si rien ne revient, CleanOps dit pourquoi : la BCE ne connaît pas le numéro (vérifiez-le), ou la recherche est momentanément indisponible (réessayez plus tard). ⚠️ La BCE donne le siège social, pas toujours l'adresse de facturation. |
 | Nom de recherche | Le nom en majuscules. CleanOps le forme lui-même à partir du nom ; il détermine l'ordre dans la liste. |
+| Langue * | La langue des documents pour ce client. |
+
+**Adresse**
+
+| Champ | Explication |
+|---|---|
+| Rue *, N°, Code postal *, Commune *, Pays | L'adresse du client. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. Sous la commune, **Carte** et **Itinéraire** ouvrent l'adresse dans Google Maps, dans un nouvel onglet. |
+
+**Contact**
+
+| Champ | Explication |
+|---|---|
+| Personne de contact | La personne de contact chez le client. |
+| Téléphone, GSM, Fax, E-mail | Un numéro de téléphone, de GSM ou une adresse e-mail doit être valide ; le fax non. |
+
+**Facturation et rappels**
+
+| Champ | Explication |
+|---|---|
 | Délai de paiement * | Le délai qui sert à calculer l'échéance d'une facture. Vous choisissez parmi les délais de paiement de l'Administration. |
 | Compte de vente | Le compte général pour votre bureau comptable, choisi dans le [plan comptable](beheer/rekeningplan.fr.md). Peut rester vide. |
-| Nom *, Nom (2e ligne) | Le nom tel qu'il figure sur les documents, 30 caractères au plus chacun. |
-| Rue *, N°, Code postal *, Commune *, Pays | L'adresse du client. Après le code postal, Commune propose les localités de ce code (9800 : Deinze, Astene, Vinkt…) ; vous pouvez aussi taper vous-même. Sous la commune, **Carte** et **Itinéraire** ouvrent l'adresse dans Google Maps, dans un nouvel onglet. |
-| Langue * | La langue des documents pour ce client. |
 | Type de client | **Entreprise** ou **Particulier**. Une entreprise a besoin d'un numéro de TVA. |
-| Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle. **Rechercher** montre d'abord ce que sait la BCE — nom, type, création, situation juridique, forme juridique et adresse, et en rouge **arrêtée** si l'entreprise n'est plus active. **Reprendre** place le nom et l'adresse (avec l'ajout et la boîte au numéro) sur la fiche ; ce que la BCE ne connaît pas reste tel quel. Vous enregistrez ensuite vous-même. Si rien ne revient, CleanOps dit pourquoi : la BCE ne connaît pas le numéro (vérifiez-le), ou la recherche est momentanément indisponible (réessayez plus tard). ⚠️ La BCE donne le siège social, pas toujours l'adresse de facturation. |
-| Contact | La personne de contact chez le client. |
-| Téléphone, GSM, Fax, E-mail | Un numéro de téléphone, de GSM ou une adresse e-mail doit être valide ; le fax non. |
 | E-mail facturation, E-mail rappels, E-mail attestations | Une adresse distincte pour les factures, les rappels et les attestations, si elle diffère de l'adresse e-mail ci-dessus. Chaque champ contient une seule adresse valide. |
 | GLN / identifiant Peppol | L'adresse du client sur le réseau Peppol : un numéro GLN de 13 chiffres, ou un identifiant Peppol complet comme `0208:0123456749`. Vide : CleanOps recherche le client avec son numéro de TVA. S'il contient autre chose, la fiche indique qu'il n'est pas utilisable. Avec **Vérifier Peppol**, vous voyez si le client est sur le réseau et s'il reçoit des factures et des notes de crédit — vous savez ainsi si **Envoyer…** sur une facture passe par Peppol ou par e-mail (voir [Factures](facturen.fr.md#envoyer)). |
 | Bloqué | Le client reste utilisable, mais figure avec une étiquette dans la liste et se remarque dans la planification. CleanOps le signale lors d'un nouvel ordre de travail. |
 | Reçoit des rappels | Désactivez ceci pour un client que vous ne souhaitez pas relancer. |
 | Pas de nouvelles missions | Lors d'un nouvel ordre de travail pour ce client, CleanOps demande d'abord une confirmation. |
 | Factures par e-mail | Le client préfère recevoir ses factures par e-mail plutôt que par courrier. |
-| Remarques | Du texte libre sur le client, comme les coordonnées de personnes ou des accords. |
+
+**Remarques**
+
+Du texte libre sur le client, comme les coordonnées de personnes ou des accords.
 
 Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire, CleanOps indique lequel. Une
 adresse e-mail, un numéro de téléphone ou un numéro de TVA incorrect est refusé — même si vous ne l'avez pas
@@ -106,7 +129,8 @@ En dessous figure ce qui se passe, avant que vous confirmiez :
 - Si une autre adresse est sur **N'accepte plus de nouvelles commandes**, la fenêtre le signale. L'adresse qui reste ne
   le reprend pas ; activez-le vous-même si nécessaire.
 
-**Fusionner** place les autres adresses dans la [corbeille](beheer/prullenbak.fr.md). La modification figure dans
+**Fusionner** place les autres adresses dans la [corbeille](beheer/prullenbak.fr.md). Un court message en haut de
+l'écran indique combien d'adresses ont été fusionnées et combien de contrats et d'ordres de travail ont été repris. La modification figure dans
 l'historique de chaque contrat et de chaque ordre de travail qui a reçu une autre adresse. Les
 [rapports caméra](cameraverslagen.fr.md) des autres adresses vont eux aussi à l'adresse qui reste.
 
@@ -124,6 +148,9 @@ sur **choisir**. La fenêtre indique alors ce qui part et ce qui reste :
 - Si un ordre qui part porte un numéro de commande du client actuel, celui-ci reste en place. La fenêtre le signale,
   pour que vous puissiez le vérifier.
 - Les [rapports caméra](cameraverslagen.fr.md) de l'adresse la suivent : ils appartiennent à l'adresse.
+
+Après le déplacement, un court message en haut de l'écran indique combien d'adresses, de contrats et d'ordres de travail
+sont partis.
 
 ![La fenêtre Déplacer des adresses vers un autre client : l'adresse de Résidence Les Tilleuls part chez un autre client, avec ce qui part et ce qui reste](images/klant-adres-verplaatsen-fr.png "Déplacer des adresses")
 
@@ -167,8 +194,9 @@ Double-cliquez sur un rapport pour l'ouvrir ; **Nouveau rapport caméra** en ét
 
 ### Ce qui est rattaché au client
 
-**Contrats** — les contrats périodiques de ce client, avec le numéro, la description, la fréquence et la date de
-début. Ce sont ces contrats qui donnent naissance aux ordres de travail.
+**Contrats** — les contrats périodiques de ce client, avec le numéro, la description, l'**Adresse d'exécution**, la
+fréquence et la date de début. Si un contrat est en pause, **en pause** figure à côté de la description. Ce sont ces
+contrats qui donnent naissance aux ordres de travail.
 
 **Devis** — avec le numéro, la date, la description, le total et le statut.
 
@@ -177,8 +205,9 @@ début. Ce sont ces contrats qui donnent naissance aux ordres de travail.
 jour du dernier paiement, ou la date de la facture si elle était déjà payée d'avance. La communication est la référence structurée que le client mentionne lors de son paiement.
 
 **Postes ouverts** — ce qui reste dû par ce client. En haut figure le solde ouvert, en rouge s'il dépasse zéro.
-Pour chaque poste, vous voyez le document, la date, l'échéance, le montant initial et le solde ouvert, et le nombre de
-rappels. En
+Pour chaque poste, vous voyez le document, la date, l'échéance, le montant initial et le solde ouvert, le nombre de
+rappels, la date du **Dernier rappel** et une **Remarque** : la remarque de rappel, avec une étiquette si le poste est
+parti en **recouvrement**, a reçu un **avertissement**, est **exclu** des rappels ou a été **crédité**. En
 dessous figure l'**historique des rappels** : les rappels envoyés, avec la date, le document, le niveau et qui les a
 envoyés. S'il est vide alors qu'un poste compte déjà des rappels, ceux-ci datent d'avant le journal de votre application
 précédente : ils figurent uniquement comme nombre à côté du poste.
@@ -186,20 +215,20 @@ précédente : ils figurent uniquement comme nombre à côté du poste.
 **Paiements** — les paiements de ce client, le plus récent en premier : date et numéro de l'extrait, journal, montant et
 remarque. Un paiement annulé porte le label **annulé**. Voir aussi [Paiements](betalingen.md).
 
-**Mémos** — ce qui a été convenu avec ce client, avec la date et éventuellement une date de rappel. Voir
-[Mémos](#memos) ci-dessous.
+**Journal** — avec trois onglets :
 
-**Pièces jointes** — les documents de ce client. **Pièce jointe** ajoute un fichier, jusqu'à 25 Mo ; pour chacune,
-vous adaptez la description ou vous la supprimez.
-
-**Historique** — qui a modifié quel champ de ce client, quand, et de quelle valeur vers quelle autre. Le plus
-récent figure en haut.
+- **Mémos** — ce qui a été convenu avec ce client, avec la date et éventuellement une date de rappel. Voir
+  [Mémos](#memos) ci-dessous.
+- **Pièces jointes** — les documents de ce client. **Pièce jointe** ajoute un fichier, jusqu'à 25 Mo ; pour chacune,
+  vous adaptez la description ou vous la supprimez.
+- **Historique** — qui a modifié quel champ de ce client, quand, et de quelle valeur vers quelle autre. Le plus
+  récent figure en haut.
 
 Chaque onglet dispose de son propre bouton d'exportation, ce qui vous permet d'exporter un élément séparément.
 
 ### Mémos
 
-Dans l'onglet **Mémos**, vous notez ce qui a été convenu avec le client, par exemple sur un paiement. Cliquez sur **Nouveau mémo**,
+Sous **Journal** › **Mémos**, vous notez ce qui a été convenu avec le client, par exemple sur un paiement. Cliquez sur **Nouveau mémo**,
 ou double-cliquez sur un mémo pour le modifier.
 
 ![La fenêtre d'un mémo chez Résidence Les Tilleuls, avec Date, Rappeler le, la case Traité et le texte](images/klant-memo-fr.png "Un mémo")
@@ -216,13 +245,18 @@ et modifiez des mémos avec le droit de gérer les rappels.
 
 ### Les boutons en bas
 
-À côté d'**Enregistrer** et d'**Annuler**, la fiche peut porter quatre boutons.
+À côté d'**Enregistrer** et d'**Annuler** figurent **Nouvel ordre de travail** et **Nouveau devis**. Ce qui sert moins
+souvent se trouve dans le menu **Plus…** :
 
-- **Ordres de travail** ouvre la [liste des ordres de travail](werkorders.md) avec uniquement les ordres de ce client,
+- **Ordres de travail** ouvre la [liste des ordres de travail](werkorders.fr.md) avec uniquement les ordres de ce client,
   tous statuts confondus. Vous le voyez si vous pouvez ouvrir les ordres de travail.
-- **Nouvel ordre de travail**, **Nouveau devis** et **Facture d'acompte** n'apparaissent que si vous avez le droit de
-  créer ce qu'ils créent, et que la partie vers laquelle ils mènent est ouverte pour vous. Ce que vous créez ainsi
-  apparaît dans l'onglet correspondant.
+- **Facture d'acompte…** ouvre une fenêtre avec **Description**, **Montant net** et **Code TVA**. Avec **Créer**, CleanOps
+  crée la facture d'acompte ; un court message en haut de l'écran donne son numéro, et vous la trouvez dans l'onglet
+  **Factures**.
+
+**Nouvel ordre de travail**, **Nouveau devis** et **Facture d'acompte…** n'apparaissent que si vous avez le droit de
+créer ce qu'ils créent, et que la partie vers laquelle ils mènent est ouverte pour vous. Ce que vous créez ainsi
+apparaît dans l'onglet correspondant. Si le menu ne contient rien pour vous, **Plus…** n'apparaît pas.
 
 !!! info "Tous les boutons ne sont pas visibles par tout le monde"
     Les boutons que vous voyez et les lignes que vous pouvez ouvrir dépendent de vos droits. Une partie qui n'est

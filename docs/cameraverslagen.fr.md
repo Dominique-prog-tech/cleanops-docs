@@ -12,10 +12,12 @@ ordres de travail. Vous l'imprimez ou vous l'envoyez par e-mail à votre client 
 
 ## Ouvrir ou établir un rapport
 
-Vous arrivez à un rapport par l'adresse ou par le travail auquel il appartient.
+Vous arrivez à un rapport par l'adresse ou par le travail auquel il appartient, ou par la liste Rapports caméra.
 
 | D'où | Comment |
 |---|---|
+| **La liste Rapports caméra** | Dans le menu, sous **Travail**, cliquez sur **Rapports caméra**. Double-cliquez sur un ordre de travail pour ouvrir son rapport, ou pour l'établir s'il manque (voir [La liste](#la-liste)). |
+| **Le tableau de bord** | La carte **Rapports caméra à établir** montre les premiers ordres de travail sans rapport ; **Afficher les …** ouvre la liste Rapports caméra sur ces ordres (voir [Sur le tableau de bord](#sur-le-tableau-de-bord)). |
 | **L'adresse d'exécution** | Ouvrez le [client](klanten.fr.md), l'onglet **Adresses**, l'adresse, puis l'onglet **Rapports caméra**. Double-cliquez sur un rapport pour l'ouvrir ; **Nouveau rapport caméra** en établit un. |
 | **L'ordre de travail** | Sur la ligne **Rapport caméra** de la fiche de l'ordre de travail : cliquez sur le rapport pour l'ouvrir, ou sur **Nouveau…** pour en établir un qui est lié d'office à l'ordre de travail (voir [Sur l'ordre de travail](#sur-lordre-de-travail)). |
 | **La Facturation** | Dans la fenêtre **Facturer…**, le **rapport caméra** en vert ouvre le rapport ; **rapport caméra manquant — l'établir** en rouge en établit un pour cet ordre de travail (voir [Dans la facturation](#dans-la-facturation)). |
@@ -25,10 +27,44 @@ Vous arrivez à un rapport par l'adresse ou par le travail auquel il appartient.
 L'onglet montre les rapports de l'adresse, du plus récent au plus ancien, avec la date, le collaborateur et la première ligne
 des constatations. **← Adresse** sur le rapport vous ramène à cet onglet.
 
+## La liste
+
+Dans le menu, sous **Travail**, cliquez sur **Rapports caméra**. La liste montre les ordres de travail qui demandent un
+rapport caméra ou en ont un, avec leur rapport.
+
+<!-- AFBEELDING: la liste Rapports caméra sur À facturer et Rapport manquant, avec les colonnes N°, Exécuté, Statut, Rapport, Client, Adresse d'exécution et Description -->
+
+| Colonne | Contenu |
+|---|---|
+| **N°** | le numéro de l'ordre de travail. |
+| **Exécuté** | le jour où le travail a été exécuté. |
+| **Statut** | le statut de l'ordre de travail. |
+| **Rapport** | la date du rapport en vert, ou *manquant* en rouge. Un rapport dans la corbeille compte comme manquant. |
+| **Client**, **Adresse d'exécution**, **Description** | pour qui, où et quoi. |
+| **Facture** | le numéro de facture, si l'ordre de travail est facturé. |
+
+En haut, vous filtrez :
+
+- **Facturation** — **Pas encore facturés** (par défaut), **À facturer**, **Facturés** ou **Tous**.
+- **Rapport** — **Avec ou sans rapport**, ou uniquement **Rapport manquant**.
+- **Période** — sur le jour d'exécution.
+
+Avec **À facturer** et **Rapport manquant**, la liste montre le même chiffre que la carte du tableau de bord.
+
+Un double-clic fait ceci, et sous la liste figure ce qu'il fait pour l'ordre de travail sélectionné :
+
+- si l'ordre de travail a un rapport, le rapport s'ouvre ;
+- si le rapport manque, un nouveau rapport s'ouvre à l'adresse d'exécution de l'ordre, lié d'office à l'ordre de travail à
+  l'enregistrement ;
+- si aucun rapport ne peut être établi — l'ordre n'a pas d'adresse d'exécution, ou vous ne pouvez pas modifier les ordres
+  de travail —, l'ordre de travail s'ouvre.
+
+À droite se trouve le volet **Journal** : l'historique du rapport de l'ordre de travail sélectionné.
+
 ## La fiche
 
-En haut figurent l'**adresse d'exécution**, le **client** et les **ordres de travail** liés au rapport ; cliquez sur un numéro
-pour ouvrir l'ordre de travail.
+La fiche est répartie en deux blocs. Le bloc **Adresse** montre l'**adresse d'exécution**, le **client** et les **ordres de
+travail** liés au rapport ; cliquez sur un numéro pour ouvrir l'ordre de travail. Dans le bloc **Rapport**, vous indiquez :
 
 | Champ | Ce que vous indiquez |
 |---|---|
@@ -36,12 +72,12 @@ pour ouvrir l'ordre de travail.
 | **Collaborateur** | qui a fait l'inspection. |
 | **Constatations** | ce que la caméra a montré, avec vos mots. La première ligne figure dans la liste de l'adresse et dans la fenêtre de choix de l'ordre de travail : commencez donc par l'essentiel. |
 
-Cliquez sur **Enregistrer**. Un nouveau rapport reste ensuite ouvert, pour que vous puissiez y ajouter les photos ; pour un
-rapport existant, vous revenez là d'où vous veniez.
+Cliquez sur **Enregistrer**. Le rapport reste ensuite ouvert, pour que vous puissiez tout de suite y ajouter des photos,
+l'imprimer ou l'envoyer par e-mail.
 
 ### Photos et images
 
-Ouvrez l'onglet **Pièces jointes** et cliquez sur **Pièce jointe**. Glissez les fichiers dans la zone ou cliquez pour les
+Ouvrez l'onglet **Journal** › **Pièces jointes** et cliquez sur **Pièce jointe**. Glissez les fichiers dans la zone ou cliquez pour les
 choisir (25 Mo au maximum par fichier). Dans **Description**, indiquez ce que l'on y voit.
 
 - Une **photo** (jpg, png, gif ou webp) figure dans le document, avec sa description en dessous — ou le nom du fichier s'il
@@ -77,7 +113,7 @@ autres adresses peuvent être cochées en **Cc**.
   cochée disparaît pendant que la fenêtre est ouverte, l'e-mail ne part pas et CleanOps dit pourquoi.
 - Avec **Joindre un fichier**, vous ajoutez vous-même un fichier (10 Mo au maximum par fichier, 20 Mo au total).
 
-Après l'envoi, vous retrouvez l'e-mail dans l'onglet **E-mails** du rapport.
+Après l'envoi, vous retrouvez l'e-mail sous **Journal** › **E-mails** du rapport.
 
 Un rapport caméra est un document à part : il ne part pas avec l'e-mail de la facture, ni via Peppol.
 
@@ -123,8 +159,10 @@ pouvez facturer sans rapport.
 
 ## Sur le tableau de bord
 
-La tuile **rapports caméra à établir** du [tableau de bord](dashboard.fr.md) compte les ordres de travail exécutés qui sont
-encore à facturer, qui demandent un rapport et qui n'en ont pas. Un clic ouvre la Facturation.
+La carte **Rapports caméra à établir** du [tableau de bord](dashboard.fr.md) compte les ordres de travail exécutés qui sont
+encore à facturer, qui demandent un rapport et qui n'en ont pas, et montre les cinq premiers avec leur numéro, leur client et
+leur commune. Un clic sur une ligne ouvre l'ordre de travail ; **Afficher les …** ouvre [la liste](#la-liste) Rapports
+caméra sur **À facturer** et **Rapport manquant**.
 
 ## Supprimer un rapport
 
@@ -140,8 +178,8 @@ déplacez une adresse vers un autre client, ses rapports la suivent (voir [Clien
 
 ## L'historique
 
-L'onglet **Historique** du rapport montre qui l'a établi et modifié. Ce qui a été envoyé par e-mail figure dans l'onglet
-**E-mails**.
+Sous **Journal** › **Historique**, le rapport montre qui l'a établi et modifié. Ce qui a été envoyé par e-mail figure sous
+**Journal** › **E-mails**.
 
 ## Droits
 
@@ -168,7 +206,7 @@ Non. Un rapport appartient à une adresse d'exécution. Choisissez ou créez d'a
 Non. Vous l'envoyez à part, depuis le rapport lui-même.
 
 **J'ai envoyé le rapport par e-mail ; où le vois-je ?**
-Dans l'onglet **E-mails** du rapport.
+Sous **Journal** › **E-mails** du rapport.
 
 ## Voir aussi
 

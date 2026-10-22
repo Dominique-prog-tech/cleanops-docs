@@ -58,11 +58,11 @@ materiaallevering.
 
 1. Klik bovenaan de lijst op **Nieuwe factuur**, zoek de klant op naam of nummer en klik op **kies**. Onder elke naam
    staat het adres.
-2. Vul de **Factuurdatum** in (standaard vandaag), en eventueel de **Klantreferentie**, de **Koptekst** en de **Slottekst**. Met
+2. Het scherm staat in twee blokken: **Factuur** en **Lijnen**. Vul in het blok **Factuur** de **Factuurdatum** in (standaard vandaag), en eventueel de **Klantreferentie**, de **Koptekst** en de **Slottekst**. Met
    **Factuurtekst invoegen** zet u een tekst uit de [factuurteksten](beheer/factuurteksten.md) achteraan in het veld, in de taal
    van de klant. Met **Standaard btw-code** kiest u één btw-code voor elke lijn die er nog geen heeft: ook een nieuwe lijn krijgt
    ze, en een tarief dat zelf geen btw-code draagt. Wat een lijn al draagt, blijft staan.
-3. Vul de **lijnen** in. Een **Tarief** kiezen vult de omschrijving, de eenheid, de prijs en de btw-code in, en zet de
+3. Vul in het blok **Lijnen** de lijnen in. Een **Tarief** kiezen vult de omschrijving, de eenheid, de prijs en de btw-code in, en zet de
    **Tekst op de factuur** van het tarief in het vak **Tekst onder de lijn**; u kunt ze daarna aanpassen. Wat in dat vak staat,
    komt op de factuur onder de lijn. Een omschrijving langer dan 35 tekens komt daar ook volledig te staan. Met het menu **⋯** rechts
    dupliceert of verwijdert u een lijn, met **+ Regel toevoegen** komt er een bij.
@@ -71,7 +71,7 @@ materiaallevering.
    volgens de betalingstermijn van de klant en een gestructureerde mededeling, en komt in [Openstaande posten](openstaande-posten.md).
    Ze opent meteen.
 
-![Het venster Nieuwe factuur voor Camping Zonnedal met een Koptekst, twee vrije Lijnen en de totalen, met de knop Factuur boeken](images/factuur-nieuw.png "Nieuwe factuur")
+![Het scherm Nieuwe factuur voor Camping Zonnedal met een Koptekst, twee vrije Lijnen en de totalen, met de knop Factuur boeken](images/factuur-nieuw.png "Nieuwe factuur")
 
 Staat er iets niet goed, bijvoorbeeld een lijn zonder btw-code, dan zegt het scherm wat er ontbreekt en wordt er niets geboekt.
 Draagt een lijn 6 % btw, dan komt de attestzin vanzelf onder de slottekst.
@@ -83,7 +83,7 @@ Draagt een lijn 6 % btw, dan komt de attestzin vanzelf onder de slottekst.
 Bovenaan staan de klant, de datums, de betalingstermijn, de mededeling, de klantreferentie en de bedragen. Daaronder de
 **koptekst** als die er is, de **lijnen**, de **btw-opbouw** en ernaast de **betalingen** die erop kwamen (zie [Betalingen](betalingen.md)): elk raster
 scrolt apart. Onderaan staat de **slottekst**,
-bijvoorbeeld de 6 %-attestzin. Rechts bovenaan vindt u **Bijlagen**, **Mails** en **Logboek**. Bij een lijn uit een werkorder staat het
+bijvoorbeeld de 6 %-attestzin. Rechts bovenaan vindt u het tabblad **Journaal**, met daarin **Bijlagen**, **Mails** en **Logboek**. Bij een lijn uit een werkorder staat het
 werkordernummer; een vrije lijn heeft er geen.
 
 Een creditnota zegt welke factuur ze tegenboekt, en een gecrediteerde factuur door welke creditnota; beide zijn een link.
@@ -106,7 +106,9 @@ Op de factuur staan:
 - de klant met zijn adres en btw-nummer;
 - de koptekst, de lijnen, de btw per percentage en de totalen;
 - op een factuur de vraag om te betalen met de gestructureerde mededeling — niet op een creditnota;
-- de slottekst en de wettelijke vermeldingen: bij 6 % de attestzin, bij 0 % de verlegging naar de medecontractant.
+- de slottekst en de wettelijke vermeldingen: bij 6 % de attestzin, bij 0 % de verlegging naar de medecontractant;
+- op een eigen blad achteraan de **algemene voorwaarden** uit de [bedrijfsfiche](beheer/bedrijfsfiche.md#algemene-voorwaarden),
+  in de taal van de factuur — als ze daar ingevuld zijn. Een creditnota krijgt dat blad niet, en een rappelbrief ook niet.
 
 ### Versturen
 
@@ -150,7 +152,7 @@ een creditnota en een nieuwe factuur. Alle e-facturen en hun status staan in [Ve
 
 **Toch mailen…** onderaan het venster stuurt de klant daarnaast een mail, bijvoorbeeld om de bijlagen van de werkorders mee
 te sturen: die zitten niet in de e-factuur. Het mailvenster zegt bovenaan dat de mail een extra exemplaar is en de e-factuur
-niet vervangt. Een factuur die via Peppol vertrok, blijft op *Peppol* staan; de mail staat in het tabblad **Mails**.
+niet vervangt. Een factuur die via Peppol vertrok, blijft op *Peppol* staan; de mail staat onder **Journaal** › **Mails**.
 
 #### Per mail
 
@@ -192,7 +194,7 @@ Een factuur die al verstuurd is, kunt u opnieuw mailen; CleanOps vraagt eerst of
 
 ### Het tabblad Mails
 
-Rechts bovenaan toont **Mails** wat er over deze factuur gemaild werd, ook de rappels (zie
+Onder **Journaal** toont **Mails** wat er over deze factuur gemaild werd, ook de rappels (zie
 [Openstaande posten](openstaande-posten.md)): wanneer, aan wie, of de mail afgeleverd is (en zo niet, waarom), de tekst zoals ze vertrok
 (**Tekst tonen**) en de PDF die meeging.
 
@@ -221,8 +223,8 @@ gestructureerde mededeling wijzigt nooit: de klant betaalt ermee.
 
 ### Heropenen
 
-Zolang een factuur niet verstuurd is, kunt u ze nog wijzigen met **Meer… → Heropenen…**. Hetzelfde venster als bij een nieuwe factuur
-opent, met de factuur erin:
+Zolang een factuur niet verstuurd is, kunt u ze nog wijzigen met **Meer… → Heropenen…**. Hetzelfde scherm als bij een nieuwe factuur
+opent, met de factuur erin, in drie blokken: **Factuur**, **Werkorders** en **Vrije lijnen**:
 
 - de **werkorders** op de factuur. Met het kruisje haalt u er een af; die werkorder staat daarna weer in
   [Facturatie](facturatie.md). Met **+ Werkorders toevoegen…** kiest u te factureren werkorders van dezelfde klant, uitgevoerd tot

@@ -49,14 +49,13 @@ Klik op **Nieuw voertuig**, of dubbelklik op een rij om de fiche te openen.
 
 ![De fiche van een voertuig met de blokken Voertuig, Inschrijving en keuring en Inhoud, en de melding dat de keuring verlopen is](../images/voertuig-fiche.png "Een voertuig")
 
-De fiche heeft vier tabbladen:
+De fiche heeft drie tabbladen:
 
 | Tabblad | Wat er staat |
 |---|---|
 | Fiche | de gegevens van het voertuig, in drie blokken |
 | Onderhoud | de onderhoudsbeurten van dit voertuig |
-| Bijlagen | het keuringsbewijs, de inschrijving, de verzekering… |
-| Logboek | wie wat wanneer gewijzigd heeft aan het voertuig |
+| Journaal | **Bijlagen** — het keuringsbewijs, de inschrijving, de verzekering… — en **Logboek**: wie wat wanneer gewijzigd heeft aan het voertuig |
 
 ### Het blok Voertuig
 
@@ -136,7 +135,7 @@ open de beurt en klik op **Terughalen** om ze terug te zetten.
 
 ## Bijlagen aan een voertuig hangen
 
-Op het tabblad **Bijlagen** sleept u bestanden naar het voertuig: het keuringsbewijs, de inschrijving, de
+Onder **Journaal** › **Bijlagen** sleept u bestanden naar het voertuig: het keuringsbewijs, de inschrijving, de
 verzekering, een factuur van een herstelling.
 
 ## Een voertuig archiveren of terughalen
@@ -149,7 +148,7 @@ op **Terughalen**.
 
 ## Het logboek
 
-Het tabblad **Logboek** op de fiche — of het journaal rechts van de lijst — toont wie welk veld wanneer
+**Journaal** › **Logboek** op de fiche — of het journaal rechts van de lijst — toont wie welk veld wanneer
 gewijzigd heeft aan dit voertuig, en van welke waarde naar welke.
 
 !!! note "Het logboek gaat over het voertuig, niet over zijn onderhoud"

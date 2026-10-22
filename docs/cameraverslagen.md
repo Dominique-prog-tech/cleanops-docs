@@ -12,10 +12,12 @@ werkorders hangen. U drukt het af of mailt het als document naar uw klant.
 
 ## Een verslag openen of maken
 
-Een verslag bereikt u langs het adres of het werk waar het bij hoort.
+Een verslag bereikt u langs het adres of het werk waar het bij hoort, of via de lijst Cameraverslagen.
 
 | Vanwaar | Hoe |
 |---|---|
+| **De lijst Cameraverslagen** | Klik in het menu onder **Werk** op **Cameraverslagen**. Dubbelklik op een werkorder om haar verslag te openen, of om het te maken als het ontbreekt (zie [De lijst](#de-lijst)). |
+| **Het dashboard** | De kaart **Cameraverslagen te maken** toont de eerste werkorders zonder verslag; **Alle … tonen** opent de lijst Cameraverslagen op die werkorders (zie [Op het dashboard](#op-het-dashboard)). |
 | **Het uitvoeringsadres** | Open de [klant](klanten.md), het tabblad **Adressen**, het adres, en daar het tabblad **Cameraverslagen**. Dubbelklik op een verslag om het te openen; **Nieuw cameraverslag** maakt er een. |
 | **De werkorder** | Op de regel **Cameraverslag** van de werkorderfiche: klik op het verslag om het te openen, of op **Nieuw…** om er een te maken dat meteen aan de werkorder hangt (zie [Op de werkorder](#op-de-werkorder)). |
 | **Facturatie** | In het venster **Factureren…** opent het groene **cameraverslag** het verslag; het rode **cameraverslag ontbreekt — maken** maakt er een voor die werkorder (zie [In de facturatie](#in-de-facturatie)). |
@@ -25,10 +27,44 @@ Een verslag bereikt u langs het adres of het werk waar het bij hoort.
 Het tabblad toont de verslagen van het adres, de nieuwste eerst, met de datum, de medewerker en de eerste regel van de
 vaststellingen. **← Adres** op het verslag brengt u terug naar dit tabblad.
 
+## De lijst
+
+Klik in het menu onder **Werk** op **Cameraverslagen**. De lijst toont de werkorders die een cameraverslag vragen of er een
+hebben, met hun verslag.
+
+<!-- AFBEELDING: de lijst Cameraverslagen op Te factureren en Verslag ontbreekt, met de kolommen Nr, Uitgevoerd, Status, Verslag, Klant, Uitvoeringsadres en Omschrijving -->
+
+| Kolom | Wat erin staat |
+|---|---|
+| **Nr** | het nummer van de werkorder. |
+| **Uitgevoerd** | de dag waarop het werk uitgevoerd werd. |
+| **Status** | de status van de werkorder. |
+| **Verslag** | de datum van het verslag in het groen, of *ontbreekt* in het rood. Een verslag in de prullenbak telt als ontbrekend. |
+| **Klant**, **Uitvoeringsadres**, **Omschrijving** | voor wie, waar en wat. |
+| **Factuur** | het factuurnummer, als de werkorder gefactureerd is. |
+
+Bovenaan filtert u:
+
+- **Facturatie** — **Nog niet gefactureerd** (de standaard), **Te factureren**, **Gefactureerd** of **Alle**.
+- **Verslag** — **Met of zonder verslag**, of enkel **Verslag ontbreekt**.
+- **Periode** — op de dag van uitvoering.
+
+Met **Te factureren** en **Verslag ontbreekt** toont de lijst hetzelfde getal als de kaart op het dashboard.
+
+Een dubbelklik doet het volgende, en onder de lijst staat wat hij doet voor de werkorder die u aanklikte:
+
+- heeft de werkorder een verslag, dan opent het verslag;
+- ontbreekt het verslag, dan opent een nieuw verslag op het uitvoeringsadres van de werkorder, dat bij het bewaren meteen
+  aan de werkorder hangt;
+- kan er geen verslag gemaakt worden — de werkorder heeft geen uitvoeringsadres, of u mag de werkorders niet wijzigen —,
+  dan opent de werkorder.
+
+Rechts staat de strook **Journaal**: het logboek van het verslag van de werkorder die u aanklikt.
+
 ## De fiche
 
-Bovenaan staan het **uitvoeringsadres**, de **klant** en de **werkorders** die aan het verslag hangen; klik op een nummer om
-de werkorder te openen.
+De fiche staat in twee blokken. Het blok **Adres** toont het **uitvoeringsadres**, de **klant** en de **werkorders** die aan
+het verslag hangen; klik op een nummer om de werkorder te openen. In het blok **Verslag** vult u in:
 
 | Veld | Wat u invult |
 |---|---|
@@ -36,12 +72,12 @@ de werkorder te openen.
 | **Medewerker** | wie de inspectie deed. |
 | **Vaststellingen** | wat de camera toonde, in uw eigen woorden. De eerste regel staat in de lijst van het adres en in het keuzevenster van de werkorder: begin dus met de kern. |
 
-Klik op **Bewaren**. Een nieuw verslag blijft daarna open, zodat u er de foto's aan kunt toevoegen; bij een bestaand
-verslag keert u terug naar waar u vandaan kwam.
+Klik op **Bewaren**. Daarna blijft het verslag open, zodat u er meteen foto's aan kunt toevoegen, het kunt afdrukken of
+mailen.
 
 ### Foto's en beelden
 
-Open het tabblad **Bijlagen** en klik op **Bijlage**. Sleep de bestanden naar het vak of klik om ze te kiezen (hooguit
+Open het tabblad **Journaal** › **Bijlagen** en klik op **Bijlage**. Sleep de bestanden naar het vak of klik om ze te kiezen (hooguit
 25 MB per bestand). In **Omschrijving** zet u wat erop te zien is.
 
 - Een **foto** (jpg, png, gif of webp) komt in het document te staan, met haar omschrijving eronder — of de bestandsnaam
@@ -77,7 +113,7 @@ klant voor als ontvanger — of het facturatieadres als er geen hoofdadres is. Z
   terwijl het venster openstaat, dan vertrekt de mail niet en zegt CleanOps waarom.
 - Met **Bestand meesturen** voegt u er zelf een bestand aan toe (hooguit 10 MB per bestand, 20 MB samen).
 
-Na het versturen vindt u de mail op het tabblad **Mails** van het verslag.
+Na het versturen vindt u de mail onder **Journaal** › **Mails** van het verslag.
 
 Een cameraverslag is een apart document: het gaat niet mee met de factuurmail en niet via Peppol.
 
@@ -121,8 +157,10 @@ verslag.
 
 ## Op het dashboard
 
-De tegel **cameraverslagen te maken** op het [dashboard](dashboard.md) telt de uitgevoerde werkorders die nog te
-factureren zijn, een verslag vragen en er geen hebben. Een klik opent Facturatie.
+De kaart **Cameraverslagen te maken** op het [dashboard](dashboard.md) telt de uitgevoerde werkorders die nog te
+factureren zijn, een verslag vragen en er geen hebben, en toont de eerste vijf met hun nummer, klant en gemeente. Een klik
+op een regel opent de werkorder; **Alle … tonen** opent [de lijst](#de-lijst) Cameraverslagen op **Te factureren** en
+**Verslag ontbreekt**.
 
 ## Een verslag verwijderen
 
@@ -137,8 +175,8 @@ Verplaatst u een adres naar een andere klant, dan gaan zijn verslagen mee (zie [
 
 ## Het logboek
 
-Het tabblad **Logboek** van het verslag toont wie het maakte en wijzigde. Wat er gemaild werd, staat op het tabblad
-**Mails**.
+Onder **Journaal** › **Logboek** van het verslag ziet u wie het maakte en wijzigde. Wat er gemaild werd, staat onder
+**Journaal** › **Mails**.
 
 ## Rechten
 
@@ -165,7 +203,7 @@ Nee. Een verslag hoort bij een uitvoeringsadres. Kies of maak eerst een adres op
 Nee. U mailt het apart, vanop het verslag zelf.
 
 **Ik heb het verslag gemaild; waar zie ik dat?**
-Op het tabblad **Mails** van het verslag.
+Onder **Journaal** › **Mails** van het verslag.
 
 ## Zie ook
 

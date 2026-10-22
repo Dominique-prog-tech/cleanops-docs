@@ -38,7 +38,8 @@ obligatoires. Après **Enregistrer**, la fiche du nouveau collaborateur s'ouvre,
 
 ## La fiche collaborateur
 
-En haut figurent le nom et le code, puis les onglets **Fiche**, **Congés**, **Pièces jointes** et **Historique**.
+En haut figurent le nom et le code, puis les onglets **Fiche**, **Congés** et **Journal**. Sous Journal figurent
+**Pièces jointes** et **Historique**.
 Le nombre de périodes de congé figure entre parenthèses dans le titre : « Congés (4) ».
 
 ![La fiche de Julien Lambert sur l'onglet Fiche, avec en bas le bloc Affectation et régime de travail](images/medewerker-fiche-fr.png "Fiche collaborateur")
@@ -118,15 +119,13 @@ fenêtre le signale. Le congé peut être encodé normalement ; le message vous 
 **Supprimer** dans la fenêtre retire la période définitivement, après confirmation. Le
 [journal des actions](beheer/actielogboek.fr.md) garde la trace de qui l'a encodée, modifiée ou supprimée.
 
-### L'onglet Pièces jointes
+### L'onglet Journal
 
-Les documents de ce collaborateur, comme une attestation ou un certificat médical. **Pièce jointe** ajoute un
+**Pièces jointes** — les documents de ce collaborateur, comme une attestation ou un certificat médical. **Pièce jointe** ajoute un
 fichier, jusqu'à 25 Mo ; pour chacune, vous modifiez la description ou la retirez. Pour un certificat médical,
 indiquez la période dans la description : vous le retrouverez ainsi avec le bon congé.
 
-### L'onglet Historique
-
-Qui a modifié quel champ de ce collaborateur, quand, et de quelle valeur vers quelle autre. Le plus récent figure
+**Historique** — qui a modifié quel champ de ce collaborateur, quand, et de quelle valeur vers quelle autre. Le plus récent figure
 en tête.
 
 ## Supprimer un collaborateur

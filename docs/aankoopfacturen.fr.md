@@ -138,9 +138,9 @@ ouvert, comme sur l'extrait : négatif pour une facture que vous devez encore pa
 **Saisir un paiement** ouvre la fenêtre de [Paiements](betalingen.md) avec ce document déjà rempli. Ce qui reste ouvert
 chez tous vos fournisseurs se voit dans les [Postes ouverts fournisseurs](openstaande-posten-leveranciers.md).
 
-## Les onglets Pièces jointes et Historique
+## L'onglet Journal
 
-Sous **Pièces jointes**, vous gardez le document du fournisseur, par exemple le PDF reçu par e-mail. L'**Historique**
+Sous **Journal** figurent **Pièces jointes** et **Historique**. Sous **Pièces jointes**, vous gardez le document du fournisseur, par exemple le PDF reçu par e-mail. L'**Historique**
 montre qui a modifié quel champ, quand, et de quelle valeur vers quelle valeur.
 
 ## Questions fréquentes

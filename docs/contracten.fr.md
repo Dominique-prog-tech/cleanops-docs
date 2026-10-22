@@ -9,7 +9,7 @@ toutes les deux semaines. D'un contrat en cours naissent les [ordres de travail]
 passages ; vous n'avez pas à les créer vous-même. CleanOps les crée chaque nuit pour les 90 prochains jours, et aussitôt
 que vous enregistrez un nouveau contrat.
 
-![La liste des contrats de la démo, avec les colonnes Nom, Suivi le, Périodicité et Dernière fois, la date de suivi en rouge chez Sporthal De Ring et l'étiquette en pause chez Garage Demo & Zonen](images/contracten-lijst-fr.png "Contrats")
+![La liste des contrats de la démo, avec les colonnes Client, Suivi le, Périodicité et Dernière, la date de suivi en rouge chez Sporthal De Ring et l'étiquette en pause chez Garage Demo & Zonen](images/contracten-lijst-fr.png "Contrats")
 
 ## Ouvrir l'écran
 
@@ -17,19 +17,23 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Contrats**.
 
 ## La liste
 
-Pour chaque contrat, vous voyez le client, le numéro du contrat, **Suivi le**, le type de contrat, la
-description, la date **À partir du**, la **Date de fin**, la **Périodicité**, la **Dernière fois**, l'**Exécutant** et la commune. Si un
-contrat est en pause, **en pause** figure à côté du client. La liste est triée par nom de client. La **Date du contrat**,
-la note **Suivi** et **En pause** s'ajoutent avec le sélecteur de colonnes.
+Pour chaque contrat, vous voyez le client, le numéro du contrat (**Contrat**), **Suivi le**, le **Type**, la description, la
+date de début (**Début**), la **Périodicité**, **Dernière**, l'**Exécutant** et la commune. Si un contrat est en pause,
+**en pause** figure à côté du client. La liste est triée par nom de client. La **Date du contrat**, la **Date de fin**, la
+note **Suivi** et **En pause** s'ajoutent avec le sélecteur de colonnes.
 
 - **Suivi le** — la date à laquelle vous voulez revenir sur le contrat. Une fois ce jour atteint, la date s'affiche en
   rouge et en gras. Passez la souris dessus pour lire la note. Voir [Suivre un contrat](#suivre-un-contrat).
+- **Type** — le type de contrat.
+- **Périodicité** — le rythme en bref. Si l'intervalle est de un, le mot figure : *Quotidien*, *Hebdomadaire*, *Mensuel*
+  ou *Annuel*. S'il est plus grand, la fréquence figure : *Tous les 6 mois*, *Toutes les 2 semaines*, *Tous les 3 jours*.
+  Le même rythme court figure dans le choix du contrat sur la [fiche de l'ordre de travail](werkorders.fr.md).
 - **Suivi** — le filtre en haut. Choisissez *À suivre* pour ne voir que les contrats dont la date de suivi est atteinte.
 - **Exécutant** — le filtre à côté. Choisissez un collaborateur pour ne voir que ses contrats, ou *Non attribué* pour
   les contrats dont les ordres de travail arrivent sans exécutant.
 - **Envoyer par e-mail…** — ouvre un e-mail au client du contrat sélectionné. Vous voyez le bouton si vous pouvez
   modifier les contrats.
-- **Dernière fois** — la date planifiée du dernier ordre de travail du contrat.
+- **Dernière** — la date planifiée du dernier ordre de travail du contrat.
 - **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur ce que montre la
   liste, y compris la périodicité : *Annuel* trouve tous les contrats annuels. Vous trouvez aussi un contrat par la rue,
   la commune, le GSM et le numéro fixe du client, même s'ils ne figurent pas dans la liste.
@@ -38,7 +42,8 @@ la note **Suivi** et **En pause** s'ajoutent avec le sélecteur de colonnes.
 - **Ouvrir** — double-cliquez sur une ligne pour ouvrir le contrat.
 - **Journal** — le volet de droite montre l'historique et les e-mails du contrat sélectionné dans la liste.
 
-Un contrat terminé reste dans la liste, avec sa date de fin.
+Un contrat terminé reste dans la liste. Sa date de fin s'affiche avec la colonne **Date de fin**, que vous ajoutez avec le
+sélecteur de colonnes.
 
 ## Un nouveau contrat
 
@@ -48,30 +53,56 @@ mensuel le premier du mois. Après **Enregistrer**, le nouveau contrat s'ouvre.
 
 ## La fiche du contrat
 
-En haut figurent le numéro du contrat et le client ; si le contrat est en pause, c'est indiqué. En dessous, quatre
-onglets : **Contrat**, **Ordres de travail**, **Historique** et **E-mails**.
+En haut figurent le numéro du contrat et le client ; si le contrat est en pause, c'est indiqué. En dessous, trois
+onglets : **Contrat**, **Ordres de travail** et **Journal**. Sous Journal figurent **Historique** et **E-mails**.
 
 ![Le contrat de Résidence Les Tilleuls : chaque année le 20 mars, avec en dessous les prochains passages](images/contract-fiche-fr.png "Fiche du contrat")
 
 ### L'onglet Contrat
 
+Les champs sont répartis en cinq blocs : **Contrat**, **Adresse**, **Rythme et planification**, **Suivi** et **Remarques**.
+
+**Contrat**
+
 | Champ | Explication |
 |---|---|
-| Adresse d'exécution | L'adresse du client ou l'une de ses adresses d'exécution. **Nouvelle adresse d'exécution** en crée une ; vous revenez ensuite au contrat. |
 | Description | Ce qui est fait, 35 caractères au maximum. Si le contrat n'a pas de remarques, ce texte devient la description et l'instruction de ses ordres de travail. |
 | N° de contrat | Un numéro ou une référence propre, 30 caractères au maximum. |
 | Type de contrat | Un choix dans la liste *Types de contrat* des [tables de base](beheer/basistabellen.fr.md). |
+| Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. |
 | Date du contrat * | La date du contrat. Ne peut pas se situer dans le futur. |
 | Début * | À partir de quand le rythme court. Ne peut pas précéder la date du contrat. |
 | Fin | À partir de cette date, plus aucun passage ne s'ajoute. Ne peut pas précéder le début. |
-| En pause | Suspend le contrat : aucun ordre de travail ne s'ajoute tant que la case est cochée. |
-| Suivi le | La date à laquelle vous voulez revenir sur ce contrat. Vide : pas de suivi. |
-| Suivi | De quoi il s'agit, 500 caractères au maximum. Cette note est pour vous : elle ne figure ni sur un bon de travail ni dans un e-mail. |
-| Remarques (sur chaque bon de travail) | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 35 premiers caractères la description de l'ordre. |
-| Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. |
+
+**Adresse**
+
+| Champ | Explication |
+|---|---|
+| Adresse d'exécution | L'adresse du client ou l'une de ses adresses d'exécution. **Nouvelle adresse d'exécution** en crée une ; vous revenez ensuite au contrat. |
+
+**Rythme et planification**
+
+| Champ | Explication |
+|---|---|
 | Fréquence | Le rythme — voir ci-dessous. |
 | Partie de la journée | La partie de la journée où les ordres de travail de ce contrat arrivent sur le planning. Vide : *Autre*, comme avant. |
 | Exécutant | Le collaborateur qui reçoit les ordres de travail de ce contrat : ils arrivent directement dans sa ligne du planning. Vide : non attribué. S'il est en congé le jour d'un passage, il le reçoit quand même — le congé figure dans la même case du planning. S'il n'est plus actif, la fiche le signale et les nouveaux ordres arrivent sans exécutant. |
+
+Sous les champs figurent l'**Exemple** et les **Prochains passages** (voir [Le rythme](#le-rythme)).
+
+**Suivi**
+
+| Champ | Explication |
+|---|---|
+| En pause | Suspend le contrat : aucun ordre de travail ne s'ajoute tant que la case est cochée. |
+| Suivi le | La date à laquelle vous voulez revenir sur ce contrat. Vide : pas de suivi. |
+| Suivi | De quoi il s'agit, 500 caractères au maximum. Cette note est pour vous : elle ne figure ni sur un bon de travail ni dans un e-mail. |
+
+**Remarques**
+
+| Champ | Explication |
+|---|---|
+| Figurent sur chaque bon de travail | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 35 premiers caractères la description de l'ordre. |
 
 ### Le rythme
 
@@ -84,7 +115,7 @@ Choisissez sous **Fréquence** à quelle fréquence les passages reviennent. Sel
 | Mensuel | **Type** : un **Jour fixe** (par exemple le 15) ou un **Rang** (par exemple le deuxième mardi), et **Tous les … mois**. |
 | Annuel | **Type** : un **Jour fixe** ou un **Rang**, et le **Mois**. |
 
-Le cadre en dessous dit en mots ce que vous avez réglé, par exemple *Chaque année le 20 mars*. En dessous figurent les
+Le cadre en dessous dit en mots, après **Exemple**, ce que vous avez réglé, par exemple *Chaque année le 20 mars*. En dessous figurent les
 **Prochains passages** : les cinq dates suivantes. Si une date a déjà un ordre de travail, *(ordre existant)* est
 indiqué.
 
@@ -133,13 +164,11 @@ votre application précédente crée encore les ordres de travail, CleanOps n'en
 
 ![L'onglet Ordres de travail du contrat de Résidence Les Tilleuls, avec les passages facturés et à facturer](images/contract-werkorders-fr.png "Ordres de travail d'un contrat")
 
-### L'onglet Historique
+### L'onglet Journal
 
-Qui a modifié quel champ de ce contrat, quand, et de quelle valeur à quelle valeur.
+**Historique** — qui a modifié quel champ de ce contrat, quand, et de quelle valeur à quelle valeur.
 
-### L'onglet E-mails
-
-Ce qui a été envoyé par e-mail au sujet de ce contrat : quand, à qui, si l'e-mail a été délivré (et sinon, pourquoi),
+**E-mails** — ce qui a été envoyé par e-mail au sujet de ce contrat : quand, à qui, si l'e-mail a été délivré (et sinon, pourquoi),
 et le texte tel qu'il est parti (**Afficher le texte**).
 
 ## Suivre un contrat
@@ -170,7 +199,7 @@ Un contrat en pause ou terminé compte aussi tant que la date y figure.
   maximum par fichier et 20 Mo au total.
 - En haut à droite, **Fiche client ↗** ouvre la fiche du client dans un nouvel onglet.
 
-Cliquez sur **Envoyer**. L'e-mail part réellement chez le client et figure ensuite dans l'onglet **E-mails** du
+Cliquez sur **Envoyer**. L'e-mail part réellement chez le client et figure ensuite sous **Journal** › **E-mails** du
 contrat. Si le client n'a pas d'adresse e-mail, la fenêtre l'indique : saisissez vous-même une adresse.
 
 ### Clôturer

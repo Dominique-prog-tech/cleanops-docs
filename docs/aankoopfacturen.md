@@ -138,9 +138,9 @@ openstaat, zoals op het uittreksel: negatief voor een factuur die u nog moet bet
 **Betaling ingeven** het venster van [Betalingen](betalingen.md) met dit document al ingevuld. Wat er van al uw
 leveranciers nog openstaat, ziet u in [Openstaande posten leveranciers](openstaande-posten-leveranciers.md).
 
-## De tabbladen Bijlagen en Logboek
+## Het tabblad Journaal
 
-Onder **Bijlagen** bewaart u het document van de leverancier, bijvoorbeeld de PDF uit zijn mail. Het **Logboek** toont
+Onder **Journaal** staan **Bijlagen** en **Logboek**. Onder **Bijlagen** bewaart u het document van de leverancier, bijvoorbeeld de PDF uit zijn mail. Het **Logboek** toont
 wie welk veld wijzigde, wanneer, en van welke waarde naar welke.
 
 ## Veelgestelde vragen

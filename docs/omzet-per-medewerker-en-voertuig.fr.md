@@ -11,7 +11,7 @@ travail **exécuté**, même ce qui n'est pas encore facturé.
 
 ## Ouvrir l'écran
 
-Dans le menu, sous **Ventes**, cliquez sur **CA par collaborateur et véhicule**.
+Dans le menu, sous **Ventes**, cliquez sur **Chiffre d'affaires**. L'écran s'intitule Chiffre d'affaires par collaborateur et véhicule.
 
 ## Période et répartition
 

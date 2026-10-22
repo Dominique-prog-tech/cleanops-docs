@@ -103,7 +103,7 @@ Rechts op het scherm zit een strook **Journaal**. Klik een soort in de lijst aan
 In de taal van de factuur, en die volgt de klant. Een Franstalige klant krijgt de Franse tekst.
 
 **Ik heb de tekst gewijzigd, maar een mail die ik eerder verstuurde is niet veranderd.**
-Dat klopt: een verstuurde mail blijft zoals ze vertrok. Op het tabblad **Mails** van de factuur ziet u ze terug.
+Dat klopt: een verstuurde mail blijft zoals ze vertrok. Onder **Journaal** › **Mails** van de factuur ziet u ze terug.
 
 **Kan ik een mail nog aanpassen vlak voor het versturen?**
 Ja. Het venster **Mailen** toont onderwerp en tekst ingevuld, en u wijzigt ze daar voor die ene mail. De mailtekst

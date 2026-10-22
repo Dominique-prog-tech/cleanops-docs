@@ -37,8 +37,8 @@ Zie [Binnengekomen documenten](binnengekomen-documenten.md).
 
 ## De leveranciersfiche
 
-Bovenaan staan de naam en het nummer, daaronder de tabbladen **Fiche**, **Aankoopdocumenten**, **Betalingen**, **Bijlagen** en
-**Logboek**. Aankoopdocumenten en Betalingen ziet u met het recht *Aankoop bekijken*.
+Bovenaan staan de naam en het nummer, daaronder de tabbladen **Fiche**, **Aankoopdocumenten**, **Betalingen** en
+**Journaal**. Onder Journaal staan **Bijlagen** en **Logboek**. Aankoopdocumenten en Betalingen ziet u met het recht *Aankoop bekijken*.
 
 ![De fiche van Filterhandel Vandamme met de blokken Identificatie, Adres, Contact, Betaling en Opmerkingen](images/leverancier-fiche.png "Leveranciersfiche")
 
@@ -94,14 +94,12 @@ boekingsdatum als het al betaald was vóór het geboekt werd. Dubbelklik op een 
 De betalingen aan deze leverancier, de recentste bovenaan, met de datum en het nummer van het uittreksel en het bedrag. Een
 teruggedraaide betaling draagt het label **teruggedraaid**. Wat een betaling vereffende, ziet u in [Betalingen](betalingen.md).
 
-### Het tabblad Bijlagen
+### Het tabblad Journaal
 
-De documenten bij deze leverancier, zoals een contract of een prijslijst. Met **Bijlage** voegt u een bestand toe,
+**Bijlagen** — de documenten bij deze leverancier, zoals een contract of een prijslijst. Met **Bijlage** voegt u een bestand toe,
 tot 25 MB; per bijlage past u de omschrijving aan of haalt u ze weg.
 
-### Het tabblad Logboek
-
-Wie welk veld van deze leverancier gewijzigd heeft, wanneer, en van welke waarde naar welke. Het nieuwste staat
+**Logboek** — wie welk veld van deze leverancier gewijzigd heeft, wanneer, en van welke waarde naar welke. Het nieuwste staat
 bovenaan.
 
 ![Het logboek van Filterhandel Vandamme met de gewijzigde e-mail bovenaan](images/leverancier-logboek.png "Logboek van een leverancier")

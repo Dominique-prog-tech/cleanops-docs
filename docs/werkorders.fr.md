@@ -37,7 +37,7 @@ de la note de crédit lorsque la facture de l'ordre a été créditée.
 - **Tarif** — tapez une partie de la description et choisissez le tarif : la liste ne montre alors que les ordres de
   travail avec ce tarif. Les tarifs archivés y figurent aussi, car des ordres plus anciens les portent encore. La croix
   efface votre choix.
-- **Client** — le bouton **Ordres de travail** de la [fiche client](klanten.md#les-boutons-en-bas) ouvre cette liste
+- **Client** — **Plus… → Ordres de travail** sur la [fiche client](klanten.md#les-boutons-en-bas) ouvre cette liste
   avec uniquement les ordres de ce client, tous statuts confondus. En haut figure alors **Client :** suivi du nom ; la
   croix à côté affiche à nouveau les ordres de tous les clients.
 - **Rechercher** — le curseur est directement dans le champ de recherche. La recherche porte sur le numéro, le client (par nom ou numéro de client),
@@ -103,6 +103,11 @@ facturé ne peut plus être lié.
 
 ### Planification et exécution
 
+Sous la carte figurent trois blocs : **Planning**, **Adresse** et **Travail à exécuter**. Le bloc **Facturation** suit
+en bas (voir [Facturation](#facturation)).
+
+**Planning**
+
 | Champ | Explication |
 |---|---|
 | Statut | Découle des dates ; vous ne le choisissez pas vous-même. Voir [le statut](#le-statut). |
@@ -111,8 +116,19 @@ facturé ne peut plus être lié.
 | Planifié, Exécuté | Le jour où le travail est planifié et le jour où il a été fait. Si vous déplacez **Planifié** vers un jour déjà passé, CleanOps demande d'abord *Enregistrer quand même ?* lors de **Enregistrer**. |
 | Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre* ou *après* une heure. La partie de la journée détermine l'[ordre dans le planning](planning.fr.md#lordre-dans-une-journee). |
 | Heure de début, Heure de fin | Quand le travail a réellement commencé et fini. Une heure de fin avant l'heure de début est refusée. |
-| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. Sous l'adresse figure son numéro de téléphone (ou celui du client, si l'adresse n'en a pas), et **Carte** et **Itinéraire** ouvrent l'adresse et le chemin pour y aller dans Google Maps. Si l'adresse **n'accepte plus de nouvelles commandes**, ou si elle est **difficile ou impossible d'accès** certains jours, c'est indiqué en dessous aussi — à titre d'information : l'ordre de travail s'enregistre normalement. **Nouvelle adresse d'exécution** et **Ouvrir l'adresse** créent ou modifient une adresse ; après **Enregistrer**, elle est choisie — enregistrez alors l'ordre de travail. **Historique…** montre les ordres précédents à cette adresse, du plus récent au plus ancien ; choisissez-en un et cliquez sur **Insérer** (ou double-cliquez) : ses instructions, son matériel et sa remarque interne viennent après ce qui figure déjà — ce qui y est déjà ne s'ajoute pas une seconde fois. Enregistrez ensuite l'ordre. Le lien **Tous les ordres de cette adresse** ouvre la fiche de l'adresse dans un nouvel onglet. |
-| Chantier (nom), Description | Comme pour un nouvel ordre. |
+
+**Adresse**
+
+| Champ | Explication |
+|---|---|
+| Adresse d'exécution | Si vous choisissez une autre adresse, son instruction de travail, son matériel et ses remarques s'ajoutent ; ce qui y figurait déjà reste. Sous l'adresse figure son numéro de téléphone (ou celui du client, si l'adresse n'en a pas), et **Carte** et **Itinéraire** ouvrent l'adresse et le chemin pour y aller dans Google Maps. Si l'adresse **n'accepte plus de nouvelles commandes**, ou si elle est **difficile ou impossible d'accès** certains jours, c'est indiqué en dessous aussi — à titre d'information : l'ordre de travail s'enregistre normalement. Sous l'adresse figurent sur une seule ligne **Nouvelle adresse d'exécution**, **Ouvrir l'adresse** et **Historique…**. Les deux premiers créent ou modifient une adresse ; après **Enregistrer**, elle est choisie — enregistrez alors l'ordre de travail. **Historique…** montre les ordres précédents à cette adresse, du plus récent au plus ancien ; choisissez-en un et cliquez sur **Insérer** (ou double-cliquez) : ses instructions, son matériel et sa remarque interne viennent après ce qui figure déjà — ce qui y est déjà ne s'ajoute pas une seconde fois. Enregistrez ensuite l'ordre. Le lien **Tous les ordres de cette adresse** ouvre la fiche de l'adresse dans un nouvel onglet. |
+| Chantier (nom) | Comme pour un nouvel ordre. |
+
+**Travail à exécuter**
+
+| Champ | Explication |
+|---|---|
+| Description | Comme pour un nouvel ordre. |
 | Type de travail | Une courte description du travail, par exemple *fosse septique*. |
 | Travaux, Matériel | Cochez ce qui s'applique et cliquez sur **Insérer** : les lignes choisies vont dans **Instructions au collaborateur** ou **Remarques matériel**, où vous pouvez encore les compléter. |
 | Instructions au collaborateur, Remarques matériel | Ce que l'équipe doit faire et emporter. Les deux figurent sur le bon de livraison. |
@@ -122,6 +138,8 @@ Si l'ordre porte le code d'un collaborateur qui n'est plus dans la liste, vous v
 *n'est plus dans la liste*. Il reste jusqu'à ce que vous choisissiez quelqu'un d'autre.
 
 ### Les cases à cocher
+
+Les cases à cocher figurent dans le bloc **Travail à exécuter**, en deux lignes : la planification et l'exécution.
 
 | Ligne | Case | Signification |
 |---|---|---|
@@ -146,7 +164,7 @@ Si vous modifiez une date, la fiche montre aussitôt le statut que l'ordre recev
 
 ### Facturation
 
-En bas de la fiche figure ce qui sera facturé.
+Le bloc **Facturation**, en bas de la fiche, indique ce qui sera facturé.
 
 ![Le bloc Facturation d'un ordre de travail : Tarif, Référence client, Quantité, Unité, Prix unitaire, Montant et Code TVA](images/werkorder-facturatie-fr.png "Facturation")
 
@@ -192,10 +210,10 @@ l'envoyer par e-mail. Tout sur l'attestation elle-même se trouve dans [Attestat
 
 ![L'onglet Attestations (1) sur la fiche de l'ordre de travail, avec Produit, Quantité, Code EURAL, Entreprise de traitement et Envoyée, et le bouton Nouvelle attestation](images/werkorder-attesten-fr.png "Attestations d'un ordre de travail")
 
-### Pièces jointes et Historique
+### Journal
 
-En haut à droite de la fiche figurent **Pièces jointes** — les documents de cet ordre — et **Historique** : qui a
-modifié quel champ, quand, et de quelle valeur à quelle valeur.
+En haut à droite de la fiche figure l'onglet **Journal**, avec **Pièces jointes** — les documents de cet ordre — et
+**Historique** : qui a modifié quel champ, quand, et de quelle valeur à quelle valeur.
 
 !!! info "Tous les liens ne sont pas des liens pour tout le monde"
     Vous ne pouvez cliquer sur le numéro du devis ou de la facture que si vous avez accès à cette partie. Sinon, il

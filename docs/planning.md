@@ -15,8 +15,9 @@ er meerdere tegelijk toe, opent u de dagroute van een chauffeur en drukt u de pl
 Klik links in het menu, onder **Werk**, op **Planning**. Het planbord opent op de lopende week, op zaterdag en zondag
 op de volgende week. Met **Lijstweergave** rechtsboven gaat u naar de planningslijst, met **Planbord** weer terug.
 
-Op de planning staat enkel werk dat nog te doen is: werkorders die *ingegeven* of *gepland* zijn. Een uitgevoerde
-werkorder verdwijnt van de planning.
+Op het planbord staat enkel werk dat nog te doen is: werkorders die *ingegeven* of *gepland* zijn. Een uitgevoerde
+werkorder verdwijnt van het planbord. In de planningslijst toont de filter **Status** ook het uitgevoerde en het
+gefactureerde werk.
 
 ## Het planbord
 
@@ -73,6 +74,8 @@ Het tijdsdeel kiest u op de [werkorderfiche](werkorders.md#planning-en-uitvoerin
   datum en een medewerker wordt de werkorder *Gepland*.
 - **Vóór een andere werkorder** — laat de kaart los óp die andere kaart. Ze staat er dan met de hand geplaatst (⇅).
 - **Terug op haar tijdsdeel** — laat de kaart los in de lege ruimte van de dag. De handmatige plaats vervalt.
+- **Achteraan in de dag** — zolang u sleept (of een kaart gekozen hebt), staat onder het werk van elke dag het vak
+  **↓ Achteraan**. Laat de kaart daar los, of klik erop: de werkorder komt na de laatste werkorder van die dag.
 - **Zonder muis** — klik een kaart: bovenaan staat *Werkorder … gekozen*. Klik dan een andere kaart of een lege plaats
   in een dag. Met **Annuleren** kiest u niets.
 - **Werk zonder datum inplannen** — sleep de kaart van links naar een dag.
@@ -95,10 +98,10 @@ Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van dez
 ![De planningslijst van de demo: de week per dag, met de signalen, de medewerker in zijn kleur en de knop Toewijzen](images/planning-lijst.png "Planningslijst")
 
 Per werkorder ziet u de signalen (*Vaste datum — niet verplaatsen*, *Mag vroeger uitgevoerd worden*, *Groot werk*,
-*Klant geblokkeerd*), de medewerker in zijn kleur, het nummer, de datum die de klant vroeg (**Gevraagd**), de klant, de
-werf, de omschrijving, de typering en de status. Met de kolomkiezer (het pictogram naast **Exporteren**) zet u er
-**Wanneer** (tijdsdeel en afgesproken uur), **Besteld**, **Straat + nr**, **Postcode**, **Gemeente** en **RWZI** bij; op een
-kolom klikken sorteert erop, bijvoorbeeld op gemeente.
+*Klant geblokkeerd*), de medewerker in zijn kleur, het nummer (met ⇅ als de werkorder met de hand geplaatst is), de datum
+die de klant vroeg (**Gevraagd**), **Wanneer** (het tijdsdeel en het afgesproken uur), de klant, de werf, de omschrijving en
+de typering. Met de kolomkiezer (het pictogram naast **Exporteren**) zet u er **Besteld**, **Straat + nr**, **Postcode**,
+**Gemeente**, **Status** en **RWZI** bij; op een kolom klikken sorteert erop, bijvoorbeeld op gemeente.
 
 Rechts staat de strook **Journaal**. Klap ze open om de gekozen werkorder te zien zonder de lijst te verlaten: de klant, het
 adres en de telefoon, de gevraagde datum en de tijden, wie en met welk voertuig, de omschrijving, de instructies voor de
@@ -110,6 +113,9 @@ andere rij kiest.
   is hoogstens drie maanden lang. **← Vorige** en **Volgende →** schuiven op met de lengte van de periode: een week per
   week, een maand per maand. Onder de knoppen staat hoeveel werkorders er in die periode gepland zijn en hoeveel er nog
   in te plannen zijn.
+- **Status** — **Te doen** (de standaard): werk dat ingegeven of gepland is. **Uitgevoerd, te factureren** en
+  **Gefactureerd** tonen het werk van de periode dat al gedaan is. Plannen kan enkel bij **Te doen**: bij de andere twee
+  staan **Toewijzen**, het menu voor de volgorde en de knoppen voor een selectie er niet.
 - **Contract** — **Alles**, **Zonder contract** of **Met contract**: werk dat uit een [contract](contracten.md)
   voortkomt, of losse opdrachten.
 - **Dag** — **Hele week** (of **Hele periode**), of één dag van de periode. Dan staat onder de knoppen hoeveel
@@ -131,21 +137,35 @@ andere rij kiest.
 Klik in de rij op **Toewijzen**. Kies de **Medewerker** en de **Geplande dag**, en klik op **Bewaren**. Maakt u de
 geplande dag leeg, dan komt de werkorder terug bij het werk zonder datum.
 
+### De volgorde in de lijst
+
+Binnen een dag en een medewerker staat de lijst in dezelfde volgorde als het planbord (zie
+[De volgorde in een dag](#de-volgorde-in-een-dag)). De kolom **Wanneer** toont waarop die volgorde steunt: het tijdsdeel en
+het afgesproken uur.
+
+Wilt u een werkorder verschuiven, open dan het menu **⋯** naast **Toewijzen** in haar rij:
+
+- **Omhoog** en **Omlaag** — één plaats hoger of lager binnen de dag en de medewerker. De werkorder is dan met de hand
+  geplaatst: naast het nummer staat ⇅.
+- **Terug op zijn tijdsdeel** — enkel bij een werkorder die met de hand geplaatst is: de handmatige plaats vervalt.
+
+Het menu staat er enkel als er iets te kiezen valt, bijvoorbeeld niet bij een werkorder die alleen op haar dag staat.
+
 ### Meerdere werkorders tegelijk
 
 Vink de werkorders aan. Boven de lijst verschijnt wat u met die selectie kunt doen. Het vakje in de kop vinkt alles op de
 pagina aan; een pagina telt 200 werkorders, zodat ook een drukke week er in één keer op staat.
 
-![De planningslijst met twee aangevinkte werkorders en de knoppen Toekennen, Verplaatsen, Wisselen en Status RWZI](images/planning-selectie.png "Selectie")
+![De planningslijst met twee aangevinkte werkorders en de knoppen Toewijzen, Verplaatsen, Wisselen en Status RWZI](images/planning-selectie.png "Selectie")
 
 | Knop | Wat er gebeurt |
 |---|---|
-| Toekennen… | Kies een medewerker; alle aangevinkte werkorders gaan naar hem. Laat u het veld leeg, dan gaan ze naar niemand. |
+| Toewijzen… | Kies een medewerker; alle aangevinkte werkorders gaan naar hem. Laat u het veld leeg, dan gaan ze naar niemand. |
 | Verplaatsen… | Kies een geplande dag; alle aangevinkte werkorders gaan naar die dag, bij dezelfde medewerker. |
 | Wisselen | Het werk van twee medewerkers wordt omgewisseld. Dit kan enkel als de selectie werk van precies twee medewerkers bevat. CleanOps vraagt eerst een bevestiging. |
 | Status RWZI | Zet RWZI aan waar het uit stond en uit waar het aan stond. CleanOps meldt hoeveel er aan- en uitgezet zijn. |
 
-Bij **Toekennen** en **Verplaatsen** vervalt de handmatige plaats in de dag: de werkorder komt op haar tijdsdeel. Bij
+Bij **Toewijzen…** en **Verplaatsen…** vervalt de handmatige plaats in de dag: de werkorder komt op haar tijdsdeel. Bij
 **Wisselen** blijft de volgorde in de dag.
 
 Kiest u een andere periode, een ander filter of een andere zoekterm, dan vervalt de selectie. Zo raakt een knop nooit werk dat u niet meer ziet.
@@ -161,7 +181,18 @@ delen die op elkaar aansluiten: **Deel 1**, **Deel 2**, …
 
 ### Afdrukken
 
-**Afdrukken** maakt het overzicht *Planning per datum en werknemer*: wat de lijst nu toont, dus dezelfde periode, dag,
+**Afdrukken** opent een menu met drie keuzes:
+
+- **Planning per datum en medewerker** — het overzicht van wat de lijst toont (zie hieronder).
+- **Werkbonnen per medewerker en datum** — de [werkbonnen](werkbonnen.md) voor dezelfde periode (of de gekozen dag) en,
+  als u er een koos, dezelfde medewerker. Ze opent in hetzelfde **Afdrukvoorbeeld** als op het scherm Werkbonnen. Deze
+  keuze kan enkel bij de status **Te doen**, en niet bij **Niet toegewezen**: een werkbon is werk dat nog moet gebeuren,
+  voor een chauffeur.
+- **Excel met alle velden** — een Excel-bestand van wat de lijst toont, met alle velden van elke werkorder, ook die van
+  de verborgen kolommen: onder meer de dag, de naam van de medewerker, de tijden, de vinkjes, de telefoon, de instructies,
+  het materiaal, de interne opmerkingen, het voertuig, het contract en de factuur.
+
+**Planning per datum en medewerker** maakt het overzicht *Planning per datum en werknemer*: wat de lijst nu toont, dus dezelfde periode, dag,
 contract, medewerker en zoekterm. De kop vermeldt de medewerker en de zoekterm als u er een koos. Per dag en per
 medewerker staan het tijdsdeel met de datum die de klant vroeg (*Gevraagd op*), het nummer, de klant en de werf, het adres,
 de telefoon van het adres (anders die van de klant, en die van de werkorder erbij als ze anders is — met

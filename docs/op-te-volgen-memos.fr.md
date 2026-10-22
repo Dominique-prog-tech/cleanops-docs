@@ -12,14 +12,14 @@ vous n'oubliez ni une promesse d'un client ni un rappel téléphonique.
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, sous **Ventes**, cliquez sur **Mémos à suivre**. Le chiffre à côté de l'élément de menu est le nombre de
+Dans le menu de gauche, sous **Ventes**, cliquez sur **Mémos**. L'écran s'intitule Mémos à suivre. Le chiffre à côté de l'élément de menu est le nombre de
 mémos à suivre aujourd'hui. Vous voyez l'écran avec le droit de voir les postes ouverts.
 
 ## Créer un mémo
 
 Un mémo se crée chez le client :
 
-- sur la fiche client, onglet **Mémos**, avec **Nouveau mémo** (voir [Clients](klanten.fr.md#memos)) ;
+- sur la fiche client, sous **Journal** › **Mémos**, avec **Nouveau mémo** (voir [Clients](klanten.fr.md#memos)) ;
 - ou dans [Postes ouverts](openstaande-posten.fr.md#memos) : cochez un poste et cliquez sur **Mémos…**.
 
 | Champ | Ce qu'il contient |
@@ -60,7 +60,7 @@ Double-cliquez sur un mémo pour l'ouvrir. Vous pouvez y compléter le texte ou 
     À suivre. Pour seulement compléter le texte, ne changez pas la date.
 
 !!! warning "Un mémo sans date de rappel n'apparaît jamais ici"
-    Un mémo sans **Rappeler le** est une simple note sur le client. Vous le trouvez uniquement dans l'onglet Mémos du client.
+    Un mémo sans **Rappeler le** est une simple note sur le client. Vous le trouvez uniquement sur la fiche client, sous **Journal** › **Mémos**.
 
 ## Questions fréquentes
 

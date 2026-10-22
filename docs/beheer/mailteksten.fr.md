@@ -108,7 +108,7 @@ droite.
 Dans la langue de la facture, qui suit le client. Un client francophone reçoit le texte français.
 
 **J'ai modifié le texte, mais un e-mail envoyé plus tôt n'a pas changé.**
-C'est exact : un e-mail envoyé reste tel qu'il est parti. Vous le retrouvez sur l'onglet **E-mails** de la facture.
+C'est exact : un e-mail envoyé reste tel qu'il est parti. Vous le retrouvez sous **Journal** › **E-mails** de la facture.
 
 **Puis-je encore adapter un e-mail juste avant l'envoi ?**
 Oui. La fenêtre **Envoyer par e-mail** affiche l'objet et le texte remplis, et vous les modifiez là pour cet

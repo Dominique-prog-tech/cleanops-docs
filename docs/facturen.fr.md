@@ -61,12 +61,12 @@ déplacement ou une livraison de matériel.
 
 1. En haut de la liste, cliquez sur **Nouvelle facture**, cherchez le client par nom ou par numéro et cliquez sur **choisir**.
    Sous chaque nom figure l'adresse.
-2. Indiquez la **Date de facture** (aujourd'hui par défaut) et, si besoin, la **Référence du client**, le **Texte d'en-tête** et le
+2. L'écran est réparti en deux blocs : **Facture** et **Lignes**. Dans le bloc **Facture**, indiquez la **Date de facture** (aujourd'hui par défaut) et, si besoin, la **Référence du client**, le **Texte d'en-tête** et le
    **Texte de pied de page**. **Insérer un texte de facture** ajoute un texte des [textes de facture](beheer/factuurteksten.fr.md)
    à la fin du champ, dans la langue du client. Avec **Code TVA par défaut**, vous choisissez un seul code TVA pour chaque ligne
    qui n'en a pas encore : une nouvelle ligne le reçoit aussi, de même qu'un tarif qui ne porte pas de code TVA. Ce qu'une ligne
    porte déjà ne change pas.
-3. Remplissez les **lignes**. Choisir un **Tarif** remplit la description, l'unité, le prix et le code TVA, et place le
+3. Dans le bloc **Lignes**, remplissez les lignes. Choisir un **Tarif** remplit la description, l'unité, le prix et le code TVA, et place le
    **Texte sur la facture** du tarif dans le champ **Texte sous la ligne** ; vous pouvez ensuite les adapter. Ce qui figure dans ce
    champ est imprimé sur la facture, sous la ligne. Une description de plus de 35 caractères y figure aussi en entier. Le menu **⋯**
    à droite duplique ou supprime une ligne ; **+ Ajouter une ligne** en ajoute une.
@@ -75,7 +75,7 @@ déplacement ou une livraison de matériel.
    suivant, une échéance selon le délai de paiement du client et une communication structurée, et figure dans les
    [Postes ouverts](openstaande-posten.fr.md). Elle s'ouvre aussitôt.
 
-![La fenêtre Nouvelle facture pour Dubois Marie avec un Texte d'en-tête, deux lignes libres sous Lignes et les totaux, avec le bouton Comptabiliser la facture](images/factuur-nieuw-fr.png "Nouvelle facture")
+![L'écran Nouvelle facture pour Dubois Marie avec un Texte d'en-tête, deux lignes libres sous Lignes et les totaux, avec le bouton Comptabiliser la facture](images/factuur-nieuw-fr.png "Nouvelle facture")
 
 Si quelque chose ne va pas, par exemple une ligne sans code TVA, l'écran indique ce qui manque et rien n'est comptabilisé. Si une
 ligne porte une TVA de 6 %, la phrase d'attestation s'ajoute d'elle-même sous le texte de pied de page.
@@ -87,8 +87,8 @@ ligne porte une TVA de 6 %, la phrase d'attestation s'ajoute d'elle-même sous l
 En haut figurent le client, les dates, le délai de paiement, la communication, la référence du client et les montants. En
 dessous, le **Texte d'en-tête** s'il y en a un, les **Lignes**, la **Ventilation de la TVA** et à côté les **Paiements** reçus (voir [Paiements](betalingen.fr.md)) : chaque
 grille défile séparément.
-En bas figure le **Texte de pied de page**, par exemple la phrase d'attestation à 6 %. En haut à droite se trouvent les **Pièces
-jointes**, les **E-mails** et l'**Historique**. Une ligne provenant d'un ordre de travail en porte le numéro ; une ligne libre n'en a pas.
+En bas figure le **Texte de pied de page**, par exemple la phrase d'attestation à 6 %. En haut à droite se trouve l'onglet **Journal**, avec les
+**Pièces jointes**, les **E-mails** et l'**Historique**. Une ligne provenant d'un ordre de travail en porte le numéro ; une ligne libre n'en a pas.
 
 Une note de crédit indique quelle facture elle contre-passe, et une facture créditée par quelle note de crédit ; les deux sont
 un lien.
@@ -113,7 +113,10 @@ Sur la facture figurent :
 - le texte d'en-tête, les lignes, la TVA par pourcentage et les totaux ;
 - sur une facture, la demande de paiement avec la communication structurée — pas sur une note de crédit ;
 - le texte de pied de page et les mentions légales : à 6 %, la phrase d'attestation ; à 0 %, l'autoliquidation par le
-  cocontractant.
+  cocontractant ;
+- sur une page à part à la fin, les **conditions générales** de la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#conditions-generales),
+  dans la langue de la facture — si elles y sont remplies. Une note de crédit ne reçoit pas cette page, une lettre de rappel
+  non plus.
 
 ### Envoyer
 
@@ -163,7 +166,7 @@ note de crédit et une nouvelle facture. Toutes les factures électroniques et l
 **Envoyer par e-mail quand même…**, en bas de la fenêtre, envoie en plus un e-mail au client, par exemple pour joindre les
 pièces des ordres de travail : elles ne figurent pas dans la facture électronique. La fenêtre d'e-mail indique en haut que
 l'e-mail est un exemplaire supplémentaire et ne remplace pas la facture électronique. Une facture partie par Peppol reste
-marquée *Peppol* ; l'e-mail figure dans l'onglet **E-mails**.
+marquée *Peppol* ; l'e-mail figure sous **Journal** › **E-mails**.
 
 #### Par e-mail
 
@@ -205,7 +208,7 @@ impression**, **Envoyer par courriel** envoie la même facture via la même fen�
 
 ### L'onglet E-mails
 
-En haut à droite, **E-mails** montre ce qui a été envoyé par e-mail pour cette facture, rappels compris (voir
+Sous **Journal**, **E-mails** montre ce qui a été envoyé par e-mail pour cette facture, rappels compris (voir
 [Postes ouverts](openstaande-posten.fr.md)) : quand, à qui, si l'e-mail a été délivré (et sinon, pourquoi), le texte tel qu'il est parti
 (**Afficher le texte**) et le PDF joint.
 
@@ -234,8 +237,8 @@ envoyée. La communication structurée ne change jamais : le client paie avec el
 
 ### Rouvrir
 
-Tant qu'une facture n'a pas été envoyée, vous pouvez encore la modifier avec **Plus… → Rouvrir…**. La même fenêtre que pour une nouvelle
-facture s'ouvre, avec la facture :
+Tant qu'une facture n'a pas été envoyée, vous pouvez encore la modifier avec **Plus… → Rouvrir…**. Le même écran que pour une nouvelle
+facture s'ouvre, avec la facture, en trois blocs : **Facture**, **Ordres de travail** et **Lignes libres** :
 
 - les **Ordres de travail** de la facture. La croix en retire un ; cet ordre figure ensuite à nouveau dans
   [Facturation](facturatie.fr.md). **+ Ajouter des ordres de travail…** choisit des ordres à facturer du même client, exécutés au

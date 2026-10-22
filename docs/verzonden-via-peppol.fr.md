@@ -12,7 +12,7 @@ un envoi échoué.
 
 ## Ouvrir l'écran
 
-Cliquez à gauche dans le menu, sous **Ventes**, sur **Envoyés via Peppol**. Vous le voyez avec le droit de consulter la
+Cliquez à gauche dans le menu, sous **Ventes**, sur **Peppol envoyés**. L'écran s'intitule Envoyés via Peppol. Vous le voyez avec le droit de consulter la
 facturation.
 
 ## La liste

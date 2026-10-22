@@ -12,7 +12,7 @@ klant nooit kreeg, wordt ook niet betaald.
 
 ## Het scherm openen
 
-Klik links in het menu, onder **Verkoop**, op **Niet-afgeleverde mails**. Het getal ernaast zegt hoeveel mails niet
+Klik links in het menu, onder **Verkoop**, op **Mailfouten**. Het scherm heet Niet-afgeleverde mails. Het getal ernaast zegt hoeveel mails niet
 aankwamen en nog door niemand afgevinkt zijn. Staat er geen getal, dan is er niets op te volgen — of kon CleanOps het
 aantal niet opvragen; de lijst zegt dan waarom.
 
@@ -54,7 +54,7 @@ Toont de lijst *De nieuwste 2.000 mails*, kies dan een strengere selectie om oud
 ## Een mail opvolgen
 
 1. Lees de **Reden**. Meestal klopt het adres niet (meer), of zit het postvak van de klant vol.
-2. Klik op het **document**. Op zijn tabblad **Mails** staat de mail zelf, met dezelfde status en reden.
+2. Klik op het **document**. Onder **Journaal** › **Mails** van dat document staat de mail zelf, met dezelfde status en reden.
 3. Zet het recht: verbeter het e-mailadres op de [klantfiche](klanten.md), of neem contact op met de klant.
 4. Mail het document opnieuw, vanop zijn eigen fiche.
 5. Vink de melding af (zie hieronder).
@@ -98,7 +98,7 @@ Het getal wordt om de paar minuten ververst. Laad de pagina opnieuw om het metee
 De lijst toont de mails van uw hele bedrijf, niet enkel die van u.
 
 **Waar zie ik de mails die wél aankwamen?**
-Zet **Status** op *Afgeleverd* of *Alle*. Per document staan ze ook op het tabblad **Mails** van dat document.
+Zet **Status** op *Afgeleverd* of *Alle*. Per document staan ze ook onder **Journaal** › **Mails** van dat document.
 
 **Staan e-facturen via Peppol hier ook?**
 Nee. Die vindt u in [Verzonden via Peppol](verzonden-via-peppol.md).

@@ -20,9 +20,9 @@ devis.
 |---|---|
 | N° | Le numéro du devis. La numérotation recommence à 1 chaque année. |
 | Version | La version du devis. |
-| Date, Valable jusqu'au | La date du devis et jusqu'à quand il est valable. |
+| Date, Validité | La date du devis et jusqu'à quand il est valable (sur la fiche : **Valable jusqu'au**). |
 | Client, Description | Pour qui, et à quel sujet. |
-| Montant HTVA, Total | Le montant hors TVA et TVA comprise. |
+| HTVA, Total | Le montant hors TVA et TVA comprise. |
 | Utilisateur | Qui a établi le devis. |
 | Statut | Brouillon, Envoyé, Accepté, Perdu ou Expiré. Accepté figure en vert. |
 | Suivi le | Quand vous relancez le client. **En rouge et en gras** pour un devis envoyé dès que cette date est aujourd'hui ou passée. |
@@ -49,6 +49,10 @@ comme **Brouillon**. Il reçoit son numéro à l'enregistrement : le numéro sui
 
 ![Le devis du Tuincentrum De Linde : le client avec Changer, les champs et la première ligne avec sa description détaillée](images/offerte-fiche-fr.png "Un devis")
 
+Le devis est réparti en trois blocs : **Devis**, **Remarques et impression** et **Lignes**.
+
+**Devis**
+
 | Champ | Ce que vous indiquez |
 |---|---|
 | Client | Pour qui est le devis. Avec **Changer…**, vous choisissez un autre client ; il vaut pour toutes les versions du devis. |
@@ -56,11 +60,18 @@ comme **Brouillon**. Il reçoit son numéro à l'enregistrement : le numéro sui
 | Statut | Où en est le devis. Voir aussi [Le statut](#le-statut). |
 | Référence | Par exemple la référence du client. 50 caractères au maximum. |
 | Date du devis, Valable jusqu'au, Suivi le | Les trois dates du devis. |
+
+**Remarques et impression**
+
+| Champ | Ce que vous indiquez |
+|---|---|
 | Remarques (client) | Figurent sur le devis pour le client. |
 | Remarques internes | Pour vous seul ; elles ne figurent pas sur le devis. |
 | Sur l'impression | Si les **Colonnes** (quantité, unité, prix unitaire) et les **Totaux** figurent sur le devis. Sans colonnes, le client ne voit que les descriptions et les montants par ligne. |
 
 ### Les lignes
+
+Le bloc **Lignes** porte les lignes du devis.
 
 Chaque ligne est une partie de l'offre.
 
@@ -112,7 +123,7 @@ trouvent sous **Plus…** en bas de la fiche, pour que les boutons tiennent sur 
 | Créer un ordre de travail | Crée un ordre de travail à l'adresse du client, avec la description et les lignes du devis comme travail et le montant hors TVA. Les pièces jointes du devis sont reprises. Le devis passe à **Accepté**. Si un ordre de travail a déjà été créé à partir de ce devis, le nouveau ne reçoit pas de montant et CleanOps l'indique. |
 | Facture d'acompte | Uniquement sur un devis **accepté**, si vous pouvez facturer. Un pourcentage ou un montant hors TVA, réparti sur les taux de TVA du devis — la fenêtre montre la répartition avant la création. La facturation propose cet acompte pour le travail de ce devis ; voir [Facturation](facturatie.fr.md#un-acompte-sur-un-devis). |
 | Dupliquer… | Crée un nouveau devis avec son propre numéro à partir de celui-ci, pour le même client ou un autre. Les lignes, la description et les remarques pour le client sont reprises ; la référence et la remarque interne non. Le doublon porte votre nom comme utilisateur. |
-| Aperçu | Affiche le devis en PDF, dans la langue du client. **Télécharger** l'enregistre. L'aperçu montre le devis enregistré : si vous avez modifié quelque chose qui n'est pas encore enregistré, CleanOps demande d'abord si vous voulez enregistrer, puis affiche l'aperçu. Pour un devis déjà envoyé au client, cette question enregistre dans une **nouvelle version** ; pour écraser la version, annulez et utilisez **Écraser la version**. |
+| Aperçu | Affiche le devis en PDF, dans la langue du client. **Télécharger** l'enregistre. À la fin figurent, sur une page à part, les conditions générales de la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#conditions-generales) dans la langue du devis — si elles y sont remplies. L'aperçu montre le devis enregistré : si vous avez modifié quelque chose qui n'est pas encore enregistré, CleanOps demande d'abord si vous voulez enregistrer, puis affiche l'aperçu. Pour un devis déjà envoyé au client, cette question enregistre dans une **nouvelle version** ; pour écraser la version, annulez et utilisez **Écraser la version**. |
 | Supprimer | Déplace le devis vers la [corbeille](beheer/prullenbak.fr.md), après confirmation. |
 
 ### Le statut
@@ -165,15 +176,15 @@ utilisez **Envoyer par courriel** dans l'**Aperçu avant impression** ; CleanOps
 
 ### L'onglet E-mails
 
-En haut à droite, **E-mails** montre ce qui a été envoyé par e-mail pour cette version du devis : quand, à qui, si
+Sous **Journal**, **E-mails** montre ce qui a été envoyé par e-mail pour cette version du devis : quand, à qui, si
 l'e-mail a été remis, le texte tel qu'il est parti (**Afficher le texte**) et le PDF joint.
 
 ![L'onglet E-mails d'un devis : un e-mail avec le statut Remis, l'objet, À, le PDF envoyé et Afficher le texte](images/offerte-mails-fr.png "E-mails")
 
-## Pièces jointes et Historique
+## L'onglet Journal
 
-En haut à droite figurent aussi les **Pièces jointes** — les documents du devis, comme un plan ou une photo — et
-l'**Historique** : qui a modifié quoi et quand.
+En haut à droite figure l'onglet **Journal**. Il contient les **Pièces jointes** — les documents du devis, comme un plan ou
+une photo —, les **E-mails** (voir ci-dessus) et l'**Historique** : qui a modifié quoi et quand.
 
 ## Questions fréquentes
 

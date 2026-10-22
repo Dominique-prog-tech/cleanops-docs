@@ -37,8 +37,8 @@ facture. Voir [Documents reçus](binnengekomen-documenten.md).
 
 ## La fiche fournisseur
 
-En haut figurent le nom et le numéro, en dessous les onglets **Fiche**, **Documents d'achat**, **Paiements**, **Pièces jointes**
-et **Historique**. Documents d'achat et Paiements s'affichent avec le droit *Voir les achats*.
+En haut figurent le nom et le numéro, en dessous les onglets **Fiche**, **Documents d'achat**, **Paiements**
+et **Journal**. Sous Journal figurent **Pièces jointes** et **Historique**. Documents d'achat et Paiements s'affichent avec le droit *Voir les achats*.
 
 ![La fiche de Pompes Delhaye avec les blocs Identification, Adresse, Contact, Paiement et Remarques](images/leverancier-fiche-fr.png "Fiche fournisseur")
 
@@ -94,14 +94,12 @@ comptabilisation s'il était déjà payé avant d'être comptabilisé. Double-cl
 Les paiements à ce fournisseur, le plus récent en haut, avec la date et le numéro de l'extrait et le montant. Un paiement annulé
 porte l'étiquette **annulé**. Ce qu'un paiement a soldé se voit dans [Paiements](betalingen.md).
 
-### L'onglet Pièces jointes
+### L'onglet Journal
 
-Les documents de ce fournisseur, comme un contrat ou une liste de prix. Avec **Pièce jointe**, vous ajoutez un
+**Pièces jointes** — les documents de ce fournisseur, comme un contrat ou une liste de prix. Avec **Pièce jointe**, vous ajoutez un
 fichier, jusqu'à 25 Mo ; par pièce jointe, vous adaptez la description ou vous la retirez.
 
-### L'onglet Historique
-
-Qui a modifié quel champ de ce fournisseur, quand, et de quelle valeur vers quelle valeur. Le plus récent figure en
+**Historique** — qui a modifié quel champ de ce fournisseur, quand, et de quelle valeur vers quelle valeur. Le plus récent figure en
 haut.
 
 ![L'historique de Pompes Delhaye avec l'e-mail modifié en haut](images/leverancier-logboek-fr.png "Historique d'un fournisseur")

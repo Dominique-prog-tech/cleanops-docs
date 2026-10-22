@@ -53,8 +53,9 @@ const SCHOTEN = [
     verwacht: tekstTaal('Tweestapsverificatie staat uit', 'La vérification en deux étapes est désactivée'),
     magKortZijn: 'het scherm telt in zijn beginstand een uitleg, een melding en één knop' },
   { naam: 'tarieven-lijst', route: '/beheer/tarieven', verwacht: tekstTaal('Nieuw tarief', 'Nouveau tarif') },
-  { naam: 'tarieven-tonen', route: '/beheer/tarieven', verwacht: tekstTaal('Ook gearchiveerde tarieven', 'Aussi les tarifs archivés'),
-    na: async p => { await p.getByText(tekstTaal('Actieve tarieven', 'Tarifs actifs')).first().click(); } },
+  { naam: 'tarieven-tonen', route: '/beheer/tarieven', verwacht: tekstTaal('Ook gearchiveerd', 'Aussi archivés'),
+    // Sinds 22/10/2026 de korte filterwoorden "Actief / Ook gearchiveerd" op elke beheerlijst.
+    na: async p => { await p.getByText(/^(Actief|Actifs)$/).first().click(); } },
   { naam: 'tarief-fiche', route: '/beheer/tarieven', verwacht: tekstTaal('Tekst op de factuur', 'Texte sur la facture'),
     na: async p => { await openRij(p, DEMO.tarief); } },
   { naam: 'tarief-logboek', route: '/beheer/tarieven', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
@@ -170,6 +171,7 @@ const SCHOTEN = [
     na: async (p, taal) => {
       const fr = taal === 'fr-BE';
       await openRij(p, fr ? DEMO.klantFr : DEMO.klant);
+      await p.getByRole('tab', { name: /^(Journaal|Journal)$/ }).click();   // sinds 22/10/2026 onder het tabblad Journaal
       await p.getByText(/^(Memo's|Mémos) \(/).first().click();
       await p.getByRole('row').filter({ hasText: fr ? 'Le syndic demande' : 'Vraagt een offerte' }).first().dblclick();
       await p.waitForTimeout(500);
@@ -229,6 +231,7 @@ const SCHOTEN = [
   { naam: 'leverancier-logboek', route: '/leveranciers', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
     na: async (p, taal) => {
       await openRij(p, taal === 'fr-BE' ? DEMO.leverancierFr : DEMO.leverancier);
+      await p.getByRole('tab', { name: /^(Journaal|Journal)$/ }).click();   // sinds 22/10/2026 onder het tabblad Journaal
       await p.getByText(tekstTaal('^Logboek$', '^Historique$')).first().click();
     } },
   // Aankoopfacturen (vrijgave 06/10/2026, module Aankoop laag 2): de lijst en de fiche met twee btw-tarieven — uit de zes demo-
@@ -337,19 +340,20 @@ const SCHOTEN = [
       await p.getByRole('button', { name: /^(Vorige maand|Mois précédent)$/ }).click();
       await p.locator('.vk-tabel tbody .vk-ziekte').first().waitFor({ timeout: 15000 });
     } },
-  // Slepen over vijf vrije dagen van Tom Verbeke (de 5e tot de 9e van deze maand) opent het venster met die periode. Met de MUIS van
+  // Slepen over vier vrije dagen van Tom Verbeke (de 12e tot de 15e van deze maand) opent het venster met die periode. Met de MUIS van
   // Playwright, in stappen, zodat elke cel haar mouseenter krijgt. ⚠️ Het recept klikt NOOIT op Opslaan.
   { naam: 'verlofkalender-boeken', route: '/verlofkalender', verwacht: tekstTaal('Verlof boeken — Tom Verbeke', 'Réserver un congé — Tom Verbeke'),
     na: async p => {
       const rij = p.locator('.vk-tabel tbody tr').filter({ hasText: 'Tom Verbeke' }).first();
       await rij.waitFor({ timeout: 15000 });
       const cel = async n => { const b = await rij.locator('td').nth(n).boundingBox(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; };
-      const van = await cel(5), tot = await cel(9);
+      const van = await cel(12), tot = await cel(15);   // 22/10/2026: 5–9 raakte de ziekteperiode (05–06) van de demo
       await p.mouse.move(van.x, van.y); await p.mouse.down();
       await p.mouse.move(tot.x, tot.y, { steps: 12 }); await p.waitForTimeout(300);
       await p.mouse.up();
     } },
-  // De lijst: merkteken = de medewerker met het verlof op 0 dagen (de waarschuwing hoort op het beeld).
+  // De lijst: merkteken = Nina Van Hecke, met haar brugdag op 0 dagen. Sinds 22/10/2026 ZONDER waarschuwing: die dag (een donderdag)
+  // werkt ze volgens haar regime niet, en enkel een 0 op een werkdag is een gat (LeaveBalanceRules.OpEenWerkdag).
   { naam: 'verlofkalender-lijst', route: '/verlofkalender/lijst', verwacht: /Nina Van Hecke/ },
   // Werkorders (vrijgave 02/10/2026): lijst, fiche (bovenaan en het blok Facturatie), een nieuwe werkorder en de leveringsbon —
   // uit de demo (DemoDataGenerator.VerzinContractenEnWerkordersAsync). ⚠️ PER TAAL EEN ANDERE WERKORDER, zoals bij Klanten: de
@@ -539,6 +543,8 @@ const SCHOTEN = [
       await p.getByRole('button', { name: /^(Volgende|Suivant) →$/ }).first().click();
       await p.getByText('Mestkelder ledigen').first().waitFor({ state: 'visible', timeout: 15000 });
       await p.getByRole('button', { name: /^(Afdrukken|Imprimer)$/ }).first().click();
+      // Sinds 22/10/2026 een menu met twee documenten en Excel: de planning zelf.
+      await p.getByRole('menuitem', { name: /^(Planning per datum en medewerker|Planning par date et collaborateur)$/ }).click();
       await p.locator('img.dxbrv-report-preview-content-img').first().waitFor({ state: 'visible', timeout: 30000 });
       // ⚠️ Enkel het beeld zelf: het laadpaneel (.dxbrv-page-loading-panel) blijft ook NA het laden zichtbaar in de DOM
       // staan (gemeten 02/10/2026: tien seconden lang inline-block, opacity 1, met de pagina al op het scherm).
@@ -553,25 +559,25 @@ const SCHOTEN = [
   // week, de planningsweek rekent vanaf het planbord (in het weekend al de volgende) — op zaterdag of zondag vallen ze uiteen.
   // Het merkteken van het overzicht is een DAGOPMERKING uit die week: de lopende week staat er al vóór de klik.
   { naam: 'ploegen-overzicht', route: '/ploegen', verwacht: /Keuring vrachtwagen 1-DEM-002/,
-    na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click(); } },
+    na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) [→▶]$/ }).first().click(); } },
   // De ploeg van DONDERDAG: dan werkt Nina volgens haar regime niet, en toont het venster het label "volgens regime vrij".
   { naam: 'ploeg-venster', route: '/ploegen', verwacht: tekstTaal('Ploeg wijzigen', "Modifier l'équipe"),
     na: async p => {
-      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) [→▶]$/ }).first().click();
       await p.getByText(/Keuring vrachtwagen 1-DEM-002/).first().waitFor({ state: 'visible', timeout: 15000 });
       await p.locator('[data-ploeg]').filter({ hasText: 'JLA, KDW' }).first().click();
     } },
   // Het klik-alternatief van het slepen: een naam gekozen, de ploegen en lege cellen van die dag omlijnd. Bart staat dinsdag vrij.
   { naam: 'ploegen-slepen', route: '/ploegen', verwacht: tekstTaal('gekozen —', 'choisi —'),
     na: async p => {
-      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) [→▶]$/ }).first().click();
       await p.getByText(/Keuring vrachtwagen 1-DEM-002/).first().waitFor({ state: 'visible', timeout: 15000 });
       await p.locator('[data-naam^="BDS|"]').first().click();
     } },
   // ⚠️ Wachten op het BEELD van de pagina in de kijker (zie planning-afdruk).
   { naam: 'ploegen-afdruk', route: '/ploegen', verwacht: tekstTaal('Afdrukvoorbeeld', 'Aperçu avant impression'),
     na: async p => {
-      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) →$/ }).first().click();
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) [→▶]$/ }).first().click();
       await p.getByText(/Keuring vrachtwagen 1-DEM-002/).first().waitFor({ state: 'visible', timeout: 15000 });
       await p.getByRole('button', { name: /^(Afdrukken|Imprimer)$/ }).first().click();
       await p.waitForFunction(() => {
@@ -609,6 +615,7 @@ const SCHOTEN = [
     na: async p => {
       await openRij(p, 'TUINCENTRUM DE LINDE');
       await p.getByText(/Tuincentrum De Linde · (nr|n°)/).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('tab', { name: /^(Journaal|Journal)$/ }).click();   // sinds 22/10/2026 onder het tabblad Journaal
       await p.getByText(/^(Mails|E-mails)$/).first().click();
     } },
   { naam: 'offerte-versies', route: '/offertes', verwacht: tekstTaal('actueel', 'actuelle'),
@@ -737,6 +744,7 @@ const SCHOTEN = [
     na: async p => {
       await openRij(p, '20260001');
       await p.getByText(tekstTaal('Btw-opbouw', 'Ventilation de la TVA')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.getByRole('tab', { name: /^(Journaal|Journal)$/ }).click();   // sinds 22/10/2026 onder het tabblad Journaal
       await p.getByText(/^(Mails|E-mails)$/).first().click();
     } },
   // Nieuwe factuur (B2, 03/10/2026): klant kiezen zoals bij een nieuwe offerte, dan het venster met twee vrije lijnen.
@@ -904,7 +912,8 @@ const SCHOTEN = [
         ?.scrollIntoView({ block: 'center' }));
       await p.waitForTimeout(400);
     } },
-  { naam: 'basistabellen-lijst', route: '/beheer/basistabellen', verwacht: tekstTaal('Nieuw item', 'Nouvel élément') },
+  // Het scherm opent op de lijst Contracttypes; de knop heet sinds 22/10/2026 "Nieuw" (was "Nieuw item") — het merkteken is de lijstnaam.
+  { naam: 'basistabellen-lijst', route: '/beheer/basistabellen', verwacht: tekstTaal('Contracttypes', 'Types de contrat') },
   { naam: 'basistabel-venster', route: '/beheer/basistabellen', verwacht: tekstTaal('Item bewerken', "Modifier l'élément"),
     na: async p => { await p.getByRole('gridcell', { name: DEMO.basistabel, exact: true }).first().dblclick(); } },
   { naam: 'basistabellen-journaal', route: '/beheer/basistabellen', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
@@ -1071,7 +1080,12 @@ const SCHOTEN = [
       const zoek = p.getByPlaceholder(/Zoeken|Rechercher/).first();
       await zoek.fill('Demo'); await zoek.press('Enter');
       await p.waitForFunction(() => {
-        const rijen = [...document.querySelectorAll('[role=row]')].filter(r => r.querySelector('[role=gridcell]'));
+        // De rijen die OP HET BEELD komen (binnen de hoogte van het venster): dat is wat gepubliceerd wordt. Lager op de pagina staan
+        // oudere regels van vorige vullingen (22/10/2026: "admin" vanaf rij 35 van 50) — die komen niet op het beeld.
+        const rijen = [...document.querySelectorAll('[role=row]')].filter(r => r.querySelector('[role=gridcell]')
+          && r.getBoundingClientRect().top < window.innerHeight);
+        // ⚠️ Streng: ELKE rij "Demo". Sinds 22/10/2026 schrijft de demo ook de regels van de diensten die ze aanroept op naam van "Demo"
+        // (DemoDataGenerator.DemoAuditRecorder); oudere "admin"-regels van vorige vullingen staan lager, de nieuwste eerst.
         return rijen.length > 0 && rijen.every(r => r.innerText.includes('Demo'));
       }, null, { timeout: 15000 });
     } },
@@ -1255,7 +1269,9 @@ for (const { taal, schoten } of RONDES) {
       await page.waitForTimeout(600);
       // De taal gaat mee: een recept mag per taal een ander demorecord kiezen (klanten: Nederlands- en Franstalige klant).
       if (s.na) await s.na(page, taal);
-      try { await page.getByText(s.verwacht).first().waitFor({ state: 'visible', timeout: 15000 }); }
+      // .filter({ visible: true }) (22/10/2026): het EERSTE element met de tekst kan een verborgen kopie zijn (een dicht keuzemenu, de
+      // kolomkiezer) — dan wachtte .first() vergeefs terwijl het merkteken wel op het scherm stond (Basistabellen: "Contracttypes").
+      try { await page.getByText(s.verwacht).filter({ visible: true }).first().waitFor({ state: 'visible', timeout: 15000 }); }
       catch { mislukt.push(`${bestand} — het merkteken ${s.verwacht} verscheen niet: dit is niet het beloofde scherm`); continue; }
       await page.waitForTimeout(400);
       await page.addStyleTag({ content: VERBERG }).catch(() => {});

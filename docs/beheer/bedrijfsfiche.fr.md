@@ -17,6 +17,9 @@ délai entre deux rappels, et comment votre entreprise figure dans une facture �
     notes de crédit, devis, lettres de rappel et attestations que vous imprimez ou envoyez par e-mail dans CleanOps —
     voir [Factures](../facturen.fr.md#imprimer).
 
+    Les **conditions générales** figurent sur une page à part à la fin de chaque facture et de chaque devis — voir
+    [Conditions générales](#conditions-generales).
+
 ## Ouvrir l'écran
 
 Cliquez sur **Administration** en bas du menu, puis sur la tuile **Fiche d'entreprise**.
@@ -119,6 +122,20 @@ Un champ vide ne figure pas sur l'attestation. Lors d'une migration, CleanOps ne
 précédente les avait dans le modèle de l'attestation. Remplissez-les ici une fois.
 
 ![Le bloc Attestations de traitement sur la fiche entreprise avec N° d'enregistrement et Signataire des attestations](../images/bedrijfsfiche-attesten-fr.png "Attestations de traitement")
+
+## Conditions générales
+
+Dans le bloc **Conditions générales**, vous indiquez le texte de vos conditions générales, en deux langues :
+
+| Champ | Ce que vous indiquez |
+|---|---|
+| **En néerlandais** | les conditions pour vos documents en néerlandais. |
+| **En français** | les conditions pour vos documents en français. |
+
+Le texte figure sur une **page à part à la fin** de chaque [facture](../facturen.fr.md#imprimer) et de chaque
+[devis](../offertes.fr.md), dans la langue du document. Une note de crédit ne reçoit pas cette page, une lettre de rappel
+non plus. Une ligne vide commence un nouveau paragraphe. Si vous laissez un champ vide, il n'y a pas de page dans cette
+langue.
 
 ## Enregistrer ou annuler
 

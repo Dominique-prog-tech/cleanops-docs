@@ -10,7 +10,7 @@ Wat u uw leveranciers nog moet betalen, per leverancier met zijn saldo. Van hier
 
 ## Het scherm openen
 
-Klik links in het menu, onder **Aankoop**, op **Openstaande posten**. U hebt het recht *Aankoop bekijken* nodig; om een
+Klik links in het menu, onder **Aankoop**, op **Openstaand**. Het scherm heet Openstaande posten leveranciers. U hebt het recht *Aankoop bekijken* nodig; om een
 betaling in te geven ook *Betalingen ingeven*.
 
 ## De lijst

@@ -31,17 +31,19 @@ Een klant zoekt u in het zoekveld. In de kolom **Attesten** staat het aantal att
 *ontbreekt*. De **eenheidsprijs** zet u aan via **Kolommen kiezen**.
 
 !!! tip "Werken met Zonder attest"
-    Zet **Attest** op *Zonder attest* en maak de attesten één voor één. Keert u na het bewaren terug naar de lijst, dan is de
-    werkorder die u net afwerkte eruit verdwenen.
+    Zet **Attest** op *Zonder attest* en maak de attesten één voor één. Keert u na het bewaren terug naar de lijst (met
+    **← Attesten**), dan is de werkorder die u net afwerkte eruit verdwenen.
 
 ## Een attest maken of wijzigen
 
-Klik onder de werkorder op **Nieuw attest**, of dubbelklik op een bestaand attest. Het attest opent op zijn eigen fiche;
-**Bewaren** en **Annuleren** brengen u terug naar waar u vandaan kwam.
+Klik onder de werkorder op **Nieuw attest**, of dubbelklik op een bestaand attest. Het attest opent op zijn eigen fiche.
+Na **Bewaren** blijft de fiche open, zodat u het attest meteen kunt mailen of afdrukken; een nieuw attest opent dan op zijn
+eigen fiche. **Annuleren** en de terugknop bovenaan brengen u terug naar waar u vandaan kwam.
 
 ![De fiche van Attest 900118/1 met de werkorder bovenaan, en Datum, Product, Hoeveelheid, Eenheid, Verwerking, Verwerkingsbedrijf, Herkomst en Werfopmerking](images/attest-fiche.png "Een attest")
 
-Bovenaan staan de werkorder, de klant en het uitvoeringsadres, zoals ze op het attest komen.
+De fiche staat in vier blokken: **Werkorder**, **Attest**, **Verwerking** en **Herkomst en werf**. Het blok **Werkorder**
+toont de werkorder, de klant en het uitvoeringsadres, zoals ze op het attest komen.
 
 | Veld | Wat u invult |
 |---|---|
@@ -96,13 +98,13 @@ Een attest kan ook mee met de **factuurmail**: daar staan de attesten van de wer
 [Facturen](facturen.md)). Ook dan staat het attest daarna op **verzonden**.
 
 Na het versturen staat het attest op **verzonden** (bovenaan de fiche en in de kolom **Verzonden**) en vindt u de mail op
-het tabblad **Mails**. Wijzigt u het attest daarna, dan staat het weer op *nog niet verzonden*: het moet opnieuw naar de
+**Journaal** › **Mails** van de fiche. Wijzigt u het attest daarna, dan staat het weer op *nog niet verzonden*: het moet opnieuw naar de
 klant. Mailt u een attest dat al verzonden is, dan vraagt CleanOps eerst of dat de bedoeling is.
 
 ## Het journaal
 
 Klik in de lijst een attest aan en open de strook **Journaal** rechts: het logboek toont wie het attest maakte, wijzigde
-en mailde. Op de fiche staat hetzelfde onder **Logboek**.
+en mailde. Op de fiche staat hetzelfde onder **Journaal** › **Logboek**.
 
 ## Rechten
 

@@ -2,7 +2,7 @@
 description: "Paiements par mode dans CleanOps : les ordres de travail payés par Payconiq, en espèces … par période, pour pointer, avec export vers Excel."
 ---
 
-# Paiements par mode de paiement
+# Paiements par mode
 
 Les ordres de travail avec un [mode de paiement](beheer/betaalwijzen.fr.md), au jour où ils ont été exécutés. Vous pointez ainsi
 le relevé Payconiq ou la caisse : chaque ligne est une intervention, avec le montant payé par le client et l'état de la facture.
@@ -11,7 +11,7 @@ le relevé Payconiq ou la caisse : chaque ligne est une intervention, avec le mo
 
 ## Ouvrir l'écran
 
-Dans le menu, sous **Ventes**, cliquez sur **Par mode de paiement**.
+Dans le menu, sous **Ventes**, cliquez sur **Encaissements**. L'écran s'intitule Paiements par mode.
 
 ## Période et mode de paiement
 

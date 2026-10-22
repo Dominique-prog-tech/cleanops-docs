@@ -16,10 +16,15 @@ boeken en wijzigen vraagt het recht om medewerkers te bewerken.
 
 ## Het rooster
 
+Boven het rooster staat de legende: de soorten verlof, *Halve dag*, *Weekend of feestdag*, *Geen werkdag van de medewerker*
+en *Dubbel geboekt*.
+
 - **De kleur** zegt de soort: blauw is *Verlof*, rood *Ziekte*, oranje *Ander*. Een half gekleurd vakje is een halve dag.
-- **Grijs** is een weekend, een feestdag of een sluitingsdag uit de [feestdagen](beheer/feestdagen.md). **Gearceerd** is een
-  dag waarop de medewerker volgens zijn werkregime niet werkt.
-- **Een rode rand met een 2** betekent dat er voor die dag twee verlofperiodes geboekt zijn. Open ze en zet het recht.
+- **Effen grijs** (*Weekend of feestdag*) is een weekend, een feestdag of een sluitingsdag uit de
+  [feestdagen](beheer/feestdagen.md). Die dag is grijs voor iedereen.
+- **Gearceerd** (*Geen werkdag van de medewerker*) is een dag waarop die ene medewerker volgens zijn werkregime niet werkt,
+  bijvoorbeeld de vrije woensdag van iemand die vier dagen werkt.
+- **Een rode rand met een 2** (*Dubbel geboekt*) betekent dat er voor die dag twee verlofperiodes geboekt zijn. Open ze en zet het recht.
 - **Afwezig**, onderaan, telt per dag hoeveel medewerkers afwezig zijn op een dag dat ze werken.
 - **Dagen**, rechts, telt per medewerker de werkdagen met afwezigheid in de getoonde maand. Dat getal komt uit de kalender;
   het verlofsaldo staat in [Verlofsaldi](verlofsaldi.md).
@@ -45,15 +50,16 @@ in en klik op **Bewaren**. CleanOps telt de verlofdagen volgens het werkregime e
 
 Klik op **Lijstweergave** voor alle verlofperiodes onder elkaar: medewerker, soort, van, tot, dagen en omschrijving.
 
-![De lijst Verlof van de demo met de periodes, de filter Periode, een verlof op 0 dagen met een waarschuwing, en rechts de strook Journaal](images/verlofkalender-lijst.png "Verlof")
+![De lijst Verlof van de demo met de periodes, de filter Periode, een brugdag op 0 dagen op een dag dat de medewerker niet werkt (dus zonder waarschuwing), en rechts de strook Journaal](images/verlofkalender-lijst.png "Verlof")
 
 - Kies bovenaan een **Periode**: de lijst toont het verlof dat die periode raakt.
 - **Zoeken**, **sorteren** en **exporteren** werken zoals in de andere lijsten.
 - **Dubbelklik** op een periode om ze te wijzigen.
 - **Journaal** — de strook rechts toont het logboek van de periode die u aanklikt: wie ze boekte, en wie er later wat
   aan wijzigde, per veld met de oude en de nieuwe waarde.
-- Een verlof op **0 dagen** krijgt een waarschuwing: het telt niet mee in het saldo. Open het en bewaar het opnieuw — zie
-  [Verlofsaldi](verlofsaldi.md#boekingen-op-0-dagen).
+- Een verlof op **0 dagen** dat op een werkdag van de medewerker valt, krijgt een waarschuwing: het telt niet mee in het saldo.
+  Open het en bewaar het opnieuw — zie [Verlofsaldi](verlofsaldi.md#boekingen-op-0-dagen). Een verlof op een dag waarop de
+  medewerker niet werkt (bijvoorbeeld een zaterdag), staat terecht op 0 en krijgt geen waarschuwing.
 - Met **Kalender** gaat u terug naar het rooster.
 
 ## Veelgestelde vragen

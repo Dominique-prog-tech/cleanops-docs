@@ -11,7 +11,7 @@ Hoeveel werk er in een periode uitgevoerd werd en voor welk bedrag, per medewerk
 
 ## Het scherm openen
 
-Klik in het menu onder **Verkoop** op **Omzet per medewerker en voertuig**.
+Klik in het menu onder **Verkoop** op **Omzet**. Het scherm heet Omzet per medewerker en voertuig.
 
 ## Periode en indeling
 

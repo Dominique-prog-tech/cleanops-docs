@@ -7,7 +7,7 @@ description: "Offertes in CleanOps: een prijsofferte maken, opvolgen tot ze aanv
 Op Offertes maakt u prijsoffertes voor uw klanten, volgt u ze op tot ze aanvaard of verloren zijn, en maakt u van een
 aanvaarde offerte meteen een werkorder.
 
-![De offertelijst van de demo met vier offertes: Verstuurd, Aanvaard, Concept en Verloren, en een rode datum bij Opvolgen op](images/offertes-lijst.png "Offertes")
+![De offertelijst van de demo met vier offertes: Verstuurd, Aanvaard, Concept en Verloren, en een rode datum bij Opvolgen](images/offertes-lijst.png "Offertes")
 
 ## Het scherm openen
 
@@ -24,7 +24,7 @@ Klik links in het menu, onder **Verkoop**, op **Offertes**. De lijst toont stand
 | Bedrag excl., Totaal | Het bedrag zonder en met btw. |
 | Gebruiker | Wie de offerte opgesteld heeft. |
 | Status | Concept, Verstuurd, Aanvaard, Verloren of Vervallen. Aanvaard staat in het groen. |
-| Opvolgen op | Wanneer u de klant opvolgt. **Rood en vet** bij een verstuurde offerte zodra die datum vandaag is of voorbij. |
+| Opvolgen | Wanneer u de klant opvolgt (op de fiche: **Opvolgen op**). **Rood en vet** bij een verstuurde offerte zodra die datum vandaag is of voorbij. |
 
 Bovenaan kiest u een **Status** en bij **Versies** de **Laatste** of **Alle** versies. Bij **Status** staat ook
 **Op te volgen**: de verstuurde offertes waarvan de opvolgdatum vandaag is of voorbij. Klik een offerte aan en open rechts
@@ -48,6 +48,10 @@ als **Concept**. Het nummer krijgt ze bij het bewaren: het volgende nummer van h
 
 ![De offerte van Tuincentrum De Linde: de klant met Wijzigen, de velden en de eerste lijn met haar beschrijving](images/offerte-fiche.png "Een offerte")
 
+De offerte staat in drie blokken: **Offerte**, **Opmerkingen en afdruk** en **Lijnen**.
+
+**Offerte**
+
 | Veld | Wat u invult |
 |---|---|
 | Klant | Voor wie de offerte is. Met **Wijzigen…** kiest u een andere klant; die geldt voor alle versies van de offerte. |
@@ -55,11 +59,18 @@ als **Concept**. Het nummer krijgt ze bij het bewaren: het volgende nummer van h
 | Status | Waar de offerte staat. Zie ook [De status](#de-status). |
 | Referentie | Bijvoorbeeld de referentie van de klant. Hoogstens 50 tekens. |
 | Offertedatum, Geldig tot, Opvolgen op | De drie datums van de offerte. |
+
+**Opmerkingen en afdruk**
+
+| Veld | Wat u invult |
+|---|---|
 | Opmerkingen (klant) | Komen op de offerte voor de klant. |
 | Interne opmerkingen | Enkel voor uzelf; ze komen niet op de offerte. |
 | Op de afdruk | Of de **Kolommen** (aantal, eenheid, eenheidsprijs) en de **Totalen** op de offerte komen. Zonder kolommen ziet de klant enkel de omschrijvingen en de bedragen per lijn. |
 
 ### De lijnen
+
+Het blok **Lijnen** draagt de lijnen van de offerte.
 
 Elke lijn is een onderdeel van het aanbod.
 
@@ -110,7 +121,7 @@ maken en een werkorder maken uit de offerte.
 | Werkorder maken | Maakt een werkorder op het adres van de klant, met de omschrijving en de lijnen van de offerte als werk en het bedrag zonder btw. De bijlagen van de offerte gaan mee. De offerte komt op **Aanvaard**. Is er al een werkorder uit deze offerte gemaakt, dan krijgt de nieuwe geen bedrag en zegt CleanOps dat. |
 | Voorschotfactuur | Enkel op een **aanvaarde** offerte, als u mag factureren. Een percentage of een bedrag zonder btw, verdeeld over de btw-tarieven van de offerte — het venster toont de verdeling vóór u aanmaakt. De facturatie stelt dit voorschot voor bij het werk van deze offerte; zie [Facturatie](facturatie.md#een-voorschot-op-een-offerte). |
 | Dupliceren… | Maakt een nieuwe offerte met een eigen nummer op basis van deze, voor dezelfde of een andere klant. De lijnen, de omschrijving en de opmerkingen voor de klant gaan mee; de referentie en de interne opmerking niet. U staat als gebruiker op het duplicaat. |
-| Afdrukvoorbeeld | Toont de offerte als PDF, in de taal van de klant. **Downloaden** bewaart ze. Het voorbeeld toont de bewaarde offerte: hebt u iets gewijzigd dat nog niet bewaard is, dan vraagt CleanOps eerst of u wilt bewaren, en toont daarna het voorbeeld. Bij een offerte die al naar de klant is, bewaart die vraag in een **nieuwe versie**; wilt u de versie overschrijven, annuleer dan en gebruik **Versie overschrijven**. |
+| Afdrukvoorbeeld | Toont de offerte als PDF, in de taal van de klant. **Downloaden** bewaart ze. Achteraan staan, op een eigen blad, de algemene voorwaarden uit de [bedrijfsfiche](beheer/bedrijfsfiche.md#algemene-voorwaarden) in de taal van de offerte — als ze daar ingevuld zijn. Het voorbeeld toont de bewaarde offerte: hebt u iets gewijzigd dat nog niet bewaard is, dan vraagt CleanOps eerst of u wilt bewaren, en toont daarna het voorbeeld. Bij een offerte die al naar de klant is, bewaart die vraag in een **nieuwe versie**; wilt u de versie overschrijven, annuleer dan en gebruik **Versie overschrijven**. |
 | Verwijderen | Verplaatst de offerte naar de [prullenbak](beheer/prullenbak.md), na een bevestiging. |
 
 ### De status
@@ -161,15 +172,15 @@ mailen, gebruik dan **Doorsturen per mail** in het **Afdrukvoorbeeld**; CleanOps
 
 ### Het tabblad Mails
 
-Rechts bovenaan toont **Mails** wat er over deze versie van de offerte gemaild werd: wanneer, aan wie, of de mail
+Onder **Journaal** toont **Mails** wat er over deze versie van de offerte gemaild werd: wanneer, aan wie, of de mail
 afgeleverd is, de tekst zoals ze vertrok (**Tekst tonen**) en de PDF die meeging.
 
 ![Het tabblad Mails van een offerte: een mail met de status Afgeleverd, het onderwerp, Aan, de verstuurde PDF en Tekst tonen](images/offerte-mails.png "Mails")
 
-## Bijlagen en Logboek
+## Het tabblad Journaal
 
-Rechts bovenaan staan ook **Bijlagen** — documenten bij de offerte, zoals een plan of een foto — en **Logboek**: wie wat
-wijzigde en wanneer.
+Rechts bovenaan staat het tabblad **Journaal**. Daaronder staan **Bijlagen** — documenten bij de offerte, zoals een plan of
+een foto —, **Mails** (zie hierboven) en **Logboek**: wie wat wijzigde en wanneer.
 
 ## Veelgestelde vragen
 

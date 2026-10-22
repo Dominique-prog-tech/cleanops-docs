@@ -36,7 +36,8 @@ Klik op **Nieuwe medewerker**. U krijgt een lege fiche; de velden met een sterre
 
 ## De medewerkerfiche
 
-Bovenaan staan de naam en de code, daaronder de tabbladen **Fiche**, **Verlof**, **Bijlagen** en **Logboek**. Het
+Bovenaan staan de naam en de code, daaronder de tabbladen **Fiche**, **Verlof** en **Journaal**. Onder Journaal staan
+**Bijlagen** en **Logboek**. Het
 aantal verlofperiodes staat tussen haakjes in de titel: "Verlof (4)".
 
 ![De fiche van Tom Verbeke op het tabblad Fiche, met onderaan het blok Inzet en werkregime](images/medewerker-fiche.png "Medewerkerfiche")
@@ -114,15 +115,13 @@ boeken kan gewoon; de melding zegt u waar u de planning moet nakijken.
 **Verwijderen** in het venster haalt de periode definitief weg, na een bevestiging. Het
 [actielogboek](beheer/actielogboek.md) houdt bij wie ze geboekt, gewijzigd of verwijderd heeft.
 
-### Het tabblad Bijlagen
+### Het tabblad Journaal
 
-De documenten bij deze medewerker, zoals een attest of een doktersbriefje. Met **Bijlage** voegt u een bestand
+**Bijlagen** — de documenten bij deze medewerker, zoals een attest of een doktersbriefje. Met **Bijlage** voegt u een bestand
 toe, tot 25 MB; per bijlage past u de omschrijving aan of haalt u ze weg. Zet bij een doktersbriefje de periode in
 de omschrijving, dan vindt u het terug bij het juiste verlof.
 
-### Het tabblad Logboek
-
-Wie welk veld van deze medewerker gewijzigd heeft, wanneer, en van welke waarde naar welke. Het nieuwste staat
+**Logboek** — wie welk veld van deze medewerker gewijzigd heeft, wanneer, en van welke waarde naar welke. Het nieuwste staat
 bovenaan.
 
 ## Een medewerker verwijderen

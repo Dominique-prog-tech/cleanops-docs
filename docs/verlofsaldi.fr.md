@@ -32,7 +32,7 @@ Par collaborateur, vous voyez le code, le nom et les chiffres de l'année choisi
 | Pris | Les jours de congé pris cette année — voir [Comment les congés pris sont comptés](#comment-les-conges-pris-sont-comptes). |
 | Solde | Total moins pris. En rouge si plus de jours ont été pris qu'attribués. |
 | Maladie, Autre | Les jours de maladie et d'autre absence de cette année, à titre d'information. Ils ne comptent pas dans le solde. |
-| À 0 jour | Le nombre de réservations de congé de cette année à 0 jour. Vide s'il n'y en a pas — voir [Réservations à 0 jour](#reservations-a-0-jour). |
+| À 0 jour | Le nombre de réservations de congé de cette année qui tombent sur un jour de travail mais sont à 0 jour. Vide s'il n'y en a pas — voir [Réservations à 0 jour](#reservations-a-0-jour). |
 
 - **Année** — réglée sur l'année en cours. Vous choisissez de trois ans en arrière à l'année prochaine, pour pouvoir
   préparer une nouvelle année.
@@ -90,11 +90,14 @@ l'attribution de l'année précédente : légal, ancienneté et extra — pas la
     Les réservations de congé reprises de l'ancien logiciel sont parfois à 0 jour : ce logiciel ne les calculait pas
     toujours. Une telle réservation ne compte pas dans **Pris**, et le solde paraît alors trop favorable.
 
-La colonne **À 0 jour** indique combien il y en a. Dans la fenêtre du collaborateur, un message le signale, avec le
-bouton **Vers le collaborateur** qui ouvre l'onglet **Congés** de sa fiche. Ouvrez-y la réservation et cliquez sur
-**Enregistrer** : CleanOps calcule alors les jours selon le régime de travail.
+Si une réservation tombe sur un jour où le collaborateur ne travaille pas selon son régime, elle est à juste titre à 0.
+CleanOps ne compte pas ces réservations ici : la colonne **À 0 jour** et le message ne portent que sur les réservations
+**un jour de travail**.
 
-Si la réservation tombe sur un jour où le collaborateur ne travaille pas selon son régime, elle reste à juste titre à 0.
+La colonne **À 0 jour** indique combien il y en a. Dans la fenêtre du collaborateur, un message le signale. Si vous pouvez
+modifier les collaborateurs, le bouton **Vers le collaborateur** y figure ; il ouvre l'onglet **Congés** de sa fiche.
+Ouvrez-y la réservation et cliquez sur **Enregistrer** : CleanOps calcule alors les jours selon le régime de travail. Si
+vous ne pouvez pas modifier les collaborateurs, le message indique que quelqu'un qui le peut peut les enregistrer à nouveau.
 
 ## Questions fréquentes
 

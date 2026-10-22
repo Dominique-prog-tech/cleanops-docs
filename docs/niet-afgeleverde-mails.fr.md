@@ -12,7 +12,7 @@ facture que votre client n'a jamais reçue ne sera pas payée non plus.
 
 ## Ouvrir l'écran
 
-Cliquez à gauche dans le menu, sous **Ventes**, sur **Courriers non remis**. Le chiffre à côté indique combien d'e-mails ne
+Cliquez à gauche dans le menu, sous **Ventes**, sur **Mails rejetés**. L'écran s'intitule Courriers non remis. Le chiffre à côté indique combien d'e-mails ne
 sont pas arrivés et n'ont encore été cochés par personne. S'il n'y a pas de chiffre, il n'y a rien à suivre — ou CleanOps
 n'a pas pu demander le nombre ; la liste dit alors pourquoi.
 
@@ -54,7 +54,7 @@ Si la liste affiche *Les 2 000 e-mails les plus récents*, choisissez une sélec
 ## Suivre un e-mail
 
 1. Lisez la **Raison**. Le plus souvent, l'adresse n'est pas (plus) correcte, ou la boîte du client est pleine.
-2. Cliquez sur le **document**. Son onglet **E-mails** montre l'e-mail lui-même, avec le même statut et la même raison.
+2. Cliquez sur le **document**. Sous **Journal** › **E-mails** de ce document figure l'e-mail lui-même, avec le même statut et la même raison.
 3. Corrigez : adaptez l'adresse e-mail sur la [fiche client](klanten.fr.md), ou prenez contact avec le client.
 4. Renvoyez le document, depuis sa propre fiche.
 5. Cochez le message (voir ci-dessous).
@@ -99,7 +99,7 @@ Le chiffre est rafraîchi toutes les quelques minutes. Rechargez la page pour le
 La liste montre les e-mails de toute votre entreprise, pas seulement les vôtres.
 
 **Où vois-je les e-mails qui sont bien arrivés ?**
-Mettez **Statut** sur *Remis* ou *Tous*. Par document, ils figurent aussi dans l'onglet **E-mails** de ce document.
+Mettez **Statut** sur *Remis* ou *Tous*. Par document, ils figurent aussi sous **Journal** › **E-mails** de ce document.
 
 **Les factures électroniques via Peppol figurent-elles ici aussi ?**
 Non. Vous les trouvez dans [Envoyés via Peppol](verzonden-via-peppol.fr.md).

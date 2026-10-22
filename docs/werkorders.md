@@ -34,7 +34,7 @@ factuur van de werkorder gecrediteerd is.
   Werkorders die in uw vorige toepassing zonder factuurdatum staan, vindt u met deze keuze niet.
 - **Tarief** — typ een deel van de omschrijving en kies het tarief: de lijst toont dan enkel de werkorders met dat
   tarief. Ook gearchiveerde tarieven staan erin, want oudere werkorders dragen ze nog. Het kruisje wist uw keuze.
-- **Klant** — de knop **Werkorders** op de [klantfiche](klanten.md#de-knoppen-onderaan) opent deze lijst met enkel de
+- **Klant** — **Meer… → Werkorders** op de [klantfiche](klanten.md#de-knoppen-onderaan) opent deze lijst met enkel de
   werkorders van die klant, over alle statussen. Bovenaan staat dan **Klant:** met de naam; het kruisje ernaast toont
   weer de werkorders van alle klanten.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in het nummer, de klant (op naam of klantnummer), de werf, het adres,
@@ -58,7 +58,7 @@ op naam of nummer en klik op **kies**. **Annuleren** brengt u dan terug naar de 
 | Veld | Toelichting |
 |---|---|
 | Uitvoeringsadres | Het hoofdadres van de klant of een van zijn uitvoeringsadressen. Heeft de klant precies één uitvoeringsadres, dan staat dat al gekozen (ook bij een werkorder uit een offerte). De werkinstructie, het materiaal en de opmerkingen van het adres komen op de werkorder. Staat het adres er nog niet, klik dan op **Nieuw uitvoeringsadres**; met **Adres openen** past u het gekozen adres aan. Na **Bewaren** keert u terug, met dat adres gekozen en alles wat u al invulde. Lopen er op het gekozen adres contracten, dan noemt een melding ze; hoort de opdracht bij een contract, koppel ze dan na het bewaren met **Koppelen…** op de fiche. **Historiek…** toont de vorige werkorders op dat adres; met **Invoegen** komen de instructies, het materiaal en de interne opmerking van de gekozen werkorder achter wat er al staat. |
-| Uit te voeren | De dag waarop het werk moet gebeuren. Ligt die dag al achter u, dan vraagt CleanOps bij **Bewaren** eerst *Toch inboeken?* — werk achteraf inboeken mag. |
+| Uit te voeren | De dag waarop het werk moet gebeuren. Ligt die dag al achter u, dan vraagt CleanOps bij **Bewaren** eerst *Toch bewaren?* — werk achteraf inboeken mag. |
 | Werf (naam) | Een herkenbare naam voor de plaats, hoogstens 30 tekens. |
 | Omschrijving * | Wat er moet gebeuren, hoogstens 35 tekens. Kiest u een tarief terwijl het veld leeg is of nog de tekst van een vorig tarief draagt, dan vult CleanOps de omschrijving van het tarief in; u kunt ze aanpassen. Op de factuur staat bij een tarief de tarieftekst, zonder tarief deze omschrijving. |
 | Instructies werknemer | Wat de ploeg ter plaatse moet weten. |
@@ -69,7 +69,7 @@ op naam of nummer en klik op **kies**. **Annuleren** brengt u dan terug naar de 
 Boven de velden meldt CleanOps wat u moet weten vóór u inboekt:
 
 - de klant is **geblokkeerd** — u kunt gewoon verder;
-- de klant of het adres aanvaardt **geen nieuwe opdrachten** — bij **Bewaren** vraagt CleanOps eerst *Toch inboeken?*;
+- de klant of het adres aanvaardt **geen nieuwe opdrachten** — bij **Bewaren** vraagt CleanOps eerst *Toch bewaren?*;
 - het adres is op sommige dagen **moeilijk of niet bereikbaar** — ter informatie bij het kiezen van een datum.
 
 Na **Bewaren** opent de fiche van de nieuwe werkorder.
@@ -96,6 +96,11 @@ ontkoppelen, en een gefactureerde werkorder koppelt u niet meer.
 
 ### Planning en uitvoering
 
+Onder de kaart staan drie blokken: **Planning**, **Adres** en **Uit te voeren werk**. Het blok **Facturatie** volgt
+onderaan (zie [Facturatie](#facturatie)).
+
+**Planning**
+
 | Veld | Toelichting |
 |---|---|
 | Status | Volgt uit de datums, u kiest hem niet zelf. Zie [de status](#de-status). |
@@ -104,8 +109,19 @@ ontkoppelen, en een gefactureerde werkorder koppelt u niet meer.
 | Gepland, Uitgevoerd | De dag waarop het werk gepland staat en de dag waarop het gedaan is. Verzet u **Gepland** naar een dag die al voorbij is, dan vraagt CleanOps bij **Bewaren** eerst *Toch bewaren?*. |
 | Tijdsdeel | Eerste werk, Voormiddag, Namiddag, Volledige dag of Anders. Bij **Anders** verschijnt een uurafspraak: *vóór*, *tussen* of *na* een uur. Het tijdsdeel bepaalt de [volgorde in de planning](planning.md#de-volgorde-in-een-dag). |
 | Start-uur, Eind-uur | Wanneer het werk werkelijk begon en eindigde. Een eind-uur vóór het start-uur wordt geweigerd. |
-| Uitvoeringsadres | Kiest u een ander adres, dan komen zijn werkinstructie, materiaal en opmerkingen erbij; wat er al stond, blijft staan. Onder het adres staat zijn telefoonnummer (of dat van de klant, als het adres er geen heeft), en openen **Kaart** en **Route** het adres en de weg ernaartoe in Google Maps. Aanvaardt het adres **geen nieuwe opdrachten**, of is het op sommige dagen **moeilijk of niet bereikbaar**, dan staat dat er ook onder — ter informatie: de werkorder bewaart gewoon. Met **Nieuw uitvoeringsadres** en **Adres openen** maakt of wijzigt u een adres; na **Bewaren** staat het gekozen — bewaar dan de werkorder. **Historiek…** toont de vorige werkorders op dit adres, de nieuwste eerst; kies er een en klik op **Invoegen** (of dubbelklik): zijn instructies, materiaal en interne opmerking komen achter wat er al staat — wat er al in staat, komt er niet nog eens bij. Bewaar daarna de werkorder. De link **Alle werkorders op dit adres** opent de adresfiche in een nieuw tabblad. |
-| Werf (naam), Omschrijving | Zoals bij een nieuwe werkorder. |
+
+**Adres**
+
+| Veld | Toelichting |
+|---|---|
+| Uitvoeringsadres | Kiest u een ander adres, dan komen zijn werkinstructie, materiaal en opmerkingen erbij; wat er al stond, blijft staan. Onder het adres staat zijn telefoonnummer (of dat van de klant, als het adres er geen heeft), en openen **Kaart** en **Route** het adres en de weg ernaartoe in Google Maps. Aanvaardt het adres **geen nieuwe opdrachten**, of is het op sommige dagen **moeilijk of niet bereikbaar**, dan staat dat er ook onder — ter informatie: de werkorder bewaart gewoon. Onder het adres staan op één lijn **Nieuw uitvoeringsadres**, **Adres openen** en **Historiek…**. Met de eerste twee maakt of wijzigt u een adres; na **Bewaren** staat het gekozen — bewaar dan de werkorder. **Historiek…** toont de vorige werkorders op dit adres, de nieuwste eerst; kies er een en klik op **Invoegen** (of dubbelklik): zijn instructies, materiaal en interne opmerking komen achter wat er al staat — wat er al in staat, komt er niet nog eens bij. Bewaar daarna de werkorder. De link **Alle werkorders op dit adres** opent de adresfiche in een nieuw tabblad. |
+| Werf (naam) | Zoals bij een nieuwe werkorder. |
+
+**Uit te voeren werk**
+
+| Veld | Toelichting |
+|---|---|
+| Omschrijving | Zoals bij een nieuwe werkorder. |
 | Typering | Een korte typering van het werk, bijvoorbeeld *septische put + vetput*. |
 | Werkzaamheden, Materiaal | Vink aan wat van toepassing is en klik op **Invoegen**: de gekozen regels komen in **Instructies werknemer** of **Materiaal-opmerkingen**, waar u ze nog kunt aanvullen. |
 | Instructies werknemer, Materiaal-opmerkingen | Wat de ploeg moet doen en meenemen. Beide komen op de leveringsbon. |
@@ -115,6 +131,8 @@ Draagt de werkorder de code van een medewerker die niet meer in de lijst staat, 
 de lijst* erbij. Ze blijft staan tot u iemand anders kiest.
 
 ### De vinkjes
+
+De vinkjes staan in het blok **Uit te voeren werk**, in twee rijen: de planning en de uitvoering.
 
 | Rij | Vinkje | Betekenis |
 |---|---|---|
@@ -139,7 +157,7 @@ Wijzigt u een datum, dan toont de fiche meteen welke status de werkorder bij het
 
 ### Facturatie
 
-Onderaan de fiche staat wat er gefactureerd wordt.
+Het blok **Facturatie** onderaan de fiche zegt wat er gefactureerd wordt.
 
 ![Het blok Facturatie van een werkorder: Tarief, Klantreferentie, Aantal, Eenheid, Eenheidsprijs, Bedrag en Btw-code](images/werkorder-facturatie.png "Facturatie")
 
@@ -185,10 +203,10 @@ attest zelf staat bij [Attesten](attesten.md).
 
 ![Het tabblad Attesten (2) op de werkorderfiche, met Product, Hoeveelheid, EURAL-code, Verwerkingsbedrijf en Verzonden, en de knop Nieuw attest](images/werkorder-attesten.png "Attesten van een werkorder")
 
-### Bijlagen en Logboek
+### Journaal
 
-Rechts bovenaan de fiche staan **Bijlagen** — de documenten bij deze werkorder — en **Logboek**: wie welk veld
-wijzigde, wanneer, en van welke waarde naar welke.
+Rechts bovenaan de fiche staat het tabblad **Journaal**, met daarin **Bijlagen** — de documenten bij deze werkorder — en
+**Logboek**: wie welk veld wijzigde, wanneer, en van welke waarde naar welke.
 
 !!! info "Niet elke link is voor iedereen een link"
     Het nummer van de offerte of de factuur kunt u enkel aanklikken als u dat onderdeel mag openen. Anders staat

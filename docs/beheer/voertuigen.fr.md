@@ -49,14 +49,13 @@ Cliquez sur **Nouveau véhicule**, ou double-cliquez sur une ligne pour ouvrir l
 
 ![La fiche d'un véhicule avec les blocs Véhicule, Immatriculation et contrôle et Contenance, et le message indiquant que le contrôle est échu](../images/voertuig-fiche-fr.png "Un véhicule")
 
-La fiche comporte quatre onglets :
+La fiche comporte trois onglets :
 
 | Onglet | Ce qu'on y trouve |
 |---|---|
 | Fiche | les données du véhicule, en trois blocs |
 | Entretien | les entretiens de ce véhicule |
-| Pièces jointes | le certificat de contrôle, l'immatriculation, l'assurance… |
-| Historique | qui a modifié quoi et quand sur le véhicule |
+| Journal | **Pièces jointes** — le certificat de contrôle, l'immatriculation, l'assurance… — et **Historique** : qui a modifié quoi et quand sur le véhicule |
 
 ### Le bloc Véhicule
 
@@ -135,7 +134,7 @@ disparaît alors de la liste, mais reste conservé. Mettez en haut de l'onglet *
 
 ## Joindre des pièces à un véhicule
 
-Sous l'onglet **Pièces jointes**, vous glissez des fichiers vers le véhicule : le certificat de contrôle,
+Sous **Journal** › **Pièces jointes**, vous glissez des fichiers vers le véhicule : le certificat de contrôle,
 l'immatriculation, l'assurance, une facture de réparation.
 
 ## Archiver ou rétablir un véhicule
@@ -148,7 +147,7 @@ le véhicule et cliquez sur **Rétablir**.
 
 ## L'historique
 
-L'onglet **Historique** de la fiche — ou le journal à droite de la liste — montre qui a modifié quel champ et
+**Journal** › **Historique** sur la fiche — ou le journal à droite de la liste — montre qui a modifié quel champ et
 quand sur ce véhicule, et de quelle valeur vers quelle autre.
 
 !!! note "L'historique porte sur le véhicule, pas sur son entretien"

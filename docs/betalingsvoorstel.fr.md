@@ -12,7 +12,7 @@ un par un.
 
 ## Ouvrir l'écran
 
-Cliquez à gauche dans le menu, sous **Achats**, sur **Proposition de paiement**. Il vous faut le droit *Voir les achats*.
+Cliquez à gauche dans le menu, sous **Achats**, sur **Paiements à faire**. L'écran s'intitule Proposition de paiement. Il vous faut le droit *Voir les achats*.
 Pour composer une proposition, en retirer des documents, les marquer payés ou créer le fichier SEPA, il vous faut aussi
 le droit *Saisir des paiements*.
 

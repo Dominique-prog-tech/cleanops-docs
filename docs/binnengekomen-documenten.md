@@ -12,8 +12,8 @@ facturen. U hoeft ze niet meer over te typen: CleanOps leest het document en maa
 
 ## Het scherm openen
 
-Klik links in het menu, onder **Aankoop**, op **Binnengekomen documenten**. U hebt het recht *Aankoop bekijken*
-nodig; om documenten te verwerken ook *Aankoop bewerken*. De rol Financieel krijgt beide. Zonder *Aankoop bewerken*
+Klik links in het menu, onder **Aankoop**, op **Peppol ontvangen**. Het scherm heet
+Binnengekomen documenten. U hebt het recht *Aankoop bekijken* nodig; om documenten te verwerken ook *Aankoop bewerken*. De rol Financieel krijgt beide. Zonder *Aankoop bewerken*
 ziet u de lijst en de PDF's, maar niet de knop **Verwerken**.
 
 !!! info "Peppol-adres"

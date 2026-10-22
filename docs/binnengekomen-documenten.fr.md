@@ -12,7 +12,7 @@ Les factures et notes de crédit que vos fournisseurs envoient par **Peppol**, l
 
 ## Ouvrir l'écran
 
-Cliquez à gauche dans le menu, sous **Achats**, sur **Documents reçus**. Il vous faut le droit *Voir les achats* ;
+Cliquez à gauche dans le menu, sous **Achats**, sur **Peppol reçus**. L'écran s'intitule Documents reçus. Il vous faut le droit *Voir les achats* ;
 pour traiter des documents aussi *Modifier les achats*. Le rôle Financieel reçoit les deux. Sans *Modifier les
 achats*, vous voyez la liste et les PDF, mais pas le bouton **Traiter**.
 

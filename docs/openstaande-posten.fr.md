@@ -11,11 +11,11 @@ vous voyez ce qui est échu, vous envoyez ou imprimez un rappel et vous suivez q
 
 ## Ouvrir l'écran
 
-Dans le menu de gauche, sous **Ventes**, cliquez sur **Postes ouverts**. Vous le voyez avec le rôle **Financieel** ou en tant
+Dans le menu de gauche, sous **Ventes**, cliquez sur **Impayés**. L'écran s'intitule Postes ouverts. Vous le voyez avec le rôle **Financieel** ou en tant
 qu'administrateur. Enregistrer des rappels et modifier les données de rappel demande en plus le droit *Gérer les rappels* ;
 par défaut, seul l'administrateur l'a.
 
-Le nombre à côté de **Postes ouverts** dans le menu compte les postes qui attendent un rappel suivant.
+Le nombre à côté de **Impayés** dans le menu compte les postes qui attendent un rappel suivant.
 
 ## La liste
 
@@ -31,7 +31,7 @@ En haut, dans la première liste, choisissez une sélection :
 
 Échus, Prochain rappel et Client sans rappels ne montrent que les clients qui **doivent encore quelque chose** au total. Si
 un client a une note de crédit ouverte plus élevée que ses factures ouvertes, il n'y figure pas — un rappel lui réclamerait
-ce qu'il ne doit pas. Ses postes restent visibles dans **Tous les postes ouverts**. Le nombre à côté de **Postes ouverts**
+ce qu'il ne doit pas. Ses postes restent visibles dans **Tous les postes ouverts**. Le nombre à côté de **Impayés**
 dans le menu compte de la même façon.
 
 Le délai se règle sur la [fiche entreprise](beheer/bedrijfsfiche.fr.md), sous **Délai entre deux rappels**. Vide signifie
@@ -147,7 +147,7 @@ envoyé par vous-même s'enregistre à la fermeture de l'aperçu avant impressio
 
 **Mon rappel est-il arrivé ?**
 Sélectionnez le poste et choisissez dans le volet **Journal** l'onglet **E-mails**, ou ouvrez la facture et cliquez sur
-**E-mails**. Un e-mail qui n'a pas atteint le client porte le statut **Rejeté** ou **Indésirable**. Vérifiez alors l'adresse du
+**Journal** › **E-mails**. Un e-mail qui n'a pas atteint le client porte le statut **Rejeté** ou **Indésirable**. Vérifiez alors l'adresse du
 client et renvoyez l'e-mail.
 
 **Quelqu'un d'autre vient d'enregistrer un rappel pendant que ma fenêtre était ouverte.**

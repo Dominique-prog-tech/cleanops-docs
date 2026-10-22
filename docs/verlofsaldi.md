@@ -32,7 +32,7 @@ Per medewerker ziet u de code, de naam en de cijfers van het gekozen jaar:
 | Opgenomen | De verlofdagen die de medewerker dit jaar opnam — zie [Hoe het opgenomen verlof geteld wordt](#hoe-het-opgenomen-verlof-geteld-wordt). |
 | Resterend | Totaal min opgenomen. In het rood als er meer opgenomen is dan toegekend. |
 | Ziekte, Ander | De dagen ziekte en andere afwezigheid van dit jaar, ter informatie. Ze tellen niet mee in het saldo. |
-| Op 0 dagen | Hoeveel verlofboekingen van dit jaar op 0 dagen staan. Leeg als er geen zijn — zie [Boekingen op 0 dagen](#boekingen-op-0-dagen). |
+| Op 0 dagen | Hoeveel verlofboekingen van dit jaar op een werkdag vallen maar op 0 dagen staan. Leeg als er geen zijn — zie [Boekingen op 0 dagen](#boekingen-op-0-dagen). |
 
 - **Jaar** — staat op dit jaar. U kiest van drie jaar terug tot volgend jaar, zodat u een nieuw jaar kunt voorbereiden.
 - **Tonen** — staat op **Actief**. Kies **Op pensioen** of **Alles** om ook de anderen te zien. Een plaatshouder zoals
@@ -88,11 +88,13 @@ ervoor: wettelijk, anciënniteit en extra — niet de correctie, want die hoort 
     Verlofboekingen die uit het vorige pakket overgezet zijn, staan soms op 0 dagen: dat pakket rekende ze niet altijd
     uit. Zo'n boeking telt niet mee in **Opgenomen**, en het saldo lijkt dan te gunstig.
 
-De kolom **Op 0 dagen** toont hoeveel het er zijn. In het venster van de medewerker staat daarover een melding met de
-knop **Naar de medewerker**, die het tabblad **Verlof** van zijn fiche opent. Open daar de boeking en klik op
-**Bewaren**: CleanOps rekent dan de dagen volgens het werkregime.
+Valt een boeking op een dag waarop de medewerker volgens zijn werkregime niet werkt, dan staat ze terecht op 0. Zulke
+boekingen telt CleanOps hier niet mee: de kolom **Op 0 dagen** en de melding gaan enkel over boekingen **op een werkdag**.
 
-Valt de boeking op een dag waarop de medewerker volgens zijn werkregime niet werkt, dan blijft ze terecht op 0.
+De kolom **Op 0 dagen** toont hoeveel het er zijn. In het venster van de medewerker staat daarover een melding. Mag u de
+medewerkers wijzigen, dan staat erbij de knop **Naar de medewerker**, die het tabblad **Verlof** van zijn fiche opent. Open
+daar de boeking en klik op **Bewaren**: CleanOps rekent dan de dagen volgens het werkregime. Mag u de medewerkers niet
+wijzigen, dan zegt de melding dat wie dat wel mag, ze opnieuw kan bewaren.
 
 ## Veelgestelde vragen
 

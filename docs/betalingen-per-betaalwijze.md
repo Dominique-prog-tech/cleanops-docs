@@ -11,7 +11,7 @@ Payconiq of de kas af: elke rij is één bezoek, met het bedrag dat de klant bet
 
 ## Het scherm openen
 
-Klik in het menu onder **Verkoop** op **Per betaalwijze**.
+Klik in het menu onder **Verkoop** op **Per betaalwijze**. Het scherm heet Betalingen per betaalwijze.
 
 ## Periode en betaalwijze
 

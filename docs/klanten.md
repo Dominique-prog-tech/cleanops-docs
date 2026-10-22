@@ -42,35 +42,57 @@ het adres en de telefoon van de klant, en zegt dat bovenaan; u vindt het onder *
 
 Bovenaan staan de naam en het klantnummer, daaronder een rij tabbladen. Links **Fiche** en **Adressen** —
 dat is de klant zelf. Rechts daarvan staat wat aan de klant hangt: **Contracten**, **Offertes**, **Facturen**,
-**Openstaand**, **Betalingen** en **Memo's**, en achteraan **Bijlagen** en **Logboek**.
+**Openstaand** en **Betalingen**, en achteraan **Journaal**. Onder Journaal staan **Memo's**, **Bijlagen** en **Logboek**.
 
 Elk tabblad blijft staan, ook als er niets in zit; het aantal staat tussen haakjes in de titel. "Offertes (0)"
-betekent dus dat er geen offertes zijn. Enkel **Betalingen** en **Memo's** ziet u alleen met het recht om de openstaande posten te
-bekijken.
+betekent dus dat er geen offertes zijn. **Facturen** ziet u met het recht om de facturen te bekijken; **Openstaand**,
+**Betalingen** en **Memo's** met het recht om de openstaande posten te bekijken.
 
 ![De fiche van Tuincentrum De Linde op het tabblad Fiche, met de tabbladen erboven en onderaan de opmerkingen](images/klant-fiche.png "Klantfiche")
 
 ### Het tabblad Fiche
 
+De fiche staat in vijf blokken: **Identificatie**, **Adres**, **Contact**, **Facturatie en rappels** en **Opmerkingen**.
+
+**Identificatie**
+
 | Veld | Toelichting |
 |---|---|
+| Naam *, Naam (2e regel) | De naam zoals hij op documenten komt, elk hoogstens 30 tekens. |
+| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer getoetst. Met **Ophalen** toont CleanOps eerst wat de KBO weet — naam, type, oprichting, juridische situatie, rechtsvorm en adres, en in het rood **stopgezet** als de onderneming niet meer actief is. Met **Overnemen** komen naam en adres (met toevoeging en bus bij het huisnummer) op de fiche; wat de KBO niet kent, blijft staan. Bewaren doet u daarna zelf. Komt er niets terug, dan zegt CleanOps waarom: de KBO kent het nummer niet (controleer het), of de opzoeking is even niet bereikbaar (probeer later opnieuw). ⚠️ De KBO geeft de maatschappelijke zetel, niet altijd het adres waar u factureert. |
 | Zoeknaam | De naam in hoofdletters. CleanOps maakt ze zelf uit de naam; ze bepaalt de volgorde in de lijst. |
+| Taal * | De taal van de documenten voor deze klant. |
+
+**Adres**
+
+| Veld | Toelichting |
+|---|---|
+| Straat *, Nr, Postcode *, Gemeente *, Land | Het adres van de klant. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. Onder de gemeente openen **Kaart** en **Route** het adres in Google Maps, in een nieuw tabblad. |
+
+**Contact**
+
+| Veld | Toelichting |
+|---|---|
+| Contactpersoon | De contactpersoon bij de klant. |
+| Telefoon, Gsm, Fax, E-mail | Een telefoonnummer, gsm-nummer of e-mailadres moet geldig zijn; de fax niet. |
+
+**Facturatie en rappels**
+
+| Veld | Toelichting |
+|---|---|
 | Betaaltermijn * | De termijn waarmee de vervaldag van een factuur berekend wordt. U kiest uit de betalingstermijnen van Platformbeheer. |
 | Verkooprekening | De algemene rekening voor uw boekhoudkantoor, gekozen uit het [rekeningplan](beheer/rekeningplan.md). Mag leeg blijven. |
-| Naam *, Naam (2e regel) | De naam zoals hij op documenten komt, elk hoogstens 30 tekens. |
-| Straat *, Nr, Postcode *, Gemeente *, Land | Het adres van de klant. Na de postcode biedt Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u mag ook zelf typen. Onder de gemeente openen **Kaart** en **Route** het adres in Google Maps, in een nieuw tabblad. |
-| Taal * | De taal van de documenten voor deze klant. |
 | Klanttype | **Bedrijf** of **Particulier**. Een bedrijf heeft een btw-nummer nodig. |
-| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer getoetst. Met **Ophalen** toont CleanOps eerst wat de KBO weet — naam, type, oprichting, juridische situatie, rechtsvorm en adres, en in het rood **stopgezet** als de onderneming niet meer actief is. Met **Overnemen** komen naam en adres (met toevoeging en bus bij het huisnummer) op de fiche; wat de KBO niet kent, blijft staan. Bewaren doet u daarna zelf. Komt er niets terug, dan zegt CleanOps waarom: de KBO kent het nummer niet (controleer het), of de opzoeking is even niet bereikbaar (probeer later opnieuw). ⚠️ De KBO geeft de maatschappelijke zetel, niet altijd het adres waar u factureert. |
-| Contact | De contactpersoon bij de klant. |
-| Telefoon, Gsm, Fax, E-mail | Een telefoonnummer, gsm-nummer of e-mailadres moet geldig zijn; de fax niet. |
 | E-mail facturatie, E-mail rappels, E-mail attesten | Een apart adres voor facturen, rappels en attesten, als dat een ander is dan het e-mailadres hierboven. Elk veld bevat één geldig adres. |
 | GLN / Peppol-ID | Het adres van de klant op het Peppol-netwerk: een GLN-nummer van 13 cijfers, of een volledig Peppol-ID zoals `0208:0123456749`. Leeg: CleanOps zoekt de klant op met zijn btw-nummer. Staat er iets anders, dan zegt de fiche dat het niet bruikbaar is. Met **Peppol nakijken** ziet u of de klant op het netwerk staat en of hij facturen en creditnota's ontvangt — zo weet u of **Versturen…** op een factuur via Peppol of per mail gaat (zie [Facturen](facturen.md#versturen)). |
 | Geblokkeerd | De klant blijft gewoon bruikbaar, maar staat met een label in de lijst en valt op in de planning. Bij een nieuwe werkorder meldt CleanOps het. |
 | Ontvangt rappels | Zet dit af voor een klant die u niet wilt aanmanen. |
 | Geen nieuwe opdrachten | Bij een nieuwe werkorder voor deze klant vraagt CleanOps eerst een bevestiging. |
 | Facturen per e-mail | De klant ontvangt zijn facturen liever per e-mail dan per post. |
-| Opmerkingen | Vrije tekst bij de klant, zoals contactgegevens van personen of afspraken. |
+
+**Opmerkingen**
+
+Vrije tekst bij de klant, zoals contactgegevens van personen of afspraken.
 
 Klik op **Bewaren** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. Een e-mailadres,
 telefoonnummer of btw-nummer dat niet klopt, wordt geweigerd — ook als u het zelf niet gewijzigd hebt; verbeter
@@ -103,7 +125,8 @@ Daaronder staat wat er gebeurt, vóór u bevestigt:
 - Staat een ander adres op **Aanvaardt geen nieuwe opdrachten meer**, dan zegt het venster dat. Het blijvende adres
   neemt dat niet over; zet het zelf aan als het moet.
 
-Met **Samenvoegen** gaan de andere adressen naar de [prullenbak](beheer/prullenbak.md). De wijziging staat in het
+Met **Samenvoegen** gaan de andere adressen naar de [prullenbak](beheer/prullenbak.md). Een korte melding bovenaan
+het scherm zegt hoeveel adressen samengevoegd zijn en hoeveel contracten en werkorders omgehangen werden. De wijziging staat in het
 logboek van elk contract en elke werkorder die een ander adres kreeg. Ook de [cameraverslagen](cameraverslagen.md) van de
 andere adressen gaan naar het adres dat blijft.
 
@@ -121,6 +144,8 @@ meegaat en wat blijft:
 - Draagt een meegaande werkorder een bestelnummer van de huidige klant, dan blijft dat staan. Het venster waarschuwt
   ervoor, zodat u het kunt nakijken.
 - De [cameraverslagen](cameraverslagen.md) van het adres gaan mee: ze horen bij het adres.
+
+Na het verplaatsen zegt een korte melding bovenaan het scherm hoeveel adressen, contracten en werkorders meegingen.
 
 ![Het venster Adressen naar een andere klant verplaatsen: het adres van Tuincentrum De Linde gaat naar een andere klant, met wat meegaat en wat blijft](images/klant-adres-verplaatsen.png "Adressen verplaatsen")
 
@@ -162,8 +187,9 @@ Dubbelklik op een verslag om het te openen; **Nieuw cameraverslag** maakt er een
 
 ### Wat aan de klant hangt
 
-**Contracten** — de periodieke contracten van deze klant, met nummer, omschrijving, frequentie en startdatum.
-Uit deze contracten ontstaan de werkorders.
+**Contracten** — de periodieke contracten van deze klant, met nummer, omschrijving, **Uitvoeringsadres**, frequentie en
+startdatum. Staat een contract on hold, dan staat er **on hold** naast de omschrijving. Uit deze contracten ontstaan de
+werkorders.
 
 **Offertes** — met nummer, datum, omschrijving, totaal en status.
 
@@ -172,28 +198,29 @@ alles betaald is), **Vereffend op** en mededeling. Vereffend op is de dag waarop
 laatste betaling, of de factuurdatum als ze al vooraf betaald was. De mededeling is de gestructureerde referentie die de klant bij zijn betaling vermeldt.
 
 **Openstaand** — wat er van deze klant nog openstaat. Bovenaan staat het openstaande saldo, in het rood als het
-groter is dan nul. Per post ziet u het document, de datum, de vervaldag, het oorspronkelijke en het openstaande bedrag en
-het aantal rappels. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document, niveau en wie ze verstuurde.
+groter is dan nul. Per post ziet u het document, de datum, de vervaldag, het oorspronkelijke en het openstaande bedrag,
+het aantal rappels, de datum van de **Laatste rappel** en een **Opmerking**: de rappelopmerking, met een label als de post
+naar **incasso** ging, een **waarschuwing** kreeg, **uitgesloten** is van rappels of **gecrediteerd** werd. Daaronder staat de **rappelhistoriek**: de verstuurde rappels, met datum, document, niveau en wie ze verstuurde.
 Is ze leeg terwijl een post al rappels telt, dan komen die rappels van vóór het logboek van uw vorige toepassing: die
 staan enkel als aantal bij de post.
 
 **Betalingen** — de betalingen van deze klant, de nieuwste eerst: datum en nummer van het uittreksel, dagboek, bedrag en
 opmerking. Een teruggedraaide betaling draagt het label **teruggedraaid**. Zie ook [Betalingen](betalingen.md).
 
-**Memo's** — wat er met deze klant afgesproken is, met de datum en eventueel een herinneringsdatum. Zie
-[Memo's](#memos) hieronder.
+**Journaal** — met drie tabjes:
 
-**Bijlagen** — de documenten bij deze klant. Met **Bijlage** voegt u een bestand toe, tot 25 MB; per bijlage
-past u de omschrijving aan of haalt u ze weg.
-
-**Logboek** — wie welk veld van deze klant gewijzigd heeft, wanneer, en van welke waarde naar welke. Het nieuwste
-staat bovenaan.
+- **Memo's** — wat er met deze klant afgesproken is, met de datum en eventueel een herinneringsdatum. Zie
+  [Memo's](#memos) hieronder.
+- **Bijlagen** — de documenten bij deze klant. Met **Bijlage** voegt u een bestand toe, tot 25 MB; per bijlage
+  past u de omschrijving aan of haalt u ze weg.
+- **Logboek** — wie welk veld van deze klant gewijzigd heeft, wanneer, en van welke waarde naar welke. Het nieuwste
+  staat bovenaan.
 
 Elk tabblad heeft een eigen exportknop, zodat u één onderdeel apart kunt uitvoeren.
 
 ### Memo's
 
-Op het tabblad **Memo's** noteert u wat er met de klant afgesproken is, bijvoorbeeld over een betaling. Klik op **Nieuwe memo**,
+Onder **Journaal** › **Memo's** noteert u wat er met de klant afgesproken is, bijvoorbeeld over een betaling. Klik op **Nieuwe memo**,
 of dubbelklik op een memo om ze te wijzigen.
 
 ![Het venster van een memo bij Tuincentrum De Linde, met Datum, Herinneren op, het vinkje Afgehandeld en de tekst](images/klant-memo.png "Een memo")
@@ -210,13 +237,18 @@ wijzigen doet u met het recht om de rappels te beheren.
 
 ### De knoppen onderaan
 
-Naast **Bewaren** en **Annuleren** kan de fiche vier knoppen dragen.
+Naast **Bewaren** en **Annuleren** staan **Nieuwe werkorder** en **Nieuwe offerte**. Wat minder vaak nodig is, staat in het
+menu **Meer…**:
 
 - **Werkorders** opent de [werkorderlijst](werkorders.md) met enkel de werkorders van deze klant, over alle statussen.
-  U ziet hem wanneer u de werkorders mag openen.
-- **Nieuwe werkorder**, **Nieuwe offerte** en **Voorschotfactuur** ziet u enkel wanneer u het recht hebt om te maken
-  wat ze maken, én het onderdeel waar ze naartoe leiden voor u vrijgegeven is. Wat u zo aanmaakt, verschijnt in het
-  bijbehorende tabblad.
+  U ziet het wanneer u de werkorders mag openen.
+- **Voorschotfactuur…** opent een venster met **Omschrijving**, **Netto bedrag** en **Btw-code**. Met **Aanmaken** maakt
+  CleanOps de voorschotfactuur; een korte melding bovenaan het scherm geeft haar nummer, en u vindt ze op het tabblad
+  **Facturen**.
+
+**Nieuwe werkorder**, **Nieuwe offerte** en **Voorschotfactuur…** ziet u enkel wanneer u het recht hebt om te maken
+wat ze maken, én het onderdeel waar ze naartoe leiden voor u vrijgegeven is. Wat u zo aanmaakt, verschijnt in het
+bijbehorende tabblad. Staat er voor u niets in het menu, dan ziet u **Meer…** niet.
 
 !!! info "Niet elke knop is voor iedereen zichtbaar"
     Welke knoppen u ziet en welke rijen u kunt openen, hangt af van wat u mag. Een onderdeel dat nog niet

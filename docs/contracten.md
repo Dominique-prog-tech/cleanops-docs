@@ -8,7 +8,7 @@ Een contract legt vast hoe vaak u bij een klant terugkomt: om de zes maanden een
 vetput. Uit een lopend contract ontstaan de [werkorders](werkorders.md) voor de komende beurten; u hoeft ze niet zelf
 aan te maken. CleanOps maakt ze elke nacht voor de komende 90 dagen, en meteen wanneer u een nieuw contract bewaart.
 
-![De contractenlijst van de demo, met de kolommen Klant, Opvolgen op, Periodiciteit en Laatste keer, de rode opvolgdatum bij Sporthal De Ring en het label on hold bij Garage Demo & Zonen](images/contracten-lijst.png "Contracten")
+![De contractenlijst van de demo, met de kolommen Klant, Opvolgen, Periodiciteit en Laatste, de rode opvolgdatum bij Sporthal De Ring en het label on hold bij Garage Demo & Zonen](images/contracten-lijst.png "Contracten")
 
 ## Het scherm openen
 
@@ -16,20 +16,24 @@ Klik links in het menu, onder **Werk**, op **Contracten**.
 
 ## De lijst
 
-Per contract ziet u de klant, het contractnummer, **Opvolgen op**, het type contract, de omschrijving, de datum
-**Vanaf**, de **Einddatum**, de **Periodiciteit**, de **Laatste keer**, de **Uitvoerder** en de gemeente. Staat een contract on hold, dan
-staat er **on hold** naast de klant. De lijst staat op klantnaam. De **Contractdatum**, de notitie **Opvolging** en
+Per contract ziet u de klant, het contractnummer (**Contract**), **Opvolgen**, het **Type**, de omschrijving, de begindatum
+**Vanaf**, de **Periodiciteit**, **Laatste**, de **Uitvoerder** en de gemeente. Staat een contract on hold, dan staat er
+**on hold** naast de klant. De lijst staat op klantnaam. De **Contractdatum**, de **Einddatum**, de notitie **Opvolging** en
 **On hold** zet u erbij met de kolomkiezer.
 
-- **Opvolgen op** — de datum waarop u op het contract wilt terugkomen. Is die dag bereikt, dan staat de datum rood en
-  vet. Houd de muis erboven om de notitie te lezen. Zie [Een contract opvolgen](#een-contract-opvolgen).
+- **Opvolgen** — de datum waarop u op het contract wilt terugkomen (op de fiche: **Opvolgen op**). Is die dag bereikt,
+  dan staat de datum rood en vet. Houd de muis erboven om de notitie te lezen. Zie [Een contract opvolgen](#een-contract-opvolgen).
+- **Type** — het type contract.
+- **Periodiciteit** — het ritme in het kort. Is het interval één, dan staat er het woord: *Dagelijks*, *Wekelijks*,
+  *Maandelijks* of *Jaarlijks*. Is het groter, dan staat er hoe vaak: *Om de 6 maanden*, *Om de 2 weken*, *Om de 3 dagen*.
+  Hetzelfde korte ritme staat in de contractkeuze op de [werkorderfiche](werkorders.md).
 - **Opvolging** — de filter bovenaan. Kies *Op te volgen* om enkel de contracten te zien waarvan de opvolgdatum bereikt
   is.
 - **Uitvoerder** — de filter ernaast. Kies een medewerker om enkel zijn contracten te zien, of *Niet toegewezen* voor
   de contracten waarvan de werkorders zonder uitvoerder binnenkomen.
 - **Mailen…** — opent een mail aan de klant van het contract dat u aanklikte. U ziet de knop als u contracten mag
   bewerken.
-- **Laatste keer** — de geplande datum van de laatste werkorder van het contract.
+- **Laatste** — de geplande datum van de laatste werkorder van het contract.
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in wat de lijst toont, ook in de
   periodiciteit: *Jaarlijks* vindt alle jaarlijkse contracten. Daarnaast vindt u een contract op de straat, de gemeente,
   de gsm en het vaste nummer van de klant, ook al staan die niet in de lijst.
@@ -38,7 +42,8 @@ staat er **on hold** naast de klant. De lijst staat op klantnaam. De **Contractd
 - **Openen** — dubbelklik op een rij om het contract te openen.
 - **Journaal** — de strook rechts toont het logboek en de mails van het contract dat u in de lijst aanklikt.
 
-Een afgelopen contract blijft in de lijst staan, met zijn einddatum.
+Een afgelopen contract blijft in de lijst staan. Zijn einddatum ziet u met de kolom **Einddatum**, die u erbij zet met de
+kolomkiezer.
 
 ## Een nieuw contract
 
@@ -48,30 +53,56 @@ als ritme. Na **Bewaren** opent het nieuwe contract.
 
 ## De contractfiche
 
-Bovenaan staan het contractnummer en de klant; staat het contract on hold, dan staat dat erbij. Daaronder vier
-tabbladen: **Contract**, **Werkorders**, **Logboek** en **Mails**.
+Bovenaan staan het contractnummer en de klant; staat het contract on hold, dan staat dat erbij. Daaronder drie
+tabbladen: **Contract**, **Werkorders** en **Journaal**. Onder Journaal staan **Logboek** en **Mails**.
 
 ![Het contract van Tuincentrum De Linde: om de zes maanden op de 15de, met eronder de volgende beurten](images/contract-fiche.png "Contractfiche")
 
 ### Het tabblad Contract
 
+De velden staan in vijf blokken: **Contract**, **Adres**, **Ritme en planning**, **Opvolging** en **Opmerkingen**.
+
+**Contract**
+
 | Veld | Toelichting |
 |---|---|
-| Uitvoeringsadres | Het adres van de klant of een van zijn uitvoeringsadressen. Met **Nieuw uitvoeringsadres** maakt u er een aan; daarna keert u terug naar het contract. |
 | Omschrijving | Wat er gebeurt, hoogstens 35 tekens. Heeft het contract geen opmerkingen, dan wordt dit de omschrijving en de instructie van zijn werkorders. |
 | Contractnr | Een eigen nummer of referentie, hoogstens 30 tekens. |
 | Type contract | Een keuze uit de lijst *Contracttypes* van de [basistabellen](beheer/basistabellen.md). |
+| Btw-code, Tarief | Komen op de werkorders van dit contract. De lijst Tarief toont de tarieven in de taal van de klant. |
 | Contractdatum * | De datum van het contract. Mag niet in de toekomst liggen. |
 | Start * | Vanaf wanneer het ritme loopt. Mag niet vóór de contractdatum liggen. |
 | Einde | Vanaf deze datum komen er geen beurten meer bij. Mag niet vóór de start liggen. |
-| On hold | Pauzeert het contract: er komen geen werkorders bij tot u het vinkje weghaalt. |
-| Opvolgen op | De datum waarop u op dit contract wilt terugkomen. Leeg: geen opvolging. |
-| Opvolging | Waarover het gaat, hoogstens 500 tekens. Deze notitie is voor uzelf: ze komt niet op een werkbon en niet in een mail. |
-| Opmerkingen (komen op elke werkbon) | Een vaste tekst voor elke werkorder uit dit contract, zoals *sleutel aan het onthaal vragen*. Ze wordt de instructie voor de ploeg, en haar eerste 35 tekens de omschrijving van de werkorder. |
-| Btw-code, Tarief | Komen op de werkorders van dit contract. De lijst Tarief toont de tarieven in de taal van de klant. |
+
+**Adres**
+
+| Veld | Toelichting |
+|---|---|
+| Uitvoeringsadres | Het adres van de klant of een van zijn uitvoeringsadressen. Met **Nieuw uitvoeringsadres** maakt u er een aan; daarna keert u terug naar het contract. |
+
+**Ritme en planning**
+
+| Veld | Toelichting |
+|---|---|
 | Frequentie | Het ritme — zie hieronder. |
 | Tijdsdeel | Het deel van de dag waarin de werkorders van dit contract op het planbord komen. Leeg: *Anders*, zoals voordien. |
 | Uitvoerder | De medewerker die de werkorders van dit contract krijgt: ze komen meteen in zijn rij op het planbord. Leeg: niet toegewezen. Heeft hij verlof op de dag van een beurt, dan krijgt hij ze toch — het verlof staat in hetzelfde vak op het planbord. Is hij niet meer actief, dan zegt de fiche dat en komen nieuwe werkorders zonder uitvoerder binnen. |
+
+Onder de velden staan het **Voorbeeld** en de **Volgende beurten** (zie [Het ritme](#het-ritme)).
+
+**Opvolging**
+
+| Veld | Toelichting |
+|---|---|
+| On hold | Pauzeert het contract: er komen geen werkorders bij tot u het vinkje weghaalt. |
+| Opvolgen op | De datum waarop u op dit contract wilt terugkomen. Leeg: geen opvolging. |
+| Opvolging | Waarover het gaat, hoogstens 500 tekens. Deze notitie is voor uzelf: ze komt niet op een werkbon en niet in een mail. |
+
+**Opmerkingen**
+
+| Veld | Toelichting |
+|---|---|
+| Komen op elke werkbon | Een vaste tekst voor elke werkorder uit dit contract, zoals *sleutel aan het onthaal vragen*. Ze wordt de instructie voor de ploeg, en haar eerste 35 tekens de omschrijving van de werkorder. |
 
 ### Het ritme
 
@@ -84,7 +115,7 @@ Kies onder **Frequentie** hoe vaak de beurten terugkomen. Naargelang de keuze ve
 | Maandelijks | **Type**: een **Vaste dag** (bijvoorbeeld de 15de) of een **Rang** (bijvoorbeeld de tweede dinsdag), en **Om de … maanden**. |
 | Jaarlijks | **Type**: een **Vaste dag** of een **Rang**, en de **Maand**. |
 
-Het kader eronder zegt in woorden wat u instelde, bijvoorbeeld *Om de 6 maanden op dag 15*. Daaronder staan de
+Het kader eronder zegt na **Voorbeeld** in woorden wat u instelde, bijvoorbeeld *Om de 6 maanden op dag 15*. Daaronder staan de
 **Volgende beurten**: de vijf eerstvolgende datums. Heeft een datum al een werkorder, dan staat er
 *(werkorder bestaat)* bij.
 
@@ -132,13 +163,11 @@ nog maakt, maakt CleanOps er geen, en dat staat er dan ook.
 
 ![Het tabblad Werkorders van het contract van Tuincentrum De Linde, met de gefactureerde en de geplande beurten](images/contract-werkorders.png "Werkorders van een contract")
 
-### Het tabblad Logboek
+### Het tabblad Journaal
 
-Wie welk veld van dit contract gewijzigd heeft, wanneer, en van welke waarde naar welke.
+**Logboek** — wie welk veld van dit contract gewijzigd heeft, wanneer, en van welke waarde naar welke.
 
-### Het tabblad Mails
-
-Wat er over dit contract gemaild werd: wanneer, aan wie, of de mail afgeleverd is (en zo niet, waarom), en de tekst
+**Mails** — wat er over dit contract gemaild werd: wanneer, aan wie, of de mail afgeleverd is (en zo niet, waarom), en de tekst
 zoals ze vertrok (**Tekst tonen**).
 
 ## Een contract opvolgen
@@ -167,7 +196,7 @@ Ook een contract dat on hold staat of afgelopen is, telt mee zolang de datum er 
   20 MB samen.
 - Rechts bovenaan opent **Klantfiche ↗** de fiche van de klant in een nieuw tabblad.
 
-Klik op **Versturen**. De mail vertrekt echt naar de klant en staat daarna in het tabblad **Mails** van het contract.
+Klik op **Versturen**. De mail vertrekt echt naar de klant en staat daarna onder **Journaal** › **Mails** van het contract.
 Heeft de klant geen e-mailadres, dan zegt het venster dat: vul zelf een adres in.
 
 ### Afhandelen

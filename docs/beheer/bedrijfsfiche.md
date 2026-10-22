@@ -16,6 +16,9 @@ tussen twee rappels, en hoe uw bedrijf in een e-factuur via Peppol staat.
     Naam, adres, contact, btw-nummer, IBAN, BIC en logo vormen het **briefhoofd** van de facturen, creditnota's,
     offertes, rappelbrieven en attesten die u in CleanOps afdrukt of mailt — zie [Facturen](../facturen.md#afdrukken).
 
+    De **algemene voorwaarden** komen op een eigen blad achteraan elke factuur en offerte — zie
+    [Algemene voorwaarden](#algemene-voorwaarden).
+
 ## Het scherm openen
 
 Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Bedrijfsfiche**.
@@ -115,6 +118,19 @@ Een leeg veld staat niet op het attest. Bij een overstap neemt CleanOps ze niet 
 sjabloon van het attest staan. Vul ze hier één keer in.
 
 ![Het blok Verwerkingsattesten op de bedrijfsfiche met Registratienummer en Ondertekenaar attesten](../images/bedrijfsfiche-attesten.png "Verwerkingsattesten")
+
+## Algemene voorwaarden
+
+In het blok **Algemene voorwaarden** vult u de tekst van uw algemene voorwaarden in, in twee talen:
+
+| Veld | Wat u invult |
+|---|---|
+| **In het Nederlands** | de voorwaarden voor uw Nederlandstalige documenten. |
+| **In het Frans** | de voorwaarden voor uw Franstalige documenten. |
+
+De tekst komt op een **eigen blad achteraan** elke [factuur](../facturen.md#afdrukken) en elke
+[offerte](../offertes.md), in de taal van het document. Een creditnota krijgt dat blad niet, en een rappelbrief ook niet.
+Een witregel begint een nieuwe alinea. Laat u een veld leeg, dan komt er in die taal geen blad.
 
 ## Bewaren of annuleren
 

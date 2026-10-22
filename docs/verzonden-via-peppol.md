@@ -11,7 +11,7 @@ aankwamen. Gebruik het scherm om na te gaan of een e-factuur afgeleverd is, en o
 
 ## Het scherm openen
 
-Klik links in het menu, onder **Verkoop**, op **Verzonden via Peppol**. U ziet het met het recht om de facturatie te bekijken.
+Klik links in het menu, onder **Verkoop**, op **Peppol verzonden**. Het scherm heet Verzonden via Peppol. U ziet het met het recht om de facturatie te bekijken.
 
 ## De lijst
 

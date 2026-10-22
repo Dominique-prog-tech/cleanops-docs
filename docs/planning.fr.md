@@ -17,8 +17,9 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Planning**. Le tableau d
 cours, le samedi et le dimanche sur la semaine suivante. Avec **Vue liste** en haut à droite, vous passez à la liste
 du planning, avec **Tableau de planning** vous revenez.
 
-Le planning ne montre que le travail encore à faire : les ordres de travail *encodés* ou *planifiés*. Un ordre
-exécuté disparaît du planning.
+Le tableau de planning ne montre que le travail encore à faire : les ordres de travail *encodés* ou *planifiés*. Un ordre
+exécuté disparaît du tableau. Dans la liste du planning, le filtre **Statut** montre aussi le travail exécuté et
+facturé.
 
 ## Le tableau de planning
 
@@ -76,6 +77,8 @@ Vous choisissez la partie de journée sur la [fiche de l'ordre de travail](werko
   fiche : avec une date et un collaborateur, l'ordre devient *Planifié*.
 - **Devant un autre ordre** — lâchez la carte *sur* cette autre carte. Il est alors placé à la main (⇅).
 - **Remettre à sa partie de journée** — lâchez la carte dans l'espace vide du jour. La place manuelle disparaît.
+- **À la fin de la journée** — pendant que vous glissez (ou après avoir choisi une carte), la case **↓ À la fin** figure
+  sous le travail de chaque jour. Lâchez-y la carte, ou cliquez dessus : l'ordre vient après le dernier ordre de ce jour.
 - **Sans souris** — cliquez une carte : en haut apparaît *Ordre … choisi*. Cliquez ensuite une autre carte ou un
   endroit vide d'un jour. **Annuler** ne choisit rien.
 - **Planifier du travail sans date** — glissez la carte de la gauche vers un jour.
@@ -98,10 +101,10 @@ trouve sous **Encore à planifier**. Avec **Nouvel ordre de travail** en haut à
 ![La liste du planning de la démo : la semaine par jour, avec les signaux, le collaborateur dans sa couleur et le bouton Attribuer](images/planning-lijst-fr.png "Liste du planning")
 
 Pour chaque ordre, vous voyez les signaux (*Date fixe — ne pas déplacer*, *Peut être exécuté plus tôt*,
-*Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro, la date demandée par le client
-(**Demandé**), le client, le chantier, la description, le type de travail et le statut. Avec le sélecteur de colonnes
-(l'icône à côté d'**Exporter**), vous ajoutez **Quand** (partie de journée et heure convenue), **Commandé**,
-**Rue + n°**, **Code postal**, **Localité** et **RWZI** ; un clic sur une colonne trie sur celle-ci, par exemple sur la
+*Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro (avec ⇅ si l'ordre est placé à la main), la
+date demandée par le client (**Demandé**), **Quand** (la partie de journée et l'heure convenue), le client, le chantier, la
+description et le type de travail. Avec le sélecteur de colonnes (l'icône à côté d'**Exporter**), vous ajoutez **Commandé**,
+**Rue + n°**, **Code postal**, **Localité**, **Statut** et **Station d'épuration** ; un clic sur une colonne trie sur celle-ci, par exemple sur la
 localité.
 
 À droite se trouve le volet **Journal**. Dépliez-le pour voir l'ordre sélectionné sans quitter la liste : le client,
@@ -114,6 +117,9 @@ ouvert quand vous choisissez une autre ligne.
   sur **Appliquer**. Une période dure au maximum trois mois. **← Précédent** et **Suivant →** avancent de la longueur de
   la période : une semaine à la fois, un mois à la fois. Sous les boutons figurent le nombre d'ordres planifiés sur
   cette période et le nombre encore à planifier.
+- **Statut** — **À faire** (par défaut) : le travail encodé ou planifié. **Exécuté, à facturer** et **Facturé** montrent le
+  travail de la période qui est déjà fait. Planifier n'est possible qu'avec **À faire** : avec les deux autres, **Attribuer**,
+  le menu de l'ordre et les boutons d'une sélection n'apparaissent pas.
 - **Contrat** — **Tous**, **Sans contrat** ou **Avec contrat** : le travail issu d'un [contrat](contracten.fr.md), ou
   les missions ponctuelles.
 - **Jour** — **Toute la semaine** (ou **Toute la période**), ou un seul jour de la période. Sous les boutons figure
@@ -134,19 +140,33 @@ ouvert quand vous choisissez une autre ligne.
 Cliquez sur **Attribuer** dans la ligne. Choisissez le **Collaborateur** et le **Jour planifié**, puis cliquez sur
 **Enregistrer**. Si vous videz le jour planifié, l'ordre retourne au travail sans date.
 
+### L'ordre dans la liste
+
+Dans un jour et pour un collaborateur, la liste suit le même ordre que le tableau de planning (voir
+[L'ordre dans une journée](#lordre-dans-une-journee)). La colonne **Quand** montre sur quoi cet ordre repose : la partie de
+journée et l'heure convenue.
+
+Pour déplacer un ordre, ouvrez le menu **⋯** à côté d'**Attribuer** dans sa ligne :
+
+- **Monter** et **Descendre** — une place plus haut ou plus bas dans le jour et chez le collaborateur. L'ordre est alors
+  placé à la main : ⇅ figure à côté du numéro.
+- **Remettre sur sa partie de la journée** — seulement pour un ordre placé à la main : la place manuelle disparaît.
+
+Le menu n'apparaît que s'il y a quelque chose à choisir, par exemple pas pour un ordre seul dans sa journée.
+
 ### Plusieurs ordres à la fois
 
 Cochez les ordres de travail. Au-dessus de la liste apparaît ce que vous pouvez faire avec cette sélection. La case de
 l'en-tête coche tout ce qui figure sur la page ; une page compte 200 ordres, de sorte qu'une semaine chargée y tient en une fois.
 
-![La liste du planning avec deux ordres cochés et les boutons Attribuer, Déplacer, Échanger et Statut RWZI](images/planning-selectie-fr.png "Sélection")
+![La liste du planning avec deux ordres cochés et les boutons Attribuer, Déplacer, Échanger et Statut station d'épuration](images/planning-selectie-fr.png "Sélection")
 
 | Bouton | Ce qui se passe |
 |---|---|
 | Attribuer… | Choisissez un collaborateur ; tous les ordres cochés vont à lui. Si vous laissez le champ vide, ils ne vont à personne. |
 | Déplacer… | Choisissez un jour planifié ; tous les ordres cochés vont à ce jour, chez le même collaborateur. |
 | Échanger | Le travail de deux collaborateurs est échangé. Ce n'est possible que si la sélection contient le travail d'exactement deux collaborateurs. CleanOps demande d'abord une confirmation. |
-| Statut RWZI | Active RWZI là où il était désactivé et le désactive là où il était actif. CleanOps indique combien ont été activés et désactivés. |
+| Statut station d'épuration | Active la station d'épuration (RWZI) là où elle était désactivée et la désactive là où elle était active. CleanOps indique combien ont été activés et désactivés. |
 
 Avec **Attribuer** et **Déplacer**, la place manuelle dans la journée disparaît : l'ordre vient à sa partie de
 journée. Avec **Échanger**, l'ordre dans la journée reste.
@@ -165,7 +185,18 @@ l'itinéraire en parties qui se suivent : **Partie 1**, **Partie 2**, …
 
 ### Imprimer
 
-**Imprimer** crée l'aperçu *Planning par date et par collaborateur* : ce que la liste montre maintenant, donc la même
+**Imprimer** ouvre un menu avec trois choix :
+
+- **Planning par date et collaborateur** — l'aperçu de ce que la liste montre (voir ci-dessous).
+- **Bons de travail par collaborateur et date** — les [bons de travail](werkbonnen.fr.md) pour la même période (ou le jour
+  choisi) et, si vous en avez choisi un, le même collaborateur. Ils s'ouvrent dans le même **Aperçu avant impression** que
+  sur l'écran Bons de travail. Ce choix n'est possible qu'avec le statut **À faire**, et pas avec **Non attribués** : un bon
+  de travail est du travail encore à faire, pour un chauffeur.
+- **Excel avec tous les champs** — un fichier Excel de ce que la liste montre, avec tous les champs de chaque ordre, aussi
+  ceux des colonnes masquées : entre autres le jour, le nom du collaborateur, les heures, les cases à cocher, le téléphone,
+  les instructions, le matériel, les remarques internes, le véhicule, le contrat et la facture.
+
+**Planning par date et collaborateur** crée l'aperçu *Planning par date et par collaborateur* : ce que la liste montre maintenant, donc la même
 période, le même jour, contrat, collaborateur et la même recherche. L'en-tête mentionne le collaborateur et la recherche
 si vous en avez choisi. Par jour et par collaborateur figurent la partie de journée avec la date demandée par le client
 (*Demandé le*), le numéro, le

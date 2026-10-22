@@ -21,7 +21,10 @@ Klik links in het menu, onder **Werk**, op **Werkbonnen**. Het scherm opent op v
   de begindatum mag niet na de einddatum liggen.
 - **Chauffeur**: toont enkel de bonnen van die chauffeur. **Alle chauffeurs** toont iedereen.
 
-Bovenaan staat hoeveel opdrachten en chauffeurs er in de periode vallen.
+Bovenaan staat hoeveel werkorders en chauffeurs er in de periode vallen.
+
+Dezelfde werkbonnen drukt u ook af vanuit de [planningslijst](planning.md#afdrukken): **Afdrukken** →
+**Werkbonnen per medewerker en datum**, voor de periode en de medewerker van die lijst.
 
 ## Welke werkorders op een werkbon komen
 
@@ -46,13 +49,14 @@ De bonnen staan per chauffeur, dan per dag, en binnen de dag in dezelfde volgord
 
 ## Afdrukken
 
-**Afdrukken** opent het afdrukvenster van uw browser. Op papier:
+**Afdrukken** opent de werkbonnen als PDF in het **Afdrukvoorbeeld**. Met **Downloaden** bewaart u ze als PDF; met het
+printerteken in de kijker drukt u ze af. In de PDF:
 
 - krijgt elke chauffeur **per dag een eigen blad**, met bovenaan zijn naam, zijn code en de dag: hij krijgt zijn eigen stapel
   mee, en een tweede dag begint niet halverwege een blad;
 - wordt een bon **nooit over twee bladen** gesplitst.
 
-Enkel de bonnen komen op papier, het menu en de knoppen niet. **Afdrukken** is grijs zolang er geen bonnen zijn.
+**Afdrukken** is grijs zolang er geen bonnen zijn.
 
 ## Veelgestelde vragen
 
@@ -60,14 +64,14 @@ Enkel de bonnen komen op papier, het menu en de knoppen niet. **Afdrukken** is g
 Ze heeft niet de status Gepland, geen geplande datum in de periode of geen chauffeur. Open ze op de
 [Planning](planning.md) of in [Werkorders](werkorders.md).
 
-**Er staat "Geen geplande opdrachten", maar er is wel werk gepland.**
+**Er staat "Geen geplande werkorders", maar er is wel werk gepland.**
 Kijk naar de periode en de chauffeur bovenaan: de melding zegt over welke datums en welke chauffeur ze gaat.
 
 **In welke taal staan de bonnen?**
 In de taal van uw scherm. De bonnen gaan naar uw eigen chauffeurs, niet naar de klant.
 
-**Ik wil een bon als PDF bewaren.**
-Kies in het afdrukvenster van uw browser een PDF in plaats van een printer (in Chrome *Opslaan als PDF*, op een Mac de knop **PDF**).
+**Ik wil de bonnen als PDF bewaren.**
+Klik op **Afdrukken** en daarna in het **Afdrukvoorbeeld** op **Downloaden**.
 
 ## Zie ook
 

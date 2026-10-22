@@ -11,11 +11,11 @@ vervallen is, mailt of drukt u een rappel af en houdt u bij wie u al aanmaande.
 
 ## Het scherm openen
 
-Klik links in het menu, onder **Verkoop**, op **Openstaande posten**. U ziet het met de rol **Financieel** of als beheerder.
+Klik links in het menu, onder **Verkoop**, op **Openstaand**. Het scherm heet Openstaande posten. U ziet het met de rol **Financieel** of als beheerder.
 Rappels inboeken en de rappelgegevens wijzigen vraagt daarnaast het recht *Rappels beheren*; dat heeft standaard enkel de
 beheerder.
 
-Het getal naast **Openstaande posten** in het menu telt de posten die aan een volgende rappel toe zijn.
+Het getal naast **Openstaand** in het menu telt de posten die aan een volgende rappel toe zijn.
 
 ## De lijst
 
@@ -31,8 +31,8 @@ Kies bovenaan, in de eerste keuzelijst, een selectie:
 
 Vervallen, Volgende rappel en Klant zonder rappels tonen enkel klanten die **netto iets schuldig** zijn. Heeft een klant een
 openstaande creditnota die groter is dan zijn openstaande facturen, dan staat hij daar niet — een rappel zou hem aanmanen
-voor iets wat hij niet verschuldigd is. U vindt zijn posten wel bij **Alle openstaande**. Het getal naast **Openstaande
-posten** in het menu telt op dezelfde manier.
+voor iets wat hij niet verschuldigd is. U vindt zijn posten wel bij **Alle openstaande**. Het getal naast **Openstaand** in
+het menu telt op dezelfde manier.
 
 De wachttijd stelt u in op de [bedrijfsfiche](beheer/bedrijfsfiche.md), bij **Wachttijd tussen twee rappels**. Leeg betekent
 15 dagen.
@@ -142,7 +142,7 @@ Nee. Een rappel die u met **Rappel mailen…** of **Doorsturen per mail** verstu
 zelf verstuurde rappel boekt u in bij het sluiten van het afdrukvoorbeeld.
 
 **Is mijn rappel aangekomen?**
-Klik de post aan en kies in de strook **Journaal** het tabblad **Mails**, of open de factuur en klik op **Mails**. Een mail die
+Klik de post aan en kies in de strook **Journaal** het tabblad **Mails**, of open de factuur en klik op **Journaal** › **Mails**. Een mail die
 de klant niet bereikte, staat op **Geweigerd** of **Spam**. Kijk dan het adres van de klant na en mail opnieuw.
 
 **Iemand anders heeft net een rappel ingeboekt terwijl mijn venster openstond.**

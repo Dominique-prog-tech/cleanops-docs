@@ -12,14 +12,14 @@ belofte van een klant en geen terugbelafspraak.
 
 ## Het scherm openen
 
-Klik links in het menu, onder **Verkoop**, op **Op te volgen memo's**. Het getal naast het menu-item is het aantal memo's dat
+Klik links in het menu, onder **Verkoop**, op **Memo's**. Het scherm heet Op te volgen memo's. Het getal naast het menu-item is het aantal memo's dat
 vandaag op te volgen is. U ziet het scherm met het recht om de openstaande posten te bekijken.
 
 ## Een memo maken
 
 Een memo maakt u bij de klant:
 
-- op de klantfiche, tabblad **Memo's**, met **Nieuwe memo** (zie [Klanten](klanten.md#memos));
+- op de klantfiche, onder **Journaal** › **Memo's**, met **Nieuwe memo** (zie [Klanten](klanten.md#memos));
 - of op [Openstaande posten](openstaande-posten.md#memos): vink een post aan en klik op **Memo's…**.
 
 | Veld | Wat erin hoort |
@@ -60,7 +60,7 @@ Dubbelklik op een memo om ze te openen. Daar kunt u de tekst aanvullen of het vi
     opnieuw in Op te volgen. Wilt u enkel de tekst aanvullen, laat de datum dan staan.
 
 !!! warning "Een memo zonder herinneringsdatum komt hier nooit"
-    Een memo zonder **Herinneren op** is een gewone notitie bij de klant. U vindt ze enkel op het tabblad Memo's van de klant.
+    Een memo zonder **Herinneren op** is een gewone notitie bij de klant. U vindt ze enkel op de klantfiche, onder **Journaal** › **Memo's**.
 
 ## Veelgestelde vragen
 

@@ -22,7 +22,10 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Bons de travail**. L'éc
   date de fin.
 - **Chauffeur** : n'affiche que les bons de ce chauffeur. **Tous les chauffeurs** affiche tout le monde.
 
-En haut figure le nombre d'interventions et de chauffeurs de la période.
+En haut figure le nombre d'ordres de travail et de chauffeurs de la période.
+
+Vous imprimez les mêmes bons de travail depuis la [liste du planning](planning.fr.md#imprimer) : **Imprimer** →
+**Bons de travail par collaborateur et date**, pour la période et le collaborateur de cette liste.
 
 ## Quels ordres de travail figurent sur un bon
 
@@ -47,13 +50,14 @@ Les bons sont classés par chauffeur, puis par jour, et dans la journée dans le
 
 ## Imprimer
 
-**Imprimer** ouvre la fenêtre d'impression de votre navigateur. Sur papier :
+**Imprimer** ouvre les bons de travail en PDF dans l'**Aperçu avant impression**. **Télécharger** les enregistre en PDF ;
+avec l'icône d'imprimante de la visionneuse, vous les imprimez. Dans le PDF :
 
 - chaque chauffeur a **une page par jour**, avec en haut son nom, son code et le jour : il emporte sa propre pile, et un
   deuxième jour ne commence pas au milieu d'une page ;
 - un bon n'est **jamais coupé** sur deux pages.
 
-Seuls les bons sont imprimés, pas le menu ni les boutons. **Imprimer** est grisé tant qu'il n'y a pas de bons.
+**Imprimer** est grisé tant qu'il n'y a pas de bons.
 
 ## Questions fréquentes
 
@@ -61,15 +65,14 @@ Seuls les bons sont imprimés, pas le menu ni les boutons. **Imprimer** est gris
 Il n'a pas le statut Planifié, pas de date planifiée dans la période ou pas de chauffeur. Ouvrez-le dans le
 [Planning](planning.fr.md) ou dans les [Ordres de travail](werkorders.fr.md).
 
-**Le message « Aucune intervention planifiée » apparaît, alors que du travail est planifié.**
+**Le message « Aucun ordre de travail planifié » apparaît, alors que du travail est planifié.**
 Regardez la période et le chauffeur en haut : le message indique de quelles dates et de quel chauffeur il s'agit.
 
 **Dans quelle langue sont les bons ?**
 Dans la langue de votre écran. Les bons sont destinés à vos propres chauffeurs, pas au client.
 
-**Je veux enregistrer un bon en PDF.**
-Dans la fenêtre d'impression de votre navigateur, choisissez un PDF au lieu d'une imprimante (dans Chrome
-*Enregistrer au format PDF*, sur un Mac le bouton **PDF**).
+**Je veux enregistrer les bons en PDF.**
+Cliquez sur **Imprimer**, puis dans l'**Aperçu avant impression** sur **Télécharger**.
 
 ## Voir aussi
 

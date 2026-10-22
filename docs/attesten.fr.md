@@ -32,16 +32,20 @@ de travail, ou en rouge *manquante*. Le **prix unitaire** s'active via **Choisir
 
 !!! tip "Travailler avec Sans attestation"
     Mettez **Attestation** sur *Sans attestation* et établissez les attestations une par une. Quand vous revenez à la liste
-    après l'enregistrement, l'ordre de travail que vous venez de traiter en a disparu.
+    après l'enregistrement (avec **← Attestations**), l'ordre de travail que vous venez de traiter en a disparu.
 
 ## Établir ou modifier une attestation
 
 Sous l'ordre de travail, cliquez sur **Nouvelle attestation**, ou double-cliquez sur une attestation existante.
-L'attestation s'ouvre sur sa propre fiche ; **Enregistrer** et **Annuler** vous ramènent d'où vous veniez.
+L'attestation s'ouvre sur sa propre fiche. Après **Enregistrer**, la fiche reste ouverte, pour que vous puissiez tout de
+suite envoyer ou imprimer l'attestation ; une nouvelle attestation s'ouvre alors sur sa propre fiche. **Annuler** et le
+bouton de retour en haut vous ramènent d'où vous veniez.
 
 ![La fiche de l'Attestation 900115/1 avec l'ordre de travail en haut, et Date, Produit, Quantité, Unité, Traitement, Entreprise de traitement, Origine et Remarque chantier](images/attest-fiche-fr.png "Une attestation")
 
-En haut figurent l'ordre de travail, le client et l'adresse d'exécution, tels qu'ils apparaissent sur l'attestation.
+La fiche est répartie en quatre blocs : **Ordre de travail**, **Attestation**, **Traitement** et **Origine et chantier**.
+Le bloc **Ordre de travail** montre l'ordre de travail, le client et l'adresse d'exécution, tels qu'ils apparaissent sur
+l'attestation.
 
 | Champ | Ce que vous indiquez |
 |---|---|
@@ -97,13 +101,13 @@ Une attestation peut aussi partir avec l'**e-mail de la facture** : les attestat
 figurent, à cocher (voir [Factures](facturen.fr.md)). Elle est alors aussi **envoyée**.
 
 Après l'envoi, l'attestation est **envoyée** (en haut de la fiche et dans la colonne **Envoyée**) et vous trouvez l'e-mail
-dans l'onglet **E-mails**. Si vous modifiez ensuite l'attestation, elle redevient *pas encore envoyée* : elle doit repartir
+sous **Journal** › **E-mails** de la fiche. Si vous modifiez ensuite l'attestation, elle redevient *pas encore envoyée* : elle doit repartir
 chez le client. Si vous envoyez une attestation déjà envoyée, CleanOps vous demande d'abord si c'est voulu.
 
 ## Le journal
 
 Cliquez sur une attestation dans la liste et ouvrez le volet **Journal** à droite : l'historique montre qui a établi,
-modifié et envoyé l'attestation. Sur la fiche, vous trouvez la même chose sous **Historique**.
+modifié et envoyé l'attestation. Sur la fiche, vous trouvez la même chose sous **Journal** › **Historique**.
 
 ## Droits
 
