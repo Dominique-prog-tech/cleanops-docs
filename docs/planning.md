@@ -196,12 +196,27 @@ Kiest u een andere periode, een ander filter of een andere zoekterm, dan vervalt
 
 ### De dagroute
 
-Het routeteken naast **Toewijzen** opent in Google Maps de route van die medewerker op die dag: van het adres op de
-[bedrijfsfiche](beheer/bedrijfsfiche.md), langs de adressen in de volgorde van de planning, en terug. Staat er geen
-adres op de bedrijfsfiche, dan loopt de route van het eerste naar het laatste adres.
+Het routeteken naast **Toewijzen** in de lijst, of het kleine routeteken in een vak van het planbord (vanaf twee
+adressen), opent de dagroute van die medewerker op die dag: van het adres op de
+[bedrijfsfiche](beheer/bedrijfsfiche.md), langs de adressen, en terug.
 
-Google Maps neemt hoogstens 9 tussenstops in één route. Heeft de dag er meer, dan opent een venster met de route in
-delen die op elkaar aansluiten: **Deel 1**, **Deel 2**, …
+- **Planningsvolgorde** toont de adressen in de volgorde van de planning, met per rit de afstand en de rijtijd, en het
+  totaal.
+- **Optimale route** zet dezelfde adressen in de kortste volgorde. Het totaal van de planning staat ernaast, zodat u
+  ziet wat het scheelt.
+- **Openen in Google Maps** toont de route op de kaart, in de volgorde die u ziet. Google Maps neemt hoogstens 9
+  tussenstops in één route; heeft de dag er meer, dan krijgt u de route in delen die op elkaar aansluiten.
+- **Volgorde overnemen** (met de optimale route in beeld) zet de werkorders van die dag in die volgorde in de planning,
+  met de hand geplaatst (⇅). Uitgevoerd werk blijft staan. U ziet de knop enkel als u de planning mag wijzigen en als
+  de volgorde echt verandert.
+
+Uitgevoerd werk staat met ✓ in de route: het telt mee in de kilometers. Een werkorder zonder adres staat er niet in.
+
+<!-- AFBEELDING: het venster Dagroute met de knoppen Planningsvolgorde en Optimale route, de stops met km en minuten, het Totaal, Openen in Google Maps en Volgorde overnemen -->
+
+!!! info "Wanneer er niet gerekend wordt"
+    Zonder adres op de bedrijfsfiche, of met meer dan 25 adressen op één dag, berekent CleanOps geen route: Google
+    aanvaardt er niet meer. De lijst en de link naar Google Maps blijven wel staan.
 
 ### Afdrukken
 

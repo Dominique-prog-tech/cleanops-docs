@@ -200,12 +200,28 @@ que vous ne voyez plus.
 
 ### L'itinéraire du jour
 
-Le signe d'itinéraire à côté de **Attribuer** ouvre dans Google Maps l'itinéraire de ce collaborateur ce jour-là :
-depuis l'adresse de la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md), par les adresses dans l'ordre du planning, et
-retour. S'il n'y a pas d'adresse sur la fiche d'entreprise, l'itinéraire va de la première à la dernière adresse.
+Le signe d'itinéraire à côté de **Attribuer** dans la liste, ou le petit signe d'itinéraire dans une case du tableau de
+planning (à partir de deux adresses), ouvre l'itinéraire de ce collaborateur ce jour-là : depuis l'adresse de la
+[fiche d'entreprise](beheer/bedrijfsfiche.fr.md), par les adresses, et retour.
 
-Google Maps accepte au plus 9 arrêts par itinéraire. Si la journée en compte plus, une fenêtre s'ouvre avec
-l'itinéraire en parties qui se suivent : **Partie 1**, **Partie 2**, …
+- **Ordre du planning** montre les adresses dans l'ordre du planning, avec pour chaque trajet la distance et le temps
+  de route, et le total.
+- **Itinéraire optimal** met les mêmes adresses dans l'ordre le plus court. Le total du planning figure à côté, pour
+  voir la différence.
+- **Ouvrir dans Google Maps** montre l'itinéraire sur la carte, dans l'ordre affiché. Google Maps accepte au plus 9
+  arrêts par itinéraire ; si la journée en compte plus, vous recevez l'itinéraire en parties qui se suivent.
+- **Reprendre cet ordre** (avec l'itinéraire optimal affiché) met les ordres de travail de ce jour dans cet ordre dans
+  le planning, placés à la main (⇅). Le travail exécuté ne bouge pas. Le bouton n'apparaît que si vous pouvez modifier
+  le planning et si l'ordre change vraiment.
+
+Le travail exécuté figure avec ✓ dans l'itinéraire : il compte dans les kilomètres. Un ordre sans adresse n'y figure
+pas.
+
+<!-- AFBEELDING: la fenêtre Itinéraire avec les boutons Ordre du planning et Itinéraire optimal, les arrêts avec km et minutes, le Total, Ouvrir dans Google Maps et Reprendre cet ordre -->
+
+!!! info "Quand l'itinéraire n'est pas calculé"
+    Sans adresse sur la fiche d'entreprise, ou avec plus de 25 adresses le même jour, CleanOps ne calcule pas
+    d'itinéraire : Google n'en accepte pas plus. La liste et le lien vers Google Maps restent disponibles.
 
 ### Imprimer
 
