@@ -28,10 +28,11 @@ factuur: [Video's](videos.md).
 
     ---
 
-    Uw overzicht van de dag, uw omgeving bij ADM-Concept voor facturen, tickets en release notes, en de beveiliging van
-    uw account.
+    Uw overzicht van de dag, uw omgeving bij ADM-Concept voor facturen, tickets en release notes, de beveiliging van
+    uw account en de app voor uw medewerkers.
 
-    [Dashboard](dashboard.md) · [Klantenportaal](klantenportaal.md) · [Tweestapsverificatie](tweestapsverificatie.md)
+    [Dashboard](dashboard.md) · [Klantenportaal](klantenportaal.md) · [Tweestapsverificatie](tweestapsverificatie.md) ·
+    [De mobiele app](mobiele-app.md)
 
 -   :material-account-group: **CRM**
 

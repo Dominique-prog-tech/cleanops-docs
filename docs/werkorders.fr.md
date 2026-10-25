@@ -210,6 +210,36 @@ l'envoyer par e-mail. Tout sur l'attestation elle-même se trouve dans [Attestat
 
 ![L'onglet Attestations (1) sur la fiche de l'ordre de travail, avec Produit, Quantité, Code EURAL, Entreprise de traitement et Envoyée, et le bouton Nouvelle attestation](images/werkorder-attesten-fr.png "Attestations d'un ordre de travail")
 
+### Temps
+
+En haut à droite de la fiche figure l'onglet **Temps**, avec le nombre d'enregistrements entre parenthèses. Il montre le
+temps que les collaborateurs ont enregistré sur cet ordre de travail, dans l'[application mobile](mobiele-app.fr.md) ou
+au bureau.
+
+En haut figure le total pour **Travail** et pour **Déplacement**. Si un compteur tourne encore, **Un compteur est en
+cours** apparaît à côté.
+
+| Colonne | Explication |
+|---|---|
+| Collaborateur | Qui a enregistré le temps. |
+| Type | **Travail** ou **Déplacement**. |
+| Début, Fin | Quand le compteur a démarré et s'est arrêté. S'il tourne encore, **en cours** remplace la fin. |
+| Pause (min) | La pause dans cet enregistrement, en minutes. |
+| Travaillé | Le temps entre le début et la fin (ou jusqu'à maintenant, si le compteur tourne encore), sans la pause. |
+| À la main | Coché si le temps a été encodé ou corrigé à la main, dans l'application ou au bureau, et donc pas mesuré par le compteur. |
+| Description | Ce que l'application y a noté. |
+
+![L'onglet Temps (2) sur un ordre de travail : en haut Travail et Déplacement, en dessous un déplacement et un enregistrement À la main avec la description Oublié d'arrêter le chrono, et le bouton Ajouter du temps](images/werkorder-tijd-fr.png "L'onglet Temps")
+
+**Ajouter du temps** permet d'encoder du temps pour un collaborateur : le collaborateur, le type, la date, **De**, **À**
+et la pause. Double-cliquez sur un enregistrement pour le corriger. Dans cette fenêtre, **Arrêter le compteur** arrête
+un compteur que le collaborateur a oublié d'arrêter, et **Supprimer** retire l'enregistrement.
+
+CleanOps refuse du temps dans le futur, un enregistrement de plus de 16 heures, et du temps qui chevauche un autre temps
+du même collaborateur. Un compteur qui tourne encore ne se modifie qu'après l'avoir arrêté.
+
+Ajouter et corriger du temps est réservé à qui peut modifier les ordres de travail.
+
 ### Journal
 
 En haut à droite de la fiche figure l'onglet **Journal**, avec **Pièces jointes** — les documents de cet ordre — et

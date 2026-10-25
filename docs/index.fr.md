@@ -30,9 +30,10 @@ première visite guidée à la facture : [Vidéos](videos.md).
     ---
 
     Votre aperçu de la journée, votre espace chez ADM-Concept pour les factures, les tickets et les notes de
-    version, et la sécurité de votre compte.
+    version, la sécurité de votre compte et l'application pour vos collaborateurs.
 
-    [Tableau de bord](dashboard.md) · [Portail client](klantenportaal.md) · [Vérification en deux étapes](tweestapsverificatie.md)
+    [Tableau de bord](dashboard.md) · [Portail client](klantenportaal.md) · [Vérification en deux étapes](tweestapsverificatie.md) ·
+    [L'application mobile](mobiele-app.md)
 
 -   :material-account-group: **CRM**
 

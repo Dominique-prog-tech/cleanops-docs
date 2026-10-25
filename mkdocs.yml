@@ -219,6 +219,7 @@ plugins:
             Omzet per medewerker en voertuig: CA par collaborateur et véhicule
             Klantenportaal: Portail client
             Tweestapsverificatie: Vérification en deux étapes
+            De mobiele app: L'application mobile
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
             Video's: Vidéos
@@ -300,6 +301,7 @@ nav:
     - Dashboard: dashboard.md
     - Klantenportaal: klantenportaal.md
     - Tweestapsverificatie: tweestapsverificatie.md
+    - De mobiele app: mobiele-app.md
   - CRM:
     - Klanten: klanten.md
     - Medewerkers: medewerkers.md

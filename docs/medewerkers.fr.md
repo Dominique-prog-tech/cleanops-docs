@@ -86,6 +86,38 @@ est permis.
 Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire, CleanOps indique lequel.
 **Annuler** vous ramène à la liste sans enregistrer.
 
+### Accès à l'app
+
+Sous les blocs figure **Accès à l'app** : le collaborateur peut-il se connecter à l'[application mobile](mobiele-app.fr.md)
+? Vous voyez ce bloc si vous pouvez modifier les collaborateurs.
+
+![Le bloc Accès à l'app sur la fiche d'un collaborateur, avec l'état Pas d'accès à l'app et le bouton Donner l'accès…](images/medewerker-app-toegang-fr.png "Accès à l'app")
+
+Le collaborateur se connecte avec son adresse e-mail et un mot de passe qu'il choisit lui-même. Pour lui donner accès :
+
+1. Cliquez sur **Donner l'accès…**.
+2. Indiquez son **E-mail**. Si la fiche porte une seule adresse, elle est déjà remplie.
+3. Cliquez sur **Inviter**.
+
+Le collaborateur reçoit un e-mail avec un lien pour choisir son mot de passe. Le lien reste valable 24 heures et ne
+fonctionne qu'une seule fois. L'e-mail indique aussi où trouver l'application, et avec quelle adresse se connecter.
+
+Ce que le bloc affiche et les boutons présents dépendent de l'état :
+
+| État | Boutons |
+|---|---|
+| Pas d'accès à l'app. | **Donner l'accès…** |
+| Invité : le mot de passe n'a pas encore été choisi. | **Inviter à nouveau** envoie un nouvel e-mail, par exemple si le lien a expiré. **Révoquer** |
+| Accès actif : le collaborateur se connecte avec l'adresse affichée. | **Nouveau mot de passe** envoie un lien pour choisir un nouveau mot de passe ; l'actuel reste valable jusque-là. **Révoquer** |
+| Accès révoqué. | **Rétablir l'accès**. Si le collaborateur n'avait pas encore de mot de passe, il reçoit une nouvelle invitation. |
+
+**Révoquer** exclut immédiatement le collaborateur. Une session déjà ouverte dans l'application reste valable au plus
+une heure.
+
+!!! info "Qui n'obtient pas d'accès"
+    Un collaborateur supprimé, inactif ou retraité ne peut pas se connecter : le bloc l'indique, et **Donner
+    l'accès…** ne fonctionne pas. Une adresse e-mail qui appartient déjà à un autre utilisateur est refusée.
+
 ### L'onglet Congés
 
 Les congés, maladies et autres absences du collaborateur, les plus récents en tête : du, au, type, demi-journée,

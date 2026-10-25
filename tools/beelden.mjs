@@ -207,6 +207,11 @@ const SCHOTEN = [
       await p.getByText(/^(Verlof|Congés) \(/).first().click();
       await p.getByRole('row').filter({ hasText: fr ? "Congé d'automne" : 'Herfstverlof' }).first().dblclick();
     } },
+  // App-toegang (vrijgave van de app, 25/10/2026): enkel het BLOK, als element. De demo voor de handleiding krijgt bewust geen app-account
+  // (DemoDriver: enkel in een proef), dus het beeld toont de beginstand met de knop om toegang te geven — de eerste stap van de uitleg.
+  { naam: 'medewerker-app-toegang', route: '/medewerkers', verwacht: tekstTaal('Geen app-toegang', "Pas d'accès à l'app"),
+    element: '#app-toegang',
+    na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.medewerkerFr : DEMO.medewerker); } },
   // Leveranciers (vrijgave 05/10/2026, module Aankoop laag 1): lijst, fiche en logboek — uit de zes demoleveranciers
   // (VerzinLeveranciersAsync). ⚠️ Het merkteken van de lijst is de TWEEDE rij (Garage Desmet), om dezelfde reden als bij de
   // medewerkers: de eerste rij is gefocust en draagt ook de titel van de verborgen journaalstrook.
@@ -378,6 +383,15 @@ const SCHOTEN = [
       await p.waitForTimeout(500);
       await p.evaluate(() => [...document.querySelectorAll('h2')].find(h => /^(Facturatie|Facturation)$/.test(h.textContent.trim()))
         ?.scrollIntoView({ block: 'start' }));
+    } },
+  // Het tabblad Tijd (vrijgave van de app, 25/10/2026): de demo zet op de uitgewerkte werkorder een verplaatsing en een registratie met de
+  // hand (DemoDataGenerator, "De tijd op de twee uitgewerkte werkorders"). Het merkteken is die OMSCHRIJVING, niet de tabtitel: die staat er
+  // al vóór het raster geladen is.
+  { naam: 'werkorder-tijd', route: '/werkorders', verwacht: tekstTaal('Teller vergeten te stoppen', "Oublié d'arrêter le chrono"),
+    na: async (p, taal) => {
+      await openWerkorder(p, taal === 'fr-BE' ? DEMO.werfFr : DEMO.werf);
+      // ⚠️ De titel is "Tijd" ZONDER aantal tot het tabblad open is: het aantal komt pas wanneer het raster geladen is (25/10/2026).
+      await p.getByText(/^(Tijd|Temps)( \(\d+\))?$/).filter({ visible: true }).first().click();
     } },
   // Attesten (module Attesten, vrijgave 08/10/2026). De demo draagt attesten bij de twee uitgewerkte werkorders
   // (DemoDataGenerator.VerzinAttestenAsync): de Nederlandstalige (Tuincentrum De Linde) twee, slib en vet; de Franstalige
@@ -1318,7 +1332,12 @@ await browser.close();
 
 // ── Verantwoording: elk recept in een pagina, elke verwijzing met een beeld ─────────────────────────────────
 const zonderVerwijzing = SCHOTEN.flatMap(s => [s.naam, `${s.naam}-fr`]).filter(n => !(n in ALT));
-const zonderRecept = Object.keys(ALT).filter(n => !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
+// Beelden die NIET uit dit script komen, met de reden. Een lijst van NAMEN en geen voorvoegsel: een later recept dat met "app-" begint,
+// moet de controle nog wel krijgen.
+// - De mobiele app (mobiele-app.md, 25/10/2026): schermafdrukken uit de simulator, dezelfde als de winkelbeelden in adm-cleanops-flutter
+//   (store/schermafbeeldingen), verkleind. Dit script stuurt enkel de backoffice in een browser aan.
+const BUITEN_SCRIPT = new Set(['app-planning', 'app-werkorder', 'app-teller', 'app-betaling'].flatMap(n => [n, `${n}-fr`]));
+const zonderRecept = Object.keys(ALT).filter(n => !BUITEN_SCRIPT.has(n) && !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
 
 console.log(`\nApp: ${toestand.sha?.slice(0, 7) ?? '?'}${toestand.vuil ? ' (werkmap VUIL — het beeld toont niet-vastgelegde code)' : ''} · tenant demo`);
 console.log(`✅ ${geschreven.length} beeld(en) geschreven`);

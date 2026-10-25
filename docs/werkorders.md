@@ -203,6 +203,35 @@ attest zelf staat bij [Attesten](attesten.md).
 
 ![Het tabblad Attesten (2) op de werkorderfiche, met Product, Hoeveelheid, EURAL-code, Verwerkingsbedrijf en Verzonden, en de knop Nieuw attest](images/werkorder-attesten.png "Attesten van een werkorder")
 
+### Tijd
+
+Rechts bovenaan de fiche staat het tabblad **Tijd**, met het aantal registraties tussen haakjes. Het toont de tijd die
+de medewerkers op deze werkorder registreerden, in de [mobiele app](mobiele-app.md) of op het kantoor.
+
+Bovenaan staat het totaal voor **Werken** en voor **Verplaatsing**. Loopt er nog een teller, dan staat er **Er loopt een
+teller** naast.
+
+| Kolom | Toelichting |
+|---|---|
+| Medewerker | Wie de tijd registreerde. |
+| Soort | **Werken** of **Verplaatsing**. |
+| Begin, Einde | Wanneer de teller startte en stopte. Loopt hij nog, dan staat er **loopt** in plaats van het einde. |
+| Pauze (min) | De pauze binnen die registratie, in minuten. |
+| Gewerkt | De tijd tussen begin en einde (of tot nu, als de teller nog loopt), zonder de pauze. |
+| Met de hand | Aangevinkt als de tijd met de hand ingegeven of rechtgezet werd, in de app of op het kantoor, en dus niet door de teller gemeten. |
+| Omschrijving | Wat de app erbij noteerde. |
+
+![Het tabblad Tijd (2) op een werkorder: bovenaan Werken en Verplaatsing, daaronder een verplaatsing en een registratie Met de hand met de omschrijving Teller vergeten te stoppen, en de knop Tijd toevoegen](images/werkorder-tijd.png "Het tabblad Tijd")
+
+Met **Tijd toevoegen** geeft u tijd in voor een medewerker: de medewerker, de soort, de datum, **Van**, **Tot** en de
+pauze. Dubbelklik op een registratie om ze recht te zetten. In dat venster stopt **Teller stoppen** een teller die de
+medewerker vergat te stoppen, en haalt **Verwijderen** de registratie weg.
+
+CleanOps weigert tijd in de toekomst, een registratie van meer dan 16 uur, en tijd die overlapt met andere tijd van
+dezelfde medewerker. Een teller die nog loopt, past u pas aan nadat u hem gestopt hebt.
+
+Tijd toevoegen en rechtzetten kan wie werkorders mag bewerken.
+
 ### Journaal
 
 Rechts bovenaan de fiche staat het tabblad **Journaal**, met daarin **Bijlagen** — de documenten bij deze werkorder — en

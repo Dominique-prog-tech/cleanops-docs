@@ -82,6 +82,38 @@ Gemeente de plaatsen van die postcode aan (9800: Deinze, Astene, Vinkt…); u ma
 Klik op **Bewaren** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. **Annuleren** brengt u
 terug naar de lijst zonder te bewaren.
 
+### App-toegang
+
+Onder de blokken staat **App-toegang**: of de medewerker zich kan aanmelden in de [mobiele app](mobiele-app.md). U
+ziet het blok als u medewerkers mag bewerken.
+
+![Het blok App-toegang op de fiche van een medewerker, met de stand Geen app-toegang en de knop Toegang geven…](images/medewerker-app-toegang.png "App-toegang")
+
+De medewerker meldt zich aan met zijn e-mailadres en een wachtwoord dat hij zelf kiest. Zo geeft u hem toegang:
+
+1. Klik op **Toegang geven…**.
+2. Vul zijn **E-mail** in. Staat er één adres op de fiche, dan is het al ingevuld.
+3. Klik op **Uitnodigen**.
+
+De medewerker krijgt een mail met een link om zijn wachtwoord te kiezen. De link blijft 24 uur geldig en werkt één keer.
+De mail zegt ook waar hij de app vindt, en met welk e-mailadres hij zich aanmeldt.
+
+Wat het blok toont en welke knoppen er staan, hangt af van de stand:
+
+| Stand | Knoppen |
+|---|---|
+| Geen app-toegang. | **Toegang geven…** |
+| Uitgenodigd: het wachtwoord is nog niet gekozen. | **Opnieuw uitnodigen** stuurt een nieuwe mail, bijvoorbeeld als de link verlopen is. **Intrekken** |
+| Actieve toegang: de medewerker meldt zich aan met het getoonde adres. | **Nieuw wachtwoord** stuurt een link om een nieuw wachtwoord te kiezen; het huidige blijft werken tot dan. **Intrekken** |
+| Toegang ingetrokken. | **Toegang terugzetten**. Had de medewerker nog geen wachtwoord, dan krijgt hij opnieuw een uitnodiging. |
+
+**Intrekken** sluit de medewerker meteen uit. Een sessie die al open staat in de app, blijft nog hoogstens een uur
+werken.
+
+!!! info "Wie geen toegang krijgt"
+    Een medewerker die verwijderd, niet actief of met pensioen is, kan zich niet aanmelden: het blok zegt dat, en
+    **Toegang geven…** werkt niet. Een e-mailadres dat al bij een andere gebruiker hoort, wordt geweigerd.
+
 ### Het tabblad Verlof
 
 De verlofperiodes, ziektes en andere afwezigheden van de medewerker, de jongste bovenaan: van, tot, soort, halve
