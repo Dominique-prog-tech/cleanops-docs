@@ -232,10 +232,25 @@ dezelfde medewerker. Een teller die nog loopt, past u pas aan nadat u hem gestop
 
 Tijd toevoegen en rechtzetten kan wie werkorders mag bewerken.
 
+### Notities
+
+Het tabblad **Notities** bundelt wat er over deze werkorder genoteerd werd: door de medewerkers in de
+[mobiele app](mobiele-app.md#notities), of op het kantoor. Een notitie uit de app staat er met **door** en de naam van
+de medewerker. Met **Zoeken in de notities…** vindt u er een terug.
+
+Met **+ Notitie** voegt u er zelf een toe: een **Onderwerp** (verplicht), **Wanneer** en de **Tekst**. Ga met de muis
+over een notitie voor **Bewerken** en **Verwijderen**. Een verwijderde notitie verdwijnt uit de lijst, maar blijft
+bewaard in de historiek.
+
+<!-- AFBEELDING: werkorder-notities — het tabblad Notities met een notitie van Tom Verbeke uit de app -->
+
+Notities toevoegen, bewerken en verwijderen kan wie werkorders mag bewerken.
+
 ### Journaal
 
 Rechts bovenaan de fiche staat het tabblad **Journaal**, met daarin **Bijlagen** — de documenten bij deze werkorder — en
-**Logboek**: wie welk veld wijzigde, wanneer, en van welke waarde naar welke.
+**Logboek**: wie welk veld wijzigde, wanneer, en van welke waarde naar welke. Ook de foto's die de medewerkers in de
+[mobiele app](mobiele-app.md#fotos) nemen, staan bij de Bijlagen.
 
 !!! info "Niet elke link is voor iedereen een link"
     Het nummer van de offerte of de factuur kunt u enkel aanklikken als u dat onderdeel mag openen. Anders staat

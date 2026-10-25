@@ -240,10 +240,25 @@ du même collaborateur. Un compteur qui tourne encore ne se modifie qu'après l'
 
 Ajouter et corriger du temps est réservé à qui peut modifier les ordres de travail.
 
+### Notes
+
+L'onglet **Notes** regroupe ce qui a été noté sur cet ordre de travail : par les collaborateurs dans
+l'[application mobile](mobiele-app.fr.md#notes), ou au bureau. Une note de l'application figure avec **par** et le nom du
+collaborateur. **Rechercher dans les notes…** vous permet d'en retrouver une.
+
+Avec **+ Note**, vous en ajoutez une vous-même : un **Objet** (obligatoire), **Quand** et le **Texte**. Passez la souris
+sur une note pour **Modifier** et **Supprimer**. Une note supprimée disparaît de la liste, mais reste conservée dans
+l'historique.
+
+<!-- AFBEELDING: werkorder-notities-fr — l'onglet Notes avec une note de Tom Verbeke venant de l'application -->
+
+Ajouter, modifier et supprimer des notes est réservé à qui peut modifier les ordres de travail.
+
 ### Journal
 
 En haut à droite de la fiche figure l'onglet **Journal**, avec **Pièces jointes** — les documents de cet ordre — et
-**Historique** : qui a modifié quel champ, quand, et de quelle valeur à quelle valeur.
+**Historique** : qui a modifié quel champ, quand, et de quelle valeur à quelle valeur. Les photos que les
+collaborateurs prennent dans l'[application mobile](mobiele-app.fr.md#photos) se trouvent aussi dans les Pièces jointes.
 
 !!! info "Tous les liens ne sont pas des liens pour tout le monde"
     Vous ne pouvez cliquer sur le numéro du devis ou de la facture que si vous avez accès à cette partie. Sinon, il

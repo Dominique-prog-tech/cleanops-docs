@@ -1,5 +1,5 @@
 ---
-description: "L'application mobile CleanOps pour vos collaborateurs : le planning du jour, l'ordre de travail, le chrono, le paiement sur place et la fin du travail."
+description: "L'application mobile CleanOps pour vos collaborateurs : le planning du jour, le chrono, les notes et les photos, le paiement sur place et la fin du travail."
 ---
 
 # L'application mobile
@@ -64,6 +64,43 @@ le temps**. Au bureau, vous voyez tout dans l'onglet [Temps](werkorders.fr.md#te
 
 ![Le chrono sur l'ordre de travail 900153 de Peeters Annick : Mon chrono à 0:42, avec Pause et Arrêter, et en dessous le temps sur l'ordre de travail](images/app-teller-fr.png "Le chrono"){ width="300" }
 
+### Notes
+
+Sous **Notes**, le collaborateur écrit ce que le bureau ou un collègue doit savoir : « couvercle bloqué, prendre un
+pied-de-biche ». Il appuie sur **Ajouter une note**, tape son texte (2000 caractères au plus) et appuie sur
+**Enregistrer**. Chaque note figure avec le nom de son auteur et le moment. Une note du bureau figure avec **Bureau**.
+
+Au bureau, vous les voyez dans l'onglet [Notes](werkorders.fr.md#notes) de l'ordre de travail, avec **par** et le nom du
+collaborateur.
+
+<!-- AFBEELDING: app-notities-fr — la carte Notes dans l'application avec une note de Tom Verbeke et le bouton Ajouter une note -->
+
+### Photos
+
+Sous **Photos**, le collaborateur ajoute des photos à l'ordre de travail : une évacuation bouchée avant et après, un
+couvercle abîmé. Il appuie sur **Ajouter une photo** et choisit **Prendre une photo** ou **Depuis la galerie**. La
+première fois qu'il prend une photo, l'appareil demande l'accès à l'appareil photo. Depuis la galerie, l'application ne
+voit que la photo qu'il choisit.
+
+- L'application réduit la photo avant de l'envoyer. Elle passe ainsi rapidement, même avec une connexion lente.
+- La position qu'un appareil enregistre dans une photo est effacée avant que la photo soit enregistrée.
+- Un appui sur une photo l'affiche en grand, avec qui l'a prise et quand.
+
+Au bureau, les photos se trouvent sur l'ordre de travail sous [**Journal**](werkorders.fr.md#journal) › **Pièces
+jointes**.
+
+Si l'envoi échoue, par exemple sans réseau dans une cave, la photo reste dans l'application avec **Pas envoyée** et
+**Réessayer**. Elle n'est pas envoyée plus tard d'elle-même : le collaborateur appuie lui-même sur **Réessayer** dès
+qu'il a de nouveau une connexion.
+
+<!-- AFBEELDING: app-fotos-fr — la carte Photos dans l'application avec une miniature et le bouton Ajouter une photo -->
+
+### Supprimer des notes et des photos
+
+Avec la corbeille, le collaborateur supprime ses propres notes et photos, tant que l'ordre de travail n'est pas
+terminé. Ce qu'un collègue ou le bureau a ajouté, il ne peut pas le supprimer. Au bureau, qui peut modifier les ordres
+de travail supprime n'importe quelle note dans l'onglet Notes ; une photo se supprime sous Journal › Pièces jointes.
+
 ### Le paiement sur place
 
 Si le client paie sur place, le collaborateur note sous **Paiement sur place** le **Montant (TVAC)** et le **Mode de
@@ -76,7 +113,7 @@ l'ordre de travail dans CleanOps.
 
 Quand le travail est terminé, le collaborateur appuie sur **Terminer** et confirme. L'ordre de travail passe au statut
 **À facturer** et est prêt pour la [facturation](facturatie.fr.md). Ensuite, il ne peut plus le modifier dans
-l'application ; corriger son propre temps reste possible.
+l'application, ni y ajouter ou supprimer des notes ou des photos ; corriger son propre temps reste possible.
 
 Un ordre de travail planifié à une date future ne peut pas être terminé.
 
@@ -96,6 +133,15 @@ collaborateur est inactif ou retraité, il ne peut pas se connecter.
 **Un collaborateur ne voit pas un ordre de travail.**
 L'application montre le travail du collaborateur et de son équipe. Vérifiez dans le [planning](planning.fr.md) que
 l'ordre de travail est attribué à lui ou à son équipe ce jour-là.
+
+**Où trouver les photos d'un collaborateur ?**
+Sur l'ordre de travail, sous **Journal** › **Pièces jointes**. Elles s'appellent *Photo* (ou *Foto* si l'application
+du collaborateur est en néerlandais), suivi du numéro de l'ordre de travail et du moment, par exemple *Photo 900149
+2026-10-25 20.58.30.jpg*.
+
+**Un collaborateur ne peut pas prendre de photo.**
+S'il n'a pas donné à l'application l'accès à l'appareil photo la première fois, il l'active dans les réglages de son
+appareil, sous l'application CleanOps. Choisir une photo depuis la galerie reste possible.
 
 **Le temps dans l'application est incorrect.**
 Corrigez-le dans l'onglet [Temps](werkorders.fr.md#temps) de l'ordre de travail, ou le collaborateur le fait lui-même

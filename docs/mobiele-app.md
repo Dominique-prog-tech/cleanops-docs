@@ -1,5 +1,5 @@
 ---
-description: "De mobiele app van CleanOps voor uw medewerkers: de planning per dag, de werkorder, de teller, de betaling ter plaatse en afronden."
+description: "De mobiele app van CleanOps voor uw medewerkers: de planning per dag, de werkorder, de teller, notities en foto's, de betaling ter plaatse en afronden."
 ---
 
 # De mobiele app
@@ -64,6 +64,41 @@ in. Op kantoor ziet u alles op het tabblad [Tijd](werkorders.md#tijd) van de wer
 
 ![De teller op werkorder 900153 van Peeters Annick: Mijn teller op 0:42, met Pauze en Stop, en daaronder de tijd op de werkorder](images/app-teller.png "De teller"){ width="300" }
 
+### Notities
+
+Onder **Notities** schrijft de medewerker op wat het kantoor of een collega moet weten: "deksel zat vast, koevoet
+meenemen". Hij tikt op **Notitie toevoegen**, typt zijn tekst (hoogstens 2000 tekens) en tikt op **Bewaren**. Elke
+notitie staat er met de naam van wie ze schreef en het moment. Een notitie van het kantoor staat er met **Kantoor**.
+
+Op kantoor ziet u ze op het tabblad [Notities](werkorders.md#notities) van de werkorder, met **door** en de naam van de
+medewerker.
+
+<!-- AFBEELDING: app-notities — de kaart Notities in de app met een notitie van Tom Verbeke en de knop Notitie toevoegen -->
+
+### Foto's
+
+Onder **Foto's** voegt de medewerker foto's toe bij de werkorder: een verstopte afvoer vóór en na, een beschadigd
+deksel. Hij tikt op **Foto toevoegen** en kiest **Foto nemen** of **Uit de galerij**. De eerste keer dat hij een foto
+neemt, vraagt het toestel toegang tot de camera. Uit de galerij ziet de app enkel de foto die hij kiest.
+
+- De app verkleint de foto vóór ze vertrekt. Zo gaat ze ook over een trage verbinding snel.
+- De locatie die een toestel in een foto bewaart, wordt gewist vóór de foto bewaard wordt.
+- Een tik op een foto toont ze groot, met wie ze nam en wanneer.
+
+Op kantoor staan de foto's bij de werkorder onder [**Journaal**](werkorders.md#journaal) › **Bijlagen**.
+
+Lukt het versturen niet, bijvoorbeeld zonder netwerk in een kelder, dan blijft de foto in de app staan met **Niet
+verstuurd** en **Opnieuw proberen**. Ze wordt niet later vanzelf verstuurd: de medewerker tikt zelf op **Opnieuw
+proberen** zodra hij weer verbinding heeft.
+
+<!-- AFBEELDING: app-fotos — de kaart Foto's in de app met een miniatuur en de knop Foto toevoegen -->
+
+### Notities en foto's verwijderen
+
+Met het vuilbakje verwijdert de medewerker zijn eigen notities en foto's, zolang de werkorder niet afgerond is. Wat een
+collega of het kantoor toevoegde, kan hij niet verwijderen. Op kantoor verwijdert wie werkorders mag bewerken elke
+notitie, op het tabblad Notities; een foto verwijdert u onder Journaal › Bijlagen.
+
 ### De betaling ter plaatse
 
 Betaalt de klant ter plaatse, dan noteert de medewerker onder **Betaling ter plaatse** het **Bedrag (incl. btw)** en de
@@ -75,8 +110,8 @@ CleanOps.
 ### Afronden
 
 Is het werk klaar, dan tikt de medewerker op **Afronden** en bevestigt hij. De werkorder krijgt de status **Te
-factureren** en staat klaar voor de [facturatie](facturatie.md). Daarna kan hij ze in de app niet meer wijzigen; zijn
-eigen tijd rechtzetten kan nog wel.
+factureren** en staat klaar voor de [facturatie](facturatie.md). Daarna kan hij ze in de app niet meer wijzigen, en ook
+geen notities of foto's meer toevoegen of verwijderen; zijn eigen tijd rechtzetten kan nog wel.
 
 Een werkorder die gepland is op een dag in de toekomst, kan hij niet afronden.
 
@@ -95,6 +130,14 @@ niet actief of met pensioen, dan kan hij zich niet aanmelden.
 **Een medewerker ziet een werkorder niet.**
 De app toont het werk van de medewerker en zijn ploeg. Kijk in de [planning](planning.md) of de werkorder op die dag
 aan hem of aan zijn ploeg toegewezen is.
+
+**Waar vind ik de foto's van een medewerker?**
+Op de werkorder, onder **Journaal** › **Bijlagen**. Ze heten *Foto* (of *Photo* als de app van de medewerker in het
+Frans staat), gevolgd door het nummer van de werkorder en het moment, bijvoorbeeld *Foto 900149 2026-10-25 20.58.30.jpg*.
+
+**Een medewerker kan geen foto nemen.**
+Gaf hij de app de eerste keer geen toegang tot de camera, dan zet hij dat aan in de instellingen van zijn toestel, bij
+de app CleanOps. Een foto uit de galerij kiezen kan intussen wel.
 
 **De tijd in de app klopt niet.**
 U zet ze recht op het tabblad [Tijd](werkorders.md#tijd) van de werkorder, of de medewerker doet het zelf met **Tijd
