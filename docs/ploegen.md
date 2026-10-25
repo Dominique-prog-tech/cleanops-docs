@@ -25,7 +25,7 @@ Kies een andere week met **← Vorige week** en **Volgende week →**; **Deze we
 | Verlof/ziekte | Wie die dag verlof, ziekteverlof of een andere afwezigheid heeft. |
 | Regimevrij | Wie volgens zijn werkregime die dag niet werkt. |
 
-Een ploeg is **groen** als de chauffeur die dag een openstaande werkorder heeft. Een feestdag of een sluitingsdag
+Een ploeg is **blauw** als de chauffeur die dag een openstaande werkorder heeft. Een feestdag of een sluitingsdag
 staat onder de datum.
 
 Ingepland, Beschikbaar en Regimevrij tellen de medewerkers die chauffeur of bijrijder zijn, actief zijn en die dag

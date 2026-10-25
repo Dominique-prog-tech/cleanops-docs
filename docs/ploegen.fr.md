@@ -26,7 +26,7 @@ vous ramène.
 | Congé / maladie | Qui est en congé, en maladie ou absent pour une autre raison ce jour-là. |
 | Libre (régime) | Qui ne travaille pas ce jour-là selon son régime de travail. |
 
-Une équipe est en **vert** si le chauffeur a un ordre de travail ouvert ce jour-là. Un jour férié ou un jour de
+Une équipe est en **bleu** si le chauffeur a un ordre de travail ouvert ce jour-là. Un jour férié ou un jour de
 fermeture figure sous la date.
 
 Planifiés, Disponibles et Libre (régime) comptent les collaborateurs qui sont chauffeur ou convoyeur, actifs et déjà
