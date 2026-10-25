@@ -33,7 +33,8 @@ De medewerker ziet enkel het werk van zichzelf en van zijn ploeg. De app gebruik
 
 De app opent op de planning van vandaag: de werkorders van de medewerker en zijn ploeg, in de volgorde van de dag. Per
 werkorder staan het tijdsdeel, de klant en het adres, met **Route** om de weg te openen in de kaartapp van het
-toestel. **Afgerond** of **Teller loopt** staat erbij als dat zo is.
+toestel. **Afgerond** (in het groen, de kaart iets vager), **Teller loopt** of **Niet uitgevoerd** (gepland op een dag
+die al voorbij is) staat erbij als dat zo is.
 
 Met de pijltjes bladert hij naar de vorige of de volgende dag, en met **Vandaag** keert hij terug.
 

@@ -33,8 +33,8 @@ Le collaborateur ne voit que son propre travail et celui de son équipe. L'appli
 
 L'application s'ouvre sur le planning du jour : les ordres de travail du collaborateur et de son équipe, dans l'ordre
 de la journée. Pour chaque ordre de travail figurent la partie de la journée, le client et l'adresse, avec
-**Itinéraire** pour ouvrir le trajet dans l'application de cartes de l'appareil. **Terminé** ou **Chrono en cours**
-s'affiche le cas échéant.
+**Itinéraire** pour ouvrir le trajet dans l'application de cartes de l'appareil. **Terminé** (en vert, la carte un peu
+plus pâle), **Chrono en cours** ou **Non exécuté** (planifié sur un jour déjà passé) s'affiche le cas échéant.
 
 Les flèches passent au jour précédent ou suivant, et **Aujourd'hui** ramène au jour même.
 

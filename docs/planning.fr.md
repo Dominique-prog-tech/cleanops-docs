@@ -17,9 +17,9 @@ Dans le menu de gauche, sous **Travail**, cliquez sur **Planning**. Le tableau d
 cours, le samedi et le dimanche sur la semaine suivante. Avec **Vue liste** en haut à droite, vous passez à la liste
 du planning, avec **Tableau de planning** vous revenez.
 
-Le tableau de planning ne montre que le travail encore à faire : les ordres de travail *encodés* ou *planifiés*. Un ordre
-exécuté disparaît du tableau. Dans la liste du planning, le filtre **Statut** montre aussi le travail exécuté et
-facturé.
+Le tableau de planning montre d'un coup d'œil ce qui reste à faire : le travail exécuté reste sur son jour, en vert et
+avec un ✓, et le travail ouvert sur un jour déjà passé porte **Non exécuté**. La liste du planning ne montre par défaut
+que le travail encore à faire ; avec le filtre **Statut**, vous voyez aussi le travail exécuté et facturé.
 
 ## Le tableau de planning
 
@@ -48,12 +48,18 @@ chantier, le type de travail et les signaux.
 | ↩ | Peut être exécuté plus tôt. |
 | ⇅ | Placé à la main : l'ordre reste là où le planificateur l'a mis, même devant une partie de journée plus tôt. |
 | ✎ | Ouvre la fiche de l'ordre de travail. Avec **← Planning**, vous revenez à la même semaine. |
+| ✓ | Exécuté : l'ordre de travail est à facturer ou facturé. |
 
 Le bord gauche de la carte en dit plus sur l'ordre :
 
 - **bleu-vert** — planifié ;
 - **orange** — le statut est encore *Encodé* ;
-- **rouge** — le client est bloqué.
+- **rouge** — le client est bloqué ;
+- **vert** — exécuté. La carte est aussi un peu plus pâle et reste en place : vous ne pouvez pas la déplacer, et si
+  vous lâchez un autre ordre dessus, celui-ci va sur sa partie de journée ce jour-là.
+
+Une carte qui porte un **Non exécuté** rouge est planifiée sur un jour déjà passé et pas encore exécutée. Déplacez-la
+vers un nouveau jour, ou indiquez la date sous **Exécuté** sur la fiche de l'ordre si le travail a bien été fait.
 
 Si un ordre porte le code d'un collaborateur qui ne figure plus dans la liste, il se trouve sous **(non attribué)**,
 avec ce code en italique en dessous.
@@ -243,7 +249,8 @@ Vous pouvez seulement consulter le planning. Demandez à votre gestionnaire le d
 
 **Un ordre de travail ne figure pas sur le planning.**
 Vérifiez qu'il a une date planifiée : sans date, il se trouve à gauche sous **Sans date**, ou sous **Encore à
-planifier** dans la liste. S'il est déjà exécuté, il ne figure plus sur le planning.
+planifier** dans la liste. Le travail exécuté figure en vert sur le tableau de planning ; dans la liste, choisissez
+**Exécuté, à facturer** ou **Facturé** sous **Statut**.
 
 **Comment remettre un ordre sans date ?**
 Dans la liste du planning : **Attribuer**, videz le **Jour planifié** et cliquez sur **Enregistrer**.

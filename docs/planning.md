@@ -15,9 +15,9 @@ er meerdere tegelijk toe, opent u de dagroute van een chauffeur en drukt u de pl
 Klik links in het menu, onder **Werk**, op **Planning**. Het planbord opent op de lopende week, op zaterdag en zondag
 op de volgende week. Met **Lijstweergave** rechtsboven gaat u naar de planningslijst, met **Planbord** weer terug.
 
-Op het planbord staat enkel werk dat nog te doen is: werkorders die *ingegeven* of *gepland* zijn. Een uitgevoerde
-werkorder verdwijnt van het planbord. In de planningslijst toont de filter **Status** ook het uitgevoerde en het
-gefactureerde werk.
+Op het planbord ziet u in één oogopslag wat nog moet: uitgevoerd werk blijft op zijn dag staan, in het groen en met
+een ✓, en open werk op een dag die al voorbij is, draagt **Niet uitgevoerd**. De planningslijst toont standaard enkel
+werk dat nog te doen is; met de filter **Status** ziet u ook het uitgevoerde en het gefactureerde werk.
 
 ## Het planbord
 
@@ -45,12 +45,19 @@ anders zegt dan de omschrijving. Wijst u een kaart aan, dan ziet u ook de werf, 
 | ↩ | Mag vroeger uitgevoerd worden. |
 | ⇅ | Met de hand geplaatst: de werkorder blijft staan waar de planner ze zette, ook vóór een vroeger tijdsdeel. |
 | ✎ | Opent de werkorderfiche. Met **← Planning** komt u terug in dezelfde week. |
+| ✓ | Uitgevoerd: de werkorder is te factureren of gefactureerd. |
 
 De rand links op de kaart zegt meer over de werkorder:
 
 - **blauwgroen** — gepland;
 - **oranje** — de status is nog *Ingegeven*;
-- **rood** — de klant is geblokkeerd.
+- **rood** — de klant is geblokkeerd;
+- **groen** — uitgevoerd. De kaart is ook iets vager en ligt vast: u kunt ze niet verslepen, en laat u een andere
+  werkorder erop los, dan komt die op haar tijdsdeel in die dag.
+
+Staat er een rode **Niet uitgevoerd** op een kaart, dan is de werkorder gepland op een dag die al voorbij is en nog niet
+uitgevoerd. Verplaats ze naar een nieuwe dag, of vul op de werkorderfiche de datum bij **Uitgevoerd** in als het werk
+toch gebeurd is.
 
 Draagt een werkorder de code van een medewerker die niet meer in de lijst staat, dan staat ze bij
 **(niet toegewezen)**, met die code schuin eronder.
@@ -236,7 +243,8 @@ U mag de planning enkel bekijken. Vraag uw beheerder om het recht om de planning
 
 **Een werkorder staat niet op de planning.**
 Kijk of ze een geplande datum heeft: zonder datum staat ze links onder **Zonder datum**, of onder **Nog in te
-plannen** in de lijst. Is ze al uitgevoerd, dan staat ze niet meer op de planning.
+plannen** in de lijst. Uitgevoerd werk staat op het planbord in het groen; in de lijst kiest u bij **Status**
+**Uitgevoerd, te factureren** of **Gefactureerd**.
 
 **Hoe zet ik een werkorder terug zonder datum?**
 In de planningslijst: **Toewijzen**, maak de **Geplande dag** leeg en klik op **Bewaren**.
