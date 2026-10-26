@@ -22,6 +22,18 @@ Le cas échéant, une étiquette indique où en est l'ordre de travail :
 | **Chrono en cours** | Le collaborateur y enregistre du temps en ce moment. |
 | **Non exécuté** | Planifié sur un jour déjà passé, et pas encore terminé. |
 
+## Blocs et congés
+
+À côté des ordres de travail, le planning montre aussi ce que le bureau a placé sur le [tableau de planning](../planning.md)
+sans ordre de travail :
+
+- un **bloc libre**, comme une formation ou un rendez-vous au garage, avec la partie de journée ou **Toute la journée** ;
+- le **congé** du collaborateur lui-même, en haut dans une carte rouge avec **Absence** : le type, « demi-journée » le
+  premier jour d'une demi-journée, et la description, comme sur le tableau de planning.
+
+Un bloc ou un congé n'ouvre pas d'ordre de travail. Le bureau modifie un congé sur la fiche du collaborateur ; le
+collaborateur le demande via **Congés** dans le menu de l'app.
+
 ## Un autre jour
 
 Les flèches à côté de la date passent au jour précédent ou suivant, et **Aujourd'hui** ramène au jour même.

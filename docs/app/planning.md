@@ -21,6 +21,17 @@ Staat het er, dan zegt een label hoe de werkorder ervoor staat:
 | **Teller loopt** | De medewerker registreert er nu tijd op. |
 | **Niet uitgevoerd** | Gepland op een dag die al voorbij is, en nog niet afgerond. |
 
+## Blokken en verlof
+
+Naast de werkorders toont de planning ook wat het kantoor op het [planbord](../planning.md) zette zonder werkorder:
+
+- een **vrij blok**, zoals een opleiding of een afspraak in de garage, met het tijdsdeel of **Hele dag**;
+- het **verlof** van de medewerker zelf, bovenaan in een rode kaart met **Afwezig**: de soort, "halve dag" op de
+  eerste dag van een halve dag, en de omschrijving, zoals op het planbord.
+
+Een blok of verlof opent geen werkorder. Verlof wijzigt het kantoor op de fiche van de medewerker; de medewerker vraagt
+het aan via **Verlof** in het menu van de app.
+
 ## Een andere dag
 
 Met de pijltjes naast de datum bladert de medewerker naar de vorige of de volgende dag, en met **Vandaag** keert hij
