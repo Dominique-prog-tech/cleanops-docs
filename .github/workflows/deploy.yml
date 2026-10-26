@@ -33,6 +33,11 @@ jobs:
       # #anker dat niet bestaat laat de bouw FALEN (zie `validation:` in mkdocs.yml). De vorige versie blijft dan
       # online staan. Zonder --strict was een dode link een regel in dit logboek die niemand las.
       - run: mkdocs build --strict
+      # Staat elk beeld uit de bron ook als <img> in de gebouwde site? Bij Nimble en CreditSoft verdwenen op 19/10/2026
+      # alle schermafdrukken bij het bouwen (selectolax 1.0.1, zie requirements.txt) terwijl alle stappen groen bleven.
+      # Deze mag de uitrol TEGENHOUDEN.
+      - name: Beelden controleren (bron tegen gebouwde site)
+        run: python3 tools/check-beelden.py site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
