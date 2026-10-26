@@ -201,6 +201,12 @@ plugins:
             Tweestapsverificatie: Vérification en deux étapes
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
+            Mobiele app: Application mobile
+            De planning: Le planning
+            De werkorder: L'ordre de travail
+            Laten tekenen: Faire signer
+            Werkorder aanmaken: Créer un ordre de travail
+            Verlof: Congés
             Documentnummers: Numéros de documents
             Boekhouding: Comptabilité
             Boekjaren: Exercices comptables
@@ -293,6 +299,15 @@ nav:
     - Aankoopfacturen: aankoopfacturen.md
     - Openstaande posten: openstaande-posten-leveranciers.md
     - Betalingsvoorstel: betalingsvoorstel.md
+  # De mobiele app (26/10/2026, Dominique: "als een afzonderlijk item", zoals Nimble). Al online vóór de app in de winkels staat
+  # (Dominique 26/10: "de testers moeten een idee hebben van de functionaliteiten"), met een melding "in test" bovenaan elke pagina.
+  - Mobiele app:
+    - Aan de slag: app/aan-de-slag.md
+    - De planning: app/planning.md
+    - De werkorder: app/werkorder.md
+    - Laten tekenen: app/laten-tekenen.md
+    - Werkorder aanmaken: app/werkorder-aanmaken.md
+    - Verlof: app/verlof.md
   # De kopjes zijn de groepen van de hub (AdministrationCatalog.Groups). "Overzetting en platform" ontbreekt bewust: dat
   # zijn ADM-interne schermen (docs/intern/). Gebruikers staat er niet: geen eigen pagina (beheer via ADM One).
   # ⚠️ "Overzicht" stond tot 05/10/2026 NIET in het menu: de pagina bestond, maar was enkel via een link bereikbaar.

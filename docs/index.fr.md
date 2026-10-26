@@ -74,6 +74,16 @@ rappels.
     [Postes ouverts fournisseurs](openstaande-posten-leveranciers.md) ·
     [Proposition de paiement](betalingsvoorstel.md)
 
+-   :material-cellphone: **Application mobile**
+
+    ---
+
+    L'application pour vos collaborateurs sur le terrain : leur planning, le chrono, les notes et les photos, le
+    paiement sur place, la signature du client et leurs congés. *En test : pas encore dans l'App Store et Google Play.*
+
+    [Premiers pas](app/aan-de-slag.md) · [Le planning](app/planning.md) · [L'ordre de travail](app/werkorder.md) ·
+    [Faire signer](app/laten-tekenen.md) · [Créer un ordre de travail](app/werkorder-aanmaken.md) · [Congés](app/verlof.md)
+
 -   :material-cog-outline: **Administration**
 
     ---
