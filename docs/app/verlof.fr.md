@@ -4,20 +4,15 @@ description: "Les congés dans l'application CleanOps : voir le solde, les cong�
 
 # Congés
 
-!!! info "L'application est en test"
-    L'application mobile n'est pas encore disponible dans l'App Store et Google Play. Cette page montre déjà ce qu'elle
-    sait faire, pour que vous puissiez la découvrir. Ce que le bureau en voit, comme l'onglet **Temps** ou **Signé par le
-    client** sur l'ordre de travail, arrivera avec l'application.
-
 Sous **Congés**, le collaborateur voit combien de jours de congé il lui reste, quels congés sont enregistrés pour lui et ce que
 le bureau a fait de ses demandes. Il y demande aussi lui-même un congé. Le bureau décide dans CleanOps, dans
-**Demandes de congé**.
+[Demandes de congé](../verlofaanvragen.fr.md).
 
 ## Ouvrir l'écran
 
 Ouvrez le menu avec les trois traits en haut à gauche et touchez **Congés**.
 
-![L'écran Congés de Julien Lambert : en haut Solde 2026 avec 4,5 jours restants et 4 jours qui attendent encore le bureau, en dessous sa demande avec le bouton Retirer, les congés de 2026 et après, et en bas une demande refusée avec la raison du bureau. En bas à droite le bouton Demander un congé](../images/app-verlof-fr.png "Congés"){ width="560" }
+![L'écran Congés de Julien Lambert : en haut Solde 2026 avec les jours restants, en dessous une demande en attente du bureau avec le bouton Retirer, les congés de 2026 et après, et en bas une demande approuvée. En bas à droite le bouton Demander un congé](../images/app-verlof-fr.png "Congés"){ width="560" }
 
 ## Ce que le collaborateur voit
 
@@ -57,7 +52,7 @@ congé au bureau.* Il voit bien le solde et les congés enregistrés.
 
 **Congés n'apparaît pas dans le menu.**
 Votre entreprise ne tient alors pas les congés dans CleanOps : la fonction Congés est désactivée dans
-**Gestion de la plateforme › Fonctions**.
+[Gestion de la plateforme › Fonctions](../beheer/functies.fr.md).
 
 **L'application refuse la demande : un congé ou une demande existe déjà pour cette période.**
 Pour les mêmes jours, il ne peut y avoir qu'un congé ou qu'une demande en attente. Choisissez d'autres jours, ou retirez
@@ -69,6 +64,6 @@ ajouté entre-temps, le congé enregistré en tient compte.
 
 ## Voir aussi
 
-- **Demandes de congé**, où le bureau décide
+- [Demandes de congé](../verlofaanvragen.fr.md), où le bureau décide
 - [Soldes de congés](../verlofsaldi.fr.md)
 - [Bien démarrer avec l'application](aan-de-slag.fr.md)

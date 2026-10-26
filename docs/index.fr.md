@@ -41,7 +41,7 @@ première visite guidée à la facture : [Vidéos](videos.md).
     Vos clients avec leurs adresses et leurs contrats, vos collaborateurs et leurs congés, et vos fournisseurs.
 
     [Clients](klanten.md) · [Collaborateurs](medewerkers.md) · [Soldes de congés](verlofsaldi.md) ·
-    [Agenda des congés](verlofkalender.md) · [Fournisseurs](leveranciers.md)
+    [Agenda des congés](verlofkalender.md) · [Demandes de congé](verlofaanvragen.md) · [Fournisseurs](leveranciers.md)
 
 -   :material-clipboard-text-clock: **Travail**
 
@@ -82,10 +82,10 @@ première visite guidée à la facture : [Vidéos](videos.md).
     ---
 
     L'application pour vos collaborateurs sur le terrain : leur planning, le chrono, les notes et les photos, le
-    paiement sur place et la signature du client.
+    paiement sur place, la signature du client et leurs congés.
 
     [Premiers pas](app/aan-de-slag.md) · [Le planning](app/planning.md) · [L'ordre de travail](app/werkorder.md) ·
-    [Faire signer](app/laten-tekenen.md)
+    [Faire signer](app/laten-tekenen.md) · [Congés](app/verlof.md)
 
 -   :material-cog-outline: **Administration**
 

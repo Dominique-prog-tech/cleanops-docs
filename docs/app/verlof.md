@@ -4,20 +4,15 @@ description: "Verlof in de app van CleanOps: het saldo, het geboekte verlof en d
 
 # Verlof
 
-!!! info "De app is in test"
-    De mobiele app staat nog niet in de App Store en Google Play. Deze pagina toont al wat ze kan, zodat u ze kunt leren
-    kennen. Wat het kantoor ervan ziet, zoals het tabblad **Tijd** of **Getekend door de klant** op de werkorder, komt
-    samen met de app.
-
 Onder **Verlof** ziet de medewerker hoeveel verlofdagen hij nog heeft, welk verlof er voor hem geboekt is en wat het kantoor
 met zijn aanvragen deed. Hij vraagt er ook zelf verlof aan. Het kantoor beslist in CleanOps, in
-**Verlofaanvragen**.
+[Verlofaanvragen](../verlofaanvragen.md).
 
 ## Het scherm openen
 
 Open het menu met de drie streepjes linksboven en tik op **Verlof**.
 
-![Het scherm Verlof van Tom Verbeke: bovenaan Saldo 2026 met 6,5 dagen over en 4 dagen die nog op het kantoor wachten, daaronder zijn aanvraag met de knop Intrekken, het verlof van 2026 en later, en onderaan een geweigerde aanvraag met de reden van het kantoor. Rechtsonder de knop Verlof aanvragen](../images/app-verlof.png "Verlof"){ width="560" }
+![Het scherm Verlof van Tom Verbeke: bovenaan Saldo 2026 met 3,5 dagen over, daaronder één aanvraag die wacht op het kantoor met de knop Intrekken, het verlof van 2026 en later, en onderaan een goedgekeurde aanvraag. Rechtsonder de knop Verlof aanvragen](../images/app-verlof.png "Verlof"){ width="560" }
 
 ## Wat de medewerker ziet
 
@@ -56,7 +51,7 @@ Het saldo en het geboekte verlof ziet hij wel.
 
 **Verlof staat niet in het menu.**
 Dan houdt uw bedrijf het verlof niet in CleanOps bij: de functie Verlof staat uit in
-**Platformbeheer › Functies**.
+[Platformbeheer › Functies](../beheer/functies.md).
 
 **De app weigert de aanvraag: er staat al verlof of een aanvraag in die periode.**
 Voor dezelfde dagen kan er maar één verlof of één wachtende aanvraag zijn. Kies andere dagen, of trek de wachtende aanvraag
@@ -68,6 +63,6 @@ bijgekomen, dan telt het geboekte verlof dat mee.
 
 ## Zie ook
 
-- **Verlofaanvragen**, waar het kantoor beslist
+- [Verlofaanvragen](../verlofaanvragen.md), waar het kantoor beslist
 - [Verlofsaldi](../verlofsaldi.md)
 - [Aan de slag met de app](aan-de-slag.md)

@@ -361,6 +361,15 @@ const SCHOTEN = [
   // De lijst: merkteken = Nina Van Hecke, met haar brugdag op 0 dagen. Sinds 22/10/2026 ZONDER waarschuwing: die dag (een donderdag)
   // werkt ze volgens haar regime niet, en enkel een 0 op een werkdag is een gat (LeaveBalanceRules.OpEenWerkdag).
   { naam: 'verlofkalender-lijst', route: '/verlofkalender/lijst', verwacht: /Nina Van Hecke/ },
+  // Verlofaanvragen uit de app (demopunt 4, 26/10/2026). De demo legt per taal een wachtende aanvraag (DemoDataGenerator.VerzinMedewerkersAsync):
+  // het merkteken is de opmerking van de Franse, die enkel op deze lijst staat. Het venster: per taal de eigen voorbeeldmedewerker, zodat
+  // de opmerking in de taal van het beeld staat. ⚠️ Het recept klikt NOOIT op Goedkeuren of Weigeren: dat boekt verlof in de demo.
+  { naam: 'verlofaanvragen-lijst', route: '/verlofaanvragen', verwacht: /Visite familiale/ },
+  { naam: 'verlofaanvraag-venster', route: '/verlofaanvragen',
+    verwacht: tekstTaal('Verlofaanvraag — Tom Verbeke', 'Demande de congé — Julien Lambert'),
+    na: async (p, taal) => {
+      await p.getByRole('row').filter({ hasText: taal === 'fr-BE' ? DEMO.medewerkerFr : DEMO.medewerker }).first().dblclick();
+    } },
   // Werkorders (vrijgave 02/10/2026): lijst, fiche (bovenaan en het blok Facturatie), een nieuwe werkorder en de leveringsbon —
   // uit de demo (DemoDataGenerator.VerzinContractenEnWerkordersAsync). ⚠️ PER TAAL EEN ANDERE WERKORDER, zoals bij Klanten: de
   // Franse ronde neemt die van Résidence Les Tilleuls, anders staan er Nederlandse instructies op een Frans beeld — en de
@@ -1349,7 +1358,8 @@ const zonderVerwijzing = SCHOTEN.flatMap(s => [s.naam, `${s.naam}-fr`]).filter(n
 // - 26/10/2026: de tabletreeks voor de vier pagina's onder docs/app/, uit de eigen simulator "CleanOps iPad 13" (2064 x 2752, op de helft:
 //   1032 x 1376), met de demochauffeur Tom Verbeke. app-werkorder viel weg: de planning op een tablet toont de werkorder ernaast.
 const BUITEN_SCRIPT = new Set(['app-planning', 'app-teller', 'app-betaling', 'app-notities-fotos', 'app-foto-kiezen', 'app-nakijken',
-  'app-tekenen', 'app-getekend', 'app-mail', 'app-menu', 'app-profiel'].flatMap(n => [n, `${n}-fr`]));
+  'app-tekenen', 'app-getekend', 'app-mail', 'app-menu', 'app-profiel',
+  'app-verlof', 'app-verlof-aanvragen'].flatMap(n => [n, `${n}-fr`]));
 const zonderRecept = Object.keys(ALT).filter(n => !BUITEN_SCRIPT.has(n) && !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
 
 // ⚠️ De terugval op de hoofdkloon zweeg: op 26/10/2026 liep de preview in een worktree en meldde het verslag een commit van 08/10.

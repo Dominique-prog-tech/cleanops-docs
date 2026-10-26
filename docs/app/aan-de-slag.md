@@ -6,7 +6,7 @@ description: "Aan de slag met de mobiele app van CleanOps: toegang geven aan een
 
 Met de app CleanOps hebben uw medewerkers in het veld hun planning en hun werkorders bij de hand. Ze registreren hun
 werkuren met een teller, noteren wat het kantoor moet weten, nemen foto's, noteren een betaling ter plaatse en laten de
-klant de leveringsbon aftekenen. Wat ze in de app doen, ziet u meteen in CleanOps op kantoor.
+klant de leveringsbon aftekenen. Ze zien er ook hun verlof en vragen verlof aan. Wat ze in de app doen, ziet u meteen in CleanOps op kantoor.
 
 De app werkt op een iPhone, een iPad en een Android-toestel, in het Nederlands en het Frans. De medewerker ziet enkel
 zijn eigen werk en dat van zijn ploeg. De app gebruikt zijn locatie niet.
@@ -16,6 +16,7 @@ zijn eigen werk en dat van zijn ploeg. De app gebruikt zijn locatie niet.
 | De planning van de dag en de werkorder openen | [De planning](planning.md) |
 | De teller, notities, foto's en de betaling ter plaatse | [De werkorder](werkorder.md) |
 | De klant laten aftekenen, de getekende bon mailen, afronden | [Laten tekenen](laten-tekenen.md) |
+| Het verlofsaldo, het geboekte verlof en verlof aanvragen | [Verlof](verlof.md) |
 
 ## Toegang geven
 
@@ -34,10 +35,10 @@ kiezen.
 
 ## Het menu
 
-Met de drie streepjes linksboven opent het menu: de naam en het e-mailadres van de medewerker, **Planning**, **Profiel**
-en onderaan **Afmelden**.
+Met de drie streepjes linksboven opent het menu: de naam en het e-mailadres van de medewerker, **Planning**, **Verlof**,
+**Profiel** en onderaan **Afmelden**.
 
-![Het menu van de app op een tablet: bovenaan Tom Verbeke met zijn e-mailadres, daaronder Planning en Profiel, en onderaan Afmelden](../images/app-menu.png "Het menu"){ width="560" }
+![Het menu van de app op een tablet: bovenaan Tom Verbeke met zijn e-mailadres, daaronder Planning, Verlof en Profiel, en onderaan Afmelden](../images/app-menu.png "Het menu"){ width="560" }
 
 ## Het profiel
 

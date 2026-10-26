@@ -6,7 +6,7 @@ description: "Bien démarrer avec l'application mobile CleanOps : donner l'accè
 
 Avec l'application CleanOps, vos collaborateurs sur le terrain ont leur planning et leurs ordres de travail sous la
 main. Ils enregistrent leurs heures avec un chrono, notent ce que le bureau doit savoir, prennent des photos, notent un
-paiement sur place et font signer le bon de livraison par le client. Ce qu'ils font dans l'application, vous le voyez
+paiement sur place et font signer le bon de livraison par le client. Ils y voient aussi leurs congés et en demandent. Ce qu'ils font dans l'application, vous le voyez
 immédiatement dans CleanOps au bureau.
 
 L'application fonctionne sur un iPhone, un iPad et un appareil Android, en néerlandais et en français. Le collaborateur
@@ -17,6 +17,7 @@ ne voit que son propre travail et celui de son équipe. L'application n'utilise 
 | Le planning du jour et l'ouverture d'un ordre de travail | [Le planning](planning.fr.md) |
 | Le chrono, les notes, les photos et le paiement sur place | [L'ordre de travail](werkorder.fr.md) |
 | Faire signer le client, envoyer le bon signé, terminer | [Faire signer](laten-tekenen.fr.md) |
+| Le solde de congés, les congés enregistrés et demander un congé | [Congés](verlof.fr.md) |
 
 ## Donner l'accès
 
@@ -36,9 +37,9 @@ fiche.
 ## Le menu
 
 Les trois traits en haut à gauche ouvrent le menu : le nom et l'adresse e-mail du collaborateur, **Planning**,
-**Profil** et en bas **Se déconnecter**.
+**Congés**, **Profil** et en bas **Se déconnecter**.
 
-![Le menu de l'application sur une tablette : en haut Tom Verbeke avec son adresse e-mail, puis Planning et Profil, et en bas Se déconnecter](../images/app-menu-fr.png "Le menu"){ width="560" }
+![Le menu de l'application sur une tablette : en haut Tom Verbeke avec son adresse e-mail, puis Planning, Congés et Profil, et en bas Se déconnecter](../images/app-menu-fr.png "Le menu"){ width="560" }
 
 ## Le profil
 

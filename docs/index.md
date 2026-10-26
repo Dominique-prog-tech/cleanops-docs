@@ -40,7 +40,7 @@ factuur: [Video's](videos.md).
     Uw klanten met hun adressen en contracten, uw medewerkers en hun verlof, en uw leveranciers.
 
     [Klanten](klanten.md) · [Medewerkers](medewerkers.md) · [Verlofsaldi](verlofsaldi.md) ·
-    [Verlofkalender](verlofkalender.md) · [Leveranciers](leveranciers.md)
+    [Verlofkalender](verlofkalender.md) · [Verlofaanvragen](verlofaanvragen.md) · [Leveranciers](leveranciers.md)
 
 -   :material-clipboard-text-clock: **Werk**
 
@@ -80,11 +80,11 @@ factuur: [Video's](videos.md).
 
     ---
 
-    De app voor uw medewerkers in het veld: hun planning, de teller, notities en foto's, de betaling ter plaatse en de
-    handtekening van de klant.
+    De app voor uw medewerkers in het veld: hun planning, de teller, notities en foto's, de betaling ter plaatse, de
+    handtekening van de klant en hun verlof.
 
     [Aan de slag](app/aan-de-slag.md) · [De planning](app/planning.md) · [De werkorder](app/werkorder.md) ·
-    [Laten tekenen](app/laten-tekenen.md)
+    [Laten tekenen](app/laten-tekenen.md) · [Verlof](app/verlof.md)
 
 -   :material-cog-outline: **Platformbeheer**
 
