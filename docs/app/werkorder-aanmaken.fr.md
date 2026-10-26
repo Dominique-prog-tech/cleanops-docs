@@ -4,11 +4,6 @@ description: "Créer un ordre de travail dans l'application CleanOps : choisir l
 
 # Créer un ordre de travail
 
-!!! info "L'application est en test"
-    L'application mobile n'est pas encore disponible dans l'App Store et Google Play. Cette page montre déjà ce qu'elle
-    sait faire, pour que vous puissiez la découvrir. Ce que le bureau en voit, comme l'onglet **Temps** ou **Signé par le
-    client** sur l'ordre de travail, arrivera avec l'application.
-
 Si un client demande un travail supplémentaire sur place, le collaborateur crée lui-même un ordre de travail dans
 l'application. Il apparaît aussitôt dans le planning, et le bureau le voit dans CleanOps. Le tarif, la TVA et la facturation,
 c'est le bureau.

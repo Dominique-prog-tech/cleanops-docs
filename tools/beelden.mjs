@@ -1359,7 +1359,7 @@ const zonderVerwijzing = SCHOTEN.flatMap(s => [s.naam, `${s.naam}-fr`]).filter(n
 //   1032 x 1376), met de demochauffeur Tom Verbeke. app-werkorder viel weg: de planning op een tablet toont de werkorder ernaast.
 const BUITEN_SCRIPT = new Set(['app-planning', 'app-teller', 'app-betaling', 'app-notities-fotos', 'app-foto-kiezen', 'app-nakijken',
   'app-tekenen', 'app-getekend', 'app-mail', 'app-menu', 'app-profiel',
-  'app-verlof', 'app-verlof-aanvragen'].flatMap(n => [n, `${n}-fr`]));
+  'app-verlof', 'app-verlof-aanvragen', 'app-werkorder-nieuw'].flatMap(n => [n, `${n}-fr`]));
 const zonderRecept = Object.keys(ALT).filter(n => !BUITEN_SCRIPT.has(n) && !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
 
 // ⚠️ De terugval op de hoofdkloon zweeg: op 26/10/2026 liep de preview in een worktree en meldde het verslag een commit van 08/10.

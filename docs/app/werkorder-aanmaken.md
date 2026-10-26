@@ -4,11 +4,6 @@ description: "Een werkorder aanmaken in de app van CleanOps: klant en adres kiez
 
 # Een werkorder aanmaken
 
-!!! info "De app is in test"
-    De mobiele app staat nog niet in de App Store en Google Play. Deze pagina toont al wat ze kan, zodat u ze kunt leren
-    kennen. Wat het kantoor ervan ziet, zoals het tabblad **Tijd** of **Getekend door de klant** op de werkorder, komt
-    samen met de app.
-
 Vraagt een klant ter plaatse om extra werk, dan maakt de medewerker zelf een werkorder aan in de app. Ze staat meteen in
 de planning, en het kantoor ziet ze in CleanOps. Het tarief, de btw en de facturatie doet het kantoor.
 

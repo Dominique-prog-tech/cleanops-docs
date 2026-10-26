@@ -84,7 +84,7 @@ factuur: [Video's](videos.md).
     handtekening van de klant en hun verlof.
 
     [Aan de slag](app/aan-de-slag.md) · [De planning](app/planning.md) · [De werkorder](app/werkorder.md) ·
-    [Laten tekenen](app/laten-tekenen.md) · [Verlof](app/verlof.md)
+    [Laten tekenen](app/laten-tekenen.md) · [Werkorder aanmaken](app/werkorder-aanmaken.md) · [Verlof](app/verlof.md)
 
 -   :material-cog-outline: **Platformbeheer**
 

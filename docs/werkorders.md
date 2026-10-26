@@ -34,6 +34,8 @@ factuur van de werkorder gecrediteerd is.
   Werkorders die in uw vorige toepassing zonder factuurdatum staan, vindt u met deze keuze niet.
 - **Tarief** — typ een deel van de omschrijving en kies het tarief: de lijst toont dan enkel de werkorders met dat
   tarief. Ook gearchiveerde tarieven staan erin, want oudere werkorders dragen ze nog. Het kruisje wist uw keuze.
+- **Aangemaakt** — kies **Uit de app** voor enkel de werkorders die een medewerker in de [app](app/werkorder-aanmaken.md)
+  aanmaakte, bijvoorbeeld om er het tarief op te zetten.
 - **Klant** — **Meer… → Werkorders** op de [klantfiche](klanten.md#de-knoppen-onderaan) opent deze lijst met enkel de
   werkorders van die klant, over alle statussen. Bovenaan staat dan **Klant:** met de naam; het kruisje ernaast toont
   weer de werkorders van alle klanten.
@@ -76,7 +78,8 @@ Na **Bewaren** opent de fiche van de nieuwe werkorder.
 
 ## De werkorderfiche
 
-Bovenaan staan het nummer en de status. Daaronder een kaart met de feiten rond de werkorder: de klant, het contract
+Bovenaan staan het nummer en de status. Maakte een medewerker de werkorder aan in de [app](app/werkorder-aanmaken.md), dan staat
+ernaast **Uit de app** met zijn naam; ga erover met de muis voor de dag. Daaronder een kaart met de feiten rond de werkorder: de klant, het contract
 waaruit ze voortkomt, de offerte waaruit ze ontstond, de datum van ingave, de telefoon van de werkorder, het e-mailadres van het
 adres — of van de klant, als het adres er geen heeft —, het bedrag met de btw-code, en de factuur. Klik op de klant of het contract om het te openen. Is de klant geblokkeerd, dan
 staat er **Klant geblokkeerd** naast de naam; u kunt gewoon verder.

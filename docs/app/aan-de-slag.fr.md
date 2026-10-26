@@ -17,6 +17,7 @@ ne voit que son propre travail et celui de son équipe. L'application n'utilise 
 | Le planning du jour et l'ouverture d'un ordre de travail | [Le planning](planning.fr.md) |
 | Le chrono, les notes, les photos et le paiement sur place | [L'ordre de travail](werkorder.fr.md) |
 | Faire signer le client, envoyer le bon signé, terminer | [Faire signer](laten-tekenen.fr.md) |
+| Créer soi-même un ordre de travail, pour soi ou un collègue | [Créer un ordre de travail](werkorder-aanmaken.fr.md) |
 | Le solde de congés, les congés enregistrés et demander un congé | [Congés](verlof.fr.md) |
 
 ## Donner l'accès

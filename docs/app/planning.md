@@ -6,7 +6,7 @@ description: "De planning in de mobiele app van CleanOps: het werk van de dag pe
 
 De app opent op de planning van vandaag: de werkorders van de medewerker en zijn ploeg, in de volgorde van de dag.
 
-![De planning in de app op een tablet op maandag 26 oktober: links drie werkorders van Tom Verbeke, elk met het tijdsdeel, de klant, het adres en Route, rechts de gekozen werkorder van Tuincentrum De Linde met Mijn teller](../images/app-planning.png "De planning"){ width="560" }
+![De planning in de app op een tablet op maandag 2 november, met de ploeg van Tom Verbeke: links twee werkorders, elk met het tijdsdeel, de klant, het adres en Route, en onderaan de knop Nieuwe werkorder; rechts de gekozen werkorder van Tuincentrum De Linde met Mijn teller](../images/app-planning.png "De planning"){ width="560" }
 
 ## Per werkorder
 
@@ -25,6 +25,11 @@ Staat het er, dan zegt een label hoe de werkorder ervoor staat:
 
 Met de pijltjes naast de datum bladert de medewerker naar de vorige of de volgende dag, en met **Vandaag** keert hij
 terug.
+
+## Een nieuwe werkorder
+
+Met **Nieuwe werkorder** onderaan maakt de medewerker zelf een werkorder aan, voor zichzelf of een collega. Zie
+[Een werkorder aanmaken](werkorder-aanmaken.md).
 
 ## De werkorder openen
 

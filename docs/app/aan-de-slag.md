@@ -16,6 +16,7 @@ zijn eigen werk en dat van zijn ploeg. De app gebruikt zijn locatie niet.
 | De planning van de dag en de werkorder openen | [De planning](planning.md) |
 | De teller, notities, foto's en de betaling ter plaatse | [De werkorder](werkorder.md) |
 | De klant laten aftekenen, de getekende bon mailen, afronden | [Laten tekenen](laten-tekenen.md) |
+| Zelf een werkorder aanmaken, voor zichzelf of een collega | [Werkorder aanmaken](werkorder-aanmaken.md) |
 | Het verlofsaldo, het geboekte verlof en verlof aanvragen | [Verlof](verlof.md) |
 
 ## Toegang geven

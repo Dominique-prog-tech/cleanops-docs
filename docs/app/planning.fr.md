@@ -7,7 +7,7 @@ description: "Le planning dans l'application mobile CleanOps : le travail du jou
 L'application s'ouvre sur le planning du jour : les ordres de travail du collaborateur et de son équipe, dans l'ordre
 de la journée.
 
-![Le planning dans l'application sur une tablette le lundi 26 octobre : à gauche deux ordres de travail de Tom Verbeke, chacun avec la partie de la journée, le client, l'adresse et Itinéraire, à droite l'ordre choisi de Résidence Les Tilleuls avec Mon chrono](../images/app-planning-fr.png "Le planning"){ width="560" }
+![Le planning dans l'application sur une tablette le lundi 2 novembre, pour Julien Lambert avec Nina Van Hecke : à gauche un ordre de travail avec la partie de la journée, l'heure, le client, l'adresse et Itinéraire, et en bas le bouton Nouvel ordre ; à droite l'ordre choisi de Résidence Les Tilleuls avec Mon chrono](../images/app-planning-fr.png "Le planning"){ width="560" }
 
 ## Par ordre de travail
 
@@ -25,6 +25,11 @@ Le cas échéant, une étiquette indique où en est l'ordre de travail :
 ## Un autre jour
 
 Les flèches à côté de la date passent au jour précédent ou suivant, et **Aujourd'hui** ramène au jour même.
+
+## Un nouvel ordre de travail
+
+Avec **Nouvel ordre** en bas, le collaborateur crée lui-même un ordre de travail, pour lui-même ou un collègue. Voir
+[Créer un ordre de travail](werkorder-aanmaken.fr.md).
 
 ## Ouvrir l'ordre de travail
 

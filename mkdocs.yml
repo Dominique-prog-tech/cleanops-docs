@@ -225,6 +225,7 @@ plugins:
             De planning: Le planning
             De werkorder: L'ordre de travail
             Laten tekenen: Faire signer
+            Werkorder aanmaken: Créer un ordre de travail
             Verlof: Congés
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
@@ -345,6 +346,7 @@ nav:
     - De planning: app/planning.md
     - De werkorder: app/werkorder.md
     - Laten tekenen: app/laten-tekenen.md
+    - Werkorder aanmaken: app/werkorder-aanmaken.md
     - Verlof: app/verlof.md
   # De kopjes zijn de groepen van de hub (AdministrationCatalog.Groups). "Overzetting en platform" ontbreekt bewust: dat
   # zijn ADM-interne schermen (docs/intern/). Gebruikers staat er niet: geen eigen pagina (beheer via ADM One).

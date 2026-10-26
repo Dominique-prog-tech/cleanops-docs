@@ -37,6 +37,8 @@ de la note de crédit lorsque la facture de l'ordre a été créditée.
 - **Tarif** — tapez une partie de la description et choisissez le tarif : la liste ne montre alors que les ordres de
   travail avec ce tarif. Les tarifs archivés y figurent aussi, car des ordres plus anciens les portent encore. La croix
   efface votre choix.
+- **Créé** — choisissez **Depuis l'app** pour ne voir que les ordres de travail qu'un collaborateur a créés dans
+  l'[application](app/werkorder-aanmaken.fr.md), par exemple pour y ajouter le tarif.
 - **Client** — **Plus… → Ordres de travail** sur la [fiche client](klanten.md#les-boutons-en-bas) ouvre cette liste
   avec uniquement les ordres de ce client, tous statuts confondus. En haut figure alors **Client :** suivi du nom ; la
   croix à côté affiche à nouveau les ordres de tous les clients.
@@ -82,7 +84,9 @@ Après **Enregistrer**, la fiche du nouvel ordre s'ouvre.
 
 ## La fiche de l'ordre de travail
 
-En haut figurent le numéro et le statut. En dessous, une carte avec les faits autour de l'ordre : le client, le
+En haut figurent le numéro et le statut. Si un collaborateur a créé l'ordre de travail dans
+l'[application](app/werkorder-aanmaken.fr.md), **Depuis l'app** figure à côté avec son nom ; survolez-le avec la souris pour
+voir le jour. En dessous, une carte avec les faits autour de l'ordre : le client, le
 contrat dont il est issu, le devis dont il découle, la date d'encodage, le téléphone de l'ordre, l'e-mail de l'adresse — ou du
 client, si l'adresse n'en a pas —, le montant avec le code TVA, et la facture. Cliquez sur le client ou le contrat pour l'ouvrir. Si le client est bloqué,
 **Client bloqué** figure à côté du nom ; vous pouvez continuer normalement.
