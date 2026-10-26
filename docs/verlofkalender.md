@@ -41,7 +41,7 @@ de omschrijving te zien.
 - **Sleep met de muis over meerdere dagen** in dezelfde rij om een periode te boeken: de dagen lichten op, en bij het loslaten
   opent het venster met die begin- en einddatum.
 
-![Het venster Verlof boeken voor Tom Verbeke na het slepen over vijf dagen, met Van en Tot ingevuld en de verlofdagen geteld](images/verlofkalender-boeken.png "Verlof boeken")
+![Het venster Verlof boeken voor Tom Verbeke na het slepen over vier werkdagen, met Van en Tot ingevuld en de verlofdagen geteld](images/verlofkalender-boeken.png "Verlof boeken")
 
 Het venster is hetzelfde als op de [medewerkerfiche](medewerkers.md#het-tabblad-verlof): kies de soort, vul een omschrijving
 in en klik op **Bewaren**. CleanOps telt de verlofdagen volgens het werkregime en de feestdagen.

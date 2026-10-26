@@ -43,7 +43,7 @@ description.
 - **Faites glisser la souris sur plusieurs jours** de la même ligne pour réserver une période : les jours s'éclairent et, au
   relâchement, la fenêtre s'ouvre avec ces dates de début et de fin.
 
-![La fenêtre Réserver un congé pour Tom Verbeke après avoir fait glisser la souris sur cinq jours, avec Du et Au remplis et les jours de congé comptés](images/verlofkalender-boeken-fr.png "Réserver un congé")
+![La fenêtre Réserver un congé pour Tom Verbeke après avoir fait glisser la souris sur quatre jours ouvrables, avec Du et Au remplis et les jours de congé comptés](images/verlofkalender-boeken-fr.png "Réserver un congé")
 
 La fenêtre est la même que sur la [fiche du collaborateur](medewerkers.fr.md#longlet-conges) : choisissez le type, indiquez
 une description et enregistrez. CleanOps compte les jours de congé selon le régime de travail et les jours fériés.

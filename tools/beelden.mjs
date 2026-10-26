@@ -353,7 +353,14 @@ const SCHOTEN = [
       const rij = p.locator('.vk-tabel tbody tr').filter({ hasText: 'Tom Verbeke' }).first();
       await rij.waitFor({ timeout: 15000 });
       const cel = async n => { const b = await rij.locator('td').nth(n).boundingBox(); return { x: b.x + b.width / 2, y: b.y + b.height / 2 }; };
-      const van = await cel(12), tot = await cel(15);   // 22/10/2026: 5–9 raakte de ziekteperiode (05–06) van de demo
+      // De eerste reeks van VIER gewone werkdagen (een cel zonder klasse: geen verlof, ziekte of vrije dag). Geen vaste dagen meer: de
+      // demo zet haar verlof en ziekte RELATIEF tegenover vandaag, dus ze schuiven mee — 22/10/2026 raakte 5–9 de ziekte, 26/10/2026 raakte
+      // 12–15 ze opnieuw (ziekte 12–13). td 0 is de naam; td n is dag n van de maand.
+      const vrij = await rij.locator('td').evaluateAll(tds => tds.map(td => td.className.trim() === ''));
+      let begin = -1;
+      for (let n = 1; n + 3 < vrij.length && begin < 0; n++) if (vrij[n] && vrij[n + 1] && vrij[n + 2] && vrij[n + 3]) begin = n;
+      if (begin < 0) throw new Error('geen vier opeenvolgende vrije werkdagen voor Tom Verbeke in deze maand');
+      const van = await cel(begin), tot = await cel(begin + 3);
       await p.mouse.move(van.x, van.y); await p.mouse.down();
       await p.mouse.move(tot.x, tot.y, { steps: 12 }); await p.waitForTimeout(300);
       await p.mouse.up();
@@ -403,11 +410,11 @@ const SCHOTEN = [
       // ⚠️ De titel is "Tijd" ZONDER aantal tot het tabblad open is: het aantal komt pas wanneer het raster geladen is (25/10/2026).
       await p.getByText(/^(Tijd|Temps)( \(\d+\))?$/).filter({ visible: true }).first().click();
     } },
-  // Getekend door de klant (demopunt 7, 26/10/2026): de kaart bovenaan de werkorderfiche. ⚠️ De demo TEKENT NIET (DemoDataGenerator kent geen
-  // handtekening): dit recept vraagt een werkorder die in de app getekend werd — 900137 (NL) en 900144 (FR), lokaal getekend op 26/10/2026.
-  // Na een nieuwe "Demo vullen" bestaan die nummers niet meer getekend; dan eerst opnieuw laten tekenen, of de demo een handtekening geven.
+  // Getekend door de klant (demopunt 7, 26/10/2026): de kaart bovenaan de werkorderfiche. Sinds 26/10/2026 tekent de demo zelf
+  // (DemoDataGenerator.VerzinHandtekeningenAsync): de twee camera-inspecties, 900151 bij Tuincentrum De Linde (NL) en 900152 bij Résidence
+  // Les Tilleuls (FR). Ze komen NA de nummering van de andere werkorders, dus hun nummer verschuift niet.
   { naam: 'werkorder-getekend', route: '/werkorders', verwacht: tekstTaal('Getekend door de klant', 'Signé par le client'),
-    na: async (p, taal) => { await openWerkorder(p, taal === 'fr-BE' ? '900144' : '900137'); } },
+    na: async (p, taal) => { await openWerkorder(p, taal === 'fr-BE' ? '900152' : '900151'); } },
   // Attesten (module Attesten, vrijgave 08/10/2026). De demo draagt attesten bij de twee uitgewerkte werkorders
   // (DemoDataGenerator.VerzinAttestenAsync): de Nederlandstalige (Tuincentrum De Linde) twee, slib en vet; de Franstalige
   // (Résidence Les Tilleuls) één. Beide te factureren, dus zichtbaar bij "nog niet gefactureerd". De lijst toont geen werf: de rij
@@ -1106,7 +1113,7 @@ const SCHOTEN = [
   // gebruiker "Demo"; het recept wacht tot ELKE zichtbare rij "Demo" draagt, en weigert anders het beeld (29/09/2026).
   { naam: 'actielogboek', route: '/beheer/audit', verwacht: new RegExp(DEMO.prullenbakKlant),
     na: async p => {
-      const zoek = p.getByPlaceholder(/Zoeken|Rechercher/).first();
+      const zoek = p.getByPlaceholder(/Zoeken|Rechercher/).filter({ visible: true }).first();
       await zoek.fill('Demo'); await zoek.press('Enter');
       await p.waitForFunction(() => {
         // De rijen die OP HET BEELD komen (binnen de hoogte van het venster): dat is wat gepubliceerd wordt. Lager op de pagina staan
@@ -1144,7 +1151,10 @@ const SCHOTEN = [
 // zoekbalk zoekt er wel op (EfWorkOrderQuery: SiteName), en elke demowerf komt precies één keer voor — dus zoeken, wachten op die ENE
 // rij, en ze openen. Meer of minder dan één rij is geen beeld maar een time-out.
 async function openWerkorder(p, werf) {
-  const zoek = p.getByPlaceholder(/Zoeken|Rechercher/).first();
+  // ⚠️ Het ZICHTBARE zoekveld (26/10/2026): de journaalstrook van de geselecteerde rij draagt "Zoeken in de bijlagen…" zodra die rij
+  //    bijlagen heeft, en staat in de DOM vóór het zoekveld van de lijst. Sinds de demo 900152 laat tekenen (bovenste rij, met een bon),
+  //    nam .first() dat verborgen veld en wachtte fill 30 s — elk werkorderbeeld faalde.
+  const zoek = p.getByPlaceholder(/Zoeken|Rechercher/).filter({ visible: true }).first();
   await zoek.fill(werf); await zoek.press('Enter');
   await p.waitForFunction(() =>
     [...document.querySelectorAll('[role=row]')].filter(r => r.querySelector('[role=gridcell]')).length === 1, null, { timeout: 15000 });
