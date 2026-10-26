@@ -1,11 +1,11 @@
 ---
-description: "De mobiele app van CleanOps voor uw medewerkers: de planning per dag, de werkorder, de teller, notities en foto's, de betaling ter plaatse en afronden."
+description: "De mobiele app van CleanOps voor uw medewerkers: de planning per dag, de werkorder, de teller, notities en foto's, de handtekening van de klant."
 ---
 
 # De mobiele app
 
 Met de app CleanOps hebben uw medewerkers in het veld hun planning en hun werkorders bij de hand. Ze registreren hun
-werkuren met een teller, noteren een betaling ter plaatse en ronden het werk af. Wat ze in de app doen, ziet u meteen
+werkuren met een teller, noteren een betaling ter plaatse en laten de klant de leveringsbon aftekenen. Wat ze in de app doen, ziet u meteen
 in CleanOps op kantoor.
 
 De app werkt op een iPhone, een iPad en een Android-toestel, in het Nederlands en het Frans.
@@ -107,13 +107,49 @@ CleanOps.
 
 ![Betaling ter plaatse in de app: een bedrag van 145,20 met de betaalwijze Payconiq, de knop Betaling bewaren en daaronder Afronden](images/app-betaling.png "Betaling ter plaatse"){ width="300" }
 
-### Afronden
+### De klant laten aftekenen
 
-Is het werk klaar, dan tikt de medewerker op **Afronden** en bevestigt hij. De werkorder krijgt de status **Te
-factureren** en staat klaar voor de [facturatie](facturatie.md). Daarna kan hij ze in de app niet meer wijzigen, en ook
-geen notities of foto's meer toevoegen of verwijderen; zijn eigen tijd rechtzetten kan nog wel.
+Is het werk klaar, dan tikt de medewerker op **Laat de klant aftekenen**. Dat gaat in twee stappen:
 
-Een werkorder die gepland is op een dag in de toekomst, kan hij niet afronden.
+1. **Nakijken.** De app toont de klant, het adres en het nummer van de werkorder, en verder wat ingevuld is: de opdracht,
+   de opmerking, het materiaal, de tijd, het bedrag en de betaalwijze. De klant kijkt na wat er gebeurde. De medewerker tikt op **Akkoord, tekenen**.
+2. **Tekenen.** De medewerker vult de **Naam van wie tekent** in. Wil de klant iets kwijt, dan tikt hij op **Opmerking
+   toevoegen**. De klant tekent met de vinger in het witte vlak; met **Wissen** begint hij opnieuw. Tot slot tikt de
+   medewerker op **Ondertekenen**.
+
+<!-- AFBEELDING: app-tekenen — het tekenscherm in de app met de Naam van wie tekent, het witte vlak met een handtekening en de knop Ondertekenen -->
+
+Daarmee is de werkorder **afgerond**: ze krijgt de status **Te factureren** en staat klaar voor de
+[facturatie](facturatie.md). CleanOps maakt meteen een **getekende leveringsbon** als pdf, in de taal van de klant, en
+bewaart die bij de werkorder.
+
+Een bedrag dat de medewerker wel typte maar nog niet bewaarde, gaat eerst mee: de klant tekent voor wat hij op het
+scherm zag.
+
+### Na het tekenen
+
+Bovenaan de werkorder staat nu de kaart **Getekend door de klant**, met de naam en het moment. Daarop staan twee knoppen:
+
+- **Bekijk de getekende bon** opent de pdf op het toestel.
+- **Mail naar de klant** stuurt de getekende bon per mail. Het e-mailadres van de klant staat al ingevuld (het
+  hoofdadres, anders het adres voor de facturatie); de medewerker kan het aanpassen. Meerdere adressen scheidt hij met
+  `;`: het eerste is de ontvanger, de andere krijgen een kopie. De tekst van de mail komt uit
+  [Mailteksten](beheer/mailteksten.md). Er vertrekt nooit vanzelf een mail.
+
+<!-- AFBEELDING: app-getekend — de kaart Getekend door de klant in de app met de knoppen Bekijk de getekende bon en Mail naar de klant -->
+
+Wat op de leveringsbon staat, ligt daarna vast, ook op kantoor. Zie [Getekend door de klant](werkorders.md#getekend-door-de-klant).
+
+### Afronden zonder handtekening
+
+Is de klant er niet, dan tikt de medewerker op **Afronden zonder handtekening** en bevestigt hij. De werkorder krijgt
+ook dan de status **Te factureren**.
+
+Na het afronden kan de medewerker de werkorder in de app niet meer wijzigen, en ook geen notities of foto's meer
+toevoegen of verwijderen; zijn eigen tijd rechtzetten kan nog wel. **Laten tekenen kan nog**, zolang de werkorder niet
+gefactureerd is: komt de klant later toch, dan tikt de medewerker alsnog op **Laat de klant aftekenen**.
+
+Een werkorder die gepland is op een dag in de toekomst, kan hij niet afronden en niet laten tekenen.
 
 ### Het profiel
 
@@ -134,6 +170,14 @@ aan hem of aan zijn ploeg toegewezen is.
 **Waar vind ik de foto's van een medewerker?**
 Op de werkorder, onder **Journaal** › **Bijlagen**. Ze heten *Foto* (of *Photo* als de app van de medewerker in het
 Frans staat), gevolgd door het nummer van de werkorder en het moment, bijvoorbeeld *Foto 900149 2026-10-25 20.58.30.jpg*.
+
+**De klant was er niet bij het afronden. Kan hij later nog tekenen?**
+Ja, zolang de werkorder niet gefactureerd is. Open de werkorder in de app en tik op **Laat de klant aftekenen**.
+
+**De klant tekende, maar er klopt iets niet op de bon.**
+Laat het kantoor de handtekening intrekken op de werkorder (zie
+[Getekend door de klant](werkorders.md#getekend-door-de-klant)). Daarna kan het kantoor de werkorder verbeteren, en
+kan de klant opnieuw tekenen.
 
 **Een medewerker kan geen foto nemen.**
 Gaf hij de app de eerste keer geen toegang tot de camera, dan zet hij dat aan in de instellingen van zijn toestel, bij

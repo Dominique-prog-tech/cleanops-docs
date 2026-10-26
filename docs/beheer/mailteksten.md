@@ -17,6 +17,9 @@ CleanOps gebruikt de teksten wanneer u mailt:
   (zie [Openstaande posten](../openstaande-posten.md));
 - **Attest** — met **Mailen…** op een verwerkingsattest (zie [Attesten](../attesten.md));
 - **Cameraverslag** — met **Mailen…** op een cameraverslag (zie [Cameraverslagen](../cameraverslagen.md#mailen));
+- **Getekende leveringsbon** — met **Mailen…** op een getekende werkorder (zie
+  [Werkorders](../werkorders.md#getekend-door-de-klant)), of met **Mail naar de klant** in de
+  [mobiele app](../mobiele-app.md#na-het-tekenen);
 - **Opvolging contract** — met **Mailen…** op een contract (zie [Contracten](../contracten.md#de-klant-mailen)). Bij deze
   mail gaat geen document mee.
 
@@ -28,7 +31,7 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Mailteks
 
 | Kolom | Wat het is |
 |---|---|
-| Soort | het document waarvoor de tekst dient: factuur, creditnota, offerte, offerteherinnering, rappel 1 tot 3, attest, cameraverslag, opvolging contract |
+| Soort | het document waarvoor de tekst dient: factuur, creditnota, offerte, offerteherinnering, rappel 1 tot 3, attest, cameraverslag, getekende leveringsbon, opvolging contract |
 | Onderwerp | het onderwerp van de mail, in de taal van het scherm |
 | Nederlands, Français | **eigen tekst** als u voor die taal een eigen tekst bewaarde, anders **standaardtekst** |
 | Afzender | het adres waarvan de mail vertrekt — zie [Mailafzenders](mailafzenders.md) |
@@ -76,6 +79,10 @@ kopiëren. Bij het mailen vult CleanOps ze in met de gegevens van het document. 
 
 Bij **Cameraverslag** zijn er `{{document.date}}` (de datum van het verslag) en `{{site.address}}` (het uitvoeringsadres),
 naast de variabelen van de klant, uw bedrijf, de verzender en de datum van vandaag.
+
+Bij **Getekende leveringsbon** is `{{document.number}}` het nummer van de werkorder, `{{document.date}}` de datum van het
+werk en `{{site.address}}` het uitvoeringsadres, naast de variabelen van de klant, uw bedrijf, de verzender en de datum
+van vandaag. Mailt een medewerker vanuit de app, dan zijn `{{user.fullname}}` en `{{user.email}}` zijn naam en e-mailadres.
 
 Bij **Opvolging contract** is `{{document.number}}` het contractnummer, en zijn er `{{contract.description}}` (de
 omschrijving van het contract) en `{{site.address}}` (het uitvoeringsadres), naast de variabelen van de klant, uw bedrijf,

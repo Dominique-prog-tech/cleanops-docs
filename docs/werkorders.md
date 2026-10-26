@@ -195,6 +195,30 @@ Met **Afdrukken** drukt u enkel de bon af.
 De bon toont wat bewaard is. Hebt u iets gewijzigd, dan staat naast de knop *eerst bewaren* en kunt u hem pas
 openen na **Bewaren**.
 
+### Getekend door de klant
+
+De klant kan de leveringsbon aftekenen op het toestel van de medewerker, in de [mobiele app](mobiele-app.md#de-klant-laten-aftekenen).
+Daarmee is de werkorder afgerond. Bovenaan de fiche staat dan de kaart **Getekend door de klant**, met de naam van wie
+tekende, het moment, de medewerker die de bon voorlegde en de opmerking van de klant.
+
+<!-- AFBEELDING: werkorder-getekend — de kaart Getekend door de klant bovenaan de werkorderfiche, met Getekende bon (pdf), Mailen… en Handtekening intrekken -->
+
+| Knop | Wat het doet |
+|---|---|
+| Getekende bon (pdf) | Opent de getekende leveringsbon in een nieuw tabblad. De pdf staat ook bij de bijlagen van de werkorder. |
+| Getekende bon maken | Staat er enkel als de pdf bij het tekenen niet gemaakt kon worden. CleanOps maakt hem dan alsnog. |
+| Mailen… | Mailt de getekende bon naar de klant, met de tekst uit [Mailteksten](beheer/mailteksten.md). Het hoofdadres van de klant staat voorgesteld, anders het adres voor de facturatie. De mail staat daarna onder **Journaal** › **Mails**. |
+| Handtekening intrekken | Haalt de handtekening weg, na een bevestiging. De getekende pdf blijft bij de bijlagen: het bewijs van wat er toen getekend werd. |
+
+**Wat de klant tekende, ligt vast.** Zolang de handtekening er staat, kunt u de gegevens op de leveringsbon niet
+wijzigen: de klant en het uitvoeringsadres, de uitvoerder, de uitvoeringsdatum en de uren, de omschrijving, de
+opdracht, het materiaal en de vinkjes **Attest vereist** en **Groot werk**. Ook verslepen op de
+[planning](planning.md) en verwijderen kan niet. De **facturatie** blijft wel open: het tarief, het bedrag en de
+btw-code vult u gewoon verder in.
+
+Moet er toch iets veranderen, trek dan de handtekening in. Daarna kunt u de werkorder weer wijzigen, en kan de klant
+in de app opnieuw tekenen zolang de werkorder niet gefactureerd is.
+
 ### Attesten
 
 Rechts bovenaan de fiche staat het tabblad **Attesten**, met het aantal verwerkingsattesten van deze werkorder. Met
@@ -259,7 +283,7 @@ Rechts bovenaan de fiche staat het tabblad **Journaal**, met daarin **Bijlagen**
 ## Een werkorder verwijderen
 
 **Verwijderen** onderaan de fiche legt de werkorder in de [prullenbak](beheer/prullenbak.md). Een gefactureerde
-werkorder kunt u niet verwijderen.
+werkorder kunt u niet verwijderen, en een getekende ook niet: trek dan eerst de handtekening in.
 
 ## Veelgestelde vragen
 
@@ -270,6 +294,10 @@ De status volgt uit de datums. Vul een geplande datum en een medewerker in voor 
 **Ik kan het bedrag niet aanpassen.**
 Het bedrag is aantal × eenheidsprijs. Wilt u een eigen bedrag, zet dan aantal en eenheidsprijs op nul. Is de werkorder
 gefactureerd, dan ligt het vast.
+
+**Ik kan de datum, de medewerker of de opdracht niet wijzigen.**
+De klant tekende de leveringsbon af. Wat op de bon staat, ligt dan vast. Klik op **Handtekening intrekken** in de kaart
+**Getekend door de klant** als het toch moet veranderen.
 
 **De knop Leveringsbon werkt niet.**
 U hebt iets gewijzigd dat nog niet bewaard is. Klik eerst op **Bewaren**.

@@ -202,6 +202,30 @@ jour/mois/année. **Imprimer** n'imprime que le bon.
 Le bon montre ce qui est enregistré. Si vous avez modifié quelque chose, *enregistrez d'abord* apparaît à côté du
 bouton, et vous ne pouvez l'ouvrir qu'après **Enregistrer**.
 
+### Signé par le client
+
+Le client peut signer le bon de livraison sur l'appareil du collaborateur, dans l'[application mobile](mobiele-app.fr.md#faire-signer-le-client).
+L'ordre de travail est alors terminé. En haut de la fiche figure la carte **Signé par le client**, avec le nom du
+signataire, le moment, le collaborateur qui a présenté le bon et la remarque du client.
+
+<!-- AFBEELDING: werkorder-getekend-fr — la carte Signé par le client en haut de la fiche, avec Bon signé (PDF), Envoyer par e-mail… et Retirer la signature -->
+
+| Bouton | Ce qu'il fait |
+|---|---|
+| Bon signé (PDF) | Ouvre le bon de livraison signé dans un nouvel onglet. Le PDF figure aussi parmi les pièces jointes de l'ordre de travail. |
+| Créer le bon signé | N'apparaît que si le PDF n'a pas pu être créé lors de la signature. CleanOps le crée alors. |
+| Envoyer par e-mail… | Envoie le bon signé au client, avec le texte des [Textes d'e-mail](beheer/mailteksten.fr.md). L'adresse principale du client est proposée, sinon celle de la facturation. L'e-mail figure ensuite sous **Journal** › **E-mails**. |
+| Retirer la signature | Retire la signature, après confirmation. Le PDF signé reste parmi les pièces jointes : la preuve de ce qui a été signé à ce moment. |
+
+**Ce que le client a signé est figé.** Tant que la signature est là, vous ne pouvez pas modifier les données du bon de
+livraison : le client et l'adresse d'exécution, l'exécutant, la date d'exécution et les heures, la description, le
+travail demandé, le matériel et les cases **Attestation requise** et **Gros travaux**. Le déplacer sur le
+[planning](planning.fr.md) ou le supprimer n'est pas possible non plus. La **facturation** reste ouverte : vous
+complétez normalement le tarif, le montant et le code TVA.
+
+Si quelque chose doit malgré tout changer, retirez la signature. Vous pouvez alors à nouveau modifier l'ordre de
+travail, et le client peut signer à nouveau dans l'application tant que l'ordre n'est pas facturé.
+
 ### Attestations
 
 En haut à droite de la fiche figure l'onglet **Attestations**, avec le nombre d'attestations de traitement de cet ordre de
@@ -267,9 +291,13 @@ collaborateurs prennent dans l'[application mobile](mobiele-app.fr.md#photos) se
 ## Supprimer un ordre de travail
 
 **Supprimer**, en bas de la fiche, place l'ordre dans la [corbeille](beheer/prullenbak.fr.md). Un ordre facturé ne
-peut pas être supprimé.
+peut pas être supprimé, un ordre signé non plus : retirez d'abord la signature.
 
 ## Questions fréquentes
+
+**Je ne peux pas modifier la date, le collaborateur ou le travail demandé.**
+Le client a signé le bon de livraison. Ce qui figure sur le bon est alors figé. Cliquez sur **Retirer la signature** dans
+la carte **Signé par le client** si cela doit malgré tout changer.
 
 **Je ne peux pas choisir le statut.**
 Le statut découle des dates. Remplissez une date planifiée et un collaborateur pour *Planifié*, une date d'exécution

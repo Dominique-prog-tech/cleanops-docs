@@ -1,11 +1,11 @@
 ---
-description: "L'application mobile CleanOps pour vos collaborateurs : le planning du jour, le chrono, les notes et les photos, le paiement sur place et la fin du travail."
+description: "L'application mobile CleanOps pour vos collaborateurs : le planning du jour, le chrono, les notes et les photos, la signature du client."
 ---
 
 # L'application mobile
 
 Avec l'application CleanOps, vos collaborateurs sur le terrain ont leur planning et leurs ordres de travail sous la
-main. Ils enregistrent leurs heures avec un chrono, notent un paiement sur place et terminent le travail. Ce qu'ils
+main. Ils enregistrent leurs heures avec un chrono, notent un paiement sur place et font signer le bon de livraison par le client. Ce qu'ils
 font dans l'application, vous le voyez immédiatement dans CleanOps au bureau.
 
 L'application fonctionne sur un iPhone, un iPad et un appareil Android, en néerlandais et en français.
@@ -109,13 +109,51 @@ l'ordre de travail dans CleanOps.
 
 ![Le paiement sur place dans l'application : un montant de 145,20 avec le mode de paiement Payconiq, le bouton Enregistrer le paiement et en dessous Terminer](images/app-betaling-fr.png "Paiement sur place"){ width="300" }
 
-### Terminer
+### Faire signer le client
 
-Quand le travail est terminé, le collaborateur appuie sur **Terminer** et confirme. L'ordre de travail passe au statut
-**À facturer** et est prêt pour la [facturation](facturatie.fr.md). Ensuite, il ne peut plus le modifier dans
-l'application, ni y ajouter ou supprimer des notes ou des photos ; corriger son propre temps reste possible.
+Quand le travail est terminé, le collaborateur appuie sur **Faire signer le client**. Cela se fait en deux étapes :
 
-Un ordre de travail planifié à une date future ne peut pas être terminé.
+1. **Vérifier.** L'application montre le client, l'adresse et le numéro de l'ordre de travail, puis ce qui est rempli : le
+   travail demandé, la remarque, le matériel, le temps, le montant et le mode de paiement. Le client vérifie ce qui a été fait. Le collaborateur
+   appuie sur **D'accord, signer**.
+2. **Signer.** Le collaborateur indique le **Nom du signataire**. Si le client veut ajouter quelque chose, il appuie sur
+   **Ajouter une remarque**. Le client signe avec le doigt dans le cadre blanc ; **Effacer** permet de recommencer. Enfin,
+   le collaborateur appuie sur **Signer**.
+
+<!-- AFBEELDING: app-tekenen-fr — l'écran de signature dans l'application avec le Nom du signataire, le cadre blanc avec une signature et le bouton Signer -->
+
+L'ordre de travail est alors **terminé** : il passe au statut **À facturer** et est prêt pour la
+[facturation](facturatie.fr.md). CleanOps crée aussitôt un **bon de livraison signé** en PDF, dans la langue du client,
+et le conserve avec l'ordre de travail.
+
+Un montant que le collaborateur a saisi sans l'enregistrer est d'abord transmis : le client signe ce qu'il a vu à
+l'écran.
+
+### Après la signature
+
+En haut de l'ordre de travail figure maintenant la carte **Signé par le client**, avec le nom et le moment. Elle porte
+deux boutons :
+
+- **Voir le bon signé** ouvre le PDF sur l'appareil.
+- **Envoyer au client** envoie le bon signé par e-mail. L'adresse e-mail du client est déjà remplie (l'adresse
+  principale, sinon celle de la facturation) ; le collaborateur peut la modifier. Plusieurs adresses se séparent par
+  `;` : la première est le destinataire, les autres reçoivent une copie. Le texte de l'e-mail vient des
+  [Textes d'e-mail](beheer/mailteksten.fr.md). Aucun e-mail ne part jamais tout seul.
+
+<!-- AFBEELDING: app-getekend-fr — la carte Signé par le client dans l'application avec les boutons Voir le bon signé et Envoyer au client -->
+
+Ce qui figure sur le bon de livraison est ensuite figé, aussi au bureau. Voir [Signé par le client](werkorders.fr.md#signe-par-le-client).
+
+### Terminer sans signature
+
+Si le client est absent, le collaborateur appuie sur **Terminer sans signature** et confirme. L'ordre de travail passe
+aussi au statut **À facturer**.
+
+Une fois l'ordre terminé, le collaborateur ne peut plus le modifier dans l'application, ni y ajouter ou supprimer des
+notes ou des photos ; corriger son propre temps reste possible. **Faire signer reste possible** tant que l'ordre n'est
+pas facturé : si le client passe plus tard, le collaborateur appuie encore sur **Faire signer le client**.
+
+Un ordre de travail planifié à une date future ne peut pas être terminé ni signé.
 
 ### Le profil
 
@@ -138,6 +176,15 @@ l'ordre de travail est attribué à lui ou à son équipe ce jour-là.
 Sur l'ordre de travail, sous **Journal** › **Pièces jointes**. Elles s'appellent *Photo* (ou *Foto* si l'application
 du collaborateur est en néerlandais), suivi du numéro de l'ordre de travail et du moment, par exemple *Photo 900149
 2026-10-25 20.58.30.jpg*.
+
+**Le client était absent à la fin du travail. Peut-il encore signer plus tard ?**
+Oui, tant que l'ordre de travail n'est pas facturé. Ouvrez l'ordre dans l'application et appuyez sur **Faire signer le
+client**.
+
+**Le client a signé, mais quelque chose ne va pas sur le bon.**
+Demandez au bureau de retirer la signature sur l'ordre de travail (voir
+[Signé par le client](werkorders.fr.md#signe-par-le-client)). Le bureau peut ensuite corriger l'ordre, et le client peut
+signer à nouveau.
 
 **Un collaborateur ne peut pas prendre de photo.**
 S'il n'a pas donné à l'application l'accès à l'appareil photo la première fois, il l'active dans les réglages de son

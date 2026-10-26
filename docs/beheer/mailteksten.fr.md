@@ -19,6 +19,9 @@ CleanOps utilise les textes lorsque vous envoyez par e-mail :
 - **Attestation** — avec **Envoyer par e-mail…** sur une attestation de traitement (voir [Attestations](../attesten.fr.md)) ;
 - **Rapport caméra** — avec **Envoyer par e-mail…** sur un rapport caméra (voir
   [Rapports caméra](../cameraverslagen.fr.md#envoyer-par-e-mail)) ;
+- **Bon de livraison signé** — avec **Envoyer par e-mail…** sur un ordre de travail signé (voir
+  [Ordres de travail](../werkorders.fr.md#signe-par-le-client)), ou avec **Envoyer au client** dans
+  l'[application mobile](../mobiele-app.fr.md#apres-la-signature) ;
 - **Suivi de contrat** — avec **Envoyer par e-mail…** sur un contrat (voir [Contrats](../contracten.fr.md#ecrire-au-client)).
   Aucun document n'accompagne cet e-mail.
 
@@ -30,7 +33,7 @@ Cliquez en bas du menu sur **Administration**, puis sur la tuile **Textes d'e-ma
 
 | Colonne | Ce que c'est |
 |---|---|
-| Type | le document auquel le texte sert : facture, note de crédit, devis, rappel de devis, rappel 1 à 3, attestation, rapport caméra, suivi de contrat |
+| Type | le document auquel le texte sert : facture, note de crédit, devis, rappel de devis, rappel 1 à 3, attestation, rapport caméra, bon de livraison signé, suivi de contrat |
 | Objet | l'objet de l'e-mail, dans la langue de l'écran |
 | Nederlands, Français | **texte propre** si vous avez enregistré un texte propre pour cette langue, sinon **texte standard** |
 | Expéditeur | l'adresse depuis laquelle l'e-mail part — voir [Expéditeurs](mailafzenders.fr.md) |
@@ -80,6 +83,11 @@ de crédit :
 
 Pour **Rapport caméra**, il existe `{{document.date}}` (la date du rapport) et `{{site.address}}` (l'adresse d'exécution), en
 plus des variables du client, de votre entreprise, de l'expéditeur et de la date du jour.
+
+Pour **Bon de livraison signé**, `{{document.number}}` est le numéro de l'ordre de travail, `{{document.date}}` la date
+des travaux et `{{site.address}}` l'adresse d'exécution, en plus des variables du client, de votre entreprise, de
+l'expéditeur et de la date du jour. Si un collaborateur envoie depuis l'application, `{{user.fullname}}` et
+`{{user.email}}` sont son nom et son adresse e-mail.
 
 Pour **Suivi de contrat**, `{{document.number}}` est le numéro du contrat, et il existe `{{contract.description}}` (la
 description du contrat) et `{{site.address}}` (l'adresse d'exécution), en plus des variables du client, de votre entreprise,
