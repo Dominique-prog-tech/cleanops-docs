@@ -42,6 +42,15 @@ l'administration restent **toujours actifs**.
 ## Ce qui se passe quand une fonction est désactivée
 
 - Les écrans de cette fonction disparaissent du **menu**, et leurs tuiles de l'**Administration**.
+- Sur les autres écrans aussi, ce qui fait partie de la fonction disparaît. Quelques exemples :
+    - **Contrats** désactivé : pas d'onglet Contrats sur la fiche client, pas de ligne Contrat sur l'ordre de travail et pas
+      de filtre Contrat dans la liste du planning.
+    - **Attestations** désactivé : pas de cases à cocher d'attestation sur l'ordre de travail, pas de signaux d'attestation
+      dans la Facturation et pas d'attestations à joindre au mail d'une facture.
+    - **Congés** désactivé : pas d'onglet Congés sur la fiche du collaborateur et pas de bouton **Réserver un congé** dans
+      Équipes.
+    - **Achats** désactivé : Paiements n'affiche que les paiements des clients.
+    - Le **tableau de bord** n'affiche plus les tuiles et les cartes d'une fonction désactivée.
 - Si quelqu'un ouvre malgré tout un ancien lien ou un favori vers un tel écran, il voit **Cette fonction est désactivée**.
 - **Rien n'est effacé.** Si vous réactivez la fonction, tout réapparaît tel quel.
 - Un collègue déjà au travail voit le changement dès qu'il actualise son écran.

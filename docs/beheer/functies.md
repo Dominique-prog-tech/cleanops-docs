@@ -40,6 +40,14 @@ Klanten, medewerkers, werkorders, planning, facturatie, facturen, betalingen en 
 ## Wat er gebeurt als een functie uit staat
 
 - De schermen van die functie verdwijnen uit het **menu** en hun tegels uit **Platformbeheer**.
+- Ook op de andere schermen verdwijnt wat bij de functie hoort. Enkele voorbeelden:
+    - **Contracten** uit: geen tabblad Contracten op de klantfiche, geen contractregel op de werkorder en geen contractfilter
+      in de planningslijst.
+    - **Attesten** uit: geen attestvinkjes op de werkorder, geen attestsignalen in Facturatie en geen attesten om mee te
+      mailen bij een factuur.
+    - **Verlof** uit: geen tabblad Verlof op de medewerkerfiche en geen knop **Verlof boeken** bij Ploegen.
+    - **Aankoop** uit: Betalingen toont enkel de betalingen van klanten.
+    - Het **dashboard** toont geen tegels en kaarten meer van een functie die uit staat.
 - Opent iemand toch een oude link of bladwijzer naar zo'n scherm, dan ziet hij **Deze functie staat uit**.
 - **Er wordt niets gewist.** Zet u de functie weer aan, dan staat alles er terug zoals het was.
 - Een collega die al aan het werk is, ziet de wijziging zodra hij zijn scherm vernieuwt.
