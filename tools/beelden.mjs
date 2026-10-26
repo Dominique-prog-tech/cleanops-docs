@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { PAKKET } from './app.mjs';
 import { BASIS, DEMO, meldAan, appToestand } from './aansturing.mjs';
+const PAKKET_REPO_HOOFD = '/Users/dominique/projects/adm-cleanops';
 import { NIET_SCHERMTEKST_BASIS, altTermen, ontbrekendeTermen, pngMaat, vormBesluit, schermBesluit }
   from '/Users/dominique/projects/adm-appkit/tools/beeldgenerator/kern.mjs';
 
@@ -1122,6 +1123,10 @@ const SCHOTEN = [
       await p.locator('main select').first().selectOption({ label: 'Demo (demo)' });
       await p.getByText('Financieel', { exact: true }).first().click();
     } },
+  // Functies (demopunt 2, 26/10/2026): een ELEMENT, de schakelaars met de uitleg. Alles staat aan in de demo — zo ziet een
+  // bedrijf het scherm de eerste keer.
+  { naam: 'functies', route: '/beheer/functies', verwacht: tekstTaal('Altijd aan:', 'Toujours actifs'),
+    element: 'main [data-functies]' },
 ];
 
 // ⚠️ Een werkorder opent met ?terug=… achter haar id (de filters van de lijst reizen mee), dus de URL eindigt NIET op het id
@@ -1347,6 +1352,12 @@ const BUITEN_SCRIPT = new Set(['app-planning', 'app-teller', 'app-betaling', 'ap
   'app-tekenen', 'app-getekend', 'app-mail', 'app-menu', 'app-profiel'].flatMap(n => [n, `${n}-fr`]));
 const zonderRecept = Object.keys(ALT).filter(n => !BUITEN_SCRIPT.has(n) && !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
 
+// ⚠️ De terugval op de hoofdkloon zweeg: op 26/10/2026 liep de preview in een worktree en meldde het verslag een commit van 08/10.
+// Bestaan er worktrees en is CLEANOPS_REPO niet gezet, dan is de genoemde commit misschien niet die van de draaiende app.
+const worktrees = join(PAKKET_REPO_HOOFD, '.claude', 'worktrees');
+if (!process.env.CLEANOPS_REPO && existsSync(worktrees) && readdirSync(worktrees).length > 0)
+  console.log(`⚠️  CLEANOPS_REPO is niet gezet en er bestaan worktrees (${readdirSync(worktrees).join(', ')}) — draait de preview in één ervan, `
+    + 'dan hoort de commit hieronder bij de hoofdkloon en NIET bij de app op het beeld.');
 console.log(`\nApp: ${toestand.sha?.slice(0, 7) ?? '?'}${toestand.vuil ? ' (werkmap VUIL — het beeld toont niet-vastgelegde code)' : ''} · tenant demo`);
 console.log(`✅ ${geschreven.length} beeld(en) geschreven`);
 for (const [kop, lijst] of [['❌ MISLUKT', mislukt], ['⛔ GEWEIGERD (vorm)', geweigerd], ['⚠️ ALT-TEKST', altMissers],

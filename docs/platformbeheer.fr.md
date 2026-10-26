@@ -39,6 +39,7 @@ code TVA et sa condition de paiement. Lors d'une nouvelle installation, c'est pa
 **Accès**
 
 - [Rôles](beheer/rollen.fr.md) — quels droits appartiennent à quel rôle, et qui porte quel rôle
+- [Fonctions](beheer/functies.fr.md) — les parties que votre entreprise utilise ; ce qui est désactivé disparaît du menu
 
 **Historique**
 

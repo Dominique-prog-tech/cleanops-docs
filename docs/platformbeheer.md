@@ -39,6 +39,7 @@ btw-code en betalingstermijn. Bij een nieuwe inrichting begint u hier.
 **Toegang**
 
 - [Rollen](beheer/rollen.md) — welke rechten bij welke rol horen, en wie welke rol draagt
+- [Functies](beheer/functies.md) — welke onderdelen uw bedrijf gebruikt; wat uit staat, verdwijnt uit het menu
 
 **Historiek**
 

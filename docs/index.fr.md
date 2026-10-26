@@ -110,7 +110,7 @@ première visite guidée à la facture : [Vidéos](videos.md).
 [Textes d'e-mail](beheer/mailteksten.md) · [Expéditeurs](beheer/mailafzenders.md) ·
 [Jours fériés](beheer/feestdagen.md) · [Parties de la journée](beheer/tijdsdelen.md) · [Véhicules](beheer/voertuigen.md)
 
-**Accès** — [Rôles](beheer/rollen.md)
+**Accès** — [Rôles](beheer/rollen.md) · [Fonctions](beheer/functies.md)
 
 **Historique** — [Corbeille](beheer/prullenbak.md) · [Journal des actions](beheer/actielogboek.md)
 

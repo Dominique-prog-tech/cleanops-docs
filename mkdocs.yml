@@ -158,6 +158,7 @@ plugins:
             Tarieven: Tarifs
             Betalingstermijnen: Conditions de paiement
             Rollen: Rôles
+            Functies: Fonctions
             Prullenbak: Corbeille
             Actielogboek: Journal des actions
             Home: Accueil
@@ -368,6 +369,7 @@ nav:
       - Voertuigen: beheer/voertuigen.md
     - Toegang:
       - Rollen: beheer/rollen.md
+      - Functies: beheer/functies.md
     - Historiek:
       - Prullenbak: beheer/prullenbak.md
       - Actielogboek: beheer/actielogboek.md

@@ -108,7 +108,7 @@ factuur: [Video's](videos.md).
 [Mailteksten](beheer/mailteksten.md) · [Mailafzenders](beheer/mailafzenders.md) ·
 [Feestdagen](beheer/feestdagen.md) · [Tijdsdelen](beheer/tijdsdelen.md) · [Voertuigen](beheer/voertuigen.md)
 
-**Toegang** — [Rollen](beheer/rollen.md)
+**Toegang** — [Rollen](beheer/rollen.md) · [Functies](beheer/functies.md)
 
 **Historiek** — [Prullenbak](beheer/prullenbak.md) · [Actielogboek](beheer/actielogboek.md)
 
