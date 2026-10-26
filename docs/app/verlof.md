@@ -12,7 +12,7 @@ met zijn aanvragen deed. Hij vraagt er ook zelf verlof aan. Het kantoor beslist 
 
 Open het menu met de drie streepjes linksboven en tik op **Verlof**.
 
-![Het scherm Verlof van Tom Verbeke: bovenaan Saldo 2026 met 3,5 dagen over, daaronder één aanvraag die wacht op het kantoor met de knop Intrekken, het verlof van 2026 en later, en onderaan een goedgekeurde aanvraag. Rechtsonder de knop Verlof aanvragen](../images/app-verlof.png "Verlof"){ width="560" }
+![Het scherm Verlof van Tom Verbeke: bovenaan Saldo 2026 met 6,5 dagen over en 4 dagen die nog op het kantoor wachten, daaronder zijn aanvraag met de knop Intrekken, het verlof van 2026 en later, en onderaan een geweigerde aanvraag met de reden van het kantoor. Rechtsonder de knop Verlof aanvragen](../images/app-verlof.png "Verlof"){ width="560" }
 
 ## Wat de medewerker ziet
 

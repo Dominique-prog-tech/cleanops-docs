@@ -12,7 +12,7 @@ le bureau a fait de ses demandes. Il y demande aussi lui-même un congé. Le bur
 
 Ouvrez le menu avec les trois traits en haut à gauche et touchez **Congés**.
 
-![L'écran Congés de Julien Lambert : en haut Solde 2026 avec les jours restants, en dessous une demande en attente du bureau avec le bouton Retirer, les congés de 2026 et après, et en bas une demande approuvée. En bas à droite le bouton Demander un congé](../images/app-verlof-fr.png "Congés"){ width="560" }
+![L'écran Congés de Julien Lambert : en haut Solde 2026 avec 4,5 jours restants et 4 jours qui attendent encore le bureau, en dessous sa demande avec le bouton Retirer, les congés de 2026 et après, et en bas une demande refusée avec la raison du bureau. En bas à droite le bouton Demander un congé](../images/app-verlof-fr.png "Congés"){ width="560" }
 
 ## Ce que le collaborateur voit
 
