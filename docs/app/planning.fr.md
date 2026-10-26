@@ -4,15 +4,10 @@ description: "Le planning dans l'application mobile CleanOps : le travail du jou
 
 # Le planning
 
-!!! info "L'application est en test"
-    L'application mobile n'est pas encore disponible dans l'App Store et Google Play. Cette page montre déjà ce qu'elle
-    sait faire, pour que vous puissiez la découvrir. Ce que le bureau en voit, comme l'onglet **Temps** ou **Signé par le
-    client** sur l'ordre de travail, arrivera avec l'application.
-
 L'application s'ouvre sur le planning du jour : les ordres de travail du collaborateur et de son équipe, dans l'ordre
 de la journée.
 
-![Le planning dans l'application sur une tablette le lundi 2 novembre, pour Julien Lambert avec Nina Van Hecke : à gauche un ordre de travail avec la partie de la journée, l'heure, le client, l'adresse et Itinéraire, et en bas le bouton Nouvel ordre ; à droite l'ordre choisi de Résidence Les Tilleuls avec Mon chrono](../images/app-planning-fr.png "Le planning"){ width="560" }
+![Le planning dans l'application sur une tablette le lundi 26 octobre : à gauche deux ordres de travail de Tom Verbeke, chacun avec la partie de la journée, le client, l'adresse et Itinéraire, à droite l'ordre choisi de Résidence Les Tilleuls avec Mon chrono](../images/app-planning-fr.png "Le planning"){ width="560" }
 
 ## Par ordre de travail
 
@@ -27,26 +22,9 @@ Le cas échéant, une étiquette indique où en est l'ordre de travail :
 | **Chrono en cours** | Le collaborateur y enregistre du temps en ce moment. |
 | **Non exécuté** | Planifié sur un jour déjà passé, et pas encore terminé. |
 
-## Blocs et congés
-
-À côté des ordres de travail, le planning montre aussi ce que le bureau a placé sur le [tableau de planning](../planning.md)
-sans ordre de travail :
-
-- un **bloc libre**, comme une formation ou un rendez-vous au garage, avec la partie de journée ou **Toute la journée** ;
-- le **congé** du collaborateur lui-même, en haut dans une carte rouge avec **Absence** : le type, « demi-journée » le
-  premier jour d'une demi-journée, et la description, comme sur le tableau de planning.
-
-Un bloc ou un congé n'ouvre pas d'ordre de travail. Le bureau modifie un congé sur la fiche du collaborateur ; le
-collaborateur le demande via **Congés** dans le menu de l'app.
-
 ## Un autre jour
 
 Les flèches à côté de la date passent au jour précédent ou suivant, et **Aujourd'hui** ramène au jour même.
-
-## Un nouvel ordre de travail
-
-Avec **Nouvel ordre** en bas, le collaborateur crée lui-même un ordre de travail, pour lui-même ou un collègue. Voir
-[Créer un ordre de travail](werkorder-aanmaken.fr.md).
 
 ## Ouvrir l'ordre de travail
 

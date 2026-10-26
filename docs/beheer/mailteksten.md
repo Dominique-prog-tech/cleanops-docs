@@ -19,7 +19,7 @@ CleanOps gebruikt de teksten wanneer u mailt:
 - **Cameraverslag** — met **Mailen…** op een cameraverslag (zie [Cameraverslagen](../cameraverslagen.md#mailen));
 - **Getekende leveringsbon** — met **Mailen…** op een getekende werkorder (zie
   [Werkorders](../werkorders.md#getekend-door-de-klant)), of met **Mail naar de klant** in de
-  [mobiele app](../mobiele-app.md#na-het-tekenen);
+  [mobiele app](../app/laten-tekenen.md#na-het-tekenen);
 - **Opvolging contract** — met **Mailen…** op een contract (zie [Contracten](../contracten.md#de-klant-mailen)). Bij deze
   mail gaat geen document mee.
 

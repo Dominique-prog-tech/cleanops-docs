@@ -21,7 +21,7 @@ CleanOps utilise les textes lorsque vous envoyez par e-mail :
   [Rapports caméra](../cameraverslagen.fr.md#envoyer-par-e-mail)) ;
 - **Bon de livraison signé** — avec **Envoyer par e-mail…** sur un ordre de travail signé (voir
   [Ordres de travail](../werkorders.fr.md#signe-par-le-client)), ou avec **Envoyer au client** dans
-  l'[application mobile](../mobiele-app.fr.md#apres-la-signature) ;
+  l'[application mobile](../app/laten-tekenen.fr.md#apres-la-signature) ;
 - **Suivi de contrat** — avec **Envoyer par e-mail…** sur un contrat (voir [Contrats](../contracten.fr.md#ecrire-au-client)).
   Aucun document n'accompagne cet e-mail.
 

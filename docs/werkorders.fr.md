@@ -204,11 +204,11 @@ bouton, et vous ne pouvez l'ouvrir qu'après **Enregistrer**.
 
 ### Signé par le client
 
-Le client peut signer le bon de livraison sur l'appareil du collaborateur, dans l'[application mobile](mobiele-app.fr.md#faire-signer-le-client).
+Le client peut signer le bon de livraison sur l'appareil du collaborateur, dans l'[application mobile](app/laten-tekenen.fr.md).
 L'ordre de travail est alors terminé. En haut de la fiche figure la carte **Signé par le client**, avec le nom du
 signataire, le moment, le collaborateur qui a présenté le bon et la remarque du client.
 
-<!-- AFBEELDING: werkorder-getekend-fr — la carte Signé par le client en haut de la fiche, avec Bon signé (PDF), Envoyer par e-mail… et Retirer la signature -->
+![La carte Signé par le client en haut de la fiche : qui a signé et quand, avec Bon signé (PDF), Envoyer par e-mail… et Retirer la signature](images/werkorder-getekend-fr.png "Signé par le client")
 
 | Bouton | Ce qu'il fait |
 |---|---|
@@ -237,7 +237,7 @@ l'envoyer par e-mail. Tout sur l'attestation elle-même se trouve dans [Attestat
 ### Temps
 
 En haut à droite de la fiche figure l'onglet **Temps**, avec le nombre d'enregistrements entre parenthèses. Il montre le
-temps que les collaborateurs ont enregistré sur cet ordre de travail, dans l'[application mobile](mobiele-app.fr.md) ou
+temps que les collaborateurs ont enregistré sur cet ordre de travail, dans l'[application mobile](app/aan-de-slag.fr.md) ou
 au bureau.
 
 En haut figure le total pour **Travail** et pour **Déplacement**. Si un compteur tourne encore, **Un compteur est en
@@ -267,7 +267,7 @@ Ajouter et corriger du temps est réservé à qui peut modifier les ordres de tr
 ### Notes
 
 L'onglet **Notes** regroupe ce qui a été noté sur cet ordre de travail : par les collaborateurs dans
-l'[application mobile](mobiele-app.fr.md#notes), ou au bureau. Une note de l'application figure avec **par** et le nom du
+l'[application mobile](app/werkorder.fr.md#notes), ou au bureau. Une note de l'application figure avec **par** et le nom du
 collaborateur. **Rechercher dans les notes…** vous permet d'en retrouver une.
 
 Avec **+ Note**, vous en ajoutez une vous-même : un **Objet** (obligatoire), **Quand** et le **Texte**. Passez la souris
@@ -282,7 +282,7 @@ Ajouter, modifier et supprimer des notes est réservé à qui peut modifier les 
 
 En haut à droite de la fiche figure l'onglet **Journal**, avec **Pièces jointes** — les documents de cet ordre — et
 **Historique** : qui a modifié quel champ, quand, et de quelle valeur à quelle valeur. Les photos que les
-collaborateurs prennent dans l'[application mobile](mobiele-app.fr.md#photos) se trouvent aussi dans les Pièces jointes.
+collaborateurs prennent dans l'[application mobile](app/werkorder.fr.md#photos) se trouvent aussi dans les Pièces jointes.
 
 !!! info "Tous les liens ne sont pas des liens pour tout le monde"
     Vous ne pouvez cliquer sur le numéro du devis ou de la facture que si vous avez accès à cette partie. Sinon, il

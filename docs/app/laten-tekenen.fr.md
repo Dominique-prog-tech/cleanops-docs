@@ -4,11 +4,6 @@ description: "Faire signer le client dans l'application mobile CleanOps : vérif
 
 # Faire signer
 
-!!! info "L'application est en test"
-    L'application mobile n'est pas encore disponible dans l'App Store et Google Play. Cette page montre déjà ce qu'elle
-    sait faire, pour que vous puissiez la découvrir. Ce que le bureau en voit, comme l'onglet **Temps** ou **Signé par le
-    client** sur l'ordre de travail, arrivera avec l'application.
-
 Quand le travail est terminé, le collaborateur fait signer le bon de livraison par le client sur son appareil. L'ordre
 de travail est alors terminé, et CleanOps crée aussitôt un bon de livraison signé. Si le client est absent, il termine
 sans signature.
@@ -58,7 +53,7 @@ destinataire, les autres reçoivent une copie. **Envoyer** fait partir l'e-mail,
 ![La fenêtre Envoyer le bon signé avec l'Adresse e-mail du client remplie, l'explication sur le texte et les adresses, et les boutons Annuler et Envoyer](../images/app-mail-fr.png "Envoyer au client"){ width="560" }
 
 Ce qui figure sur le bon de livraison est ensuite figé, aussi au bureau. Voir
-**Signé par le client**.
+[Signé par le client](../werkorders.fr.md#signe-par-le-client).
 
 ## Terminer sans signature
 
@@ -79,7 +74,7 @@ client**.
 
 **Le client a signé, mais quelque chose ne va pas sur le bon.**
 Demandez au bureau de retirer la signature sur l'ordre de travail (voir
-**Signé par le client**). Le bureau peut ensuite corriger l'ordre, et le client
+[Signé par le client](../werkorders.fr.md#signe-par-le-client)). Le bureau peut ensuite corriger l'ordre, et le client
 peut signer à nouveau.
 
 **Où trouver le bon signé au bureau ?**
@@ -89,5 +84,5 @@ Sur l'ordre de travail, avec **Bon signé (PDF)** dans la carte Signé par le cl
 ## Voir aussi
 
 - [L'ordre de travail](werkorder.fr.md)
-- [Ordres de travail](../werkorders.fr.md), l'ordre signé au bureau
+- [Ordres de travail](../werkorders.fr.md#signe-par-le-client), l'ordre signé au bureau
 - [Textes d'e-mail](../beheer/mailteksten.fr.md), le texte de l'e-mail

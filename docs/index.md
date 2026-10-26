@@ -28,11 +28,10 @@ factuur: [Video's](videos.md).
 
     ---
 
-    Uw overzicht van de dag, uw omgeving bij ADM-Concept voor facturen, tickets en release notes, de beveiliging van
-    uw account en de app voor uw medewerkers.
+    Uw overzicht van de dag, uw omgeving bij ADM-Concept voor facturen, tickets en release notes, en de beveiliging
+    van uw account.
 
-    [Dashboard](dashboard.md) · [Klantenportaal](klantenportaal.md) · [Tweestapsverificatie](tweestapsverificatie.md) ·
-    [De mobiele app](mobiele-app.md)
+    [Dashboard](dashboard.md) · [Klantenportaal](klantenportaal.md) · [Tweestapsverificatie](tweestapsverificatie.md)
 
 -   :material-account-group: **CRM**
 
@@ -81,11 +80,11 @@ factuur: [Video's](videos.md).
 
     ---
 
-    De app voor uw medewerkers in het veld: hun planning, de teller, notities en foto's, de betaling ter plaatse, de
-    handtekening van de klant en hun verlof. *In test: nog niet in de App Store en Google Play.*
+    De app voor uw medewerkers in het veld: hun planning, de teller, notities en foto's, de betaling ter plaatse en de
+    handtekening van de klant.
 
     [Aan de slag](app/aan-de-slag.md) · [De planning](app/planning.md) · [De werkorder](app/werkorder.md) ·
-    [Laten tekenen](app/laten-tekenen.md) · [Werkorder aanmaken](app/werkorder-aanmaken.md) · [Verlof](app/verlof.md)
+    [Laten tekenen](app/laten-tekenen.md)
 
 -   :material-cog-outline: **Platformbeheer**
 

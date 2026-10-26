@@ -4,11 +4,6 @@ description: "De klant laten aftekenen in de mobiele app van CleanOps: nakijken,
 
 # Laten tekenen
 
-!!! info "De app is in test"
-    De mobiele app staat nog niet in de App Store en Google Play. Deze pagina toont al wat ze kan, zodat u ze kunt leren
-    kennen. Wat het kantoor ervan ziet, zoals het tabblad **Tijd** of **Getekend door de klant** op de werkorder, komt
-    samen met de app.
-
 Is het werk klaar, dan laat de medewerker de klant de leveringsbon aftekenen op zijn toestel. Daarmee is de werkorder
 afgerond, en CleanOps maakt meteen een getekende leveringsbon. Is de klant er niet, dan rondt hij af zonder
 handtekening.
@@ -57,7 +52,7 @@ andere krijgen een kopie. Met **Versturen** vertrekt de mail, met de tekst uit
 ![Het venster De getekende bon mailen met het E-mailadres van de klant ingevuld, de uitleg over de tekst en de adressen, en de knoppen Annuleren en Versturen](../images/app-mail.png "Mail naar de klant"){ width="560" }
 
 Wat op de leveringsbon staat, ligt daarna vast, ook op kantoor. Zie
-**Getekend door de klant**.
+[Getekend door de klant](../werkorders.md#getekend-door-de-klant).
 
 ## Afronden zonder handtekening
 
@@ -77,7 +72,7 @@ Ja, zolang de werkorder niet gefactureerd is. Open de werkorder in de app en tik
 
 **De klant tekende, maar er klopt iets niet op de bon.**
 Laat het kantoor de handtekening intrekken op de werkorder (zie
-**Getekend door de klant**). Daarna kan het kantoor de werkorder verbeteren, en
+[Getekend door de klant](../werkorders.md#getekend-door-de-klant)). Daarna kan het kantoor de werkorder verbeteren, en
 kan de klant opnieuw tekenen.
 
 **Waar vind ik de getekende bon op kantoor?**
@@ -87,5 +82,5 @@ Op de werkorder, met **Getekende bon (pdf)** in de kaart Getekend door de klant,
 ## Zie ook
 
 - [De werkorder](werkorder.md)
-- [Werkorders](../werkorders.md), de getekende werkorder op kantoor
+- [Werkorders](../werkorders.md#getekend-door-de-klant), de getekende werkorder op kantoor
 - [Mailteksten](../beheer/mailteksten.md), de tekst van de mail

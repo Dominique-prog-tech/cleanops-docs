@@ -88,7 +88,7 @@ Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire, 
 
 ### Accès à l'app
 
-Sous les blocs figure **Accès à l'app** : le collaborateur peut-il se connecter à l'[application mobile](mobiele-app.fr.md)
+Sous les blocs figure **Accès à l'app** : le collaborateur peut-il se connecter à l'[application mobile](app/aan-de-slag.fr.md)
 ? Vous voyez ce bloc si vous pouvez modifier les collaborateurs.
 
 ![Le bloc Accès à l'app sur la fiche d'un collaborateur, avec l'état Pas d'accès à l'app et le bouton Donner l'accès…](images/medewerker-app-toegang-fr.png "Accès à l'app")

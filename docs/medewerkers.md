@@ -84,7 +84,7 @@ terug naar de lijst zonder te bewaren.
 
 ### App-toegang
 
-Onder de blokken staat **App-toegang**: of de medewerker zich kan aanmelden in de [mobiele app](mobiele-app.md). U
+Onder de blokken staat **App-toegang**: of de medewerker zich kan aanmelden in de [mobiele app](app/aan-de-slag.md). U
 ziet het blok als u medewerkers mag bewerken.
 
 ![Het blok App-toegang op de fiche van een medewerker, met de stand Geen app-toegang en de knop Toegang geven…](images/medewerker-app-toegang.png "App-toegang")

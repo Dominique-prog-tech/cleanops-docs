@@ -393,6 +393,11 @@ const SCHOTEN = [
       // ⚠️ De titel is "Tijd" ZONDER aantal tot het tabblad open is: het aantal komt pas wanneer het raster geladen is (25/10/2026).
       await p.getByText(/^(Tijd|Temps)( \(\d+\))?$/).filter({ visible: true }).first().click();
     } },
+  // Getekend door de klant (demopunt 7, 26/10/2026): de kaart bovenaan de werkorderfiche. ⚠️ De demo TEKENT NIET (DemoDataGenerator kent geen
+  // handtekening): dit recept vraagt een werkorder die in de app getekend werd — 900137 (NL) en 900144 (FR), lokaal getekend op 26/10/2026.
+  // Na een nieuwe "Demo vullen" bestaan die nummers niet meer getekend; dan eerst opnieuw laten tekenen, of de demo een handtekening geven.
+  { naam: 'werkorder-getekend', route: '/werkorders', verwacht: tekstTaal('Getekend door de klant', 'Signé par le client'),
+    na: async (p, taal) => { await openWerkorder(p, taal === 'fr-BE' ? '900144' : '900137'); } },
   // Attesten (module Attesten, vrijgave 08/10/2026). De demo draagt attesten bij de twee uitgewerkte werkorders
   // (DemoDataGenerator.VerzinAttestenAsync): de Nederlandstalige (Tuincentrum De Linde) twee, slib en vet; de Franstalige
   // (Résidence Les Tilleuls) één. Beide te factureren, dus zichtbaar bij "nog niet gefactureerd". De lijst toont geen werf: de rij
@@ -1334,9 +1339,12 @@ await browser.close();
 const zonderVerwijzing = SCHOTEN.flatMap(s => [s.naam, `${s.naam}-fr`]).filter(n => !(n in ALT));
 // Beelden die NIET uit dit script komen, met de reden. Een lijst van NAMEN en geen voorvoegsel: een later recept dat met "app-" begint,
 // moet de controle nog wel krijgen.
-// - De mobiele app (mobiele-app.md, 25/10/2026): schermafdrukken uit de simulator, dezelfde als de winkelbeelden in adm-cleanops-flutter
+// - De mobiele app (docs/app/, 25/10/2026): schermafdrukken uit de simulator, dezelfde als de winkelbeelden in adm-cleanops-flutter
 //   (store/schermafbeeldingen), verkleind. Dit script stuurt enkel de backoffice in een browser aan.
-const BUITEN_SCRIPT = new Set(['app-planning', 'app-werkorder', 'app-teller', 'app-betaling'].flatMap(n => [n, `${n}-fr`]));
+// - 26/10/2026: de tabletreeks voor de vier pagina's onder docs/app/, uit de eigen simulator "CleanOps iPad 13" (2064 x 2752, op de helft:
+//   1032 x 1376), met de demochauffeur Tom Verbeke. app-werkorder viel weg: de planning op een tablet toont de werkorder ernaast.
+const BUITEN_SCRIPT = new Set(['app-planning', 'app-teller', 'app-betaling', 'app-notities-fotos', 'app-foto-kiezen', 'app-nakijken',
+  'app-tekenen', 'app-getekend', 'app-mail', 'app-menu', 'app-profiel'].flatMap(n => [n, `${n}-fr`]));
 const zonderRecept = Object.keys(ALT).filter(n => !BUITEN_SCRIPT.has(n) && !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
 
 console.log(`\nApp: ${toestand.sha?.slice(0, 7) ?? '?'}${toestand.vuil ? ' (werkmap VUIL — het beeld toont niet-vastgelegde code)' : ''} · tenant demo`);

@@ -50,7 +50,7 @@ Klik bij de klant op **Factureren…**. Het venster toont zijn te factureren wer
 - Het **cameraverslag** staat er in het groen als er een aan de werkorder hangt, en in het rood als **cameraverslag ontbreekt —
   maken** wanneer de werkorder er een vraagt en er geen heeft. Een klik opent het verslag, of een nieuw verslag voor die
   werkorder, in een nieuw tabblad (zie [Cameraverslagen](cameraverslagen.md#in-de-facturatie)). Factureren kan ook zonder.
-- **getekend** staat er in het groen als de klant de leveringsbon in de [mobiele app](mobiele-app.md#de-klant-laten-aftekenen)
+- **getekend** staat er in het groen als de klant de leveringsbon in de [mobiele app](app/laten-tekenen.md)
   aftekende. Een klik opent de getekende bon in een nieuw tabblad: zo factureert u wat de klant aftekende.
 - **contract** opent het contract in een nieuw tabblad.
 - Klik op het nummer om de werkorder in een nieuw tabblad te openen en recht te zetten.

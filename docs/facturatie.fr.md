@@ -54,7 +54,7 @@ Cliquez sur **Facturer…** à côté du client. La fenêtre affiche ses ordres 
   manquant — l'établir** lorsque l'ordre de travail en demande un et n'en a pas. Un clic ouvre le rapport, ou un nouveau rapport
   pour cet ordre de travail, dans un nouvel onglet (voir [Rapports caméra](cameraverslagen.fr.md#dans-la-facturation)). Vous
   pouvez facturer sans.
-- **signé** figure en vert lorsque le client a signé le bon de livraison dans l'[application mobile](mobiele-app.fr.md#faire-signer-le-client).
+- **signé** figure en vert lorsque le client a signé le bon de livraison dans l'[application mobile](app/laten-tekenen.fr.md).
   Un clic ouvre le bon signé dans un nouvel onglet : vous facturez ce que le client a signé.
 - **contrat** ouvre le contrat dans un nouvel onglet.
 - Cliquez sur le numéro pour ouvrir l'ordre de travail dans un nouvel onglet et le corriger.

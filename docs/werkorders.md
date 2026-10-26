@@ -197,11 +197,11 @@ openen na **Bewaren**.
 
 ### Getekend door de klant
 
-De klant kan de leveringsbon aftekenen op het toestel van de medewerker, in de [mobiele app](mobiele-app.md#de-klant-laten-aftekenen).
+De klant kan de leveringsbon aftekenen op het toestel van de medewerker, in de [mobiele app](app/laten-tekenen.md).
 Daarmee is de werkorder afgerond. Bovenaan de fiche staat dan de kaart **Getekend door de klant**, met de naam van wie
 tekende, het moment, de medewerker die de bon voorlegde en de opmerking van de klant.
 
-<!-- AFBEELDING: werkorder-getekend — de kaart Getekend door de klant bovenaan de werkorderfiche, met Getekende bon (pdf), Mailen… en Handtekening intrekken -->
+![De kaart Getekend door de klant bovenaan de werkorderfiche: wie tekende en wanneer, met Getekende bon (pdf), Mailen… en Handtekening intrekken](images/werkorder-getekend.png "Getekend door de klant")
 
 | Knop | Wat het doet |
 |---|---|
@@ -230,7 +230,7 @@ attest zelf staat bij [Attesten](attesten.md).
 ### Tijd
 
 Rechts bovenaan de fiche staat het tabblad **Tijd**, met het aantal registraties tussen haakjes. Het toont de tijd die
-de medewerkers op deze werkorder registreerden, in de [mobiele app](mobiele-app.md) of op het kantoor.
+de medewerkers op deze werkorder registreerden, in de [mobiele app](app/aan-de-slag.md) of op het kantoor.
 
 Bovenaan staat het totaal voor **Werken** en voor **Verplaatsing**. Loopt er nog een teller, dan staat er **Er loopt een
 teller** naast.
@@ -259,7 +259,7 @@ Tijd toevoegen en rechtzetten kan wie werkorders mag bewerken.
 ### Notities
 
 Het tabblad **Notities** bundelt wat er over deze werkorder genoteerd werd: door de medewerkers in de
-[mobiele app](mobiele-app.md#notities), of op het kantoor. Een notitie uit de app staat er met **door** en de naam van
+[mobiele app](app/werkorder.md#notities), of op het kantoor. Een notitie uit de app staat er met **door** en de naam van
 de medewerker. Met **Zoeken in de notities…** vindt u er een terug.
 
 Met **+ Notitie** voegt u er zelf een toe: een **Onderwerp** (verplicht), **Wanneer** en de **Tekst**. Ga met de muis
@@ -274,7 +274,7 @@ Notities toevoegen, bewerken en verwijderen kan wie werkorders mag bewerken.
 
 Rechts bovenaan de fiche staat het tabblad **Journaal**, met daarin **Bijlagen** — de documenten bij deze werkorder — en
 **Logboek**: wie welk veld wijzigde, wanneer, en van welke waarde naar welke. Ook de foto's die de medewerkers in de
-[mobiele app](mobiele-app.md#fotos) nemen, staan bij de Bijlagen.
+[mobiele app](app/werkorder.md#fotos) nemen, staan bij de Bijlagen.
 
 !!! info "Niet elke link is voor iedereen een link"
     Het nummer van de offerte of de factuur kunt u enkel aanklikken als u dat onderdeel mag openen. Anders staat

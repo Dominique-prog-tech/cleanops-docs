@@ -4,11 +4,6 @@ description: "L'ordre de travail dans l'application mobile CleanOps : le chrono,
 
 # L'ordre de travail
 
-!!! info "L'application est en test"
-    L'application mobile n'est pas encore disponible dans l'App Store et Google Play. Cette page montre déjà ce qu'elle
-    sait faire, pour que vous puissiez la découvrir. Ce que le bureau en voit, comme l'onglet **Temps** ou **Signé par le
-    client** sur l'ordre de travail, arrivera avec l'application.
-
 Sur l'ordre de travail, le collaborateur enregistre son temps, note ce que le bureau doit savoir, prend des photos et
 note un paiement sur place. Comment il ouvre l'ordre de travail est décrit dans [Le planning](planning.fr.md).
 
@@ -25,7 +20,7 @@ Sous **Mon chrono**, le collaborateur enregistre son temps sur cet ordre de trav
 
 Un seul chrono tourne à la fois. Si le collaborateur démarre un chrono sur un autre ordre de travail, le précédent
 s'arrête. S'il a oublié de démarrer ou d'arrêter, il encode le temps à la main avec **Ajouter du temps** ou **Corriger
-le temps**. Au bureau, vous voyez tout dans l'onglet **Temps** de l'ordre de travail.
+le temps**. Au bureau, vous voyez tout dans l'onglet [Temps](../werkorders.fr.md#temps) de l'ordre de travail.
 
 ## Notes
 
@@ -33,7 +28,7 @@ Sous **Notes**, le collaborateur écrit ce que le bureau ou un collègue doit sa
 pied-de-biche ». Il appuie sur **Ajouter une note**, tape son texte (2000 caractères au plus) et appuie sur
 **Enregistrer**. Chaque note figure avec le nom de son auteur et le moment. Une note du bureau figure avec **Bureau**.
 
-Au bureau, vous les voyez dans l'onglet **Notes** de l'ordre de travail, avec **par** et le
+Au bureau, vous les voyez dans l'onglet [Notes](../werkorders.fr.md#notes) de l'ordre de travail, avec **par** et le
 nom du collaborateur.
 
 ![L'ordre de travail avec sous Notes une note de Tom Verbeke et sous Photos une photo, chacun avec son bouton pour ajouter](../images/app-notities-fotos-fr.png "Notes et photos"){ width="560" }
@@ -86,7 +81,7 @@ S'il n'a pas donné à l'application l'accès à l'appareil photo la première f
 appareil, sous l'application CleanOps. Choisir une photo depuis la galerie reste possible.
 
 **Le temps dans l'application est incorrect.**
-Corrigez-le dans l'onglet **Temps** de l'ordre de travail, ou le collaborateur le fait
+Corrigez-le dans l'onglet [Temps](../werkorders.fr.md#temps) de l'ordre de travail, ou le collaborateur le fait
 lui-même avec **Corriger le temps**.
 
 ## Voir aussi

@@ -4,11 +4,6 @@ description: "De werkorder in de mobiele app van CleanOps: de teller, notities, 
 
 # De werkorder
 
-!!! info "De app is in test"
-    De mobiele app staat nog niet in de App Store en Google Play. Deze pagina toont al wat ze kan, zodat u ze kunt leren
-    kennen. Wat het kantoor ervan ziet, zoals het tabblad **Tijd** of **Getekend door de klant** op de werkorder, komt
-    samen met de app.
-
 Op de werkorder registreert de medewerker zijn tijd, noteert hij wat het kantoor moet weten, neemt hij foto's en noteert
 hij een betaling ter plaatse. Hoe hij de werkorder opent, leest u in [De planning](planning.md).
 
@@ -25,7 +20,7 @@ Onder **Mijn teller** registreert de medewerker zijn tijd op deze werkorder:
 
 Er loopt hoogstens één teller tegelijk. Start de medewerker een teller op een andere werkorder, dan stopt de vorige.
 Vergat hij te starten of te stoppen, dan geeft hij met **Tijd toevoegen** of **Tijd rechtzetten** de tijd met de hand
-in. Op kantoor ziet u alles op het tabblad **Tijd** van de werkorder.
+in. Op kantoor ziet u alles op het tabblad [Tijd](../werkorders.md#tijd) van de werkorder.
 
 ## Notities
 
@@ -33,7 +28,7 @@ Onder **Notities** schrijft de medewerker op wat het kantoor of een collega moet
 meenemen". Hij tikt op **Notitie toevoegen**, typt zijn tekst (hoogstens 2000 tekens) en tikt op **Bewaren**. Elke
 notitie staat er met de naam van wie ze schreef en het moment. Een notitie van het kantoor staat er met **Kantoor**.
 
-Op kantoor ziet u ze op het tabblad **Notities** van de werkorder, met **door** en de naam van
+Op kantoor ziet u ze op het tabblad [Notities](../werkorders.md#notities) van de werkorder, met **door** en de naam van
 de medewerker.
 
 ![De werkorder met onder Notities een notitie van Tom Verbeke en onder Foto's een foto, elk met hun knop om toe te voegen](../images/app-notities-fotos.png "Notities en foto's"){ width="560" }
@@ -83,7 +78,7 @@ Gaf hij de app de eerste keer geen toegang tot de camera, dan zet hij dat aan in
 de app CleanOps. Een foto uit de galerij kiezen kan intussen wel.
 
 **De tijd in de app klopt niet.**
-Zet ze recht op het tabblad **Tijd** van de werkorder, of laat de medewerker het zelf doen met
+Zet ze recht op het tabblad [Tijd](../werkorders.md#tijd) van de werkorder, of laat de medewerker het zelf doen met
 **Tijd rechtzetten**.
 
 ## Zie ook

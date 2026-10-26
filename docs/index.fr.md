@@ -30,10 +30,9 @@ première visite guidée à la facture : [Vidéos](videos.md).
     ---
 
     Votre aperçu de la journée, votre espace chez ADM-Concept pour les factures, les tickets et les notes de
-    version, la sécurité de votre compte et l'application pour vos collaborateurs.
+    version, et la sécurité de votre compte.
 
-    [Tableau de bord](dashboard.md) · [Portail client](klantenportaal.md) · [Vérification en deux étapes](tweestapsverificatie.md) ·
-    [L'application mobile](mobiele-app.md)
+    [Tableau de bord](dashboard.md) · [Portail client](klantenportaal.md) · [Vérification en deux étapes](tweestapsverificatie.md)
 
 -   :material-account-group: **CRM**
 
@@ -83,10 +82,10 @@ première visite guidée à la facture : [Vidéos](videos.md).
     ---
 
     L'application pour vos collaborateurs sur le terrain : leur planning, le chrono, les notes et les photos, le
-    paiement sur place, la signature du client et leurs congés. *En test : pas encore dans l'App Store et Google Play.*
+    paiement sur place et la signature du client.
 
     [Premiers pas](app/aan-de-slag.md) · [Le planning](app/planning.md) · [L'ordre de travail](app/werkorder.md) ·
-    [Faire signer](app/laten-tekenen.md) · [Créer un ordre de travail](app/werkorder-aanmaken.md) · [Congés](app/verlof.md)
+    [Faire signer](app/laten-tekenen.md)
 
 -   :material-cog-outline: **Administration**
 
