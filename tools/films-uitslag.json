@@ -578,5 +578,464 @@
     "gepubliceerdOp": "2026-10-27T05:52:22.579",
     "gepubliceerdeHash": "09f5426da6f02d2a",
     "embed": "https://iframe.mediadelivery.net/embed/791117/f2ffd203-8091-4863-ab7b-19f06a8a6e3e"
+  },
+  "cleanops-overzicht-website-nl": {
+    "film": "cleanops-overzicht",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 40.12,
+    "uitvoering": "website",
+    "routes": [
+      "/contracten",
+      "/planning",
+      "/werkbonnen",
+      "/attesten",
+      "/facturatie"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "CleanOps in het kort: de alles-in-één tool voor uw ruimdienst",
+    "omschrijving": "Een kort overzicht van CleanOps voor ruim- en rioolreinigingsdiensten: het dashboard, onderhoudscontracten die zelf hun werkorders maken, het planbord, de werkbonnen per chauffeur, verwerkingsattesten met EURAL-code en de facturatie.",
+    "hash": "425d3360c30767bc",
+    "guid": "bc808a28-2c82-4336-a5f5-8ded011ad5fb",
+    "hoofdstukken": [
+      {
+        "titel": "Het dashboard",
+        "start": 1.97,
+        "eind": 6.75
+      },
+      {
+        "titel": "Onderhoudscontracten",
+        "start": 8.59,
+        "eind": 13.73
+      },
+      {
+        "titel": "Het planbord",
+        "start": 15.4,
+        "eind": 19.69
+      },
+      {
+        "titel": "De werkbonnen",
+        "start": 21.87,
+        "eind": 25.22
+      },
+      {
+        "titel": "Verwerkingsattesten",
+        "start": 27.11,
+        "eind": 31.11
+      },
+      {
+        "titel": "Facturatie",
+        "start": 32.94,
+        "eind": 37.01
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/bc808a28-2c82-4336-a5f5-8ded011ad5fb/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:36:56.696",
+    "gepubliceerdeHash": "425d3360c30767bc",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/bc808a28-2c82-4336-a5f5-8ded011ad5fb"
+  },
+  "cleanops-overzicht-website-fr": {
+    "film": "cleanops-overzicht",
+    "taal": "fr-BE",
+    "pagina": null,
+    "lengte": 44.48,
+    "uitvoering": "website",
+    "routes": [
+      "/contracten",
+      "/planning",
+      "/werkbonnen",
+      "/attesten",
+      "/facturatie"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "CleanOps en bref : l’outil tout-en-un pour votre service de curage",
+    "omschrijving": "Un bref aperçu de CleanOps pour les services de curage et de débouchage : le tableau de bord, des contrats d’entretien qui créent eux-mêmes leurs ordres, le tableau de planning, les bons de travail par chauffeur, les attestations avec code EURAL et la facturation.",
+    "hash": "8a5504c90a47f6a5",
+    "guid": "a9787060-9916-46ea-aeb4-2a151a195003",
+    "hoofdstukken": [
+      {
+        "titel": "Le tableau de bord",
+        "start": 1.96,
+        "eind": 7.81
+      },
+      {
+        "titel": "Contrats d’entretien",
+        "start": 9.66,
+        "eind": 15.59
+      },
+      {
+        "titel": "Le tableau de planning",
+        "start": 17.23,
+        "eind": 22.66
+      },
+      {
+        "titel": "Les bons de travail",
+        "start": 24.84,
+        "eind": 28.48
+      },
+      {
+        "titel": "Attestations de traitement",
+        "start": 30.26,
+        "eind": 35.47
+      },
+      {
+        "titel": "Facturation",
+        "start": 37.29,
+        "eind": 41.57
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/a9787060-9916-46ea-aeb4-2a151a195003/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:37:07.967",
+    "gepubliceerdeHash": "8a5504c90a47f6a5",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/a9787060-9916-46ea-aeb4-2a151a195003"
+  },
+  "cleanops-overzicht-website-en": {
+    "film": "cleanops-overzicht",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 41.88,
+    "uitvoering": "website",
+    "routes": [
+      "/contracten",
+      "/planning",
+      "/werkbonnen",
+      "/attesten",
+      "/facturatie"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "CleanOps at a glance: the all-in-one tool for your drain cleaning business",
+    "omschrijving": "A short overview of CleanOps for drain and sewer cleaning businesses: the dashboard, maintenance contracts that create their own work orders, the planning board, work sheets per driver, waste certificates with EURAL code, and invoicing.",
+    "hash": "309947051d7c3959",
+    "guid": "a49abe93-0b37-4325-afee-4c783e7ca424",
+    "hoofdstukken": [
+      {
+        "titel": "The dashboard",
+        "start": 1.99,
+        "eind": 7.13
+      },
+      {
+        "titel": "Maintenance contracts",
+        "start": 9.07,
+        "eind": 14.14
+      },
+      {
+        "titel": "The planning board",
+        "start": 15.83,
+        "eind": 20.54
+      },
+      {
+        "titel": "Work sheets",
+        "start": 22.74,
+        "eind": 25.81
+      },
+      {
+        "titel": "Waste certificates",
+        "start": 27.6,
+        "eind": 32.6
+      },
+      {
+        "titel": "Invoicing",
+        "start": 34.64,
+        "eind": 38.5
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/a49abe93-0b37-4325-afee-4c783e7ca424/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:37:19.169",
+    "gepubliceerdeHash": "309947051d7c3959",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/a49abe93-0b37-4325-afee-4c783e7ca424"
+  },
+  "planning-en-ploegen-website-nl": {
+    "film": "planning-en-ploegen",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 32.08,
+    "uitvoering": "website",
+    "routes": [
+      "/planning",
+      "/planning/lijst",
+      "/werkbonnen"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "Planning en ploegen in CleanOps: het planbord voor uw ruimdienst",
+    "omschrijving": "Het planbord van CleanOps: de week van al uw ploegen, elke werkorder op haar dag met tijdsdeel en klant, werk zonder datum dat u zo inplant, vrije blokken voor een opleiding of de garage, en de werkbon per chauffeur.",
+    "hash": "a4e0fd34f37c9cd7",
+    "guid": "d0d008b4-ee26-4df6-be1a-2a864ac26b65",
+    "hoofdstukken": [
+      {
+        "titel": "De week",
+        "start": 1.38,
+        "eind": 4.59
+      },
+      {
+        "titel": "Elke werkorder op haar dag",
+        "start": 6.9,
+        "eind": 11.47
+      },
+      {
+        "titel": "Werk zonder datum",
+        "start": 13.74,
+        "eind": 17.03
+      },
+      {
+        "titel": "De lijstweergave",
+        "start": 19.02,
+        "eind": 22.81
+      },
+      {
+        "titel": "De werkbon per chauffeur",
+        "start": 25.01,
+        "eind": 29.66
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/d0d008b4-ee26-4df6-be1a-2a864ac26b65/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:37:25.352",
+    "gepubliceerdeHash": "a4e0fd34f37c9cd7",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/d0d008b4-ee26-4df6-be1a-2a864ac26b65"
+  },
+  "planning-en-ploegen-website-fr": {
+    "film": "planning-en-ploegen",
+    "taal": "fr-BE",
+    "pagina": null,
+    "lengte": 35.32,
+    "uitvoering": "website",
+    "routes": [
+      "/planning",
+      "/planning/lijst",
+      "/werkbonnen"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "Planning et équipes dans CleanOps : le tableau de planning de votre service de curage",
+    "omschrijving": "Le tableau de planning de CleanOps : la semaine de toutes vos équipes, chaque ordre à son jour avec la partie de journée et le client, le travail sans date à planifier, des blocs libres pour une formation ou le garage, et le bon par chauffeur.",
+    "hash": "0b4bced4cc03f340",
+    "guid": "8fec0bdb-b645-412f-87b5-9709e03dd1bf",
+    "hoofdstukken": [
+      {
+        "titel": "La semaine",
+        "start": 1.38,
+        "eind": 5.88
+      },
+      {
+        "titel": "Chaque ordre à son jour",
+        "start": 8.18,
+        "eind": 13.82
+      },
+      {
+        "titel": "Travail sans date",
+        "start": 16.08,
+        "eind": 19.43
+      },
+      {
+        "titel": "La vue liste",
+        "start": 21.39,
+        "eind": 25.46
+      },
+      {
+        "titel": "Le bon par chauffeur",
+        "start": 27.63,
+        "eind": 32.91
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/8fec0bdb-b645-412f-87b5-9709e03dd1bf/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:37:36.509",
+    "gepubliceerdeHash": "0b4bced4cc03f340",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/8fec0bdb-b645-412f-87b5-9709e03dd1bf"
+  },
+  "planning-en-ploegen-website-en": {
+    "film": "planning-en-ploegen",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 32.48,
+    "uitvoering": "website",
+    "routes": [
+      "/planning",
+      "/planning/lijst",
+      "/werkbonnen"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "Planning and crews in CleanOps: the planning board for your drain cleaning business",
+    "omschrijving": "The CleanOps planning board: the week of all your crews, every work order on its day with time slot and customer, unscheduled work you plan in, free blocks for training or the garage, and a work sheet per driver.",
+    "hash": "4bbf1ab6c9d76b42",
+    "guid": "9fc613ec-d62a-46da-8370-c7667c755340",
+    "hoofdstukken": [
+      {
+        "titel": "The week",
+        "start": 1.36,
+        "eind": 5.07
+      },
+      {
+        "titel": "Every job on its day",
+        "start": 7.36,
+        "eind": 12.36
+      },
+      {
+        "titel": "Unscheduled work",
+        "start": 14.62,
+        "eind": 17.98
+      },
+      {
+        "titel": "The list view",
+        "start": 19.98,
+        "eind": 23.7
+      },
+      {
+        "titel": "A work sheet per driver",
+        "start": 25.87,
+        "eind": 30.15
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/9fc613ec-d62a-46da-8370-c7667c755340/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:37:48.821",
+    "gepubliceerdeHash": "4bbf1ab6c9d76b42",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/9fc613ec-d62a-46da-8370-c7667c755340"
+  },
+  "verwerkingsattesten-website-nl": {
+    "film": "verwerkingsattesten",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 36.64,
+    "uitvoering": "website",
+    "routes": [
+      "/attesten"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "Verwerkingsattesten in CleanOps: met EURAL-code, als pdf naar de klant",
+    "omschrijving": "Verwerkingsattesten in CleanOps: bij elke werkorder die een attest vraagt ziet u of het er is, met product, hoeveelheid, herkomst, EURAL-code en verwerkingsbedrijf, en het attest gaat als pdf naar uw klant.",
+    "hash": "cdd26a0ab95e659c",
+    "guid": "4d0bb2db-5249-41d1-ab80-43db18064dea",
+    "hoofdstukken": [
+      {
+        "titel": "Welke werkorders een attest vragen",
+        "start": 3.61,
+        "eind": 8.25
+      },
+      {
+        "titel": "Met EURAL-code",
+        "start": 10.52,
+        "eind": 15.45
+      },
+      {
+        "titel": "Het attest",
+        "start": 18.95,
+        "eind": 23.74
+      },
+      {
+        "titel": "Als pdf naar de klant",
+        "start": 30.03,
+        "eind": 34.24
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/4d0bb2db-5249-41d1-ab80-43db18064dea/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:37:59.9",
+    "gepubliceerdeHash": "cdd26a0ab95e659c",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/4d0bb2db-5249-41d1-ab80-43db18064dea"
+  },
+  "verwerkingsattesten-website-fr": {
+    "film": "verwerkingsattesten",
+    "taal": "fr-BE",
+    "pagina": null,
+    "lengte": 38.52,
+    "uitvoering": "website",
+    "routes": [
+      "/attesten"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "Attestations de traitement dans CleanOps : avec code EURAL, en pdf au client",
+    "omschrijving": "Les attestations de traitement dans CleanOps : pour chaque ordre qui en demande une, vous voyez si elle existe, avec produit, quantité, origine, code EURAL et entreprise de traitement, et l’attestation part en pdf chez votre client.",
+    "hash": "cea806fbf9bf3266",
+    "guid": "ad992880-2b8d-4e4e-b344-ca99b2626444",
+    "hoofdstukken": [
+      {
+        "titel": "Les ordres qui demandent une attestation",
+        "start": 3.58,
+        "eind": 9.15
+      },
+      {
+        "titel": "Avec code EURAL",
+        "start": 11.43,
+        "eind": 16.35
+      },
+      {
+        "titel": "L’attestation",
+        "start": 19.86,
+        "eind": 24.79
+      },
+      {
+        "titel": "En pdf au client",
+        "start": 31.09,
+        "eind": 36.16
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/ad992880-2b8d-4e4e-b344-ca99b2626444/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:38:10.985",
+    "gepubliceerdeHash": "cea806fbf9bf3266",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/ad992880-2b8d-4e4e-b344-ca99b2626444"
+  },
+  "verwerkingsattesten-website-en": {
+    "film": "verwerkingsattesten",
+    "taal": "nl-BE",
+    "pagina": null,
+    "lengte": 37.96,
+    "uitvoering": "website",
+    "routes": [
+      "/attesten"
+    ],
+    "app": {
+      "sha": "3d9a425331fcca3d79a6c6c266a19d69518f2b69",
+      "vuil": false
+    },
+    "titel": "Waste certificates in CleanOps: with EURAL code, as a PDF for your customer",
+    "omschrijving": "Waste certificates in CleanOps: for every work order that needs one you see whether it exists, with product, quantity, origin, EURAL code and treatment company, and the certificate goes to your customer as a PDF.",
+    "hash": "756203ce9f387d56",
+    "guid": "4168b576-7bc3-4c9d-ba01-188699a52424",
+    "hoofdstukken": [
+      {
+        "titel": "Jobs that need a certificate",
+        "start": 3.63,
+        "eind": 8.98
+      },
+      {
+        "titel": "With EURAL code",
+        "start": 11.25,
+        "eind": 16.54
+      },
+      {
+        "titel": "The certificate",
+        "start": 20.03,
+        "eind": 24.17
+      },
+      {
+        "titel": "As a PDF for the customer",
+        "start": 30.46,
+        "eind": 35.53
+      }
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/4168b576-7bc3-4c9d-ba01-188699a52424/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T06:38:16.98",
+    "gepubliceerdeHash": "756203ce9f387d56",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/4168b576-7bc3-4c9d-ba01-188699a52424"
   }
 }

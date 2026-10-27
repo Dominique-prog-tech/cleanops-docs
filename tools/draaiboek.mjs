@@ -163,6 +163,203 @@ export const FILMS = [
     ],
   }],
 
+  // ══ WEBSITEFILMS (27/10/2026, Dominique: "graag uitvoeren"; voorstel van content-hub) ════════════════════════════
+  // Drie films ENKEL voor cleanops-website: zonder stem, de zin in beeld, NL/FR/EN (het Engels toont een Nederlands scherm
+  // met Engelse tekst — de app spreekt geen Engels), ±45 s. Een websitefilm POSITIONEERT: landen en één zin, NIETS bewaren
+  // (dus ook geen afhankelijkheid van de volgorde van de handleidingfilms). Eigen films en geen uitvoering van een
+  // handleidingfilm, zodat de omschrijving bij de websiteversie past (les van Nimble, content-hub 26/10).
+  // ⚠️ Positionering (content-hub merken/cleanops/positionering.md): GEEN mobiele app noemen, niets beloven dat de handleiding
+  // niet beschrijft, geen Peppol "onbeperkt". Route naar de site: `node tools/bunny.mjs naar-website` → tools/website-films.json,
+  // content-hub neemt het byte-gelijk over van origin/main.
+
+  // ── W1. CLEANOPS IN HET KORT (de startpagina) ──────────────────────────────────────────────────────────────────
+  ['cleanops-overzicht', {
+    pagina: null,
+    titel: {
+      nl: 'CleanOps in het kort: de alles-in-één tool voor uw ruimdienst',
+      fr: 'CleanOps en bref : l’outil tout-en-un pour votre service de curage',
+      en: 'CleanOps at a glance: the all-in-one tool for your drain cleaning business',
+    },
+    omschrijving: {
+      nl: 'Een kort overzicht van CleanOps voor ruim- en rioolreinigingsdiensten: het dashboard, onderhoudscontracten die zelf '
+        + 'hun werkorders maken, het planbord, de werkbonnen per chauffeur, verwerkingsattesten met EURAL-code en de facturatie.',
+      fr: 'Un bref aperçu de CleanOps pour les services de curage et de débouchage : le tableau de bord, des contrats d’entretien '
+        + 'qui créent eux-mêmes leurs ordres, le tableau de planning, les bons de travail par chauffeur, les attestations avec code '
+        + 'EURAL et la facturation.',
+      en: 'A short overview of CleanOps for drain and sewer cleaning businesses: the dashboard, maintenance contracts that create '
+        + 'their own work orders, the planning board, work sheets per driver, waste certificates with EURAL code, and invoicing.',
+    },
+    uitvoeringen: {
+      website: { stem: false, talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }] },
+    },
+    scenes: [
+      { naam: 'dashboard', kop: { nl: 'Het dashboard', fr: 'Le tableau de bord', en: 'The dashboard' },
+        doe: async (p) => { await p.goto(`${BASIS}/`); await p.waitForLoadState('networkidle'); },
+        merk: /Hoeve Ter Beke/,
+        website: { nl: 'Elke ochtend ziet u wat er vandaag gebeurt, en wat aandacht vraagt.',
+                   fr: 'Chaque matin, vous voyez ce qui se passe aujourd’hui, et ce qui demande attention.',
+                   en: 'Every morning you see what is happening today, and what needs attention.' } },
+
+      { naam: 'contracten', kop: { nl: 'Onderhoudscontracten', fr: 'Contrats d’entretien', en: 'Maintenance contracts' },
+        doe: async (p) => { await p.goto(`${BASIS}/contracten`); await p.locator('.dxbl-grid-table tbody tr:visible').first().waitFor({ timeout: 15000 }); },
+        merk: /Vidange fosse septique/,
+        website: { nl: 'Onderhoudscontracten met een vaste frequentie maken zelf hun werkorders.',
+                   fr: 'Les contrats d’entretien à fréquence fixe créent eux-mêmes leurs ordres de travail.',
+                   en: 'Maintenance contracts on a fixed schedule create their own work orders.' } },
+
+      { naam: 'planning', kop: { nl: 'Het planbord', fr: 'Le tableau de planning', en: 'The planning board' },
+        doe: async (p) => { await p.goto(`${BASIS}/planning`); await p.waitForSelector('.pb-bord', { timeout: 15000 }); },
+        merk: /Kolken parking reinigen/,
+        website: { nl: 'Het planbord verdeelt het werk over uw ploegen, dag per dag.',
+                   fr: 'Le tableau de planning répartit le travail entre vos équipes, jour par jour.',
+                   en: 'The planning board spreads the work across your crews, day by day.' } },
+
+      { naam: 'werkbonnen', kop: { nl: 'De werkbonnen', fr: 'Les bons de travail', en: 'Work sheets' },
+        doe: async (p) => { await p.goto(`${BASIS}/werkbonnen`); await p.waitForLoadState('networkidle'); },
+        merk: /Kolken parking reinigen/,
+        website: { nl: 'Elke chauffeur krijgt zijn werkbon voor de dag.',
+                   fr: 'Chaque chauffeur reçoit son bon de travail du jour.',
+                   en: 'Every driver gets a work sheet for the day.' } },
+
+      { naam: 'attesten', kop: { nl: 'Verwerkingsattesten', fr: 'Attestations de traitement', en: 'Waste certificates' },
+        doe: async (p) => { await p.goto(`${BASIS}/attesten`); await p.locator('.dxbl-grid-table tbody tr:visible').first().waitFor({ timeout: 15000 }); },
+        merk: /20 03 04/,
+        website: { nl: 'Verwerkingsattesten met EURAL-code, klaar voor uw klant.',
+                   fr: 'Des attestations de traitement avec code EURAL, prêtes pour votre client.',
+                   en: 'Waste treatment certificates with EURAL code, ready for your customer.' } },
+
+      { naam: 'facturatie', kop: { nl: 'Facturatie', fr: 'Facturation', en: 'Invoicing' },
+        doe: async (p) => { await p.goto(`${BASIS}/facturatie`); await rij(p, 'Résidence Les Tilleuls').waitFor({ timeout: 15000 }); },
+        merk: /Résidence Les Tilleuls/,
+        website: { nl: 'En uitgevoerd werk wordt in een paar klikken een factuur.',
+                   fr: 'Et le travail exécuté devient une facture en quelques clics.',
+                   en: 'And completed work becomes an invoice in a few clicks.' } },
+    ],
+  }],
+
+  // ── W2. PLANNING EN PLOEGEN (functiepagina planning-en-ploegen) ───────────────────────────────────────────────
+  ['planning-en-ploegen', {
+    pagina: null,
+    titel: {
+      nl: 'Planning en ploegen in CleanOps: het planbord voor uw ruimdienst',
+      fr: 'Planning et équipes dans CleanOps : le tableau de planning de votre service de curage',
+      en: 'Planning and crews in CleanOps: the planning board for your drain cleaning business',
+    },
+    omschrijving: {
+      nl: 'Het planbord van CleanOps: de week van al uw ploegen, elke werkorder op haar dag met tijdsdeel en klant, werk zonder '
+        + 'datum dat u zo inplant, vrije blokken voor een opleiding of de garage, en de werkbon per chauffeur.',
+      fr: 'Le tableau de planning de CleanOps : la semaine de toutes vos équipes, chaque ordre à son jour avec la partie de journée '
+        + 'et le client, le travail sans date à planifier, des blocs libres pour une formation ou le garage, et le bon par chauffeur.',
+      en: 'The CleanOps planning board: the week of all your crews, every work order on its day with time slot and customer, '
+        + 'unscheduled work you plan in, free blocks for training or the garage, and a work sheet per driver.',
+    },
+    uitvoeringen: {
+      website: { stem: false, talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }] },
+    },
+    scenes: [
+      { naam: 'week', kop: { nl: 'De week', fr: 'La semaine', en: 'The week' },
+        doe: async (p) => { await p.goto(`${BASIS}/planning`); await p.waitForSelector('.pb-bord', { timeout: 15000 }); },
+        merk: /Kolken parking reinigen/,
+        website: { nl: 'Het planbord toont de week van al uw ploegen.',
+                   fr: 'Le tableau de planning montre la semaine de toutes vos équipes.',
+                   en: 'The planning board shows the week of all your crews.' } },
+
+      { naam: 'kaart', kop: { nl: 'Elke werkorder op haar dag', fr: 'Chaque ordre à son jour', en: 'Every job on its day' },
+        doe: async (p) => { await beweegNaar(p, p.locator('.pb-bord .pb-kaart', { hasText: 'Tuincentrum De Linde' }).first()); },
+        merk: /Kolken parking reinigen/,
+        website: { nl: 'Elke werkorder staat op haar dag, met het tijdsdeel en de klant.',
+                   fr: 'Chaque ordre de travail est à son jour, avec la partie de journée et le client.',
+                   en: 'Every work order sits on its day, with the time slot and the customer.' } },
+
+      { naam: 'zonder-datum', kop: { nl: 'Werk zonder datum', fr: 'Travail sans date', en: 'Unscheduled work' },
+        doe: async (p) => { await beweegNaar(p, p.locator('.pb-voorraad .pb-vkaart').first()); },
+        merk: /Kolken parking reinigen/,
+        website: { nl: 'Werk zonder datum plant u in met twee klikken.',
+                   fr: 'Le travail sans date se planifie en deux clics.',
+                   en: 'Unscheduled work is planned in with two clicks.' } },
+
+      { naam: 'lijst', kop: { nl: 'De lijstweergave', fr: 'La vue liste', en: 'The list view' },
+        doe: async (p) => { await p.goto(`${BASIS}/planning/lijst`); await p.locator('.dxbl-grid-table tbody tr:visible').first().waitFor({ timeout: 15000 }); },
+        merk: /Kolken parking reinigen/,
+        website: { nl: 'In de lijst wijst u meerdere werkorders tegelijk toe.',
+                   fr: 'Dans la liste, vous attribuez plusieurs ordres à la fois.',
+                   en: 'In the list, you assign several work orders at once.' } },
+
+      { naam: 'werkbonnen', kop: { nl: 'De werkbon per chauffeur', fr: 'Le bon par chauffeur', en: 'A work sheet per driver' },
+        doe: async (p) => { await p.goto(`${BASIS}/werkbonnen`); await p.waitForLoadState('networkidle'); },
+        merk: /Kolken parking reinigen/,
+        website: { nl: 'En elke chauffeur krijgt zijn werkbon, in de volgorde van de dag.',
+                   fr: 'Et chaque chauffeur reçoit son bon de travail, dans l’ordre de la journée.',
+                   en: 'And every driver gets a work sheet, in the order of the day.' } },
+    ],
+  }],
+
+  // ── W3. VERWERKINGSATTESTEN (functiepagina verwerkingsattesten) ───────────────────────────────────────────────
+  ['verwerkingsattesten', {
+    pagina: null,
+    titel: {
+      nl: 'Verwerkingsattesten in CleanOps: met EURAL-code, als pdf naar de klant',
+      fr: 'Attestations de traitement dans CleanOps : avec code EURAL, en pdf au client',
+      en: 'Waste certificates in CleanOps: with EURAL code, as a PDF for your customer',
+    },
+    omschrijving: {
+      nl: 'Verwerkingsattesten in CleanOps: bij elke werkorder die een attest vraagt ziet u of het er is, met product, hoeveelheid, '
+        + 'herkomst, EURAL-code en verwerkingsbedrijf, en het attest gaat als pdf naar uw klant.',
+      fr: 'Les attestations de traitement dans CleanOps : pour chaque ordre qui en demande une, vous voyez si elle existe, avec '
+        + 'produit, quantité, origine, code EURAL et entreprise de traitement, et l’attestation part en pdf chez votre client.',
+      en: 'Waste certificates in CleanOps: for every work order that needs one you see whether it exists, with product, quantity, '
+        + 'origin, EURAL code and treatment company, and the certificate goes to your customer as a PDF.',
+    },
+    uitvoeringen: {
+      website: { stem: false, talen: [{ ui: 'nl-BE', tekst: 'nl' }, { ui: 'fr-BE', tekst: 'fr' }, { ui: 'nl-BE', tekst: 'en' }] },
+    },
+    scenes: [
+      { naam: 'lijst', kop: { nl: 'Welke werkorders een attest vragen', fr: 'Les ordres qui demandent une attestation', en: 'Jobs that need a certificate' },
+        // ⚠️ De werkorder van de EIGEN demoklant kiezen: de lijst begint bij Résidence Les Tilleuls, en dan toonde ook de Nederlandse
+        // en de Engelse film een Franstalig attest (27/10/2026). De Engelse film draait op een Nederlands scherm → De Linde.
+        doe: async (p) => {
+          await p.goto(`${BASIS}/attesten`);
+          const r = rij(p, (await demo(p)).naam);
+          await r.waitFor({ timeout: 15000 });
+          await klik(p, r);
+          await p.waitForTimeout(1200);
+        },
+        merk: /20 03 04/,
+        website: { nl: 'Bij elke werkorder die een attest vraagt, ziet u of het er al is.',
+                   fr: 'Pour chaque ordre qui demande une attestation, vous voyez si elle existe déjà.',
+                   en: 'For every work order that needs a certificate, you see whether it is there.' } },
+
+      { naam: 'eural', kop: { nl: 'Met EURAL-code', fr: 'Avec code EURAL', en: 'With EURAL code' },
+        doe: async (p) => { await beweegNaar(p, p.getByText('20 03 04').first()); },
+        merk: /20 03 04/,
+        website: { nl: 'Per attest het product, de hoeveelheid, de herkomst en de EURAL-code.',
+                   fr: 'Par attestation, le produit, la quantité, l’origine et le code EURAL.',
+                   en: 'Per certificate: the product, the quantity, the origin and the EURAL code.' } },
+
+      { naam: 'attest', kop: { nl: 'Het attest', fr: 'L’attestation', en: 'The certificate' },
+        doe: async (p) => {
+          const r = p.locator('.dxbl-grid-table tbody tr:visible', { hasText: '20 03 04' }).first();
+          await beweegNaar(p, r); await r.dblclick();
+          await p.waitForURL(/\/attesten\/[0-9a-f-]{36}/, { timeout: 15000 });
+          await p.waitForTimeout(1200);
+        },
+        merk: /(Attest|Attestation) \d{6}\/\d/,
+        website: { nl: 'Het verwerkingsbedrijf en de verwerking komen uit uw eigen lijsten.',
+                   fr: 'L’entreprise et le mode de traitement viennent de vos propres listes.',
+                   en: 'The treatment company and method come from your own lists.' } },
+
+      { naam: 'pdf', kop: { nl: 'Als pdf naar de klant', fr: 'En pdf au client', en: 'As a PDF for the customer' },
+        doe: async (p) => {
+          await klik(p, p.locator('main').getByRole('button', { name: /^(Afdrukvoorbeeld|Aperçu)$/ }).first());
+          await p.waitForTimeout(4000);
+        },
+        merk: /(Attest|Attestation) \d{6}\/\d/,
+        website: { nl: 'Het attest wordt een pdf, die u meteen naar uw klant mailt.',
+                   fr: 'L’attestation devient un pdf, que vous envoyez aussitôt à votre client.',
+                   en: 'The certificate becomes a PDF that you email straight to your customer.' } },
+    ],
+  }],
+
   // ⚠️ DE VOLGORDE IS EEN VOORWAARDE (27/10/2026). Een ronde draait de films na elkaar op DEZELFDE demo, en drie ervan
   // BEWAREN: de planning (een werkorder inplannen, een blok), de cameraverslagen (een verslag) en de factuurfilm (een factuur).
   // Het cameraverslag haalt het signaal "ontbreekt" weg in Facturatie, en de factuur haalt de klant uit Facturatie — dus de
