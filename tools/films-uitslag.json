@@ -13,7 +13,7 @@
     "titel": "Aan de slag met CleanOps: het dashboard, het menu, de lijsten, de fiches en de hulp",
     "omschrijving": "De eerste rondleiding: het dashboard met uw bedragen, het werk van de dag en wat aandacht vraagt, het menu, werken in een lijst (zoeken, kolommen, exporteren), een klantfiche met haar journaal, wat er gebeurt met niet-bewaarde wijzigingen, en de hulp bij elk scherm.",
     "hash": "031e6cb39f8f2b89",
-    "guid": null,
+    "guid": "de3d12a8-728b-46aa-8d24-89ff857b6111",
     "hoofdstukken": [
       {
         "titel": "Het dashboard",
@@ -65,7 +65,11 @@
         "start": 132.28,
         "eind": 139.62
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/de3d12a8-728b-46aa-8d24-89ff857b6111/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:50:46.695",
+    "gepubliceerdeHash": "031e6cb39f8f2b89",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/de3d12a8-728b-46aa-8d24-89ff857b6111"
   },
   "aan-de-slag-fr": {
     "film": "aan-de-slag",
@@ -81,7 +85,7 @@
     "titel": "Premiers pas avec CleanOps : le tableau de bord, le menu, les listes, les fiches et l’aide",
     "omschrijving": "La première visite guidée : le tableau de bord avec vos montants, le travail du jour et ce qui demande attention, le menu, le travail dans une liste (rechercher, colonnes, exporter), une fiche client et son journal, ce qui se passe avec des modifications non enregistrées, et l’aide sur chaque écran.",
     "hash": "026c0b039a8021f8",
-    "guid": null,
+    "guid": "c324e6a1-f181-419b-a616-896efd3ce57e",
     "hoofdstukken": [
       {
         "titel": "Le tableau de bord",
@@ -133,7 +137,11 @@
         "start": 126.55,
         "eind": 133.19
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/c324e6a1-f181-419b-a616-896efd3ce57e/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:50:54.119",
+    "gepubliceerdeHash": "026c0b039a8021f8",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/c324e6a1-f181-419b-a616-896efd3ce57e"
   },
   "de-planning-nl": {
     "film": "de-planning",
@@ -151,7 +159,7 @@
     "titel": "De planning in CleanOps: het planbord, inplannen, vrije blokken en de lijstweergave",
     "omschrijving": "Het planbord per week en medewerker: de werkorders in hun volgorde en tijdsdeel, werk zonder datum inplannen, een vrij blok voor een opleiding of de garage, en de lijstweergave om toe te wijzen, de dagroute te openen en af te drukken.",
     "hash": "15e89315f7b865cb",
-    "guid": null,
+    "guid": "4fd549a7-8571-402e-a50f-ad6402df1006",
     "hoofdstukken": [
       {
         "titel": "Het planbord",
@@ -178,7 +186,11 @@
         "start": 61.3,
         "eind": 71.98
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/4fd549a7-8571-402e-a50f-ad6402df1006/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:51:08.39",
+    "gepubliceerdeHash": "15e89315f7b865cb",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/4fd549a7-8571-402e-a50f-ad6402df1006"
   },
   "de-planning-fr": {
     "film": "de-planning",
@@ -196,7 +208,7 @@
     "titel": "Le planning dans CleanOps : le tableau, planifier, les blocs libres et la vue liste",
     "omschrijving": "Le tableau de planning par semaine et par collaborateur : les ordres dans leur ordre et leur partie de journée, planifier le travail sans date, un bloc libre pour une formation ou le garage, et la vue liste pour attribuer, ouvrir la tournée du jour et imprimer.",
     "hash": "8b15ad611e9cfcfd",
-    "guid": null,
+    "guid": "5726d656-6eca-4cdd-ae14-5b854277ae0f",
     "hoofdstukken": [
       {
         "titel": "Le tableau de planning",
@@ -223,7 +235,11 @@
         "start": 60.02,
         "eind": 69.49
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/5726d656-6eca-4cdd-ae14-5b854277ae0f/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:51:15.465",
+    "gepubliceerdeHash": "8b15ad611e9cfcfd",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/5726d656-6eca-4cdd-ae14-5b854277ae0f"
   },
   "periodieke-contracten-nl": {
     "film": "periodieke-contracten",
@@ -241,7 +257,7 @@
     "titel": "Periodieke contracten in CleanOps: het ritme, de volgende beurten en de werkorders die eruit komen",
     "omschrijving": "Een contract legt vast wat er hoe vaak gebeurt. CleanOps toont de volgende beurten en maakt de werkorders zelf aan, gepland op het tijdsdeel en bij de uitvoerder van het contract. Met de opvolging zet u een contract on hold of plant u een contact met de klant.",
     "hash": "f37334e6c5aa986c",
-    "guid": null,
+    "guid": "eece39c1-116d-47f8-bace-e94d3ca8a39a",
     "hoofdstukken": [
       {
         "titel": "De contracten",
@@ -273,7 +289,11 @@
         "start": 62.88,
         "eind": 71.61
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/eece39c1-116d-47f8-bace-e94d3ca8a39a/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:51:23.008",
+    "gepubliceerdeHash": "f37334e6c5aa986c",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/eece39c1-116d-47f8-bace-e94d3ca8a39a"
   },
   "periodieke-contracten-fr": {
     "film": "periodieke-contracten",
@@ -291,7 +311,7 @@
     "titel": "Les contrats périodiques dans CleanOps : le rythme, les prochains passages et les ordres qui en découlent",
     "omschrijving": "Un contrat fixe ce qui se fait et à quelle fréquence. CleanOps montre les prochains passages et crée lui-même les ordres de travail, planifiés sur la partie de journée et chez l’exécutant du contrat. Avec le suivi, vous mettez un contrat en attente ou planifiez un contact avec le client.",
     "hash": "f413e47f46db1eb4",
-    "guid": null,
+    "guid": "c95ad407-915e-408b-933f-b67f416ad2d6",
     "hoofdstukken": [
       {
         "titel": "Les contrats",
@@ -323,7 +343,11 @@
         "start": 59.69,
         "eind": 67.21
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/c95ad407-915e-408b-933f-b67f416ad2d6/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:51:34.907",
+    "gepubliceerdeHash": "f413e47f46db1eb4",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/c95ad407-915e-408b-933f-b67f416ad2d6"
   },
   "cameraverslagen-nl": {
     "film": "cameraverslagen",
@@ -342,7 +366,7 @@
     "titel": "Cameraverslagen in CleanOps: van camera-inspectie tot verslag voor de klant",
     "omschrijving": "Bij een camera-inspectie hoort een verslag. CleanOps wijst aan waar het ontbreekt, vult een nieuw verslag in met het adres en de werkorder, en maakt er een pdf van om naar de klant te mailen. Daarna kan de werkorder op de factuur.",
     "hash": "95f416150deb0750",
-    "guid": null,
+    "guid": "08d8c7ba-69d4-4b87-aa26-30639adaad8b",
     "hoofdstukken": [
       {
         "titel": "De camera-inspecties",
@@ -374,7 +398,11 @@
         "start": 70.85,
         "eind": 77.12
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/08d8c7ba-69d4-4b87-aa26-30639adaad8b/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:51:46.823",
+    "gepubliceerdeHash": "95f416150deb0750",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/08d8c7ba-69d4-4b87-aa26-30639adaad8b"
   },
   "cameraverslagen-fr": {
     "film": "cameraverslagen",
@@ -393,7 +421,7 @@
     "titel": "Les rapports caméra dans CleanOps : de l’inspection caméra au rapport pour le client",
     "omschrijving": "Une inspection caméra s’accompagne d’un rapport. CleanOps indique où il manque, prépare un nouveau rapport avec l’adresse et l’ordre de travail, et en fait un pdf à envoyer au client. L’ordre peut ensuite être facturé.",
     "hash": "ed3e42453eb6ab5c",
-    "guid": null,
+    "guid": "5863a8ff-feb6-4cc7-9c45-5b0925273c3a",
     "hoofdstukken": [
       {
         "titel": "Les inspections caméra",
@@ -425,7 +453,11 @@
         "start": 67.05,
         "eind": 73.74
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/5863a8ff-feb6-4cc7-9c45-5b0925273c3a/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:51:58.315",
+    "gepubliceerdeHash": "ed3e42453eb6ab5c",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/5863a8ff-feb6-4cc7-9c45-5b0925273c3a"
   },
   "van-werkorder-tot-factuur-nl": {
     "film": "van-werkorder-tot-factuur",
@@ -444,7 +476,7 @@
     "titel": "Van werkorder tot factuur in CleanOps: de werkorder, de attesten en de factuur",
     "omschrijving": "Een uitgevoerde werkorder met wie, waar en wat, de facturatiegegevens en de verwerkingsattesten met hun EURAL-code. Daarna in Facturatie: per klant wat klaarstaat, de werkorders aanvinken en de factuur boeken, met het afdrukvoorbeeld.",
     "hash": "5ea1430553910a05",
-    "guid": null,
+    "guid": "b9f5719f-9376-4f65-8026-979afa58b0b1",
     "hoofdstukken": [
       {
         "titel": "De werkorders",
@@ -481,7 +513,11 @@
         "start": 85.67,
         "eind": 94.3
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/b9f5719f-9376-4f65-8026-979afa58b0b1/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:52:09.83",
+    "gepubliceerdeHash": "5ea1430553910a05",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/b9f5719f-9376-4f65-8026-979afa58b0b1"
   },
   "van-werkorder-tot-factuur-fr": {
     "film": "van-werkorder-tot-factuur",
@@ -500,7 +536,7 @@
     "titel": "De l’ordre de travail à la facture dans CleanOps : l’ordre, les attestations et la facture",
     "omschrijving": "Un ordre de travail exécuté avec qui, où et quoi, les données de facturation et les attestations de traitement avec leur code EURAL. Ensuite, dans la facturation : par client ce qui est prêt, cocher les ordres et comptabiliser la facture, avec l’aperçu.",
     "hash": "09f5426da6f02d2a",
-    "guid": null,
+    "guid": "f2ffd203-8091-4863-ab7b-19f06a8a6e3e",
     "hoofdstukken": [
       {
         "titel": "Les ordres de travail",
@@ -537,6 +573,10 @@
         "start": 80.99,
         "eind": 88.51
       }
-    ]
+    ],
+    "thumbnail": "https://vz-a5b00b36-fda.b-cdn.net/f2ffd203-8091-4863-ab7b-19f06a8a6e3e/thumbnail.jpg",
+    "gepubliceerdOp": "2026-10-27T05:52:22.579",
+    "gepubliceerdeHash": "09f5426da6f02d2a",
+    "embed": "https://iframe.mediadelivery.net/embed/791117/f2ffd203-8091-4863-ab7b-19f06a8a6e3e"
   }
 }
