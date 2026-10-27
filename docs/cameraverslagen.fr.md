@@ -133,6 +133,7 @@ travail demande un rapport. Sur la ligne **Rapport caméra** en dessous, vous li
 ![La fenêtre Choisir un rapport caméra sur un ordre de travail de la Résidence Les Tilleuls, avec le rapport de l'adresse d'exécution et le bouton Lier](images/werkorder-cameraverslag-kiezen-fr.png "Choisir un rapport caméra")
 
 - **Choisir…** et **Détacher** agissent tout de suite : vous ne devez pas enregistrer l'ordre de travail ensuite.
+- Le collaborateur peut aussi créer le rapport sur place dans l'[app mobile](app/werkorder.fr.md#rapport-camera), avec du texte et des photos. Il est alors déjà lié ; vous le complétez et l'envoyez par mail comme tout autre rapport.
 - Si vous avez modifié l'ordre de travail, **Nouveau…** est désactivé : enregistrez d'abord l'ordre de travail.
 - Si vous lisez *pas d'adresse d'exécution sur cet ordre*, choisissez ou créez d'abord une adresse d'exécution : un rapport
   appartient à une adresse.

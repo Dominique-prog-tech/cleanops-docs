@@ -73,6 +73,24 @@ er niet.
 Ook zonder bereik kan hij een attest invullen: de lijsten van producten en eenheden staan op het toestel. Het attest
 vertrekt zodra er weer bereik is (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)).
 
+## Cameraverslag
+
+Op een werkorder met **Cameraverslag vereist** staat de kaart **Cameraverslag**. Met **Verslag maken** schrijft de
+medewerker wat hij vaststelde (bijvoorbeeld *wortelingroei op 8 m, put 2 verzakt*). Het verslag krijgt de datum van
+vandaag en hemzelf als medewerker, en komt bij het uitvoeringsadres, zoals een
+[cameraverslag](../cameraverslagen.md) op kantoor. Het is meteen aan de werkorder gekoppeld.
+
+Onder **Foto's bij het verslag** voegt hij foto's toe, met de camera of uit de galerij. Filmpjes kunnen niet vanuit de
+app; die blijven op kantoor. Met **Tekst aanvullen** werkt hij de tekst bij. Zijn eigen foto's verwijdert hij met het
+vuilbakje. Dat alles kan tot de werkorder afgerond is. Het kantoor mailt het verslag naar de klant, zoals vandaag.
+
+Een verslag van het kantoor of van een collega kan hij enkel bekijken. Kan er hier geen verslag gemaakt worden, dan
+zegt de kaart waarom, bijvoorbeeld omdat de werkorder nog geen uitvoeringsadres heeft. Staat de functie
+Cameraverslagen uit voor uw bedrijf, dan is de kaart er niet.
+
+Ook zonder bereik kan hij het verslag maken en foto's toevoegen. Ze vertrekken in de juiste volgorde zodra er weer
+bereik is: eerst het verslag, dan de foto's (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)).
+
 ## De betaling ter plaatse
 
 Betaalt de klant ter plaatse, dan noteert de medewerker onder **Betaling ter plaatse** het **Bedrag (incl. btw)** en de

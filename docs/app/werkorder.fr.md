@@ -75,6 +75,25 @@ désactivée pour votre entreprise, la carte n'apparaît pas.
 Même sans réseau, il peut compléter une attestation : les listes de produits et d'unités se trouvent sur l'appareil.
 L'attestation part dès que le réseau revient (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)).
 
+## Rapport caméra
+
+Sur un ordre de travail **Rapport caméra requis**, la carte **Rapport caméra** est affichée. Avec **Créer le
+rapport**, le collaborateur écrit ce qu'il a constaté (par exemple *racines à 8 m, chambre 2 affaissée*). Le rapport
+reçoit la date du jour et le collaborateur lui-même, et est rattaché à l'adresse d'exécution, comme un
+[rapport caméra](../cameraverslagen.fr.md) au bureau. Il est lié immédiatement à l'ordre de travail.
+
+Sous **Photos du rapport**, il ajoute des photos, avec l'appareil photo ou depuis la galerie. Les vidéos ne sont pas
+possibles depuis l'app ; elles restent au bureau. Avec **Compléter le texte**, il met le texte à jour. Ses propres
+photos, il les supprime avec la corbeille. Tout cela est possible jusqu'à ce que l'ordre de travail soit terminé. Le
+bureau envoie le rapport au client par mail, comme aujourd'hui.
+
+Un rapport du bureau ou d'un collègue, il peut seulement le consulter. Si aucun rapport ne peut être créé ici, la
+carte indique pourquoi, par exemple parce que l'ordre de travail n'a pas encore d'adresse d'exécution. Si la fonction
+Rapports caméra est désactivée pour votre entreprise, la carte n'apparaît pas.
+
+Même sans réseau, il peut créer le rapport et ajouter des photos. Ils partent dans le bon ordre dès que le réseau
+revient : d'abord le rapport, ensuite les photos (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)).
+
 ## Le paiement sur place
 
 Si le client paie sur place, le collaborateur note sous **Paiement sur place** le **Montant (TVAC)** et le **Mode de

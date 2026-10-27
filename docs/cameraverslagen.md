@@ -133,6 +133,7 @@ hoort. Op de regel **Cameraverslag** eronder hangt u het verslag aan de werkorde
 ![Het venster Een cameraverslag kiezen op een werkorder van Tuincentrum De Linde, met het verslag van het uitvoeringsadres en de knop Koppelen](images/werkorder-cameraverslag-kiezen.png "Een cameraverslag kiezen")
 
 - **Kiezen…** en **Ontkoppelen** werken meteen: u hoeft de werkorder daarna niet te bewaren.
+- De medewerker kan het verslag ook ter plaatse maken in de [mobiele app](app/werkorder.md#cameraverslag), met tekst en foto's. Het staat dan al gekoppeld; u vult aan en mailt het zoals elk ander verslag.
 - Hebt u de werkorder gewijzigd, dan staat **Nieuw…** uit: bewaar de werkorder eerst.
 - Staat er *geen uitvoeringsadres op deze werkorder*, kies of maak dan eerst een uitvoeringsadres: een verslag hoort bij
   een adres.
