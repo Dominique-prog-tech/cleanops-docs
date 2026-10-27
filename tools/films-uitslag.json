@@ -3,67 +3,67 @@
     "film": "aan-de-slag",
     "taal": "nl-BE",
     "pagina": "dashboard",
-    "lengte": 130.16,
+    "lengte": 141.96,
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "310150f01dab38b091a463bc89d283b11d9bf8ca",
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
       "vuil": false
     },
     "titel": "Aan de slag met CleanOps: het dashboard, het menu, de lijsten, de fiches en de hulp",
     "omschrijving": "De eerste rondleiding: het dashboard met uw bedragen, het werk van de dag en wat aandacht vraagt, het menu, werken in een lijst (zoeken, kolommen, exporteren), een klantfiche met haar journaal, wat er gebeurt met niet-bewaarde wijzigingen, en de hulp bij elk scherm.",
-    "hash": "cdbae214586fbc4f",
+    "hash": "031e6cb39f8f2b89",
     "guid": null,
     "hoofdstukken": [
       {
         "titel": "Het dashboard",
-        "start": 1.94,
-        "eind": 13.79
+        "start": 2.1,
+        "eind": 15.61
       },
       {
         "titel": "Het werk van de dag",
-        "start": 16.09,
-        "eind": 25.19
+        "start": 18.02,
+        "eind": 28.47
       },
       {
         "titel": "Wat aandacht vraagt",
-        "start": 27.45,
-        "eind": 38.31
+        "start": 30.75,
+        "eind": 42.13
       },
       {
         "titel": "Het menu",
-        "start": 42.25,
-        "eind": 52.2
+        "start": 46.09,
+        "eind": 57.51
       },
       {
         "titel": "Zoeken in een lijst",
-        "start": 57.76,
-        "eind": 68.61
+        "start": 63.03,
+        "eind": 75.25
       },
       {
         "titel": "Kolommen en exporteren",
-        "start": 72.52,
-        "eind": 77.42
+        "start": 79.16,
+        "eind": 84.17
       },
       {
         "titel": "Een klantfiche",
-        "start": 81.01,
-        "eind": 91.42
+        "start": 88.53,
+        "eind": 100.14
       },
       {
         "titel": "Het journaal",
-        "start": 95.24,
-        "eind": 102.51
+        "start": 103.94,
+        "eind": 111.83
       },
       {
         "titel": "Bewaren",
-        "start": 107.87,
-        "eind": 115.88
+        "start": 117.22,
+        "eind": 127.01
       },
       {
         "titel": "Hulp bij elk scherm",
-        "start": 121.13,
-        "eind": 127.78
+        "start": 132.28,
+        "eind": 139.62
       }
     ]
   },
@@ -71,67 +71,471 @@
     "film": "aan-de-slag",
     "taal": "fr-BE",
     "pagina": "dashboard",
-    "lengte": 137.48,
+    "lengte": 135.6,
     "uitvoering": "handleiding",
     "routes": [],
     "app": {
-      "sha": "310150f01dab38b091a463bc89d283b11d9bf8ca",
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
       "vuil": false
     },
     "titel": "Premiers pas avec CleanOps : le tableau de bord, le menu, les listes, les fiches et l’aide",
     "omschrijving": "La première visite guidée : le tableau de bord avec vos montants, le travail du jour et ce qui demande attention, le menu, le travail dans une liste (rechercher, colonnes, exporter), une fiche client et son journal, ce qui se passe avec des modifications non enregistrées, et l’aide sur chaque écran.",
-    "hash": "08e44f08dfc4cf91",
+    "hash": "026c0b039a8021f8",
     "guid": null,
     "hoofdstukken": [
       {
         "titel": "Le tableau de bord",
         "start": 1.98,
-        "eind": 15.27
+        "eind": 14.7
       },
       {
         "titel": "Le travail du jour",
-        "start": 17.56,
-        "eind": 27.16
+        "start": 16.98,
+        "eind": 26.26
       },
       {
         "titel": "Ce qui demande attention",
-        "start": 29.42,
-        "eind": 38.82
+        "start": 28.53,
+        "eind": 37.96
       },
       {
         "titel": "Le menu",
-        "start": 42.76,
-        "eind": 53.45
+        "start": 41.9,
+        "eind": 52.86
       },
       {
         "titel": "Rechercher dans une liste",
-        "start": 58.87,
-        "eind": 72.55
+        "start": 58.29,
+        "eind": 72.59
       },
       {
         "titel": "Colonnes et export",
-        "start": 76.46,
-        "eind": 82.33
+        "start": 76.53,
+        "eind": 81.54
       },
       {
         "titel": "Une fiche client",
-        "start": 85.95,
-        "eind": 96.06
+        "start": 85.21,
+        "eind": 95.57
       },
       {
         "titel": "Le journal",
-        "start": 99.86,
-        "eind": 107.42
+        "start": 99.37,
+        "eind": 106.62
       },
       {
         "titel": "Enregistrer",
-        "start": 112.78,
-        "eind": 122.65
+        "start": 111.95,
+        "eind": 121.29
       },
       {
         "titel": "De l’aide sur chaque écran",
-        "start": 127.94,
-        "eind": 135.11
+        "start": 126.55,
+        "eind": 133.19
+      }
+    ]
+  },
+  "de-planning-nl": {
+    "film": "de-planning",
+    "taal": "nl-BE",
+    "pagina": "planning",
+    "lengte": 74.49,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/planning"
+    ],
+    "app": {
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
+      "vuil": false
+    },
+    "titel": "De planning in CleanOps: het planbord, inplannen, vrije blokken en de lijstweergave",
+    "omschrijving": "Het planbord per week en medewerker: de werkorders in hun volgorde en tijdsdeel, werk zonder datum inplannen, een vrij blok voor een opleiding of de garage, en de lijstweergave om toe te wijzen, de dagroute te openen en af te drukken.",
+    "hash": "15e89315f7b865cb",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Het planbord",
+        "start": 2.2,
+        "eind": 10.56
+      },
+      {
+        "titel": "Een werkorder op het bord",
+        "start": 12.86,
+        "eind": 23.45
+      },
+      {
+        "titel": "Werk inplannen",
+        "start": 28.36,
+        "eind": 38.44
+      },
+      {
+        "titel": "Een vrij blok",
+        "start": 46.8,
+        "eind": 57.01
+      },
+      {
+        "titel": "De lijstweergave",
+        "start": 61.3,
+        "eind": 71.98
+      }
+    ]
+  },
+  "de-planning-fr": {
+    "film": "de-planning",
+    "taal": "fr-BE",
+    "pagina": "planning",
+    "lengte": 72,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/planning"
+    ],
+    "app": {
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
+      "vuil": false
+    },
+    "titel": "Le planning dans CleanOps : le tableau, planifier, les blocs libres et la vue liste",
+    "omschrijving": "Le tableau de planning par semaine et par collaborateur : les ordres dans leur ordre et leur partie de journée, planifier le travail sans date, un bloc libre pour une formation ou le garage, et la vue liste pour attribuer, ouvrir la tournée du jour et imprimer.",
+    "hash": "8b15ad611e9cfcfd",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Le tableau de planning",
+        "start": 2.17,
+        "eind": 11.31
+      },
+      {
+        "titel": "Un ordre sur le tableau",
+        "start": 13.57,
+        "eind": 24.44
+      },
+      {
+        "titel": "Planifier le travail",
+        "start": 29.28,
+        "eind": 37.59
+      },
+      {
+        "titel": "Un bloc libre",
+        "start": 45.83,
+        "eind": 55.72
+      },
+      {
+        "titel": "La vue liste",
+        "start": 60.02,
+        "eind": 69.49
+      }
+    ]
+  },
+  "periodieke-contracten-nl": {
+    "film": "periodieke-contracten",
+    "taal": "nl-BE",
+    "pagina": "contracten",
+    "lengte": 74.04,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/contracten"
+    ],
+    "app": {
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
+      "vuil": false
+    },
+    "titel": "Periodieke contracten in CleanOps: het ritme, de volgende beurten en de werkorders die eruit komen",
+    "omschrijving": "Een contract legt vast wat er hoe vaak gebeurt. CleanOps toont de volgende beurten en maakt de werkorders zelf aan, gepland op het tijdsdeel en bij de uitvoerder van het contract. Met de opvolging zet u een contract on hold of plant u een contact met de klant.",
+    "hash": "f37334e6c5aa986c",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De contracten",
+        "start": 2.46,
+        "eind": 9.66
+      },
+      {
+        "titel": "Een contract",
+        "start": 14.04,
+        "eind": 21.43
+      },
+      {
+        "titel": "Ritme en planning",
+        "start": 23.69,
+        "eind": 34.93
+      },
+      {
+        "titel": "De volgende beurten",
+        "start": 37.19,
+        "eind": 47.82
+      },
+      {
+        "titel": "De werkorders van het contract",
+        "start": 51.61,
+        "eind": 58.94
+      },
+      {
+        "titel": "De opvolging",
+        "start": 62.88,
+        "eind": 71.61
+      }
+    ]
+  },
+  "periodieke-contracten-fr": {
+    "film": "periodieke-contracten",
+    "taal": "fr-BE",
+    "pagina": "contracten",
+    "lengte": 69.64,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/contracten"
+    ],
+    "app": {
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
+      "vuil": false
+    },
+    "titel": "Les contrats périodiques dans CleanOps : le rythme, les prochains passages et les ordres qui en découlent",
+    "omschrijving": "Un contrat fixe ce qui se fait et à quelle fréquence. CleanOps montre les prochains passages et crée lui-même les ordres de travail, planifiés sur la partie de journée et chez l’exécutant du contrat. Avec le suivi, vous mettez un contrat en attente ou planifiez un contact avec le client.",
+    "hash": "f413e47f46db1eb4",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Les contrats",
+        "start": 2.4,
+        "eind": 10.11
+      },
+      {
+        "titel": "Un contrat",
+        "start": 13.77,
+        "eind": 20.04
+      },
+      {
+        "titel": "Rythme et planification",
+        "start": 22.32,
+        "eind": 34.86
+      },
+      {
+        "titel": "Les prochains passages",
+        "start": 37.13,
+        "eind": 45.54
+      },
+      {
+        "titel": "Les ordres du contrat",
+        "start": 49.33,
+        "eind": 55.74
+      },
+      {
+        "titel": "Le suivi",
+        "start": 59.69,
+        "eind": 67.21
+      }
+    ]
+  },
+  "cameraverslagen-nl": {
+    "film": "cameraverslagen",
+    "taal": "nl-BE",
+    "pagina": "cameraverslagen",
+    "lengte": 79.52,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/cameraverslagen",
+      "/facturatie"
+    ],
+    "app": {
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
+      "vuil": false
+    },
+    "titel": "Cameraverslagen in CleanOps: van camera-inspectie tot verslag voor de klant",
+    "omschrijving": "Bij een camera-inspectie hoort een verslag. CleanOps wijst aan waar het ontbreekt, vult een nieuw verslag in met het adres en de werkorder, en maakt er een pdf van om naar de klant te mailen. Daarna kan de werkorder op de factuur.",
+    "hash": "95f416150deb0750",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De camera-inspecties",
+        "start": 2.42,
+        "eind": 14.86
+      },
+      {
+        "titel": "Een nieuw verslag",
+        "start": 18.35,
+        "eind": 25.97
+      },
+      {
+        "titel": "De vaststellingen",
+        "start": 31.56,
+        "eind": 35.83
+      },
+      {
+        "titel": "Bewaren",
+        "start": 40.6,
+        "eind": 50.49
+      },
+      {
+        "titel": "Het verslag voor de klant",
+        "start": 56.77,
+        "eind": 66.89
+      },
+      {
+        "titel": "Klaar om te factureren",
+        "start": 70.85,
+        "eind": 77.12
+      }
+    ]
+  },
+  "cameraverslagen-fr": {
+    "film": "cameraverslagen",
+    "taal": "fr-BE",
+    "pagina": "cameraverslagen",
+    "lengte": 76.16,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/cameraverslagen",
+      "/facturatie"
+    ],
+    "app": {
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
+      "vuil": false
+    },
+    "titel": "Les rapports caméra dans CleanOps : de l’inspection caméra au rapport pour le client",
+    "omschrijving": "Une inspection caméra s’accompagne d’un rapport. CleanOps indique où il manque, prépare un nouveau rapport avec l’adresse et l’ordre de travail, et en fait un pdf à envoyer au client. L’ordre peut ensuite être facturé.",
+    "hash": "ed3e42453eb6ab5c",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Les inspections caméra",
+        "start": 2.4,
+        "eind": 13.03
+      },
+      {
+        "titel": "Un nouveau rapport",
+        "start": 16.66,
+        "eind": 23.31
+      },
+      {
+        "titel": "Les constatations",
+        "start": 29.5,
+        "eind": 33.08
+      },
+      {
+        "titel": "Enregistrer",
+        "start": 37.85,
+        "eind": 47.98
+      },
+      {
+        "titel": "Le rapport pour le client",
+        "start": 54.28,
+        "eind": 63.01
+      },
+      {
+        "titel": "Prêt à facturer",
+        "start": 67.05,
+        "eind": 73.74
+      }
+    ]
+  },
+  "van-werkorder-tot-factuur-nl": {
+    "film": "van-werkorder-tot-factuur",
+    "taal": "nl-BE",
+    "pagina": "werkorders",
+    "lengte": 96.72,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/werkorders",
+      "/facturatie"
+    ],
+    "app": {
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
+      "vuil": false
+    },
+    "titel": "Van werkorder tot factuur in CleanOps: de werkorder, de attesten en de factuur",
+    "omschrijving": "Een uitgevoerde werkorder met wie, waar en wat, de facturatiegegevens en de verwerkingsattesten met hun EURAL-code. Daarna in Facturatie: per klant wat klaarstaat, de werkorders aanvinken en de factuur boeken, met het afdrukvoorbeeld.",
+    "hash": "5ea1430553910a05",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "De werkorders",
+        "start": 2.25,
+        "eind": 13.35
+      },
+      {
+        "titel": "Een werkorder",
+        "start": 19.28,
+        "eind": 27.97
+      },
+      {
+        "titel": "Wat er gefactureerd wordt",
+        "start": 30.25,
+        "eind": 39.35
+      },
+      {
+        "titel": "De attesten",
+        "start": 43.28,
+        "eind": 51.87
+      },
+      {
+        "titel": "Te factureren",
+        "start": 54.7,
+        "eind": 62.97
+      },
+      {
+        "titel": "De werkorders aanvinken",
+        "start": 66.49,
+        "eind": 77.87
+      },
+      {
+        "titel": "De factuur boeken",
+        "start": 85.67,
+        "eind": 94.3
+      }
+    ]
+  },
+  "van-werkorder-tot-factuur-fr": {
+    "film": "van-werkorder-tot-factuur",
+    "taal": "fr-BE",
+    "pagina": "werkorders",
+    "lengte": 90.96,
+    "uitvoering": "handleiding",
+    "routes": [
+      "/werkorders",
+      "/facturatie"
+    ],
+    "app": {
+      "sha": "7e0c0607b53b9b6e2170c959826d75728b924ec8",
+      "vuil": false
+    },
+    "titel": "De l’ordre de travail à la facture dans CleanOps : l’ordre, les attestations et la facture",
+    "omschrijving": "Un ordre de travail exécuté avec qui, où et quoi, les données de facturation et les attestations de traitement avec leur code EURAL. Ensuite, dans la facturation : par client ce qui est prêt, cocher les ordres et comptabiliser la facture, avec l’aperçu.",
+    "hash": "09f5426da6f02d2a",
+    "guid": null,
+    "hoofdstukken": [
+      {
+        "titel": "Les ordres de travail",
+        "start": 2.13,
+        "eind": 14.62
+      },
+      {
+        "titel": "Un ordre de travail",
+        "start": 20.86,
+        "eind": 28.33
+      },
+      {
+        "titel": "Ce qui est facturé",
+        "start": 30.61,
+        "eind": 39.06
+      },
+      {
+        "titel": "Les attestations",
+        "start": 42.86,
+        "eind": 51.59
+      },
+      {
+        "titel": "À facturer",
+        "start": 54.31,
+        "eind": 60.86
+      },
+      {
+        "titel": "Cocher les ordres",
+        "start": 64.4,
+        "eind": 73.41
+      },
+      {
+        "titel": "Comptabiliser la facture",
+        "start": 80.99,
+        "eind": 88.51
       }
     ]
   }
