@@ -180,7 +180,7 @@ Le bloc **Facturation**, en bas de la fiche, indique ce qui sera facturé.
 | Montant | Quantité × prix unitaire, calculé par CleanOps. Le saisir à la main n'est possible que si la quantité et le prix unitaire sont tous deux à zéro, par exemple pour un forfait. |
 | Code TVA | Le code TVA de l'ordre. |
 | Mode de paiement | Comment le client paie : Payconiq, espèces, ultérieurement … (voir [Modes de paiement](beheer/betaalwijzen.fr.md)). L'ordre est facturé ; si le mode est payé sur place, la facture est directement payée. |
-| Montant du terrain (TVAC) | Ce que le client a payé sur place, tel que le chauffeur le note. Il n'est **pas** facturé automatiquement : **Reprendre** le convertit en quantité × un nouveau prix unitaire (HTVA, avec le code TVA de l'ordre) ; la quantité reste, sans quantité elle devient 1. S'il reste un cent de différence dû à l'arrondi du prix unitaire, la fiche l'indique. Enregistrez ensuite. Même après la facturation, vous pouvez corriger le montant ; le reprendre n'est alors plus possible. |
+| Montant du terrain (TVAC) | Ce que le client a payé sur place, tel que le chauffeur le note. Il n'est **pas** facturé automatiquement : **Reprendre** le convertit en quantité × un nouveau prix unitaire (HTVA, avec le code TVA de l'ordre) ; la quantité reste, sans quantité elle devient 1. S'il reste un cent de différence dû à l'arrondi du prix unitaire, la fiche l'indique. Enregistrez ensuite. Même après la facturation, vous pouvez corriger le montant ; le reprendre n'est alors plus possible. Si le client a signé le bon de livraison, le montant est figé (voir [Le bon de livraison](#le-bon-de-livraison)). |
 | Payé en espèces, sans facture | Vient de votre application précédente : le client a payé en espèces et l'ordre ne passe **pas** en facturation. Différent du mode de paiement *Espèces*. |
 | Commentaire facture | Un texte qui figure sur la facture pour cet ordre. |
 
@@ -198,7 +198,8 @@ vers la note de crédit.
 **Bon de livraison** ouvre le bon que l'équipe emporte et que le client signe, dans la langue du client. On y trouve
 le client, l'adresse d'exécution avec son téléphone et son e-mail (sinon ceux du client ; un autre numéro sur
 l'ordre s'y ajoute), le nom de l'exécutant, l'heure, la description, les
-instructions sous **Travail demandé**, le matériel et les signatures. La date y figure toujours au format
+instructions sous **Travail demandé**, le matériel, le montant du terrain et le mode de paiement (s'ils sont remplis) et
+les signatures. La date y figure toujours au format
 jour/mois/année. **Imprimer** n'imprime que le bon.
 
 ![Le bon de livraison d'un ordre de Résidence Les Tilleuls, avec en bas les cases pour les signatures](images/leveringsbon-fr.png "Bon de livraison")
@@ -223,9 +224,9 @@ signataire, le moment, le collaborateur qui a présenté le bon et la remarque d
 
 **Ce que le client a signé est figé.** Tant que la signature est là, vous ne pouvez pas modifier les données du bon de
 livraison : le client et l'adresse d'exécution, l'exécutant, la date d'exécution et les heures, la description, le
-travail demandé, le matériel et les cases **Attestation requise** et **Gros travaux**. Le déplacer sur le
-[planning](planning.fr.md) ou le supprimer n'est pas possible non plus. La **facturation** reste ouverte : vous
-complétez normalement le tarif, le montant et le code TVA.
+travail demandé, le matériel, le montant du terrain, le mode de paiement et les cases **Attestation requise** et
+**Gros travaux**. Le déplacer sur le [planning](planning.fr.md) ou le supprimer n'est pas possible non plus. La
+**facturation** reste ouverte : vous complétez normalement le tarif, le montant et le code TVA.
 
 Si quelque chose doit malgré tout changer, retirez la signature. Vous pouvez alors à nouveau modifier l'ordre de
 travail, et le client peut signer à nouveau dans l'application tant que l'ordre n'est pas facturé.

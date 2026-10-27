@@ -172,7 +172,7 @@ Het blok **Facturatie** onderaan de fiche zegt wat er gefactureerd wordt.
 | Bedrag | Aantal × eenheidsprijs, door CleanOps gerekend. Met de hand invullen kan enkel als aantal en eenheidsprijs allebei nul zijn, bijvoorbeeld voor een forfait. |
 | Btw-code | De btw-code van de werkorder. |
 | Betaalwijze | Hoe de klant betaalt: Payconiq, cash, achteraf … (zie [Betaalwijzen](beheer/betaalwijzen.md)). De werkorder wordt gefactureerd; is de betaalwijze ter plaatse betaald, dan staat de factuur meteen betaald. |
-| Bedrag uit het veld (incl. btw) | Wat de klant ter plaatse betaalde, zoals de chauffeur het noteert. Het wordt **niet** vanzelf gefactureerd: met **Overnemen** zet CleanOps het om naar het aantal × een nieuwe eenheidsprijs (excl. btw, met de btw-code van de werkorder); het aantal blijft staan, zonder aantal wordt het 1. Blijft er door de afronding van de eenheidsprijs een cent verschil, dan zegt de fiche dat. Bewaar daarna. Ook na de facturatie kunt u het bedrag nog verbeteren; overnemen kan dan niet meer. |
+| Bedrag uit het veld (incl. btw) | Wat de klant ter plaatse betaalde, zoals de chauffeur het noteert. Het wordt **niet** vanzelf gefactureerd: met **Overnemen** zet CleanOps het om naar het aantal × een nieuwe eenheidsprijs (excl. btw, met de btw-code van de werkorder); het aantal blijft staan, zonder aantal wordt het 1. Blijft er door de afronding van de eenheidsprijs een cent verschil, dan zegt de fiche dat. Bewaar daarna. Ook na de facturatie kunt u het bedrag nog verbeteren; overnemen kan dan niet meer. Tekende de klant de leveringsbon, dan ligt het bedrag vast (zie [De leveringsbon](#de-leveringsbon)). |
 | Contant betaald, niet factureren | Uit uw vorige toepassing: de klant betaalde contant en de werkorder gaat **niet** naar de facturatie. Iets anders dan de betaalwijze *Cash*. |
 | Factuuropmerking | Een tekst die op de factuur bij deze werkorder komt. |
 
@@ -190,7 +190,8 @@ naar de creditnota.
 Met **Leveringsbon** opent de bon die de ploeg meeneemt en de klant ondertekent, in de taal van de klant. Daarop
 staan de klant, het uitvoeringsadres met zijn telefoonnummer en e-mailadres (anders die van de klant; een ander
 nummer op de werkorder komt erbij), de naam van de uitvoerder, het uur, de omschrijving,
-de instructies onder **Opdracht**, het materiaal en de handtekeningen. De datum staat er altijd als dag/maand/jaar.
+de instructies onder **Opdracht**, het materiaal, het bedrag uit het veld en de betaalwijze (als ze ingevuld zijn) en de
+handtekeningen. De datum staat er altijd als dag/maand/jaar.
 Met **Afdrukken** drukt u enkel de bon af.
 
 ![De leveringsbon van werkorder 900118 voor Tuincentrum De Linde, met onderaan de vakken voor de handtekeningen](images/leveringsbon.png "Leveringsbon")
@@ -215,9 +216,9 @@ tekende, het moment, de medewerker die de bon voorlegde en de opmerking van de k
 
 **Wat de klant tekende, ligt vast.** Zolang de handtekening er staat, kunt u de gegevens op de leveringsbon niet
 wijzigen: de klant en het uitvoeringsadres, de uitvoerder, de uitvoeringsdatum en de uren, de omschrijving, de
-opdracht, het materiaal en de vinkjes **Attest vereist** en **Groot werk**. Ook verslepen op de
-[planning](planning.md) en verwijderen kan niet. De **facturatie** blijft wel open: het tarief, het bedrag en de
-btw-code vult u gewoon verder in.
+opdracht, het materiaal, het bedrag uit het veld, de betaalwijze en de vinkjes **Attest vereist** en **Groot werk**.
+Ook verslepen op de [planning](planning.md) en verwijderen kan niet. De **facturatie** blijft wel open: het tarief, het
+bedrag en de btw-code vult u gewoon verder in.
 
 Moet er toch iets veranderen, trek dan de handtekening in. Daarna kunt u de werkorder weer wijzigen, en kan de klant
 in de app opnieuw tekenen zolang de werkorder niet gefactureerd is.
