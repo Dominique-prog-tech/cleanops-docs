@@ -69,7 +69,7 @@ exemple *Mis à jour à 07:12. CleanOps est injoignable pour le moment.* Tant qu
 **Ouvrir la fiche client** sur l'ordre de travail.
 
 Même sans réseau, le collaborateur peut continuer à travailler : démarrer, mettre en pause et arrêter le **chrono**,
-ajouter ou corriger du **temps**, ajouter ou supprimer des **notes** et des **photos**, compléter le **paiement sur
+ajouter ou corriger du **temps**, ajouter ou supprimer des **notes**, des **photos** et des **attestations**, compléter le **paiement sur
 place** et **terminer** l'ordre de travail. L'application conserve chaque action sur l'appareil et la montre aussitôt,
 avec **Pas encore envoyé** en dessous. Dès que le réseau revient, tout part automatiquement vers CleanOps, dans l'ordre
 où cela s'est fait, et avec l'heure à laquelle cela s'est fait : un chrono démarré à 7:12 démarre à 7:12, même s'il

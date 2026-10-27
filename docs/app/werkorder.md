@@ -57,6 +57,22 @@ Met het vuilbakje verwijdert de medewerker zijn eigen notities en foto's, zolang
 collega of het kantoor toevoegde, kan hij niet verwijderen. Op kantoor verwijdert wie werkorders mag bewerken elke
 notitie, op het tabblad Notities; een foto verwijdert u onder Journaal › Bijlagen.
 
+## Attesten
+
+Op een werkorder met **Met attest** staat de kaart **Attesten**. Met **Attest toevoegen** vult de medewerker de
+ophaling in: de **datum** (standaard vandaag), het **product** (zoeken op naam of EURAL-code), de **hoeveelheid** en de
+**eenheid**. **Herkomst** en **werfopmerking** zijn niet verplicht.
+
+**Verwerking** en **verwerkingsbedrijf** mag hij kiezen als hij ze kent; anders vult het kantoor ze aan op het
+[attest](../attesten.md). Het kantoor mailt het attest naar de klant, zoals vandaag.
+
+Zijn eigen attesten wijzigt de medewerker met een tik, of verwijdert hij met het vuilbakje, tot de werkorder afgerond
+is. Een attest van het kantoor kan hij enkel bekijken. Staat de functie Attesten uit voor uw bedrijf, dan is de kaart
+er niet.
+
+Ook zonder bereik kan hij een attest invullen: de lijsten van producten en eenheden staan op het toestel. Het attest
+vertrekt zodra er weer bereik is (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)).
+
 ## De betaling ter plaatse
 
 Betaalt de klant ter plaatse, dan noteert de medewerker onder **Betaling ter plaatse** het **Bedrag (incl. btw)** en de

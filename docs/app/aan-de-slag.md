@@ -68,7 +68,7 @@ Een klant **zoeken** vraagt bereik. Een klant van vandaag of morgen opent ook zo
 de werkorder.
 
 Ook zonder bereik kan de medewerker verder werken: de **teller** starten, pauzeren en stoppen, **tijd** toevoegen of
-rechtzetten, **notities** en **foto's** toevoegen of verwijderen, de **betaling ter plaatse** invullen en de werkorder
+rechtzetten, **notities**, **foto's** en **attesten** toevoegen of verwijderen, de **betaling ter plaatse** invullen en de werkorder
 **afronden**. De app bewaart elke handeling op het toestel en toont ze meteen, met **Nog niet verstuurd** eronder.
 Zodra er weer bereik is, vertrekt alles vanzelf naar CleanOps, in de volgorde waarin het gebeurde, en met het uur waarop
 het gebeurde: een teller die om 7:12 startte, start om 7:12, ook als hij pas om 9 uur aankomt.

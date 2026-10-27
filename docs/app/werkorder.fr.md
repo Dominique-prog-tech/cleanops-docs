@@ -59,6 +59,22 @@ Avec la corbeille, le collaborateur supprime ses propres notes et photos, tant q
 terminé. Ce qu'un collègue ou le bureau a ajouté, il ne peut pas le supprimer. Au bureau, qui peut modifier les ordres
 de travail supprime n'importe quelle note dans l'onglet Notes ; une photo se supprime sous Journal › Pièces jointes.
 
+## Attestations
+
+Sur un ordre de travail **Avec attestation**, la carte **Attestations** est affichée. Avec **Ajouter une
+attestation**, le collaborateur complète l'enlèvement : la **date** (aujourd'hui par défaut), le **produit** (recherche
+par nom ou code EURAL), la **quantité** et l'**unité**. L'**origine** et la **remarque chantier** sont facultatives.
+
+Il peut choisir le **traitement** et l'**entreprise de traitement** s'il les connaît ; sinon, le bureau les complète
+sur l'[attestation](../attesten.fr.md). Le bureau envoie l'attestation au client par mail, comme aujourd'hui.
+
+Le collaborateur modifie ses propres attestations d'un appui, ou les supprime avec la corbeille, jusqu'à ce que l'ordre
+de travail soit terminé. Une attestation du bureau, il peut seulement la consulter. Si la fonction Attestations est
+désactivée pour votre entreprise, la carte n'apparaît pas.
+
+Même sans réseau, il peut compléter une attestation : les listes de produits et d'unités se trouvent sur l'appareil.
+L'attestation part dès que le réseau revient (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)).
+
 ## Le paiement sur place
 
 Si le client paie sur place, le collaborateur note sous **Paiement sur place** le **Montant (TVAC)** et le **Mode de
