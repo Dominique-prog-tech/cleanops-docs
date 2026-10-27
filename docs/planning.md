@@ -86,6 +86,9 @@ Het tijdsdeel kiest u op de [werkorderfiche](werkorders.md#planning-en-uitvoerin
 - **Zonder muis** — klik een kaart: bovenaan staat *Werkorder … gekozen*. Klik dan een andere kaart of een lege plaats
   in een dag. Met **Annuleren** kiest u niets.
 - **Werk zonder datum inplannen** — sleep de kaart van links naar een dag.
+- **Naar een andere week** — zolang u sleept, staat links en rechts van het bord een strook *Vorige week* en *Volgende
+  week*. Blijf er even op en het bord springt een week, zolang u erop blijft. Laat de kaart dan los op een dag van die
+  week. Laat u ze nergens los, dan blijft ze gekozen: klik een dag om ze te plaatsen, of **Annuleren**.
 
 Heeft de werkorder een **vaste datum**, dan vraagt CleanOps *Toch verplaatsen?* zodra u ze naar een andere dag
 sleept. Een andere plaats op dezelfde dag vraagt niets.

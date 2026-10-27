@@ -88,6 +88,10 @@ Vous choisissez la partie de journée sur la [fiche de l'ordre de travail](werko
 - **Sans souris** — cliquez une carte : en haut apparaît *Ordre … choisi*. Cliquez ensuite une autre carte ou un
   endroit vide d'un jour. **Annuler** ne choisit rien.
 - **Planifier du travail sans date** — glissez la carte de la gauche vers un jour.
+- **Vers une autre semaine** — pendant que vous glissez, une bande *Semaine précédente* et *Semaine suivante* apparaît à
+  gauche et à droite du tableau. Restez-y un instant et le tableau saute d’une semaine, aussi longtemps que vous y
+  restez. Lâchez ensuite la carte sur un jour de cette semaine. Si vous ne la lâchez nulle part, elle reste choisie :
+  cliquez un jour pour la placer, ou **Annuler**.
 
 Si l'ordre porte une **date fixe**, CleanOps demande *Le déplacer quand même ?* dès que vous le glissez vers un autre
 jour. Une autre place le même jour ne demande rien.
