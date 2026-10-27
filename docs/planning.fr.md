@@ -46,7 +46,7 @@ chantier, le type de travail et les signaux.
 |---|---|
 | 📌 | Date fixe — ne pas déplacer. |
 | ↩ | Peut être exécuté plus tôt. |
-| ⇅ | Placé à la main : l'ordre reste là où le planificateur l'a mis, même devant une partie de journée plus tôt. |
+| ⇅ | Placé à la main : l'ordre reste là où le planificateur l'a mis, même devant une partie de journée plus tôt. Cliquez dessus pour le remettre sur sa partie de journée. |
 | ✎ | Ouvre la fiche de l'ordre de travail. Avec **← Planning**, vous revenez à la même semaine. |
 | ✓ | Exécuté : l'ordre de travail est à facturer ou facturé. |
 
@@ -82,7 +82,7 @@ Vous choisissez la partie de journée sur la [fiche de l'ordre de travail](werko
 - **Vers un autre jour ou un autre collaborateur** — glissez la carte vers cette case. Le statut suit comme sur la
   fiche : avec une date et un collaborateur, l'ordre devient *Planifié*.
 - **Devant un autre ordre** — lâchez la carte *sur* cette autre carte. Il est alors placé à la main (⇅).
-- **Remettre à sa partie de journée** — lâchez la carte dans l'espace vide du jour. La place manuelle disparaît.
+- **Remettre à sa partie de journée** — lâchez la carte dans l'espace vide du jour, ou cliquez sur ⇅ sur la carte. La place manuelle disparaît.
 - **À la fin de la journée** — pendant que vous glissez (ou après avoir choisi une carte), la case **↓ À la fin** figure
   sous le travail de chaque jour. Lâchez-y la carte, ou cliquez dessus : l'ordre vient après le dernier ordre de ce jour.
 - **Sans souris** — cliquez une carte : en haut apparaît *Ordre … choisi*. Cliquez ensuite une autre carte ou un

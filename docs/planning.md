@@ -43,7 +43,7 @@ anders zegt dan de omschrijving. Wijst u een kaart aan, dan ziet u ook de werf, 
 |---|---|
 | 📌 | Vaste datum — niet verplaatsen. |
 | ↩ | Mag vroeger uitgevoerd worden. |
-| ⇅ | Met de hand geplaatst: de werkorder blijft staan waar de planner ze zette, ook vóór een vroeger tijdsdeel. |
+| ⇅ | Met de hand geplaatst: de werkorder blijft staan waar de planner ze zette, ook vóór een vroeger tijdsdeel. Klik erop om ze terug op haar tijdsdeel te zetten. |
 | ✎ | Opent de werkorderfiche. Met **← Planning** komt u terug in dezelfde week. |
 | ✓ | Uitgevoerd: de werkorder is te factureren of gefactureerd. |
 
@@ -80,7 +80,7 @@ Het tijdsdeel kiest u op de [werkorderfiche](werkorders.md#planning-en-uitvoerin
 - **Naar een andere dag of medewerker** — sleep de kaart naar die cel. De status volgt zoals op de fiche: met een
   datum en een medewerker wordt de werkorder *Gepland*.
 - **Vóór een andere werkorder** — laat de kaart los óp die andere kaart. Ze staat er dan met de hand geplaatst (⇅).
-- **Terug op haar tijdsdeel** — laat de kaart los in de lege ruimte van de dag. De handmatige plaats vervalt.
+- **Terug op haar tijdsdeel** — laat de kaart los in de lege ruimte van de dag, of klik op ⇅ op de kaart. De handmatige plaats vervalt.
 - **Achteraan in de dag** — zolang u sleept (of een kaart gekozen hebt), staat onder het werk van elke dag het vak
   **↓ Achteraan**. Laat de kaart daar los, of klik erop: de werkorder komt na de laatste werkorder van die dag.
 - **Zonder muis** — klik een kaart: bovenaan staat *Werkorder … gekozen*. Klik dan een andere kaart of een lege plaats
