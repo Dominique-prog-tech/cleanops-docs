@@ -68,12 +68,37 @@ exemple *Mis à jour à 07:12. CleanOps est injoignable pour le moment.* Tant qu
 **Rechercher** un client demande du réseau. Un client d'aujourd'hui ou de demain s'ouvre aussi sans réseau, avec
 **Ouvrir la fiche client** sur l'ordre de travail.
 
-!!! warning
-    Sans réseau, le collaborateur ne peut encore rien enregistrer : le chrono, les notes, les photos et le paiement
-    demandent pour l'instant une connexion. Ce que l'application montre est l'état à l'heure indiquée dans la barre. Ce
-    que le bureau a modifié entre-temps, il ne le voit qu'avec du réseau.
+Même sans réseau, le collaborateur peut continuer à travailler : démarrer, mettre en pause et arrêter le **chrono**,
+ajouter ou corriger du **temps**, ajouter ou supprimer des **notes** et des **photos**, compléter le **paiement sur
+place** et **terminer** l'ordre de travail. L'application conserve chaque action sur l'appareil et la montre aussitôt,
+avec **Pas encore envoyé** en dessous. Dès que le réseau revient, tout part automatiquement vers CleanOps, dans l'ordre
+où cela s'est fait, et avec l'heure à laquelle cela s'est fait : un chrono démarré à 7:12 démarre à 7:12, même s'il
+n'arrive qu'à 9 heures.
 
-Celui qui se déconnecte ne laisse rien derrière lui : les données conservées quittent l'appareil.
+En haut du planning et de l'ordre de travail apparaît alors une bande, par exemple *2 actions pas encore envoyées*.
+Un appui dessus affiche la liste, avec le bouton **Envoyer maintenant**.
+
+!!! warning
+    La **signature** du client n'est possible qu'avec du réseau, et seulement quand tout ce qui concerne cet ordre de
+    travail est chez CleanOps : le client signe ce que CleanOps a. Ce que l'application montre est l'état à l'heure
+    indiquée dans la barre. Ce que le bureau a modifié entre-temps, le collaborateur ne le voit qu'avec du réseau.
+
+### Si CleanOps refuse quelque chose
+
+Si CleanOps refuse une action faite sans réseau (l'ordre de travail a été terminé au bureau entre-temps, par exemple),
+la bande devient rouge. La liste indique la raison, avec deux boutons :
+
+- **Réessayer** : envoyer encore une fois, par exemple après une panne.
+- **Supprimer** : l'action est abandonnée et n'arrivera jamais chez CleanOps.
+
+Une action de plus de 30 jours ne part plus : vérifiez si elle se trouve déjà dans CleanOps, refaites-la si nécessaire
+et supprimez-la.
+
+### Se déconnecter
+
+Celui qui se déconnecte ne laisse rien derrière lui : les données conservées quittent l'appareil. S'il reste quelque
+chose dans la liste **Pas encore envoyé**, l'application demande d'abord ce qu'il faut faire : **Voir** (et envoyer),
+ou **Se déconnecter et supprimer**. Après la déconnexion, plus personne n'enverra ces actions.
 
 ## Questions fréquentes
 

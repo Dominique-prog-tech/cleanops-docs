@@ -67,12 +67,36 @@ bereik, dan verdwijnt de balk.
 Een klant **zoeken** vraagt bereik. Een klant van vandaag of morgen opent ook zonder bereik, met **Klantkaart openen** op
 de werkorder.
 
-!!! warning
-    Zonder bereik kan de medewerker nog niets bewaren: de teller, notities, foto's en de betaling vragen voorlopig een
-    verbinding. Wat de app toont, is de stand van het tijdstip in de balk. Wat het kantoor intussen wijzigde, ziet hij
-    pas met bereik.
+Ook zonder bereik kan de medewerker verder werken: de **teller** starten, pauzeren en stoppen, **tijd** toevoegen of
+rechtzetten, **notities** en **foto's** toevoegen of verwijderen, de **betaling ter plaatse** invullen en de werkorder
+**afronden**. De app bewaart elke handeling op het toestel en toont ze meteen, met **Nog niet verstuurd** eronder.
+Zodra er weer bereik is, vertrekt alles vanzelf naar CleanOps, in de volgorde waarin het gebeurde, en met het uur waarop
+het gebeurde: een teller die om 7:12 startte, start om 7:12, ook als hij pas om 9 uur aankomt.
 
-Wie zich afmeldt, laat niets achter: de bewaarde gegevens gaan weg van het toestel.
+Bovenaan de planning en de werkorder staat dan een strook, bijvoorbeeld *2 handelingen nog niet verstuurd*. Een tik
+erop toont de lijst, met de knop **Nu versturen**.
+
+!!! warning
+    Laten **tekenen** gaat enkel met bereik, en pas als alles van die werkorder bij CleanOps is: de klant tekent voor
+    wat CleanOps heeft. Wat de app toont, is de stand van het tijdstip in de balk. Wat het kantoor intussen wijzigde,
+    ziet de medewerker pas met bereik.
+
+### Als CleanOps iets weigert
+
+Weigert CleanOps een handeling die zonder bereik gebeurde (de werkorder werd intussen op kantoor afgerond, bijvoorbeeld),
+dan wordt de strook rood. In de lijst staat de reden, met twee knoppen:
+
+- **Opnieuw proberen**: nog eens versturen, bijvoorbeeld na een storing.
+- **Weggooien**: de handeling vervalt en komt nooit bij CleanOps.
+
+Een handeling van meer dan 30 dagen oud vertrekt niet meer: kijk na of ze al in CleanOps staat, doe ze zo nodig opnieuw
+en gooi ze weg.
+
+### Afmelden
+
+Wie zich afmeldt, laat niets achter: de bewaarde gegevens gaan weg van het toestel. Staat er nog iets in de lijst
+**Nog niet verstuurd**, dan vraagt de app eerst wat er moet gebeuren: **Bekijken** (en versturen), of **Toch afmelden
+en weggooien**. Na het afmelden verstuurt niemand die handelingen nog.
 
 ## Veelgestelde vragen
 

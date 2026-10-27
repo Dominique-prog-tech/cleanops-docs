@@ -47,9 +47,9 @@ neemt, vraagt het toestel toegang tot de camera. Uit de galerij ziet de app enke
 
 Op kantoor staan de foto's bij de werkorder onder [**Journaal**](../werkorders.md#journaal) › **Bijlagen**.
 
-Lukt het versturen niet, bijvoorbeeld zonder netwerk in een kelder, dan blijft de foto in de app staan met **Niet
-verstuurd** en **Opnieuw proberen**. Ze wordt niet later vanzelf verstuurd: de medewerker tikt zelf op **Opnieuw
-proberen** zodra hij weer verbinding heeft.
+Zonder netwerk, bijvoorbeeld in een kelder, staat de foto meteen in de app met **Nog niet verstuurd** eronder. Ze
+vertrekt vanzelf zodra er weer bereik is (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)). Zolang ze wacht, kan de
+medewerker ze nog verwijderen: dan vertrekt ze nooit.
 
 ## Notities en foto's verwijderen
 

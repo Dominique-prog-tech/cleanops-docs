@@ -49,9 +49,9 @@ voit que la photo qu'il choisit.
 Au bureau, les photos se trouvent sur l'ordre de travail sous [**Journal**](../werkorders.fr.md#journal) › **Pièces
 jointes**.
 
-Si l'envoi échoue, par exemple sans réseau dans une cave, la photo reste dans l'application avec **Pas envoyée** et
-**Réessayer**. Elle n'est pas envoyée plus tard d'elle-même : le collaborateur appuie lui-même sur **Réessayer** dès
-qu'il a de nouveau une connexion.
+Sans réseau, par exemple dans une cave, la photo apparaît aussitôt dans l'application avec **Pas encore envoyé** en
+dessous. Elle part automatiquement dès que le réseau revient (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)). Tant
+qu'elle attend, le collaborateur peut encore la supprimer : elle ne partira alors jamais.
 
 ## Supprimer des notes et des photos
 
