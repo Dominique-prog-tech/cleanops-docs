@@ -20,6 +20,9 @@ rappels.
     Chaque page décrit ce que vous voyez à l'écran dans CleanOps, en néerlandais et en français. Lorsqu'un écran
     s'ajoute ou change, la page est adaptée.
 
+:material-play-circle: **Vous préférez regarder ?** Cinq courts films montrent les principales manières de travailler, de la
+première visite guidée à la facture : [Vidéos](videos.md).
+
 <div class="grid cards" markdown>
 
 -   :material-view-dashboard: **Premiers pas**

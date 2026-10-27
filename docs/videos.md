@@ -1,3 +1,7 @@
+---
+description: "De handleidingfilms van CleanOps op één plaats: aan de slag, de planning, periodieke contracten, cameraverslagen en van werkorder tot factuur."
+---
+
 # Video's
 
 Alle instructiefilms van deze handleiding op één plaats. Elke film staat ook bovenaan de pagina die hij

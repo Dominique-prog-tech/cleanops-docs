@@ -19,6 +19,9 @@ werkorders tot planning, werkbonnen, facturatie en rappels.
     Elke pagina beschrijft wat u in CleanOps op het scherm ziet, in het Nederlands en het Frans. Komt er een scherm
     bij of verandert er iets, dan wijzigt de pagina mee.
 
+:material-play-circle: **Liever kijken?** Vijf korte films tonen de belangrijkste werkwijzen, van de eerste rondleiding tot de
+factuur: [Video's](videos.md).
+
 <div class="grid cards" markdown>
 
 -   :material-view-dashboard: **Aan de slag**
