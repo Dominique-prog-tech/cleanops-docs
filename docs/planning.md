@@ -90,6 +90,23 @@ staan en waarschuwt CleanOps erbij.
     Zonder datum terugzetten gaat niet op het bord. Dat doet u in de planningslijst: open **Toewijzen** en maak de
     **Geplande dag** leeg. De werkorder gaat dan terug naar *Ingegeven*.
 
+### Vrije blokken en verlof
+
+Een **vrij blok** houdt een dag of een tijdsdeel van een medewerker vrij zonder werkorder: een opleiding, het voertuig
+in de garage, een dag op het depot.
+
+- Met **+ Blok** bovenaan kiest u zelf de medewerker en de dag. Sneller: wijs een vak aan en klik op de **+** die erin
+  verschijnt; de medewerker en de dag staan dan al ingevuld.
+- Vul de **omschrijving** in en kies eventueel een **tijdsdeel**. Zonder tijdsdeel geldt het blok de hele dag en staat
+  het bovenaan het vak; met een tijdsdeel staat het tussen de werkorders, vóór het werk van dat tijdsdeel.
+- Een klik op een blok opent het opnieuw, om het te wijzigen of te **verwijderen**.
+
+Een blok staat ook op de afgedrukte planning.
+
+**Verlof** uit de verlofmodule verschijnt vanzelf als rood blok bovenaan het vak, met de soort, "halve dag" op de eerste
+dag van een halve dag, en de omschrijving. U wijzigt het niet op het planbord maar op de fiche van de medewerker (zie
+[Medewerkers](medewerkers.md)).
+
 ## De planningslijst
 
 Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van deze week. Het werk zonder datum staat onder

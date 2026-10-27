@@ -93,6 +93,24 @@ place et CleanOps vous avertit.
     Remettre un ordre sans date ne se fait pas sur le tableau. Vous le faites dans la liste du planning : ouvrez
     **Attribuer** et videz le **Jour planifié**. L'ordre redevient alors *Encodé*.
 
+### Blocs libres et congés
+
+Un **bloc libre** réserve une journée ou une partie de journée d’un collaborateur sans ordre de travail : une formation,
+le véhicule au garage, une journée au dépôt.
+
+- Avec **+ Bloc** en haut, vous choisissez vous-même le collaborateur et le jour. Plus rapide : pointez une case et
+  cliquez sur le **+** qui y apparaît ; le collaborateur et le jour sont alors déjà remplis.
+- Saisissez la **description** et choisissez éventuellement une **partie de journée**. Sans partie de journée, le bloc
+  vaut pour toute la journée et figure en haut de la case ; avec une partie de journée, il se place entre les ordres,
+  avant le travail de cette partie de journée.
+- Un clic sur un bloc le rouvre, pour le modifier ou le **supprimer**.
+
+Un bloc figure aussi sur le planning imprimé.
+
+Les **congés** du module congés apparaissent d’eux-mêmes comme un bloc rouge en haut de la case, avec le type,
+« demi-journée » le premier jour d’une demi-journée, et la description. Vous ne les modifiez pas sur le tableau de
+planning mais sur la fiche du collaborateur (voir [Collaborateurs](medewerkers.md)).
+
 ## La liste du planning
 
 Les mêmes ordres sous forme de liste, groupés par jour — par défaut ceux de cette semaine. Le travail sans date se
