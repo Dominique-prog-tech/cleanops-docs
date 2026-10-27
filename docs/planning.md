@@ -110,6 +110,9 @@ in de garage, een dag op het depot.
 - Vul de **omschrijving** in en kies eventueel een **tijdsdeel**. Zonder tijdsdeel geldt het blok de hele dag en staat
   het bovenaan het vak; met een tijdsdeel staat het tussen de werkorders, vóór het werk van dat tijdsdeel.
 - Een klik op een blok opent het opnieuw, om het te wijzigen of te **verwijderen**.
+- **Sleep** een blok naar een andere dag of een andere medewerker; het tijdsdeel en de omschrijving blijven. Naar een
+  andere week gaat het met de stroken *Vorige week* en *Volgende week*, zoals bij een werkorder. Bij
+  **(niet toegewezen)** kan een blok niet: het hoort altijd bij een medewerker.
 
 Een blok staat ook op de afgedrukte planning.
 

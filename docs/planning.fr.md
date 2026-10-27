@@ -114,6 +114,9 @@ le véhicule au garage, une journée au dépôt.
   vaut pour toute la journée et figure en haut de la case ; avec une partie de journée, il se place entre les ordres,
   avant le travail de cette partie de journée.
 - Un clic sur un bloc le rouvre, pour le modifier ou le **supprimer**.
+- **Glissez** un bloc vers un autre jour ou un autre collaborateur ; la partie de journée et la description restent.
+  Vers une autre semaine, passez par les bandes *Semaine précédente* et *Semaine suivante*, comme pour un ordre. Un
+  bloc ne peut pas aller dans **(non attribué)** : il appartient toujours à un collaborateur.
 
 Un bloc figure aussi sur le planning imprimé.
 
