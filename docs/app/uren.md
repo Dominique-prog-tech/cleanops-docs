@@ -7,7 +7,7 @@ description: "Mijn uren in de mobiele app van CleanOps: de eigen gewerkte tijd p
 Onder **Mijn uren** in het menu ziet de medewerker zijn eigen tijd van een hele week: wat hij met de teller of met de hand
 op zijn werkorders registreerde, over alle werkorders heen.
 
-<!-- AFBEELDING: app-uren — Mijn uren in de app: de week van 26/10 tot 1/11, bovenaan Werk, Verplaatsing en Pauze, daaronder dinsdag met twee regels op werkorder 900137 -->
+![Mijn uren in de app: de week van 26/10 tot 1/11, bovenaan Werk, Verplaatsing en Pauze, daaronder dinsdag met twee regels op werkorder 900137](../images/app-uren.png "Mijn uren"){ width="560" }
 
 ## De week
 

@@ -41,7 +41,7 @@ kiezen.
 Met de drie streepjes linksboven opent het menu: de naam en het e-mailadres van de medewerker, **Planning**, **Verlof**,
 **Klanten**, **Mijn uren**, **Profiel** en onderaan **Afmelden**.
 
-![Het menu van de app op een tablet: bovenaan Tom Verbeke met zijn e-mailadres, daaronder Planning, Verlof en Profiel, en onderaan Afmelden](../images/app-menu.png "Het menu"){ width="560" }
+![Het menu van de app op een tablet: bovenaan Tom Verbeke met zijn e-mailadres, daaronder Planning, Verlof, Klanten, Mijn uren en Profiel, en onderaan Afmelden](../images/app-menu.png "Het menu"){ width="560" }
 
 ## Het profiel
 

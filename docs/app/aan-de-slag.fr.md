@@ -42,7 +42,7 @@ fiche.
 Les trois traits en haut à gauche ouvrent le menu : le nom et l'adresse e-mail du collaborateur, **Planning**,
 **Congés**, **Clients**, **Mes heures**, **Profil** et en bas **Se déconnecter**.
 
-![Le menu de l'application sur une tablette : en haut Tom Verbeke avec son adresse e-mail, puis Planning, Congés et Profil, et en bas Se déconnecter](../images/app-menu-fr.png "Le menu"){ width="560" }
+![Le menu de l'application sur une tablette : en haut Tom Verbeke avec son adresse e-mail, puis Planning, Congés, Clients, Mes heures et Profil, et en bas Se déconnecter](../images/app-menu-fr.png "Le menu"){ width="560" }
 
 ## Le profil
 

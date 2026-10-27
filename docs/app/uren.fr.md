@@ -7,7 +7,7 @@ description: "Mes heures dans l'application mobile CleanOps : le temps presté p
 Sous **Mes heures** dans le menu, le collaborateur voit son propre temps d'une semaine entière : ce qu'il a enregistré
 avec le chrono ou à la main sur ses ordres de travail, tous ordres confondus.
 
-<!-- AFBEELDING: app-uren-fr — Mes heures dans l'application : la semaine du 26/10 au 1/11, en haut Travail, Déplacement et Pause, en dessous mardi avec deux lignes sur l'ordre 900137 -->
+![Mes heures dans l'application : la semaine du 26/10 au 1/11, en haut Travail, Déplacement et Pause, en dessous mardi avec deux lignes sur l'ordre 900137](../images/app-uren-fr.png "Mes heures"){ width="560" }
 
 ## La semaine
 

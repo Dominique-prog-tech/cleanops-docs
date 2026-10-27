@@ -36,7 +36,7 @@ En haut de la journée figurent, s'il y a lieu :
   des boutons **Itinéraire, partie 1**, **partie 2**, etc. apparaissent ;
 - la **Remarque du planificateur** : la remarque du jour que le bureau a écrite dans Équipes.
 
-<!-- AFBEELDING: app-planning-dag-fr — Le planning dans l'application le lundi 2 novembre : Avec Kevin De Wilde, la plaque 1-DEM-002, le bouton Itinéraire du jour dans Google Maps et la Remarque du planificateur, en dessous les ordres de travail -->
+![Le planning dans l'application le lundi 2 novembre : Avec Kevin De Wilde, la plaque 1-DEM-002, le bouton Itinéraire du jour dans Google Maps et la Remarque du planificateur, en dessous les ordres de travail](../images/app-planning-dag-fr.png "Équipe, véhicule et itinéraire"){ width="560" }
 
 ## Blocs et congés
 

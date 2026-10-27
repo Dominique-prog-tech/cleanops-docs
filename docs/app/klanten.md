@@ -14,7 +14,7 @@ en als bij [een werkorder aanmaken](werkorder-aanmaken.md). Een tik op een klant
 
 ## De klantkaart
 
-<!-- AFBEELDING: app-klantkaart — De klantkaart van Tuincentrum De Linde in de app: het klantnummer, telefoon en e-mail, het hoofdadres en een uitvoeringsadres met bereikbaarheid, werkinstructie, materiaal, opmerking en de werkorders op dat adres -->
+![De klantkaart van Tuincentrum De Linde in de app: het klantnummer, telefoon en e-mail, het hoofdadres en de uitvoeringsadressen met bereikbaarheid, werkinstructie, materiaal, opmerking en de werkorders op dat adres](../images/app-klantkaart.png "De klantkaart"){ width="560" }
 
 Bovenaan staan het klantnummer, het telefoonnummer en het e-mailadres; een tik belt of mailt. Is de klant geblokkeerd of
 neemt hij geen nieuwe opdrachten, dan staat dat er in een kaart, zoals het kantoor het ziet.

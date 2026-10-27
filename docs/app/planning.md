@@ -34,7 +34,7 @@ Bovenaan de dag staat, als het er is:
   **Dagroute, deel 1**, **deel 2** enzovoort;
 - de **Opmerking van de planner**: de dagopmerking die het kantoor op Ploegen bij die dag schreef.
 
-<!-- AFBEELDING: app-planning-dag — De planning in de app op maandag 2 november: Met Kevin De Wilde, het kenteken 1-DEM-002, de knop Dagroute in Google Maps en de Opmerking van de planner, daaronder de werkorders -->
+![De planning in de app op maandag 2 november: Met Kevin De Wilde, het kenteken 1-DEM-002, de knop Dagroute in Google Maps en de Opmerking van de planner, daaronder de werkorders](../images/app-planning-dag.png "Ploeg, voertuig en dagroute"){ width="560" }
 
 ## Blokken en verlof
 

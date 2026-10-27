@@ -14,7 +14,7 @@ et que pour [créer un ordre de travail](werkorder-aanmaken.fr.md). Un appui sur
 
 ## La fiche client
 
-<!-- AFBEELDING: app-klantkaart-fr — La fiche de Tuincentrum De Linde dans l'application : le numéro de client, le téléphone et l'e-mail, l'adresse principale et une adresse d'exécution avec accessibilité, instruction de travail, matériel, remarque et les ordres de travail à cette adresse -->
+![La fiche de Tuincentrum De Linde dans l'application : le numéro de client, le téléphone et l'e-mail, l'adresse principale et les adresses d'exécution avec accessibilité, instruction de travail, matériel, remarque et les ordres de travail à cette adresse](../images/app-klantkaart-fr.png "La fiche client"){ width="560" }
 
 En haut figurent le numéro de client, le téléphone et l'adresse e-mail ; un appui appelle ou envoie un e-mail. Si le
 client est bloqué ou n'accepte plus de nouveaux ordres, une carte l'indique, comme le bureau le voit.
