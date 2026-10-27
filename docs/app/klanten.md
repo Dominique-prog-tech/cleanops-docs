@@ -12,6 +12,9 @@ Hij ziet er wat hij nodig heeft om het werk te doen, maar geen bedragen, facture
 Typ minstens twee letters: een deel van de naam, de gemeente of het klantnummer. Dat is dezelfde zoeker als op kantoor
 en als bij [een werkorder aanmaken](werkorder-aanmaken.md). Een tik op een klant opent de klantkaart.
 
+Vanop een werkorder opent **Klantkaart openen** meteen de kaart van die klant, ook zonder bereik voor de klanten van
+vandaag en morgen (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)).
+
 ## De klantkaart
 
 ![De klantkaart van Tuincentrum De Linde in de app: het klantnummer, telefoon en e-mail, het hoofdadres en de uitvoeringsadressen met bereikbaarheid, werkinstructie, materiaal, opmerking en de werkorders op dat adres](../images/app-klantkaart.png "De klantkaart"){ width="560" }

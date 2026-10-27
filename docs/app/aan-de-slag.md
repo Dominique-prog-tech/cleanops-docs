@@ -54,6 +54,26 @@ Met **Afmelden** meldt hij zich af. Dat geldt enkel voor dat toestel.
 
 ![Het Profiel in de app: Tom Verbeke met zijn e-mailadres, de keuzes voor Weergave en Taal, en de knop Afmelden](../images/app-profiel.png "Profiel"){ width="560" }
 
+## Zonder bereik
+
+De app bewaart de planning van **vandaag en morgen** op het toestel, met elke werkorder van die dagen, de klantkaart van
+die klanten, **Mijn uren** van deze week en het **Verlof**. Dat gebeurt vanzelf, telkens de medewerker de app met bereik
+opent.
+
+Valt het bereik weg, dan toont de app wat ze laatst ophaalde. Een balk bovenaan zegt van wanneer, bijvoorbeeld
+*Bijgewerkt om 07:12. CleanOps is nu niet bereikbaar.* Zolang de app nog probeert, staat er *Wordt ververst…*. Is er weer
+bereik, dan verdwijnt de balk.
+
+Een klant **zoeken** vraagt bereik. Een klant van vandaag of morgen opent ook zonder bereik, met **Klantkaart openen** op
+de werkorder.
+
+!!! warning
+    Zonder bereik kan de medewerker nog niets bewaren: de teller, notities, foto's en de betaling vragen voorlopig een
+    verbinding. Wat de app toont, is de stand van het tijdstip in de balk. Wat het kantoor intussen wijzigde, ziet hij
+    pas met bereik.
+
+Wie zich afmeldt, laat niets achter: de bewaarde gegevens gaan weg van het toestel.
+
 ## Veelgestelde vragen
 
 **Een medewerker kan zich niet aanmelden.**

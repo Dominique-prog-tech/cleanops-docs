@@ -55,6 +55,26 @@ Sous **Profil**, le collaborateur choisit :
 
 ![Le Profil dans l'application : Tom Verbeke avec son adresse e-mail, les choix pour Affichage et Langue, et le bouton Se déconnecter](../images/app-profiel-fr.png "Profil"){ width="560" }
 
+## Sans réseau
+
+L'application conserve sur l'appareil le planning d'**aujourd'hui et de demain**, avec chaque ordre de travail de ces
+jours, la fiche client de ces clients, **Mes heures** de la semaine et les **Congés**. Cela se fait automatiquement,
+chaque fois que le collaborateur ouvre l'application avec du réseau.
+
+Si le réseau tombe, l'application montre ce qu'elle a récupéré en dernier. Une barre en haut indique de quand, par
+exemple *Mis à jour à 07:12. CleanOps est injoignable pour le moment.* Tant que l'application réessaie, elle indique
+*Actualisation…*. Dès que le réseau revient, la barre disparaît.
+
+**Rechercher** un client demande du réseau. Un client d'aujourd'hui ou de demain s'ouvre aussi sans réseau, avec
+**Ouvrir la fiche client** sur l'ordre de travail.
+
+!!! warning
+    Sans réseau, le collaborateur ne peut encore rien enregistrer : le chrono, les notes, les photos et le paiement
+    demandent pour l'instant une connexion. Ce que l'application montre est l'état à l'heure indiquée dans la barre. Ce
+    que le bureau a modifié entre-temps, il ne le voit qu'avec du réseau.
+
+Celui qui se déconnecte ne laisse rien derrière lui : les données conservées quittent l'appareil.
+
 ## Questions fréquentes
 
 **Un collaborateur ne parvient pas à se connecter.**

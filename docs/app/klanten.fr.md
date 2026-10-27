@@ -12,6 +12,9 @@ aujourd'hui. Il y voit ce dont il a besoin pour faire le travail, mais pas de mo
 Tapez au moins deux lettres : une partie du nom, la commune ou le numéro de client. C'est la même recherche qu'au bureau
 et que pour [créer un ordre de travail](werkorder-aanmaken.fr.md). Un appui sur un client ouvre sa fiche.
 
+Depuis un ordre de travail, **Ouvrir la fiche client** ouvre directement la fiche de ce client, aussi sans réseau pour
+les clients d'aujourd'hui et de demain (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)).
+
 ## La fiche client
 
 ![La fiche de Tuincentrum De Linde dans l'application : le numéro de client, le téléphone et l'e-mail, l'adresse principale et les adresses d'exécution avec accessibilité, instruction de travail, matériel, remarque et les ordres de travail à cette adresse](../images/app-klantkaart-fr.png "La fiche client"){ width="560" }
