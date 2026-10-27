@@ -1,0 +1,83 @@
+{
+  "_bron": "cleanops-docs — geschreven door `node tools/bunny.mjs naar-website`, niet met de hand bewerken",
+  "films": {
+    "cleanops-overzicht": {
+      "nl": {
+        "guid": "bc808a28-2c82-4336-a5f5-8ded011ad5fb",
+        "lengte": 40.12,
+        "titel": "CleanOps in het kort: de alles-in-één tool voor uw ruimdienst",
+        "omschrijving": "Een kort overzicht van CleanOps voor ruim- en rioolreinigingsdiensten: het dashboard, onderhoudscontracten die zelf hun werkorders maken, het planbord, de werkbonnen per chauffeur, verwerkingsattesten met EURAL-code en de facturatie.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/bc808a28-2c82-4336-a5f5-8ded011ad5fb/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:36:56.696Z"
+      },
+      "fr": {
+        "guid": "a9787060-9916-46ea-aeb4-2a151a195003",
+        "lengte": 44.48,
+        "titel": "CleanOps en bref : l’outil tout-en-un pour votre service de curage",
+        "omschrijving": "Un bref aperçu de CleanOps pour les services de curage et de débouchage : le tableau de bord, des contrats d’entretien qui créent eux-mêmes leurs ordres, le tableau de planning, les bons de travail par chauffeur, les attestations avec code EURAL et la facturation.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/a9787060-9916-46ea-aeb4-2a151a195003/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:37:07.967Z"
+      },
+      "en": {
+        "guid": "a49abe93-0b37-4325-afee-4c783e7ca424",
+        "lengte": 41.88,
+        "titel": "CleanOps at a glance: the all-in-one tool for your drain cleaning business",
+        "omschrijving": "A short overview of CleanOps for drain and sewer cleaning businesses: the dashboard, maintenance contracts that create their own work orders, the planning board, work sheets per driver, waste certificates with EURAL code, and invoicing.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/a49abe93-0b37-4325-afee-4c783e7ca424/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:37:19.169Z"
+      }
+    },
+    "planning-en-ploegen": {
+      "nl": {
+        "guid": "d0d008b4-ee26-4df6-be1a-2a864ac26b65",
+        "lengte": 32.08,
+        "titel": "Planning en ploegen in CleanOps: het planbord voor uw ruimdienst",
+        "omschrijving": "Het planbord van CleanOps: de week van al uw ploegen, elke werkorder op haar dag met tijdsdeel en klant, werk zonder datum dat u zo inplant, vrije blokken voor een opleiding of de garage, en de werkbon per chauffeur.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/d0d008b4-ee26-4df6-be1a-2a864ac26b65/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:37:25.352Z"
+      },
+      "fr": {
+        "guid": "8fec0bdb-b645-412f-87b5-9709e03dd1bf",
+        "lengte": 35.32,
+        "titel": "Planning et équipes dans CleanOps : le tableau de planning de votre service de curage",
+        "omschrijving": "Le tableau de planning de CleanOps : la semaine de toutes vos équipes, chaque ordre à son jour avec la partie de journée et le client, le travail sans date à planifier, des blocs libres pour une formation ou le garage, et le bon par chauffeur.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/8fec0bdb-b645-412f-87b5-9709e03dd1bf/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:37:36.509Z"
+      },
+      "en": {
+        "guid": "9fc613ec-d62a-46da-8370-c7667c755340",
+        "lengte": 32.48,
+        "titel": "Planning and crews in CleanOps: the planning board for your drain cleaning business",
+        "omschrijving": "The CleanOps planning board: the week of all your crews, every work order on its day with time slot and customer, unscheduled work you plan in, free blocks for training or the garage, and a work sheet per driver.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/9fc613ec-d62a-46da-8370-c7667c755340/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:37:48.821Z"
+      }
+    },
+    "verwerkingsattesten": {
+      "nl": {
+        "guid": "4d0bb2db-5249-41d1-ab80-43db18064dea",
+        "lengte": 36.64,
+        "titel": "Verwerkingsattesten in CleanOps: met EURAL-code, als pdf naar de klant",
+        "omschrijving": "Verwerkingsattesten in CleanOps: bij elke werkorder die een attest vraagt ziet u of het er is, met product, hoeveelheid, herkomst, EURAL-code en verwerkingsbedrijf, en het attest gaat als pdf naar uw klant.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/4d0bb2db-5249-41d1-ab80-43db18064dea/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:37:59.9Z"
+      },
+      "fr": {
+        "guid": "ad992880-2b8d-4e4e-b344-ca99b2626444",
+        "lengte": 38.52,
+        "titel": "Attestations de traitement dans CleanOps : avec code EURAL, en pdf au client",
+        "omschrijving": "Les attestations de traitement dans CleanOps : pour chaque ordre qui en demande une, vous voyez si elle existe, avec produit, quantité, origine, code EURAL et entreprise de traitement, et l’attestation part en pdf chez votre client.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/ad992880-2b8d-4e4e-b344-ca99b2626444/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:38:10.985Z"
+      },
+      "en": {
+        "guid": "4168b576-7bc3-4c9d-ba01-188699a52424",
+        "lengte": 37.96,
+        "titel": "Waste certificates in CleanOps: with EURAL code, as a PDF for your customer",
+        "omschrijving": "Waste certificates in CleanOps: for every work order that needs one you see whether it exists, with product, quantity, origin, EURAL code and treatment company, and the certificate goes to your customer as a PDF.",
+        "miniatuur": "https://vz-a5b00b36-fda.b-cdn.net/4168b576-7bc3-4c9d-ba01-188699a52424/thumbnail.jpg",
+        "gepubliceerdOp": "2026-10-27T06:38:16.98Z"
+      }
+    }
+  }
+}
