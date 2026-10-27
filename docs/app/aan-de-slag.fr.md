@@ -19,6 +19,8 @@ ne voit que son propre travail et celui de son équipe. L'application n'utilise 
 | Faire signer le client, envoyer le bon signé, terminer | [Faire signer](laten-tekenen.fr.md) |
 | Créer soi-même un ordre de travail, pour soi ou un collègue | [Créer un ordre de travail](werkorder-aanmaken.fr.md) |
 | Le solde de congés, les congés enregistrés et demander un congé | [Congés](verlof.fr.md) |
+| Chercher un client, avec les données de travail par adresse | [Clients](klanten.fr.md) |
+| Son propre temps presté par semaine | [Mes heures](uren.fr.md) |
 
 ## Donner l'accès
 
@@ -38,7 +40,7 @@ fiche.
 ## Le menu
 
 Les trois traits en haut à gauche ouvrent le menu : le nom et l'adresse e-mail du collaborateur, **Planning**,
-**Congés**, **Profil** et en bas **Se déconnecter**.
+**Congés**, **Clients**, **Mes heures**, **Profil** et en bas **Se déconnecter**.
 
 ![Le menu de l'application sur une tablette : en haut Tom Verbeke avec son adresse e-mail, puis Planning, Congés et Profil, et en bas Se déconnecter](../images/app-menu-fr.png "Le menu"){ width="560" }
 

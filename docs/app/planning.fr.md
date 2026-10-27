@@ -22,6 +22,22 @@ Le cas échéant, une étiquette indique où en est l'ordre de travail :
 | **Chrono en cours** | Le collaborateur y enregistre du temps en ce moment. |
 | **Non exécuté** | Planifié sur un jour déjà passé, et pas encore terminé. |
 
+## Équipe, véhicule et itinéraire du jour
+
+En haut de la journée figurent, s'il y a lieu :
+
+- **Avec** et les noms de ceux qui font partie de l'équipe ce jour-là, comme le bureau l'a composée dans
+  [Équipes](../ploegen.fr.md) ;
+- la plaque du véhicule : celui du chauffeur de l'équipe, ou sans équipe le véhicule fixe du collaborateur lui-même (sur
+  sa [fiche](../medewerkers.fr.md)) ;
+- **Chauffeur :** et un nom, si quelqu'un d'autre conduit ;
+- le bouton **Itinéraire du jour dans Google Maps**, dès deux adresses ce jour-là : l'itinéraire part de l'entreprise,
+  suit l'ordre du planning et revient. Si la journée compte plus d'arrêts que Google n'en accepte dans un seul itinéraire,
+  des boutons **Itinéraire, partie 1**, **partie 2**, etc. apparaissent ;
+- la **Remarque du planificateur** : la remarque du jour que le bureau a écrite dans Équipes.
+
+<!-- AFBEELDING: app-planning-dag-fr — Le planning dans l'application le lundi 2 novembre : Avec Kevin De Wilde, la plaque 1-DEM-002, le bouton Itinéraire du jour dans Google Maps et la Remarque du planificateur, en dessous les ordres de travail -->
+
 ## Blocs et congés
 
 À côté des ordres de travail, le planning montre aussi ce que le bureau a placé sur le [tableau de planning](../planning.md)

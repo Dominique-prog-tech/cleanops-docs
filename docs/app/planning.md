@@ -21,6 +21,21 @@ Staat het er, dan zegt een label hoe de werkorder ervoor staat:
 | **Teller loopt** | De medewerker registreert er nu tijd op. |
 | **Niet uitgevoerd** | Gepland op een dag die al voorbij is, en nog niet afgerond. |
 
+## Ploeg, voertuig en dagroute
+
+Bovenaan de dag staat, als het er is:
+
+- **Met** en de namen van wie die dag mee in de ploeg zit, zoals het kantoor het op [Ploegen](../ploegen.md) samenstelde;
+- het kenteken van de wagen: die van de chauffeur van de ploeg, of zonder ploeg het vaste voertuig van de medewerker zelf
+  (op zijn [fiche](../medewerkers.md));
+- **Chauffeur:** en een naam, als iemand anders rijdt;
+- de knop **Dagroute in Google Maps**, vanaf twee adressen op die dag: de route vertrekt aan het bedrijf, volgt de
+  volgorde van de planning en komt terug. Telt de dag meer stops dan Google in één route toelaat, dan staan er knoppen
+  **Dagroute, deel 1**, **deel 2** enzovoort;
+- de **Opmerking van de planner**: de dagopmerking die het kantoor op Ploegen bij die dag schreef.
+
+<!-- AFBEELDING: app-planning-dag — De planning in de app op maandag 2 november: Met Kevin De Wilde, het kenteken 1-DEM-002, de knop Dagroute in Google Maps en de Opmerking van de planner, daaronder de werkorders -->
+
 ## Blokken en verlof
 
 Naast de werkorders toont de planning ook wat het kantoor op het [planbord](../planning.md) zette zonder werkorder:

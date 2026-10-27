@@ -228,6 +228,7 @@ plugins:
             Laten tekenen: Faire signer
             Werkorder aanmaken: Créer un ordre de travail
             Verlof: Congés
+            Mijn uren: Mes heures
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
             Documentnummers: Numéros de documents
@@ -342,6 +343,8 @@ nav:
     - Laten tekenen: app/laten-tekenen.md
     - Werkorder aanmaken: app/werkorder-aanmaken.md
     - Verlof: app/verlof.md
+    - Klanten: app/klanten.md
+    - Mijn uren: app/uren.md
   # De kopjes zijn de groepen van de hub (AdministrationCatalog.Groups). "Overzetting en platform" ontbreekt bewust: dat
   # zijn ADM-interne schermen (docs/intern/). Gebruikers staat er niet: geen eigen pagina (beheer via ADM One).
   # ⚠️ "Overzicht" stond tot 05/10/2026 NIET in het menu: de pagina bestond, maar was enkel via een link bereikbaar.

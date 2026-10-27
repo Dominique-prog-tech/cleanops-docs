@@ -18,6 +18,8 @@ zijn eigen werk en dat van zijn ploeg. De app gebruikt zijn locatie niet.
 | De klant laten aftekenen, de getekende bon mailen, afronden | [Laten tekenen](laten-tekenen.md) |
 | Zelf een werkorder aanmaken, voor zichzelf of een collega | [Werkorder aanmaken](werkorder-aanmaken.md) |
 | Het verlofsaldo, het geboekte verlof en verlof aanvragen | [Verlof](verlof.md) |
+| Een klant opzoeken, met de werkgegevens per adres | [Klanten](klanten.md) |
+| De eigen gewerkte tijd per week | [Mijn uren](uren.md) |
 
 ## Toegang geven
 
@@ -37,7 +39,7 @@ kiezen.
 ## Het menu
 
 Met de drie streepjes linksboven opent het menu: de naam en het e-mailadres van de medewerker, **Planning**, **Verlof**,
-**Profiel** en onderaan **Afmelden**.
+**Klanten**, **Mijn uren**, **Profiel** en onderaan **Afmelden**.
 
 ![Het menu van de app op een tablet: bovenaan Tom Verbeke met zijn e-mailadres, daaronder Planning, Verlof en Profiel, en onderaan Afmelden](../images/app-menu.png "Het menu"){ width="560" }
 
