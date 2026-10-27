@@ -221,6 +221,7 @@ plugins:
             Tweestapsverificatie: Vérification en deux étapes
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
+            Video's: Vidéos
             Mobiele app: Application mobile
             De planning: Le planning
             De werkorder: L'ordre de travail
@@ -270,8 +271,16 @@ plugins:
             Begrippenlijst: Glossaire
             Workflow-overzicht: Aperçu du workflow
 
+# De handleidingfilms (sinds 27/10/2026): de gedeelde hook uit adm-appkit zet de speler en het VideoObject onder de H1 van
+# elke filmpagina, en vult videos.md. Lokaal: `ln -s ~/projects/adm-appkit _appkit`; in de uitrol checkt deploy.yml adm-appkit
+# mee uit (repo-geheim ADM_APPKIT_LEZEN). De films zelf: tools/draaiboek.mjs en tools/films-uitslag.json.
+hooks:
+  - _appkit/tools/filmgenerator/films_hook.py
+
 extra:
   generator: false
+  # De Bunny-library van CleanOps (één per pakket). Geen geheim: het staat in elk publiek embed-adres.
+  bunny_library: "791117"
 
 # Alleen KLARE pagina's staan hier (playbook: handleiding groeit mee per vrijgave, zelfde discipline als
 # nimble-docs). Het volledige skelet uit de Delphi-scan (Aan de slag, Werkzaamheden, CRM, Attesten,
@@ -284,6 +293,8 @@ nav:
   # kopbalk: zestien, en elke module erbij maakte er één meer. De BESTANDEN zijn niet verplaatst: de adressen blijven
   # gelijk, dus de ?-knop en de links vanuit de app werken verder. Volgorde binnen een groep = die van het app-menu.
   - Home: index.md
+  # Eén overzicht van alle films; de LIJST maakt de films-hook uit tools/films-uitslag.json.
+  - "Video's": videos.md
   # Algemene uitleg die voor elk scherm geldt, groeit hier aan (lijsten, journaal, …).
   - Aan de slag:
     - Dashboard: dashboard.md

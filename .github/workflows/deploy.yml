@@ -32,7 +32,21 @@ jobs:
       # --strict (sinds 10/10/2026, toen de site voor zoekmachines openging): een link naar een pagina of een
       # #anker dat niet bestaat laat de bouw FALEN (zie `validation:` in mkdocs.yml). De vorige versie blijft dan
       # online staan. Zonder --strict was een dode link een regel in dit logboek die niemand las.
+      # De gedeelde filmhook (mkdocs.yml → _appkit/tools/filmgenerator/films_hook.py) en de filmcontrole wonen in
+      # adm-appkit, en die repo is privé: meelezen met het repo-geheim ADM_APPKIT_LEZEN (fine-grained token, enkel
+      # adm-appkit, Contents: Read-only — NOTEER DE VERVALDATUM). Zonder deze stap vindt mkdocs de hook niet. Zoals nimble-docs.
+      - uses: actions/checkout@v4
+        with:
+          repository: ADM-Concept/adm-appkit
+          token: ${{ secrets.ADM_APPKIT_LEZEN }}
+          path: _appkit
+          sparse-checkout: tools/filmgenerator
       - run: mkdocs build --strict
+      # Staat elke film onder de H1 van zijn pagina, met een volledig VideoObject? Meet de GEBOUWDE site.
+      # --min-paginas: 5 films × 2 talen = 10 handleidingrijen (27/10/2026). Verhoog bij elke nieuwe film — de bodem vangt een
+      # uitslagtabel die stil gekrompen is; daarom komt hij niet uit diezelfde tabel.
+      - name: Films controleren (plaatsing + videogegevens)
+        run: python3 _appkit/tools/filmgenerator/check-films.py --min-paginas=10
       # Staat elk beeld uit de bron ook als <img> in de gebouwde site? Bij Nimble en CreditSoft verdwenen op 19/10/2026
       # alle schermafdrukken bij het bouwen (selectolax 1.0.1, zie requirements.txt) terwijl alle stappen groen bleven.
       # Deze mag de uitrol TEGENHOUDEN.

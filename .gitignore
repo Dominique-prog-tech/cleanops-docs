@@ -4,3 +4,6 @@ __pycache__/
 .DS_Store
 *.pyc
 Thumbs.db
+
+# De gedeelde filmhook lokaal: ln -s ~/projects/adm-appkit _appkit (in de uitrol een checkout).
+_appkit
