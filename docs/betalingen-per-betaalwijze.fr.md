@@ -7,7 +7,7 @@ description: "Paiements par mode dans CleanOps : les ordres de travail payés pa
 Les ordres de travail avec un [mode de paiement](beheer/betaalwijzen.fr.md), au jour où ils ont été exécutés. Vous pointez ainsi
 le relevé Payconiq ou la caisse : chaque ligne est une intervention, avec le montant payé par le client et l'état de la facture.
 
-<!-- AFBEELDING: l'aperçu Paiements par mode avec la période Ce mois-ci, les totaux par mode et une ligne Espèces -->
+![L'aperçu Paiements par mode avec la période Ce mois-ci, les totaux par mode et une ligne Espèces](images/betalingen-per-betaalwijze-fr.png "Paiements par mode")
 
 ## Ouvrir l'écran
 

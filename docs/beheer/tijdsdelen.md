@@ -8,7 +8,7 @@ Wanneer op de dag een opdracht gebeurt: eerste werk, voormiddag, volledige dag, 
 [werkorder](../werkorders.md#planning-en-uitvoering) of op een [contract](../contracten.md). Het [planbord](../planning.md) en de
 [werkbon](../werkbonnen.md) zetten de werkorders van een dag in de volgorde van deze lijst.
 
-<!-- AFBEELDING: de lijst Tijdsdelen met Eerste werk, Voormiddag, Volledige dag, Namiddag en Anders, en het label "volgens uur" -->
+![De lijst Tijdsdelen met Eerste werk, Voormiddag, Volledige dag, Namiddag en Anders, en het label volgens uur](../images/tijdsdelen-lijst.png "Tijdsdelen")
 
 ## Het scherm openen
 
@@ -33,7 +33,7 @@ uur werkt. U kunt ze hernoemen, anders ordenen of er tijdsdelen bij maken, bijvo
 Klik op **Nieuw tijdsdeel**, of dubbelklik op een bestaande rij. Een nieuw tijdsdeel komt achteraan; wilt u het ertussen, pas
 dan de volgorde aan.
 
-<!-- AFBEELDING: het venster Tijdsdeel bewerken voor Anders, met Volgens uur aangevinkt -->
+![Het venster Tijdsdeel bewerken voor Anders, met Volgens uur aangevinkt](../images/tijdsdeel-venster.png "Tijdsdeel bewerken")
 
 | Veld | Wat u invult |
 |---|---|

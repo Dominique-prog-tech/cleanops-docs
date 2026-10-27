@@ -32,7 +32,7 @@ des constatations. **← Adresse** sur le rapport vous ramène à cet onglet.
 Dans le menu, sous **Travail**, cliquez sur **Rapports caméra**. La liste montre les ordres de travail qui demandent un
 rapport caméra ou en ont un, avec leur rapport.
 
-<!-- AFBEELDING: la liste Rapports caméra sur À facturer et Rapport manquant, avec les colonnes N°, Exécuté, Statut, Rapport, Client, Adresse d'exécution et Description -->
+![La liste Rapports caméra sur À facturer et Rapport manquant, avec les colonnes N°, Exécuté, Statut, Rapport, Client, Adresse d'exécution et Description](images/cameraverslagen-lijst-fr.png "Rapports caméra")
 
 | Colonne | Contenu |
 |---|---|

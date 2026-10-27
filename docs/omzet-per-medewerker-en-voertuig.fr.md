@@ -7,7 +7,7 @@ description: "Chiffre d'affaires par collaborateur et véhicule dans CleanOps : 
 Combien de travail a été exécuté sur une période et pour quel montant, par collaborateur ou par véhicule. L'aperçu compte le
 travail **exécuté**, même ce qui n'est pas encore facturé.
 
-<!-- AFBEELDING: l'aperçu Chiffre d'affaires par collaborateur et véhicule avec la période Ce mois-ci, par collaborateur, et le total -->
+![L'aperçu Chiffre d'affaires par collaborateur et véhicule avec la période Ce mois-ci, par collaborateur, et le total](images/omzet-overzicht-fr.png "Chiffre d'affaires par collaborateur et véhicule")
 
 ## Ouvrir l'écran
 

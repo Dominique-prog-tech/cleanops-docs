@@ -32,7 +32,7 @@ vaststellingen. **← Adres** op het verslag brengt u terug naar dit tabblad.
 Klik in het menu onder **Werk** op **Cameraverslagen**. De lijst toont de werkorders die een cameraverslag vragen of er een
 hebben, met hun verslag.
 
-<!-- AFBEELDING: de lijst Cameraverslagen op Te factureren en Verslag ontbreekt, met de kolommen Nr, Uitgevoerd, Status, Verslag, Klant, Uitvoeringsadres en Omschrijving -->
+![De lijst Cameraverslagen op Te factureren en Verslag ontbreekt, met de kolommen Nr, Uitgevoerd, Status, Verslag, Klant, Uitvoeringsadres en Omschrijving](images/cameraverslagen-lijst.png "Cameraverslagen")
 
 | Kolom | Wat erin staat |
 |---|---|

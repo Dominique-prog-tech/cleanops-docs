@@ -7,7 +7,7 @@ description: "Betalingen per betaalwijze in CleanOps: de werkorders met Payconiq
 De werkorders met een [betaalwijze](beheer/betaalwijzen.md), op de dag dat ze uitgevoerd werden. Zo punt u het overzicht van
 Payconiq of de kas af: elke rij is één bezoek, met het bedrag dat de klant betaalde en of de factuur betaald staat.
 
-<!-- AFBEELDING: het overzicht Betalingen per betaalwijze met de periode Deze maand, de totalen per betaalwijze en een rij Cash -->
+![Het overzicht Betalingen per betaalwijze met de periode Deze maand, de totalen per betaalwijze en een rij Cash](images/betalingen-per-betaalwijze.png "Betalingen per betaalwijze")
 
 ## Het scherm openen
 

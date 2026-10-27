@@ -7,7 +7,7 @@ description: "Betaalwijzen in CleanOps: Payconiq, cash, achteraf… op de werkor
 Hoe een werkorder betaald wordt: Payconiq, cash, achteraf of een betaalwijze die u zelf toevoegt. U kiest de betaalwijze op de
 [werkorder](../werkorders.md); de [facturatie](../facturatie.md) maakt per betaalwijze een aparte factuur en vermeldt ze erop.
 
-<!-- AFBEELDING: de lijst Betaalwijzen met Payconiq, Cash en Achteraf, de kolom Dagboek en de labels "ter plaatse" -->
+![De lijst Betaalwijzen met Payconiq, Cash en Achteraf, de kolom Dagboek en de labels ter plaatse](../images/betaalwijzen-lijst.png "Betaalwijzen")
 
 ## Het scherm openen
 
@@ -30,7 +30,7 @@ CleanOps start met drie betaalwijzen: **Payconiq** en **Cash** (ter plaatse) en 
 
 Klik op **Nieuwe betaalwijze**, of dubbelklik op een bestaande rij.
 
-<!-- AFBEELDING: het venster Betaalwijze bewerken voor Cash, met Ter plaatse betaald aangevinkt en het dagboek KAS -->
+![Het venster Betaalwijze bewerken voor Cash, met Ter plaatse betaald aangevinkt en het dagboek KAS](../images/betaalwijze-venster.png "Betaalwijze bewerken")
 
 | Veld | Wat u invult |
 |---|---|

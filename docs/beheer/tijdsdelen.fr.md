@@ -9,7 +9,7 @@ la journée sur l'[ordre de travail](../werkorders.fr.md#planification-et-execut
 [planning](../planning.fr.md) et le [bon de travail](../werkbonnen.fr.md) placent les ordres d'une journée dans l'ordre de cette
 liste.
 
-<!-- AFBEELDING: la liste Parties de la journée avec Premier travail, Matin, Journée entière, Après-midi et Autre, et le label « selon l'heure » -->
+![La liste Parties de la journée avec Premier travail, Matin, Journée entière, Après-midi et Autre, et le label selon l'heure](../images/tijdsdelen-lijst-fr.png "Parties de la journée")
 
 ## Ouvrir l'écran
 
@@ -35,7 +35,7 @@ CleanOps démarre avec cinq parties de la journée : **Premier travail**, **Mati
 Cliquez sur **Nouvelle partie**, ou double-cliquez sur une ligne existante. Une nouvelle partie vient en dernier ;
 pour la placer entre deux autres, adaptez l'ordre.
 
-<!-- AFBEELDING: la fenêtre Modifier la partie de la journée pour Autre, avec Selon l'heure coché -->
+![La fenêtre Modifier la partie de la journée pour Autre, avec Selon l'heure coché](../images/tijdsdeel-venster-fr.png "Modifier la partie de la journée")
 
 | Champ | Ce que vous indiquez |
 |---|---|

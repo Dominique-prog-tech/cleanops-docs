@@ -1143,6 +1143,29 @@ const SCHOTEN = [
   // bedrijf het scherm de eerste keer.
   { naam: 'functies', route: '/beheer/functies', verwacht: tekstTaal('Altijd aan:', 'Toujours actifs'),
     element: 'main [data-functies]' },
+  // ── De open plekken van 27/10/2026 (Dominique: "vul de ontbrekende schermafbeeldingen aan") ────────────────────────────────────
+  // Beheer › Betaalwijzen en Tijdsdelen: de lijst en het venster. Het merkteken van de lijst is een FRANSE naam: die kolom staat er in
+  // beide talen, en ze verschijnt pas als het raster geladen is (de kop en de knoppen staan er eerder).
+  { naam: 'betaalwijzen-lijst', route: '/beheer/betaalwijzen', verwacht: /Ultérieurement/ },
+  { naam: 'betaalwijze-venster', route: '/beheer/betaalwijzen', verwacht: tekstTaal('Financieel dagboek', 'Journal financier'),
+    na: async p => { await p.getByRole('gridcell', { name: 'Cash', exact: true }).filter({ visible: true }).first().dblclick(); } },
+  { naam: 'tijdsdelen-lijst', route: '/beheer/tijdsdelen', verwacht: /Journée entière/ },
+  { naam: 'tijdsdeel-venster', route: '/beheer/tijdsdelen', verwacht: tekstTaal('Tijdsdeel bewerken', 'Modifier la partie de la journée'),
+    na: async p => { await p.getByRole('gridcell', { name: 'Anders', exact: true }).filter({ visible: true }).first().dblclick(); } },
+  // Betalingen per betaalwijze: de demo zet Cash (met het bedrag uit het veld) en Achteraf op twee werkorders van deze maand
+  // (DemoDataGenerator, 27/10/2026). Het merkteken is dat bedrag: het staat er pas als de rijen er zijn.
+  { naam: 'betalingen-per-betaalwijze', route: '/betalingen/betaalwijzen', verwacht: /90,75/ },
+  { naam: 'omzet-overzicht', route: '/omzet', verwacht: /Pieter Claeys/ },
+  // Cameraverslagen op "Te factureren" + "Verslag ontbreekt": dezelfde link als de dashboardtegel (DashboardLinks.CameraReportsMissing).
+  { naam: 'cameraverslagen-lijst', route: '/cameraverslagen?facturatie=2&verslag=1', verwacht: /Camera-inspectie na ontstopping/ },
+  // Notities: de demo zet een notitie van de uitvoerder op de twee voorbeeldwerkorders (Bart De Smet NL, Julien Lambert FR). Het
+  // merkteken is de AUTEUR: "door …" staat er pas als de medewerkers geladen zijn.
+  { naam: 'werkorder-notities', route: '/werkorders', verwacht: tekstTaal('door Bart De Smet', 'par Julien Lambert'),
+    na: async (p, taal) => {
+      await openWerkorder(p, taal === 'fr-BE' ? DEMO.werfFr : DEMO.werf);
+      await p.getByText(/^(Notities|Notes)( \(\d+\))?$/).filter({ visible: true }).first().click();
+    },
+    magKortZijn: 'een tabblad met één notitie is kort, en dat is juist' },
 ];
 
 // ⚠️ Een werkorder opent met ?terug=… achter haar id (de filters van de lijst reizen mee), dus de URL eindigt NIET op het id

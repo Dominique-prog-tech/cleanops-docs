@@ -270,7 +270,7 @@ Met **+ Notitie** voegt u er zelf een toe: een **Onderwerp** (verplicht), **Wann
 over een notitie voor **Bewerken** en **Verwijderen**. Een verwijderde notitie verdwijnt uit de lijst, maar blijft
 bewaard in de historiek.
 
-<!-- AFBEELDING: werkorder-notities — het tabblad Notities met een notitie van Tom Verbeke uit de app -->
+![Het tabblad Notities van een werkorder met een notitie uit de app, door Bart De Smet](images/werkorder-notities.png "Notities")
 
 Notities toevoegen, bewerken en verwijderen kan wie werkorders mag bewerken.
 

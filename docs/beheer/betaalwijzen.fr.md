@@ -8,7 +8,7 @@ Comment un ordre de travail est payé : Payconiq, espèces, ultérieurement ou u
 le mode sur l'[ordre de travail](../werkorders.fr.md) ; la [facturation](../facturatie.fr.md) établit une facture distincte par
 mode de paiement et l'y mentionne.
 
-<!-- AFBEELDING: la liste Modes de paiement avec Payconiq, Espèces et Ultérieurement, la colonne Journal et les labels « sur place » -->
+![La liste Modes de paiement avec Payconiq, Espèces et Ultérieurement, la colonne Journal et les labels sur place](../images/betaalwijzen-lijst-fr.png "Modes de paiement")
 
 ## Ouvrir l'écran
 
@@ -31,7 +31,7 @@ CleanOps démarre avec trois modes : **Payconiq** et **Espèces** (sur place) et
 
 Cliquez sur **Nouveau mode**, ou double-cliquez sur une ligne existante.
 
-<!-- AFBEELDING: la fenêtre Modifier le mode de paiement pour Espèces, avec Payé sur place coché et le journal KAS -->
+![La fenêtre Modifier le mode de paiement pour Espèces, avec Payé sur place coché et le journal KAS](../images/betaalwijze-venster-fr.png "Modifier le mode de paiement")
 
 | Champ | Ce que vous indiquez |
 |---|---|

@@ -279,7 +279,7 @@ Avec **+ Note**, vous en ajoutez une vous-même : un **Objet** (obligatoire), **
 sur une note pour **Modifier** et **Supprimer**. Une note supprimée disparaît de la liste, mais reste conservée dans
 l'historique.
 
-<!-- AFBEELDING: werkorder-notities-fr — l'onglet Notes avec une note de Tom Verbeke venant de l'application -->
+![L'onglet Notes d'un ordre de travail avec une note venant de l'application, par Julien Lambert](images/werkorder-notities-fr.png "Notes")
 
 Ajouter, modifier et supprimer des notes est réservé à qui peut modifier les ordres de travail.
 

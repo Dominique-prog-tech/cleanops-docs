@@ -7,7 +7,7 @@ description: "Omzet per medewerker en voertuig in CleanOps: het uitgevoerde werk
 Hoeveel werk er in een periode uitgevoerd werd en voor welk bedrag, per medewerker of per voertuig. Het overzicht telt het
 **uitgevoerde** werk, ook wat nog niet gefactureerd is.
 
-<!-- AFBEELDING: het overzicht Omzet per medewerker en voertuig met de periode Deze maand, per medewerker, en het totaal -->
+![Het overzicht Omzet per medewerker en voertuig met de periode Deze maand, per medewerker, en het totaal](images/omzet-overzicht.png "Omzet per medewerker en voertuig")
 
 ## Het scherm openen
 
