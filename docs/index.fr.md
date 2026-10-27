@@ -85,7 +85,8 @@ première visite guidée à la facture : [Vidéos](videos.md).
     paiement sur place, la signature du client et leurs congés.
 
     [Premiers pas](app/aan-de-slag.md) · [Le planning](app/planning.md) · [L'ordre de travail](app/werkorder.md) ·
-    [Faire signer](app/laten-tekenen.md) · [Créer un ordre de travail](app/werkorder-aanmaken.md) · [Congés](app/verlof.md)
+    [Faire signer](app/laten-tekenen.md) · [Créer un ordre de travail](app/werkorder-aanmaken.md) · [Congés](app/verlof.md) ·
+    [Clients](app/klanten.md) · [Mes heures](app/uren.md)
 
 -   :material-cog-outline: **Administration**
 

@@ -1,5 +1,5 @@
 ---
-description: "Clients dans l'application mobile CleanOps : chercher un client, avec par adresse l'instruction de travail, le matériel, l'accessibilité et les ordres de travail."
+description: "Clients dans l'application CleanOps : chercher un client, avec par adresse l'instruction de travail, le matériel, l'accessibilité et les ordres de travail."
 ---
 
 # Clients
