@@ -94,6 +94,23 @@ Rapports caméra est désactivée pour votre entreprise, la carte n'apparaît pa
 Même sans réseau, il peut créer le rapport et ajouter des photos. Ils partent dans le bon ordre dès que le réseau
 revient : d'abord le rapport, ensuite les photos (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)).
 
+## Travaux supplémentaires
+
+Si le collaborateur voit un travail qui ne figure pas dans la mission, il le propose avec **Proposer** sur la carte
+**Travaux supplémentaires**. Par ligne, il indique **quoi** faire et **combien**, avec une **unité** si elle convient. Avec
+**Ajouter une ligne**, une ligne s'ajoute. Il n'indique pas de prix : le bureau chiffre et envoie le
+[devis](../offertes.fr.md#travaux-supplementaires-de-lapp) au client.
+
+Après la proposition, celle-ci figure sur la carte. Avec **Ajouter une photo**, il y ajoute des photos, avec l'appareil
+photo ou depuis la galerie, tant que le bureau ne l'a pas envoyée. La modifier ou la retirer passe par le bureau.
+
+Sur la carte, il voit aussi les propositions d'un collègue sur le même ordre de travail, et où en est chaque proposition :
+**Transmis, le bureau chiffre**, **Envoyé au client**, **Accepté** ou **Non accepté**. Proposer est possible jusqu'à ce que
+l'ordre de travail soit terminé. Si la fonction Devis est désactivée pour votre entreprise, la carte n'apparaît pas.
+
+Même sans réseau, il peut proposer des travaux et y ajouter des photos. Ils partent dans le bon ordre dès que le réseau
+revient : d'abord la proposition, ensuite les photos (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)).
+
 ## Le paiement sur place
 
 Si le client paie sur place, le collaborateur note sous **Paiement sur place** le **Montant (TVAC)** et le **Mode de

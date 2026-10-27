@@ -181,6 +181,20 @@ l'e-mail a été remis, le texte tel qu'il est parti (**Afficher le texte**) et 
 
 ![L'onglet E-mails d'un devis : un e-mail avec le statut Remis, l'objet, À, le PDF envoyé et Afficher le texte](images/offerte-mails-fr.png "E-mails")
 
+## Travaux supplémentaires de l'app
+
+Si un collaborateur voit sur place un travail qui ne figure pas dans la mission, il le propose dans l'
+[app mobile](app/werkorder.fr.md#travaux-supplementaires) : quoi et combien, avec des photos, mais sans prix. Chaque
+proposition devient un devis en **Brouillon** pour le client de l'ordre de travail.
+
+- Le menu **Suppléments** sous Vente montre les propositions encore en brouillon. Le compteur rouge les compte.
+- En haut du devis figure **Supplément de l'app sur l'ordre de travail …**, avec l'adresse de cet ordre de travail.
+  Cliquez sur le numéro pour ouvrir l'ordre de travail. Le collaborateur figure comme auteur.
+- Les lignes n'ont pas encore de prix. Si l'ordre de travail avait un code TVA, il figure déjà sur les lignes ; sinon,
+  vous en choisissez un. Complétez les prix et enregistrez. Les photos du collaborateur se trouvent dans les pièces jointes.
+- Dès que le devis n'est plus en brouillon (envoyé, accepté ou perdu) ou qu'il est supprimé, il ne compte plus. Le
+  collaborateur voit dans l'app où en est sa proposition.
+
 ## L'onglet Journal
 
 En haut à droite figure l'onglet **Journal**. Il contient les **Pièces jointes** — les documents du devis, comme un plan ou

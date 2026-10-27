@@ -177,6 +177,20 @@ afgeleverd is, de tekst zoals ze vertrok (**Tekst tonen**) en de PDF die meeging
 
 ![Het tabblad Mails van een offerte: een mail met de status Afgeleverd, het onderwerp, Aan, de verstuurde PDF en Tekst tonen](images/offerte-mails.png "Mails")
 
+## Meerwerk uit de app
+
+Ziet een medewerker ter plaatse werk dat niet in de opdracht staat, dan stelt hij het voor in de
+[mobiele app](app/werkorder.md#meerwerk): wat en hoeveel, met foto's, maar zonder prijzen. Elk voorstel wordt een offerte
+in **Concept** voor de klant van de werkorder.
+
+- Het menu **Meerwerk** onder Verkoop toont de voorstellen die nog in concept staan. De rode teller telt ze.
+- Bovenaan de offerte staat **Meerwerk uit de app op werkorder …**, met het adres van die werkorder. Klik op het nummer om
+  de werkorder te openen. De medewerker staat er als opsteller.
+- De lijnen hebben nog geen prijs. Had de werkorder een btw-code, dan staat die al op de lijnen; anders kiest u er een.
+  Vul de prijzen aan en bewaar. De foto's van de medewerker staan bij de bijlagen.
+- Zodra de offerte niet meer in concept staat (verstuurd, aanvaard of verloren) of verwijderd is, telt ze niet meer mee.
+  De medewerker ziet in de app hoe ver het voorstel staat.
+
 ## Het tabblad Journaal
 
 Rechts bovenaan staat het tabblad **Journaal**. Daaronder staan **Bijlagen** — documenten bij de offerte, zoals een plan of

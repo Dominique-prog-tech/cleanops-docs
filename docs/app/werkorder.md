@@ -91,6 +91,23 @@ Cameraverslagen uit voor uw bedrijf, dan is de kaart er niet.
 Ook zonder bereik kan hij het verslag maken en foto's toevoegen. Ze vertrekken in de juiste volgorde zodra er weer
 bereik is: eerst het verslag, dan de foto's (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)).
 
+## Meerwerk
+
+Ziet de medewerker werk dat niet in de opdracht staat, dan stelt hij het voor met **Voorstellen** op de kaart **Meerwerk**.
+Per lijn vult hij in **wat** er moet gebeuren en **hoeveel**, met een **eenheid** als die past. Met **Lijn toevoegen**
+komt er een lijn bij. Prijzen vult hij niet in: het kantoor prijst en stuurt de [offerte](../offertes.md#meerwerk-uit-de-app)
+naar de klant.
+
+Na het voorstellen staat het voorstel op de kaart. Met **Foto toevoegen** zet hij er foto's bij, met de camera of uit de
+galerij, zolang het kantoor het niet verstuurd heeft. Wijzigen of intrekken gaat via het kantoor.
+
+Op de kaart ziet hij ook de voorstellen van een collega op dezelfde werkorder, en hoe ver elk voorstel staat: **Ingediend,
+het kantoor prijst**, **Naar de klant**, **Aanvaard** of **Niet aanvaard**. Voorstellen kan tot de werkorder afgerond is.
+Staat de functie Offertes uit voor uw bedrijf, dan is de kaart er niet.
+
+Ook zonder bereik kan hij meerwerk voorstellen en er foto's bij zetten. Ze vertrekken in de juiste volgorde zodra er weer
+bereik is: eerst het voorstel, dan de foto's (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)).
+
 ## De betaling ter plaatse
 
 Betaalt de klant ter plaatse, dan noteert de medewerker onder **Betaling ter plaatse** het **Bedrag (incl. btw)** en de
