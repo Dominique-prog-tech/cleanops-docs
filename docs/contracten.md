@@ -69,7 +69,7 @@ De velden staan in vijf blokken: **Contract**, **Adres**, **Ritme en planning**,
 | Omschrijving | Wat er gebeurt, hoogstens 35 tekens. Heeft het contract geen opmerkingen, dan wordt dit de omschrijving en de instructie van zijn werkorders. |
 | Contractnr | Een eigen nummer of referentie, hoogstens 30 tekens. |
 | Type contract | Een keuze uit de lijst *Contracttypes* van de [basistabellen](beheer/basistabellen.md). |
-| Btw-code, Tarief | Komen op de werkorders van dit contract. De lijst Tarief toont de tarieven in de taal van de klant. |
+| Btw-code, Tarief | Komen op de werkorders van dit contract. De lijst Tarief toont de tarieven in de taal van de klant. Bestaat het tarief van het contract niet in die taal, dan staat het er toch, in een andere taal, met een melding eronder. |
 | Contractdatum * | De datum van het contract. Mag niet in de toekomst liggen. |
 | Start * | Vanaf wanneer het ritme loopt. Mag niet vóór de contractdatum liggen. |
 | Einde | Vanaf deze datum komen er geen beurten meer bij. Mag niet vóór de start liggen. |

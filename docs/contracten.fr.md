@@ -69,7 +69,7 @@ Les champs sont répartis en cinq blocs : **Contrat**, **Adresse**, **Rythme et 
 | Description | Ce qui est fait, 35 caractères au maximum. Si le contrat n'a pas de remarques, ce texte devient la description et l'instruction de ses ordres de travail. |
 | N° de contrat | Un numéro ou une référence propre, 30 caractères au maximum. |
 | Type de contrat | Un choix dans la liste *Types de contrat* des [tables de base](beheer/basistabellen.fr.md). |
-| Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. |
+| Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. Si le tarif du contrat n'existe pas dans cette langue, il reste affiché, dans une autre langue, avec un message en dessous. |
 | Date du contrat * | La date du contrat. Ne peut pas se situer dans le futur. |
 | Début * | À partir de quand le rythme court. Ne peut pas précéder la date du contrat. |
 | Fin | À partir de cette date, plus aucun passage ne s'ajoute. Ne peut pas précéder le début. |
