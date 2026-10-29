@@ -161,7 +161,7 @@ Met **Werkorders nu aanmaken** onderaan het tabblad Contract maakt CleanOps mete
 met dezelfde regels als 's nachts. Daarna toont het tabblad Werkorders de lijst, met erboven hoeveel er bijkwamen. Zolang uw vorige toepassing de werkorders
 nog maakt, maakt CleanOps er geen, en dat staat er dan ook.
 
-![Het tabblad Werkorders van het contract van Tuincentrum De Linde, met de gefactureerde en de geplande beurten](images/contract-werkorders.png "Werkorders van een contract")
+![Het tabblad Werkorders van het contract van Tuincentrum De Linde, met de gefactureerde, de te factureren en de volgende, geplande beurt](images/contract-werkorders.png "Werkorders van een contract")
 
 ### Het tabblad Journaal
 

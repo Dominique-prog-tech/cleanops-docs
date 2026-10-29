@@ -56,7 +56,7 @@ mensuel le premier du mois. Après **Enregistrer**, le nouveau contrat s'ouvre.
 En haut figurent le numéro du contrat et le client ; si le contrat est en pause, c'est indiqué. En dessous, trois
 onglets : **Contrat**, **Ordres de travail** et **Journal**. Sous Journal figurent **Historique** et **E-mails**.
 
-![Le contrat de Résidence Les Tilleuls : chaque année le 20 mars, avec en dessous les prochains passages](images/contract-fiche-fr.png "Fiche du contrat")
+![Le contrat de Résidence Les Tilleuls : tous les 3 mois le 20, avec en dessous les prochains passages](images/contract-fiche-fr.png "Fiche du contrat")
 
 ### L'onglet Contrat
 
@@ -162,7 +162,7 @@ Avec **Créer les ordres de travail** en bas de l'onglet Contrat, CleanOps crée
 prochains jours, avec les mêmes règles que la nuit. L'onglet Ordres de travail montre ensuite la liste, avec au-dessus le nombre d'ordres ajoutés. Tant que
 votre application précédente crée encore les ordres de travail, CleanOps n'en crée pas, et c'est indiqué.
 
-![L'onglet Ordres de travail du contrat de Résidence Les Tilleuls, avec les passages facturés et à facturer](images/contract-werkorders-fr.png "Ordres de travail d'un contrat")
+![L'onglet Ordres de travail du contrat de Résidence Les Tilleuls, avec les passages facturés, à facturer et le prochain, planifié](images/contract-werkorders-fr.png "Ordres de travail d'un contrat")
 
 ### L'onglet Journal
 
