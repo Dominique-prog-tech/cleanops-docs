@@ -21,6 +21,8 @@ zijn eigen werk en dat van zijn ploeg. De app gebruikt zijn locatie niet.
 | Een klant opzoeken, met de werkgegevens per adres | [Klanten](klanten.md) |
 | De eigen gewerkte tijd per week | [Mijn uren](uren.md) |
 
+Werkt u op kantoor? Dan volgt u in dezelfde app de zaak onderweg op: zie [De app voor kantoor](kantoor.md).
+
 ## Toegang geven
 
 Een medewerker meldt zich aan met zijn e-mailadres en een wachtwoord dat hij zelf kiest. U geeft hem toegang op zijn

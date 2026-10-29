@@ -229,6 +229,12 @@ plugins:
             Werkorder aanmaken: Créer un ordre de travail
             Verlof: Congés
             Mijn uren: Mes heures
+            Voor kantoor: Pour le bureau
+            De app voor kantoor: L'application pour le bureau
+            Weekplanning: Planning de la semaine
+            Facturen, offertes en openstaande posten: Factures, devis et postes ouverts
+            Klanten en leveranciers: Clients et fournisseurs
+            Afwezigheden: Absences
             "Op te volgen memo's": "Mémos à suivre"
             Schuldbemiddelingen: Médiation de dettes
             Documentnummers: Numéros de documents
@@ -345,6 +351,15 @@ nav:
     - Verlof: app/verlof.md
     - Klanten: app/klanten.md
     - Mijn uren: app/uren.md
+    # De app voor kantoor (beheerskant, app 1.2.0 — B-8, 29/10/2026): enkel lezen, met de rechten van de rol.
+    - Voor kantoor:
+      - De app voor kantoor: app/kantoor.md
+      - Weekplanning: app/weekplanning.md
+      - Werkorders: app/kantoor-werkorders.md
+      - Facturen, offertes en openstaande posten: app/kantoor-verkoop.md
+      - Klanten en leveranciers: app/kantoor-relaties.md
+      - Aankoop: app/kantoor-aankoop.md
+      - Afwezigheden: app/afwezigheden.md
   # De kopjes zijn de groepen van de hub (AdministrationCatalog.Groups). "Overzetting en platform" ontbreekt bewust: dat
   # zijn ADM-interne schermen (docs/intern/). Gebruikers staat er niet: geen eigen pagina (beheer via ADM One).
   # ⚠️ "Overzicht" stond tot 05/10/2026 NIET in het menu: de pagina bestond, maar was enkel via een link bereikbaar.

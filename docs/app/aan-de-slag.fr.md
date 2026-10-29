@@ -22,6 +22,8 @@ ne voit que son propre travail et celui de son équipe. L'application n'utilise 
 | Chercher un client, avec les données de travail par adresse | [Clients](klanten.fr.md) |
 | Son propre temps presté par semaine | [Mes heures](uren.fr.md) |
 
+Vous travaillez au bureau ? Dans la même application, vous suivez l'entreprise en déplacement : voir [L'application pour le bureau](kantoor.fr.md).
+
 ## Donner l'accès
 
 Un collaborateur se connecte avec son adresse e-mail et un mot de passe qu'il choisit lui-même. Vous lui donnez accès
