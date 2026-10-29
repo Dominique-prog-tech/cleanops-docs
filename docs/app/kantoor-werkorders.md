@@ -13,12 +13,12 @@ met welke notities, foto's en attesten. Het scherm is er voor wie op kantoor wer
 Open het menu en tik op **Werkorders**. Typ een **nummer**, een deel van de **klantnaam** of van het **adres**, of een
 contractnummer. Dat is dezelfde zoeker als in de lijst Werkorders op de computer.
 
-Boven de lijst staat hoeveel werkorders er gevonden zijn. De app toont er 30 tegelijk; met **Meer laden** onderaan komen
+Zonder zoekterm toont de lijst alle werkorders. Boven de lijst staat hoeveel werkorders er gevonden zijn. De app toont er 30 tegelijk; met **Meer laden** onderaan komen
 de volgende.
 
 Op een **tablet** staat de fiche rechts naast de lijst; op een **telefoon** opent ze als een eigen scherm.
 
-<!-- AFBEELDING: Werkorders op een tablet: links de zoeker met de gevonden werkorders, rechts de fiche van een uitgevoerde werkorder met de uitvoering, de notities en de foto's -->
+![Werkorders op een tablet: links de 52 gevonden werkorders met hun status, rechts de fiche van werkorder 900151 met Route en Bellen, de planning, het werk en de handtekening van de klant met Bekijk de getekende bon](../images/app-kantoor-werkorders.png "Een werkorder voor kantoor"){ width="560" }
 
 ## De fiche
 
@@ -32,7 +32,7 @@ De fiche toont wat de ploeg ter plaatse ziet, en daarbij hoe het werk uitgevoerd
 | Tijd | Elke registratie van de teller: **werken** of **verplaatsing**, wie, van wanneer tot wanneer en hoelang. |
 | Notities, Foto's | Wat de ploeg noteerde en fotografeerde. |
 | Attesten, Cameraverslag, Meerwerk | Wat de ploeg ter plaatse invulde. |
-| Handtekening van de klant | **Bekijk de getekende bon** opent de getekende leveringsbon als pdf. |
+| Handtekening van de klant | Wie tekende en wanneer, met de opmerking van de klant. **Bekijk de getekende bon** opent de getekende leveringsbon als pdf. |
 
 Er staat geen knop om iets te wijzigen: de teller, het afronden en het tekenen blijven bij de medewerker die het werk doet.
 

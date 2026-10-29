@@ -14,12 +14,12 @@ droit sur les ordres de travail (voir [L'application pour le bureau](kantoor.fr.
 Ouvrez le menu et touchez **Ordres de travail**. Tapez un **numéro**, une partie du **nom du client** ou de l'**adresse**,
 ou un numéro de contrat. C'est la même recherche que dans la liste Ordres de travail sur l'ordinateur.
 
-Au-dessus de la liste figure le nombre d'ordres de travail trouvés. L'application en affiche 30 à la fois ; avec
+Sans terme de recherche, la liste affiche tous les ordres de travail. Au-dessus de la liste figure le nombre d'ordres de travail trouvés. L'application en affiche 30 à la fois ; avec
 **Charger plus** en bas, les suivants arrivent.
 
 Sur une **tablette**, la fiche figure à droite de la liste ; sur un **téléphone**, elle s'ouvre comme un écran à part.
 
-<!-- AFBEELDING: Werkorders op een tablet, in het Frans: links de zoeker met de gevonden werkorders, rechts de fiche van een uitgevoerde werkorder -->
+![Les ordres de travail sur une tablette : à gauche les 52 ordres de travail trouvés avec leur statut, à droite la fiche de l'ordre de travail 900151 avec Itinéraire et Appeler, le planning, le travail et la signature du client avec Voir le bon signé](../images/app-kantoor-werkorders-fr.png "Un ordre de travail pour le bureau"){ width="560" }
 
 ## La fiche
 
@@ -34,7 +34,7 @@ pas affiché.
 | Temps | Chaque enregistrement du chrono : **travail** ou **déplacement**, qui, de quand à quand et combien de temps. |
 | Notes, Photos | Ce que l'équipe a noté et photographié. |
 | Attestations, Rapport caméra, Travaux supplémentaires | Ce que l'équipe a complété sur place. |
-| Signature du client | **Voir le bon signé** ouvre le bon de livraison signé en PDF. |
+| Signature du client | Qui a signé et quand, avec la remarque du client. **Voir le bon signé** ouvre le bon de livraison signé en PDF. |
 
 Aucun bouton ne permet de modifier quoi que ce soit : le chrono, la clôture et la signature restent chez le collaborateur
 qui fait le travail.

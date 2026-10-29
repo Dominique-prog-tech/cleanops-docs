@@ -15,9 +15,8 @@ Sur une **tablette**, la fiche figure à droite de la liste ; sur un **télépho
 Ouvrez le menu et touchez **Clients**. Recherchez par **nom**, **commune** ou **numéro de client** : la même recherche que la
 liste des clients sur l'ordinateur.
 
-La fiche commence par la fiche client que l'équipe voit aussi (voir [Clients dans l'application](klanten.fr.md)) : le numéro
-de client, le téléphone et l'adresse e-mail, et par adresse l'instruction de travail, le matériel, l'accessibilité et les
-ordres de travail à cette adresse. Si le client est bloqué, c'est indiqué en rouge.
+En haut figurent le numéro de client, le téléphone et l'adresse e-mail ; les toucher appelle ou envoie un e-mail. Si le
+client est bloqué ou n'accepte plus de nouvelles affaires, c'est indiqué au-dessus avec un signe d'avertissement rouge.
 
 En dessous figure l'argent du client, chaque bloc uniquement avec le droit de son écran sur l'ordinateur :
 
@@ -27,9 +26,12 @@ En dessous figure l'argent du client, chaque bloc uniquement avec le droit de so
 | Factures | Les factures les plus récentes, avec ce qui en reste ouvert. Les autres sont dans [Factures](kantoor-verkoop.fr.md#factures). | Factures |
 | Devis | Les devis les plus récents. | Devis |
 
+En bas suit, par adresse, la carte que l'équipe voit aussi (voir [Clients dans l'application](klanten.fr.md)) :
+l'instruction de travail, le matériel, l'accessibilité et les ordres de travail à cette adresse.
+
 Toucher une facture, un devis ou un ordre de travail ouvre sa fiche, si votre rôle a le droit sur cette liste.
 
-<!-- AFBEELDING: de klantfiche voor kantoor op een tablet, in het Frans: de klantkaart met Solde ouvert, de openstaande posten en de recentste facturen -->
+![La fiche client pour le bureau sur une tablette : en haut l'avertissement que le client n'accepte plus de nouvelles affaires, le téléphone et l'e-mail, le solde ouvert en grand et en rouge avec le poste ouvert, les factures et les devis, et en dessous l'adresse principale avec les ordres de travail à cette adresse](../images/app-kantoor-klant-fr.png "Un client pour le bureau"){ width="560" }
 
 !!! info
     Les collaborateurs sur le terrain ne voient **jamais** de montants, de factures ou de postes ouverts sur leur fiche
@@ -39,11 +41,12 @@ Toucher une facture, un devis ou un ordre de travail ouvre sa fiche, si votre r�
 
 Ouvrez le menu et touchez **Fournisseurs**. Recherchez par **nom**, **adresse**, **numéro de TVA** ou **téléphone**.
 
-La fiche affiche le numéro du fournisseur, l'adresse, la **personne de contact**, le **numéro de TVA**, le **compte** et les
+La fiche affiche le numéro du fournisseur, l'adresse avec l'itinéraire, le téléphone et l'adresse e-mail (les toucher
+appelle ou envoie un e-mail), la **personne de contact**, le **numéro de TVA**, le **compte**, le **délai de paiement** et les
 remarques. Avec le droit **Achats**, elle affiche aussi le **solde ouvert**, avec chaque document ouvert comme sur
-l'extrait : l'échéance, et *note de crédit* pour une note de crédit.
+l'extrait : ce que vous devez encore payer y figure en négatif, avec l'échéance, et *note de crédit* pour une note de crédit.
 
-<!-- AFBEELDING: de leveranciersfiche op een tablet, in het Frans: de gegevens en het openstaand saldo -->
+![La fiche fournisseur sur une tablette : l'adresse avec le téléphone et l'e-mail, la personne de contact, le numéro de TVA, le compte et le délai de paiement, le solde ouvert avec le document ouvert, et les remarques](../images/app-kantoor-leverancier-fr.png "Un fournisseur"){ width="560" }
 
 ## Voir aussi
 

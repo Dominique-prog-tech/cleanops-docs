@@ -56,7 +56,7 @@ Zette uw bedrijf een functie uit in [Platformbeheer › Functies](../beheer/func
 Onderaan het menu staan **Profiel** en **Afmelden**, zoals bij elke medewerker (zie
 [Aan de slag](aan-de-slag.md#het-profiel)).
 
-<!-- AFBEELDING: het menu van de app voor kantoor op een tablet: Overzicht, Weekplanning, Werkorders, Facturen, Offertes, Openstaande posten, Klanten, Leveranciers, Peppol ontvangen, Aankoopfacturen, Afwezigheden en Profiel -->
+![Het menu van de app voor kantoor op een tablet: Demo kantoor met zijn e-mailadres, daaronder Overzicht, Weekplanning, Werkorders, Facturen, Offertes, Openstaande posten, Klanten, Leveranciers, Peppol ontvangen, Aankoopfacturen, Afwezigheden en Profiel, en onderaan Afmelden](../images/app-kantoor-menu.png "Het menu voor kantoor"){ width="560" }
 
 ## Het overzicht
 
@@ -64,7 +64,7 @@ Het **Overzicht** is het startscherm voor kantoor. Het toont het dashboard van C
 dezelfde cijfers. Op een tablet staan de cijfers en *Vandaag & werk* links en *Vraagt aandacht* rechts; op een telefoon
 staat alles onder elkaar.
 
-<!-- AFBEELDING: het Overzicht op een tablet: links de vier geldtegels en Vandaag & werk, rechts Vraagt aandacht met de rappels, de offertes op te volgen en de cameraverslagen -->
+![Het Overzicht op een tablet: links de vier geldtegels en Vandaag & werk met de werkorders die nog niet ingepland zijn en die te factureren zijn, rechts Vraagt aandacht met een offerte op te volgen en twee cameraverslagen te maken](../images/app-kantoor-overzicht.png "Het overzicht"){ width="560" }
 
 - **De geldtegels**: *vervallen bij klanten*, *gefactureerd deze maand (excl. btw)*, *ontvangen van klanten deze maand* en
   *te betalen aan leveranciers*. U ziet enkel de tegels waarvoor uw rol het recht heeft.

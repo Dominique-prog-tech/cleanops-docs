@@ -14,7 +14,7 @@ Werkt u zelf ook mee op de baan, dan staat uw eigen verlof apart in het menu, on
 
 Open het menu en tik op **Afwezigheden**.
 
-<!-- AFBEELDING: Afwezigheden op een tablet: Afwezig vandaag met een medewerker en zijn verlof, daaronder Te behandelen met een aanvraag In behandeling in het oranje -->
+![Afwezigheden op een tablet: Afwezig vandaag zonder afwezigen, de keuze Alles (ook behandeld), twee aanvragen In behandeling in het oranje en twee geweigerde aanvragen met de reden in het rood en wie ze behandelde](../images/app-afwezigheden.png "Afwezigheden"){ width="560" }
 
 ## Afwezig vandaag
 

@@ -16,7 +16,7 @@ wanneer het document ontving. Een tik opent de pdf.
 
 Kwam een document terug omdat zijn aankoopfactuur verwijderd werd, dan zegt de app dat bovenaan.
 
-<!-- AFBEELDING: Peppol ontvangen op een tablet: de te verwerken documenten met de leverancier, het nummer, de vervaldag en de ontvangstdatum -->
+![Peppol ontvangen op een tablet: bovenaan 5 te verwerken en 1 terug na het verwijderen van zijn factuur, daaronder de documenten met de leverancier, het nummer, de vervaldag, het bedrag en de ontvangstdatum](../images/app-kantoor-peppol.png "Peppol ontvangen"){ width="560" }
 
 ## Aankoopfacturen
 
@@ -33,7 +33,7 @@ De fiche toont:
 - **Via Peppol ontvangen**: het Peppol-nummer en de ontvangstdatum, met de pdf van het document;
 - de **bijlagen** bij het document.
 
-<!-- AFBEELDING: de fiche van een aankoopfactuur op een tablet: de leverancier, de bedragen, de betalingen en Open (uittreksel) -->
+![Een aankoopfactuur op een tablet: de leverancier, de boekingsdatum, het nummer van de leverancier, de vervaldag en de omschrijving, de bedragen met Open (uittreksel), de btw-opbouw en een betaling](../images/app-kantoor-aankoop.png "Een aankoopfactuur"){ width="560" }
 
 ## Veelgestelde vragen
 

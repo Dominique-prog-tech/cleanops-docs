@@ -15,7 +15,7 @@ Si vous travaillez vous-même aussi sur le terrain, vos propres congés figurent
 
 Ouvrez le menu et touchez **Absences**.
 
-<!-- AFBEELDING: Afwezigheden op een tablet, in het Frans: Absents aujourd'hui met een medewerker, daaronder À traiter met een aanvraag En attente in het oranje -->
+![Les absences sur une tablette : Absents aujourd'hui sans absent, le choix Toutes (aussi traitées), deux demandes En attente en orange et deux demandes refusées avec la raison en rouge et qui les a traitées](../images/app-afwezigheden-fr.png "Absences"){ width="560" }
 
 ## Absents aujourd'hui
 

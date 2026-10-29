@@ -10,8 +10,8 @@ voit quel écran suit les droits de son rôle (voir [L'application pour le burea
 un document se fait sur l'ordinateur.
 
 Les trois écrans fonctionnent de la même manière : en haut une recherche et les filtres, en dessous la liste. Sur une
-**tablette**, la fiche figure à droite de la liste ; sur un **téléphone**, elle s'ouvre comme un écran à part. **Ouvrir le
-PDF** en haut de la fiche affiche le document tel que le client l'a reçu.
+**tablette**, la fiche figure à droite de la liste ; sur un **téléphone**, elle s'ouvre comme un écran à part. L'icône PDF en
+haut à droite de la fiche affiche le document tel que le client l'a reçu.
 
 ## Factures
 
@@ -19,7 +19,7 @@ Ouvrez le menu et touchez **Factures**. Recherchez par **numéro**, **client** o
 choisissez **Tous**, **Factures** ou **Notes de crédit**, et l'**exercice**. Au-dessus de la liste figure le nombre de
 documents trouvés, avec leur total.
 
-<!-- AFBEELDING: Facturen op een tablet, in het Frans: links de lijst met de keuze Tous, Factures, Notes de crédit en het boekjaar, rechts de fiche van een factuur -->
+![Les factures sur une tablette : à gauche la liste avec le choix Tous, Factures et Notes de crédit, à droite la fiche d'une facture avec les montants, le solde ouvert en rouge et échu depuis 17 jours, les rappels, les paiements, les lignes et la ventilation de la TVA](../images/app-kantoor-facturen-fr.png "Une facture"){ width="560" }
 
 La fiche d'une facture affiche :
 
@@ -50,7 +50,7 @@ choisissez les devis que vous voyez :
 
 Si un devis doit être suivi, sa date de suivi figure en rouge, dans la liste et sur la fiche.
 
-<!-- AFBEELDING: Offertes op een tablet, in het Frans: links de lijst met de keuzes, rechts de fiche van een offerte -->
+![Les devis sur une tablette : à gauche la liste avec les choix Tous, À suivre et Suppléments de l'app, à droite la fiche d'un devis envoyé avec la date de suivi en rouge, les montants, trois lignes et les remarques](../images/app-kantoor-offertes-fr.png "Un devis"){ width="560" }
 
 La fiche affiche la **date**, **valable jusqu'au**, la **date de suivi**, qui a **établi** le devis, le **montant HTVA**,
 les remarques et les remarques internes, et les lignes. Pour des travaux supplémentaires de l'app, elle indique quel
@@ -71,13 +71,13 @@ l'ordinateur, avec les mêmes sélections :
 | Client sans rappels | Les postes des clients qui ne reçoivent pas de rappels. |
 
 Recherchez par **client** ou **document**. En haut figurent le nombre de postes de la sélection et ce qu'ils représentent
-ensemble, et en dessous la somme par ancienneté : non échu, jusqu'à 30, de 31 à 60, de 61 à 90 et plus de 90 jours
-d'échéance. Plus de 90 jours figure en rouge. L'échéance la plus ancienne figure en haut de la liste.
+ensemble, et en dessous la somme par ancienneté, pour chaque classe où quelque chose reste ouvert : non échu,
+jusqu'à 30, de 31 à 60, de 61 à 90 et plus de 90 jours d'échéance. Plus de 90 jours figure en rouge. L'échéance la plus ancienne figure en haut de la liste.
 
 Chaque poste indique le document, l'échéance, ce qui reste ouvert (en rouge si le poste est échu), combien de rappels sont
-déjà partis et quand vient le prochain. Toucher un poste ouvre la facture, si votre rôle a le droit sur les factures.
+déjà partis et quand vient le prochain. Toucher un poste ouvre la facture, si votre rôle a le droit sur les factures ; sur une tablette, à droite de la liste.
 
-<!-- AFBEELDING: Openstaande posten op een telefoon, in het Frans: de selectie Échus, de som per ouderdom en de posten -->
+![Les postes ouverts sur une tablette : à gauche la sélection Échus, la somme Jusqu'à 30 jours et le poste de Camping Zonnedal avec le montant en rouge, à droite la facture de ce poste](../images/app-kantoor-openstaand-fr.png "Postes ouverts"){ width="560" }
 
 ## Questions fréquentes
 

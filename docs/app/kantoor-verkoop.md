@@ -10,8 +10,8 @@ rechten van zijn rol (zie [De app voor kantoor](kantoor.md)). Een document maken
 computer.
 
 De drie schermen werken op dezelfde manier: bovenaan een zoeker en de filters, daaronder de lijst. Op een **tablet** staat
-de fiche rechts naast de lijst; op een **telefoon** opent ze als een eigen scherm. **Pdf openen** bovenaan de fiche toont
-het document zoals de klant het kreeg.
+de fiche rechts naast de lijst; op een **telefoon** opent ze als een eigen scherm. Het pdf-pictogram rechtsboven op de fiche
+toont het document zoals de klant het kreeg.
 
 ## Facturen
 
@@ -19,7 +19,7 @@ Open het menu en tik op **Facturen**. Zoek op **nummer**, **klant** of **mededel
 **Facturen** of **Creditnota's**, en het **boekjaar**. Boven de lijst staat hoeveel documenten er gevonden zijn, met hun
 totaal.
 
-<!-- AFBEELDING: Facturen op een tablet: links de lijst met de keuze Alle, Facturen, Creditnota's en het boekjaar, rechts de fiche van een factuur met Openstaand, de rappels en de betalingen -->
+![Facturen op een tablet: links de lijst met de keuze Alle, Facturen en Creditnota's, rechts de fiche van een factuur met de bedragen, Openstaand met het bedrag in het rood en 17 dagen vervallen, de rappels, de betalingen, de lijnen en de btw-opbouw](../images/app-kantoor-facturen.png "Een factuur"){ width="560" }
 
 De fiche van een factuur toont:
 
@@ -50,7 +50,7 @@ offertes u ziet:
 
 Moet een offerte opgevolgd worden, dan staat haar opvolgdatum in het rood, in de lijst en op de fiche.
 
-<!-- AFBEELDING: Offertes op een tablet: links de lijst met de keuzes Alle, Op te volgen, Meerwerk uit de app en de statussen, rechts de fiche van een offerte met de datum, geldig tot, opvolgen en de lijnen -->
+![Offertes op een tablet: links de lijst met de keuzes Alle, Op te volgen en Meerwerk uit de app, rechts de fiche van een verstuurde offerte met de opvolgdatum in het rood, de bedragen, drie lijnen en de opmerkingen](../images/app-kantoor-offertes.png "Een offerte"){ width="560" }
 
 De fiche toont de **datum**, **geldig tot**, de **opvolgdatum**, wie de offerte **opstelde**, het **bedrag excl. btw**, de
 opmerkingen en de interne opmerkingen, en de lijnen. Bij meerwerk uit de app staat erbij welke medewerker het voorstelde,
@@ -71,13 +71,13 @@ de computer, met dezelfde selecties:
 | Klant zonder rappels | De posten van klanten die geen rappels ontvangen. |
 
 Zoek op **klant** of **document**. Bovenaan staat hoeveel posten de selectie telt en wat ze samen openstaan, en daaronder de
-som per ouderdom: niet vervallen, tot 30, 31 tot 60, 61 tot 90 en meer dan 90 dagen vervallen. Meer dan 90 dagen staat in
-het rood. De oudste vervaldag staat bovenaan de lijst.
+som per ouderdom, voor elke klasse waarin iets openstaat: niet vervallen, tot 30, 31 tot 60, 61 tot 90 en meer dan 90
+dagen vervallen. Meer dan 90 dagen staat in het rood. De oudste vervaldag staat bovenaan de lijst.
 
 Bij elke post staan het document, de vervaldag, wat er openstaat (in het rood als de post vervallen is), hoeveel rappels er
-al vertrokken en wanneer de volgende komt. Een tik op een post opent de factuur, als uw rol het recht op de facturen heeft.
+al vertrokken en wanneer de volgende komt. Een tik op een post opent de factuur, als uw rol het recht op de facturen heeft; op een tablet rechts naast de lijst.
 
-<!-- AFBEELDING: Openstaande posten op een telefoon: de selectie Vervallen, de som per ouderdom en de posten met hun vervaldag en het bedrag in het rood -->
+![Openstaande posten op een tablet: links de selectie Vervallen, de som Tot 30 dagen en de post van Camping Zonnedal met het bedrag in het rood, rechts de factuur van die post](../images/app-kantoor-openstaand.png "Openstaande posten"){ width="560" }
 
 ## Veelgestelde vragen
 

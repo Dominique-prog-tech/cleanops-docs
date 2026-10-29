@@ -14,12 +14,12 @@ déplacer se fait sur le tableau de planning sur l'ordinateur.
 Ouvrez le menu avec les trois traits en haut à gauche et touchez **Planning de la semaine**. L'application s'ouvre sur la
 semaine en cours.
 
-<!-- AFBEELDING: de Weekplanning op een tablet, in het Frans: bovenaan Semaine 44 met de pijlen en de tellers, daaronder het rooster met een rij per medewerker en een kolom per dag -->
+![Le planning de la semaine sur une tablette : en haut Semaine 45 avec les flèches et Cette semaine, les compteurs 15 ordres de travail, 1 non attribués en rouge, 0 non exécutés et 0 absents, en dessous la grille avec la ligne non attribué et une ligne par collaborateur, chaque ordre de travail avec la partie de journée et la commune](../images/app-weekplanning-fr.png "Le planning de la semaine"){ width="560" }
 
 ## Choisir une semaine
 
-En haut figure la semaine, par exemple *Semaine 44 · 26/10 – 01/11*. Avec les flèches, vous passez à la **semaine
-précédente** ou à la **semaine suivante** ; avec **Cette semaine**, vous revenez à aujourd'hui.
+En haut figure la semaine, par exemple *Semaine 45 · 2 nov. – 8 nov.*. Avec les flèches, vous passez à la **semaine
+précédente** ou à la **semaine suivante** ; avec **Cette semaine** en haut à droite, vous revenez à la semaine en cours.
 
 ## Les compteurs
 

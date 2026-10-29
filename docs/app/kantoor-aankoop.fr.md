@@ -16,7 +16,7 @@ réception. Toucher un document ouvre le PDF.
 
 Si un document est revenu parce que sa facture d'achat a été supprimée, l'application l'indique en haut.
 
-<!-- AFBEELDING: Peppol ontvangen op een tablet, in het Frans: de te verwerken documenten -->
+![Peppol reçus sur une tablette : en haut 5 à traiter et 1 revenu après la suppression de sa facture, en dessous les documents avec le fournisseur, le numéro, l'échéance, le montant et la date de réception](../images/app-kantoor-peppol-fr.png "Peppol reçus"){ width="560" }
 
 ## Factures d'achat
 
@@ -33,7 +33,7 @@ La fiche affiche :
 - **Reçu via Peppol** : le numéro Peppol et la date de réception, avec le PDF du document ;
 - les **pièces jointes** du document.
 
-<!-- AFBEELDING: de fiche van een aankoopfactuur op een tablet, in het Frans -->
+![Une facture d'achat sur une tablette : le fournisseur, la date de comptabilisation, le n° fournisseur, l'échéance et la description, les montants avec Ouvert (extrait), la ventilation de la TVA et un paiement](../images/app-kantoor-aankoop-fr.png "Une facture d'achat"){ width="560" }
 
 ## Questions fréquentes
 

@@ -60,7 +60,7 @@ manque aussi dans l'application.
 En bas du menu figurent **Profil** et **Se déconnecter**, comme pour chaque collaborateur (voir
 [Bien démarrer avec l'application](aan-de-slag.fr.md#le-profil)).
 
-<!-- AFBEELDING: het menu van de app voor kantoor op een tablet, in het Frans: Aperçu, Planning de la semaine, Ordres de travail, Factures, Devis, Postes ouverts, Clients, Fournisseurs, Peppol reçus, Factures d'achat, Absences en Profil -->
+![Le menu de l'application pour le bureau sur une tablette : Demo kantoor avec son adresse e-mail, en dessous Aperçu, Planning de la semaine, Ordres de travail, Factures, Devis, Postes ouverts, Clients, Fournisseurs, Peppol reçus, Factures d'achat, Absences et Profil, et en bas Se déconnecter](../images/app-kantoor-menu-fr.png "Le menu pour le bureau"){ width="560" }
 
 ## L'aperçu
 
@@ -68,7 +68,7 @@ L'**Aperçu** est l'écran d'accueil pour le bureau. Il affiche le tableau de bo
 mêmes chiffres. Sur une tablette, les chiffres et *Aujourd'hui & travail* sont à gauche et *Demande votre attention* à
 droite ; sur un téléphone, tout est l'un sous l'autre.
 
-<!-- AFBEELDING: het Overzicht op een tablet, in het Frans: links de vier geldtegels en Aujourd'hui & travail, rechts Demande votre attention -->
+![L'Aperçu sur une tablette : à gauche les quatre tuiles financières et Aujourd'hui & travail avec les ordres de travail pas encore planifiés et à facturer, à droite Demande votre attention avec un devis à suivre et deux rapports caméra à établir](../images/app-kantoor-overzicht-fr.png "L'aperçu"){ width="560" }
 
 - **Les tuiles financières** : *échus chez les clients*, *facturé ce mois-ci (HTVA)*, *reçu des clients ce mois-ci* et
   *à payer aux fournisseurs*. Vous ne voyez que les tuiles pour lesquelles votre rôle a le droit.
