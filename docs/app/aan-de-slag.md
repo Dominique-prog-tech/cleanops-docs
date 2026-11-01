@@ -29,7 +29,7 @@ fiche, in het blok [App-toegang](../medewerkers.md#app-toegang):
 1. Open de medewerker en klik op **Toegang geven…**.
 2. Vul zijn e-mailadres in en klik op **Uitnodigen**.
 3. De medewerker krijgt een mail. Daarin kiest hij zijn wachtwoord met de link (24 uur geldig) en vindt hij de app in
-   de [App Store](https://apps.apple.com/app/id6748907113) of in
+   de [App Store](https://apps.apple.com/be/app/cleanops-drain-sewer/id6748907113) of in
    [Google Play](https://play.google.com/store/apps/details?id=com.admconcept.cleanops).
 4. Hij opent de app en meldt zich aan met zijn e-mailadres en zijn wachtwoord.
 

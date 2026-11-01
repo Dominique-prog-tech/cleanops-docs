@@ -30,7 +30,7 @@ sur sa fiche, dans le bloc [Accès à l'app](../medewerkers.fr.md#acces-a-lapp) 
 1. Ouvrez le collaborateur et cliquez sur **Donner l'accès…**.
 2. Indiquez son adresse e-mail et cliquez sur **Inviter**.
 3. Le collaborateur reçoit un e-mail. Il y choisit son mot de passe avec le lien (valable 24 heures) et trouve
-   l'application dans l'[App Store](https://apps.apple.com/app/id6748907113) ou dans
+   l'application dans l'[App Store](https://apps.apple.com/be/app/cleanops-drain-sewer/id6748907113) ou dans
    [Google Play](https://play.google.com/store/apps/details?id=com.admconcept.cleanops).
 4. Il ouvre l'application et se connecte avec son adresse e-mail et son mot de passe.
 
