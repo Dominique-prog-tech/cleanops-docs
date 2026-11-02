@@ -1,5 +1,5 @@
 ---
-description: "De app van CleanOps voor kantoor: de zaak onderweg opvolgen met het overzicht, de planning, werkorders, facturen, klanten, aankoop en afwezigheden. Enkel lezen, met de rechten van uw rol."
+description: "De app van CleanOps voor kantoor: de zaak onderweg opvolgen, van planning en werkorders tot facturen en afwezigheden. Enkel lezen, met de rechten van uw rol."
 ---
 
 # De app voor kantoor

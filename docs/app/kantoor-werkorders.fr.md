@@ -1,5 +1,5 @@
 ---
-description: "Les ordres de travail dans l'application CleanOps pour le bureau : rechercher un ordre de travail par numéro, client ou adresse et lire la fiche, avec l'exécution, les photos, l'attestation et le bon de livraison signé."
+description: "Les ordres de travail dans l'application CleanOps pour le bureau : rechercher par numéro, client ou adresse et lire la fiche, exécution et photos comprises."
 ---
 
 # Ordres de travail

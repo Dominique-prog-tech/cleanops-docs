@@ -1,5 +1,5 @@
 ---
-description: "Werkorders in de app van CleanOps voor kantoor: een werkorder zoeken op nummer, klant of adres en de fiche lezen, met de uitvoering, foto's, attest en de getekende leveringsbon."
+description: "Werkorders in de app van CleanOps voor kantoor: zoeken op nummer, klant of adres en de fiche lezen, met de uitvoering, foto's, attest en leveringsbon."
 ---
 
 # Werkorders

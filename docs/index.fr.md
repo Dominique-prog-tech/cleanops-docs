@@ -82,11 +82,15 @@ première visite guidée à la facture : [Vidéos](videos.md).
     ---
 
     L'application pour vos collaborateurs sur le terrain : leur planning, le chrono, les notes et les photos, le
-    paiement sur place, la signature du client et leurs congés.
+    paiement sur place, la signature du client et leurs congés. Le bureau y suit aussi l'entreprise, en lecture seule.
 
     [Premiers pas](app/aan-de-slag.md) · [Le planning](app/planning.md) · [L'ordre de travail](app/werkorder.md) ·
     [Faire signer](app/laten-tekenen.md) · [Créer un ordre de travail](app/werkorder-aanmaken.md) · [Congés](app/verlof.md) ·
     [Clients](app/klanten.md) · [Mes heures](app/uren.md)
+
+    **Pour le bureau :** [L'application pour le bureau](app/kantoor.md) · [Planning de la semaine](app/weekplanning.md) ·
+    [Ordres de travail](app/kantoor-werkorders.md) · [Factures, devis et postes ouverts](app/kantoor-verkoop.md) ·
+    [Clients et fournisseurs](app/kantoor-relaties.md) · [Achats](app/kantoor-aankoop.md) · [Absences](app/afwezigheden.md)
 
 -   :material-cog-outline: **Administration**
 

@@ -1,5 +1,5 @@
 ---
-description: "Klanten en leveranciers in de app van CleanOps voor kantoor: zoeken, de klantkaart met het openstaand saldo, de recentste facturen en offertes, en het saldo van een leverancier."
+description: "Klanten en leveranciers in de app van CleanOps voor kantoor: zoeken, de klantkaart met openstaand saldo en recente facturen, en het saldo van een leverancier."
 ---
 
 # Klanten en leveranciers

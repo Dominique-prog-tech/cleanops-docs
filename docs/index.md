@@ -81,11 +81,15 @@ factuur: [Video's](videos.md).
     ---
 
     De app voor uw medewerkers in het veld: hun planning, de teller, notities en foto's, de betaling ter plaatse, de
-    handtekening van de klant en hun verlof.
+    handtekening van de klant en hun verlof. Ook kantoor volgt de zaak ermee op, enkel om te lezen.
 
     [Aan de slag](app/aan-de-slag.md) · [De planning](app/planning.md) · [De werkorder](app/werkorder.md) ·
     [Laten tekenen](app/laten-tekenen.md) · [Werkorder aanmaken](app/werkorder-aanmaken.md) · [Verlof](app/verlof.md) ·
     [Klanten](app/klanten.md) · [Mijn uren](app/uren.md)
+
+    **Voor kantoor:** [De app voor kantoor](app/kantoor.md) · [Weekplanning](app/weekplanning.md) ·
+    [Werkorders](app/kantoor-werkorders.md) · [Facturen, offertes en openstaande posten](app/kantoor-verkoop.md) ·
+    [Klanten en leveranciers](app/kantoor-relaties.md) · [Aankoop](app/kantoor-aankoop.md) · [Afwezigheden](app/afwezigheden.md)
 
 -   :material-cog-outline: **Platformbeheer**
 
