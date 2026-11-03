@@ -18,6 +18,19 @@ menu de gauche.
 
 En haut figure la date du jour. Tous les chiffres portent sur ce jour-là.
 
+## Pour commencer
+
+Dans un environnement d'essai, le bloc **Pour commencer** figure tout en haut. Il vous guide dans un environnement rempli de
+données d'exemple. Une étape se coche d'elle-même dès que vous l'avez faite.
+
+| Étape | Ce que vous faites | Quand est-elle terminée ? |
+|---|---|---|
+| **Complétez les données de votre entreprise** | Cliquez sur **Ouvrir** et complétez la [fiche de l'entreprise](beheer/bedrijfsfiche.md). | Dès que votre propre adresse e-mail figure sur la fiche |
+| **Créez votre premier contrat périodique** | Cliquez sur **Ouvrir**, ouvrez un client, choisissez l'onglet **Contrats** et cliquez sur **Nouveau contrat**. | Dès qu'il existe un contrat que vous avez créé vous-même |
+| **Essayez l'application mobile** | Installez l'application et connectez-vous avec la même adresse e-mail et le même mot de passe. Voir [Bien démarrer avec l'application](app/aan-de-slag.md). | Dès que vous êtes connecté dans l'application |
+
+**Masquer** retire le bloc. Dans un environnement normal, il n'apparaît pas.
+
 ## Les tuiles des finances
 
 En haut figurent quatre tuiles avec un montant.
@@ -86,6 +99,9 @@ donc toujours être cliquée. Un bloc sans aucune carte n'apparaît pas. Si vous
 voyez qu'une phrase de bienvenue ; le menu de gauche affiche les écrans que vous pouvez ouvrir.
 
 ## Erreurs fréquentes
+
+!!! warning "L'application refuse votre connexion dans un environnement d'essai"
+    Connectez-vous d'abord sur le site web et modifiez-y le mot de passe de votre e-mail de bienvenue. Votre connexion fonctionnera ensuite aussi dans l'application.
 
 !!! warning "Le chiffre de la tuile ou de la carte diffère de la liste"
     Le lien ouvre la liste avec le bon filtre. Si vous modifiez ensuite un filtre ou le champ de recherche, la liste

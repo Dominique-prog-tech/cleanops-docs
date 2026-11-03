@@ -16,6 +16,19 @@ Het dashboard opent vanzelf na het aanmelden. Van elders bereikt u het via **Das
 
 Bovenaan staat de datum van vandaag. Alle cijfers gaan over die dag.
 
+## Aan de slag
+
+In een proefomgeving staat bovenaan het blok **Aan de slag**. Het helpt u op weg in een omgeving vol voorbeeldgegevens.
+Een stap vinkt zichzelf af zodra u ze gezet hebt.
+
+| Stap | Wat u doet | Wanneer is ze klaar? |
+|---|---|---|
+| **Vul uw bedrijfsgegevens in** | Klik op **Openen** en vul de [bedrijfsfiche](beheer/bedrijfsfiche.md) in. | Zodra op de fiche uw eigen e-mailadres staat |
+| **Maak uw eerste periodiek contract** | Klik op **Openen**, open een klant, kies het tabblad **Contracten** en klik op **Nieuw contract**. | Zodra er een contract is dat u zelf maakte |
+| **Probeer de mobiele app** | Installeer de app en meld u aan met hetzelfde e-mailadres en wachtwoord. Zie [Aan de slag met de app](app/aan-de-slag.md). | Zodra u aangemeld bent in de app |
+
+Met **Verbergen** haalt u het blok weg. In een gewone omgeving verschijnt het niet.
+
 ## De geldtegels
 
 Bovenaan staan vier tegels met een bedrag.
@@ -83,6 +96,9 @@ altijd aanklikken. Een blok zonder één kaart verschijnt niet. Hebt u voor geen
 welkomstzin; het menu links toont de schermen die u wél mag openen.
 
 ## Veelgemaakte fouten
+
+!!! warning "De app weigert uw aanmelding in een proefomgeving"
+    Meld u eerst aan op de website en wijzig daar het wachtwoord uit uw welkomstmail. Daarna werkt uw aanmelding ook in de app.
 
 !!! warning "Het getal op de tegel of de kaart verschilt van de lijst"
     De link opent de lijst met de juiste filter. Wijzigt u daarna een filter of het zoekveld, dan toont de lijst iets
