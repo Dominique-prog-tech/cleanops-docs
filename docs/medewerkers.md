@@ -98,6 +98,9 @@ De medewerker meldt zich aan met zijn e-mailadres en een wachtwoord dat hij zelf
 De medewerker krijgt een mail met een link om zijn wachtwoord te kiezen. De link blijft 24 uur geldig en werkt één keer.
 De mail zegt ook waar hij de app vindt, en met welk e-mailadres hij zich aanmeldt.
 
+In een proefversie of een omgeving die nog niet vrijgegeven is, vertrekt er geen mail. De link verschijnt dan in het blok, met de knop
+**Link kopiëren**: bezorg hem zelf aan de medewerker, bijvoorbeeld via een bericht op zijn gsm. Verdwenen? **Opnieuw uitnodigen** maakt een nieuwe.
+
 Wat het blok toont en welke knoppen er staan, hangt af van de stand:
 
 | Stand | Knoppen |

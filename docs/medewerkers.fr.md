@@ -102,6 +102,9 @@ Le collaborateur se connecte avec son adresse e-mail et un mot de passe qu'il ch
 Le collaborateur reçoit un e-mail avec un lien pour choisir son mot de passe. Le lien reste valable 24 heures et ne
 fonctionne qu'une seule fois. L'e-mail indique aussi où trouver l'application, et avec quelle adresse se connecter.
 
+Dans une version d'essai ou un environnement qui n'est pas encore libéré, aucun e-mail ne part. Le lien apparaît alors dans le bloc, avec le bouton
+**Copier le lien** : transmettez-le vous-même au collaborateur, par exemple par un message sur son GSM. Disparu ? **Inviter à nouveau** en crée un nouveau.
+
 Ce que le bloc affiche et les boutons présents dépendent de l'état :
 
 | État | Boutons |
