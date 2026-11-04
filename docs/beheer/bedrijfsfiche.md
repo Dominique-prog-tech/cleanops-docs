@@ -7,7 +7,7 @@ description: "De bedrijfsfiche in CleanOps: naam, adres, btw-nummer, bank en log
 De gegevens van uw eigen bedrijf: naam, adres, contactgegevens, btw-nummer en bank, uw logo, en de wachttijd
 tussen twee rappels, en hoe uw bedrijf in een e-factuur via Peppol staat.
 
-![De bedrijfsfiche met de blokken Identiteit en adres, Contact, Fiscaal en bank, Logo, Rappels, Boekhouding met het Adres van het boekhoudkantoor en het Adres voor de aankoopfacturen, en Peppol](../images/bedrijfsfiche.png "Bedrijfsfiche")
+![De bedrijfsfiche met de blokken Identiteit en adres, Contact, Fiscaal en bank, Logo, Rappels, Nieuwe klanten, Boekhouding met het Adres van het boekhoudkantoor en het Adres voor de aankoopfacturen, en Peppol](../images/bedrijfsfiche.png "Bedrijfsfiche")
 
 !!! note "Waar CleanOps deze gegevens vandaag gebruikt"
     De **wachttijd tussen twee rappels** bepaalt meteen welke posten in de lijst *Volgende rappel* van de
@@ -65,6 +65,12 @@ Om een logo te vervangen, kiest u gewoon een nieuwe afbeelding. Met **Verwijdere
 **Wachttijd tussen twee rappels** bepaalt hoeveel dagen er minstens tussen twee herinneringen voor dezelfde post
 zitten: een post komt pas opnieuw in de lijst *Volgende rappel* wanneer zijn laatste rappel zo lang geleden is.
 Laat u het veld leeg, dan geldt 15 dagen.
+
+## Nieuwe klanten
+
+**Standaard betaaltermijn** geldt voor een klant die u [vanuit de planning](../planning.md#een-klant-aan-de-lijn-nieuwe-werkorder)
+aanmaakt: aan de telefoon vraagt niemand ernaar, en zonder betaaltermijn kan CleanOps geen factuur maken. Laat u het veld leeg,
+dan vraagt het paneel de betaaltermijn bij elke nieuwe klant. Op de klantfiche kiest u later een andere.
 
 ## Boekhouding
 

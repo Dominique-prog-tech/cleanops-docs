@@ -82,7 +82,7 @@ De fiche staat in vijf blokken: **Identificatie**, **Adres**, **Contact**, **Fac
 |---|---|
 | Betaaltermijn * | De termijn waarmee de vervaldag van een factuur berekend wordt. U kiest uit de betalingstermijnen van Platformbeheer. |
 | Verkooprekening | De algemene rekening voor uw boekhoudkantoor, gekozen uit het [rekeningplan](beheer/rekeningplan.md). Mag leeg blijven. |
-| Klanttype | **Bedrijf** of **Particulier**. Een bedrijf heeft een btw-nummer nodig. |
+| Klanttype | **Bedrijf** of **Particulier**. Een bedrijf heeft een btw-nummer nodig. Staat er bovenaan **Fiche aanvullen**, dan werd de klant [vanuit de planning](planning.md#een-nieuwe-klant) aangemaakt zonder nummer: vul het in, want zonder nummer maakt CleanOps geen factuur. |
 | E-mail facturatie, E-mail rappels, E-mail attesten | Een apart adres voor facturen, rappels en attesten, als dat een ander is dan het e-mailadres hierboven. Elk veld bevat één geldig adres. |
 | GLN / Peppol-ID | Het adres van de klant op het Peppol-netwerk: een GLN-nummer van 13 cijfers, of een volledig Peppol-ID zoals `0208:0123456749`. Leeg: CleanOps zoekt de klant op met zijn btw-nummer. Staat er iets anders, dan zegt de fiche dat het niet bruikbaar is. Met **Peppol nakijken** ziet u of de klant op het netwerk staat en of hij facturen en creditnota's ontvangt — zo weet u of **Versturen…** op een factuur via Peppol of per mail gaat (zie [Facturen](facturen.md#versturen)). |
 | Geblokkeerd | De klant blijft gewoon bruikbaar, maar staat met een label in de lijst en valt op in de planning. Bij een nieuwe werkorder meldt CleanOps het. |

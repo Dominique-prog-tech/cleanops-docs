@@ -8,7 +8,7 @@ In de planning verdeelt u het werk over uw medewerkers en over de dagen van de w
 twee manieren: op het **planbord** sleept u ze naar een andere dag of medewerker, en in de **planningslijst** kent u
 er meerdere tegelijk toe, opent u de dagroute van een chauffeur en drukt u de planning af.
 
-![Het planbord van de demo: een week met per medewerker een rij in zijn kleur, links het werk onder Zonder datum](images/planning-bord.png "Planbord")
+![Het planbord van de demo: een week met per medewerker een rij in zijn kleur, links het werk onder Nog in te plannen, rechtsboven de knop Nieuwe werkorder](images/planning-bord.png "Planbord")
 
 ## Het scherm openen
 
@@ -18,6 +18,63 @@ op de volgende week. Met **Lijstweergave** rechtsboven gaat u naar de planningsl
 Op het planbord ziet u in één oogopslag wat nog moet: uitgevoerd werk blijft op zijn dag staan, in het groen en met
 een ✓, en open werk op een dag die al voorbij is, draagt **Niet uitgevoerd**. De planningslijst toont standaard enkel
 werk dat nog te doen is; met de filter **Status** ziet u ook het uitgevoerde en het gefactureerde werk.
+
+## Een klant aan de lijn: Nieuwe werkorder
+
+Krijgt u een klant aan de lijn, dan noteert u de opdracht terwijl u op het planbord blijft kijken. Klik rechtsboven op
+**Nieuwe werkorder**. Rechts opent een paneel, de week blijft ernaast staan en de cursor staat meteen in het zoekveld.
+U kunt ondertussen van week wisselen om te zien wanneer het past. Op een scherm tot 1700 pixels breed verdwijnen zolang de
+kolom **Nog in te plannen** en de uitleg bovenaan, zodat de week leesbaar blijft.
+
+![Het planbord met rechts het paneel Nieuwe werkorder: Soort klant, Naam, Telefoon of gsm, Straat, Omschrijving, Instructies werknemer en Meteen inplannen](images/planning-paneel.png "Nieuwe werkorder")
+
+1. **De klant** — typ een naam, een telefoonnummer of een klantnummer en klik op **kies**. Een nummer vindt u in elke
+   schrijfwijze: *0478 12 34 56* en *+32 478 12 34 56* vinden dezelfde klant. Bestaat de klant nog niet, klik dan op
+   **Nieuwe klant:** gevolgd door wat u typte (zie [Een nieuwe klant](#een-nieuwe-klant)).
+2. **Waar** — het adres staat al gekozen: het enige uitvoeringsadres van de klant, anders zijn hoofdadres. Kies een ander, of
+   maak er een bij met **Nieuw uitvoeringsadres**. Is het een nieuwe klant en ligt de werf ergens anders, vink dan
+   **De werf is op dit adres** uit en vul het adres van de werf in. De klant blijft op zijn eigen adres staan.
+3. **Werk** — de **Omschrijving** is verplicht en telt hoogstens 35 tekens: ze komt op de factuur. Waarover het werk precies
+   gaat, schrijft u bij **Instructies werknemer**. Dat leest de chauffeur.
+4. **Wanneer** — standaard komt de werkorder bij **Nog in te plannen**. Vink **Meteen inplannen** aan om de **Dag**, het
+   **Tijdsdeel** en de **Medewerker** te kiezen. De dag staat op vandaag, of op de eerste dag van de week die u op het bord
+   bekijkt als die nog moet komen. Laat u de medewerker leeg, dan staat de werkorder die dag op de rij **(niet toegewezen)**.
+5. **Bewaren** — het paneel sluit, u blijft op de planning, en een melding zegt waar de werkorder staat. Staat ze in een andere
+   week, dan gaat het bord naar die week.
+
+Terwijl u invult, zegt CleanOps wat u moet weten:
+
+- de klant is **geblokkeerd**: u kunt gewoon verder;
+- de klant of het adres aanvaardt **geen nieuwe opdrachten**, de dag is **al voorbij**, of de medewerker heeft die dag
+  **verlof**: bij **Bewaren** vraagt CleanOps eerst *Toch bewaren?*;
+- het adres is op sommige dagen **moeilijk of niet bereikbaar**;
+- op dit adres **lopen contracten**, met een link naar elk contract.
+
+Hebt u tarief, btw of een ander veld nodig, klik dan bij een bestaande klant op **Alle velden…**. U gaat naar het
+[volle scherm](werkorders.md#een-nieuwe-werkorder), en wat u al invulde gaat mee.
+
+Klikt u weg terwijl er tekst in het paneel staat, dan vraagt CleanOps eerst of u weg wilt. **Nieuwe werkorder** ziet u enkel
+met het recht om werkorders te wijzigen, en een nieuwe klant of adres vraagt ook het recht om klanten te wijzigen.
+
+### Een nieuwe klant
+
+| Veld | Toelichting |
+|---|---|
+| Soort klant * | **Particulier** of **Bedrijf**. |
+| Naam * | Wat u in het zoekveld typte, staat hier al. |
+| Telefoon of gsm * | Eén nummer: een gsm-nummer komt bij **Gsm**, een ander bij **Telefoon**. |
+| Taal * | De taal van de documenten voor deze klant. |
+| Btw-nummer | Enkel bij een bedrijf, en het mag leeg. Met **Ophalen** toont CleanOps wat de KBO weet, en neemt u naam en adres over. |
+| Straat *, Nr, Postcode *, Gemeente * | Het adres van de klant. Het land is België; een ander land kiest u op de klantfiche. |
+| Betaaltermijn * | Staat er enkel als de [bedrijfsfiche](beheer/bedrijfsfiche.md#nieuwe-klanten) geen standaard betaaltermijn heeft. |
+
+Bij **Bewaren** kijkt CleanOps of de klant misschien al bestaat: op zijn telefoon, zijn btw-nummer, en zijn naam met postcode.
+Staat er een melding, klik dan op **Deze gebruiken**, of op **Nee, toch een nieuwe klant**. Wat u over het werk invulde, blijft
+staan.
+
+!!! warning "Een bedrijf zonder btw-nummer"
+    Zo'n klant krijgt op zijn fiche het label **Fiche aanvullen**. CleanOps maakt pas een factuur voor hem als het nummer
+    is ingevuld.
 
 ## Het planbord
 
@@ -31,7 +88,8 @@ werk dat nog te doen is; met de filter **Status** ziet u ook het uitgevoerde en 
   [medewerkerfiche](medewerkers.md#het-tabblad-fiche).
 - **Het voertuig** — heeft de medewerker een vast voertuig, dan staat het kenteken onder zijn naam. Ook dat kiest u op
   de medewerkerfiche.
-- **Zonder datum** — links staat het werk dat nog geen geplande datum heeft, met het aantal erbij.
+- **Nog in te plannen** — links staat het werk dat nog geen geplande datum heeft, met het aantal erbij. Elke kaart toont het
+  nummer, de klant met de gemeente, en de omschrijving.
 
 ### Een werkorder op het bord
 
@@ -123,7 +181,7 @@ dag van een halve dag, en de omschrijving. U wijzigt het niet op het planbord ma
 ## De planningslijst
 
 Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van deze week. Het werk zonder datum staat onder
-**Nog in te plannen**. Met **Nieuwe werkorder** rechtsboven kiest u een klant en maakt u er meteen een aan (zie [Werkorders](werkorders.md#een-nieuwe-werkorder)).
+**Nog in te plannen**. **Nieuwe werkorder** rechtsboven brengt u naar het planbord, met [het paneel](#een-klant-aan-de-lijn-nieuwe-werkorder) open.
 
 ![De planningslijst van de demo: de week per dag, met de signalen, de medewerker in zijn kleur en de knop Toewijzen](images/planning-lijst.png "Planningslijst")
 
@@ -263,12 +321,15 @@ Maps: **Kaart** toont het adres, **Route** de weg ernaartoe van waar u nu bent.
 U mag de planning enkel bekijken. Vraag uw beheerder om het recht om de planning te wijzigen.
 
 **Een werkorder staat niet op de planning.**
-Kijk of ze een geplande datum heeft: zonder datum staat ze links onder **Zonder datum**, of onder **Nog in te
-plannen** in de lijst. Uitgevoerd werk staat op het planbord in het groen; in de lijst kiest u bij **Status**
+Kijk of ze een geplande datum heeft: zonder datum staat ze onder **Nog in te plannen**, links op het bord of bovenaan in de
+lijst. Uitgevoerd werk staat op het planbord in het groen; in de lijst kiest u bij **Status**
 **Uitgevoerd, te factureren** of **Gefactureerd**.
 
 **Hoe zet ik een werkorder terug zonder datum?**
 In de planningslijst: **Toewijzen**, maak de **Geplande dag** leeg en klik op **Bewaren**.
+
+**Ik zie geen Nieuwe klant in het paneel.**
+U mag klanten enkel bekijken. Vraag uw beheerder om het recht om klanten te wijzigen.
 
 **De knop Wisselen staat grijs.**
 De aangevinkte werkorders horen bij één medewerker, of bij meer dan twee. Vink het werk van precies twee medewerkers

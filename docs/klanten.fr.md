@@ -85,7 +85,7 @@ La fiche est répartie en cinq blocs : **Identification**, **Adresse**, **Contac
 |---|---|
 | Délai de paiement * | Le délai qui sert à calculer l'échéance d'une facture. Vous choisissez parmi les délais de paiement de l'Administration. |
 | Compte de vente | Le compte général pour votre bureau comptable, choisi dans le [plan comptable](beheer/rekeningplan.fr.md). Peut rester vide. |
-| Type de client | **Entreprise** ou **Particulier**. Une entreprise a besoin d'un numéro de TVA. |
+| Type de client | **Entreprise** ou **Particulier**. Une entreprise a besoin d'un numéro de TVA. Si **Fiche à compléter** figure en haut, le client a été créé [depuis le planning](planning.fr.md#un-nouveau-client) sans numéro : remplissez-le, car sans numéro CleanOps ne crée pas de facture. |
 | E-mail facturation, E-mail rappels, E-mail attestations | Une adresse distincte pour les factures, les rappels et les attestations, si elle diffère de l'adresse e-mail ci-dessus. Chaque champ contient une seule adresse valide. |
 | GLN / identifiant Peppol | L'adresse du client sur le réseau Peppol : un numéro GLN de 13 chiffres, ou un identifiant Peppol complet comme `0208:0123456749`. Vide : CleanOps recherche le client avec son numéro de TVA. S'il contient autre chose, la fiche indique qu'il n'est pas utilisable. Avec **Vérifier Peppol**, vous voyez si le client est sur le réseau et s'il reçoit des factures et des notes de crédit — vous savez ainsi si **Envoyer…** sur une facture passe par Peppol ou par e-mail (voir [Factures](facturen.fr.md#envoyer)). |
 | Bloqué | Le client reste utilisable, mais figure avec une étiquette dans la liste et se remarque dans la planification. CleanOps le signale lors d'un nouvel ordre de travail. |

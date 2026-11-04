@@ -56,9 +56,10 @@ de la note de crédit lorsque la facture de l'ordre a été créditée.
 ## Un nouvel ordre de travail
 
 Un nouvel ordre de travail se crée depuis la fiche du [client](klanten.fr.md) : cliquez en bas sur
-**Nouvel ordre de travail**. Ou commencez dans cette liste ou dans la [liste du planning](planning.fr.md#la-liste-du-planning) : cliquez en haut à droite sur
-**Nouvel ordre de travail**, cherchez le client par nom ou numéro et cliquez sur **choisir**. **Annuler** vous ramène alors à la
-liste, avec vos filtres.
+**Nouvel ordre de travail**. Ou commencez dans cette liste : cliquez en haut à droite sur
+**Nouvel ordre de travail**, cherchez le client par nom, téléphone ou numéro et cliquez sur **choisir**. **Annuler** vous ramène alors à la
+liste, avec vos filtres. Si le client est au téléphone, c'est plus rapide [depuis le planning](planning.fr.md#un-client-au-telephone-nouvel-ordre-de-travail) :
+vous y créez aussi tout de suite un nouveau client.
 
 ![L'écran Nouvel ordre de travail pour Résidence Les Tilleuls, avec les blocs Où et quand, Travail et Affectation et facturation](images/werkorder-nieuw-fr.png "Nouvel ordre de travail")
 

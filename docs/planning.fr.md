@@ -9,7 +9,7 @@ mêmes ordres de travail de deux façons : sur le **tableau de planning**, vous 
 autre collaborateur, et dans la **liste du planning**, vous en attribuez plusieurs à la fois, vous ouvrez l'itinéraire
 du jour d'un chauffeur et vous imprimez le planning.
 
-![Le tableau de planning de la démo : une semaine avec une ligne par collaborateur dans sa couleur, à gauche le travail sous Sans date](images/planning-bord-fr.png "Tableau de planning")
+![Le tableau de planning de la démo : une semaine avec une ligne par collaborateur dans sa couleur, à gauche le travail sous Encore à planifier, en haut à droite le bouton Nouvel ordre de travail](images/planning-bord-fr.png "Tableau de planning")
 
 ## Ouvrir l'écran
 
@@ -20,6 +20,65 @@ du planning, avec **Tableau de planning** vous revenez.
 Le tableau de planning montre d'un coup d'œil ce qui reste à faire : le travail exécuté reste sur son jour, en vert et
 avec un ✓, et le travail ouvert sur un jour déjà passé porte **Non exécuté**. La liste du planning ne montre par défaut
 que le travail encore à faire ; avec le filtre **Statut**, vous voyez aussi le travail exécuté et facturé.
+
+## Un client au téléphone : Nouvel ordre de travail
+
+Lorsqu'un client vous appelle, vous notez la demande tout en gardant le tableau de planning sous les yeux. Cliquez en haut à
+droite sur **Nouvel ordre de travail**. Un panneau s'ouvre à droite, la semaine reste à côté et le curseur est déjà dans le
+champ de recherche. Vous pouvez changer de semaine entre-temps pour voir ce qui convient. Sur un écran de 1700 pixels de large
+au maximum, la colonne **Encore à planifier** et l'explication du haut disparaissent pendant ce temps, pour que la semaine reste lisible.
+
+![Le tableau de planning avec à droite le panneau Nouvel ordre de travail : Type de client, Nom, Téléphone ou GSM, Rue, Description, Instructions au collaborateur et Planifier maintenant](images/planning-paneel-fr.png "Nouvel ordre de travail")
+
+1. **Le client** — tapez un nom, un numéro de téléphone ou un numéro de client et cliquez sur **choisir**. Un numéro se trouve
+   quelle que soit sa notation : *0478 12 34 56* et *+32 478 12 34 56* trouvent le même client. Si le client n'existe pas encore,
+   cliquez sur **Nouveau client :** suivi de ce que vous avez tapé (voir [Un nouveau client](#un-nouveau-client)).
+2. **Où** — l'adresse est déjà choisie : la seule adresse d'exécution du client, sinon son adresse principale. Choisissez-en une
+   autre, ou ajoutez-en une avec **Nouvelle adresse d'exécution**. S'il s'agit d'un nouveau client et que le chantier se trouve
+   ailleurs, décochez **Le chantier est à cette adresse** et remplissez l'adresse du chantier. Le client garde sa propre adresse.
+3. **Travail** — la **Description** est obligatoire et compte 35 caractères au maximum : elle figure sur la facture. De quoi il
+   s'agit exactement, vous l'écrivez dans **Instructions au collaborateur**. C'est ce que lit le chauffeur.
+4. **Quand** — par défaut, l'ordre va dans **Encore à planifier**. Cochez **Planifier maintenant** pour choisir le **Jour**, la
+   **Partie de la journée** et le **Collaborateur**. Le jour est celui d'aujourd'hui, ou le premier jour de la semaine affichée
+   sur le tableau si elle est encore à venir. Si vous laissez le collaborateur vide, l'ordre figure ce jour-là sur la ligne
+   **(non attribué)**.
+5. **Enregistrer** — le panneau se ferme, vous restez sur le planning et un message indique où se trouve l'ordre. S'il se trouve
+   dans une autre semaine, le tableau va à cette semaine.
+
+Pendant que vous remplissez, CleanOps indique ce que vous devez savoir :
+
+- le client est **bloqué** : vous pouvez continuer normalement ;
+- le client ou l'adresse n'accepte **pas de nouvelles missions**, le jour est **déjà passé**, ou le collaborateur est **en congé**
+  ce jour-là : à l'enregistrement, CleanOps demande d'abord *Enregistrer quand même ?* ;
+- l'adresse est **difficilement ou pas accessible** certains jours ;
+- des **contrats sont en cours** à cette adresse, avec un lien vers chaque contrat.
+
+Si vous avez besoin du tarif, de la TVA ou d'un autre champ, cliquez chez un client existant sur **Tous les champs…**. Vous passez à
+l'[écran complet](werkorders.fr.md#un-nouvel-ordre-de-travail), et ce que vous avez déjà rempli vous suit.
+
+Si vous quittez l'écran alors que le panneau contient du texte, CleanOps demande d'abord confirmation. **Nouvel ordre de travail**
+n'apparaît qu'avec le droit de modifier les ordres de travail, et un nouveau client ou une nouvelle adresse demande aussi le droit de
+modifier les clients.
+
+### Un nouveau client
+
+| Champ | Explication |
+|---|---|
+| Type de client * | **Particulier** ou **Entreprise**. |
+| Nom * | Ce que vous avez tapé dans le champ de recherche s'y trouve déjà. |
+| Téléphone ou GSM * | Un seul numéro : un numéro de GSM va dans **GSM**, un autre dans **Téléphone**. |
+| Langue * | La langue des documents pour ce client. |
+| Numéro de TVA | Uniquement pour une entreprise, et il peut rester vide. Avec **Rechercher**, CleanOps montre ce que la BCE sait, et vous reprenez le nom et l'adresse. |
+| Rue *, N°, Code postal *, Commune * | L'adresse du client. Le pays est la Belgique ; vous choisissez un autre pays sur la fiche client. |
+| Délai de paiement * | N'apparaît que si la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#nouveaux-clients) n'a pas de délai de paiement par défaut. |
+
+À l'enregistrement, CleanOps vérifie si le client existe peut-être déjà : d'après son téléphone, son numéro de TVA, et son nom avec le
+code postal. Si un message apparaît, cliquez sur **Utiliser celui-ci**, ou sur **Non, créer un nouveau client**. Ce que vous avez
+rempli sur le travail reste en place.
+
+!!! warning "Une entreprise sans numéro de TVA"
+    Un tel client reçoit sur sa fiche l'étiquette **Fiche à compléter**. CleanOps ne crée de facture pour lui qu'une fois le numéro
+    rempli.
 
 ## Le tableau de planning
 
@@ -33,7 +92,8 @@ que le travail encore à faire ; avec le filtre **Statut**, vous voyez aussi le 
   [fiche collaborateur](medewerkers.fr.md#longlet-fiche).
 - **Le véhicule** — si le collaborateur a un véhicule fixe, sa plaque figure sous son nom. Vous le choisissez aussi
   sur la fiche collaborateur.
-- **Sans date** — à gauche se trouve le travail qui n'a pas encore de date planifiée, avec leur nombre.
+- **Encore à planifier** — à gauche se trouve le travail qui n'a pas encore de date planifiée, avec leur nombre. Chaque carte
+  montre le numéro, le client avec la commune, et la description.
 
 ### Un ordre de travail sur le tableau
 
@@ -127,7 +187,7 @@ planning mais sur la fiche du collaborateur (voir [Collaborateurs](medewerkers.m
 ## La liste du planning
 
 Les mêmes ordres sous forme de liste, groupés par jour — par défaut ceux de cette semaine. Le travail sans date se
-trouve sous **Encore à planifier**. Avec **Nouvel ordre de travail** en haut à droite, vous choisissez un client et en créez un tout de suite (voir [Ordres de travail](werkorders.fr.md#un-nouvel-ordre-de-travail)).
+trouve sous **Encore à planifier**. **Nouvel ordre de travail** en haut à droite vous amène au tableau de planning, avec [le panneau](#un-client-au-telephone-nouvel-ordre-de-travail) ouvert.
 
 ![La liste du planning de la démo : la semaine par jour, avec les signaux, le collaborateur dans sa couleur et le bouton Attribuer](images/planning-lijst-fr.png "Liste du planning")
 
@@ -271,12 +331,15 @@ l'endroit où vous êtes.
 Vous pouvez seulement consulter le planning. Demandez à votre gestionnaire le droit de modifier le planning.
 
 **Un ordre de travail ne figure pas sur le planning.**
-Vérifiez qu'il a une date planifiée : sans date, il se trouve à gauche sous **Sans date**, ou sous **Encore à
-planifier** dans la liste. Le travail exécuté figure en vert sur le tableau de planning ; dans la liste, choisissez
+Vérifiez qu'il a une date planifiée : sans date, il se trouve sous **Encore à planifier**, à gauche sur le tableau ou en
+haut de la liste. Le travail exécuté figure en vert sur le tableau de planning ; dans la liste, choisissez
 **Exécuté, à facturer** ou **Facturé** sous **Statut**.
 
 **Comment remettre un ordre sans date ?**
 Dans la liste du planning : **Attribuer**, videz le **Jour planifié** et cliquez sur **Enregistrer**.
+
+**Je ne vois pas Nouveau client dans le panneau.**
+Vous pouvez seulement consulter les clients. Demandez à votre gestionnaire le droit de modifier les clients.
 
 **Le bouton Échanger est grisé.**
 Les ordres cochés appartiennent à un seul collaborateur, ou à plus de deux. Cochez le travail d'exactement deux

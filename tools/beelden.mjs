@@ -558,6 +558,16 @@ const SCHOTEN = [
   // kan die nemen.
   { naam: 'planning-bord', route: '/planning', verwacht: /Mestkelder ledigen/, hoogte: 1140,
     na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) ▶$/ }).first().click(); } },
+  // Het paneel van de snelle werkorder (04/11/2026), met een nieuwe klant: dat toont de velden die de planner aan de telefoon invult.
+  { naam: 'planning-paneel', route: '/planning', verwacht: tekstTaal('Telefoon of gsm', 'Téléphone ou GSM'),
+    na: async p => {
+      // Eerst de volgende week, zoals het beeld van het bord: daar staat het werk van de demo.
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) ▶$/ }).first().click();
+      await p.getByText(/Mestkelder ledigen/).first().waitFor();
+      await p.getByRole('button', { name: /^(Nieuwe werkorder|Nouvel ordre de travail)$/ }).first().click();
+      await p.getByPlaceholder(/klantnummer|numéro de client/).first().fill('Bakkerij Peeters');
+      await p.getByRole('button', { name: /^(Nieuwe klant:|Nouveau client :)/ }).first().click();
+    } },
   { naam: 'planning-lijst', route: '/planning/lijst', verwacht: /Mestkelder ledigen/,
     // ⚠️ Sinds werklijst C14 (09/10/2026) een periodeknop met pijlen "← Vorige | Volgende →" i.p.v. het weeklabel.
     na: async p => { await p.getByRole('button', { name: /^(Volgende|Suivant) →$/ }).first().click(); } },

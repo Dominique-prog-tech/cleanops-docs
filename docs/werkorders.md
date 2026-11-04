@@ -52,8 +52,9 @@ factuur van de werkorder gecrediteerd is.
 ## Een nieuwe werkorder
 
 Een nieuwe werkorder maakt u op de fiche van de [klant](klanten.md): klik onderaan op **Nieuwe werkorder**. Of begin
-in deze lijst of in de [planningslijst](planning.md#de-planningslijst): klik rechtsboven op **Nieuwe werkorder**, zoek de klant
-op naam of nummer en klik op **kies**. **Annuleren** brengt u dan terug naar de lijst, met uw filters.
+in deze lijst: klik rechtsboven op **Nieuwe werkorder**, zoek de klant op naam, telefoon of nummer en klik op **kies**. **Annuleren**
+brengt u dan terug naar de lijst, met uw filters. Hebt u de klant aan de lijn, dan gaat het sneller
+[vanuit de planning](planning.md#een-klant-aan-de-lijn-nieuwe-werkorder): daar maakt u ook meteen een nieuwe klant aan.
 
 ![Het scherm Nieuwe werkorder voor Tuincentrum De Linde, met de blokken Waar en wanneer, Werk en Toewijzing en facturatie](images/werkorder-nieuw.png "Nieuwe werkorder")
 

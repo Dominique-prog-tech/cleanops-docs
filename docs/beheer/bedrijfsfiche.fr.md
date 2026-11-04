@@ -7,7 +7,7 @@ description: "La fiche d'entreprise dans CleanOps : nom, adresse, numéro de TVA
 Les données de votre propre entreprise : nom, adresse, coordonnées, numéro de TVA et banque, votre logo, le
 délai entre deux rappels, et comment votre entreprise figure dans une facture électronique via Peppol.
 
-![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels, Comptabilité avec l'Adresse du bureau comptable et l'Adresse pour les factures d'achat, et Peppol](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
+![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels, Nouveaux clients, Comptabilité avec l'Adresse du bureau comptable et l'Adresse pour les factures d'achat, et Peppol](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
 
 !!! note "Où CleanOps utilise ces données aujourd'hui"
     Le **délai entre deux rappels** détermine directement quels postes figurent dans la liste *Prochain rappel*
@@ -68,6 +68,12 @@ définitivement.
 Le **délai entre deux rappels** fixe le nombre minimum de jours entre deux relances pour un même poste : un poste
 ne revient dans la liste *Prochain rappel* que lorsque son dernier rappel date d'au moins ce délai. Si vous
 laissez le champ vide, 15 jours s'appliquent.
+
+## Nouveaux clients
+
+Le **délai de paiement par défaut** s'applique à un client que vous créez [depuis le planning](../planning.fr.md#un-client-au-telephone-nouvel-ordre-de-travail) :
+au téléphone, personne ne le demande, et sans délai de paiement, CleanOps ne peut pas créer de facture. Si vous laissez le champ
+vide, le panneau demande le délai pour chaque nouveau client. Vous en choisissez un autre plus tard sur la fiche client.
 
 ## Comptabilité
 
