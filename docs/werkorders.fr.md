@@ -37,6 +37,8 @@ de la note de crédit lorsque la facture de l'ordre a été créditée.
 - **Tarif** — tapez une partie de la description et choisissez le tarif : la liste ne montre alors que les ordres de
   travail avec ce tarif. Les tarifs archivés y figurent aussi, car des ordres plus anciens les portent encore. La croix
   efface votre choix.
+- **Planning** — **Encore à planifier** affiche le travail ouvert sans date planifiée, **Date sans collaborateur** le travail ouvert
+  avec une date mais sans personne. Vous arrivez aussi ici depuis les deux cartes du [tableau de bord](dashboard.fr.md).
 - **Créé** — choisissez **Depuis l'app** pour ne voir que les ordres de travail qu'un collaborateur a créés dans
   l'[application](app/werkorder-aanmaken.fr.md), par exemple pour y ajouter le tarif.
 - **Client** — **Plus… → Ordres de travail** sur la [fiche client](klanten.md#les-boutons-en-bas) ouvre cette liste

@@ -60,7 +60,7 @@ Ligt er niets, dan blijft de kaart staan met een zin als *Niets gepland vandaag.
 | Kaart | Wat ze toont | Alle … tonen opent |
 |---|---|---|
 | Op de planning vandaag | de werkorders die vandaag gepland staan en nog niet uitgevoerd zijn: het nummer, de klant en de gemeente | de [planningslijst](planning.md#de-planningslijst) op de dag van vandaag |
-| Nog niet ingepland | de werkorders met de status **Ingegeven**, de nieuwste eerst: het nummer, de klant, de dag waarop het werk moet gebeuren en de gemeente | de [werkorders](werkorders.md) op de status **Ingegeven** |
+| Nog in te plannen | het open werk zonder geplande datum, de nieuwste eerst: het nummer, de klant, de dag waarop het werk moet gebeuren en de gemeente. Hetzelfde getal als de kolom **Nog in te plannen** op het [planbord](planning.md) | de [werkorders](werkorders.md) op de filter **Planning: Nog in te plannen** |
 | Werkorders te factureren | het uitgevoerde werk dat op een factuur wacht, tot en met vandaag — zonder wat contant betaald werd. Per klant, met het aantal werkorders en het bedrag; de klant die al het langst wacht, staat eerst | [Facturatie](facturatie.md) |
 
 ### Vraagt aandacht
@@ -70,6 +70,7 @@ Ligt er niets, dan blijft de kaart staan met een zin als *Niets gepland vandaag.
 | Toe aan een volgende rappel | de posten die al een rappel kregen en aan de volgende toe zijn — hetzelfde getal als in het menu. Per post de klant, het document, het openstaande bedrag en de vervaldag | de [openstaande posten](openstaande-posten.md) op **Volgende rappel** |
 | Offertes op te volgen | de verstuurde offertes waarvan de opvolgdatum vandaag is of voorbij: de klant, de omschrijving en de opvolgdatum (in het rood als ze voorbij is) | de [offertes](offertes.md) op **Op te volgen** |
 | Cameraverslagen te maken | de uitgevoerde werkorders die nog te factureren zijn, een [cameraverslag](cameraverslagen.md) vragen en er geen hebben: het nummer, de klant en de gemeente | de lijst [Cameraverslagen](cameraverslagen.md#de-lijst) op **Te factureren** en **Verslag ontbreekt** |
+| Datum zonder medewerker | het open werk met een geplande datum waaraan nog geen medewerker hangt: het nummer, de klant, de gemeente en de geplande dag (in het rood als die voorbij is). Op het bord staat dit werk enkel in de rij **(niet toegewezen)** van die week, dus hier ziet u ook wat al voorbij is | de [werkorders](werkorders.md) op de filter **Planning: Datum zonder medewerker** |
 | Voertuigen te keuren | de voertuigen waarvan de keuring verlopen is of binnen 30 dagen valt, met de keuringsdatum (in het rood als ze verlopen is) | de [voertuigen](beheer/voertuigen.md) op **Te keuren** |
 | Vervallen posten leveranciers | de aankoopdocumenten waarvan de vervaldag voorbij is en die nog open staan: de leverancier, zijn documentnummer, het bedrag en de vervaldag | de [openstaande posten leveranciers](openstaande-posten-leveranciers.md) op **Vervallen** |
 | Afwezig vandaag | de medewerkers die vandaag verlof hebben, met de omschrijving van het verlof | de [verlofkalender](verlofkalender.md) |

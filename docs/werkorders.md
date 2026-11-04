@@ -34,6 +34,8 @@ factuur van de werkorder gecrediteerd is.
   Werkorders die in uw vorige toepassing zonder factuurdatum staan, vindt u met deze keuze niet.
 - **Tarief** — typ een deel van de omschrijving en kies het tarief: de lijst toont dan enkel de werkorders met dat
   tarief. Ook gearchiveerde tarieven staan erin, want oudere werkorders dragen ze nog. Het kruisje wist uw keuze.
+- **Planning** — **Nog in te plannen** toont het open werk zonder geplande datum, **Datum zonder medewerker** het open werk met een
+  datum waaraan nog niemand hangt. Hier komt u ook terecht vanaf de twee kaarten op het [dashboard](dashboard.md).
 - **Aangemaakt** — kies **Uit de app** voor enkel de werkorders die een medewerker in de [app](app/werkorder-aanmaken.md)
   aanmaakte, bijvoorbeeld om er het tarief op te zetten.
 - **Klant** — **Meer… → Werkorders** op de [klantfiche](klanten.md#de-knoppen-onderaan) opent deze lijst met enkel de

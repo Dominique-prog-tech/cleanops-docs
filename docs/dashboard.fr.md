@@ -63,7 +63,7 @@ une réponse.
 | Carte | Ce qu'elle montre | Afficher les … ouvre |
 |---|---|---|
 | Au planning aujourd'hui | les ordres de travail planifiés aujourd'hui et pas encore exécutés : le numéro, le client et la commune | la [liste du planning](planning.fr.md#la-liste-du-planning) sur le jour même |
-| Pas encore planifiés | les ordres de travail au statut **Encodé**, les plus récents d'abord : le numéro, le client, le jour où le travail doit être fait et la commune | les [ordres de travail](werkorders.fr.md) au statut **Encodé** |
+| Encore à planifier | le travail ouvert sans date planifiée, les plus récents d'abord : le numéro, le client, le jour où le travail doit être fait et la commune. Le même chiffre que la colonne **Encore à planifier** du [tableau de planning](planning.fr.md) | les [ordres de travail](werkorders.fr.md) sur le filtre **Planning : Encore à planifier** |
 | Ordres de travail à facturer | le travail exécuté qui attend une facture, jusqu'à aujourd'hui inclus — sans ce qui a été payé comptant. Par client, avec le nombre d'ordres de travail et le montant ; le client qui attend depuis le plus longtemps figure en premier | [Facturation](facturatie.fr.md) |
 
 ### Demande votre attention
@@ -73,6 +73,7 @@ une réponse.
 | Prêts pour un rappel suivant | les postes qui ont déjà reçu un rappel et sont prêts pour le suivant — le même chiffre que dans le menu. Par poste le client, le document, le montant ouvert et l'échéance | les [postes ouverts](openstaande-posten.fr.md) sur **Prochain rappel** |
 | Devis à suivre | les devis envoyés dont la date de suivi est aujourd'hui ou passée : le client, la description et la date de suivi (en rouge si elle est passée) | les [devis](offertes.fr.md) sur **À suivre** |
 | Rapports caméra à établir | les ordres de travail exécutés qui sont encore à facturer, qui demandent un [rapport caméra](cameraverslagen.fr.md) et n'en ont pas : le numéro, le client et la commune | la liste [Rapports caméra](cameraverslagen.fr.md#la-liste) sur **À facturer** et **Rapport manquant** |
+| Date sans collaborateur | le travail ouvert avec une date planifiée mais sans collaborateur : le numéro, le client, la commune et le jour planifié (en rouge s'il est passé). Sur le tableau, ce travail ne figure que dans la ligne **(non attribué)** de cette semaine ; ici, vous voyez aussi ce qui est déjà passé | les [ordres de travail](werkorders.fr.md) sur le filtre **Planning : Date sans collaborateur** |
 | Véhicules à contrôler | les véhicules dont le contrôle technique est échu ou tombe dans les 30 jours, avec la date du contrôle (en rouge si elle est échue) | les [véhicules](beheer/voertuigen.fr.md) sur **À contrôler** |
 | Postes fournisseurs échus | les documents d'achat dont l'échéance est passée et qui sont encore ouverts : le fournisseur, son numéro de document, le montant et l'échéance | les [postes ouverts fournisseurs](openstaande-posten-leveranciers.fr.md) sur **Échus** |
 | Absents aujourd'hui | les collaborateurs en congé aujourd'hui, avec la description du congé | l'[agenda des congés](verlofkalender.fr.md) |
