@@ -48,7 +48,7 @@ et **Journal**. Sous Journal figurent **Pièces jointes** et **Historique**. Doc
 
 | Champ | Explication |
 |---|---|
-| Nom * | 30 caractères maximum. La liste est triée sur ce nom. |
+| Nom * | 50 caractères maximum. La liste est triée sur ce nom. |
 | Nom (2e ligne) | Une deuxième ligne, par exemple un service. |
 | Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle ; un numéro étranger non. **Rechercher** à côté montre d'abord ce que sait la BCE (avec **arrêtée** en rouge si l'entreprise n'est plus active) ; **Reprendre** place le nom et l'adresse sur la fiche. Si rien ne revient, CleanOps dit pourquoi : la BCE ne connaît pas le numéro, ou la recherche est momentanément indisponible (réessayez plus tard). |
 | Langue * | Néerlandais ou français. |

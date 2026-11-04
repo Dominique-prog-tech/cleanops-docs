@@ -61,7 +61,7 @@ La fiche est répartie en cinq blocs : **Identification**, **Adresse**, **Contac
 
 | Champ | Explication |
 |---|---|
-| Nom *, Nom (2e ligne) | Le nom tel qu'il figure sur les documents, 30 caractères au plus chacun. |
+| Nom *, Nom (2e ligne) | Le nom tel qu'il figure sur les documents : 50 caractères au plus pour le nom, 30 pour la deuxième ligne. |
 | Numéro de TVA | Un numéro belge est vérifié sur son chiffre de contrôle. **Rechercher** montre d'abord ce que sait la BCE — nom, type, création, situation juridique, forme juridique et adresse, et en rouge **arrêtée** si l'entreprise n'est plus active. **Reprendre** place le nom et l'adresse (avec l'ajout et la boîte au numéro) sur la fiche ; ce que la BCE ne connaît pas reste tel quel. Vous enregistrez ensuite vous-même. Si rien ne revient, CleanOps dit pourquoi : la BCE ne connaît pas le numéro (vérifiez-le), ou la recherche est momentanément indisponible (réessayez plus tard). ⚠️ La BCE donne le siège social, pas toujours l'adresse de facturation. |
 | Nom de recherche | Le nom en majuscules. CleanOps le forme lui-même à partir du nom ; il détermine l'ordre dans la liste. |
 | Langue * | La langue des documents pour ce client. |

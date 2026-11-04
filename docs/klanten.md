@@ -58,7 +58,7 @@ De fiche staat in vijf blokken: **Identificatie**, **Adres**, **Contact**, **Fac
 
 | Veld | Toelichting |
 |---|---|
-| Naam *, Naam (2e regel) | De naam zoals hij op documenten komt, elk hoogstens 30 tekens. |
+| Naam *, Naam (2e regel) | De naam zoals hij op documenten komt: de naam hoogstens 50 tekens, de tweede regel hoogstens 30. |
 | Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer getoetst. Met **Ophalen** toont CleanOps eerst wat de KBO weet — naam, type, oprichting, juridische situatie, rechtsvorm en adres, en in het rood **stopgezet** als de onderneming niet meer actief is. Met **Overnemen** komen naam en adres (met toevoeging en bus bij het huisnummer) op de fiche; wat de KBO niet kent, blijft staan. Bewaren doet u daarna zelf. Komt er niets terug, dan zegt CleanOps waarom: de KBO kent het nummer niet (controleer het), of de opzoeking is even niet bereikbaar (probeer later opnieuw). ⚠️ De KBO geeft de maatschappelijke zetel, niet altijd het adres waar u factureert. |
 | Zoeknaam | De naam in hoofdletters. CleanOps maakt ze zelf uit de naam; ze bepaalt de volgorde in de lijst. |
 | Taal * | De taal van de documenten voor deze klant. |
