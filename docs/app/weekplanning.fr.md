@@ -1,5 +1,5 @@
 ---
-description: "Le planning de la semaine dans l'application CleanOps : le tableau de planning par semaine pour le bureau, par collaborateur et par jour, et planifier le travail sans date."
+description: "Le planning de la semaine dans l'application CleanOps pour le bureau : par collaborateur et par jour, et planifier le travail sans date."
 ---
 
 # Planning de la semaine

@@ -1,5 +1,5 @@
 ---
-description: "L'application CleanOps pour le bureau : suivre l'entreprise en déplacement, du planning aux factures et aux absences, et noter un ordre de travail. Selon votre rôle."
+description: "L'application CleanOps pour le bureau : suivre l'entreprise en déplacement, du planning aux absences, et noter un ordre. Selon votre rôle."
 ---
 
 # L'application pour le bureau
