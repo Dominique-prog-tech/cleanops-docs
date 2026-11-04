@@ -93,7 +93,7 @@ rempli sur le travail reste en place.
 - **Le véhicule** — si le collaborateur a un véhicule fixe, sa plaque figure sous son nom. Vous le choisissez aussi
   sur la fiche collaborateur.
 - **Encore à planifier** — à gauche se trouve le travail qui n'a pas encore de date planifiée, avec leur nombre. Chaque carte
-  montre le numéro, le client avec la commune, et la description.
+  montre le numéro, le client, l'adresse, le numéro de téléphone ou de GSM et la description.
 
 ### Un ordre de travail sur le tableau
 

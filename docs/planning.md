@@ -89,7 +89,7 @@ staan.
 - **Het voertuig** — heeft de medewerker een vast voertuig, dan staat het kenteken onder zijn naam. Ook dat kiest u op
   de medewerkerfiche.
 - **Nog in te plannen** — links staat het werk dat nog geen geplande datum heeft, met het aantal erbij. Elke kaart toont het
-  nummer, de klant met de gemeente, en de omschrijving.
+  nummer, de klant, het adres, het telefoon- of gsm-nummer en de omschrijving.
 
 ### Een werkorder op het bord
 
