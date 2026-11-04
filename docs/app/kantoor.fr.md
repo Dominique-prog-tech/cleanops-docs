@@ -1,5 +1,5 @@
 ---
-description: "L'application CleanOps pour le bureau : suivre l'entreprise en déplacement, du planning aux factures et aux absences. En lecture seule, selon votre rôle."
+description: "L'application CleanOps pour le bureau : suivre l'entreprise en déplacement, du planning aux factures et aux absences, et noter un ordre de travail. Selon votre rôle."
 ---
 
 # L'application pour le bureau
@@ -8,13 +8,16 @@ Avec l'application CleanOps, les personnes du bureau suivent aussi l'entreprise 
 est-il déjà accepté ? Qui est absent aujourd'hui ? L'ordre de travail de ce matin est-il déjà exécuté ? Vous le lisez dans
 l'application, avec les mêmes chiffres que dans CleanOps sur l'ordinateur.
 
-L'application pour le bureau est **en lecture seule**. Créer une facture, planifier un ordre de travail ou approuver une
-demande de congé se fait dans CleanOps sur l'ordinateur.
+L'application pour le bureau sert **surtout à lire**. À partir de la version 1.3.0, vous pouvez aussi y faire une chose si votre
+rôle le permet : [noter et planifier un ordre de travail](kantoor-werkorders.fr.md#un-nouvel-ordre-de-travail), par exemple pendant
+que le client est au téléphone. Créer une facture ou approuver une demande de congé se fait dans CleanOps sur l'ordinateur.
 
 | Quoi | Où |
 |---|---|
 | Les chiffres et les listes du tableau de bord | [L'aperçu](#lapercu) sur cette page |
 | Le tableau de planning par semaine | [Planning de la semaine](weekplanning.fr.md) |
+| Noter un nouvel ordre de travail | [Un nouvel ordre de travail](kantoor-werkorders.fr.md#un-nouvel-ordre-de-travail) |
+| Planifier le travail sans date | [Encore à planifier](weekplanning.fr.md#encore-a-planifier) |
 | Rechercher et ouvrir un ordre de travail | [Ordres de travail](kantoor-werkorders.fr.md) |
 | Factures, devis et postes ouverts | [Factures, devis et postes ouverts](kantoor-verkoop.fr.md) |
 | Clients et fournisseurs, avec leur solde | [Clients et fournisseurs](kantoor-relaties.fr.md) |
@@ -72,9 +75,9 @@ droite ; sur un téléphone, tout est l'un sous l'autre.
 
 - **Les tuiles financières** : *échus chez les clients*, *facturé ce mois-ci (HTVA)*, *reçu des clients ce mois-ci* et
   *à payer aux fournisseurs*. Vous ne voyez que les tuiles pour lesquelles votre rôle a le droit.
-- **Aujourd'hui & travail** : *Au planning aujourd'hui*, *Pas encore planifiés*, *Ordres de travail à facturer* et
+- **Aujourd'hui & travail** : *Au planning aujourd'hui*, *Encore à planifier* (avant la version 1.3.0 : *Pas encore planifiés*), *Ordres de travail à facturer* et
   *Absents aujourd'hui*.
-- **Demande votre attention** : *Prêts pour un rappel suivant*, *Devis à suivre*, *Rapports caméra à établir*,
+- **Demande votre attention** : *Prêts pour un rappel suivant*, *Devis à suivre*, *Rapports caméra à établir*, *Date sans collaborateur* (à partir de la version 1.3.0),
   *Véhicules à contrôler* et *Postes fournisseurs échus*. Le nombre est en orange dès qu'il y a quelque chose, en rouge
   s'il s'agit d'argent échu.
 

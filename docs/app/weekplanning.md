@@ -1,12 +1,12 @@
 ---
-description: "De weekplanning in de app van CleanOps: het planbord per week voor kantoor, per medewerker en per dag, enkel om te lezen."
+description: "De weekplanning in de app van CleanOps: het planbord per week voor kantoor, per medewerker en per dag, en werk zonder datum inplannen."
 ---
 
 # Weekplanning
 
 Onder **Weekplanning** ziet u in de app het [planbord](../planning.md) van een hele week: wie wat doet, welk werk nog niet
 toegewezen is en wat niet uitgevoerd werd. Het scherm is er voor wie op kantoor werkt en het recht op de planning heeft
-(zie [De app voor kantoor](kantoor.md)). Inplannen of verplaatsen doet u op het planbord op de computer.
+(zie [De app voor kantoor](kantoor.md)). Verplaatsen doet u op het planbord op de computer; werk zonder datum kunt u ook hier [inplannen](#nog-in-te-plannen).
 
 ## Het scherm openen
 
@@ -47,6 +47,18 @@ Elke regel heeft links een kleurstaafje, in dezelfde kleuren als het planbord:
 
 Een feestdag staat in het rood bij de dag. Een tik op een werkorder opent ze in [Werkorders](kantoor-werkorders.md), als uw
 rol het recht op de werkorders heeft.
+
+## Nog in te plannen
+
+Werk zonder datum staat in geen enkele week. Daarom staat er vanaf versie 1.3.0 boven het rooster de regel **Nog in te plannen**, met het aantal. Het is dezelfde
+lijst als de kolom op het [planbord](../planning.md): het open werk zonder geplande datum.
+
+Tik op een regel om de lijst te openen. Hebt u het recht **Planning bewerken**, dan staat bij elke werkorder **Inplannen**. U kiest de dag, het tijdsdeel en eventueel de
+medewerker. Zonder medewerker staat de werkorder die dag op de rij *(niet toegewezen)*. Valt de dag in het verleden of heeft de medewerker die dag verlof, dan vraagt de app het eerst.
+
+Plande iemand anders de werkorder intussen, dan zegt de app dat en blijft de planning van die persoon staan.
+
+![Nog in te plannen op een telefoon: een werkorder met de klant, de omschrijving en de knop Inplannen](../images/app-kantoor-in-te-plannen.png "Nog in te plannen")
 
 ## Veelgestelde vragen
 

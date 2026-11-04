@@ -1,13 +1,13 @@
 ---
-description: "Le planning de la semaine dans l'application CleanOps : le tableau de planning par semaine pour le bureau, par collaborateur et par jour, en lecture seule."
+description: "Le planning de la semaine dans l'application CleanOps : le tableau de planning par semaine pour le bureau, par collaborateur et par jour, et planifier le travail sans date."
 ---
 
 # Planning de la semaine
 
 Sous **Planning de la semaine**, vous voyez dans l'application le [tableau de planning](../planning.fr.md) d'une semaine
 entière : qui fait quoi, quel travail n'est pas encore attribué et ce qui n'a pas été exécuté. L'écran est destiné aux
-personnes du bureau qui ont le droit sur le planning (voir [L'application pour le bureau](kantoor.fr.md)). Planifier ou
-déplacer se fait sur le tableau de planning sur l'ordinateur.
+personnes du bureau qui ont le droit sur le planning (voir [L'application pour le bureau](kantoor.fr.md)). Déplacer se fait sur le
+tableau de planning sur l'ordinateur ; le travail sans date peut aussi être [planifié ici](#encore-a-planifier).
 
 ## Ouvrir l'écran
 
@@ -51,6 +51,19 @@ Chaque ligne a à gauche une barre de couleur, dans les mêmes couleurs que le t
 
 Un jour férié figure en rouge à côté du jour. Toucher un ordre de travail l'ouvre dans [Ordres de travail](kantoor-werkorders.fr.md),
 si votre rôle a le droit sur les ordres de travail.
+
+## Encore à planifier
+
+Le travail sans date ne figure dans aucune semaine. C'est pourquoi, à partir de la version 1.3.0, la ligne **Encore à planifier** figure au-dessus de la grille, avec le nombre.
+C'est la même liste que la colonne du [tableau de planning](../planning.fr.md) : le travail ouvert sans date planifiée.
+
+Touchez la ligne pour ouvrir la liste. Si vous avez le droit **Modifier le planning**, **Planifier** figure à chaque ordre de travail. Vous choisissez le jour, la partie de la
+journée et éventuellement le collaborateur. Sans collaborateur, l'ordre figure ce jour-là sur la ligne *(non attribué)*. Si le jour est passé ou si le collaborateur est en
+congé ce jour-là, l'application le demande d'abord.
+
+Si quelqu'un d'autre a entre-temps planifié l'ordre, l'application le dit et le planning de cette personne reste en place.
+
+![Encore à planifier sur un téléphone : un ordre de travail avec le client, la description et le bouton Planifier](../images/app-kantoor-in-te-plannen-fr.png "Encore à planifier")
 
 ## Questions fréquentes
 

@@ -1,12 +1,12 @@
 ---
-description: "Werkorders in de app van CleanOps voor kantoor: zoeken op nummer, klant of adres en de fiche lezen, met de uitvoering, foto's, attest en leveringsbon."
+description: "Werkorders in de app van CleanOps voor kantoor: zoeken, de fiche lezen en een nieuwe werkorder noteren terwijl de klant aan de lijn is."
 ---
 
 # Werkorders
 
 Onder **Werkorders** zoekt u in de app een werkorder op en leest u hoe ze ervoor staat: gepland of uitgevoerd, door wie,
 met welke notities, foto's en attesten. Het scherm is er voor wie op kantoor werkt en het recht op de werkorders heeft
-(zie [De app voor kantoor](kantoor.md)). Een werkorder wijzigen doet u in [Werkorders](../werkorders.md) op de computer.
+(zie [De app voor kantoor](kantoor.md)). Een bestaande werkorder wijzigen doet u in [Werkorders](../werkorders.md) op de computer.
 
 ## Een werkorder zoeken
 
@@ -36,8 +36,39 @@ De fiche toont wat de ploeg ter plaatse ziet, en daarbij hoe het werk uitgevoerd
 
 Er staat geen knop om iets te wijzigen: de teller, het afronden en het tekenen blijven bij de medewerker die het werk doet.
 
+## Een nieuwe werkorder
+
+Hebt u een klant aan de lijn, dan noteert u het werk meteen, ook onderweg. Dit kan vanaf versie 1.3.0, met het recht **Werkorders bewerken**, en
+met het recht **Klanten bewerken** ook voor een nieuwe klant. U hebt een verbinding nodig: zonder bereik bewaart de app niets.
+
+Tik op **Nieuwe werkorder** op het **Overzicht** of de [Weekplanning](weekplanning.md). Het formulier heeft vier delen:
+
+1. **Klant.** Zoek op naam, telefoon, gemeente of klantnummer. Staat de klant er niet tussen, tik dan op **Nieuwe klant:** gevolgd
+   door wat u typte. Een naam komt in het veld Naam, een nummer in het veld **Telefoon of gsm**. Kies **Particulier** of **Bedrijf** en vul het adres in.
+   Bij een bedrijf haalt **Ophalen** de naam en het adres uit de KBO. Het btw-nummer mag leeg blijven, maar zonder nummer maakt CleanOps nog geen factuur.
+2. **Adres.** Bij een bestaande klant kiest u een van zijn adressen. Ligt de werf ergens anders, zet dan **De werf ligt op een ander adres** aan.
+3. **Werk.** De **omschrijving** komt op de factuur en telt hoogstens 35 tekens. Waarover het precies gaat, zet u in de **instructies**, die de ploeg leest.
+4. **Wanneer.** Standaard komt de werkorder bij [Nog in te plannen](weekplanning.md#nog-in-te-plannen). Met **Meteen inplannen** kiest u de dag, het tijdsdeel en eventueel de medewerker.
+
+Bestaat de klant misschien al, dan toont de app die klanten voor er iets bewaard wordt: tik op de juiste, of kies **Toch een nieuwe klant**. Tarief, btw en bedrag
+vult kantoor later aan op de computer.
+
+![Nieuwe werkorder op een telefoon: een nieuwe klant met Particulier of Bedrijf, Naam, Telefoon of gsm en het adres](../images/app-kantoor-nieuw.png "Nieuwe werkorder")
+
+## Veelgestelde vragen
+
+**Ik zie de knop Nieuwe werkorder niet.**
+Uw rol heeft het recht Werkorders bewerken niet, of u hebt een oudere versie van de app. Vraag het aan uw beheerder.
+
+**Ik zie Nieuwe klant niet.**
+Uw rol heeft het recht Klanten bewerken niet. U kunt wel een werkorder maken voor een bestaande klant.
+
+**De app zegt dat de werkorders in de vorige toepassing bijgehouden worden.**
+Zolang uw bedrijf de werkorders nog in de vorige toepassing bijhoudt, kunt u ze in de app niet aanmaken. Doe het daar.
+
 ## Zie ook
 
 - [Werkorders](../werkorders.md) op de computer
+- [Een klant aan de lijn](../planning.md#een-klant-aan-de-lijn-nieuwe-werkorder) op de computer
 - [Weekplanning in de app](weekplanning.md)
 - [De werkorder](werkorder.md), zoals de ploeg ze ziet

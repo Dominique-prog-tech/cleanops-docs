@@ -1,5 +1,5 @@
 ---
-description: "De app van CleanOps voor kantoor: de zaak onderweg opvolgen, van planning en werkorders tot facturen en afwezigheden. Enkel lezen, met de rechten van uw rol."
+description: "De app van CleanOps voor kantoor: de zaak onderweg opvolgen, van planning en werkorders tot facturen en afwezigheden, en een werkorder noteren. Met de rechten van uw rol."
 ---
 
 # De app voor kantoor
@@ -8,14 +8,17 @@ Met de app CleanOps volgt wie op kantoor werkt de zaak ook onderweg op. Is de of
 er vandaag afwezig? Staat de werkorder van vanmorgen al op uitgevoerd? U leest het in de app, met dezelfde cijfers als in
 CleanOps op de computer.
 
-De app voor kantoor is **enkel om te lezen**. Een factuur maken, een werkorder inplannen of een verlofaanvraag goedkeuren
-doet u in CleanOps op de computer.
+De app voor kantoor is **vooral om te lezen**. Eén ding kunt u er vanaf versie 1.3.0 ook doen, als uw rol het toelaat: een
+[werkorder noteren en inplannen](kantoor-werkorders.md#een-nieuwe-werkorder), bijvoorbeeld terwijl de klant aan de lijn is. Een
+factuur maken of een verlofaanvraag goedkeuren doet u in CleanOps op de computer.
 
 | Wat | Waar |
 |---|---|
 | De cijfers en lijsten van het dashboard | [Het overzicht](#het-overzicht) op deze pagina |
 | Het planbord per week | [Weekplanning](weekplanning.md) |
 | Een werkorder zoeken en openen | [Werkorders](kantoor-werkorders.md) |
+| Een nieuwe werkorder noteren | [Een nieuwe werkorder](kantoor-werkorders.md#een-nieuwe-werkorder) |
+| Werk zonder datum inplannen | [Nog in te plannen](weekplanning.md#nog-in-te-plannen) |
 | Facturen, offertes en openstaande posten | [Facturen, offertes en openstaande posten](kantoor-verkoop.md) |
 | Klanten en leveranciers, met hun saldo | [Klanten en leveranciers](kantoor-relaties.md) |
 | Peppol-documenten en aankoopfacturen | [Aankoop](kantoor-aankoop.md) |
@@ -68,8 +71,8 @@ staat alles onder elkaar.
 
 - **De geldtegels**: *vervallen bij klanten*, *gefactureerd deze maand (excl. btw)*, *ontvangen van klanten deze maand* en
   *te betalen aan leveranciers*. U ziet enkel de tegels waarvoor uw rol het recht heeft.
-- **Vandaag & werk**: *Op de planning vandaag*, *Nog niet ingepland*, *Werkorders te factureren* en *Afwezig vandaag*.
-- **Vraagt aandacht**: *Toe aan een volgende rappel*, *Offertes op te volgen*, *Cameraverslagen te maken*, *Voertuigen te
+- **Vandaag & werk**: *Op de planning vandaag*, *Nog in te plannen* (vóór versie 1.3.0: *Nog niet ingepland*), *Werkorders te factureren* en *Afwezig vandaag*.
+- **Vraagt aandacht**: *Toe aan een volgende rappel*, *Offertes op te volgen*, *Cameraverslagen te maken*, *Datum zonder medewerker* (vanaf versie 1.3.0), *Voertuigen te
   keuren* en *Vervallen posten leveranciers*. Het aantal staat in het oranje zodra er iets is, in het rood als het om
   vervallen geld gaat.
 
