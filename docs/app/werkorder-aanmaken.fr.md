@@ -13,6 +13,9 @@ c'est le bureau.
 Touchez **Nouvel ordre** en bas du [planning](planning.fr.md). Le bouton n'apparaît pas tant que le bureau tient encore
 les ordres de travail dans votre application précédente.
 
+Si vous avez aussi le droit **Modifier les ordres de travail**, le bouton ouvre à partir de la version 1.3.1 le
+[formulaire du bureau](kantoor-werkorders.fr.md#un-nouvel-ordre-de-travail). Vous y créez aussi un nouveau client.
+
 ![L'écran Nouvel ordre de travail : le client choisi Résidence Les Tilleuls avec ses adresses, la description et la remarque pour le bureau, et sous Planning le jour, la partie de la journée et le collaborateur, avec le bouton Créer l'ordre de travail](../images/app-werkorder-nieuw-fr.png "Nouvel ordre de travail"){ width="560" }
 
 ## Créer un ordre de travail

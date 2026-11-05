@@ -41,7 +41,7 @@ Er staat geen knop om iets te wijzigen: de teller, het afronden en het tekenen b
 Hebt u een klant aan de lijn, dan noteert u het werk meteen, ook onderweg. Dit kan vanaf versie 1.3.0, met het recht **Werkorders bewerken**, en
 met het recht **Klanten bewerken** ook voor een nieuwe klant. U hebt een verbinding nodig: zonder bereik bewaart de app niets.
 
-Tik op **Nieuwe werkorder** op het **Overzicht** of de [Weekplanning](weekplanning.md). Het formulier heeft vier delen:
+Tik rechtsonder op **Nieuwe werkorder**: op het **Overzicht** of de [Weekplanning](weekplanning.md), en vanaf versie 1.3.1 ook op dit scherm en, als u ook medewerker bent, op uw [planning](planning.md). Het formulier heeft vier delen:
 
 1. **Klant.** Zoek op naam, telefoon, gemeente of klantnummer. Staat de klant er niet tussen, tik dan op **Nieuwe klant:** gevolgd
    door wat u typte. Een naam komt in het veld Naam, een nummer in het veld **Telefoon of gsm**. Kies **Particulier** of **Bedrijf** en vul het adres in.

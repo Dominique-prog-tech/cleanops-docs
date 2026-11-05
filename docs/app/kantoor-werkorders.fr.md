@@ -44,7 +44,7 @@ qui fait le travail.
 Si un client est au téléphone, vous notez le travail aussitôt, même en déplacement. C'est possible à partir de la version 1.3.0, avec le droit **Modifier les ordres de
 travail**, et avec le droit **Modifier les clients** aussi pour un nouveau client. Il vous faut une connexion : sans réseau, l'application n'enregistre rien.
 
-Touchez **Nouvel ordre** sur l'**Aperçu** ou le [Planning de la semaine](weekplanning.fr.md). Le formulaire comporte quatre parties :
+Touchez **Nouvel ordre** en bas à droite : sur l'**Aperçu** ou le [Planning de la semaine](weekplanning.fr.md) et, à partir de la version 1.3.1, aussi sur cet écran et, si vous êtes également collaborateur, sur votre [planning](planning.fr.md). Le formulaire comporte quatre parties :
 
 1. **Client.** Cherchez par nom, téléphone, commune ou numéro de client. Si le client n'y figure pas, touchez **Nouveau client :** suivi de ce que vous avez tapé. Un nom
    va dans le champ Nom, un numéro dans le champ **Téléphone ou GSM**. Choisissez **Particulier** ou **Entreprise** et remplissez l'adresse. Pour une entreprise,

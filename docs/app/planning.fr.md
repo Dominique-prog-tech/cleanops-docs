@@ -57,7 +57,8 @@ Les flèches à côté de la date passent au jour précédent ou suivant, et **A
 ## Un nouvel ordre de travail
 
 Avec **Nouvel ordre** en bas, le collaborateur crée lui-même un ordre de travail, pour lui-même ou un collègue. Voir
-[Créer un ordre de travail](werkorder-aanmaken.fr.md).
+[Créer un ordre de travail](werkorder-aanmaken.fr.md). Si vous avez aussi le droit **Modifier les ordres de travail**, le bouton ouvre à partir de la version 1.3.1
+le [formulaire du bureau](kantoor-werkorders.fr.md#un-nouvel-ordre-de-travail), avec lequel vous créez aussi un nouveau client.
 
 ## Ouvrir l'ordre de travail
 

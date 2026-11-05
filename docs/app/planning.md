@@ -55,7 +55,8 @@ terug.
 ## Een nieuwe werkorder
 
 Met **Nieuwe werkorder** onderaan maakt de medewerker zelf een werkorder aan, voor zichzelf of een collega. Zie
-[Een werkorder aanmaken](werkorder-aanmaken.md).
+[Een werkorder aanmaken](werkorder-aanmaken.md). Hebt u ook het recht **Werkorders bewerken**, dan opent de knop vanaf versie 1.3.1
+het [formulier voor kantoor](kantoor-werkorders.md#een-nieuwe-werkorder), waarmee u ook een nieuwe klant aanmaakt.
 
 ## De werkorder openen
 

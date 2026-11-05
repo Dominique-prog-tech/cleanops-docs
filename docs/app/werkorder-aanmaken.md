@@ -12,6 +12,9 @@ de planning, en het kantoor ziet ze in CleanOps. Het tarief, de btw en de factur
 Tik onderaan de [planning](planning.md) op **Nieuwe werkorder**. De knop staat er niet zolang het kantoor de werkorders
 nog in uw vorige toepassing bijhoudt.
 
+Hebt u ook het recht **Werkorders bewerken**, dan opent de knop vanaf versie 1.3.1 het
+[formulier voor kantoor](kantoor-werkorders.md#een-nieuwe-werkorder). Daarmee maakt u ook een nieuwe klant aan.
+
 ![Het scherm Nieuwe werkorder: de gekozen klant Tuincentrum De Linde met zijn adressen, de omschrijving en de opmerking voor het kantoor, en onder Planning de dag, het tijdsdeel en de medewerker, met de knop Werkorder aanmaken](../images/app-werkorder-nieuw.png "Nieuwe werkorder"){ width="560" }
 
 ## Een werkorder aanmaken
