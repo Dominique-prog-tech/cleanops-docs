@@ -65,7 +65,8 @@ materiaallevering.
 3. Vul in het blok **Lijnen** de lijnen in. Een **Tarief** kiezen vult de omschrijving, de eenheid, de prijs en de btw-code in, en zet de
    **Tekst op de factuur** van het tarief in het vak **Tekst onder de lijn**; u kunt ze daarna aanpassen. Wat in dat vak staat,
    komt op de factuur onder de lijn. Een omschrijving langer dan 35 tekens komt daar ook volledig te staan. Met het menu **⋯** rechts
-   dupliceert of verwijdert u een lijn, met **+ Regel toevoegen** komt er een bij.
+   zet u een lijn **Omhoog** of **Omlaag**, dupliceert of verwijdert u ze; met **+ Regel toevoegen** komt er een bij. In die volgorde
+   komen de lijnen op de factuur.
 4. Onderaan ziet u het totaal zonder btw, de btw en het totaal met btw, zoals ze geboekt worden.
 5. Klik op **Factuur boeken**. CleanOps vraagt het nog eens, met het bedrag. De factuur krijgt het volgende nummer, een vervaldag
    volgens de betalingstermijn van de klant en een gestructureerde mededeling, en komt in [Openstaande posten](openstaande-posten.md).
@@ -96,7 +97,7 @@ Staat het document nog open, dan geeft **Betaling ingeven…** er meteen een bet
 **Afdrukvoorbeeld** toont de factuur als PDF, in de taal van de factuur. **Downloaden** bewaart ze; met het printerteken in de kijker
 drukt u ze af. Is de factuur al verstuurd, dan vraagt CleanOps eerst of u ze toch wilt openen.
 
-![Het Afdrukvoorbeeld van een factuur met het briefhoofd, de lijnen, de btw, de totalen en de gestructureerde mededeling](images/factuur-afdruk.png "Afdruk")
+![Het Afdrukvoorbeeld van een factuur met het briefhoofd, de lijnen, de btw, de totalen, de gestructureerde mededeling en de betaal-QR](images/factuur-afdruk.png "Afdruk")
 
 Op de factuur staan:
 
@@ -106,6 +107,9 @@ Op de factuur staan:
 - de klant met zijn adres en btw-nummer;
 - de koptekst, de lijnen, de btw per percentage en de totalen;
 - op een factuur de vraag om te betalen met de gestructureerde mededeling — niet op een creditnota;
+- daarnaast een **betaal-QR**: de klant scant hem met zijn bankapp en de overschrijving staat ingevuld, met het bedrag en de mededeling.
+  Hij staat erop zolang er op de factuur nog niets betaald is en de [bedrijfsfiche](beheer/bedrijfsfiche.md) een geldig IBAN draagt.
+  Een factuur die ter plaatse betaald is, een creditnota en de kopie achter een rappelbrief krijgen er geen;
 - de slottekst en de wettelijke vermeldingen: bij 6 % de attestzin, bij 0 % de verlegging naar de medecontractant;
 - op een eigen blad achteraan de **algemene voorwaarden** uit de [bedrijfsfiche](beheer/bedrijfsfiche.md#algemene-voorwaarden),
   in de taal van de factuur — als ze daar ingevuld zijn. Een creditnota krijgt dat blad niet, en een rappelbrief ook niet.
@@ -229,7 +233,7 @@ opent, met de factuur erin, in drie blokken: **Factuur**, **Werkorders** en **Vr
 - de **werkorders** op de factuur. Met het kruisje haalt u er een af; die werkorder staat daarna weer in
   [Facturatie](facturatie.md). Met **+ Werkorders toevoegen…** kiest u te factureren werkorders van dezelfde klant, uitgevoerd tot
   de factuurdatum;
-- de **vrije lijnen**, die u aanpast, toevoegt of verwijdert zoals bij een nieuwe factuur;
+- de **vrije lijnen**, die u aanpast, verplaatst, toevoegt of verwijdert zoals bij een nieuwe factuur;
 - de klantreferentie, de koptekst en de slottekst.
 
 ![Factuur 20260002 heropenen voor Dubois Marie: de Werkorders met een kruisje om ze weg te halen, een vrije lijn erbij, en de knop Wijzigingen boeken](images/factuur-heropenen.png "Heropenen")

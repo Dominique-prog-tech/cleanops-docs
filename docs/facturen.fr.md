@@ -69,7 +69,8 @@ déplacement ou une livraison de matériel.
 3. Dans le bloc **Lignes**, remplissez les lignes. Choisir un **Tarif** remplit la description, l'unité, le prix et le code TVA, et place le
    **Texte sur la facture** du tarif dans le champ **Texte sous la ligne** ; vous pouvez ensuite les adapter. Ce qui figure dans ce
    champ est imprimé sur la facture, sous la ligne. Une description de plus de 35 caractères y figure aussi en entier. Le menu **⋯**
-   à droite duplique ou supprime une ligne ; **+ Ajouter une ligne** en ajoute une.
+   à droite déplace une ligne (**Monter** ou **Descendre**), la duplique ou la supprime ; **+ Ajouter une ligne** en ajoute une. Les
+   lignes figurent sur la facture dans cet ordre.
 4. En bas figurent le total hors TVA, la TVA et le total TVA comprise, tels qu'ils seront comptabilisés.
 5. Cliquez sur **Comptabiliser la facture**. CleanOps vous le demande encore une fois, avec le montant. La facture reçoit le numéro
    suivant, une échéance selon le délai de paiement du client et une communication structurée, et figure dans les
@@ -102,7 +103,7 @@ Si le document est encore ouvert, **Saisir un paiement…** y saisit directement
 d'imprimante de la visionneuse l'imprime. Si la facture a déjà été envoyée, CleanOps vous demande d'abord si vous voulez quand
 même l'ouvrir.
 
-![L'Aperçu avant impression d'une facture avec l'en-tête, les lignes, la TVA, les totaux et la communication structurée](images/factuur-afdruk-fr.png "Impression")
+![L'Aperçu avant impression d'une facture avec l'en-tête, les lignes, la TVA, les totaux, la communication structurée et le QR de paiement](images/factuur-afdruk-fr.png "Impression")
 
 Sur la facture figurent :
 
@@ -112,6 +113,9 @@ Sur la facture figurent :
 - le client avec son adresse et son numéro de TVA ;
 - le texte d'en-tête, les lignes, la TVA par pourcentage et les totaux ;
 - sur une facture, la demande de paiement avec la communication structurée — pas sur une note de crédit ;
+- à côté, un **QR de paiement** : le client le scanne avec son app bancaire et le virement est rempli, avec le montant et la communication.
+  Il figure sur la facture tant que rien n'a été payé et que la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md) porte un IBAN valide.
+  Une facture payée sur place, une note de crédit et la copie jointe à un rappel n'en reçoivent pas ;
 - le texte de pied de page et les mentions légales : à 6 %, la phrase d'attestation ; à 0 %, l'autoliquidation par le
   cocontractant ;
 - sur une page à part à la fin, les **conditions générales** de la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#conditions-generales),
@@ -243,7 +247,7 @@ facture s'ouvre, avec la facture, en trois blocs : **Facture**, **Ordres de trav
 - les **Ordres de travail** de la facture. La croix en retire un ; cet ordre figure ensuite à nouveau dans
   [Facturation](facturatie.fr.md). **+ Ajouter des ordres de travail…** choisit des ordres à facturer du même client, exécutés au
   plus tard à la date de la facture ;
-- les **Lignes libres**, que vous adaptez, ajoutez ou supprimez comme pour une nouvelle facture ;
+- les **Lignes libres**, que vous adaptez, déplacez, ajoutez ou supprimez comme pour une nouvelle facture ;
 - la référence du client, le texte d'en-tête et le texte de pied de page.
 
 ![Rouvrir la facture 20260002 de Dubois Marie : les Ordres de travail avec une croix pour les retirer, une ligne libre ajoutée, et le bouton Comptabiliser les modifications](images/factuur-heropenen-fr.png "Rouvrir")
