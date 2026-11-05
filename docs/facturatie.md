@@ -7,7 +7,7 @@ description: "Factureren in CleanOps: per klant het uitgevoerde werk kiezen en b
 Op Facturatie maakt u facturen van het uitgevoerde werk. U ziet per klant welke werkorders te factureren zijn, kiest wat er op
 de factuur komt en boekt ze. De factuur krijgt meteen haar nummer, vervaldag en gestructureerde mededeling.
 
-![De lijst Te factureren van de demo: per klant de kolommen Werkorders, Netto totaal en Oudste uitvoering, met de knop Factureren…](images/facturatie-lijst.png "Facturatie")
+![De lijst Te factureren van de demo: links per klant de kolommen Aantal en Netto totaal met de knop Factureren…, rechts de werkorders van de gekozen klant](images/facturatie-lijst.png "Facturatie")
 
 ## Het scherm openen
 
@@ -16,15 +16,26 @@ Klik links in het menu, onder **Verkoop**, op **Facturatie**. U ziet het met de 
 
 ## Wat er te factureren is
 
-De lijst toont per klant de werkorders met de status **Te factureren**: werk met een uitvoeringsdatum dat nog niet op een factuur
-staat. Werk met het vinkje **Contant betaald, niet factureren** staat er niet in. Werk met een betaalwijze (ook *Cash*) wél.
+Het scherm toont twee lijsten. Links staan per klant de werkorders met de status **Te factureren**: werk met een uitvoeringsdatum dat
+nog niet op een factuur staat. Werk met het vinkje **Contant betaald, niet factureren** staat er niet in. Werk met een betaalwijze (ook
+*Cash*) wél. Rechts staan de werkorders van de klant die u links aanklikt.
 
 | Kolom | Wat erin staat |
 |---|---|
-| Klantnr, Klant | Voor wie. Dubbelklik om de klantfiche te openen. |
-| Werkorders | Hoeveel werkorders er voor die klant te factureren zijn. |
+| Klant | Voor wie. Dubbelklik om de klantfiche te openen. |
+| Aantal | Hoeveel werkorders er voor die klant te factureren zijn. |
 | Netto totaal | Hun bedrag zonder btw. |
-| Oudste uitvoering | Het werk dat het langst wacht. |
+
+Met de kolomkiezer toont u ook het **Klantnr** en de **Oudste uitvoering**: het werk dat het langst wacht.
+
+### De werkorders van een klant
+
+Klik links op een klant, of ga met de pijltjestoetsen door de lijst. Rechts ziet u meteen zijn werkorders met het nummer, de
+uitvoeringsdatum, de omschrijving, de btw-code en het bedrag. Onder de omschrijving staan dezelfde signalen als in het venster
+Factureren, bijvoorbeeld **attest ontbreekt** of **geen bedrag**. Met de kolomkiezer toont u ook het **aantal** en de **eenheidsprijs**.
+
+Klik op het nummer, of dubbelklik op de rij, om de werkorder te openen en aan te vullen. Met **← Facturatie** komt u terug bij dezelfde
+klant en dezelfde datum, met de nieuwe gegevens. Zonder toegang tot de werkorders ziet u het nummer als gewone tekst.
 
 ### Factureren tot en met
 

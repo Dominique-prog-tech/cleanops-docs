@@ -8,7 +8,7 @@ Sur Facturation, vous facturez le travail exécuté. Vous voyez par client les o
 qui va sur la facture et vous la comptabilisez. La facture reçoit immédiatement son numéro, son échéance et sa communication
 structurée.
 
-![La liste À facturer de la démo : par client les colonnes Ordres de travail, Total net et Exécution la plus ancienne, avec le bouton Facturer…](images/facturatie-lijst-fr.png "Facturation")
+![La liste À facturer de la démo : à gauche par client les colonnes Ordres et Total net avec le bouton Facturer…, à droite les ordres du client choisi](images/facturatie-lijst-fr.png "Facturation")
 
 ## Ouvrir l'écran
 
@@ -18,15 +18,26 @@ l'a.
 
 ## Ce qu'il y a à facturer
 
-La liste affiche par client les ordres de travail au statut **À facturer** : du travail avec une date d'exécution qui ne figure
+L'écran affiche deux listes. À gauche, par client, les ordres de travail au statut **À facturer** : du travail avec une date d'exécution qui ne figure
 pas encore sur une facture. Le travail coché **Payé en espèces, sans facture** n'y figure pas. Le travail avec un mode de paiement (même *Espèces*) bien.
+À droite, les ordres de travail du client sur lequel vous cliquez à gauche.
 
 | Colonne | Contenu |
 |---|---|
-| N° client, Client | Pour qui. Double-cliquez pour ouvrir la fiche client. |
-| Ordres de travail | Le nombre d'ordres de travail à facturer pour ce client. |
+| Client | Pour qui. Double-cliquez pour ouvrir la fiche client. |
+| Ordres | Le nombre d'ordres de travail à facturer pour ce client. |
 | Total net | Leur montant hors TVA. |
-| Exécution la plus ancienne | Le travail qui attend depuis le plus longtemps. |
+
+Le sélecteur de colonnes affiche aussi le **N° client** et l'**Exécution la plus ancienne** : le travail qui attend depuis le plus longtemps.
+
+### Les ordres de travail d'un client
+
+Cliquez à gauche sur un client, ou parcourez la liste avec les flèches du clavier. À droite, vous voyez aussitôt ses ordres de travail avec le numéro,
+la date d'exécution, la description, le code TVA et le montant. Sous la description figurent les mêmes signaux que dans la fenêtre
+Facturer, par exemple **attestation manquante** ou **sans montant**. Le sélecteur de colonnes affiche aussi la **quantité** et le **prix unitaire**.
+
+Cliquez sur le numéro, ou double-cliquez sur la ligne, pour ouvrir l'ordre de travail et le compléter. **← Facturation** vous ramène au même
+client et à la même date, avec les nouvelles données. Sans accès aux ordres de travail, le numéro reste du texte simple.
 
 ### Facturer jusqu'au
 
