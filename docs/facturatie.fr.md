@@ -79,7 +79,7 @@ comptabilisé.
 
 ### Ce qui se passe à la comptabilisation
 
-- Chaque ordre de travail devient une ligne, avec le tarif, la quantité et le prix de l'ordre de travail.
+- Chaque ordre de travail devient une ligne, avec le tarif, la quantité et le prix de l'ordre de travail. S'il porte des [lignes supplémentaires](werkorders.fr.md#lignes-supplementaires), chacune devient une ligne à part en dessous.
 - La **TVA** est additionnée par code TVA.
 - L'**échéance** découle du délai de paiement du client. Une note de crédit échoit à sa propre date.
 - La facture reçoit une **communication structurée** et un poste ouvert.

@@ -74,7 +74,7 @@ zegt het venster dat bovenaan en wordt er niets geboekt.
 
 ### Wat er bij het boeken gebeurt
 
-- Elke werkorder wordt een lijn, met het tarief, het aantal en de prijs van de werkorder.
+- Elke werkorder wordt een lijn, met het tarief, het aantal en de prijs van de werkorder. Heeft ze [bijkomende lijnen](werkorders.md#bijkomende-lijnen), dan wordt elk daarvan een eigen lijn eronder.
 - De **btw** wordt per btw-code opgeteld.
 - De **vervaldag** volgt uit de betalingstermijn van de klant. Een creditnota vervalt op haar eigen datum.
 - De factuur krijgt een **gestructureerde mededeling** en een openstaande post.

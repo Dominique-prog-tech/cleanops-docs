@@ -183,14 +183,37 @@ Le bloc **Facturation**, en bas de la fiche, indique ce qui sera facturé.
 | Montant | Quantité × prix unitaire, calculé par CleanOps. Le saisir à la main n'est possible que si la quantité et le prix unitaire sont tous deux à zéro, par exemple pour un forfait. |
 | Code TVA | Le code TVA de l'ordre. |
 | Mode de paiement | Comment le client paie : Payconiq, espèces, ultérieurement … (voir [Modes de paiement](beheer/betaalwijzen.fr.md)). L'ordre est facturé ; si le mode est payé sur place, la facture est directement payée. |
-| Montant du terrain (TVAC) | Ce que le client a payé sur place, tel que le chauffeur le note. Il n'est **pas** facturé automatiquement : **Reprendre** le convertit en quantité × un nouveau prix unitaire (HTVA, avec le code TVA de l'ordre) ; la quantité reste, sans quantité elle devient 1. S'il reste un cent de différence dû à l'arrondi du prix unitaire, la fiche l'indique. Enregistrez ensuite. Même après la facturation, vous pouvez corriger le montant ; le reprendre n'est alors plus possible. Si le client a signé le bon de livraison, le montant est figé (voir [Le bon de livraison](#le-bon-de-livraison)). |
+| Montant du terrain (TVAC) | Ce que le client a payé sur place, tel que le chauffeur le note. Il n'est **pas** facturé automatiquement : **Reprendre** le convertit en quantité × un nouveau prix unitaire (HTVA, avec le code TVA de l'ordre) ; la quantité reste, sans quantité elle devient 1. S'il reste un cent de différence dû à l'arrondi du prix unitaire, la fiche l'indique. Enregistrez ensuite. Même après la facturation, vous pouvez corriger le montant ; le reprendre n'est alors plus possible. Si le client a signé le bon de livraison, le montant est figé (voir [Le bon de livraison](#le-bon-de-livraison)). Si l'ordre porte des [lignes supplémentaires](#lignes-supplementaires), le reprendre n'est pas possible. |
 | Payé en espèces, sans facture | Vient de votre application précédente : le client a payé en espèces et l'ordre ne passe **pas** en facturation. Différent du mode de paiement *Espèces*. |
 | Commentaire facture | Un texte qui figure sur la facture pour cet ordre. |
 
 À l'enregistrement, CleanOps refuse deux choses : une unité sans quantité, et un prix unitaire négatif.
 
-S'il manque un montant ou un code TVA, la fiche affiche **Pas encore facturable** avec ce qui manque. Vous pouvez
-enregistrer l'ordre normalement, mais il n'arrive sur une facture que lorsque les deux sont remplis.
+#### Lignes supplémentaires
+
+S'il faut plus d'une ligne sur la facture, par exemple un déplacement ou une inspection caméra à côté du travail habituel, vous
+l'ajoutez sous **Lignes supplémentaires**, avec **+ Ajouter une ligne**. Les champs ci-dessus forment la première ligne ; chaque
+ligne supplémentaire vient en dessous, avec son numéro.
+
+| Champ | Explication |
+|---|---|
+| Tarif | Choisissez un tarif, et CleanOps remplit la description, l'unité, le prix unitaire et le code TVA. La quantité reste. |
+| Description | Texte libre, 150 caractères au plus. Elle figure sur la facture ; sans description, c'est le texte du tarif qui y figure. |
+| Quantité, Unité, P. unitaire, Montant, Code TVA | Comme pour la première ligne. CleanOps calcule le montant ; à la main seulement si la quantité et le prix unitaire sont à zéro. |
+
+Avec le menu **⋯** à droite, vous supprimez une ligne. Si la ligne ne porte pas encore de tarif et que vous pouvez gérer les
+tarifs, **Enregistrer comme tarif…** en fait tout de suite un tarif : vous choisissez un code et le reste vient de la ligne. Le
+tarif figure ensuite dans chaque liste de choix.
+
+Sous les lignes figure le **Total hors TVA** de tout l'ordre. Ce montant figure aussi en haut de la fiche, dans les listes, dans
+[Facturation](facturatie.fr.md) et sur le bon de travail. Vous enregistrez les lignes avec **Enregistrer**, avec le reste de la
+fiche. Sur la facture, chaque ligne devient une ligne de facture à part, sous la première, avec son propre code TVA.
+
+Les lignes supplémentaires sont figées dès que l'ordre est facturé ou que le client a signé le bon de livraison. Si vos ordres
+viennent encore de votre application précédente, vous ne pouvez pas y ajouter de lignes supplémentaires.
+
+S'il manque un montant ou un code TVA, aussi sur une ligne supplémentaire, la fiche affiche **Pas encore facturable** avec ce qui
+manque. Vous pouvez enregistrer l'ordre normalement, mais il n'arrive sur une facture que lorsque tout est rempli.
 
 Une fois l'ordre facturé, ces données sont figées. S'il faut y changer quelque chose, créditez la facture.
 Si la facture a été créditée, la fiche l'indique sous le numéro de facture : *créditée par la note de crédit …*, avec un lien

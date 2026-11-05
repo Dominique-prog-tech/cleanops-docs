@@ -175,14 +175,37 @@ Het blok **Facturatie** onderaan de fiche zegt wat er gefactureerd wordt.
 | Bedrag | Aantal × eenheidsprijs, door CleanOps gerekend. Met de hand invullen kan enkel als aantal en eenheidsprijs allebei nul zijn, bijvoorbeeld voor een forfait. |
 | Btw-code | De btw-code van de werkorder. |
 | Betaalwijze | Hoe de klant betaalt: Payconiq, cash, achteraf … (zie [Betaalwijzen](beheer/betaalwijzen.md)). De werkorder wordt gefactureerd; is de betaalwijze ter plaatse betaald, dan staat de factuur meteen betaald. |
-| Bedrag uit het veld (incl. btw) | Wat de klant ter plaatse betaalde, zoals de chauffeur het noteert. Het wordt **niet** vanzelf gefactureerd: met **Overnemen** zet CleanOps het om naar het aantal × een nieuwe eenheidsprijs (excl. btw, met de btw-code van de werkorder); het aantal blijft staan, zonder aantal wordt het 1. Blijft er door de afronding van de eenheidsprijs een cent verschil, dan zegt de fiche dat. Bewaar daarna. Ook na de facturatie kunt u het bedrag nog verbeteren; overnemen kan dan niet meer. Tekende de klant de leveringsbon, dan ligt het bedrag vast (zie [De leveringsbon](#de-leveringsbon)). |
+| Bedrag uit het veld (incl. btw) | Wat de klant ter plaatse betaalde, zoals de chauffeur het noteert. Het wordt **niet** vanzelf gefactureerd: met **Overnemen** zet CleanOps het om naar het aantal × een nieuwe eenheidsprijs (excl. btw, met de btw-code van de werkorder); het aantal blijft staan, zonder aantal wordt het 1. Blijft er door de afronding van de eenheidsprijs een cent verschil, dan zegt de fiche dat. Bewaar daarna. Ook na de facturatie kunt u het bedrag nog verbeteren; overnemen kan dan niet meer. Tekende de klant de leveringsbon, dan ligt het bedrag vast (zie [De leveringsbon](#de-leveringsbon)). Heeft de werkorder [bijkomende lijnen](#bijkomende-lijnen), dan kan overnemen niet. |
 | Contant betaald, niet factureren | Uit uw vorige toepassing: de klant betaalde contant en de werkorder gaat **niet** naar de facturatie. Iets anders dan de betaalwijze *Cash*. |
 | Factuuropmerking | Een tekst die op de factuur bij deze werkorder komt. |
 
 Bij het bewaren weigert CleanOps twee dingen: een eenheid zonder aantal, en een negatieve eenheidsprijs.
 
-Ontbreekt er een bedrag of een btw-code, dan staat er **Nog niet te factureren** met wat er ontbreekt. U kunt de
-werkorder gewoon bewaren, maar ze komt pas op een factuur als beide ingevuld zijn.
+#### Bijkomende lijnen
+
+Moet er meer dan één lijn op de factuur, bijvoorbeeld een verplaatsing of een camera-inspectie naast het gewone werk, dan voegt
+u die toe onder **Bijkomende lijnen**, met **+ Lijn toevoegen**. De velden hierboven zijn de eerste lijn; elke bijkomende lijn
+komt eronder, met haar nummer.
+
+| Veld | Toelichting |
+|---|---|
+| Tarief | Kies een tarief, en CleanOps vult de omschrijving, de eenheid, de eenheidsprijs en de btw-code in. Het aantal blijft staan. |
+| Omschrijving | Vrije tekst, hoogstens 150 tekens. Ze komt op de factuur; zonder omschrijving komt de tekst van het tarief er. |
+| Aantal, Eenheid, E.prijs, Bedrag, Btw-code | Zoals bij de eerste lijn. Het bedrag rekent CleanOps; met de hand enkel als aantal en eenheidsprijs nul zijn. |
+
+Met het menu **⋯** rechts verwijdert u een lijn. Staat er nog geen tarief op de lijn en mag u tarieven beheren, dan maakt
+**Bewaren als tarief…** er meteen een tarief van: u kiest een code en de rest komt van de lijn. Daarna staat het tarief in elke
+keuzelijst.
+
+Onder de lijnen staat het **Totaal zonder btw** van de hele werkorder. Dat bedrag staat ook bovenaan de fiche, in de lijsten, bij
+[Facturatie](facturatie.md) en op de werkbon. U bewaart de lijnen met **Bewaren**, samen met de rest van de fiche. Op de factuur
+wordt elke lijn een eigen factuurlijn, onder de eerste, met haar eigen btw-code.
+
+De bijkomende lijnen liggen vast zodra de werkorder gefactureerd is of de klant de leveringsbon tekende. Komen uw werkorders nog
+uit uw vorige toepassing, dan kunnen er geen bijkomende lijnen bij.
+
+Ontbreekt er een bedrag of een btw-code, ook op een bijkomende lijn, dan staat er **Nog niet te factureren** met wat er
+ontbreekt. U kunt de werkorder gewoon bewaren, maar ze komt pas op een factuur als alles ingevuld is.
 
 Is de werkorder gefactureerd, dan liggen deze gegevens vast. Moet er iets aan veranderen, crediteer dan de factuur.
 Is de factuur gecrediteerd, dan staat dat onder het factuurnummer op de fiche: *gecrediteerd met creditnota …*, met een link
