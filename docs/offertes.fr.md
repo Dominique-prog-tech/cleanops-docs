@@ -82,6 +82,7 @@ Chaque ligne est une partie de l'offre.
 - Choisissez un **Code TVA**. Il est obligatoire ; le pourcentage vient du code TVA.
 - Le bouton **⋯** au bout de la ligne ouvre un menu : **Monter** et **Descendre** déplacent la ligne, **Dupliquer la
   ligne** en fait une copie en dessous, **Supprimer la ligne** la supprime.
+- Si la ligne ne porte pas encore de tarif et que vous pouvez gérer les tarifs, **Enregistrer comme tarif…** en fait tout de suite un tarif : vous choisissez un code et le reste vient de la ligne.
 - Dans le même menu, **Description** ouvre la **description détaillée** de la ligne : un texte plus long qui figure sur le
   devis et sur l'ordre de travail. Le libellé indique s'il y en a déjà une : *ajouter*, *afficher* ou *masquer*.
 

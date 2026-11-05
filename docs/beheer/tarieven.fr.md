@@ -6,7 +6,8 @@ description: "Tarifs dans CleanOps : vos codes de facturation avec description, 
 
 Vos codes de facturation : chaque tarif porte une description, une unité, un prix unitaire et un code TVA.
 Si vous choisissez un tarif sur une ligne de devis, il complète ces champs pour vous. Sur cet écran, vous créez
-des tarifs, vous les modifiez et vous les archivez.
+des tarifs, vous les modifiez et vous les archivez. Un nouveau tarif peut aussi se créer depuis une ligne de [facture](../facturen.fr.md) ou de
+[devis](../offertes.fr.md), avec **Enregistrer comme tarif…** dans le menu **⋯** de la ligne. Il est alors créé dans la langue du client.
 
 ![La liste avec les colonnes Code, Description, Unité, Prix unitaire et Code TVA, le bouton Nouveau tarif et le champ de recherche](../images/tarieven-lijst-fr.png "Tarifs")
 

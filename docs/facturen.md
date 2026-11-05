@@ -66,7 +66,7 @@ materiaallevering.
    **Tekst op de factuur** van het tarief in het vak **Tekst onder de lijn**; u kunt ze daarna aanpassen. Wat in dat vak staat,
    komt op de factuur onder de lijn. Een omschrijving langer dan 35 tekens komt daar ook volledig te staan. Met het menu **⋯** rechts
    zet u een lijn **Omhoog** of **Omlaag**, dupliceert of verwijdert u ze; met **+ Regel toevoegen** komt er een bij. In die volgorde
-   komen de lijnen op de factuur.
+   komen de lijnen op de factuur. Staat er nog geen tarief op de lijn en mag u tarieven beheren, dan maakt **Bewaren als tarief…** er meteen een tarief van: u kiest een code en de rest komt van de lijn.
 4. Onderaan ziet u het totaal zonder btw, de btw en het totaal met btw, zoals ze geboekt worden.
 5. Klik op **Factuur boeken**. CleanOps vraagt het nog eens, met het bedrag. De factuur krijgt het volgende nummer, een vervaldag
    volgens de betalingstermijn van de klant en een gestructureerde mededeling, en komt in [Openstaande posten](openstaande-posten.md).

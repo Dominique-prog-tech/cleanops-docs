@@ -6,7 +6,8 @@ description: "Tarieven in CleanOps: uw facturatiecodes met omschrijving, eenheid
 
 Uw facturatiecodes: elk tarief draagt een omschrijving, een eenheid, een eenheidsprijs en een btw-code.
 Kiest u een tarief op een offertelijn, dan vult het die velden voor u in. Op dit scherm maakt u tarieven aan,
-past u ze aan en archiveert u ze.
+past u ze aan en archiveert u ze. Een nieuw tarief kan ook vanop een lijn van een [factuur](../facturen.md#een-nieuwe-factuur) of een
+[offerte](../offertes.md), met **Bewaren als tarief…** in het menu **⋯** van de lijn. Het komt dan in de taal van de klant.
 
 ![De lijst met de kolommen Code, Omschrijving, Eenheid, Eenheidsprijs en Btw-code, de knop Nieuw tarief en het zoekveld](../images/tarieven-lijst.png "Tarieven")
 

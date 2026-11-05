@@ -81,6 +81,7 @@ Elke lijn is een onderdeel van het aanbod.
 - Kies een **Btw-code**. Die is verplicht; het percentage komt uit de btw-code.
 - De knop **⋯** achteraan de lijn opent een menu: **Omhoog** en **Omlaag** verschuiven de lijn, **Regel dupliceren** maakt
   er een kopie van eronder, **Regel verwijderen** haalt ze weg.
+- Staat er nog geen tarief op de lijn en mag u tarieven beheren, dan maakt **Bewaren als tarief…** er meteen een tarief van: u kiest een code en de rest komt van de lijn.
 - In hetzelfde menu opent **Beschrijving** de **beschrijving** van de lijn: een langere tekst die op de offerte en op de
   werkorder komt. Het label zegt of er al een is: *toevoegen*, *tonen* of *verbergen*.
 
