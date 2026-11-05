@@ -135,7 +135,7 @@ Dans une journée, les ordres d'un collaborateur figurent dans l'ordre où ils s
 - **ce qui est placé à la main** (⇅) reste à l'endroit où le planificateur l'a mis. Un nouvel ordre vient après le
   dernier ordre placé à la main dont la partie de journée est plus tôt ou la même.
 
-Vous choisissez la partie de journée sur la [fiche de l'ordre de travail](werkorders.fr.md#planification-et-execution).
+Vous choisissez la partie de journée sur la [fiche de l'ordre de travail](werkorders.fr.md#planification-et-execution). Vous modifiez aussi l'ordre d'une journée dans l'[application](app/weekplanning.fr.md#modifier-lordre-dune-journee).
 
 ### Déplacer du travail
 

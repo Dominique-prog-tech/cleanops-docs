@@ -6,8 +6,8 @@ description: "Le planning de la semaine dans l'application CleanOps pour le bure
 
 Sous **Planning de la semaine**, vous voyez dans l'application le [tableau de planning](../planning.fr.md) d'une semaine
 entière : qui fait quoi, quel travail n'est pas encore attribué et ce qui n'a pas été exécuté. L'écran est destiné aux
-personnes du bureau qui ont le droit sur le planning (voir [L'application pour le bureau](kantoor.fr.md)). Déplacer se fait sur le
-tableau de planning sur l'ordinateur ; le travail sans date peut aussi être [planifié ici](#encore-a-planifier).
+personnes du bureau qui ont le droit sur le planning (voir [L'application pour le bureau](kantoor.fr.md)). Déplacer vers un autre jour ou un autre collaborateur se fait sur le
+tableau de planning sur l'ordinateur. Ici, vous modifiez l'[ordre d'une journée](#modifier-lordre-dune-journee) et vous pouvez [planifier](#encore-a-planifier) le travail sans date.
 
 ## Ouvrir l'écran
 
@@ -21,9 +21,16 @@ semaine en cours.
 En haut figure la semaine, par exemple *Semaine 45 · 2 nov. – 8 nov.*. Avec les flèches, vous passez à la **semaine
 précédente** ou à la **semaine suivante** ; avec **Cette semaine** en haut à droite, vous revenez à la semaine en cours.
 
+## Voir un seul collaborateur
+
+Sous la semaine figure, à partir de la version 1.3.2, la liste **Collaborateur**. Elle est sur **Tout le monde** à l'ouverture de l'écran. Si vous choisissez un nom, vous ne voyez que le
+travail de ce collaborateur, et les compteurs ne comptent que ce travail. Avec *(non attribué)*, vous voyez le travail qui n'est encore chez personne.
+
+La liste contient les collaborateurs qui ont quelque chose cette semaine. Votre choix reste en place si vous passez à une autre semaine.
+
 ## Les compteurs
 
-Sous la semaine figurent quatre compteurs pour toute la semaine :
+Sous la semaine figurent quatre compteurs pour toute la semaine, ou pour le collaborateur que vous avez choisi :
 
 | Compteur | Signification |
 |---|---|
@@ -52,6 +59,19 @@ Chaque ligne a à gauche une barre de couleur, dans les mêmes couleurs que le t
 Un jour férié figure en rouge à côté du jour. Toucher un ordre de travail l'ouvre dans [Ordres de travail](kantoor-werkorders.fr.md),
 si votre rôle a le droit sur les ordres de travail.
 
+## Modifier l'ordre d'une journée
+
+À partir de la version 1.3.2, vous modifiez l'ordre d'une journée aussi dans l'application, sur le téléphone et sur la tablette. Vous avez besoin pour cela du droit **Modifier le planning**.
+
+1. Cherchez le jour et le collaborateur. Une carte que vous pouvez déplacer porte à droite une poignée à points.
+2. Maintenez la carte enfoncée un instant jusqu'à ce qu'elle se détache.
+3. Faites-la glisser vers sa nouvelle place et relâchez.
+
+Le nouvel ordre figure aussitôt aussi sur le [tableau de planning](../planning.fr.md#lordre-dans-une-journee) et dans le [planning](planning.fr.md) du collaborateur.
+
+Cela fonctionne dans la même journée et pour le même collaborateur. Déplacer vers un autre jour ou un autre collaborateur se fait sur le tableau de planning sur l'ordinateur.
+Si quelqu'un a modifié le planning entre-temps, l'application le dit et affiche ce qui figure maintenant.
+
 ## Encore à planifier
 
 Le travail sans date ne figure dans aucune semaine. C'est pourquoi, à partir de la version 1.3.0, la ligne **Encore à planifier** figure au-dessus de la grille, avec le nombre.
@@ -73,6 +93,10 @@ Il n'a ni travail, ni congé, ni bloc cette semaine. Sur le tableau de planning 
 **Il est écrit : *Les jours fériés n'ont pas pu être récupérés*.**
 CleanOps n'a pas pu lire les jours fériés pour le moment. Le planning est correct, mais un jour férié peut manquer.
 Actualisez l'écran plus tard en le tirant vers le bas.
+
+**Une carte n'a pas de poignée.**
+Vous n'avez pas le droit **Modifier le planning**, ce collaborateur n'a qu'un seul ordre ce jour-là, ou la carte est du travail exécuté, un congé ou un bloc : ceux-ci restent en place.
+La ligne *(non attribué)* n'a pas de poignée non plus, parce qu'une place vaut par collaborateur.
 
 ## Voir aussi
 

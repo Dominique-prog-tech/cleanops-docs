@@ -131,7 +131,7 @@ Binnen een dag staan de werkorders van een medewerker in de volgorde waarin ze a
 - **wat met de hand geplaatst is** (⇅), blijft op de plaats waar de planner het zette. Een nieuwe werkorder komt na
   de laatste handmatig geplaatste met een vroeger of hetzelfde tijdsdeel.
 
-Het tijdsdeel kiest u op de [werkorderfiche](werkorders.md#planning-en-uitvoering).
+Het tijdsdeel kiest u op de [werkorderfiche](werkorders.md#planning-en-uitvoering). De volgorde van een dag past u ook aan in de [app](app/weekplanning.md#de-volgorde-van-een-dag-aanpassen).
 
 ### Werk verplaatsen
 

@@ -6,7 +6,7 @@ description: "De weekplanning in de app van CleanOps: het planbord per week voor
 
 Onder **Weekplanning** ziet u in de app het [planbord](../planning.md) van een hele week: wie wat doet, welk werk nog niet
 toegewezen is en wat niet uitgevoerd werd. Het scherm is er voor wie op kantoor werkt en het recht op de planning heeft
-(zie [De app voor kantoor](kantoor.md)). Verplaatsen doet u op het planbord op de computer; werk zonder datum kunt u ook hier [inplannen](#nog-in-te-plannen).
+(zie [De app voor kantoor](kantoor.md)). Naar een andere dag of medewerker verplaatsen doet u op het planbord op de computer. Hier past u de [volgorde van een dag](#de-volgorde-van-een-dag-aanpassen) aan en kunt u werk zonder datum [inplannen](#nog-in-te-plannen).
 
 ## Het scherm openen
 
@@ -19,9 +19,16 @@ Open het menu met de drie streepjes linksboven en tik op **Weekplanning**. De ap
 Bovenaan staat de week, bijvoorbeeld *Week 45 · 2 nov – 8 nov*. Met de pijlen gaat u naar de **vorige** of de **volgende
 week**; met **Deze week** rechtsboven keert u terug naar de week van vandaag.
 
+## Eén medewerker bekijken
+
+Onder de week staat vanaf versie 1.3.2 de keuzelijst **Medewerker**. Ze staat op **Iedereen** als u het scherm opent. Kiest u een naam, dan ziet u enkel het werk van die
+medewerker, en tellen de tellers enkel dat werk. Met *(niet toegewezen)* ziet u het werk dat nog bij niemand staat.
+
+In de lijst staan de medewerkers die die week iets hebben. Uw keuze blijft staan als u naar een andere week gaat.
+
 ## De tellers
 
-Onder de week staan vier tellers voor de hele week:
+Onder de week staan vier tellers voor de hele week, of voor de medewerker die u koos:
 
 | Teller | Betekenis |
 |---|---|
@@ -48,6 +55,19 @@ Elke regel heeft links een kleurstaafje, in dezelfde kleuren als het planbord:
 Een feestdag staat in het rood bij de dag. Een tik op een werkorder opent ze in [Werkorders](kantoor-werkorders.md), als uw
 rol het recht op de werkorders heeft.
 
+## De volgorde van een dag aanpassen
+
+Vanaf versie 1.3.2 past u de volgorde van een dag ook in de app aan, op de telefoon en op de tablet. U hebt daarvoor het recht **Planning bewerken**.
+
+1. Zoek de dag en de medewerker. Een kaart die u kunt verslepen, heeft rechts een greep met puntjes.
+2. Houd de kaart even ingedrukt tot ze loskomt.
+3. Sleep ze naar haar nieuwe plaats en laat los.
+
+De nieuwe volgorde staat meteen ook op het [planbord](../planning.md#de-volgorde-in-een-dag) en in de [planning](planning.md) van de medewerker.
+
+Dit werkt binnen dezelfde dag en dezelfde medewerker. Naar een andere dag of medewerker verplaatsen doet u op het planbord op de computer. Wijzigde iemand de planning
+intussen, dan zegt de app dat en toont ze wat er nu staat.
+
 ## Nog in te plannen
 
 Werk zonder datum staat in geen enkele week. Daarom staat er vanaf versie 1.3.0 boven het rooster de regel **Nog in te plannen**, met het aantal. Het is dezelfde
@@ -68,6 +88,10 @@ Hij heeft die week geen werk, geen verlof en geen blok. Op het planbord op de co
 **Er staat: *De feestdagen konden niet opgehaald worden*.**
 CleanOps kon de feestdagen even niet lezen. De planning klopt, maar een feestdag staat er mogelijk niet bij. Ververs het
 scherm later door het naar beneden te trekken.
+
+**Bij een kaart staat geen greep.**
+U hebt het recht **Planning bewerken** niet, die medewerker heeft die dag maar één werkorder, of de kaart is uitgevoerd werk, verlof of een blok: die blijven staan.
+Ook op de rij *(niet toegewezen)* staat geen greep, omdat een plaats per medewerker geldt.
 
 ## Zie ook
 
