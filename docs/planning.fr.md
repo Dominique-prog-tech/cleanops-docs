@@ -94,6 +94,17 @@ rempli sur le travail reste en place.
   sur la fiche collaborateur.
 - **Encore à planifier** — à gauche se trouve le travail qui n'a pas encore de date planifiée, avec leur nombre. Chaque carte
   montre le numéro, le client, l'adresse, le numéro de téléphone ou de GSM et la description.
+- **L'affichage** — avec **Par collaborateur** et **Par jour**, à côté de la case Week-end, vous choisissez la disposition
+  du tableau. Votre navigateur retient ce choix.
+
+### Par jour
+
+Dans l'affichage **Par jour**, les jours figurent en haut et, en dessous, une colonne par collaborateur pour chaque jour, avec
+le travail l'un sous l'autre. Ce sont les mêmes cases que dans **Par collaborateur** : glisser, choisir et cliquer, **À la fin**,
+les congés, les blocs et l'itinéraire du jour fonctionnent de la même façon. Chaque jour commence par une ligne plus épaisse.
+
+La colonne **(non attribué)** n'apparaît que s'il y a cette semaine du travail sans collaborateur. Si les colonnes ne tiennent
+pas à l'écran, le tableau défile sur le côté ; en décochant **Week-end**, il y a moins de colonnes.
 
 ### Un ordre de travail sur le tableau
 

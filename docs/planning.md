@@ -90,6 +90,17 @@ staan.
   de medewerkerfiche.
 - **Nog in te plannen** — links staat het werk dat nog geen geplande datum heeft, met het aantal erbij. Elke kaart toont het
   nummer, de klant, het adres, het telefoon- of gsm-nummer en de omschrijving.
+- **De weergave** — met **Per medewerker** en **Per dag** naast het vinkje Weekend kiest u hoe het bord ligt. Uw browser
+  onthoudt de keuze.
+
+### Per dag
+
+In de weergave **Per dag** staan bovenaan de dagen, en daaronder per dag een kolom per medewerker, met de klussen onder
+elkaar. Het zijn dezelfde vakken als in **Per medewerker**: slepen, kiezen en klikken, **Achteraan**, verlof, blokken en de
+dagroute werken hetzelfde. Elke dag begint met een dikkere lijn.
+
+De kolom **(niet toegewezen)** staat er enkel als er die week werk zonder medewerker is. Passen de kolommen niet op het scherm,
+dan schuift het bord opzij; vinkt u **Weekend** uit, dan zijn er minder kolommen.
 
 ### Een werkorder op het bord
 
