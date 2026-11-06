@@ -18,7 +18,7 @@ Klik links in het menu, onder **Verkoop**, op **Facturatie**. U ziet het met de 
 
 Het scherm toont twee lijsten. Links staan per klant de werkorders met de status **Te factureren**: werk met een uitvoeringsdatum dat
 nog niet op een factuur staat. Werk met het vinkje **Contant betaald, niet factureren** staat er niet in. Werk met een betaalwijze (ook
-*Cash*) wél. Rechts staan de werkorders van de klant die u links aanklikt.
+*Contant*) wél. Rechts staan de werkorders van de klant die u links aanklikt.
 
 | Kolom | Wat erin staat |
 |---|---|

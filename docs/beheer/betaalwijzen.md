@@ -24,7 +24,8 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Betaalwi
 Een betaalwijze **ter plaatse** draagt dat label. Staat er **dagboek ontbreekt** naast, dan kan CleanOps een factuur met
 die betaalwijze nog niet boeken: kies eerst het dagboek.
 
-CleanOps start met drie betaalwijzen: **Payconiq** en **Cash** (ter plaatse) en **Achteraf**. Ze hebben nog geen dagboek.
+CleanOps start met drie betaalwijzen: **Payconiq** en **Contant** (ter plaatse) en **Achteraf**. Ze hebben nog geen dagboek.
+In een omgeving die vóór 6 november 2026 aangemaakt is, heet Contant nog **Cash**; de naam wijzigt u zoals hieronder.
 
 ## Een betaalwijze toevoegen of wijzigen
 
@@ -62,7 +63,7 @@ die ze al dragen, houden ze. Wilt u ze terug? Zet bovenaan **Tonen** op **Ook ge
 
 **Wat is het verschil met het vinkje "Contant betaald, niet factureren" op de werkorder?**
 Dat vinkje komt uit uw vorige toepassing: zo'n werkorder gaat **niet** naar de facturatie. Een werkorder met een
-betaalwijze, ook *Cash*, wordt wél gefactureerd.
+betaalwijze, ook *Contant*, wordt wél gefactureerd.
 
 **Bij het factureren krijg ik "heeft geen geldig financieel dagboek".**
 De betaalwijze is ter plaatse betaald, maar er staat geen dagboek bij, of het dagboek is gearchiveerd of geen financieel
