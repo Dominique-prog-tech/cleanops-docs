@@ -96,6 +96,10 @@ rempli sur le travail reste en place.
   montre le numéro, le client, l'adresse, le numéro de téléphone ou de GSM et la description.
 - **L'affichage** — avec **Par collaborateur** et **Par jour**, à côté de la case Week-end, vous choisissez la disposition
   du tableau. Votre navigateur retient ce choix.
+- **Le défilement** — seul le tableau défile, vers le bas et sur le côté. Les boutons de semaine et **Encore à planifier**
+  restent en place, et dans le tableau, les jours restent en haut et les noms à gauche. Vous glissez ainsi une carte depuis
+  **Encore à planifier** jusqu'en bas d'une longue colonne ; arrivé au bord du tableau avec la carte, le tableau suit. **Encore à
+  planifier** défile lui-même si la liste est longue.
 
 ### Par jour
 

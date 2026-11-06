@@ -92,6 +92,10 @@ staan.
   nummer, de klant, het adres, het telefoon- of gsm-nummer en de omschrijving.
 - **De weergave** — met **Per medewerker** en **Per dag** naast het vinkje Weekend kiest u hoe het bord ligt. Uw browser
   onthoudt de keuze.
+- **Scrollen** — enkel het bord scrolt, naar onder en opzij. De weekknoppen en **Nog in te plannen** blijven staan, en in het
+  bord blijven de dagen bovenaan en de namen links staan. Zo sleept u een kaart uit **Nog in te plannen** ook naar onder in een
+  lange kolom; komt u met de kaart aan de rand van het bord, dan schuift het bord mee. **Nog in te plannen** scrolt zelf als de
+  lijst lang is.
 
 ### Per dag
 
