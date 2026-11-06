@@ -22,7 +22,7 @@ Klik onderaan in het menu op **Platformbeheer** en daarna op de tegel **Betaalwi
 | Dagboek | het financieel dagboek waarop een betaling ter plaatse geboekt wordt |
 
 Een betaalwijze **ter plaatse** draagt dat label. Staat er **dagboek ontbreekt** naast, dan kan CleanOps een factuur met
-die betaalwijze nog niet boeken: kies eerst het dagboek.
+die betaalwijze nog niet boeken: kies eerst het dagboek. Een betaalwijze die in de app een QR toont, draagt het label **betaal-QR**.
 
 CleanOps start met drie betaalwijzen: **Payconiq** en **Contant** (ter plaatse) en **Achteraf**. Ze hebben nog geen dagboek.
 In een omgeving die vóór 6 november 2026 aangemaakt is, heet Contant nog **Cash**; de naam wijzigt u zoals hieronder.
@@ -40,6 +40,7 @@ Klik op **Nieuwe betaalwijze**, of dubbelklik op een bestaande rij.
 | **Volgorde** | de plaats in de keuzelijst |
 | **Ter plaatse betaald** | aanvinken als de klant betaalt bij het werk (Payconiq, cash …) |
 | **Financieel dagboek** | verplicht bij **ter plaatse betaald**: het dagboek waarop de betaling komt, bijvoorbeeld uw kas |
+| **Betaal-QR tonen in de app** | aanvinken als de medewerker de klant op het werk een QR toont om met zijn bankapp te betalen (zie hieronder); niet samen met **ter plaatse betaald** |
 
 !!! note "Wat ter plaatse betaald doet"
     Bij het boeken van de factuur boekt CleanOps meteen de betaling op het gekozen dagboek, voor het volle bedrag, op de dag
@@ -47,6 +48,30 @@ Klik op **Nieuwe betaalwijze**, of dubbelklik op een bestaande rij.
     de e-factuur staat **Betaald via Payconiq** (of de naam van uw betaalwijze).
 
 Enkel een **financieel** dagboek kan gekozen worden (zie [Dagboeken](dagboeken.md)).
+
+## Betalen met een QR op het werk
+
+Met **Betaal-QR tonen in de app** laat de medewerker de klant op het werk betalen met zijn bankapp. Er wordt ter plaatse geen
+factuur gemaakt.
+
+1. De medewerker kiest die betaalwijze op de werkorder in de [app](../app/werkorder.md#betalen-met-een-qr) en tikt op
+   **Betaal-QR tonen**.
+2. De klant scant de QR met zijn bankapp. Het bedrag, uw rekeningnummer en een gestructureerde mededeling staan er al in.
+3. Kantoor factureert de werkorder zoals altijd in de [facturatie](../facturatie.md#per-betaalwijze-een-factuur). Ze krijgt een
+   eigen factuur met **dezelfde mededeling** als de QR, zodat u de betaling op uw rekening aan die factuur herkent.
+
+!!! note "Waarom niet ter plaatse betaald"
+    Of de klant echt betaald heeft, ziet pas uw bank. Daarom boekt CleanOps bij zo'n betaalwijze **niets** ter plaatse: de
+    factuur blijft open tot de betaling op uw rekening staat. Betaalt de klant niet, dan volgt de factuur de gewone
+    herinneringen. Er hoeft niets teruggedraaid te worden.
+
+Wat de QR nodig heeft:
+
+- uw **naam** en een geldig **IBAN** op de [bedrijfsfiche](bedrijfsfiche.md);
+- een **bedrag** en een **btw-code** op de werkorder. Het bedrag in de QR is het totaal van de werkorder **inclusief btw**, met
+  de bijkomende lijnen.
+
+Is de werkorder al gefactureerd, dan toont de app geen QR: de klant betaalt dan met de QR op de factuur.
 
 ## Het journaal
 
@@ -68,6 +93,10 @@ betaalwijze, ook *Contant*, wordt wél gefactureerd.
 **Bij het factureren krijg ik "heeft geen geldig financieel dagboek".**
 De betaalwijze is ter plaatse betaald, maar er staat geen dagboek bij, of het dagboek is gearchiveerd of geen financieel
 dagboek. Kies het hier, en boek opnieuw. Er is dan nog niets geboekt.
+
+**Kan een betaalwijze tegelijk ter plaatse betaald zijn en een betaal-QR tonen?**
+Nee. Ter plaatse betaald boekt de betaling meteen, terwijl bij een betaal-QR nog niemand weet of de bank ze uitvoert. CleanOps
+weigert de combinatie bij het bewaren.
 
 **Kan ik een betaalwijze verwijderen?**
 Nee: werkorders en facturen dragen ze. Archiveren haalt ze uit de keuzelijst zonder iets te raken.

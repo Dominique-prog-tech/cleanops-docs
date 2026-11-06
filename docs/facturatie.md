@@ -34,6 +34,10 @@ Klik links op een klant, of ga met de pijltjestoetsen door de lijst. Rechts ziet
 uitvoeringsdatum, de omschrijving, de btw-code en het bedrag. Onder de omschrijving staan dezelfde signalen als in het venster
 Factureren, bijvoorbeeld **attest ontbreekt** of **geen bedrag**. Met de kolomkiezer toont u ook het **aantal** en de **eenheidsprijs**.
 
+Betaalde de klant op het werk met een [betaal-QR](beheer/betaalwijzen.md#betalen-met-een-qr-op-het-werk), dan staat er
+**betaald met betaal-QR**. Veranderde het bedrag van de werkorder daarna, dan staat er in het rood bijvoorbeeld
+**betaal-QR: € 100,00 gescand, factuur € 90,75**. Kijk dat na vóór u boekt: de klant betaalde het gescande bedrag.
+
 Klik op het nummer, of dubbelklik op de rij, om de werkorder te openen en aan te vullen. Met **← Facturatie** komt u terug bij dezelfde
 klant en dezelfde datum, met de nieuwe gegevens. Zonder toegang tot de werkorders ziet u het nummer als gewone tekst.
 
@@ -94,6 +98,8 @@ factuur**. Het venster toont de betaalwijze per werkorder en zegt vooraf hoeveel
   staat betaald, vraagt geen overschrijving en komt niet in de rappels. Op de afdruk en de e-factuur staat **Betaald via …**.
 - Heeft een betaalwijze ter plaatse geen geldig dagboek, dan wordt er **niets** geboekt, ook de andere facturen niet.
 - Met een voorschot kan er maar één betaalwijze zijn: de aftrek hoort op één factuur.
+- Een werkorder die met een **betaal-QR** betaald werd, krijgt altijd **een eigen factuur**, met de mededeling uit die QR. Het
+  venster telt ze mee in het aantal facturen. Bij een bestaande factuur voegen kan niet.
 
 Is het nettototaal negatief, dan wordt het document een **creditnota**. Het venster zegt dat vooraf: de zin onder de lijst
 spreekt van de creditnota en de knop heet **Creditnota boeken**. Staan er werkorders met een positief én een negatief bedrag

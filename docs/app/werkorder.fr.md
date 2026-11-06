@@ -121,6 +121,21 @@ l'ordre de travail dans CleanOps.
 
 En dessous figurent les boutons pour terminer : voir [Faire signer](laten-tekenen.fr.md).
 
+### Payer avec un code QR
+
+À partir de la version 1.3.2 de l'application. Si le collaborateur choisit un mode qui affiche un
+[code QR de paiement](../beheer/betaalwijzen.fr.md#payer-avec-un-code-qr-sur-place), le bouton **Afficher le code QR de paiement**
+apparaît. Il appuie dessus et fait scanner le code par le client avec son app bancaire. Le montant, votre numéro de compte et la
+communication y sont déjà ; sous le code, ils figurent aussi en toutes lettres, pour qui préfère les recopier.
+
+- Le montant est le total de l'ordre **TVA comprise**, tel que le bureau l'a saisi. Le champ **Montant (TVAC)** ne joue ici aucun rôle.
+- Il n'y a pas de bouton « payé » : le bureau voit sur le compte si le paiement est arrivé. Le collaborateur n'a rien à indiquer.
+- Le bouton reste aussi après avoir terminé l'ordre, car le client paie souvent à la fin.
+- Le code QR demande du réseau : CleanOps retient quel code le client a vu, pour que la facture reçoive la même communication.
+
+S'il manque quelque chose, l'application le dit : par exemple *Il n'y a pas encore de montant à payer*, ou que le nom ou l'IBAN
+manque sur la fiche de l'entreprise. Si l'ordre est déjà facturé, le client paie avec le code QR de la facture.
+
 ## Questions fréquentes
 
 **Où trouver les photos d'un collaborateur ?**

@@ -36,6 +36,10 @@ Cliquez à gauche sur un client, ou parcourez la liste avec les flèches du clav
 la date d'exécution, la description, le code TVA et le montant. Sous la description figurent les mêmes signaux que dans la fenêtre
 Facturer, par exemple **attestation manquante** ou **sans montant**. Le sélecteur de colonnes affiche aussi la **quantité** et le **prix unitaire**.
 
+Si le client a payé sur place avec un [code QR](beheer/betaalwijzen.fr.md#payer-avec-un-code-qr-sur-place), vous voyez
+**payé par code QR**. Si le montant de l'ordre a changé depuis, vous voyez en rouge par exemple
+**code QR : 100,00 € scanné, facture 90,75 €**. Vérifiez-le avant de comptabiliser : le client a payé le montant scanné.
+
 Cliquez sur le numéro, ou double-cliquez sur la ligne, pour ouvrir l'ordre de travail et le compléter. **← Facturation** vous ramène au même
 client et à la même date, avec les nouvelles données. Sans accès aux ordres de travail, le numéro reste du texte simple.
 
@@ -99,6 +103,8 @@ de paiement**. La fenêtre montre le mode par ordre et indique d'avance combien 
   ne demande pas de virement et n'arrive pas dans les rappels. L'impression et la facture électronique indiquent **Payé via …**.
 - Si un mode payé sur place n'a pas de journal valable, **rien** n'est comptabilisé, pas non plus les autres factures.
 - Avec un acompte, un seul mode de paiement est possible : la déduction figure sur une seule facture.
+- Un ordre payé avec un **code QR** reçoit toujours **sa propre facture**, avec la communication de ce code. La fenêtre le compte
+  dans le nombre de factures. Il ne peut pas être ajouté à une facture existante.
 
 Si le total net est négatif, le document devient une **note de crédit**. La fenêtre le dit d'avance : la phrase sous la liste
 parle de la note de crédit et le bouton s'appelle **Comptabiliser la note de crédit**. Si des ordres avec un montant positif et

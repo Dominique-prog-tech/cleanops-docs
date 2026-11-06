@@ -118,6 +118,21 @@ CleanOps.
 
 Daaronder staan de knoppen om af te ronden: zie [Laten tekenen](laten-tekenen.md).
 
+### Betalen met een QR
+
+Vanaf versie 1.3.2 van de app. Kiest de medewerker een betaalwijze die een [betaal-QR](../beheer/betaalwijzen.md#betalen-met-een-qr-op-het-werk)
+toont, dan verschijnt de knop **Betaal-QR tonen**. Hij tikt erop en laat de klant de code scannen met zijn bankapp. Het bedrag,
+uw rekeningnummer en de mededeling staan er al in; onder de code staan ze ook voluit, voor wie ze liever overtypt.
+
+- Het bedrag is het totaal van de werkorder **inclusief btw**, zoals kantoor het ingaf. Het veld **Bedrag (incl. btw)** speelt
+  hier geen rol.
+- Er is geen knop "betaald": of de betaling binnen is, ziet kantoor op de rekening. De medewerker hoeft niets aan te duiden.
+- De knop staat er ook na het afronden, want de klant betaalt vaak op het einde.
+- De QR vraagt bereik: CleanOps onthoudt welke QR de klant te zien kreeg, zodat de factuur dezelfde mededeling krijgt.
+
+Ontbreekt er iets, dan zegt de app wat: bijvoorbeeld *Er is nog geen bedrag om te betalen*, of dat de naam of het IBAN op de
+bedrijfsfiche ontbreekt. Is de werkorder al gefactureerd, dan betaalt de klant met de QR op de factuur.
+
 ## Veelgestelde vragen
 
 **Waar vind ik de foto's van een medewerker?**
