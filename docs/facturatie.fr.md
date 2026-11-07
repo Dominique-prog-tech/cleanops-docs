@@ -35,7 +35,9 @@ Le sélecteur de colonnes affiche aussi le **N° client** et l'**Exécution la p
 Cliquez à gauche sur un client, ou parcourez la liste avec les flèches du clavier. À droite, vous voyez aussitôt ses ordres de travail avec le numéro,
 la date d'exécution, la description, le [mode de paiement](beheer/betaalwijzen.fr.md), le code TVA et le montant. Chaque mode de
 paiement donne une facture distincte ; avec la mention *sur place*, CleanOps comptabilise cette facture d'emblée comme payée. Un trait
-signifie que l'ordre n'a pas de mode de paiement. Sous la description figurent les mêmes signaux que dans la fenêtre
+signifie que l'ordre n'a pas de mode de paiement. La liste déroulante **Tous les modes** au-dessus de la liste n'affiche que les ordres
+d'un mode de paiement, ou **Sans mode de paiement**. Ce choix reste actif quand vous cliquez à gauche sur un autre client ; la fenêtre
+Facturer montre toujours tous les ordres du client. Sous la description figurent les mêmes signaux que dans la fenêtre
 Facturer, par exemple **attestation manquante** ou **sans montant**. Le sélecteur de colonnes affiche aussi la **quantité** et le **prix unitaire**.
 
 Si le client a payé sur place avec un [code QR](beheer/betaalwijzen.fr.md#payer-avec-un-code-qr-sur-place), vous voyez

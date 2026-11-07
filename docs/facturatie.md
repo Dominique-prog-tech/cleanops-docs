@@ -33,7 +33,9 @@ Met de kolomkiezer toont u ook het **Klantnr** en de **Oudste uitvoering**: het 
 Klik links op een klant, of ga met de pijltjestoetsen door de lijst. Rechts ziet u meteen zijn werkorders met het nummer, de
 uitvoeringsdatum, de omschrijving, de [betaalwijze](beheer/betaalwijzen.md), de btw-code en het bedrag. Elke betaalwijze wordt
 een eigen factuur; staat er *ter plaatse* bij, dan boekt CleanOps die factuur meteen als betaald. Een streep betekent dat de werkorder
-geen betaalwijze heeft. Onder de omschrijving staan dezelfde signalen als in het venster
+geen betaalwijze heeft. Met de keuzelijst **Alle betaalwijzen** boven de lijst toont u enkel de werkorders met één betaalwijze, of
+**Zonder betaalwijze**. Die keuze blijft staan als u links een andere klant aanklikt; het venster Factureren toont altijd alle
+werkorders van de klant. Onder de omschrijving staan dezelfde signalen als in het venster
 Factureren, bijvoorbeeld **attest ontbreekt** of **geen bedrag**. Met de kolomkiezer toont u ook het **aantal** en de **eenheidsprijs**.
 
 Betaalde de klant op het werk met een [betaal-QR](beheer/betaalwijzen.md#betalen-met-een-qr-op-het-werk), dan staat er
