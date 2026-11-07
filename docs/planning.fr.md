@@ -28,7 +28,7 @@ droite sur **Nouvel ordre de travail**. Un panneau s'ouvre à droite, la semaine
 champ de recherche. Vous pouvez changer de semaine entre-temps pour voir ce qui convient. Sur un écran de 1700 pixels de large
 au maximum, la colonne **Encore à planifier** et l'explication du haut disparaissent pendant ce temps, pour que la semaine reste lisible.
 
-![Le tableau de planning avec à droite le panneau Nouvel ordre de travail : Type de client, Nom, Téléphone ou GSM, Rue, Description, Instructions au collaborateur et Planifier maintenant](images/planning-paneel-fr.png "Nouvel ordre de travail")
+![Le tableau de planning avec à droite le panneau Nouvel ordre de travail : Type de client, Nom, Téléphone ou GSM, E-mail, Rue, Description, Instructions au collaborateur et Planifier maintenant](images/planning-paneel-fr.png "Nouvel ordre de travail")
 
 1. **Le client** — tapez un nom, un numéro de téléphone ou un numéro de client et cliquez sur **choisir**. Un numéro se trouve
    quelle que soit sa notation : *0478 12 34 56* et *+32 478 12 34 56* trouvent le même client. Si le client n'existe pas encore,
@@ -68,6 +68,7 @@ modifier les clients.
 | Nom * | Ce que vous avez tapé dans le champ de recherche s'y trouve déjà. |
 | Téléphone ou GSM * | Un seul numéro : un numéro de GSM va dans **GSM**, un autre dans **Téléphone**. |
 | Langue * | La langue des documents pour ce client. |
+| E-mail | Peut rester vide. Une adresse invalide empêche l'enregistrement. |
 | Numéro de TVA | Uniquement pour une entreprise, et il peut rester vide. Avec **Rechercher**, CleanOps montre ce que la BCE sait, et vous reprenez le nom et l'adresse. |
 | Rue *, N°, Code postal *, Commune * | L'adresse du client. Le pays est la Belgique ; vous choisissez un autre pays sur la fiche client. |
 | Délai de paiement * | N'apparaît que si la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#nouveaux-clients) n'a pas de délai de paiement par défaut. |

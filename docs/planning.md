@@ -26,7 +26,7 @@ Krijgt u een klant aan de lijn, dan noteert u de opdracht terwijl u op het planb
 U kunt ondertussen van week wisselen om te zien wanneer het past. Op een scherm tot 1700 pixels breed verdwijnen zolang de
 kolom **Nog in te plannen** en de uitleg bovenaan, zodat de week leesbaar blijft.
 
-![Het planbord met rechts het paneel Nieuwe werkorder: Soort klant, Naam, Telefoon of gsm, Straat, Omschrijving, Instructies werknemer en Meteen inplannen](images/planning-paneel.png "Nieuwe werkorder")
+![Het planbord met rechts het paneel Nieuwe werkorder: Soort klant, Naam, Telefoon of gsm, E-mail, Straat, Omschrijving, Instructies werknemer en Meteen inplannen](images/planning-paneel.png "Nieuwe werkorder")
 
 1. **De klant** — typ een naam, een telefoonnummer of een klantnummer en klik op **kies**. Een nummer vindt u in elke
    schrijfwijze: *0478 12 34 56* en *+32 478 12 34 56* vinden dezelfde klant. Bestaat de klant nog niet, klik dan op
@@ -64,6 +64,7 @@ met het recht om werkorders te wijzigen, en een nieuwe klant of adres vraagt ook
 | Naam * | Wat u in het zoekveld typte, staat hier al. |
 | Telefoon of gsm * | Eén nummer: een gsm-nummer komt bij **Gsm**, een ander bij **Telefoon**. |
 | Taal * | De taal van de documenten voor deze klant. |
+| E-mail | Mag leeg. Een ongeldig adres houdt het bewaren tegen. |
 | Btw-nummer | Enkel bij een bedrijf, en het mag leeg. Met **Ophalen** toont CleanOps wat de KBO weet, en neemt u naam en adres over. |
 | Straat *, Nr, Postcode *, Gemeente * | Het adres van de klant. Het land is België; een ander land kiest u op de klantfiche. |
 | Betaaltermijn * | Staat er enkel als de [bedrijfsfiche](beheer/bedrijfsfiche.md#nieuwe-klanten) geen standaard betaaltermijn heeft. |

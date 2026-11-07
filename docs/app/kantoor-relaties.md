@@ -1,12 +1,13 @@
 ---
-description: "Klanten en leveranciers in de app van CleanOps voor kantoor: zoeken, de klantkaart met openstaand saldo en recente facturen, en het saldo van een leverancier."
+description: "Klanten en leveranciers in de app van CleanOps voor kantoor: zoeken, de klantkaart met openstaand saldo en recente facturen, een klant aanmaken of wijzigen, en het saldo van een leverancier."
 ---
 
 # Klanten en leveranciers
 
 Onder **Klanten** en **Leveranciers** zoekt u in de app een klant of een leverancier op, met zijn gegevens en, als uw rol
 het recht heeft, wat er openstaat. Wie welk scherm ziet, volgt de rechten van zijn rol (zie
-[De app voor kantoor](kantoor.md)). Een klant of leverancier wijzigen doet u op de computer.
+[De app voor kantoor](kantoor.md)). Een klant aanmaken of wijzigen kan vanaf versie 1.3.3 ook in de app (zie
+[Een klant aanmaken of wijzigen](#een-klant-aanmaken-of-wijzigen)); een leverancier wijzigt u op de computer.
 
 Op een **tablet** staat de fiche rechts naast de lijst; op een **telefoon** opent ze als een eigen scherm.
 
@@ -36,6 +37,31 @@ Een tik op een factuur, een offerte of een werkorder opent haar fiche, als uw ro
 !!! info
     De medewerkers in het veld zien op hun klantkaart **nooit** bedragen, facturen of openstaande posten. Het geld staat
     enkel in de app voor kantoor, voor wie het recht heeft.
+
+### Een klant aanmaken of wijzigen
+
+Vanaf versie 1.3.3, met het recht **Klanten bewerken**, zoals op de computer. U hebt een verbinding nodig: zonder bereik bewaart
+de app niets.
+
+- **Een nieuwe klant:** tik onderaan de lijst op **Nieuwe klant**. Na **Bewaren** opent zijn fiche.
+- **Een klant wijzigen:** tik op de fiche rechtsboven op het potlood. Na **Bewaren** komt u terug op de fiche.
+
+Het formulier heeft drie delen:
+
+| Deel | Velden |
+|---|---|
+| Klant | **Particulier** of **Bedrijf**, de naam, het adres en de taal. Bij een bedrijf ook het **btw-nummer**: dat is verplicht, en **Ophalen** vult naam en adres in uit de KBO. |
+| Contact | **Telefoon**, **gsm**, **e-mail** en **contactpersoon**. |
+| Opmerkingen | Het vrije veld van de klantfiche. |
+
+Een nieuwe klant krijgt de standaard betaaltermijn van de [bedrijfsfiche](../beheer/bedrijfsfiche.md#nieuwe-klanten); staat
+daar geen, dan vraagt het formulier ze. De **facturatie** (betaaltermijn, facturen per e-mail en de e-mailadressen per soort) en
+de **werfadressen** wijzigt u op de [klantfiche](../klanten.md) op de computer.
+
+Wijzigde iemand anders hetzelfde veld terwijl u het formulier open had, dan bewaart de app niets en zegt ze het. Open de fiche
+opnieuw om te zien wat er nu staat. Wat een collega in een ander veld wijzigde, blijft gewoon staan.
+
+![Klant wijzigen op een tablet: Particulier of Bedrijf, Naam, het adres en de taal, daaronder Contact met Telefoon, Gsm, E-mail en Contactpersoon, en de Opmerkingen](../images/app-kantoor-klant-wijzigen.png "Klant wijzigen"){ width="560" }
 
 ## Leveranciers
 
