@@ -40,8 +40,16 @@ jobs:
           repository: ADM-Concept/adm-appkit
           token: ${{ secrets.ADM_APPKIT_LEZEN }}
           path: _appkit
-          sparse-checkout: tools/filmgenerator
+          # tools/docs-site: de hook en de controle voor zoeken per taal (07/11/2026).
+          sparse-checkout: |
+            tools/filmgenerator
+            tools/docs-site
       - run: mkdocs build --strict
+      # ⚠️ NA de bouw: zoekt elke taal enkel in haar eigen pagina's? De hook faalt luid bij alles wat hij ziet, maar niet
+      # wanneer hij er niet is — haalt iemand hem uit mkdocs.yml, dan mengt het zoekvak stil weer NL en FR (zo stond het
+      # live tot 07/11/2026). Deze meet de GEBOUWDE site en mag de uitrol TEGENHOUDEN.
+      - name: Zoeken per taal controleren
+        run: python3 _appkit/tools/docs-site/check-zoeken.py site
       # Staat elke film onder de H1 van zijn pagina, met een volledig VideoObject? Meet de GEBOUWDE site.
       # --min-paginas: 5 films × 2 talen = 10 handleidingrijen (27/10/2026). Verhoog bij elke nieuwe film — de bodem vangt een
       # uitslagtabel die stil gekrompen is; daarom komt hij niet uit diezelfde tabel.
