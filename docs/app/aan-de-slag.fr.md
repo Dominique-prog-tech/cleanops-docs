@@ -80,6 +80,8 @@ n'arrive qu'à 9 heures.
 En haut du planning et de l'ordre de travail apparaît alors une bande, par exemple *2 actions pas encore envoyées*.
 Un appui dessus affiche la liste, avec le bouton **Envoyer maintenant**.
 
+![L'application sans réseau sur une tablette : à gauche le planning avec en haut la barre Mis à jour à 10:09. CleanOps est injoignable pour le moment. et la bande 1 action pas encore envoyée, à droite l'ordre de travail 900147 avec le chrono en pause et Pas encore envoyé sous le chrono et sous l'enregistrement du temps](../images/app-zonder-bereik-fr.png "Sans réseau"){ width="560" }
+
 !!! warning
     La **signature** du client n'est possible qu'avec du réseau, et seulement quand tout ce qui concerne cet ordre de
     travail est chez CleanOps : le client signe ce que CleanOps a. Ce que l'application montre est l'état à l'heure

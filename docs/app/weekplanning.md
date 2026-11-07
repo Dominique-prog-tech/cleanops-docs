@@ -10,14 +10,14 @@ toegewezen is en wat niet uitgevoerd werd. Het scherm is er voor wie op kantoor 
 
 ## Het scherm openen
 
-Open het menu met de drie streepjes linksboven en tik op **Weekplanning**. De app opent op de week van vandaag.
+Open het menu met de drie streepjes linksboven en tik op **Weekplanning**. De app opent op de lopende week, op zaterdag en zondag op de volgende week, zoals het [planbord](../planning.md).
 
-![De Weekplanning op een tablet: bovenaan Week 45 met de pijlen en Deze week, de tellers 15 werkorders, 1 niet toegewezen in het rood, 0 niet uitgevoerd en 0 afwezig, daaronder het rooster met de rij niet toegewezen en een rij per medewerker, elke werkorder met het dagdeel en de gemeente](../images/app-weekplanning.png "De weekplanning"){ width="560" }
+![De Weekplanning op een tablet: bovenaan Week 47 met de pijlen en Deze week, de keuzelijst Medewerker op Iedereen, de tellers 14 werkorders, 1 niet toegewezen in het rood, 0 niet uitgevoerd en 0 afwezig, de strook Nog in te plannen, daaronder het rooster met de rij niet toegewezen en een rij per medewerker, elke werkorder met het dagdeel en de gemeente, en rechtsonder Nieuwe werkorder](../images/app-weekplanning.png "De weekplanning"){ width="560" }
 
 ## Een week kiezen
 
 Bovenaan staat de week, bijvoorbeeld *Week 45 · 2 nov – 8 nov*. Met de pijlen gaat u naar de **vorige** of de **volgende
-week**; met **Deze week** rechtsboven keert u terug naar de week van vandaag.
+week**; met **Deze week** rechtsboven keert u terug naar de week waarop het scherm opent.
 
 ## Eén medewerker bekijken
 

@@ -18,7 +18,7 @@ de volgende.
 
 Op een **tablet** staat de fiche rechts naast de lijst; op een **telefoon** opent ze als een eigen scherm.
 
-![Werkorders op een tablet: links de 52 gevonden werkorders met hun status, rechts de fiche van werkorder 900151 met Route en Bellen, de planning, het werk en de handtekening van de klant met Bekijk de getekende bon](../images/app-kantoor-werkorders.png "Een werkorder voor kantoor"){ width="560" }
+![Werkorders op een tablet: links de 56 gevonden werkorders met hun status en onderaan Nieuwe werkorder, rechts de fiche van werkorder 900155 met Route en Bellen, de planning, het werk en de handtekening van de klant met Bekijk de getekende bon](../images/app-kantoor-werkorders.png "Een werkorder voor kantoor"){ width="560" }
 
 ## De fiche
 

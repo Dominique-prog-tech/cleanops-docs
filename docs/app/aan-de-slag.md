@@ -78,6 +78,8 @@ het gebeurde: een teller die om 7:12 startte, start om 7:12, ook als hij pas om 
 Bovenaan de planning en de werkorder staat dan een strook, bijvoorbeeld *2 handelingen nog niet verstuurd*. Een tik
 erop toont de lijst, met de knop **Nu versturen**.
 
+![De app zonder bereik op een tablet: links de planning met bovenaan de balk Bijgewerkt om 10:06. CleanOps is nu niet bereikbaar. en de strook 1 handeling nog niet verstuurd, rechts werkorder 900147 met een lopende teller en Nog niet verstuurd onder de teller en onder de tijdsregistratie](../images/app-zonder-bereik.png "Zonder bereik"){ width="560" }
+
 !!! warning
     Laten **tekenen** gaat enkel met bereik, en pas als alles van die werkorder bij CleanOps is: de klant tekent voor
     wat CleanOps heeft. Wat de app toont, is de stand van het tijdstip in de balk. Wat het kantoor intussen wijzigde,

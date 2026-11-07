@@ -1400,10 +1400,10 @@ const zonderVerwijzing = SCHOTEN.flatMap(s => [s.naam, `${s.naam}-fr`]).filter(n
 //   (store/schermafbeeldingen), verkleind. Dit script stuurt enkel de backoffice in een browser aan.
 // - 26/10/2026: de tabletreeks voor de vier pagina's onder docs/app/, uit de eigen simulator "CleanOps iPad 13" (2064 x 2752, op de helft:
 //   1032 x 1376), met de demochauffeur Tom Verbeke. app-werkorder viel weg: de planning op een tablet toont de werkorder ernaast.
-const BUITEN_SCRIPT = new Set(['app-planning', 'app-teller', 'app-betaling', 'app-notities-fotos', 'app-foto-kiezen', 'app-nakijken',
-  'app-tekenen', 'app-getekend', 'app-mail', 'app-menu', 'app-profiel',
-  'app-verlof', 'app-verlof-aanvragen', 'app-werkorder-nieuw'].flatMap(n => [n, `${n}-fr`]));
-const zonderRecept = Object.keys(ALT).filter(n => !BUITEN_SCRIPT.has(n) && !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
+// De beelden van de mobiele app (`app-…`) komen uit de simulator, niet uit dit script. Tot 07/11/2026 stond hier een lijst met
+// namen; die miste er toen twintig, waardoor elk nieuw app-beeld als "verwijzing zonder recept" meldde. Het voorvoegsel kan niet verouderen.
+const buitenScript = n => n.startsWith('app-');
+const zonderRecept = Object.keys(ALT).filter(n => !buitenScript(n) && !SCHOTEN.some(s => n === s.naam || n === `${s.naam}-fr`));
 
 // ⚠️ De terugval op de hoofdkloon zweeg: op 26/10/2026 liep de preview in een worktree en meldde het verslag een commit van 08/10.
 // Bestaan er worktrees en is CLEANOPS_REPO niet gezet, dan is de genoemde commit misschien niet die van de draaiende app.

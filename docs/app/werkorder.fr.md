@@ -128,6 +128,8 @@ En dessous figurent les boutons pour terminer : voir [Faire signer](laten-tekene
 apparaît. Il appuie dessus et fait scanner le code par le client avec son app bancaire. Le montant, votre numéro de compte et la
 communication y sont déjà ; sous le code, ils figurent aussi en toutes lettres, pour qui préfère les recopier.
 
+![Le code QR de paiement sur une tablette : en haut Faites scanner ce code par le client avec son app bancaire, le code QR, le montant 326,70 €, en dessous À, Compte et Communication en toutes lettres, et le bouton Fermer](../images/app-betaal-qr-fr.png "Payer avec un code QR"){ width="560" }
+
 - Le montant est le total de l'ordre **TVA comprise**, tel que le bureau l'a saisi. Le champ **Montant (TVAC)** ne joue ici aucun rôle.
 - Il n'y a pas de bouton « payé » : le bureau voit sur le compte si le paiement est arrivé. Le collaborateur n'a rien à indiquer.
 - Le bouton reste aussi après avoir terminé l'ordre, car le client paie souvent à la fin.

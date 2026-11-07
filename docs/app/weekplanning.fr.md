@@ -12,14 +12,14 @@ tableau de planning sur l'ordinateur. Ici, vous modifiez l'[ordre d'une journée
 ## Ouvrir l'écran
 
 Ouvrez le menu avec les trois traits en haut à gauche et touchez **Planning de la semaine**. L'application s'ouvre sur la
-semaine en cours.
+semaine en cours, le samedi et le dimanche sur la semaine suivante, comme le [tableau de planning](../planning.fr.md).
 
-![Le planning de la semaine sur une tablette : en haut Semaine 45 avec les flèches et Cette semaine, les compteurs 15 ordres de travail, 1 non attribués en rouge, 0 non exécutés et 0 absents, en dessous la grille avec la ligne non attribué et une ligne par collaborateur, chaque ordre de travail avec la partie de journée et la commune](../images/app-weekplanning-fr.png "Le planning de la semaine"){ width="560" }
+![Le planning de la semaine sur une tablette : en haut Semaine 47 avec les flèches et Cette semaine, la liste Collaborateur sur Tout le monde, les compteurs 14 ordres de travail, 1 non attribués en rouge, 0 non exécutés et 0 absents, la bande Encore à planifier, en dessous la grille avec la ligne non attribué et une ligne par collaborateur, chaque ordre de travail avec la partie de journée et la commune, et en bas à droite Nouvel ordre](../images/app-weekplanning-fr.png "Le planning de la semaine"){ width="560" }
 
 ## Choisir une semaine
 
 En haut figure la semaine, par exemple *Semaine 45 · 2 nov. – 8 nov.*. Avec les flèches, vous passez à la **semaine
-précédente** ou à la **semaine suivante** ; avec **Cette semaine** en haut à droite, vous revenez à la semaine en cours.
+précédente** ou à la **semaine suivante** ; avec **Cette semaine** en haut à droite, vous revenez à la semaine sur laquelle l'écran s'ouvre.
 
 ## Voir un seul collaborateur
 

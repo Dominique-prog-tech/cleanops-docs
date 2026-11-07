@@ -124,6 +124,8 @@ Vanaf versie 1.3.2 van de app. Kiest de medewerker een betaalwijze die een [beta
 toont, dan verschijnt de knop **Betaal-QR tonen**. Hij tikt erop en laat de klant de code scannen met zijn bankapp. Het bedrag,
 uw rekeningnummer en de mededeling staan er al in; onder de code staan ze ook voluit, voor wie ze liever overtypt.
 
+![De Betaal-QR op een tablet: bovenaan Laat de klant deze code scannen met zijn bankapp, de QR-code, het bedrag € 326,70, daaronder Aan, Rekening en Mededeling voluit, en de knop Sluiten](../images/app-betaal-qr.png "Betalen met een QR"){ width="560" }
+
 - Het bedrag is het totaal van de werkorder **inclusief btw**, zoals kantoor het ingaf. Het veld **Bedrag (incl. btw)** speelt
   hier geen rol.
 - Er is geen knop "betaald": of de betaling binnen is, ziet kantoor op de rekening. De medewerker hoeft niets aan te duiden.

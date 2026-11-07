@@ -19,7 +19,7 @@ Sans terme de recherche, la liste affiche tous les ordres de travail. Au-dessus 
 
 Sur une **tablette**, la fiche figure à droite de la liste ; sur un **téléphone**, elle s'ouvre comme un écran à part.
 
-![Les ordres de travail sur une tablette : à gauche les 52 ordres de travail trouvés avec leur statut, à droite la fiche de l'ordre de travail 900151 avec Itinéraire et Appeler, le planning, le travail et la signature du client avec Voir le bon signé](../images/app-kantoor-werkorders-fr.png "Un ordre de travail pour le bureau"){ width="560" }
+![Les ordres de travail sur une tablette : à gauche les 56 ordres de travail trouvés avec leur statut et en bas Nouvel ordre, à droite la fiche de l'ordre de travail 900155 avec Itinéraire et Appeler, le planning, le travail et la signature du client avec Voir le bon signé](../images/app-kantoor-werkorders-fr.png "Un ordre de travail pour le bureau"){ width="560" }
 
 ## La fiche
 
