@@ -76,6 +76,8 @@ lijst als de kolom op het [planbord](../planning.md): het open werk zonder gepla
 Tik op een regel om de lijst te openen. Hebt u het recht **Planning bewerken**, dan staat bij elke werkorder **Inplannen**. U kiest de dag, het tijdsdeel en eventueel de
 medewerker. Zonder medewerker staat de werkorder die dag op de rij *(niet toegewezen)*. Valt de dag in het verleden of heeft de medewerker die dag verlof, dan vraagt de app het eerst.
 
+Vanaf versie 1.3.3 staan de dringende werkorders bovenaan, met het rode label **dringend**, en staat het afgesproken uur erbij als er een is.
+
 Plande iemand anders de werkorder intussen, dan zegt de app dat en blijft de planning van die persoon staan.
 
 ![Nog in te plannen op een telefoon: een werkorder met de klant, de omschrijving en de knop Inplannen](../images/app-kantoor-in-te-plannen.png "Nog in te plannen")

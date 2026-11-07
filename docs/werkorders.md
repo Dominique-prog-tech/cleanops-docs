@@ -69,7 +69,7 @@ brengt u dan terug naar de lijst, met uw filters. Hebt u de klant aan de lijn, d
 | Instructies werknemer | Wat de ploeg ter plaatse moet weten. |
 | Interne opmerking | Voor uw eigen mensen; deze tekst komt niet op de leveringsbon. Kiest u een uitvoeringsadres, dan staat hier vanzelf de interne opmerking van de vorige werkorder op dat adres, met eronder uit welke werkorder ze komt; had die er geen, dan de opmerking van het adres zelf. U kunt de tekst aanpassen of wissen. Wat u zelf al typte, blijft staan. |
 | Medewerker, Btw-code, Tarief | Mag u nu al kiezen, of later op de fiche. Is de medewerker afwezig op de datum *Uit te voeren* (verlof, ziekte), dan zegt een melding dat; u kunt hem toch kiezen. |
-| Groot werk, Attest vereist | Zie [de vinkjes](#de-vinkjes) hieronder. |
+| Dringend, Groot werk, Attest vereist | Zie [de vinkjes](#de-vinkjes) hieronder. |
 
 Boven de velden meldt CleanOps wat u moet weten vóór u inboekt:
 
@@ -142,7 +142,8 @@ De vinkjes staan in het blok **Uit te voeren werk**, in twee rijen: de planning 
 
 | Rij | Vinkje | Betekenis |
 |---|---|---|
-| Planning | Vaste datum | De werkorder mag niet verplaatst worden. Wint van *Mag vroeger* als beide aangevinkt zijn. Wijzigt u op de fiche de geplande datum, dan herinnert een melding u aan de afgesproken dag. |
+| Planning | Dringend | Zo snel mogelijk inplannen. De werkorder krijgt een rood label op de planning en staat bovenaan bij *Nog in te plannen*. |
+| | Vaste datum | De werkorder mag niet verplaatst worden. Wint van *Mag vroeger* als beide aangevinkt zijn. Wijzigt u op de fiche de geplande datum, dan herinnert een melding u aan de afgesproken dag. |
 | | Mag vroeger | Het werk mag vroeger uitgevoerd worden dan gepland. |
 | | Groot werk | Een grote opdracht; het staat als label op de leveringsbon. |
 | | Terugbellen, Teruggebeld | De klant wil gebeld worden; vink het tweede aan zodra dat gebeurd is. |

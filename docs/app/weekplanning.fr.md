@@ -81,6 +81,8 @@ Touchez la ligne pour ouvrir la liste. Si vous avez le droit **Modifier le plann
 journée et éventuellement le collaborateur. Sans collaborateur, l'ordre figure ce jour-là sur la ligne *(non attribué)*. Si le jour est passé ou si le collaborateur est en
 congé ce jour-là, l'application le demande d'abord.
 
+À partir de la version 1.3.3, les ordres urgents figurent en haut, avec l'étiquette rouge **urgent**, et l'heure convenue est indiquée s'il y en a une.
+
 Si quelqu'un d'autre a entre-temps planifié l'ordre, l'application le dit et le planning de cette personne reste en place.
 
 ![Encore à planifier sur un téléphone : un ordre de travail avec le client, la description et le bouton Planifier](../images/app-kantoor-in-te-plannen-fr.png "Encore à planifier")

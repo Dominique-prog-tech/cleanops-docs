@@ -48,7 +48,7 @@ Tik rechtsonder op **Nieuwe werkorder**: op het **Overzicht** of de [Weekplannin
    Bij een bedrijf haalt **Ophalen** de naam en het adres uit de KBO. Het btw-nummer mag leeg blijven, maar zonder nummer maakt CleanOps nog geen factuur.
 2. **Adres.** Bij een bestaande klant kiest u een van zijn adressen. Ligt de werf ergens anders, zet dan **De werf ligt op een ander adres** aan.
 3. **Werk.** De **omschrijving** komt op de factuur en telt hoogstens 35 tekens. Waarover het precies gaat, zet u in de **instructies**, die de ploeg leest.
-4. **Wanneer.** Standaard komt de werkorder bij [Nog in te plannen](weekplanning.md#nog-in-te-plannen). Met **Meteen inplannen** kiest u de dag, het tijdsdeel en eventueel de medewerker.
+4. **Wanneer.** Vanaf versie 1.3.3 zet u **Dringend** aan als het werk zo snel mogelijk moet gebeuren, en kiest u bij **Afgesproken uur** *Vóór*, *Tussen* of *Na* met het uur dat u met de klant afsprak. Standaard komt de werkorder bij [Nog in te plannen](weekplanning.md#nog-in-te-plannen). Met **Meteen inplannen** kiest u de dag, het tijdsdeel en eventueel de medewerker.
 
 Bestaat de klant misschien al, dan toont de app die klanten voor er iets bewaard wordt: tik op de juiste, of kies **Toch een nieuwe klant**. Tarief, btw en bedrag
 vult kantoor later aan op de computer.

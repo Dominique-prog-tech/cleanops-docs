@@ -36,7 +36,10 @@ kolom **Nog in te plannen** en de uitleg bovenaan, zodat de week leesbaar blijft
    **De werf is op dit adres** uit en vul het adres van de werf in. De klant blijft op zijn eigen adres staan.
 3. **Werk** — de **Omschrijving** is verplicht en telt hoogstens 35 tekens: ze komt op de factuur. Waarover het werk precies
    gaat, schrijft u bij **Instructies werknemer**. Dat leest de chauffeur.
-4. **Wanneer** — standaard komt de werkorder bij **Nog in te plannen**. Vink **Meteen inplannen** aan om de **Dag**, het
+4. **Wanneer** — vink **Dringend** aan als het werk zo snel mogelijk moet gebeuren: de werkorder krijgt dan een rood label en
+   staat bovenaan bij **Nog in te plannen**. Sprak u met de klant een uur af, kies dan bij **Afgesproken uur** *Vóór*, *Tussen*
+   of *Na* en vul het uur in (bij *Tussen* ook het tweede, als dat er is). De werkorder krijgt dan het tijdsdeel *volgens uur*.
+   Standaard komt de werkorder bij **Nog in te plannen**. Vink **Meteen inplannen** aan om de **Dag**, het
    **Tijdsdeel** en de **Medewerker** te kiezen. De dag staat op vandaag, of op de eerste dag van de week die u op het bord
    bekijkt als die nog moet komen. Laat u de medewerker leeg, dan staat de werkorder die dag op de rij **(niet toegewezen)**.
 5. **Bewaren** — het paneel sluit, u blijft op de planning, en een melding zegt waar de werkorder staat. Staat ze in een andere
@@ -90,7 +93,8 @@ staan.
 - **Het voertuig** — heeft de medewerker een vast voertuig, dan staat het kenteken onder zijn naam. Ook dat kiest u op
   de medewerkerfiche.
 - **Nog in te plannen** — links staat het werk dat nog geen geplande datum heeft, met het aantal erbij. Elke kaart toont het
-  nummer, de klant, het adres, het telefoon- of gsm-nummer en de omschrijving.
+  nummer, het label **dringend** en het afgesproken uur als die er zijn, de klant, het adres, het telefoon- of gsm-nummer en de
+  omschrijving. De dringende werkorders staan bovenaan.
 - **De weergave** — met **Per medewerker** en **Per dag** naast het vinkje Weekend kiest u hoe het bord ligt. Uw browser
   onthoudt de keuze.
 - **Scrollen** — enkel het bord scrolt, naar onder en opzij. De weekknoppen en **Nog in te plannen** blijven staan, en in het
@@ -111,7 +115,8 @@ dan schuift het bord opzij; vinkt u **Weekend** uit, dan zijn er minder kolommen
 
 Elke kaart toont het nummer, het tijdsdeel en de uurafspraak (bijvoorbeeld *Voormiddag* of *Tussen 13:00 en 15:00*),
 de klant en de gemeente, de omschrijving en de typering (bijvoorbeeld *vetput +/- 3 T*) — die laatste enkel als ze iets
-anders zegt dan de omschrijving. Wijst u een kaart aan, dan ziet u ook de werf, de typering en de signalen.
+anders zegt dan de omschrijving. Een dringende werkorder draagt het rode label **dringend**, tot ze uitgevoerd is. Wijst u
+een kaart aan, dan ziet u ook de werf, de typering en de signalen.
 
 | Teken | Betekenis |
 |---|---|
@@ -201,7 +206,7 @@ Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van dez
 
 ![De planningslijst van de demo: de week per dag, met de signalen, de medewerker in zijn kleur en de knop Toewijzen](images/planning-lijst.png "Planningslijst")
 
-Per werkorder ziet u de signalen (*Vaste datum — niet verplaatsen*, *Mag vroeger uitgevoerd worden*, *Groot werk*,
+Per werkorder ziet u de signalen (*Dringend*, *Vaste datum — niet verplaatsen*, *Mag vroeger uitgevoerd worden*, *Groot werk*,
 *Klant geblokkeerd*), de medewerker in zijn kleur, het nummer (met ⇅ als de werkorder met de hand geplaatst is), de datum
 die de klant vroeg (**Gevraagd**), **Wanneer** (het tijdsdeel en het afgesproken uur), de klant, de werf, de omschrijving en
 de typering. Met de kolomkiezer (het pictogram naast **Exporteren**) zet u er **Besteld**, **Straat + nr**, **Postcode**,

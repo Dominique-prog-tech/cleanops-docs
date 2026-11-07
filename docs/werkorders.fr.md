@@ -74,7 +74,7 @@ vous y créez aussi tout de suite un nouveau client.
 | Instructions au collaborateur | Ce que l'équipe doit savoir sur place. |
 | Remarque interne | Pour vos propres collaborateurs ; ce texte ne figure pas sur le bon de livraison. Quand vous choisissez une adresse d'exécution, la remarque interne de l'ordre de travail précédent à cette adresse y figure d'office, avec en dessous l'ordre dont elle provient ; s'il n'en avait pas, c'est la remarque de l'adresse elle-même. Vous pouvez adapter ou effacer le texte. Ce que vous avez déjà tapé vous-même reste en place. |
 | Collaborateur, Code TVA, Tarif | Vous pouvez les choisir maintenant, ou plus tard sur la fiche. Si le collaborateur est absent à la date *À exécuter* (congé, maladie), un message le signale ; vous pouvez quand même le choisir. |
-| Gros travaux, Attestation requise | Voir [les cases à cocher](#les-cases-a-cocher) plus bas. |
+| Urgent, Gros travaux, Attestation requise | Voir [les cases à cocher](#les-cases-a-cocher) plus bas. |
 
 Au-dessus des champs, CleanOps signale ce que vous devez savoir avant d'encoder :
 
@@ -150,7 +150,8 @@ Les cases à cocher figurent dans le bloc **Travail à exécuter**, en deux lign
 
 | Ligne | Case | Signification |
 |---|---|---|
-| Planning | Date fixe | L'ordre ne peut pas être déplacé. L'emporte sur *Peut commencer plus tôt* si les deux sont cochées. Si vous modifiez la date planifiée sur la fiche, un message rappelle le jour convenu. |
+| Planning | Urgent | À planifier au plus vite. L'ordre reçoit une étiquette rouge sur le planning et figure en haut de *Encore à planifier*. |
+| | Date fixe | L'ordre ne peut pas être déplacé. L'emporte sur *Peut commencer plus tôt* si les deux sont cochées. Si vous modifiez la date planifiée sur la fiche, un message rappelle le jour convenu. |
 | | Peut commencer plus tôt | Le travail peut être exécuté plus tôt que prévu. |
 | | Gros travaux | Une mission importante ; elle figure comme étiquette sur le bon de livraison. |
 | | Rappeler, Rappelé | Le client souhaite être appelé ; cochez la seconde case une fois que c'est fait. |

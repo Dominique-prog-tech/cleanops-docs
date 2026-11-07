@@ -51,7 +51,7 @@ Touchez **Nouvel ordre** en bas à droite : sur l'**Aperçu** ou le [Planning de
    **Récupérer** reprend le nom et l'adresse de la BCE. Le numéro de TVA peut rester vide, mais sans numéro, CleanOps ne crée pas encore de facture.
 2. **Adresse.** Pour un client existant, vous choisissez l'une de ses adresses. Si le chantier est ailleurs, activez **Le chantier est à une autre adresse**.
 3. **Travail.** La **description** figure sur la facture et compte au plus 35 caractères. Ce dont il s'agit exactement va dans les **instructions**, que l'équipe lit.
-4. **Quand.** Par défaut, l'ordre va dans [Encore à planifier](weekplanning.fr.md#encore-a-planifier). Avec **Planifier maintenant**, vous choisissez le jour, la partie de la journée et éventuellement le collaborateur.
+4. **Quand.** À partir de la version 1.3.3, activez **Urgent** si le travail doit se faire au plus vite, et choisissez dans **Heure convenue** *Avant*, *Entre* ou *Après* avec l'heure convenue avec le client. Par défaut, l'ordre va dans [Encore à planifier](weekplanning.fr.md#encore-a-planifier). Avec **Planifier maintenant**, vous choisissez le jour, la partie de la journée et éventuellement le collaborateur.
 
 Si le client existe peut-être déjà, l'application montre ces clients avant tout enregistrement : touchez le bon, ou choisissez **Quand même un nouveau client**. Le bureau
 complète le tarif, la TVA et le montant plus tard sur l'ordinateur.

@@ -38,7 +38,10 @@ au maximum, la colonne **Encore à planifier** et l'explication du haut disparai
    ailleurs, décochez **Le chantier est à cette adresse** et remplissez l'adresse du chantier. Le client garde sa propre adresse.
 3. **Travail** — la **Description** est obligatoire et compte 35 caractères au maximum : elle figure sur la facture. De quoi il
    s'agit exactement, vous l'écrivez dans **Instructions au collaborateur**. C'est ce que lit le chauffeur.
-4. **Quand** — par défaut, l'ordre va dans **Encore à planifier**. Cochez **Planifier maintenant** pour choisir le **Jour**, la
+4. **Quand** — cochez **Urgent** si le travail doit se faire au plus vite : l'ordre reçoit alors une étiquette rouge et figure
+   en haut de **Encore à planifier**. Si vous avez convenu d'une heure avec le client, choisissez *Avant*, *Entre* ou *Après*
+   dans **Heure convenue** et indiquez l'heure (pour *Entre*, aussi la seconde s'il y en a une). L'ordre reçoit alors la partie
+   de journée *selon l'heure*. Par défaut, l'ordre va dans **Encore à planifier**. Cochez **Planifier maintenant** pour choisir le **Jour**, la
    **Partie de la journée** et le **Collaborateur**. Le jour est celui d'aujourd'hui, ou le premier jour de la semaine affichée
    sur le tableau si elle est encore à venir. Si vous laissez le collaborateur vide, l'ordre figure ce jour-là sur la ligne
    **(non attribué)**.
@@ -94,7 +97,8 @@ rempli sur le travail reste en place.
 - **Le véhicule** — si le collaborateur a un véhicule fixe, sa plaque figure sous son nom. Vous le choisissez aussi
   sur la fiche collaborateur.
 - **Encore à planifier** — à gauche se trouve le travail qui n'a pas encore de date planifiée, avec leur nombre. Chaque carte
-  montre le numéro, le client, l'adresse, le numéro de téléphone ou de GSM et la description.
+  montre le numéro, l'étiquette **urgent** et l'heure convenue s'il y en a, le client, l'adresse, le numéro de téléphone ou de
+  GSM et la description. Les ordres urgents figurent en haut.
 - **L'affichage** — avec **Par collaborateur** et **Par jour**, à côté de la case Week-end, vous choisissez la disposition
   du tableau. Votre navigateur retient ce choix.
 - **Le défilement** — seul le tableau défile, vers le bas et sur le côté. Les boutons de semaine et **Encore à planifier**
@@ -115,8 +119,8 @@ pas à l'écran, le tableau défile sur le côté ; en décochant **Week-end**, 
 
 Chaque carte montre le numéro, la partie de journée et le rendez-vous horaire (par exemple *Matin* ou
 *Entre 13:00 et 15:00*), le client et la commune, la description et le type de travail (par exemple *vetput +/- 3 T*)
-— ce dernier seulement s'il dit autre chose que la description. Si vous pointez une carte, vous voyez aussi le
-chantier, le type de travail et les signaux.
+— ce dernier seulement s'il dit autre chose que la description. Un ordre urgent porte l'étiquette rouge **urgent**,
+jusqu'à son exécution. Si vous pointez une carte, vous voyez aussi le chantier, le type de travail et les signaux.
 
 | Signe | Signification |
 |---|---|
@@ -207,7 +211,7 @@ trouve sous **Encore à planifier**. **Nouvel ordre de travail** en haut à droi
 
 ![La liste du planning de la démo : la semaine par jour, avec les signaux, le collaborateur dans sa couleur et le bouton Attribuer](images/planning-lijst-fr.png "Liste du planning")
 
-Pour chaque ordre, vous voyez les signaux (*Date fixe — ne pas déplacer*, *Peut être exécuté plus tôt*,
+Pour chaque ordre, vous voyez les signaux (*Urgent*, *Date fixe — ne pas déplacer*, *Peut être exécuté plus tôt*,
 *Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro (avec ⇅ si l'ordre est placé à la main), la
 date demandée par le client (**Demandé**), **Quand** (la partie de journée et l'heure convenue), le client, le chantier, la
 description et le type de travail. Avec le sélecteur de colonnes (l'icône à côté d'**Exporter**), vous ajoutez **Commandé**,
