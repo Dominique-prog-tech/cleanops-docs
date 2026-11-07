@@ -1,5 +1,5 @@
 ---
-description: "Clients et fournisseurs dans l'application CleanOps pour le bureau : rechercher, la fiche client avec son solde et ses factures, créer ou modifier un client, le solde d'un fournisseur."
+description: "Clients et fournisseurs dans l'application pour le bureau : rechercher, la fiche client et son solde, créer ou modifier un client, un fournisseur."
 ---
 
 # Clients et fournisseurs
