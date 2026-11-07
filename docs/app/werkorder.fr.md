@@ -121,6 +121,21 @@ l'ordre de travail dans CleanOps.
 
 En dessous figurent les boutons pour terminer : voir [Faire signer](laten-tekenen.fr.md).
 
+### Un montant hors TVA
+
+À partir de la version 1.3.3 de l'application. Au-dessus du montant figure la TVA de l'ordre de travail, par exemple
+*TVA de cet ordre de travail : 21 % T.V.A.* Si le collaborateur connaît le montant hors TVA, il appuie sur **HTVA** et saisit ce
+montant. L'application ajoute la TVA et affiche le calcul en dessous, par exemple *€ 75,00 + 21 % TVA = € 90,75*.
+
+- C'est toujours le montant **TVA comprise** qui est enregistré. Après l'enregistrement, le champ repasse sur **TVAC**, avec ce
+  montant.
+- L'application calcule avec les [codes TVA](../beheer/btw-codes.fr.md) de votre entreprise, pas avec des taux fixes.
+- Si l'ordre de travail n'a pas encore de code TVA, le collaborateur en choisit un sous **Code TVA**. Il est placé sur l'ordre de
+  travail à l'enregistrement. Sans code TVA, l'application ne peut pas convertir un montant hors TVA : elle demande d'abord le code
+  TVA.
+- L'application ne modifie pas un code TVA que l'ordre de travail a déjà. C'est le bureau qui le fait sur la fiche de l'ordre de
+  travail.
+
 ### Payer avec un code QR
 
 À partir de la version 1.3.2 de l'application. Si le collaborateur choisit un mode qui affiche un

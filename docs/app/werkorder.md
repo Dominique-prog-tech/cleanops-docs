@@ -118,6 +118,18 @@ CleanOps.
 
 Daaronder staan de knoppen om af te ronden: zie [Laten tekenen](laten-tekenen.md).
 
+### Een bedrag zonder btw
+
+Vanaf versie 1.3.3 van de app. Boven het bedrag staat de btw van de werkorder, bijvoorbeeld *Btw van deze werkorder: 21 % btw*.
+Kent de medewerker het bedrag zonder btw, dan tikt hij op **Excl. btw** en vult hij dat bedrag in. De app rekent de btw erbij en
+toont de som eronder, bijvoorbeeld *€ 75,00 + 21 % btw = € 90,75*.
+
+- Bewaard wordt altijd het bedrag **inclusief btw**. Na het bewaren staat het veld weer op **Incl. btw**, met dat bedrag.
+- De app rekent met de [btw-codes](../beheer/btw-codes.md) van uw bedrijf, niet met vaste percentages.
+- Heeft de werkorder nog geen btw-code, dan kiest de medewerker er een onder **Btw-code**. Die komt bij het bewaren op de
+  werkorder. Zonder btw-code kan de app een bedrag zonder btw niet omrekenen: dan vraagt ze eerst de btw-code.
+- Een btw-code die de werkorder al heeft, wijzigt de app niet. Dat doet kantoor op de werkorderfiche.
+
 ### Betalen met een QR
 
 Vanaf versie 1.3.2 van de app. Kiest de medewerker een betaalwijze die een [betaal-QR](../beheer/betaalwijzen.md#betalen-met-een-qr-op-het-werk)
