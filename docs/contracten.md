@@ -74,6 +74,18 @@ De velden staan in vijf blokken: **Contract**, **Adres**, **Ritme en planning**,
 | Start * | Vanaf wanneer het ritme loopt. Mag niet vóór de contractdatum liggen. |
 | Einde | Vanaf deze datum komen er geen beurten meer bij. Mag niet vóór de start liggen. |
 
+**Bijkomende lijnen**
+
+Komt er bij elke beurt meer dan één soort werk, bijvoorbeeld de vetput naast de septische put, zet die dan onder
+**Bijkomende lijnen**. Tik op **+ Lijn toevoegen** en kies een **tarief**, of vul een eigen **omschrijving** in (leeg = de tekst
+van het tarief). Vul het **aantal** in en, als het een ander tarief is, de **btw-code** (standaard die van het contract). Met **⋯**
+verwijdert u een lijn.
+
+- Elke **nieuwe** werkorder van dit contract krijgt deze lijnen als
+  [bijkomende lijnen](werkorders.md#bijkomende-lijnen). Werkorders die er al zijn, veranderen niet.
+- Er komt geen prijs op het contract. De eenheid en de prijs vult u op de werkorder in, zoals bij het tarief van het contract.
+- Zolang de werkorders nog uit de vorige toepassing komen, kunnen er geen bijkomende lijnen bij.
+
 **Adres**
 
 | Veld | Toelichting |

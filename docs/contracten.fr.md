@@ -74,6 +74,18 @@ Les champs sont répartis en cinq blocs : **Contrat**, **Adresse**, **Rythme et 
 | Début * | À partir de quand le rythme court. Ne peut pas précéder la date du contrat. |
 | Fin | À partir de cette date, plus aucun passage ne s'ajoute. Ne peut pas précéder le début. |
 
+**Lignes supplémentaires**
+
+Si chaque passage comprend plus d'un type de travail, par exemple le bac à graisse à côté de la fosse septique, ajoutez-le sous
+**Lignes supplémentaires**. Appuyez sur **+ Ajouter une ligne** et choisissez un **tarif**, ou indiquez votre propre
+**description** (vide = le texte du tarif). Indiquez la **quantité** et, s'il s'agit d'un autre taux, le **code TVA** (par défaut
+celui du contrat). Avec **⋯**, vous supprimez une ligne.
+
+- Chaque **nouvel** ordre de travail de ce contrat reçoit ces lignes comme
+  [lignes supplémentaires](werkorders.fr.md#lignes-supplementaires). Les ordres de travail existants ne changent pas.
+- Le contrat ne porte pas de prix. L'unité et le prix se complètent sur l'ordre de travail, comme pour le tarif du contrat.
+- Tant que les ordres de travail viennent encore de l'application précédente, aucune ligne supplémentaire n'est possible.
+
 **Adresse**
 
 | Champ | Explication |
