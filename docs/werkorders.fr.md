@@ -174,6 +174,11 @@ Si vous modifiez une date, la fiche montre aussitôt le statut que l'ordre recev
 
 Le bloc **Facturation**, en bas de la fiche, indique ce qui sera facturé.
 
+Si l'ordre de travail porte des [notes](#notes), par exemple du collaborateur dans l'application mobile, elles figurent en haut
+de ce bloc dans un cadre orange, avec leur auteur et leur moment : ce qui s'est passé sur place peut changer la facture.
+**Toutes les notes** vous mène à l'onglet, où vous les modifiez ou en ajoutez une. Le cadre montre les notes telles qu'elles
+étaient à l'ouverture de la fiche.
+
 ![Le bloc Facturation d'un ordre de travail : Tarif, Référence client, Quantité, Unité, Prix unitaire, Montant et Code TVA](images/werkorder-facturatie-fr.png "Facturation")
 
 | Champ | Explication |
@@ -300,7 +305,8 @@ Ajouter et corriger du temps est réservé à qui peut modifier les ordres de tr
 
 L'onglet **Notes** regroupe ce qui a été noté sur cet ordre de travail : par les collaborateurs dans
 l'[application mobile](app/werkorder.fr.md#notes), ou au bureau. Une note de l'application figure avec **par** et le nom du
-collaborateur. **Rechercher dans les notes…** vous permet d'en retrouver une.
+collaborateur. **Rechercher dans les notes…** vous permet d'en retrouver une. L'onglet indique combien de notes il y a, par
+exemple **Notes (2)**, et elles figurent aussi dans la [facturation](#facturation).
 
 Avec **+ Note**, vous en ajoutez une vous-même : un **Objet** (obligatoire), **Quand** et le **Texte**. Passez la souris
 sur une note pour **Modifier** et **Supprimer**. Une note supprimée disparaît de la liste, mais reste conservée dans

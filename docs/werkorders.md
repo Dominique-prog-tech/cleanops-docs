@@ -166,6 +166,11 @@ Wijzigt u een datum, dan toont de fiche meteen welke status de werkorder bij het
 
 Het blok **Facturatie** onderaan de fiche zegt wat er gefactureerd wordt.
 
+Heeft de werkorder [notities](#notities), bijvoorbeeld van de medewerker in de mobiele app, dan staan ze bovenaan dit blok in
+een oranje kader, met wie ze schreef en wanneer: wat er ter plaatse gebeurde, kan de factuur veranderen. Met **Alle notities**
+gaat u naar het tabblad, waar u ze bewerkt of er een bijschrijft. Het kader toont de notities zoals ze waren toen u de fiche
+opende.
+
 ![Het blok Facturatie van een werkorder: Tarief, Klantreferentie, Aantal, Eenheid, Eenheidsprijs, Bedrag en Btw-code](images/werkorder-facturatie.png "Facturatie")
 
 | Veld | Toelichting |
@@ -291,7 +296,8 @@ Tijd toevoegen en rechtzetten kan wie werkorders mag bewerken.
 
 Het tabblad **Notities** bundelt wat er over deze werkorder genoteerd werd: door de medewerkers in de
 [mobiele app](app/werkorder.md#notities), of op het kantoor. Een notitie uit de app staat er met **door** en de naam van
-de medewerker. Met **Zoeken in de notities…** vindt u er een terug.
+de medewerker. Met **Zoeken in de notities…** vindt u er een terug. Het tabblad toont hoeveel notities er zijn, bijvoorbeeld
+**Notities (2)**, en ze staan ook bij de [facturatie](#facturatie).
 
 Met **+ Notitie** voegt u er zelf een toe: een **Onderwerp** (verplicht), **Wanneer** en de **Tekst**. Ga met de muis
 over een notitie voor **Bewerken** en **Verwijderen**. Een verwijderde notitie verdwijnt uit de lijst, maar blijft

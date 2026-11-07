@@ -71,6 +71,9 @@ Klik bij de klant op **Factureren…**. Het venster toont zijn te factureren wer
   werkorder, in een nieuw tabblad (zie [Cameraverslagen](cameraverslagen.md#in-de-facturatie)). Factureren kan ook zonder.
 - **getekend** staat er in het groen als de klant de leveringsbon in de [mobiele app](app/laten-tekenen.md)
   aftekende. Een klik opent de getekende bon in een nieuw tabblad: zo factureert u wat de klant aftekende.
+- **notitie** of **2 notities** staat er in het oranje als er bij de werkorder iets genoteerd werd, bijvoorbeeld door de medewerker
+  in de [mobiele app](app/werkorder.md#notities). Wijs het aan om de notities te lezen; een klik opent ze op de werkorder, in een
+  nieuw tabblad.
 - **contract** opent het contract in een nieuw tabblad.
 - Klik op het nummer om de werkorder in een nieuw tabblad te openen en recht te zetten.
 - Per werkorder ziet u ook de **btw-code**, het **aantal** en de **eenheidsprijs** (leeg als ze 0 zijn). Let op 6 %: dan hoort er

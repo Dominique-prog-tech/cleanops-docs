@@ -75,6 +75,9 @@ Cliquez sur **Facturer…** à côté du client. La fenêtre affiche ses ordres 
   pouvez facturer sans.
 - **signé** figure en vert lorsque le client a signé le bon de livraison dans l'[application mobile](app/laten-tekenen.fr.md).
   Un clic ouvre le bon signé dans un nouvel onglet : vous facturez ce que le client a signé.
+- **note** ou **2 notes** figure en orange lorsque quelque chose a été noté sur l'ordre de travail, par exemple par le collaborateur
+  dans l'[application mobile](app/werkorder.fr.md#notes). Pointez-le pour lire les notes ; un clic les ouvre sur l'ordre de travail,
+  dans un nouvel onglet.
 - **contrat** ouvre le contrat dans un nouvel onglet.
 - Cliquez sur le numéro pour ouvrir l'ordre de travail dans un nouvel onglet et le corriger.
 - Pour chaque ordre, vous voyez aussi le **code TVA**, la **quantité** et le **prix unitaire** (vides s'ils valent 0). Attention
