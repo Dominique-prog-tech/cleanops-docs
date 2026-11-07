@@ -50,7 +50,11 @@ Met de drie streepjes linksboven opent het menu: de naam en het e-mailadres van 
 Onder **Profiel** kiest de medewerker:
 
 - de **Weergave**: zoals de **Telefoon**, **Licht** of **Donker**;
-- de **Taal** van de app: zoals de **Telefoon**, **Nederlands** of **Français**.
+- de **Taal** van de app: zoals de **Telefoon**, **Nederlands** of **Français**;
+- vanaf versie 1.3.3 de **Navigatie**: met welke app **Route** de weg opent. **Telefoon** is de kaartapp van het toestel (op een
+  iPhone Apple Kaarten); daarnaast **Google Maps** en **Waze**, als die op het toestel staan. Staat er geen van beide, dan is er
+  niets te kiezen en ontbreekt de keuze. Wordt de gekozen app later verwijderd, dan opent Route weer in de kaartapp van het toestel.
+  De **Dagroute in Google Maps** blijft altijd Google Maps: Waze kent geen route langs meerdere adressen.
 
 Met **Afmelden** meldt hij zich af. Dat geldt enkel voor dat toestel.
 

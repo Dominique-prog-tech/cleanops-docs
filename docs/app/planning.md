@@ -11,7 +11,8 @@ De app opent op de planning van vandaag: de werkorders van de medewerker en zijn
 ## Per werkorder
 
 Op elke kaart staan het tijdsdeel, de klant, het nummer van de werkorder met de medewerker, wat er moet gebeuren en het
-adres. Met **Route** opent de weg in de kaartapp van het toestel.
+adres. Met **Route** opent de weg in de kaartapp van het toestel, of in de app die de medewerker onder
+[Profiel](aan-de-slag.md#het-profiel) koos.
 
 Staat het er, dan zegt een label hoe de werkorder ervoor staat:
 

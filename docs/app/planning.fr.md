@@ -12,7 +12,8 @@ de la journée.
 ## Par ordre de travail
 
 Chaque carte montre la partie de la journée, le client, le numéro de l'ordre de travail avec le collaborateur, ce qu'il
-faut faire et l'adresse. **Itinéraire** ouvre le trajet dans l'application de cartes de l'appareil.
+faut faire et l'adresse. **Itinéraire** ouvre le trajet dans l'application de cartes de l'appareil, ou dans celle que le
+collaborateur a choisie sous [Profil](aan-de-slag.fr.md#le-profil).
 
 Le cas échéant, une étiquette indique où en est l'ordre de travail :
 

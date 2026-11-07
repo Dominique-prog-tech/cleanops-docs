@@ -51,7 +51,12 @@ Les trois traits en haut à gauche ouvrent le menu : le nom et l'adresse e-mail 
 Sous **Profil**, le collaborateur choisit :
 
 - l'**Affichage** : comme le **Téléphone**, **Clair** ou **Sombre** ;
-- la **Langue** de l'application : comme le **Téléphone**, **Nederlands** ou **Français**.
+- la **Langue** de l'application : comme le **Téléphone**, **Nederlands** ou **Français** ;
+- à partir de la version 1.3.3, la **Navigation** : l'application dans laquelle **Itinéraire** ouvre le trajet. **Téléphone** est
+  l'application de cartes de l'appareil (sur un iPhone, Plans) ; à côté, **Google Maps** et **Waze**, s'ils sont installés. Si
+  aucun des deux ne l'est, il n'y a rien à choisir et le choix n'apparaît pas. Si l'application choisie est désinstallée par la
+  suite, Itinéraire s'ouvre de nouveau dans l'application de cartes de l'appareil. L'**Itinéraire du jour dans Google Maps** reste
+  toujours Google Maps : Waze ne connaît pas de trajet passant par plusieurs adresses.
 
 **Se déconnecter** le déconnecte. Cela ne vaut que pour cet appareil.
 
