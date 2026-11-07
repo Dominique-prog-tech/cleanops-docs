@@ -159,19 +159,19 @@ Het tijdsdeel kiest u op de [werkorderfiche](werkorders.md#planning-en-uitvoerin
 - **Zonder muis** — klik een kaart: bovenaan staat *Werkorder … gekozen*. Klik dan een andere kaart of een lege plaats
   in een dag. Met **Annuleren** kiest u niets.
 - **Werk zonder datum inplannen** — sleep de kaart van links naar een dag.
+- **Terug naar Nog in te plannen** — sleep een kaart van het bord naar de kolom **Nog in te plannen** links. Zolang u een
+  werkorder van het bord sleept of gekozen hebt, staat daar bovenaan een vak om ze los te laten of aan te klikken. De werkorder
+  verliest haar datum én haar medewerker, en gaat terug naar *Ingegeven*. Uitgevoerd werk kan niet terug.
 - **Naar een andere week** — zolang u sleept, staat links en rechts van het bord een strook *Vorige week* en *Volgende
   week*. Blijf er even op en het bord springt een week, zolang u erop blijft. Laat de kaart dan los op een dag van die
   week. Laat u ze nergens los, dan blijft ze gekozen: klik een dag om ze te plaatsen, of **Annuleren**.
 
 Heeft de werkorder een **vaste datum**, dan vraagt CleanOps *Toch verplaatsen?* zodra u ze naar een andere dag
-sleept. Een andere plaats op dezelfde dag vraagt niets.
+sleept, en *Toch uit de planning halen?* als u ze terugzet naar **Nog in te plannen**. Een andere plaats op dezelfde dag
+vraagt niets.
 
 Sleept u een werkorder naar een medewerker op een dag dat hij afwezig is (verlof, ziekte), dan blijft de werkorder daar
 staan en waarschuwt CleanOps erbij.
-
-!!! info "Een datum weghalen"
-    Zonder datum terugzetten gaat niet op het bord. Dat doet u in de planningslijst: open **Toewijzen** en maak de
-    **Geplande dag** leeg. De werkorder gaat dan terug naar *Ingegeven*.
 
 ### Vrije blokken en verlof
 

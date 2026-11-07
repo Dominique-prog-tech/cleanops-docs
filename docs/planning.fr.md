@@ -163,20 +163,20 @@ Vous choisissez la partie de journée sur la [fiche de l'ordre de travail](werko
 - **Sans souris** — cliquez une carte : en haut apparaît *Ordre … choisi*. Cliquez ensuite une autre carte ou un
   endroit vide d'un jour. **Annuler** ne choisit rien.
 - **Planifier du travail sans date** — glissez la carte de la gauche vers un jour.
+- **Retour à Encore à planifier** — glissez une carte du tableau vers la colonne **Encore à planifier** à gauche. Tant que
+  vous glissez ou avez choisi un ordre du tableau, une zone apparaît en haut de cette colonne pour le lâcher ou le cliquer.
+  L'ordre perd sa date et son collaborateur, et redevient *Encodé*. Le travail exécuté ne peut pas revenir.
 - **Vers une autre semaine** — pendant que vous glissez, une bande *Semaine précédente* et *Semaine suivante* apparaît à
   gauche et à droite du tableau. Restez-y un instant et le tableau saute d’une semaine, aussi longtemps que vous y
   restez. Lâchez ensuite la carte sur un jour de cette semaine. Si vous ne la lâchez nulle part, elle reste choisie :
   cliquez un jour pour la placer, ou **Annuler**.
 
 Si l'ordre porte une **date fixe**, CleanOps demande *Le déplacer quand même ?* dès que vous le glissez vers un autre
-jour. Une autre place le même jour ne demande rien.
+jour, et *Le retirer quand même du planning ?* si vous le remettez dans **Encore à planifier**. Une autre place le même
+jour ne demande rien.
 
 Si vous glissez un ordre de travail vers un collaborateur un jour où il est absent (congé, maladie), l'ordre reste à cette
 place et CleanOps vous avertit.
-
-!!! info "Retirer une date"
-    Remettre un ordre sans date ne se fait pas sur le tableau. Vous le faites dans la liste du planning : ouvrez
-    **Attribuer** et videz le **Jour planifié**. L'ordre redevient alors *Encodé*.
 
 ### Blocs libres et congés
 
