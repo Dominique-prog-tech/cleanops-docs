@@ -8,7 +8,7 @@ Sur Facturation, vous facturez le travail exécuté. Vous voyez par client les o
 qui va sur la facture et vous la comptabilisez. La facture reçoit immédiatement son numéro, son échéance et sa communication
 structurée.
 
-![La liste À facturer de la démo : à gauche par client les colonnes Ordres et Total net avec le bouton Facturer…, à droite les ordres du client choisi](images/facturatie-lijst-fr.png "Facturation")
+![L'écran Facturation de la démo : à gauche par client les colonnes Ordres et Total net avec le bouton Facturer…, à droite les ordres du client choisi avec leur mode de paiement](images/facturatie-lijst-fr.png "Facturation")
 
 ## Ouvrir l'écran
 
@@ -33,7 +33,9 @@ Le sélecteur de colonnes affiche aussi le **N° client** et l'**Exécution la p
 ### Les ordres de travail d'un client
 
 Cliquez à gauche sur un client, ou parcourez la liste avec les flèches du clavier. À droite, vous voyez aussitôt ses ordres de travail avec le numéro,
-la date d'exécution, la description, le code TVA et le montant. Sous la description figurent les mêmes signaux que dans la fenêtre
+la date d'exécution, la description, le [mode de paiement](beheer/betaalwijzen.fr.md), le code TVA et le montant. Chaque mode de
+paiement donne une facture distincte ; avec la mention *sur place*, CleanOps comptabilise cette facture d'emblée comme payée. Un trait
+signifie que l'ordre n'a pas de mode de paiement. Sous la description figurent les mêmes signaux que dans la fenêtre
 Facturer, par exemple **attestation manquante** ou **sans montant**. Le sélecteur de colonnes affiche aussi la **quantité** et le **prix unitaire**.
 
 Si le client a payé sur place avec un [code QR](beheer/betaalwijzen.fr.md#payer-avec-un-code-qr-sur-place), vous voyez

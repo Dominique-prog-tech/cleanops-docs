@@ -7,7 +7,7 @@ description: "Factureren in CleanOps: per klant het uitgevoerde werk kiezen en b
 Op Facturatie maakt u facturen van het uitgevoerde werk. U ziet per klant welke werkorders te factureren zijn, kiest wat er op
 de factuur komt en boekt ze. De factuur krijgt meteen haar nummer, vervaldag en gestructureerde mededeling.
 
-![De lijst Te factureren van de demo: links per klant de kolommen Aantal en Netto totaal met de knop Factureren…, rechts de werkorders van de gekozen klant](images/facturatie-lijst.png "Facturatie")
+![Het scherm Facturatie van de demo: links per klant de kolommen Aantal en Netto totaal met de knop Factureren…, rechts de werkorders van de gekozen klant met hun betaalwijze](images/facturatie-lijst.png "Facturatie")
 
 ## Het scherm openen
 
@@ -31,7 +31,9 @@ Met de kolomkiezer toont u ook het **Klantnr** en de **Oudste uitvoering**: het 
 ### De werkorders van een klant
 
 Klik links op een klant, of ga met de pijltjestoetsen door de lijst. Rechts ziet u meteen zijn werkorders met het nummer, de
-uitvoeringsdatum, de omschrijving, de btw-code en het bedrag. Onder de omschrijving staan dezelfde signalen als in het venster
+uitvoeringsdatum, de omschrijving, de [betaalwijze](beheer/betaalwijzen.md), de btw-code en het bedrag. Elke betaalwijze wordt
+een eigen factuur; staat er *ter plaatse* bij, dan boekt CleanOps die factuur meteen als betaald. Een streep betekent dat de werkorder
+geen betaalwijze heeft. Onder de omschrijving staan dezelfde signalen als in het venster
 Factureren, bijvoorbeeld **attest ontbreekt** of **geen bedrag**. Met de kolomkiezer toont u ook het **aantal** en de **eenheidsprijs**.
 
 Betaalde de klant op het werk met een [betaal-QR](beheer/betaalwijzen.md#betalen-met-een-qr-op-het-werk), dan staat er
