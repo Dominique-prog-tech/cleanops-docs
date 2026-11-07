@@ -16,6 +16,9 @@ contractnummer. Dat is dezelfde zoeker als in de lijst Werkorders op de computer
 Zonder zoekterm toont de lijst alle werkorders. Boven de lijst staat hoeveel werkorders er gevonden zijn. De app toont er 30 tegelijk; met **Meer laden** onderaan komen
 de volgende.
 
+Vanaf versie 1.3.3 staat onder een werkorder in het klein hoe er **betaald** werd, bijvoorbeeld *Cash (ter plaatse) · € 90,75*. Het
+bedrag staat er enkel bij een betaling ter plaatse: het is wat de medewerker in de app noteerde, niet het gefactureerde bedrag.
+
 Op een **tablet** staat de fiche rechts naast de lijst; op een **telefoon** opent ze als een eigen scherm.
 
 ![Werkorders op een tablet: links de 56 gevonden werkorders met hun status en onderaan Nieuwe werkorder, rechts de fiche van werkorder 900155 met Route en Bellen, de planning, het werk en de handtekening van de klant met Bekijk de getekende bon](../images/app-kantoor-werkorders.png "Een werkorder voor kantoor"){ width="560" }
@@ -26,7 +29,7 @@ De fiche toont wat de ploeg ter plaatse ziet, en daarbij hoe het werk uitgevoerd
 
 | Blok | Wat erin staat |
 |---|---|
-| Bovenaan | De klant, de werf en de status. Het adres met **Route**, die de weg opent in de kaartapp; het telefoonnummer met **Bellen**. |
+| Bovenaan | De klant, de werf en de status. De **betaalwijze**, als er een gekozen is (het bedrag ter plaatse staat onder Planning). Het adres met **Route**, die de weg opent in de kaartapp; het telefoonnummer met **Bellen**. |
 | Planning | **Gepland**: de dag en het dagdeel. **Uitgevoerd**: de dag waarop het werk uitgevoerd werd. De **medewerker** en de bijrijder, het **voertuig** en het **bedrag ter plaatse**. |
 | Werk | De **instructie**, de **opdracht**, de **opmerking**, het **materiaal** en het **tarief**. |
 | Tijd | Elke registratie van de teller: **werken** of **verplaatsing**, wie, van wanneer tot wanneer en hoelang. |
@@ -35,6 +38,15 @@ De fiche toont wat de ploeg ter plaatse ziet, en daarbij hoe het werk uitgevoerd
 | Handtekening van de klant | Wie tekende en wanneer, met de opmerking van de klant. **Bekijk de getekende bon** opent de getekende leveringsbon als pdf. |
 
 Er staat geen knop om iets te wijzigen: de teller, het afronden en het tekenen blijven bij de medewerker die het werk doet.
+
+## Een werkorder verwijderen
+
+Vanaf versie 1.3.3 veegt u een werkorder in de lijst **Werkorders** of **Nog in te plannen** naar links om ze te verwijderen. De
+app vraagt eerst *Werkorder … naar de prullenbak?*. Na **Naar de prullenbak** staat onderaan een melding met **Ongedaan maken**:
+daarmee staat de werkorder meteen terug. Later haalt u ze terug via de [prullenbak](../beheer/prullenbak.md) op de computer.
+
+Vegen kan enkel met het recht om werkorders te wijzigen, en niet bij een werkorder die gefactureerd of door de klant getekend is.
+Zolang de vorige toepassing de werkorders bijhoudt, kan het niet.
 
 ## Een nieuwe werkorder
 

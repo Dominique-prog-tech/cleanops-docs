@@ -17,6 +17,9 @@ ou un numéro de contrat. C'est la même recherche que dans la liste Ordres de t
 Sans terme de recherche, la liste affiche tous les ordres de travail. Au-dessus de la liste figure le nombre d'ordres de travail trouvés. L'application en affiche 30 à la fois ; avec
 **Charger plus** en bas, les suivants arrivent.
 
+À partir de la version 1.3.3, sous un ordre de travail figure en petit comment il a été **payé**, par exemple *Cash (sur place) · € 90,75*.
+Le montant n'y figure que pour un paiement sur place : c'est ce que le collaborateur a noté dans l'application, pas le montant facturé.
+
 Sur une **tablette**, la fiche figure à droite de la liste ; sur un **téléphone**, elle s'ouvre comme un écran à part.
 
 ![Les ordres de travail sur une tablette : à gauche les 56 ordres de travail trouvés avec leur statut et en bas Nouvel ordre, à droite la fiche de l'ordre de travail 900155 avec Itinéraire et Appeler, le planning, le travail et la signature du client avec Voir le bon signé](../images/app-kantoor-werkorders-fr.png "Un ordre de travail pour le bureau"){ width="560" }
@@ -28,7 +31,7 @@ pas affiché.
 
 | Bloc | Contenu |
 |---|---|
-| En haut | Le client, le chantier et le statut. L'adresse avec **Itinéraire**, qui ouvre le trajet dans l'application de cartes ; le numéro de téléphone avec **Appeler**. |
+| En haut | Le client, le chantier et le statut. Le **mode de paiement**, s'il a été choisi (le montant sur place figure sous Planning). L'adresse avec **Itinéraire**, qui ouvre le trajet dans l'application de cartes ; le numéro de téléphone avec **Appeler**. |
 | Planning | **Planifié** : le jour et la partie de journée. **Exécuté** : le jour où le travail a été exécuté. Le **collaborateur** et le convoyeur, le **véhicule** et le **montant sur place**. |
 | Travail | L'**instruction**, la **mission**, la **remarque**, le **matériel** et le **tarif**. |
 | Temps | Chaque enregistrement du chrono : **travail** ou **déplacement**, qui, de quand à quand et combien de temps. |
@@ -38,6 +41,16 @@ pas affiché.
 
 Aucun bouton ne permet de modifier quoi que ce soit : le chrono, la clôture et la signature restent chez le collaborateur
 qui fait le travail.
+
+## Supprimer un ordre de travail
+
+À partir de la version 1.3.3, glissez un ordre de travail vers la gauche dans la liste **Ordres de travail** ou **Encore à planifier**
+pour le supprimer. L'application demande d'abord *Mettre l'ordre de travail … à la corbeille ?*. Après **Vers la corbeille**, un message
+avec **Annuler** apparaît en bas : l'ordre revient aussitôt. Plus tard, vous le récupérez via la [corbeille](../beheer/prullenbak.fr.md)
+sur l'ordinateur.
+
+Glisser n'est possible qu'avec le droit de modifier les ordres de travail, et pas pour un ordre facturé ou signé par le client.
+Tant que l'application précédente tient les ordres de travail, ce n'est pas possible.
 
 ## Un nouvel ordre de travail
 
