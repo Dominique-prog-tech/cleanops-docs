@@ -94,7 +94,8 @@ staan.
   de medewerkerfiche.
 - **Nog in te plannen** — links staat het werk dat nog geen geplande datum heeft, met het aantal erbij. Elke kaart toont het
   nummer, het label **dringend** en het afgesproken uur als die er zijn, de klant, het adres, het telefoon- of gsm-nummer en de
-  omschrijving. De dringende werkorders staan bovenaan.
+  omschrijving. De dringende werkorders staan bovenaan. Met het potlood ✎ naast het nummer opent u de werkorderfiche, net
+  als op het bord; een klik op de kaart zelf kiest ze om in te plannen.
 - **De weergave** — met **Per medewerker** en **Per dag** naast het vinkje Weekend kiest u hoe het bord ligt. Uw browser
   onthoudt de keuze.
 - **Scrollen** — enkel het bord scrolt, naar onder en opzij. De weekknoppen en **Nog in te plannen** blijven staan, en in het

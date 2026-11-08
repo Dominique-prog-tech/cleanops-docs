@@ -98,7 +98,8 @@ rempli sur le travail reste en place.
   sur la fiche collaborateur.
 - **Encore à planifier** — à gauche se trouve le travail qui n'a pas encore de date planifiée, avec leur nombre. Chaque carte
   montre le numéro, l'étiquette **urgent** et l'heure convenue s'il y en a, le client, l'adresse, le numéro de téléphone ou de
-  GSM et la description. Les ordres urgents figurent en haut.
+  GSM et la description. Les ordres urgents figurent en haut. Le crayon ✎ à côté du numéro ouvre la fiche de l'ordre de
+  travail, comme sur le tableau ; un clic sur la carte elle-même la choisit pour la planifier.
 - **L'affichage** — avec **Par collaborateur** et **Par jour**, à côté de la case Week-end, vous choisissez la disposition
   du tableau. Votre navigateur retient ce choix.
 - **Le défilement** — seul le tableau défile, vers le bas et sur le côté. Les boutons de semaine et **Encore à planifier**
