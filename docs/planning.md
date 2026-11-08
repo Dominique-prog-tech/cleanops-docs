@@ -126,6 +126,7 @@ een kaart aan, dan ziet u ook de werf, de typering en de signalen.
 | ⇅ | Met de hand geplaatst: de werkorder blijft staan waar de planner ze zette, ook vóór een vroeger tijdsdeel. Klik erop om ze terug op haar tijdsdeel te zetten. |
 | ✎ | Opent de werkorderfiche. Met **← Planning** komt u terug in dezelfde week. |
 | ✓ | Uitgevoerd: de werkorder is te factureren of gefactureerd. |
+| OK / NOK | Weet de klant van de afspraak? Klik om te wisselen. Zie [Klant verwittigd](#klant-verwittigd). |
 
 De rand links op de kaart zegt meer over de werkorder:
 
@@ -141,6 +142,19 @@ toch gebeurd is.
 
 Draagt een werkorder de code van een medewerker die niet meer in de lijst staat, dan staat ze bij
 **(niet toegewezen)**, met die code schuin eronder.
+
+### Klant verwittigd
+
+Rechtsonder op elke geplande kaart staat **NOK** (rood) of **OK** (groen): weet de klant wanneer de ploeg komt? Hebt u de klant
+gebeld of gemaild, klik dan op **NOK** en het wordt **OK**. Een klik op **OK** zet het terug op **NOK**. Zo ziet u in één
+oogopslag wie u nog moet verwittigen.
+
+- Verplaatst u de werkorder naar een andere dag, of wijzigt het tijdsdeel of het afgesproken uur, dan springt het label
+  vanzelf terug naar **NOK**: de klant kent dan nog de oude afspraak. Een andere medewerker op dezelfde dag verandert niets.
+- Op de werkorderfiche staat hetzelfde als het vinkje **Klant verwittigd**. Verzet u daar de dag en vinkt u het tegelijk aan,
+  dan blijft het aan: u hebt de klant de nieuwe afspraak gemeld.
+- Werk zonder dag (**Nog in te plannen**) en uitgevoerd werk dragen geen label.
+- Wie het bord enkel mag bekijken, ziet het label maar kan er niet op klikken.
 
 ### De volgorde in een dag
 

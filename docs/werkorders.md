@@ -143,6 +143,7 @@ De vinkjes staan in het blok **Uit te voeren werk**, in twee rijen: de planning 
 | Rij | Vinkje | Betekenis |
 |---|---|---|
 | Planning | Dringend | Zo snel mogelijk inplannen. De werkorder krijgt een rood label op de planning en staat bovenaan bij *Nog in te plannen*. |
+| | Klant verwittigd | De klant kent de dag en het uur van de afspraak: **OK** op het planbord, anders **NOK**. Enkel met een geplande datum. Verzet u de dag, het tijdsdeel of het uur zonder dit vinkje aan te raken, dan staat het na **Bewaren** terug uit. Zie [Klant verwittigd](planning.md#klant-verwittigd). |
 | | Vaste datum | De werkorder mag niet verplaatst worden. Wint van *Mag vroeger* als beide aangevinkt zijn. Wijzigt u op de fiche de geplande datum, dan herinnert een melding u aan de afgesproken dag. |
 | | Mag vroeger | Het werk mag vroeger uitgevoerd worden dan gepland. |
 | | Groot werk | Een grote opdracht; het staat als label op de leveringsbon. |

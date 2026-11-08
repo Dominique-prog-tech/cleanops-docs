@@ -130,6 +130,7 @@ jusqu'à son exécution. Si vous pointez une carte, vous voyez aussi le chantier
 | ⇅ | Placé à la main : l'ordre reste là où le planificateur l'a mis, même devant une partie de journée plus tôt. Cliquez dessus pour le remettre sur sa partie de journée. |
 | ✎ | Ouvre la fiche de l'ordre de travail. Avec **← Planning**, vous revenez à la même semaine. |
 | ✓ | Exécuté : l'ordre de travail est à facturer ou facturé. |
+| OK / NOK | Le client connaît-il le rendez-vous ? Cliquez pour changer. Voir [Client averti](#client-averti). |
 
 Le bord gauche de la carte en dit plus sur l'ordre :
 
@@ -144,6 +145,20 @@ vers un nouveau jour, ou indiquez la date sous **Exécuté** sur la fiche de l'o
 
 Si un ordre porte le code d'un collaborateur qui ne figure plus dans la liste, il se trouve sous **(non attribué)**,
 avec ce code en italique en dessous.
+
+### Client averti
+
+En bas à droite de chaque carte planifiée figure **NOK** (rouge) ou **OK** (vert) : le client sait-il quand l'équipe passe ?
+Si vous avez téléphoné ou écrit au client, cliquez sur **NOK** et il devient **OK**. Un clic sur **OK** le remet sur **NOK**.
+Vous voyez ainsi d'un coup d'œil qui vous devez encore prévenir.
+
+- Si vous déplacez l'ordre vers un autre jour, ou si la partie de journée ou l'heure convenue change, l'étiquette repasse
+  d'elle-même sur **NOK** : le client ne connaît alors que l'ancien rendez-vous. Un autre collaborateur le même jour ne
+  change rien.
+- Sur la fiche de l'ordre de travail, c'est la case **Client averti**. Si vous y changez le jour et cochez la case en même
+  temps, elle reste cochée : vous avez annoncé le nouveau rendez-vous au client.
+- Le travail sans jour (**Encore à planifier**) et le travail exécuté ne portent pas d'étiquette.
+- Qui peut seulement consulter le tableau voit l'étiquette mais ne peut pas cliquer dessus.
 
 ### L'ordre dans une journée
 

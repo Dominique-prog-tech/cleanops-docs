@@ -151,6 +151,7 @@ Les cases à cocher figurent dans le bloc **Travail à exécuter**, en deux lign
 | Ligne | Case | Signification |
 |---|---|---|
 | Planning | Urgent | À planifier au plus vite. L'ordre reçoit une étiquette rouge sur le planning et figure en haut de *Encore à planifier*. |
+| | Client averti | Le client connaît le jour et l'heure du rendez-vous : **OK** sur le tableau de planning, sinon **NOK**. Uniquement avec une date planifiée. Si vous changez le jour, la partie de journée ou l'heure sans toucher à cette case, elle est décochée après **Enregistrer**. Voir [Client averti](planning.md#client-averti). |
 | | Date fixe | L'ordre ne peut pas être déplacé. L'emporte sur *Peut commencer plus tôt* si les deux sont cochées. Si vous modifiez la date planifiée sur la fiche, un message rappelle le jour convenu. |
 | | Peut commencer plus tôt | Le travail peut être exécuté plus tôt que prévu. |
 | | Gros travaux | Une mission importante ; elle figure comme étiquette sur le bon de livraison. |
