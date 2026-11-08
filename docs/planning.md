@@ -8,7 +8,7 @@ In de planning verdeelt u het werk over uw medewerkers en over de dagen van de w
 twee manieren: op het **planbord** sleept u ze naar een andere dag of medewerker, en in de **planningslijst** kent u
 er meerdere tegelijk toe, opent u de dagroute van een chauffeur en drukt u de planning af.
 
-![Het planbord van de demo: een week met per medewerker een rij in zijn kleur, links het werk onder Nog in te plannen, rechtsboven de knop Nieuwe werkorder](images/planning-bord.png "Planbord")
+![Het planbord van de demo: een week met per medewerker een rij in zijn kleur, links het werk onder Nog in te plannen, op elke geplande kaart OK of NOK, rechtsboven de knop Nieuwe werkorder](images/planning-bord.png "Planbord")
 
 ## Het scherm openen
 

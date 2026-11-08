@@ -9,7 +9,7 @@ mêmes ordres de travail de deux façons : sur le **tableau de planning**, vous 
 autre collaborateur, et dans la **liste du planning**, vous en attribuez plusieurs à la fois, vous ouvrez l'itinéraire
 du jour d'un chauffeur et vous imprimez le planning.
 
-![Le tableau de planning de la démo : une semaine avec une ligne par collaborateur dans sa couleur, à gauche le travail sous Encore à planifier, en haut à droite le bouton Nouvel ordre de travail](images/planning-bord-fr.png "Tableau de planning")
+![Le tableau de planning de la démo : une semaine avec une ligne par collaborateur dans sa couleur, à gauche le travail sous Encore à planifier, OK ou NOK sur chaque carte planifiée, en haut à droite le bouton Nouvel ordre de travail](images/planning-bord-fr.png "Tableau de planning")
 
 ## Ouvrir l'écran
 

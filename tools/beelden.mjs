@@ -556,8 +556,18 @@ const SCHOTEN = [
   // vóór de klik, en zonder merkteken uit de volgende week fotografeert het recept de verkeerde week.
   // ⚠️ De weekknop op NAAM met anker: de knop "Vandaag" draagt als titel "...de volgende week", en een losse /Volgende week/
   // kan die nemen.
+  // Klant verwittigd (08/11/2026): de demo kent enkel NOK, en dan toont het beeld niet wat OK is. Zet er zoveel op OK tot het er
+  // TWEE zijn: zo blijft het juist bij een tweede run (een vaste klik zou ze terug omdraaien). Het schrijft in de demo, niet elders.
   { naam: 'planning-bord', route: '/planning', verwacht: /Mestkelder ledigen/, hoogte: 1140,
-    na: async p => { await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) ▶$/ }).first().click(); } },
+    na: async p => {
+      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) ▶$/ }).first().click();
+      await p.getByText(/Mestkelder ledigen/).first().waitFor();
+      for (let i = 0; i < 4 && await p.locator('button[data-verwittigd][data-ok="true"]').count() < 2; i++) {
+        const voor = await p.locator('button[data-verwittigd][data-ok="true"]').count();
+        await p.locator('button[data-verwittigd][data-ok="false"]').first().click();
+        await p.waitForFunction(n => document.querySelectorAll('button[data-verwittigd][data-ok="true"]').length > n, voor, { timeout: 10000 });
+      }
+    } },
   // Het paneel van de snelle werkorder (04/11/2026), met een nieuwe klant: dat toont de velden die de planner aan de telefoon invult.
   { naam: 'planning-paneel', route: '/planning', verwacht: tekstTaal('Telefoon of gsm', 'Téléphone ou GSM'),
     na: async p => {
