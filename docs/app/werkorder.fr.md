@@ -164,6 +164,10 @@ du collaborateur est en néerlandais), suivi du numéro de l'ordre de travail et
 S'il n'a pas donné à l'application l'accès à l'appareil photo la première fois, il l'active dans les réglages de son
 appareil, sous l'application CleanOps. Choisir une photo depuis la galerie reste possible.
 
+**Le travail est fait aujourd'hui, mais l'ordre est planifié plus tard.**
+La clôture n'est possible qu'à partir du jour planifié ; c'est indiqué au-dessus des boutons. Qui peut planifier touche
+**Déplacer à aujourd'hui**. Sinon, le bureau déplace d'abord l'ordre (voir [Déplacer un ordre de travail](kantoor-werkorders.fr.md#deplacer-un-ordre-de-travail)).
+
 **Le temps dans l'application est incorrect.**
 Corrigez-le dans l'onglet [Temps](../werkorders.fr.md#temps) de l'ordre de travail, ou le collaborateur le fait
 lui-même avec **Corriger le temps**.

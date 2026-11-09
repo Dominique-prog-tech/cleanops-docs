@@ -63,7 +63,9 @@ Na het afronden kan de medewerker de werkorder in de app niet meer wijzigen, en 
 toevoegen of verwijderen; zijn eigen tijd rechtzetten kan nog wel. **Laten tekenen kan nog**, zolang de werkorder niet
 gefactureerd is: komt de klant later toch, dan tikt de medewerker alsnog op **Laat de klant aftekenen**.
 
-Een werkorder die gepland is op een dag in de toekomst, kan hij niet afronden en niet laten tekenen.
+Een werkorder die gepland is op een dag in de toekomst, kan hij niet afronden en niet laten tekenen. Vanaf versie 1.3.4 staat dat
+boven de knoppen. Mag hij plannen, dan zet hij ze daar met **Naar vandaag verzetten** meteen op vandaag, ook als ze in een andere
+week stond (zie [Een werkorder verzetten](kantoor-werkorders.md#een-werkorder-verzetten)).
 
 ## Veelgestelde vragen
 

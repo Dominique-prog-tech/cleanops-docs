@@ -39,8 +39,22 @@ pas affiché.
 | Attestations, Rapport caméra, Travaux supplémentaires | Ce que l'équipe a complété sur place. |
 | Signature du client | Qui a signé et quand, avec la remarque du client. **Voir le bon signé** ouvre le bon de livraison signé en PDF. |
 
-Aucun bouton ne permet de modifier quoi que ce soit : le chrono, la clôture et la signature restent chez le collaborateur
-qui fait le travail.
+Le chrono, la clôture et la signature n'ont pas de bouton : ils restent chez le collaborateur qui fait le travail. Qui peut
+planifier voit toutefois [Déplacer](#deplacer-un-ordre-de-travail) sous Planning.
+
+## Déplacer un ordre de travail
+
+À partir de la version 1.3.4, vous déplacez un ordre de travail planifié vers un autre jour, aussi dans une autre semaine, ou vers un
+autre collaborateur. Il vous faut le droit **Modifier le planning**.
+
+1. Ouvrez l'ordre de travail, depuis **Ordres de travail** ou le [Planning de la semaine](weekplanning.fr.md).
+2. Sous **Planning**, touchez **Déplacer**. En haut figure le planning actuel ; le jour, la partie de journée et le collaborateur sont déjà remplis.
+3. Choisissez le nouveau jour, la partie de journée ou le collaborateur et touchez **Déplacer**.
+
+Si l'ordre a une **date fixe**, si le jour est passé ou si le collaborateur est en congé ce jour-là, l'application demande d'abord.
+Si quelqu'un d'autre a déplacé l'ordre entre-temps, l'application le dit et son planning reste en place. Le travail exécuté ne se
+déplace pas. Si l'ordre change de jour ou d'heure, [Client averti](../planning.fr.md#client-averti) repasse sur **NOK** sur le
+tableau de planning.
 
 ## Supprimer un ordre de travail
 

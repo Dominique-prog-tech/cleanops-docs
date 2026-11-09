@@ -64,7 +64,9 @@ Une fois l'ordre terminé, le collaborateur ne peut plus le modifier dans l'appl
 notes ou des photos ; corriger son propre temps reste possible. **Faire signer reste possible** tant que l'ordre n'est
 pas facturé : si le client passe plus tard, le collaborateur appuie encore sur **Faire signer le client**.
 
-Un ordre de travail planifié à une date future ne peut pas être terminé ni signé.
+Un ordre de travail planifié à une date future ne peut pas être terminé ni signé. À partir de la version 1.3.4, c'est indiqué
+au-dessus des boutons. S'il peut planifier, il le place là sur aujourd'hui avec **Déplacer à aujourd'hui**, même s'il était dans
+une autre semaine (voir [Déplacer un ordre de travail](kantoor-werkorders.fr.md#deplacer-un-ordre-de-travail)).
 
 ## Questions fréquentes
 

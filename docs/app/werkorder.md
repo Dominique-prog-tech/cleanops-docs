@@ -157,6 +157,10 @@ Frans staat), gevolgd door het nummer van de werkorder en het moment, bijvoorbee
 Gaf hij de app de eerste keer geen toegang tot de camera, dan zet hij dat aan in de instellingen van zijn toestel, bij
 de app CleanOps. Een foto uit de galerij kiezen kan intussen wel.
 
+**Het werk is vandaag gedaan, maar de werkorder staat later gepland.**
+Afronden kan pas vanaf de geplande dag; dat staat boven de knoppen. Wie mag plannen, tikt daar op **Naar vandaag verzetten**.
+Anders verzet kantoor de werkorder eerst (zie [Een werkorder verzetten](kantoor-werkorders.md#een-werkorder-verzetten)).
+
 **De tijd in de app klopt niet.**
 Zet ze recht op het tabblad [Tijd](../werkorders.md#tijd) van de werkorder, of laat de medewerker het zelf doen met
 **Tijd rechtzetten**.

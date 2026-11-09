@@ -37,7 +37,22 @@ De fiche toont wat de ploeg ter plaatse ziet, en daarbij hoe het werk uitgevoerd
 | Attesten, Cameraverslag, Meerwerk | Wat de ploeg ter plaatse invulde. |
 | Handtekening van de klant | Wie tekende en wanneer, met de opmerking van de klant. **Bekijk de getekende bon** opent de getekende leveringsbon als pdf. |
 
-Er staat geen knop om iets te wijzigen: de teller, het afronden en het tekenen blijven bij de medewerker die het werk doet.
+Op de teller, het afronden en het tekenen staat geen knop: die blijven bij de medewerker die het werk doet. Wie mag plannen, ziet wel
+[Verzetten](#een-werkorder-verzetten) onder Planning.
+
+## Een werkorder verzetten
+
+Vanaf versie 1.3.4 zet u een geplande werkorder naar een andere dag, ook in een andere week, of naar een andere medewerker. U hebt
+daarvoor het recht **Planning bewerken**.
+
+1. Open de werkorder, vanuit **Werkorders** of de [Weekplanning](weekplanning.md).
+2. Tik onder **Planning** op **Verzetten**. Bovenaan staat waar ze nu staat; de dag, het tijdsdeel en de medewerker staan al ingevuld.
+3. Kies de nieuwe dag, het tijdsdeel of de medewerker en tik op **Verzetten**.
+
+Heeft de werkorder een **vaste datum**, valt de dag in het verleden of heeft de medewerker die dag verlof, dan vraagt de app het eerst.
+Verzette iemand anders de werkorder intussen, dan zegt de app dat en blijft zijn planning staan. Uitgevoerd werk verzet u niet.
+Wordt de werkorder naar een andere dag of een ander uur verzet, dan staat [Klant verwittigd](../planning.md#klant-verwittigd) op het
+planbord terug op **NOK**.
 
 ## Een werkorder verwijderen
 

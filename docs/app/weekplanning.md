@@ -6,7 +6,7 @@ description: "De weekplanning in de app van CleanOps: het planbord per week voor
 
 Onder **Weekplanning** ziet u in de app het [planbord](../planning.md) van een hele week: wie wat doet, welk werk nog niet
 toegewezen is en wat niet uitgevoerd werd. Het scherm is er voor wie op kantoor werkt en het recht op de planning heeft
-(zie [De app voor kantoor](kantoor.md)). Naar een andere dag of medewerker verplaatsen doet u op het planbord op de computer. Hier past u de [volgorde van een dag](#de-volgorde-van-een-dag-aanpassen) aan en kunt u werk zonder datum [inplannen](#nog-in-te-plannen).
+(zie [De app voor kantoor](kantoor.md)). Vanaf versie 1.3.4 [verzet](kantoor-werkorders.md#een-werkorder-verzetten) u een werkorder naar een andere dag of medewerker op haar fiche. Hier past u de [volgorde van een dag](#de-volgorde-van-een-dag-aanpassen) aan en kunt u werk zonder datum [inplannen](#nog-in-te-plannen).
 
 ## Het scherm openen
 
@@ -65,7 +65,7 @@ Vanaf versie 1.3.2 past u de volgorde van een dag ook in de app aan, op de telef
 
 De nieuwe volgorde staat meteen ook op het [planbord](../planning.md#de-volgorde-in-een-dag) en in de [planning](planning.md) van de medewerker.
 
-Dit werkt binnen dezelfde dag en dezelfde medewerker. Naar een andere dag of medewerker verplaatsen doet u op het planbord op de computer. Wijzigde iemand de planning
+Dit werkt binnen dezelfde dag en dezelfde medewerker. Naar een andere dag of medewerker gaat met [Verzetten](kantoor-werkorders.md#een-werkorder-verzetten) op de fiche. Wijzigde iemand de planning
 intussen, dan zegt de app dat en toont ze wat er nu staat.
 
 ## Nog in te plannen

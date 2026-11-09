@@ -6,8 +6,8 @@ description: "Le planning de la semaine dans l'application CleanOps pour le bure
 
 Sous **Planning de la semaine**, vous voyez dans l'application le [tableau de planning](../planning.fr.md) d'une semaine
 entière : qui fait quoi, quel travail n'est pas encore attribué et ce qui n'a pas été exécuté. L'écran est destiné aux
-personnes du bureau qui ont le droit sur le planning (voir [L'application pour le bureau](kantoor.fr.md)). Déplacer vers un autre jour ou un autre collaborateur se fait sur le
-tableau de planning sur l'ordinateur. Ici, vous modifiez l'[ordre d'une journée](#modifier-lordre-dune-journee) et vous pouvez [planifier](#encore-a-planifier) le travail sans date.
+personnes du bureau qui ont le droit sur le planning (voir [L'application pour le bureau](kantoor.fr.md)). À partir de la version 1.3.4, vous [déplacez](kantoor-werkorders.fr.md#deplacer-un-ordre-de-travail) un ordre vers un autre jour ou un autre
+collaborateur depuis sa fiche. Ici, vous modifiez l'[ordre d'une journée](#modifier-lordre-dune-journee) et vous pouvez [planifier](#encore-a-planifier) le travail sans date.
 
 ## Ouvrir l'écran
 
@@ -69,7 +69,7 @@ si votre rôle a le droit sur les ordres de travail.
 
 Le nouvel ordre figure aussitôt aussi sur le [tableau de planning](../planning.fr.md#lordre-dans-une-journee) et dans le [planning](planning.fr.md) du collaborateur.
 
-Cela fonctionne dans la même journée et pour le même collaborateur. Déplacer vers un autre jour ou un autre collaborateur se fait sur le tableau de planning sur l'ordinateur.
+Cela fonctionne dans la même journée et pour le même collaborateur. Vers un autre jour ou un autre collaborateur, utilisez [Déplacer](kantoor-werkorders.fr.md#deplacer-un-ordre-de-travail) sur la fiche.
 Si quelqu'un a modifié le planning entre-temps, l'application le dit et affiche ce qui figure maintenant.
 
 ## Encore à planifier
