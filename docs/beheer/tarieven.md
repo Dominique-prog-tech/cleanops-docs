@@ -48,7 +48,7 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 |---|---|
 | **Code** *(verplicht)* | maximaal 5 tekens, in hoofdletters bewaard. Ligt vast zodra het tarief bewaard is. Een code die enkel in hoofdletters verschilt van een bestaande in dezelfde taal (`rv1` naast `RV1`), wordt geweigerd. |
 | **Taal** *(verplicht)* | Nederlands of Français. Dezelfde code kan in elke taal één keer bestaan. Ligt vast zodra het tarief bewaard is. |
-| **Omschrijving** *(verplicht)* | maximaal 35 tekens; komt op de offerte- of factuurlijn. |
+| **Omschrijving** *(verplicht)* | maximaal 150 tekens; komt op de offerte- of factuurlijn. Een langere uitleg zet u in **Tekst op de factuur**. |
 | **Eenheid** | een keuze uit de [eenheden](eenheden.md) van Platformbeheer (UUR, T, M3 …). |
 | **Eenheidsprijs** | niet negatief. Laat ze op nul als de prijs per dossier bepaald wordt. |
 | **Btw-code** | een keuze uit uw btw-codes; mag leeg blijven. |

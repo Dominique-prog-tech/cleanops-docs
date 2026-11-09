@@ -36,7 +36,7 @@ au maximum, la colonne **Encore à planifier** et l'explication du haut disparai
 2. **Où** — l'adresse est déjà choisie : la seule adresse d'exécution du client, sinon son adresse principale. Choisissez-en une
    autre, ou ajoutez-en une avec **Nouvelle adresse d'exécution**. S'il s'agit d'un nouveau client et que le chantier se trouve
    ailleurs, décochez **Le chantier est à cette adresse** et remplissez l'adresse du chantier. Le client garde sa propre adresse.
-3. **Travail** — la **Description** est obligatoire et compte 35 caractères au maximum : elle figure sur la facture. De quoi il
+3. **Travail** — la **Description** est obligatoire et compte 150 caractères au maximum : elle figure sur la facture. De quoi il
    s'agit exactement, vous l'écrivez dans **Instructions au collaborateur**. C'est ce que lit le chauffeur.
 4. **Quand** — cochez **Urgent** si le travail doit se faire au plus vite : l'ordre reçoit alors une étiquette rouge et figure
    en haut de **Encore à planifier**. Si vous avez convenu d'une heure avec le client, choisissez *Avant*, *Entre*, *Après*

@@ -34,7 +34,7 @@ kolom **Nog in te plannen** en de uitleg bovenaan, zodat de week leesbaar blijft
 2. **Waar** — het adres staat al gekozen: het enige uitvoeringsadres van de klant, anders zijn hoofdadres. Kies een ander, of
    maak er een bij met **Nieuw uitvoeringsadres**. Is het een nieuwe klant en ligt de werf ergens anders, vink dan
    **De werf is op dit adres** uit en vul het adres van de werf in. De klant blijft op zijn eigen adres staan.
-3. **Werk** — de **Omschrijving** is verplicht en telt hoogstens 35 tekens: ze komt op de factuur. Waarover het werk precies
+3. **Werk** — de **Omschrijving** is verplicht en telt hoogstens 150 tekens: ze komt op de factuur. Waarover het werk precies
    gaat, schrijft u bij **Instructies werknemer**. Dat leest de chauffeur.
 4. **Wanneer** — vink **Dringend** aan als het werk zo snel mogelijk moet gebeuren: de werkorder krijgt dan een rood label en
    staat bovenaan bij **Nog in te plannen**. Sprak u met de klant een uur af, kies dan bij **Afgesproken uur** *Vóór*, *Tussen*,
