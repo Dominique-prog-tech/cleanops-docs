@@ -76,7 +76,8 @@ Le bloc **Lignes** porte les lignes du devis.
 Chaque ligne est une partie de l'offre.
 
 - Choisissez d'abord un **Tarif** : il remplit en une fois la description, la description détaillée, l'unité, le prix
-  unitaire et le code TVA. Vous ne voyez que les tarifs dans la langue du client.
+  unitaire et le code TVA. Vous ne voyez que les tarifs dans la langue du client. Le crayon ✎ à côté permet de créer ou de choisir
+  un tarif sans quitter le devis ([Tarifs](beheer/tarieven.fr.md#potlood)).
 - Adaptez la **Description**, la **Quantité**, l'**Unité** et le **P. unitaire** si nécessaire. Une ligne sans tarif est
   possible.
 - Choisissez un **Code TVA**. Il est obligatoire ; le pourcentage vient du code TVA.

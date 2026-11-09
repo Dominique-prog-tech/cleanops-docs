@@ -62,6 +62,17 @@ const SCHOTEN = [
   { naam: 'tarief-logboek', route: '/beheer/tarieven', verwacht: tekstTaal('Gewijzigd', 'Modifié'),
     na: async p => { await openRij(p, DEMO.tarief); await p.getByText(tekstTaal('^Logboek$', '^Historique$')).first().click(); },
     magKortZijn: 'een logboek met twee regels is kort, en dat is juist' },
+  // Het potlood bij de keuzelijst Tarief (CleanOps 0.5.57, vraag prospect Toon 09/11/2026): de tarievenlijst in een popup boven de
+  // contractfiche. ⚠️ Het merkteken is de KOP van de popup ("Tarieven"): die tekst staat nergens op de contractfiche zelf, dus zonder
+  // popup geen beeld. Het recept klikt NOOIT op Nieuw tarief of een rij: dat zou een tarief kiezen of maken in de demo.
+  { naam: 'tarief-potlood', route: '/contracten', verwacht: tekstTaal('^Tarieven$', '^Tarifs$'),
+    na: async (p, taal) => {
+      await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant);
+      await p.getByText(tekstTaal('Volgende beurten', 'Prochains passages')).first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.locator('.adm-lookup-potlood').first().click();
+      await p.locator('.adm-lookup-beheer .dxbl-grid').first().waitFor({ state: 'visible', timeout: 15000 });
+      await p.waitForTimeout(800);
+    } },
   // Factuurteksten: een lijst met een pop-upvenster (vier velden, geen fiche) en het logboek als zijlade.
   { naam: 'factuurteksten-lijst', route: '/beheer/factuurteksten', verwacht: tekstTaal('Nieuwe tekst', 'Nouveau texte') },
   { naam: 'factuurtekst-venster', route: '/beheer/factuurteksten',

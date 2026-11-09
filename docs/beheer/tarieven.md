@@ -58,6 +58,23 @@ totaal zijn. Een tarief dat u zelf aanmaakte, draagt het label **eigen**.
 
 Klik op **Bewaren**. Na het aanmaken van een nieuw tarief opent zijn fiche vanzelf.
 
+## Een tarief maken of kiezen zonder uw formulier te verlaten {#potlood}
+
+Naast elke keuzelijst **Tarief** staat een potlood ✎: op een contract en zijn lijnen, op een werkorder en haar lijnen, op een
+nieuwe werkorder, op een offerte en op een nieuwe factuur. U ziet het als u tarieven mag beheren. Een klik opent de tarieven in
+een venster boven uw formulier. Wat u daar al invulde, blijft staan.
+
+![Het venster Tarieven boven een contract: de knoppen Bewerken en Nieuw tarief, en de lijst met de tarieven in de taal van de klant](../images/tarief-potlood.png "Het potlood bij Tarief")
+
+- **Nieuw tarief** opent de fiche in het venster. Na **Bewaren** sluit het venster en staat het nieuwe tarief gekozen, net
+  alsof u het uit de keuzelijst koos.
+- **Dubbelklik** op een tarief om het te kiezen.
+- **Bewerken** opent de fiche van het aangeklikte tarief. Na **Bewaren** is het gekozen.
+- **Annuleren** op de fiche brengt u terug naar de lijst. Het kruisje sluit het venster zonder iets te kiezen.
+
+Het venster toont enkel de actieve tarieven in de taal van de klant: dezelfde als de keuzelijst. Een nieuw tarief krijgt die
+taal, en die ligt vast. Archiveren, terughalen en het logboek doet u op dit scherm, in Platformbeheer.
+
 ## Een tarief archiveren of terughalen
 
 Op de fiche staat onderaan rechts **Archiveren**. Een gearchiveerd tarief verdwijnt uit de keuzelijsten, maar het

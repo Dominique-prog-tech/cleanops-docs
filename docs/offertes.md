@@ -75,7 +75,8 @@ Het blok **Lijnen** draagt de lijnen van de offerte.
 Elke lijn is een onderdeel van het aanbod.
 
 - Kies eerst een **Tarief**: dat vult de omschrijving, de beschrijving, de eenheid, de eenheidsprijs en de btw-code in één
-  keer. U ziet enkel de tarieven in de taal van de klant.
+  keer. U ziet enkel de tarieven in de taal van de klant. Met het potlood ✎ ernaast maakt of kiest u een tarief zonder de offerte te
+  verlaten ([Tarieven](beheer/tarieven.md#potlood)).
 - Pas de **Omschrijving**, het **Aantal**, de **Eenheid** en de **E.prijs** aan waar nodig. Een lijn zonder tarief kan
   ook.
 - Kies een **Btw-code**. Die is verplicht; het percentage komt uit de btw-code.

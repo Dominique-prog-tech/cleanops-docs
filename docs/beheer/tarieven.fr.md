@@ -58,6 +58,23 @@ a au total. Un tarif que vous avez créé vous-même porte l'étiquette **propre
 
 Cliquez sur **Enregistrer**. Après la création d'un nouveau tarif, sa fiche s'ouvre automatiquement.
 
+## Créer ou choisir un tarif sans quitter votre formulaire {#potlood}
+
+À côté de chaque liste **Tarif** se trouve un crayon ✎ : sur un contrat et ses lignes, sur un ordre de travail et ses lignes,
+sur un nouvel ordre de travail, sur un devis et sur une nouvelle facture. Vous le voyez si vous pouvez gérer les tarifs. Un clic
+ouvre les tarifs dans une fenêtre au-dessus de votre formulaire. Ce que vous y aviez déjà rempli reste en place.
+
+![La fenêtre Tarifs au-dessus d'un contrat : les boutons Modifier et Nouveau tarif, et la liste des tarifs dans la langue du client](../images/tarief-potlood-fr.png "Le crayon à côté de Tarif")
+
+- **Nouveau tarif** ouvre la fiche dans la fenêtre. Après **Enregistrer**, la fenêtre se ferme et le nouveau tarif est choisi,
+  comme si vous l'aviez pris dans la liste.
+- **Double-cliquez** sur un tarif pour le choisir.
+- **Modifier** ouvre la fiche du tarif sélectionné. Après **Enregistrer**, il est choisi.
+- **Annuler** sur la fiche vous ramène à la liste. La croix ferme la fenêtre sans rien choisir.
+
+La fenêtre ne montre que les tarifs actifs dans la langue du client : les mêmes que la liste. Un nouveau tarif reçoit cette
+langue, et elle est fixe. Archiver, rétablir et consulter l'historique se font sur cet écran, dans Administration.
+
 ## Archiver ou rétablir un tarif
 
 En bas à droite de la fiche se trouve **Archiver**. Un tarif archivé disparaît des listes de choix, mais il

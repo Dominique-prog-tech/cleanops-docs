@@ -68,7 +68,8 @@ déplacement ou une livraison de matériel.
    porte déjà ne change pas.
 3. Dans le bloc **Lignes**, remplissez les lignes. Choisir un **Tarif** remplit la description, l'unité, le prix et le code TVA, et place le
    **Texte sur la facture** du tarif dans le champ **Texte sous la ligne** ; vous pouvez ensuite les adapter. Ce qui figure dans ce
-   champ est imprimé sur la facture, sous la ligne. Une description de plus de 150 caractères y figure aussi en entier. Le menu **⋯**
+   champ est imprimé sur la facture, sous la ligne. Le crayon ✎ à côté de **Tarif** permet de créer ou de choisir un tarif sans quitter la facture
+   ([Tarifs](beheer/tarieven.fr.md#potlood)). Une description de plus de 150 caractères y figure aussi en entier. Le menu **⋯**
    à droite déplace une ligne (**Monter** ou **Descendre**), la duplique ou la supprime ; **+ Ajouter une ligne** en ajoute une. Les
    lignes figurent sur la facture dans cet ordre. Si la ligne ne porte pas encore de tarif et que vous pouvez gérer les tarifs, **Enregistrer comme tarif…** en fait tout de suite un tarif : vous choisissez un code et le reste vient de la ligne.
 4. En bas figurent le total hors TVA, la TVA et le total TVA comprise, tels qu'ils seront comptabilisés.
