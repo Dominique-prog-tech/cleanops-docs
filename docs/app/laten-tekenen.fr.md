@@ -1,5 +1,5 @@
 ---
-description: "Faire signer le client dans l'application mobile CleanOps : vérifier, signer, voir et envoyer le bon de livraison signé, terminer."
+description: "Faire signer le client dans l'application mobile CleanOps : vérifier, signer, envoyer le bon signé, terminer, ou repasser plus tard."
 ---
 
 # Faire signer
@@ -73,7 +73,22 @@ Un ordre de travail planifié à une date future ne peut pas être terminé ni s
 au-dessus des boutons. S'il peut planifier, il le place là sur aujourd'hui avec **Déplacer à aujourd'hui**, même s'il était dans
 une autre semaine (voir [Déplacer un ordre de travail](kantoor-werkorders.fr.md#deplacer-un-ordre-de-travail)).
 
+## Pas terminé : repasser
+
+À partir de la version 1.4.0. Si l'équipe doit repasser pour le même bon de travail, le collaborateur appuie sur **Pas
+terminé : repasser** au lieu de terminer, et confirme avec **Repasser**. L'ordre de travail reste ouvert : les heures, le
+matériel, les photos et les notes y restent.
+
+![La fenêtre Repasser plus tard ? au-dessus de l'ordre de travail 900157 : l'explication que le bon reste ouvert et que le bureau planifie la deuxième visite, avec Annuler et Repasser, et en bas les boutons Faire signer le client, Terminer sans signature et Pas terminé : repasser](../images/app-teruggaan-fr.png "Pas terminé : repasser"){ width="560" }
+
+Sur l'ordre de travail et dans le planning figure ensuite l'étiquette orange **Retour**. Le bureau la voit sur le tableau
+de planning et planifie la deuxième visite. Lors de cette visite, le collaborateur termine simplement, ou fait signer le
+client : l'étiquette disparaît alors d'elle-même. En cas d'erreur, il appuie sur **Annuler le retour**.
+
 ## Questions fréquentes
+
+**Le temps de la première visite compte-t-il s'il termine après la deuxième visite ?**
+Oui. C'est le même ordre de travail : **Vérifier les heures** additionne le temps des deux visites.
 
 **Le client était absent à la fin du travail. Peut-il encore signer plus tard ?**
 Oui, tant que l'ordre de travail n'est pas facturé. Ouvrez l'ordre dans l'application et appuyez sur **Faire signer le

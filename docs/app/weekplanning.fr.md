@@ -53,6 +53,7 @@ Chaque ligne a à gauche une barre de couleur, dans les mêmes couleurs que le t
 
 - **vert** : exécuté ;
 - **rouge**, avec *Non exécuté* : un ordre de travail d'un jour passé qui n'est pas encore exécuté ;
+- *Retour* en orange (à partir de la version 1.4.0) : l'équipe doit repasser pour ce bon de travail ;
 - la **couleur du collaborateur** : du travail planifié ;
 - les congés et les blocs figurent comme sur le tableau.
 
@@ -82,6 +83,7 @@ journée et éventuellement le collaborateur. Sans collaborateur, l'ordre figure
 congé ce jour-là, l'application le demande d'abord.
 
 À partir de la version 1.3.3, les ordres urgents figurent en haut, avec l'étiquette rouge **urgent**, et l'heure convenue est indiquée s'il y en a une.
+À partir de la version 1.4.0, un ordre pour lequel l'équipe doit repasser porte l'étiquette orange **Retour**.
 
 Si quelqu'un d'autre a entre-temps planifié l'ordre, l'application le dit et le planning de cette personne reste en place.
 

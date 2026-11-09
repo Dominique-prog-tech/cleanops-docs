@@ -1,5 +1,5 @@
 ---
-description: "De klant laten aftekenen in de mobiele app van CleanOps: nakijken, tekenen, de getekende leveringsbon bekijken en mailen, afronden."
+description: "De klant laten aftekenen in de mobiele app van CleanOps: nakijken, tekenen, de getekende bon mailen, afronden, of nog eens teruggaan."
 ---
 
 # Laten tekenen
@@ -71,7 +71,22 @@ Een werkorder die gepland is op een dag in de toekomst, kan hij niet afronden en
 boven de knoppen. Mag hij plannen, dan zet hij ze daar met **Naar vandaag verzetten** meteen op vandaag, ook als ze in een andere
 week stond (zie [Een werkorder verzetten](kantoor-werkorders.md#een-werkorder-verzetten)).
 
+## Nog niet klaar: teruggaan
+
+Vanaf versie 1.4.0. Moet de ploeg nog eens terug voor dezelfde werkbon, dan tikt de medewerker op **Nog niet klaar:
+teruggaan** in plaats van af te ronden, en bevestigt hij met **Teruggaan**. De werkorder blijft open: de uren, het
+materiaal, de foto's en de notities blijven erop staan.
+
+![Het venster Nog eens teruggaan? boven werkorder 900157: de uitleg dat de werkbon openblijft en het kantoor het tweede bezoek inplant, met Annuleren en Teruggaan, en onderaan de knoppen Laat de klant aftekenen, Afronden zonder handtekening en Nog niet klaar: teruggaan](../images/app-teruggaan.png "Nog niet klaar: teruggaan"){ width="560" }
+
+Op de werkorder en in de planning staat daarna het oranje label **Teruggaan**. Het kantoor ziet het op het planbord en
+plant het tweede bezoek in. Bij dat bezoek rondt de medewerker gewoon af, of laat hij de klant tekenen: het label
+verdwijnt dan vanzelf. Was het een vergissing, dan tikt hij op **Teruggaan uitzetten**.
+
 ## Veelgestelde vragen
+
+**Telt de tijd van het eerste bezoek mee als hij na het tweede bezoek afrondt?**
+Ja. Het is dezelfde werkorder: **Uren nakijken** telt de tijd van beide bezoeken samen.
 
 **De klant was er niet bij het afronden. Kan hij later nog tekenen?**
 Ja, zolang de werkorder niet gefactureerd is. Open de werkorder in de app en tik op **Laat de klant aftekenen**.

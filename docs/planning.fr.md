@@ -121,7 +121,8 @@ pas à l'écran, le tableau défile sur le côté ; en décochant **Week-end**, 
 Chaque carte montre le numéro, la partie de journée et le rendez-vous horaire (par exemple *Matin* ou
 *Entre 13:00 et 15:00*), le client et la commune, la description et le type de travail (par exemple *vetput +/- 3 T*)
 — ce dernier seulement s'il dit autre chose que la description. Un ordre urgent porte l'étiquette rouge **urgent**,
-jusqu'à son exécution. Si vous pointez une carte, vous voyez aussi le chantier, le type de travail et les signaux.
+jusqu'à son exécution. Si l'équipe doit repasser pour le même bon de travail, l'ordre porte l'étiquette orange **retour** :
+glissez-le vers le jour de la deuxième visite. Cette étiquette reste aussi jusqu'à l'exécution. Si vous pointez une carte, vous voyez aussi le chantier, le type de travail et les signaux.
 
 | Signe | Signification |
 |---|---|
@@ -227,7 +228,7 @@ trouve sous **Encore à planifier**. **Nouvel ordre de travail** en haut à droi
 
 ![La liste du planning de la démo : la semaine par jour, avec les signaux, le collaborateur dans sa couleur et le bouton Attribuer](images/planning-lijst-fr.png "Liste du planning")
 
-Pour chaque ordre, vous voyez les signaux (*Urgent*, *Date fixe — ne pas déplacer*, *Peut être exécuté plus tôt*,
+Pour chaque ordre, vous voyez les signaux (*Urgent*, *Retour nécessaire*, *Date fixe — ne pas déplacer*, *Peut être exécuté plus tôt*,
 *Gros travaux*, *Client bloqué*), le collaborateur dans sa couleur, le numéro (avec ⇅ si l'ordre est placé à la main), la
 date demandée par le client (**Demandé**), **Quand** (la partie de journée et l'heure convenue), le client, le chantier, la
 description et le type de travail. Avec le sélecteur de colonnes (l'icône à côté d'**Exporter**), vous ajoutez **Commandé**,

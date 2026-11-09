@@ -116,7 +116,9 @@ dan schuift het bord opzij; vinkt u **Weekend** uit, dan zijn er minder kolommen
 
 Elke kaart toont het nummer, het tijdsdeel en de uurafspraak (bijvoorbeeld *Voormiddag* of *Tussen 13:00 en 15:00*),
 de klant en de gemeente, de omschrijving en de typering (bijvoorbeeld *vetput +/- 3 T*) — die laatste enkel als ze iets
-anders zegt dan de omschrijving. Een dringende werkorder draagt het rode label **dringend**, tot ze uitgevoerd is. Wijst u
+anders zegt dan de omschrijving. Een dringende werkorder draagt het rode label **dringend**, tot ze uitgevoerd is. Moet de
+ploeg nog eens terug voor dezelfde werkbon, dan draagt ze het oranje label **teruggaan**: sleep ze naar de dag van het tweede
+bezoek. Ook dat label blijft tot de werkorder uitgevoerd is. Wijst u
 een kaart aan, dan ziet u ook de werf, de typering en de signalen.
 
 | Teken | Betekenis |
@@ -221,7 +223,7 @@ Dezelfde werkorders als een lijst, gegroepeerd per dag — standaard die van dez
 
 ![De planningslijst van de demo: de week per dag, met de signalen, de medewerker in zijn kleur en de knop Toewijzen](images/planning-lijst.png "Planningslijst")
 
-Per werkorder ziet u de signalen (*Dringend*, *Vaste datum — niet verplaatsen*, *Mag vroeger uitgevoerd worden*, *Groot werk*,
+Per werkorder ziet u de signalen (*Dringend*, *Teruggaan*, *Vaste datum — niet verplaatsen*, *Mag vroeger uitgevoerd worden*, *Groot werk*,
 *Klant geblokkeerd*), de medewerker in zijn kleur, het nummer (met ⇅ als de werkorder met de hand geplaatst is), de datum
 die de klant vroeg (**Gevraagd**), **Wanneer** (het tijdsdeel en het afgesproken uur), de klant, de werf, de omschrijving en
 de typering. Met de kolomkiezer (het pictogram naast **Exporteren**) zet u er **Besteld**, **Straat + nr**, **Postcode**,

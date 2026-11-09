@@ -49,6 +49,7 @@ Elke regel heeft links een kleurstaafje, in dezelfde kleuren als het planbord:
 
 - **groen**: uitgevoerd;
 - **rood**, met *Niet uitgevoerd*: een werkorder van een voorbije dag die nog niet uitgevoerd is;
+- *Teruggaan* in het oranje (vanaf versie 1.4.0): de ploeg moet nog eens terug voor deze werkbon;
 - de **kleur van de medewerker**: gepland werk;
 - verlof en blokken staan er zoals op het bord.
 
@@ -77,6 +78,7 @@ Tik op een regel om de lijst te openen. Hebt u het recht **Planning bewerken**, 
 medewerker. Zonder medewerker staat de werkorder die dag op de rij *(niet toegewezen)*. Valt de dag in het verleden of heeft de medewerker die dag verlof, dan vraagt de app het eerst.
 
 Vanaf versie 1.3.3 staan de dringende werkorders bovenaan, met het rode label **dringend**, en staat het afgesproken uur erbij als er een is.
+Vanaf versie 1.4.0 draagt een werkorder waar de ploeg nog eens terug moet, het oranje label **Teruggaan**.
 
 Plande iemand anders de werkorder intussen, dan zegt de app dat en blijft de planning van die persoon staan.
 

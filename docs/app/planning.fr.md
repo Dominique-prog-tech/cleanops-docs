@@ -22,6 +22,7 @@ Le cas échéant, une étiquette indique où en est l'ordre de travail :
 | **Terminé** | En vert, la carte un peu plus pâle : le travail est fait. |
 | **Chrono en cours** | Le collaborateur y enregistre du temps en ce moment. |
 | **Non exécuté** | Planifié sur un jour déjà passé, et pas encore terminé. |
+| **Retour** | En orange (à partir de la version 1.4.0) : l'équipe doit repasser pour ce bon de travail. Voir [Pas terminé : repasser](laten-tekenen.fr.md#pas-termine-repasser). |
 
 ## Équipe, véhicule et itinéraire du jour
 

@@ -21,6 +21,7 @@ Staat het er, dan zegt een label hoe de werkorder ervoor staat:
 | **Afgerond** | In het groen, de kaart iets vager: het werk is gedaan. |
 | **Teller loopt** | De medewerker registreert er nu tijd op. |
 | **Niet uitgevoerd** | Gepland op een dag die al voorbij is, en nog niet afgerond. |
+| **Teruggaan** | In het oranje (vanaf versie 1.4.0): de ploeg moet nog eens terug voor deze werkbon. Zie [Nog niet klaar: teruggaan](laten-tekenen.md#nog-niet-klaar-teruggaan). |
 
 ## Ploeg, voertuig en dagroute
 
