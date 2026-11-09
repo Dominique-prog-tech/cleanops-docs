@@ -12,10 +12,13 @@ handtekening.
 
 Onderaan de werkorder tikt de medewerker op **Laat de klant aftekenen**. Dat gaat in twee stappen.
 
+Rekent uw bedrijf uren of een starttarief aan, dan komt eerst **Uren nakijken**: de medewerker bevestigt de voorgestelde
+lijnen (zie [Uren en starttarief](werkorder.md#uren-en-starttarief)). Na het tekenen liggen de lijnen vast.
+
 ### 1. Nakijken
 
 De app toont de klant, het adres en het nummer van de werkorder, en verder wat ingevuld is: de opdracht, de opmerking,
-het materiaal, de tijd, het bedrag en de betaalwijze. De klant kijkt na wat er gebeurde. De medewerker tikt op
+het materiaal, de tijd, de lijnen onder *Materiaal en uren*, het bedrag en de betaalwijze. De klant kijkt na wat er gebeurde. De medewerker tikt op
 **Akkoord, tekenen**.
 
 ![Het scherm Handtekening van de klant bij het nakijken: Tuincentrum De Linde met het adres en werkorder 900137, de Opdracht, de Tijd, het Bedrag van 145,20 en de Betaalwijze Payconiq, en onderaan Akkoord, tekenen](../images/app-nakijken.png "Nakijken"){ width="560" }
@@ -57,7 +60,8 @@ Wat op de leveringsbon staat, ligt daarna vast, ook op kantoor. Zie
 ## Afronden zonder handtekening
 
 Is de klant er niet, dan tikt de medewerker op **Afronden zonder handtekening** en bevestigt hij. De werkorder krijgt
-ook dan de status **Te factureren**.
+ook dan de status **Te factureren**. Rekent uw bedrijf uren of een starttarief aan, dan komt ook hier eerst
+**Uren nakijken**.
 
 Na het afronden kan de medewerker de werkorder in de app niet meer wijzigen, en ook geen notities of foto's meer
 toevoegen of verwijderen; zijn eigen tijd rechtzetten kan nog wel. **Laten tekenen kan nog**, zolang de werkorder niet

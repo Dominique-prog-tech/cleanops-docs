@@ -200,6 +200,10 @@ komt eronder, met haar nummer.
 | Omschrijving | Vrije tekst, hoogstens 150 tekens. Ze komt op de factuur; zonder omschrijving komt de tekst van het tarief er. |
 | Aantal, Eenheid, E.prijs, Bedrag, Btw-code | Zoals bij de eerste lijn. Het bedrag rekent CleanOps; met de hand enkel als aantal en eenheidsprijs nul zijn. |
 
+Lijnen die uit de [mobiele app](app/werkorder.md#materiaal-en-uren) komen, dragen onder hun omschrijving waar ze vandaan komen:
+*materiaal uit de app*, *werkuren uit de app*, *verplaatsing uit de app* of *starttarief uit de app*. Paste de medewerker het
+voorgestelde aantal aan, dan staat er ook *aantal aangepast door de medewerker*. U wijzigt die lijnen zoals elke andere.
+
 Met het menu **⋯** rechts verwijdert u een lijn. Staat er nog geen tarief op de lijn en mag u tarieven beheren, dan maakt
 **Bewaren als tarief…** er meteen een tarief van: u kiest een code en de rest komt van de lijn. Daarna staat het tarief in elke
 keuzelijst.

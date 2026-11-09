@@ -12,10 +12,14 @@ sans signature.
 
 En bas de l'ordre de travail, le collaborateur appuie sur **Faire signer le client**. Cela se fait en deux étapes.
 
+Si votre entreprise facture des heures ou un tarif de démarrage, **Vérifier les heures** vient d'abord : le collaborateur
+confirme les lignes proposées (voir [Heures et tarif de démarrage](werkorder.fr.md#heures-et-tarif-de-demarrage)). Après la
+signature, les lignes sont figées.
+
 ### 1. Vérifier
 
 L'application montre le client, l'adresse et le numéro de l'ordre de travail, puis ce qui est rempli : le travail
-demandé, la remarque, le matériel, le temps, le montant et le mode de paiement. Le client vérifie ce qui a été fait. Le
+demandé, la remarque, le matériel, le temps, les lignes sous *Matériel et heures*, le montant et le mode de paiement. Le client vérifie ce qui a été fait. Le
 collaborateur appuie sur **D'accord, signer**.
 
 ![L'écran Signature du client à la vérification : Résidence Les Tilleuls avec l'adresse et l'ordre de travail 900144, la Mission, le Temps, le Montant de 98,50 et le Mode de paiement Payconiq, et en bas D'accord, signer](../images/app-nakijken-fr.png "Vérifier"){ width="560" }
@@ -58,7 +62,8 @@ Ce qui figure sur le bon de livraison est ensuite figé, aussi au bureau. Voir
 ## Terminer sans signature
 
 Si le client est absent, le collaborateur appuie sur **Terminer sans signature** et confirme. L'ordre de travail passe
-aussi au statut **À facturer**.
+aussi au statut **À facturer**. Si votre entreprise facture des heures ou un tarif de démarrage, **Vérifier les heures**
+vient ici aussi d'abord.
 
 Une fois l'ordre terminé, le collaborateur ne peut plus le modifier dans l'application, ni y ajouter ou supprimer des
 notes ou des photos ; corriger son propre temps reste possible. **Faire signer reste possible** tant que l'ordre n'est

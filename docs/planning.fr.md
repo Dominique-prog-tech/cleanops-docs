@@ -73,7 +73,7 @@ modifier les clients.
 | Langue * | La langue des documents pour ce client. |
 | E-mail | Peut rester vide. Une adresse invalide empêche l'enregistrement. |
 | Numéro de TVA | Uniquement pour une entreprise, et il peut rester vide. Avec **Rechercher**, CleanOps montre ce que la BCE sait, et vous reprenez le nom et l'adresse. |
-| Rue *, N°, Code postal *, Commune * | L'adresse du client. Le pays est la Belgique ; vous choisissez un autre pays sur la fiche client. |
+| Rue *, N°, Code postal *, Commune * | L'adresse du client. Le pays est celui de votre [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#identite-et-adresse) ; vous choisissez un autre pays sur la fiche client. |
 | Délai de paiement * | N'apparaît que si la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#nouveaux-clients) n'a pas de délai de paiement par défaut. |
 
 À l'enregistrement, CleanOps vérifie si le client existe peut-être déjà : d'après son téléphone, son numéro de TVA, et son nom avec le

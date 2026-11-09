@@ -108,11 +108,52 @@ Staat de functie Offertes uit voor uw bedrijf, dan is de kaart er niet.
 Ook zonder bereik kan hij meerwerk voorstellen en er foto's bij zetten. Ze vertrekken in de juiste volgorde zodra er weer
 bereik is: eerst het voorstel, dan de foto's (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)).
 
+## Materiaal en uren
+
+Vanaf versie 1.4.0 van de app. Op de kaart **Materiaal en uren** staan de bijkomende lijnen van de werkorder: wat het kantoor
+toevoegde, het materiaal uit de app, en de uren en het starttarief. Onder elke lijn staat waar ze vandaan komt, en of de
+medewerker het aantal aanpaste. Onderaan staat het totaal van de werkorder inclusief btw.
+
+![De kaart Materiaal en uren op werkorder 900157 met de lijnen Starttarief, Werkuur 0,75 UUR, Verplaatsing per uur 0,5 UUR en container 2 ST. met het vuilnisbakje, het totaal van 293,43 incl. btw, en daaronder Betaling ter plaatse met het bedrag 293,43 al ingevuld](../images/app-lijnen.png "Materiaal en uren"){ width="560" }
+
+### Materiaal toevoegen
+
+Met **Materiaal toevoegen** kiest de medewerker een tarief en vult hij het **Aantal** in. Met **Zoek een tarief** vindt hij het
+snel terug. Bij elk tarief staan de prijs per eenheid zonder btw en de btw. **Bewaren** zet de lijn op de werkorder.
+
+![Het scherm Materiaal toevoegen met het Aantal 2, Zoek een tarief, en de lijst met tarieven met hun prijs en btw, waarin container aangeduid is](../images/app-materiaal.png "Materiaal toevoegen"){ width="560" }
+
+- Prijs en btw komen uit het [tarief](../beheer/tarieven.md). De medewerker wijzigt ze niet; dat doet kantoor op de werkorderfiche.
+- Bij een tarief zonder prijs staat *prijs vult het kantoor in*: kantoor vult de prijs in vóór de facturatie.
+- Zijn eigen materiaal haalt hij weg met het vuilnisbakje. Een lijn van het kantoor, de uren en het starttarief haalt hij niet weg.
+- Ook zonder bereik kan hij materiaal toevoegen. De lijn staat er meteen, met *Nog niet verstuurd*, en vertrekt zodra er weer
+  bereik is (zie [Zonder bereik](aan-de-slag.md#zonder-bereik)). Het totaal verschijnt pas daarna.
+
+### Uren en starttarief
+
+Vóór de medewerker de klant laat tekenen of de werkorder afrondt, toont de app **Uren nakijken**: de lijnen die CleanOps
+voorstelt uit de geregistreerde tijd van de hele ploeg, met de tarieven van de [bedrijfsfiche](../beheer/bedrijfsfiche.md#uren-en-starttarief-in-de-app).
+Bovenaan staat de gemeten tijd, en bij elke lijn hoeveel tijd er aangerekend wordt.
+
+![Het scherm Uren nakijken met Gemeten: werken 1:10, verplaatsing 0:20, en de lijnen Starttarief met aantal 1, Werkuur met aantal 0,75 (aangerekend 0:45) en Verplaatsing per uur met aantal 0,5 (aangerekend 0:30), en rechtsboven Bevestigen](../images/app-urenvoorstel.png "Uren nakijken"){ width="560" }
+
+Klopt een aantal niet, dan past hij het aan; onder het veld staat dan wat het voorstel was. Met **Bevestigen** komen de lijnen
+op de werkorder, en daarna volgt het tekenen of het afronden. Met het kruisje gaat hij terug, zonder af te ronden.
+
+- Tikt hij later nog eens op tekenen of afronden, dan vervangt CleanOps de lijnen van de uren: ze komen er geen tweede keer bij.
+  Een aantal dat hij aanpaste, staat er dan opnieuw in.
+- Zonder bereik kan de app het voorstel niet tonen. Rondt hij dan af, dan rekent CleanOps de uren en het starttarief zodra het de
+  werkorder ontvangt, zonder aanpassing. Tot dan staat dat op de kaart.
+- Staat er op de bedrijfsfiche geen tarief voor de uren en geen starttarief, dan komt dit scherm niet.
+
 ## De betaling ter plaatse
 
 Betaalt de klant ter plaatse, dan noteert de medewerker onder **Betaling ter plaatse** het **Bedrag (incl. btw)** en de
 **Betaalwijze**, en tikt hij op **Betaling bewaren**. Het bedrag en de betaalwijze staan meteen op de werkorder in
 CleanOps.
+
+Staat er materiaal, uren of een starttarief uit de app op de werkorder, dan staat het bedrag al ingevuld met het totaal
+inclusief btw. Komt er een lijn bij, dan volgt het bedrag. Typt de medewerker zelf een ander bedrag, dan blijft dat staan.
 
 ![Betaling ter plaatse met een bedrag van 145,20 en de betaalwijze Payconiq, de knop Betaling bewaren, en daaronder Laat de klant aftekenen en Afronden zonder handtekening](../images/app-betaling.png "Betaling ter plaatse"){ width="560" }
 
@@ -168,4 +209,5 @@ Zet ze recht op het tabblad [Tijd](../werkorders.md#tijd) van de werkorder, of l
 ## Zie ook
 
 - [Laten tekenen](laten-tekenen.md)
+- [Bedrijfsfiche: uren en starttarief in de app](../beheer/bedrijfsfiche.md#uren-en-starttarief-in-de-app)
 - [Werkorders](../werkorders.md), met de tabbladen Tijd en Notities

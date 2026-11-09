@@ -946,7 +946,8 @@ const SCHOTEN = [
   // 1155 — op 1180 viel het half weg. Het vinkje en een voorbeeldadres worden INGEVULD maar niet bewaard: zo toont het beeld de functie.
   // ⚠️ 1400 sinds de aankoopfacturen (06/10/2026, Aankoop laag 6): het blok Boekhouding kreeg een tweede vinkje met adres en uitleg.
   // ⚠️ 1700 sinds het blok Peppol (mailpakket laag 6, 07/10/2026).
-  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 1700,
+  // ⚠️ 2060 sinds de blokken Btw en Uren en starttarief in de app (09/11/2026): gemeten eindigt Peppol op 2002 px.
+  { naam: 'bedrijfsfiche', route: '/beheer/bedrijfsfiche', hoogte: 2060,
     verwacht: tekstTaal('Adres voor de aankoopfacturen', "Adresse pour les factures d'achat"),
     na: async p => {
       await p.getByText(/^(Facturen en creditnota's elke dag naar het boekhoudkantoor sturen|Envoyer chaque jour les factures et notes de crédit au bureau comptable)$/).first().click();
@@ -956,6 +957,35 @@ const SCHOTEN = [
       const aankoop = p.locator('.dxbl-fl-item', { has: p.locator('label', { hasText: /^(Adres voor de aankoopfacturen|Adresse pour les factures d'achat)$/ }) }).locator('input').first();
       await aankoop.click(); await aankoop.fill('aankoop@kantoor-demo.be'); await p.keyboard.press('Tab');
       await p.evaluate(() => document.activeElement?.blur());
+    } },
+  // De blokken Btw en Uren en starttarief in de app (vragen 2 tot 4 Nederlandse prospect, 09/11/2026). De demo vult ze NIET in (zonder
+  // instelling stelt de app niets voor, zoals bij elke klant): het recept kiest ze, met de drie urentarieven die de demo wel aanmaakt
+  // (DemoStandardSet.AppHourCharges), en BEWAART NIET. Een DevExpress-keuzelijst: klik, Alt+ArrowDown, typ, klik op de optie.
+  { naam: 'bedrijfsfiche-app', route: '/beheer/bedrijfsfiche', verwacht: tekstTaal('Uren en starttarief in de app', "Heures et tarif de démarrage dans l'app"),
+    na: async p => {
+      const uren = p.locator('[data-uren-in-de-app]');
+      await uren.waitFor({ state: 'visible', timeout: 20000 });
+      await p.waitForTimeout(800);
+      const kies = async (veld, optie, typ) => {
+        await veld.click();
+        await p.keyboard.press('Alt+ArrowDown');
+        await p.waitForTimeout(600);
+        // Eerst leegmaken: staat er al een tarief, dan typte het recept erachter en vond het niets ("Geen gegevens", 09/11/2026).
+        if (typ) { await p.keyboard.press('ControlOrMeta+a'); await p.keyboard.type(typ); await p.waitForTimeout(800); }
+        await p.locator('[class*="list-box-item"], [role="option"]').filter({ hasText: optie }).first().click();
+        await p.waitForTimeout(400);
+      };
+      await kies(p.locator('[data-standaard-btw] input').first(), /^\s*21P/);
+      const veld = uren.locator('input');
+      await kies(veld.nth(0), /^\s*WERK —/, 'WERK');
+      await kies(veld.nth(1), /^\s*VERPU —/, 'VERPU');
+      await kies(veld.nth(3), /^\s*START —/, 'START');
+      await veld.nth(4).fill('30');
+      await veld.nth(4).press('Tab');
+      await p.evaluate(() => document.activeElement?.blur());
+      await p.waitForTimeout(400);
+      await p.evaluate(() => document.querySelector('[data-standaard-btw]')?.scrollIntoView({ block: 'center' }));
+      await p.waitForTimeout(400);
     } },
   // Basistabellen: zelfde vorm; het scherm opent op de lijst Contracttypes.
   // Het blok Verwerkingsattesten (vrijgave attesten, 08/10/2026), onderaan de fiche: ernaartoe schuiven. De demo vult het

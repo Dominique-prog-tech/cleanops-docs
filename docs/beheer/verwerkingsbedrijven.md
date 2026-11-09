@@ -30,7 +30,7 @@ Klik op **Nieuw verwerkingsbedrijf**, of dubbelklik op een bestaande rij.
 | **Naam** *(verplicht)* | maximaal 35 tekens. |
 | **Straat en nr** *(verplicht)* | maximaal 35 tekens. |
 | **Postcode**, **Gemeente** *(verplicht)* | na de postcode biedt Gemeente de plaatsen van die postcode aan; u mag ook zelf typen. |
-| **Land** *(verplicht)* | standaard België. |
+| **Land** *(verplicht)* | standaard het land van uw [bedrijfsfiche](bedrijfsfiche.md#identiteit-en-adres). |
 | **Telefoon** | een geldig telefoonnummer, of leeg. |
 
 ## Archiveren of terughalen

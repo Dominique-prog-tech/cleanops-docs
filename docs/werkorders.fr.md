@@ -208,6 +208,11 @@ ligne supplémentaire vient en dessous, avec son numéro.
 | Description | Texte libre, 150 caractères au plus. Elle figure sur la facture ; sans description, c'est le texte du tarif qui y figure. |
 | Quantité, Unité, P. unitaire, Montant, Code TVA | Comme pour la première ligne. CleanOps calcule le montant ; à la main seulement si la quantité et le prix unitaire sont à zéro. |
 
+Les lignes qui viennent de l'[app mobile](app/werkorder.fr.md#materiel-et-heures) portent sous leur description leur origine :
+*matériel de l'app*, *heures de travail de l'app*, *déplacement de l'app* ou *tarif de démarrage de l'app*. Si le collaborateur a
+adapté la quantité proposée, la mention *quantité modifiée par le collaborateur* figure aussi. Vous modifiez ces lignes comme
+toute autre.
+
 Avec le menu **⋯** à droite, vous supprimez une ligne. Si la ligne ne porte pas encore de tarif et que vous pouvez gérer les
 tarifs, **Enregistrer comme tarif…** en fait tout de suite un tarif : vous choisissez un code et le reste vient de la ligne. Le
 tarif figure ensuite dans chaque liste de choix.

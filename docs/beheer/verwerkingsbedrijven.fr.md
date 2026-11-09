@@ -30,7 +30,7 @@ Cliquez sur **Nouvelle entreprise**, ou double-cliquez sur une ligne existante.
 | **Nom** *(obligatoire)* | 35 caractères au plus. |
 | **Rue et n°** *(obligatoire)* | 35 caractères au plus. |
 | **Code postal**, **Commune** *(obligatoire)* | après le code postal, Commune propose les localités de ce code ; vous pouvez aussi taper vous-même. |
-| **Pays** *(obligatoire)* | la Belgique par défaut. |
+| **Pays** *(obligatoire)* | par défaut le pays de votre [fiche d'entreprise](bedrijfsfiche.fr.md#identite-et-adresse). |
 | **Téléphone** | un numéro de téléphone valide, ou vide. |
 
 ## Archiver ou rétablir

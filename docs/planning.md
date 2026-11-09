@@ -69,7 +69,7 @@ met het recht om werkorders te wijzigen, en een nieuwe klant of adres vraagt ook
 | Taal * | De taal van de documenten voor deze klant. |
 | E-mail | Mag leeg. Een ongeldig adres houdt het bewaren tegen. |
 | Btw-nummer | Enkel bij een bedrijf, en het mag leeg. Met **Ophalen** toont CleanOps wat de KBO weet, en neemt u naam en adres over. |
-| Straat *, Nr, Postcode *, Gemeente * | Het adres van de klant. Het land is België; een ander land kiest u op de klantfiche. |
+| Straat *, Nr, Postcode *, Gemeente * | Het adres van de klant. Het land is dat van uw [bedrijfsfiche](beheer/bedrijfsfiche.md#identiteit-en-adres); een ander land kiest u op de klantfiche. |
 | Betaaltermijn * | Staat er enkel als de [bedrijfsfiche](beheer/bedrijfsfiche.md#nieuwe-klanten) geen standaard betaaltermijn heeft. |
 
 Bij **Bewaren** kijkt CleanOps of de klant misschien al bestaat: op zijn telefoon, zijn btw-nummer, en zijn naam met postcode.

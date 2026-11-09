@@ -111,11 +111,55 @@ l'ordre de travail soit terminé. Si la fonction Devis est désactivée pour vot
 Même sans réseau, il peut proposer des travaux et y ajouter des photos. Ils partent dans le bon ordre dès que le réseau
 revient : d'abord la proposition, ensuite les photos (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)).
 
+## Matériel et heures
+
+À partir de la version 1.4.0 de l'app. La carte **Matériel et heures** montre les lignes supplémentaires de l'ordre de
+travail : ce que le bureau a ajouté, le matériel ajouté dans l'app, et les heures et le tarif de démarrage. Sous chaque ligne
+figure son origine, et si le collaborateur a adapté la quantité. En bas figure le total de l'ordre de travail TVAC.
+
+![La carte Matériel et heures sur l'ordre de travail 900157 avec les lignes Starttarief, Werkuur 0,75 UUR, Verplaatsing per uur 0,5 UUR et container 2 ST. avec la corbeille, le total de 293,43 TVAC, et en dessous Paiement sur place avec le montant 293,43 déjà rempli](../images/app-lijnen-fr.png "Matériel et heures"){ width="560" }
+
+### Ajouter du matériel
+
+Avec **Ajouter du matériel**, le collaborateur choisit un tarif et indique la **Quantité**. Avec **Rechercher un tarif**, il
+le retrouve vite. Chaque tarif montre le prix par unité HTVA et la TVA. **Enregistrer** ajoute la ligne à l'ordre de travail.
+
+![L'écran Ajouter du matériel avec la Quantité 2, Rechercher un tarif, et la liste des tarifs avec leur prix et leur TVA, où container est sélectionné](../images/app-materiaal-fr.png "Ajouter du matériel"){ width="560" }
+
+- Le prix et la TVA viennent du [tarif](../beheer/tarieven.fr.md). Le collaborateur ne les modifie pas ; le bureau le fait sur la
+  fiche de l'ordre de travail.
+- Pour un tarif sans prix figure *prix complété par le bureau* : le bureau complète le prix avant la facturation.
+- Il supprime son propre matériel avec la corbeille. Une ligne du bureau, les heures et le tarif de démarrage, il ne les
+  supprime pas.
+- Même sans réseau, il peut ajouter du matériel. La ligne figure aussitôt, avec *Pas encore envoyé*, et part dès que le réseau
+  revient (voir [Sans réseau](aan-de-slag.fr.md#sans-reseau)). Le total n'apparaît qu'ensuite.
+
+### Heures et tarif de démarrage
+
+Avant que le collaborateur fasse signer le client ou termine l'ordre de travail, l'app montre **Vérifier les heures** : les
+lignes que CleanOps propose à partir du temps enregistré par toute l'équipe, avec les tarifs de la
+[fiche d'entreprise](../beheer/bedrijfsfiche.fr.md#heures-et-tarif-de-demarrage-dans-lapp). En haut figure le temps mesuré, et
+pour chaque ligne le temps facturé.
+
+![L'écran Vérifier les heures avec Mesuré : travail 1:10, déplacement 0:20, et les lignes Starttarief avec la quantité 1, Werkuur avec la quantité 0,75 (facturé 0:45) et Verplaatsing per uur avec la quantité 0,5 (facturé 0:30), et en haut à droite Confirmer](../images/app-urenvoorstel-fr.png "Vérifier les heures"){ width="560" }
+
+Si une quantité ne convient pas, il l'adapte ; sous le champ figure alors la proposition. Avec **Confirmer**, les lignes vont
+sur l'ordre de travail, puis viennent la signature ou la clôture. Avec la croix, il revient sans terminer.
+
+- S'il appuie plus tard encore sur signer ou terminer, CleanOps remplace les lignes des heures : elles ne viennent pas une
+  seconde fois. Une quantité qu'il avait adaptée figure de nouveau.
+- Sans réseau, l'app ne peut pas montrer la proposition. S'il termine alors, CleanOps calcule les heures et le tarif de
+  démarrage dès qu'il reçoit l'ordre de travail, sans adaptation. Jusque-là, la carte l'indique.
+- Si la fiche d'entreprise n'a pas de tarif pour les heures ni de tarif de démarrage, cet écran ne vient pas.
+
 ## Le paiement sur place
 
 Si le client paie sur place, le collaborateur note sous **Paiement sur place** le **Montant (TVAC)** et le **Mode de
 paiement**, puis appuie sur **Enregistrer le paiement**. Le montant et le mode de paiement figurent immédiatement sur
 l'ordre de travail dans CleanOps.
+
+Si l'ordre de travail porte du matériel, des heures ou un tarif de démarrage ajoutés dans l'app, le montant est déjà rempli
+avec le total TVAC. Si une ligne s'ajoute, le montant suit. Si le collaborateur tape lui-même un autre montant, celui-ci reste.
 
 ![Le paiement sur place avec un montant de 98,50 et le mode de paiement Payconiq, le bouton Enregistrer le paiement, et en dessous Faire signer le client et Terminer sans signature](../images/app-betaling-fr.png "Paiement sur place"){ width="560" }
 
@@ -176,3 +220,4 @@ lui-même avec **Corriger le temps**.
 
 - [Faire signer](laten-tekenen.fr.md)
 - [Ordres de travail](../werkorders.fr.md), avec les onglets Temps et Notes
+- [Fiche d'entreprise : heures et tarif de démarrage dans l'app](../beheer/bedrijfsfiche.fr.md#heures-et-tarif-de-demarrage-dans-lapp)

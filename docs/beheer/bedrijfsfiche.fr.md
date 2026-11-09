@@ -1,13 +1,14 @@
 ---
-description: "La fiche d'entreprise dans CleanOps : nom, adresse, numéro de TVA, banque et logo, le délai entre deux rappels et vos données Peppol."
+description: "La fiche d'entreprise dans CleanOps : nom, adresse, TVA, banque et logo, le code TVA par défaut, les heures dans l'app, rappels et Peppol."
 ---
 
 # Fiche d'entreprise
 
 Les données de votre propre entreprise : nom, adresse, coordonnées, numéro de TVA et banque, votre logo, le
-délai entre deux rappels, et comment votre entreprise figure dans une facture électronique via Peppol.
+délai entre deux rappels, le code TVA déjà rempli, les heures que l'app facture, et comment votre entreprise figure
+dans une facture électronique via Peppol.
 
-![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels, Nouveaux clients, Comptabilité avec l'Adresse du bureau comptable et l'Adresse pour les factures d'achat, et Peppol](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
+![La fiche d'entreprise avec les blocs Identité et adresse, Contact, Données fiscales et bancaires, Logo, Rappels, Nouveaux clients, TVA, Heures et tarif de démarrage dans l'app, Comptabilité avec l'Adresse du bureau comptable et l'Adresse pour les factures d'achat, et Peppol](../images/bedrijfsfiche-fr.png "Fiche d'entreprise")
 
 !!! note "Où CleanOps utilise ces données aujourd'hui"
     Le **délai entre deux rappels** détermine directement quels postes figurent dans la liste *Prochain rappel*
@@ -33,6 +34,10 @@ En dessous : rue, numéro, code postal, commune et pays. Le code postal et la co
 mutuellement : si vous choisissez un code postal, la commune apparaît automatiquement. Le champ Commune propose
 ensuite les localités de ce code postal — pour 9800 par exemple Deinze, Astene, Vinkt et les autres sections.
 Vous pouvez aussi taper vous-même un nom. Le pays est une liste de choix.
+
+Le pays de votre entreprise est aussi le pays par lequel commence chaque nouvelle adresse : pour un nouveau client, une
+nouvelle adresse d'un client, un fournisseur, un collaborateur, une entreprise de traitement et un nouveau client depuis le
+planning, il est déjà rempli. Pour chaque adresse, vous choisissez un autre pays.
 
 ## Contact
 
@@ -74,6 +79,48 @@ laissez le champ vide, 15 jours s'appliquent.
 Le **délai de paiement par défaut** s'applique à un client que vous créez [depuis le planning](../planning.fr.md#un-client-au-telephone-nouvel-ordre-de-travail) :
 au téléphone, personne ne le demande, et sans délai de paiement, CleanOps ne peut pas créer de facture. Si vous laissez le champ
 vide, le panneau demande le délai pour chaque nouveau client. Vous en choisissez un autre plus tard sur la fiche client.
+
+## TVA
+
+Le **Code TVA par défaut** est déjà rempli pour tout ce que vous créez : un ordre de travail, un contrat, une ligne d'offre
+ou de facture, un tarif, et dans l'[app](../app/werkorder.fr.md#materiel-et-heures). Vous l'y modifiez à chaque fois. Vous
+choisissez parmi les [codes TVA](btw-codes.fr.md) actifs. Si vous laissez le champ vide, vous choisissez le code TVA vous-même
+à chaque fois.
+
+Le matériel qu'un collaborateur ajoute dans l'app reçoit le code TVA du tarif. Si le tarif n'en a pas, il reçoit le code TVA
+par défaut.
+
+## Heures et tarif de démarrage dans l'app
+
+Avant qu'un collaborateur termine un ordre de travail dans l'app ou fasse signer le client, l'app propose des lignes à partir
+du temps que l'équipe a enregistré sur cet ordre (voir [Matériel et heures](../app/werkorder.fr.md#materiel-et-heures)). Ici,
+vous choisissez quels tarifs et comment arrondir.
+
+| Champ | Ce que vous indiquez |
+|---|---|
+| **Tarif travail sur place** | le tarif du temps de travail, par exemple un tarif horaire. |
+| **Tarif déplacement** | le tarif du temps de déplacement. Ce peut être le même tarif que pour le travail, ou un autre. |
+| **Arrondir par** | quart d'heure, demi-heure ou heure. Un bloc entamé compte entièrement : 61 minutes arrondies au quart d'heure font 1,25 heure. |
+| **Tarif de démarrage** | un tarif ajouté une fois par ordre de travail, par exemple des frais de déplacement fixes ou un tarif minimum. |
+| **Temps de travail compris (minutes)** | le temps de travail compris dans le tarif de démarrage. Les heures de travail ne comptent qu'au-delà. Uniquement avec un tarif de démarrage. |
+
+![La fiche d'entreprise avec le bloc TVA et le code TVA par défaut 21 %, et le bloc Heures et tarif de démarrage dans l'app avec Heure de travail, Déplacement à l'heure, arrondi au quart d'heure, Tarif de démarrage et 30 minutes de temps de travail compris](../images/bedrijfsfiche-app-fr.png "TVA et heures dans l'app")
+
+Un exemple : un tarif de démarrage avec 30 minutes de temps de travail compris, arrondi au quart d'heure. L'équipe a
+travaillé 1 heure 10 et a roulé 20 minutes. L'app propose :
+
+- **Tarif de démarrage**, 1 fois ;
+- **Travail sur place**, 0,75 heure : 70 minutes moins les 30 comprises font 40 minutes, arrondies à 45 minutes ;
+- **Déplacement**, 0,5 heure : 20 minutes, arrondies à 30 minutes.
+
+Le prix et la TVA viennent du tarif. Le collaborateur peut adapter la quantité ; la ligne porte alors *quantité adaptée*. Il
+n'adapte pas le prix.
+
+- Le temps est celui de **tous les collaborateurs ensemble** sur l'ordre de travail, comme dans l'onglet [Temps](../werkorders.fr.md#temps).
+- Un champ vide : cette ligne ne vient pas. Tous les champs vides : l'app ne propose rien.
+- Avec 0 minute de temps compris, le tarif de démarrage est un montant fixe en plus des heures, comme des frais de
+  déplacement. S'il coûte autant que le temps compris au tarif horaire, il fonctionne comme un temps minimum.
+- Un tarif archivé n'est plus proposé. Choisissez-en alors un autre ici.
 
 ## Comptabilité
 
@@ -148,6 +195,11 @@ langue.
 **Enregistrer** conserve vos modifications. **Annuler** les abandonne et vous ramène à l'administration.
 
 ## Questions fréquentes
+
+**L'app ne propose pas d'heures.**
+Vérifiez qu'un tarif est rempli sous *Heures et tarif de démarrage dans l'app*. Si vos ordres de travail viennent encore de
+votre application précédente, l'app ne propose rien : les lignes ne peuvent pas y être ajoutées. Le collaborateur a besoin
+de la version 1.4.0 de l'app ou plus récente.
 
 **Mon numéro de TVA est refusé.**
 Le chiffre de contrôle ne correspond pas : les deux derniers chiffres découlent du reste du numéro. Vérifiez le
