@@ -37,8 +37,8 @@ kolom **Nog in te plannen** en de uitleg bovenaan, zodat de week leesbaar blijft
 3. **Werk** — de **Omschrijving** is verplicht en telt hoogstens 35 tekens: ze komt op de factuur. Waarover het werk precies
    gaat, schrijft u bij **Instructies werknemer**. Dat leest de chauffeur.
 4. **Wanneer** — vink **Dringend** aan als het werk zo snel mogelijk moet gebeuren: de werkorder krijgt dan een rood label en
-   staat bovenaan bij **Nog in te plannen**. Sprak u met de klant een uur af, kies dan bij **Afgesproken uur** *Vóór*, *Tussen*
-   of *Na* en vul het uur in (bij *Tussen* ook het tweede, als dat er is). De werkorder krijgt dan het tijdsdeel *volgens uur*.
+   staat bovenaan bij **Nog in te plannen**. Sprak u met de klant een uur af, kies dan bij **Afgesproken uur** *Vóór*, *Tussen*,
+   *Na* of *Om* en vul het uur in (bij *Tussen* ook het tweede, als dat er is). *Om* is een vast uur: de ploeg moet er dan precies op dat uur zijn. De werkorder krijgt dan het tijdsdeel *volgens uur*.
    Standaard komt de werkorder bij **Nog in te plannen**. Vink **Meteen inplannen** aan om de **Dag**, het
    **Tijdsdeel** en de **Medewerker** te kiezen. De dag staat op vandaag, of op de eerste dag van de week die u op het bord
    bekijkt als die nog moet komen. Laat u de medewerker leeg, dan staat de werkorder die dag op de rij **(niet toegewezen)**.

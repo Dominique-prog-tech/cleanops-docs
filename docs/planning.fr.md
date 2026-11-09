@@ -39,8 +39,8 @@ au maximum, la colonne **Encore à planifier** et l'explication du haut disparai
 3. **Travail** — la **Description** est obligatoire et compte 35 caractères au maximum : elle figure sur la facture. De quoi il
    s'agit exactement, vous l'écrivez dans **Instructions au collaborateur**. C'est ce que lit le chauffeur.
 4. **Quand** — cochez **Urgent** si le travail doit se faire au plus vite : l'ordre reçoit alors une étiquette rouge et figure
-   en haut de **Encore à planifier**. Si vous avez convenu d'une heure avec le client, choisissez *Avant*, *Entre* ou *Après*
-   dans **Heure convenue** et indiquez l'heure (pour *Entre*, aussi la seconde s'il y en a une). L'ordre reçoit alors la partie
+   en haut de **Encore à planifier**. Si vous avez convenu d'une heure avec le client, choisissez *Avant*, *Entre*, *Après*
+   ou *À* dans **Heure convenue** et indiquez l'heure (pour *Entre*, aussi la seconde s'il y en a une). *À* est une heure fixe : l'équipe doit être là exactement à cette heure. L'ordre reçoit alors la partie
    de journée *selon l'heure*. Par défaut, l'ordre va dans **Encore à planifier**. Cochez **Planifier maintenant** pour choisir le **Jour**, la
    **Partie de la journée** et le **Collaborateur**. Le jour est celui d'aujourd'hui, ou le premier jour de la semaine affichée
    sur le tableau si elle est encore à venir. Si vous laissez le collaborateur vide, l'ordre figure ce jour-là sur la ligne

@@ -121,7 +121,7 @@ en bas (voir [Facturation](#facturation)).
 | Collaborateur, Convoyeur, Véhicule | Qui fait le travail, qui l'accompagne et avec quel véhicule. Comme convoyeur, vous choisissez parmi les collaborateurs désignés pour cela. Si le collaborateur est absent le jour planifié, un message figure sous son nom. Si vous choisissez un collaborateur avec un véhicule fixe, ce véhicule y figure si la case était vide ou portait encore le véhicule du collaborateur précédent ; un véhicule que vous avez choisi vous-même reste. Il en va de même sur le planning et pour les ordres de travail d'un contrat. |
 | À exécuter | Si vous déplacez cette date, **Planifié** suit — tant que l'ordre n'est pas exécuté. |
 | Planifié, Exécuté | Le jour où le travail est planifié et le jour où il a été fait. Si vous déplacez **Planifié** vers un jour déjà passé, CleanOps demande d'abord *Enregistrer quand même ?* lors de **Enregistrer**. |
-| Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre* ou *après* une heure. La partie de la journée détermine l'[ordre dans le planning](planning.fr.md#lordre-dans-une-journee). |
+| Partie de la journée | Premier travail, Matin, Après-midi, Journée entière ou Autre. Avec **Autre**, un accord d'heure apparaît : *avant*, *entre*, *après* ou *à* une heure. Seul *entre* a une seconde heure (**À**) ; *à* est une heure fixe, par exemple *À 10:00*. La partie de la journée détermine l'[ordre dans le planning](planning.fr.md#lordre-dans-une-journee). |
 | Heure de début, Heure de fin | Quand le travail a réellement commencé et fini. Une heure de fin avant l'heure de début est refusée. |
 
 **Adresse**
