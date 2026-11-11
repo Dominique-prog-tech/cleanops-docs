@@ -56,11 +56,11 @@ als ritme. Na **Bewaren** opent het nieuwe contract.
 Bovenaan staan het contractnummer en de klant; staat het contract on hold, dan staat dat erbij. Daaronder drie
 tabbladen: **Contract**, **Werkorders** en **Journaal**. Onder Journaal staan **Logboek** en **Mails**.
 
-![Het contract van Tuincentrum De Linde: om de zes maanden op de 15de, met eronder de volgende beurten](images/contract-fiche.png "Contractfiche")
+![Het contract van Tuincentrum De Linde: om de zes maanden op de 15de, met bovenaan de opmerking die op elke werkbon komt en onderaan de volgende beurten](images/contract-fiche.png "Contractfiche")
 
 ### Het tabblad Contract
 
-De velden staan in vijf blokken: **Contract**, **Adres**, **Ritme en planning**, **Opvolging** en **Opmerkingen**.
+De velden staan in vijf blokken: **Contract**, **Opmerkingen**, **Adres**, **Ritme en planning** en **Opvolging**.
 
 **Contract**
 
@@ -72,7 +72,7 @@ De velden staan in vijf blokken: **Contract**, **Adres**, **Ritme en planning**,
 | Btw-code, Tarief | Komen op de werkorders van dit contract. De lijst Tarief toont de tarieven in de taal van de klant. Bestaat het tarief van het contract niet in die taal, dan staat het er toch, in een andere taal, met een melding eronder. Met het potlood ✎ ernaast maakt of kiest u een tarief zonder dit scherm te verlaten ([Tarieven](beheer/tarieven.md#potlood)). |
 | Contractdatum * | De datum van het contract. Mag niet in de toekomst liggen. |
 | Start * | Vanaf wanneer het ritme loopt. Mag niet vóór de contractdatum liggen. |
-| Einde | Vanaf deze datum komen er geen beurten meer bij. Mag niet vóór de start liggen. |
+| Einde | Vanaf deze datum komen er geen beurten meer bij. Mag niet vóór de start liggen. Leeg: het contract loopt door, en CleanOps maakt telkens de werkorders voor de komende 90 dagen. |
 
 **Bijkomende lijnen**
 
@@ -85,6 +85,12 @@ verwijdert u een lijn.
   [bijkomende lijnen](werkorders.md#bijkomende-lijnen). Werkorders die er al zijn, veranderen niet.
 - Er komt geen prijs op het contract. De eenheid en de prijs vult u op de werkorder in, zoals bij het tarief van het contract.
 - Zolang de werkorders nog uit de vorige toepassing komen, kunnen er geen bijkomende lijnen bij.
+
+**Opmerkingen**
+
+| Veld | Toelichting |
+|---|---|
+| Komen op elke werkbon | Een vaste tekst voor elke werkorder uit dit contract, zoals *sleutel aan het onthaal vragen*. Ze wordt de instructie voor de ploeg, en haar eerste 35 tekens de omschrijving van de werkorder. Wijzigt u ze later, dan vraagt **Bewaren** of de komende werkorders die nog de oude tekst dragen, de nieuwe krijgen. Uitgevoerde werkorders, en die waarvan iemand de instructies wijzigde, blijven zoals ze zijn. |
 
 **Adres**
 
@@ -109,12 +115,6 @@ Onder de velden staan het **Voorbeeld** en de **Volgende beurten** (zie [Het rit
 | On hold | Pauzeert het contract: er komen geen werkorders bij tot u het vinkje weghaalt. |
 | Opvolgen op | De datum waarop u op dit contract wilt terugkomen. Leeg: geen opvolging. |
 | Opvolging | Waarover het gaat, hoogstens 500 tekens. Deze notitie is voor uzelf: ze komt niet op een werkbon en niet in een mail. |
-
-**Opmerkingen**
-
-| Veld | Toelichting |
-|---|---|
-| Komen op elke werkbon | Een vaste tekst voor elke werkorder uit dit contract, zoals *sleutel aan het onthaal vragen*. Ze wordt de instructie voor de ploeg, en haar eerste 35 tekens de omschrijving van de werkorder. |
 
 ### Het ritme
 

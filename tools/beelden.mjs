@@ -542,7 +542,9 @@ const SCHOTEN = [
       if (await dicht.isVisible()) await dicht.click();
     } },
   // ⚠️ HOGER dan de standaard: op 900 viel de onderrand van het kader met de volgende beurten net weg (02/10/2026).
-  { naam: 'contract-fiche', route: '/contracten', verwacht: tekstTaal('Volgende beurten', 'Prochains passages'), hoogte: 1000,
+  // hoogte 1000 → 1480 (11/11/2026): Opmerkingen staat nu onder het blok Contract (vraag prospect Toon), en de volgende beurten zakten onder
+  // de rand van het beeld — "verwacht" vond de tekst in de pagina, maar ze stond niet op het beeld.
+  { naam: 'contract-fiche', route: '/contracten', verwacht: tekstTaal('Volgende beurten', 'Prochains passages'), hoogte: 1480,
     na: async (p, taal) => { await openRij(p, taal === 'fr-BE' ? DEMO.klantFr : DEMO.klant); } },
   // Mailen vanuit de opvolging (12/10/2026): het mailvenster van een contract — ZONDER bijlage. NL: Sporthal De Ring, het contract
   // waarvan de opvolgdatum bereikt is; FR: Résidence Les Tilleuls (Franse mailtekst). ⚠️ Het recept klikt NOOIT op Versturen.

@@ -8,7 +8,7 @@ In de planning verdeelt u het werk over uw medewerkers en over de dagen van de w
 twee manieren: op het **planbord** sleept u ze naar een andere dag of medewerker, en in de **planningslijst** kent u
 er meerdere tegelijk toe, opent u de dagroute van een chauffeur en drukt u de planning af.
 
-![Het planbord van de demo: een week met per medewerker een rij in zijn kleur, links het werk onder Nog in te plannen, op elke geplande kaart OK of NOK, rechtsboven de knop Nieuwe werkorder](images/planning-bord.png "Planbord")
+![Het planbord van de demo: een week met per medewerker een rij in zijn kleur, links het werk onder Nog in te plannen, op elke geplande kaart bovenaan het telefoonnummer van de klant en OK of NOK, rechtsboven de knop Nieuwe werkorder](images/planning-bord.png "Planbord")
 
 ## Het scherm openen
 
@@ -114,12 +114,12 @@ dan schuift het bord opzij; vinkt u **Weekend** uit, dan zijn er minder kolommen
 
 ### Een werkorder op het bord
 
-Elke kaart toont het nummer, het tijdsdeel en de uurafspraak (bijvoorbeeld *Voormiddag* of *Tussen 13:00 en 15:00*),
+Elke kaart toont bovenaan de gsm van de klant (zonder gsm: het telefoonnummer zoals op de werkbon), het tijdsdeel en de uurafspraak (bijvoorbeeld *Voormiddag* of *Tussen 13:00 en 15:00*),
 de klant en de gemeente, de omschrijving en de typering (bijvoorbeeld *vetput +/- 3 T*) — die laatste enkel als ze iets
 anders zegt dan de omschrijving. Een dringende werkorder draagt het rode label **dringend**, tot ze uitgevoerd is. Moet de
 ploeg nog eens terug voor dezelfde werkbon, dan draagt ze het oranje label **teruggaan**: sleep ze naar de dag van het tweede
 bezoek. Ook dat label blijft tot de werkorder uitgevoerd is. Wijst u
-een kaart aan, dan ziet u ook de werf, de typering en de signalen.
+een kaart aan, dan ziet u ook het nummer van de werkorder, de werf, de typering en de signalen.
 
 | Teken | Betekenis |
 |---|---|

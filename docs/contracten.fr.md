@@ -56,11 +56,11 @@ mensuel le premier du mois. Après **Enregistrer**, le nouveau contrat s'ouvre.
 En haut figurent le numéro du contrat et le client ; si le contrat est en pause, c'est indiqué. En dessous, trois
 onglets : **Contrat**, **Ordres de travail** et **Journal**. Sous Journal figurent **Historique** et **E-mails**.
 
-![Le contrat de Résidence Les Tilleuls : tous les 3 mois le 20, avec en dessous les prochains passages](images/contract-fiche-fr.png "Fiche du contrat")
+![Le contrat de Résidence Les Tilleuls : tous les 3 mois le 20, avec en haut la remarque qui figure sur chaque bon de travail et en bas les prochains passages](images/contract-fiche-fr.png "Fiche du contrat")
 
 ### L'onglet Contrat
 
-Les champs sont répartis en cinq blocs : **Contrat**, **Adresse**, **Rythme et planification**, **Suivi** et **Remarques**.
+Les champs sont répartis en cinq blocs : **Contrat**, **Remarques**, **Adresse**, **Rythme et planification** et **Suivi**.
 
 **Contrat**
 
@@ -72,7 +72,7 @@ Les champs sont répartis en cinq blocs : **Contrat**, **Adresse**, **Rythme et 
 | Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. Si le tarif du contrat n'existe pas dans cette langue, il reste affiché, dans une autre langue, avec un message en dessous. Le crayon ✎ à côté permet de créer ou de choisir un tarif sans quitter cet écran ([Tarifs](beheer/tarieven.fr.md#potlood)). |
 | Date du contrat * | La date du contrat. Ne peut pas se situer dans le futur. |
 | Début * | À partir de quand le rythme court. Ne peut pas précéder la date du contrat. |
-| Fin | À partir de cette date, plus aucun passage ne s'ajoute. Ne peut pas précéder le début. |
+| Fin | À partir de cette date, plus aucun passage ne s'ajoute. Ne peut pas précéder le début. Vide : le contrat continue, et CleanOps crée chaque fois les ordres de travail des 90 jours à venir. |
 
 **Lignes supplémentaires**
 
@@ -85,6 +85,12 @@ celui du contrat). Avec **⋯**, vous supprimez une ligne.
   [lignes supplémentaires](werkorders.fr.md#lignes-supplementaires). Les ordres de travail existants ne changent pas.
 - Le contrat ne porte pas de prix. L'unité et le prix se complètent sur l'ordre de travail, comme pour le tarif du contrat.
 - Tant que les ordres de travail viennent encore de l'application précédente, aucune ligne supplémentaire n'est possible.
+
+**Remarques**
+
+| Champ | Explication |
+|---|---|
+| Figurent sur chaque bon de travail | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 35 premiers caractères la description de l'ordre. Si vous le modifiez plus tard, **Enregistrer** demande si les ordres à venir qui portent encore l'ancien texte reçoivent le nouveau. Les ordres exécutés, et ceux dont quelqu'un a modifié les instructions, restent tels quels. |
 
 **Adresse**
 
@@ -109,12 +115,6 @@ Sous les champs figurent l'**Exemple** et les **Prochains passages** (voir [Le r
 | En pause | Suspend le contrat : aucun ordre de travail ne s'ajoute tant que la case est cochée. |
 | Suivi le | La date à laquelle vous voulez revenir sur ce contrat. Vide : pas de suivi. |
 | Suivi | De quoi il s'agit, 500 caractères au maximum. Cette note est pour vous : elle ne figure ni sur un bon de travail ni dans un e-mail. |
-
-**Remarques**
-
-| Champ | Explication |
-|---|---|
-| Figurent sur chaque bon de travail | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 35 premiers caractères la description de l'ordre. |
 
 ### Le rythme
 

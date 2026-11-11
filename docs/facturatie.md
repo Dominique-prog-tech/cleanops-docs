@@ -7,7 +7,7 @@ description: "Factureren in CleanOps: per klant het uitgevoerde werk kiezen en b
 Op Facturatie maakt u facturen van het uitgevoerde werk. U ziet per klant welke werkorders te factureren zijn, kiest wat er op
 de factuur komt en boekt ze. De factuur krijgt meteen haar nummer, vervaldag en gestructureerde mededeling.
 
-![Het scherm Facturatie van de demo: links per klant de kolommen Aantal en Netto totaal met de knop Factureren…, rechts de werkorders van de gekozen klant met hun betaalwijze, en boven die lijst de keuze Alle betaalwijzen en de schakelaar Alle klanten](images/facturatie-lijst.png "Facturatie")
+![Het scherm Facturatie van de demo: links per klant de kolommen Aantal en Netto totaal met de knop Factureren…, rechts de werkorders van de gekozen klant met hun betaalwijze, en boven die lijst de keuze Alle betaalwijzen, de schakelaar Alle klanten en de knop Verwijderen, met een vakje per werkorder](images/facturatie-lijst.png "Facturatie")
 
 ## Het scherm openen
 
@@ -53,6 +53,13 @@ betalingen. Naast het aantal staat dan het totaalbedrag van wat de lijst toont: 
 
 Factureren blijft per klant, met **Factureren…** in de linkerlijst. Klik links op een klant en de rechterlijst toont weer enkel zijn
 werkorders, met **Alle betaalwijzen**. Opent u vanuit de lijst een werkorder, dan brengt **← Facturatie** u terug in dezelfde stand.
+
+### Werkorders verwijderen
+
+Vink in de rechterlijst de werkorders aan die niet gefactureerd worden, bijvoorbeeld contant betaald werk zonder bedrag, en klik op
+**Verwijderen**. Ze gaan naar de [prullenbak](beheer/prullenbak.md), van waaruit u ze kunt herstellen; dat werkt zoals **Verwijderen**
+op de werkorderfiche en in de app. Een werkorder die de klant tekende of die al gefactureerd is, blijft staan: de vraag zegt vooraf
+welke. U hebt het recht *Werkorders bewerken* nodig.
 
 ### Factureren tot en met
 

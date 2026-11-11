@@ -8,7 +8,7 @@ Sur Facturation, vous facturez le travail exécuté. Vous voyez par client les o
 qui va sur la facture et vous la comptabilisez. La facture reçoit immédiatement son numéro, son échéance et sa communication
 structurée.
 
-![L'écran Facturation de la démo : à gauche par client les colonnes Ordres et Total net avec le bouton Facturer…, à droite les ordres du client choisi avec leur mode de paiement, et au-dessus de cette liste le choix Tous les modes et l'interrupteur Tous les clients](images/facturatie-lijst-fr.png "Facturation")
+![L'écran Facturation de la démo : à gauche par client les colonnes Ordres et Total net avec le bouton Facturer…, à droite les ordres du client choisi avec leur mode de paiement, et au-dessus de cette liste le choix Tous les modes, l'interrupteur Tous les clients et le bouton Supprimer, avec une case par ordre](images/facturatie-lijst-fr.png "Facturation")
 
 ## Ouvrir l'écran
 
@@ -56,6 +56,13 @@ fois tous les paiements en espèces. À côté du nombre figure alors le montant
 La facturation reste par client, avec **Facturer…** dans la liste de gauche. Cliquez à gauche sur un client et la liste de droite
 n'affiche de nouveau que ses ordres, avec **Tous les modes**. Si vous ouvrez un ordre depuis la liste, **← Facturation** vous ramène dans
 le même affichage.
+
+### Supprimer des ordres de travail
+
+Dans la liste de droite, cochez les ordres qui ne seront pas facturés, par exemple un travail payé en espèces sans montant, et cliquez
+sur **Supprimer**. Ils vont dans la [corbeille](beheer/prullenbak.fr.md), d'où vous pouvez les restaurer ; cela fonctionne comme
+**Supprimer** sur la fiche de l'ordre et dans l'application. Un ordre signé par le client ou déjà facturé reste : la question indique
+d'avance lesquels. Vous avez besoin du droit *Modifier les ordres de travail*.
 
 ### Facturer jusqu'au
 

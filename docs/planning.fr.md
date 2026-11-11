@@ -9,7 +9,7 @@ mêmes ordres de travail de deux façons : sur le **tableau de planning**, vous 
 autre collaborateur, et dans la **liste du planning**, vous en attribuez plusieurs à la fois, vous ouvrez l'itinéraire
 du jour d'un chauffeur et vous imprimez le planning.
 
-![Le tableau de planning de la démo : une semaine avec une ligne par collaborateur dans sa couleur, à gauche le travail sous Encore à planifier, OK ou NOK sur chaque carte planifiée, en haut à droite le bouton Nouvel ordre de travail](images/planning-bord-fr.png "Tableau de planning")
+![Le tableau de planning de la démo : une semaine avec une ligne par collaborateur dans sa couleur, à gauche le travail sous Encore à planifier, en haut de chaque carte planifiée le numéro de téléphone du client et OK ou NOK, en haut à droite le bouton Nouvel ordre de travail](images/planning-bord-fr.png "Tableau de planning")
 
 ## Ouvrir l'écran
 
@@ -118,11 +118,11 @@ pas à l'écran, le tableau défile sur le côté ; en décochant **Week-end**, 
 
 ### Un ordre de travail sur le tableau
 
-Chaque carte montre le numéro, la partie de journée et le rendez-vous horaire (par exemple *Matin* ou
+Chaque carte montre en haut le GSM du client (sans GSM : le numéro de téléphone comme sur le bon de travail), la partie de journée et le rendez-vous horaire (par exemple *Matin* ou
 *Entre 13:00 et 15:00*), le client et la commune, la description et le type de travail (par exemple *vetput +/- 3 T*)
 — ce dernier seulement s'il dit autre chose que la description. Un ordre urgent porte l'étiquette rouge **urgent**,
 jusqu'à son exécution. Si l'équipe doit repasser pour le même bon de travail, l'ordre porte l'étiquette orange **retour** :
-glissez-le vers le jour de la deuxième visite. Cette étiquette reste aussi jusqu'à l'exécution. Si vous pointez une carte, vous voyez aussi le chantier, le type de travail et les signaux.
+glissez-le vers le jour de la deuxième visite. Cette étiquette reste aussi jusqu'à l'exécution. Si vous pointez une carte, vous voyez aussi le numéro de l'ordre de travail, le chantier, le type de travail et les signaux.
 
 | Signe | Signification |
 |---|---|
