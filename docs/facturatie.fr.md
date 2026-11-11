@@ -8,7 +8,7 @@ Sur Facturation, vous facturez le travail exécuté. Vous voyez par client les o
 qui va sur la facture et vous la comptabilisez. La facture reçoit immédiatement son numéro, son échéance et sa communication
 structurée.
 
-![L'écran Facturation de la démo : à gauche par client les colonnes Ordres et Total net avec le bouton Facturer…, à droite les ordres du client choisi avec leur mode de paiement](images/facturatie-lijst-fr.png "Facturation")
+![L'écran Facturation de la démo : à gauche par client les colonnes Ordres et Total net avec le bouton Facturer…, à droite les ordres du client choisi avec leur mode de paiement, et au-dessus de cette liste le choix Tous les modes et l'interrupteur Tous les clients](images/facturatie-lijst-fr.png "Facturation")
 
 ## Ouvrir l'écran
 
@@ -46,6 +46,16 @@ Si le client a payé sur place avec un [code QR](beheer/betaalwijzen.fr.md#payer
 
 Cliquez sur le numéro, ou double-cliquez sur la ligne, pour ouvrir l'ordre de travail et le compléter. **← Facturation** vous ramène au même
 client et à la même date, avec les nouvelles données. Sans accès aux ordres de travail, le numéro reste du texte simple.
+
+### Tous les clients à la fois
+
+Activez l'interrupteur **Tous les clients** au-dessus de la liste de droite pour voir les uns sous les autres les ordres à facturer de
+tous les clients, avec une colonne **Client**. Choisissez à côté un mode de paiement, par exemple celui des espèces sur place, et vous voyez en une
+fois tous les paiements en espèces. À côté du nombre figure alors le montant total de ce que la liste affiche : vous recomptez ainsi l'argent reçu.
+
+La facturation reste par client, avec **Facturer…** dans la liste de gauche. Cliquez à gauche sur un client et la liste de droite
+n'affiche de nouveau que ses ordres, avec **Tous les modes**. Si vous ouvrez un ordre depuis la liste, **← Facturation** vous ramène dans
+le même affichage.
 
 ### Facturer jusqu'au
 

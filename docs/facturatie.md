@@ -7,7 +7,7 @@ description: "Factureren in CleanOps: per klant het uitgevoerde werk kiezen en b
 Op Facturatie maakt u facturen van het uitgevoerde werk. U ziet per klant welke werkorders te factureren zijn, kiest wat er op
 de factuur komt en boekt ze. De factuur krijgt meteen haar nummer, vervaldag en gestructureerde mededeling.
 
-![Het scherm Facturatie van de demo: links per klant de kolommen Aantal en Netto totaal met de knop Factureren…, rechts de werkorders van de gekozen klant met hun betaalwijze](images/facturatie-lijst.png "Facturatie")
+![Het scherm Facturatie van de demo: links per klant de kolommen Aantal en Netto totaal met de knop Factureren…, rechts de werkorders van de gekozen klant met hun betaalwijze, en boven die lijst de keuze Alle betaalwijzen en de schakelaar Alle klanten](images/facturatie-lijst.png "Facturatie")
 
 ## Het scherm openen
 
@@ -44,6 +44,15 @@ Betaalde de klant op het werk met een [betaal-QR](beheer/betaalwijzen.md#betalen
 
 Klik op het nummer, of dubbelklik op de rij, om de werkorder te openen en aan te vullen. Met **← Facturatie** komt u terug bij dezelfde
 klant en dezelfde datum, met de nieuwe gegevens. Zonder toegang tot de werkorders ziet u het nummer als gewone tekst.
+
+### Alle klanten tegelijk
+
+Zet de schakelaar **Alle klanten** boven de rechterlijst aan om de te factureren werkorders van alle klanten onder elkaar te zien,
+met een kolom **Klant**. Kies daarnaast een betaalwijze, bijvoorbeeld die voor contant ter plaatse, en u ziet in één keer alle contante
+betalingen. Naast het aantal staat dan het totaalbedrag van wat de lijst toont: zo telt u het ontvangen geld na.
+
+Factureren blijft per klant, met **Factureren…** in de linkerlijst. Klik links op een klant en de rechterlijst toont weer enkel zijn
+werkorders, met **Alle betaalwijzen**. Opent u vanuit de lijst een werkorder, dan brengt **← Facturatie** u terug in dezelfde stand.
 
 ### Factureren tot en met
 
