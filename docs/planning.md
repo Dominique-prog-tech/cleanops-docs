@@ -65,7 +65,7 @@ met het recht om werkorders te wijzigen, en een nieuwe klant of adres vraagt ook
 |---|---|
 | Soort klant * | **Particulier** of **Bedrijf**. |
 | Naam * | Wat u in het zoekveld typte, staat hier al. |
-| Telefoon of gsm * | Eén nummer: een gsm-nummer komt bij **Gsm**, een ander bij **Telefoon**. |
+| Telefoon of gsm | Mag leeg. Eén nummer: een gsm-nummer komt bij **Gsm**, een ander bij **Telefoon**. |
 | Taal * | De taal van de documenten voor deze klant. |
 | E-mail | Mag leeg. Een ongeldig adres houdt het bewaren tegen. |
 | Btw-nummer | Enkel bij een bedrijf, en het mag leeg. Met **Ophalen** toont CleanOps wat de KBO weet, en neemt u naam en adres over. |

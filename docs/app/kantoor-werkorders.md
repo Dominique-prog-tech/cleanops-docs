@@ -71,7 +71,7 @@ met het recht **Klanten bewerken** ook voor een nieuwe klant. U hebt een verbind
 Tik rechtsonder op **Nieuwe werkorder**: op het **Overzicht** of de [Weekplanning](weekplanning.md), en vanaf versie 1.3.1 ook op dit scherm en, als u ook medewerker bent, op uw [planning](planning.md). Het formulier heeft vier delen:
 
 1. **Klant.** Zoek op naam, telefoon, gemeente of klantnummer. Staat de klant er niet tussen, tik dan op **Nieuwe klant:** gevolgd
-   door wat u typte. Een naam komt in het veld Naam, een nummer in het veld **Telefoon of gsm**. Vanaf versie 1.3.3 vult u ook het **e-mailadres** in (mag leeg). Kies **Particulier** of **Bedrijf** en vul het adres in.
+   door wat u typte. Een naam komt in het veld Naam, een nummer in het veld **Telefoon of gsm** (mag leeg). Vanaf versie 1.3.3 vult u ook het **e-mailadres** in (mag leeg). Kies **Particulier** of **Bedrijf** en vul het adres in.
    Bij een bedrijf haalt **Ophalen** de naam en het adres uit de KBO. Het btw-nummer mag leeg blijven, maar zonder nummer maakt CleanOps nog geen factuur.
 2. **Adres.** Bij een bestaande klant kiest u een van zijn adressen. Ligt de werf ergens anders, zet dan **De werf ligt op een ander adres** aan.
 3. **Werk.** De **omschrijving** komt op de factuur en telt hoogstens 35 tekens. Waarover het precies gaat, zet u in de **instructies**, die de ploeg leest.

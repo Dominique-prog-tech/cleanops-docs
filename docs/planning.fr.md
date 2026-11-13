@@ -69,7 +69,7 @@ modifier les clients.
 |---|---|
 | Type de client * | **Particulier** ou **Entreprise**. |
 | Nom * | Ce que vous avez tapé dans le champ de recherche s'y trouve déjà. |
-| Téléphone ou GSM * | Un seul numéro : un numéro de GSM va dans **GSM**, un autre dans **Téléphone**. |
+| Téléphone ou GSM | Peut rester vide. Un seul numéro : un numéro de GSM va dans **GSM**, un autre dans **Téléphone**. |
 | Langue * | La langue des documents pour ce client. |
 | E-mail | Peut rester vide. Une adresse invalide empêche l'enregistrement. |
 | Numéro de TVA | Uniquement pour une entreprise, et il peut rester vide. Avec **Rechercher**, CleanOps montre ce que la BCE sait, et vous reprenez le nom et l'adresse. |

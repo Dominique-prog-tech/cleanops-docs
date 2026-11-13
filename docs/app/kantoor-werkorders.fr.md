@@ -74,7 +74,7 @@ travail**, et avec le droit **Modifier les clients** aussi pour un nouveau clien
 Touchez **Nouvel ordre** en bas à droite : sur l'**Aperçu** ou le [Planning de la semaine](weekplanning.fr.md) et, à partir de la version 1.3.1, aussi sur cet écran et, si vous êtes également collaborateur, sur votre [planning](planning.fr.md). Le formulaire comporte quatre parties :
 
 1. **Client.** Cherchez par nom, téléphone, commune ou numéro de client. Si le client n'y figure pas, touchez **Nouveau client :** suivi de ce que vous avez tapé. Un nom
-   va dans le champ Nom, un numéro dans le champ **Téléphone ou GSM**. À partir de la version 1.3.3, vous indiquez aussi l'**adresse e-mail** (peut rester vide). Choisissez **Particulier** ou **Entreprise** et remplissez l'adresse. Pour une entreprise,
+   va dans le champ Nom, un numéro dans le champ **Téléphone ou GSM** (peut rester vide). À partir de la version 1.3.3, vous indiquez aussi l'**adresse e-mail** (peut rester vide). Choisissez **Particulier** ou **Entreprise** et remplissez l'adresse. Pour une entreprise,
    **Récupérer** reprend le nom et l'adresse de la BCE. Le numéro de TVA peut rester vide, mais sans numéro, CleanOps ne crée pas encore de facture.
 2. **Adresse.** Pour un client existant, vous choisissez l'une de ses adresses. Si le chantier est ailleurs, activez **Le chantier est à une autre adresse**.
 3. **Travail.** La **description** figure sur la facture et compte au plus 35 caractères. Ce dont il s'agit exactement va dans les **instructions**, que l'équipe lit.
