@@ -42,6 +42,8 @@ kolom **Nog in te plannen** en de uitleg bovenaan, zodat de week leesbaar blijft
    Standaard komt de werkorder bij **Nog in te plannen**. Vink **Meteen inplannen** aan om de **Dag**, het
    **Tijdsdeel** en de **Medewerker** te kiezen. De dag staat op vandaag, of op de eerste dag van de week die u op het bord
    bekijkt als die nog moet komen. Laat u de medewerker leeg, dan staat de werkorder die dag op de rij **(niet toegewezen)**.
+   Kent de klant de afspraak al, vink dan ook **Klant verwittigd (OK)** aan: de kaart staat dan meteen op **OK** (zie
+   [Klant verwittigd](#klant-verwittigd)).
 5. **Bewaren** — het paneel sluit, u blijft op de planning, en een melding zegt waar de werkorder staat. Staat ze in een andere
    week, dan gaat het bord naar die week.
 
@@ -155,6 +157,8 @@ oogopslag wie u nog moet verwittigen.
   vanzelf terug naar **NOK**: de klant kent dan nog de oude afspraak. Een andere medewerker op dezelfde dag verandert niets.
 - Op de werkorderfiche staat hetzelfde als het vinkje **Klant verwittigd**. Verzet u daar de dag en vinkt u het tegelijk aan,
   dan blijft het aan: u hebt de klant de nieuwe afspraak gemeld.
+- Bij een nieuwe werkorder zet u het al met **Klant verwittigd (OK)** onder **Meteen inplannen**, hier in het paneel en in de
+  [app](app/kantoor-werkorders.md). Zonder dag kan het niet: dan is er nog geen afspraak.
 - Werk zonder dag (**Nog in te plannen**) en uitgevoerd werk dragen geen label.
 - Wie het bord enkel mag bekijken, ziet het label maar kan er niet op klikken.
 

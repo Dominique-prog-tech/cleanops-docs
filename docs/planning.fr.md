@@ -44,7 +44,8 @@ au maximum, la colonne **Encore à planifier** et l'explication du haut disparai
    de journée *selon l'heure*. Par défaut, l'ordre va dans **Encore à planifier**. Cochez **Planifier maintenant** pour choisir le **Jour**, la
    **Partie de la journée** et le **Collaborateur**. Le jour est celui d'aujourd'hui, ou le premier jour de la semaine affichée
    sur le tableau si elle est encore à venir. Si vous laissez le collaborateur vide, l'ordre figure ce jour-là sur la ligne
-   **(non attribué)**.
+   **(non attribué)**. Si le client connaît déjà le rendez-vous, cochez aussi **Client averti (OK)** : la carte est alors tout de
+   suite sur **OK** (voir [Client averti](#client-averti)).
 5. **Enregistrer** — le panneau se ferme, vous restez sur le planning et un message indique où se trouve l'ordre. S'il se trouve
    dans une autre semaine, le tableau va à cette semaine.
 
@@ -158,6 +159,8 @@ Vous voyez ainsi d'un coup d'œil qui vous devez encore prévenir.
   change rien.
 - Sur la fiche de l'ordre de travail, c'est la case **Client averti**. Si vous y changez le jour et cochez la case en même
   temps, elle reste cochée : vous avez annoncé le nouveau rendez-vous au client.
+- Pour un nouvel ordre, vous le réglez déjà avec **Client averti (OK)** sous **Planifier maintenant**, ici dans le panneau et dans
+  l'[application](app/kantoor-werkorders.fr.md). Sans jour, ce n'est pas possible : il n'y a pas encore de rendez-vous.
 - Le travail sans jour (**Encore à planifier**) et le travail exécuté ne portent pas d'étiquette.
 - Qui peut seulement consulter le tableau voit l'étiquette mais ne peut pas cliquer dessus.
 
