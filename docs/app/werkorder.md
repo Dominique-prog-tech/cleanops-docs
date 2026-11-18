@@ -152,6 +152,11 @@ Betaalt de klant ter plaatse, dan noteert de medewerker onder **Betaling ter pla
 **Betaalwijze**, en tikt hij op **Betaling bewaren**. Het bedrag en de betaalwijze staan meteen op de werkorder in
 CleanOps.
 
+Vanaf versie 1.4.2 van de app staat dit luik er niet bij een klant die op termijn betaalt en dus een factuur krijgt. Dat is zo
+als de klantfiche een betaaltermijn met dagen heeft, zoals 14 of 30 dagen, of als op de werkorder de betaalwijze **Achteraf**
+staat. Betaalt zo'n klant toch ter plaatse, dan zet kantoor op de werkorder een betaalwijze zoals contant of Payconiq, en het
+luik verschijnt. Staat er al een bedrag, dan blijft het luik altijd staan.
+
 Staat er materiaal, uren of een starttarief uit de app op de werkorder, dan staat het bedrag al ingevuld met het totaal
 inclusief btw. Komt er een lijn bij, dan volgt het bedrag. Typt de medewerker zelf een ander bedrag, dan blijft dat staan.
 

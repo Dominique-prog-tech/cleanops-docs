@@ -158,6 +158,11 @@ Si le client paie sur place, le collaborateur note sous **Paiement sur place** l
 paiement**, puis appuie sur **Enregistrer le paiement**. Le montant et le mode de paiement figurent immédiatement sur
 l'ordre de travail dans CleanOps.
 
+À partir de la version 1.4.2 de l'app, ce volet n'apparaît pas pour un client qui paie à terme et reçoit donc une facture.
+C'est le cas si la fiche client porte une condition de paiement avec des jours, comme 14 ou 30 jours, ou si l'ordre de
+travail porte le mode de paiement **Ultérieurement**. Si un tel client paie quand même sur place, le bureau met sur l'ordre de
+travail un mode de paiement comme espèces ou Payconiq, et le volet apparaît. Si un montant figure déjà, le volet reste toujours.
+
 Si l'ordre de travail porte du matériel, des heures ou un tarif de démarrage ajoutés dans l'app, le montant est déjà rempli
 avec le total TVAC. Si une ligne s'ajoute, le montant suit. Si le collaborateur tape lui-même un autre montant, celui-ci reste.
 
