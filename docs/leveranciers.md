@@ -50,7 +50,7 @@ Bovenaan staan de naam en het nummer, daaronder de tabbladen **Fiche**, **Aankoo
 |---|---|
 | Naam * | Hoogstens 100 tekens. De lijst sorteert op deze naam. |
 | Naam (2e regel) | Een tweede regel, bijvoorbeeld een afdeling. |
-| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer nagekeken; een ander buitenlands nummer niet. Een Nederlands nummer wordt op zijn vorm nagekeken: NL, negen cijfers, B en twee cijfers (bv. NL123456789B01). Bij een adres in Nederland zegt CleanOps het ook als NL ontbreekt. **Ophalen** staat er enkel bij een Belgisch adres. **Ophalen** ernaast toont eerst wat de KBO weet (met **stopgezet** in het rood als de onderneming niet meer actief is); **Overnemen** zet naam en adres op de fiche. Komt er niets terug, dan zegt CleanOps waarom: de KBO kent het nummer niet, of de opzoeking is even niet bereikbaar (probeer later opnieuw). |
+| Btw-nummer | Een Belgisch nummer wordt op zijn controlecijfer nagekeken. Een ander buitenlands nummer moet met zijn landcode beginnen (bv. DE123456789); wat CleanOps niet als btw-nummer herkent, wordt geweigerd. Een Nederlands nummer wordt op zijn vorm nagekeken: NL, negen cijfers, B en twee cijfers (bv. NL123456789B01). Bij een adres in Nederland zegt CleanOps het ook als NL ontbreekt. **Ophalen** staat er enkel bij een Belgisch adres. **Ophalen** ernaast toont eerst wat de KBO weet (met **stopgezet** in het rood als de onderneming niet meer actief is); **Overnemen** zet naam en adres op de fiche. Komt er niets terug, dan zegt CleanOps waarom: de KBO kent het nummer niet, of de opzoeking is even niet bereikbaar (probeer later opnieuw). |
 | Taal * | Nederlands of Frans. |
 
 !!! note "Een btw-nummer staat maar bij één leverancier"
