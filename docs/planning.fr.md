@@ -70,7 +70,7 @@ modifier les clients.
 |---|---|
 | Type de client * | **Particulier** ou **Entreprise**. |
 | Nom * | Ce que vous avez tapé dans le champ de recherche s'y trouve déjà. |
-| Téléphone ou GSM | Peut rester vide. Un seul numéro : un numéro de GSM va dans **GSM**, un autre dans **Téléphone**. |
+| Téléphone ou GSM | Peut rester vide. Un seul numéro : un numéro de GSM va dans **GSM**, un autre dans **Téléphone**. Un numéro du pays de votre entreprise (fiche d'entreprise) est enregistré sans indicatif de pays, un numéro d'un autre pays avec (p. ex. *+31 6 12345678*). |
 | Langue * | La langue des documents pour ce client. |
 | E-mail | Peut rester vide. Une adresse invalide empêche l'enregistrement. |
 | Numéro de TVA | Uniquement pour une entreprise, et il peut rester vide. Avec **Rechercher**, CleanOps montre ce que la BCE sait, et vous reprenez le nom et l'adresse. |
@@ -389,7 +389,8 @@ collaborateurs.
 Choisissez une couleur sur sa [fiche collaborateur](medewerkers.fr.md#longlet-fiche).
 
 **L'itinéraire dans Google Maps va au mauvais endroit.**
-L'itinéraire utilise l'adresse de l'ordre de travail. Corrigez l'adresse d'exécution sur la fiche de l'ordre.
+L'itinéraire utilise l'adresse de l'ordre de travail, avec le pays. Corrigez l'adresse d'exécution sur la fiche de l'ordre, et vérifiez
+aussi le **pays** de cette adresse.
 
 ## Voir aussi
 

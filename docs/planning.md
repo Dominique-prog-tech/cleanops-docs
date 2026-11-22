@@ -67,7 +67,7 @@ met het recht om werkorders te wijzigen, en een nieuwe klant of adres vraagt ook
 |---|---|
 | Soort klant * | **Particulier** of **Bedrijf**. |
 | Naam * | Wat u in het zoekveld typte, staat hier al. |
-| Telefoon of gsm | Mag leeg. Eén nummer: een gsm-nummer komt bij **Gsm**, een ander bij **Telefoon**. |
+| Telefoon of gsm | Mag leeg. Eén nummer: een gsm-nummer komt bij **Gsm**, een ander bij **Telefoon**. Een nummer uit het land van uw bedrijf (bedrijfsfiche) wordt bewaard zonder landcode, een nummer uit een ander land mét (bv. *+31 6 12345678*). |
 | Taal * | De taal van de documenten voor deze klant. |
 | E-mail | Mag leeg. Een ongeldig adres houdt het bewaren tegen. |
 | Btw-nummer | Enkel bij een bedrijf, en het mag leeg. Met **Ophalen** toont CleanOps wat de KBO weet, en neemt u naam en adres over. |
@@ -381,7 +381,8 @@ aan.
 Kies een kleur op zijn [medewerkerfiche](medewerkers.md#het-tabblad-fiche).
 
 **De route in Google Maps loopt naar de verkeerde plaats.**
-De route gebruikt het adres van de werkorder. Pas het uitvoeringsadres aan op de werkorderfiche.
+De route gebruikt het adres van de werkorder, met het land erbij. Pas het uitvoeringsadres aan op de werkorderfiche, en kijk ook het
+**land** van dat adres na.
 
 ## Zie ook
 
