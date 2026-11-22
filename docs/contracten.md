@@ -90,7 +90,7 @@ verwijdert u een lijn.
 
 | Veld | Toelichting |
 |---|---|
-| Komen op elke werkbon | Een vaste tekst voor elke werkorder uit dit contract, zoals *sleutel aan het onthaal vragen*. Ze wordt de instructie voor de ploeg, en haar eerste 35 tekens de omschrijving van de werkorder. Wijzigt u ze later, dan vraagt **Bewaren** of de komende werkorders die nog de oude tekst dragen, de nieuwe krijgen. Uitgevoerde werkorders, en die waarvan iemand de instructies wijzigde, blijven zoals ze zijn. |
+| Komen op elke werkbon | Een vaste tekst voor elke werkorder uit dit contract, zoals *sleutel aan het onthaal vragen*. Ze wordt de instructie voor de ploeg, en haar eerste 150 tekens de omschrijving van de werkorder. Wijzigt u ze later, dan vraagt **Bewaren** of de komende werkorders die nog de oude tekst dragen, de nieuwe krijgen. Uitgevoerde werkorders, en die waarvan iemand de instructies wijzigde, blijven zoals ze zijn. |
 
 **Adres**
 

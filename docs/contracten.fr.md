@@ -90,7 +90,7 @@ celui du contrat). Avec **⋯**, vous supprimez une ligne.
 
 | Champ | Explication |
 |---|---|
-| Figurent sur chaque bon de travail | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 35 premiers caractères la description de l'ordre. Si vous le modifiez plus tard, **Enregistrer** demande si les ordres à venir qui portent encore l'ancien texte reçoivent le nouveau. Les ordres exécutés, et ceux dont quelqu'un a modifié les instructions, restent tels quels. |
+| Figurent sur chaque bon de travail | Un texte fixe pour chaque ordre de travail de ce contrat, comme *demander la clé à l'accueil*. Il devient l'instruction pour l'équipe, et ses 150 premiers caractères la description de l'ordre. Si vous le modifiez plus tard, **Enregistrer** demande si les ordres à venir qui portent encore l'ancien texte reçoivent le nouveau. Les ordres exécutés, et ceux dont quelqu'un a modifié les instructions, restent tels quels. |
 
 **Adresse**
 
