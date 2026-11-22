@@ -38,7 +38,8 @@ Klik op **Verwerken**. De fiche van een nieuwe aankoopfactuur opent, al ingevuld
 
 ![Een voorgevulde aankoopfactuur van Pompes Delhaye met bovenaan de kaart Peppol-document en de lijnen van de leverancier, en twee btw-regels, 21 % en 6 %](images/peppol-verwerken.png "Een document verwerken")
 
-- **Leverancier** — gezocht op het btw-nummer van het document.
+- **Leverancier** — gezocht op het btw-nummer van het document. Staat er geen btw-nummer op, dan op het Belgische
+  ondernemingsnummer.
 - **Soort** — factuur of creditnota, zoals op het document.
 - **Datum leverancier**, **Nummer leverancier** en **Vervaldag** — van het document.
 - **Btw** — per btw-tarief een regel met de basis en de btw van het document. De btw-code kiest CleanOps op het
@@ -63,16 +64,20 @@ Bovenaan de fiche staat een melding als iets niet vanzelf ingevuld kon worden:
 
 - **Leverancier bestaat nog niet** — klik op **Leverancier aanmaken** (zie hieronder), of kies er een uit de lijst.
 - **Meerdere leveranciers** dragen hetzelfde btw-nummer — kies de juiste.
-- **Geen btw-nummer** op het document — kies de leverancier zelf.
+- **Geen btw-nummer** op het document, en ook geen Belgisch ondernemingsnummer — kies de leverancier zelf.
 - **Leverancier in de prullenbak** — haal hem eerst terug in [Leveranciers](leveranciers.md), of kies een andere.
 - **Geen btw-code past** bij een tarief, of er passen er meerdere — kies de code in die btw-regel.
-- Het **totaal** van de regels wijkt af van het document, het document staat in een **andere munt**, of er is al een
+- Een **btw-tarief is onvolledig**: het document vermeldt de soort btw, het percentage, de basis of de btw niet, of
+  schrijft een getal op een manier die niet geldig is. CleanOps neemt zo'n tarief niet over en vult niets in wat er
+  niet staat: voeg het zelf toe met **+ Tarief toevoegen**.
+- Het **totaal** van de regels wijkt af van het document, het document staat in een **andere munt** of vermeldt **geen munt**, of er is al een
   **voorschot** betaald — kijk de bedragen na; een voorschot boekt u apart in [Betalingen](betalingen.md).
 
 ### Een nieuwe leverancier
 
 Kent CleanOps de leverancier nog niet, klik dan op **Leverancier aanmaken**. De fiche van een nieuwe leverancier opent,
-voorgevuld met de naam, het adres, het btw-nummer, het e-mailadres, de IBAN en de BIC van het document.
+voorgevuld met de naam, het adres, het btw-nummer, het e-mailadres, de IBAN en de BIC van het document. Staat er enkel
+een ondernemingsnummer op, dan blijft het btw-nummer leeg: niet elke onderneming is btw-plichtig.
 
 ![De melding dat Leverancier Rioolinspectie Noord bv nog niet bestaat, met de knop Leverancier aanmaken](images/peppol-leverancier-aanmaken.png "Een onbekende leverancier")
 

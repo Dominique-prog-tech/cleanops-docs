@@ -38,7 +38,8 @@ Cliquez sur **Traiter**. La fiche d'une nouvelle facture d'achat s'ouvre, déjà
 
 ![Une facture d'achat préremplie de Pompes Delhaye avec en haut la carte Document Peppol et les lignes du fournisseur, et deux lignes TVA, 21 % et 6 %](images/peppol-verwerken-fr.png "Traiter un document")
 
-- **Fournisseur** — recherché sur le numéro de TVA du document.
+- **Fournisseur** — recherché sur le numéro de TVA du document. S'il n'y a pas de numéro de TVA, sur le numéro
+  d'entreprise belge.
 - **Type** — facture ou note de crédit, comme sur le document.
 - **Date fournisseur**, **N° fournisseur** et **Échéance** — du document.
 - **TVA** — une ligne par taux de TVA avec la base et la TVA du document. CleanOps choisit le code TVA sur le
@@ -64,18 +65,22 @@ En haut de la fiche figure un message quand quelque chose n'a pas pu être rempl
 - **Le fournisseur n'existe pas encore** — cliquez sur **Créer le fournisseur** (voir ci-dessous), ou choisissez-en un
   dans la liste.
 - **Plusieurs fournisseurs** portent le même numéro de TVA — choisissez le bon.
-- **Pas de numéro de TVA** sur le document — choisissez vous-même le fournisseur.
+- **Pas de numéro de TVA** sur le document, ni de numéro d'entreprise belge — choisissez vous-même le fournisseur.
 - **Fournisseur dans la corbeille** — restaurez-le d'abord dans [Fournisseurs](leveranciers.md), ou choisissez-en un
   autre.
 - **Aucun code TVA ne correspond** à un taux, ou plusieurs correspondent — choisissez le code dans cette ligne TVA.
-- Le **total** des lignes diffère du document, le document est dans une **autre devise**, ou un **acompte** a déjà été
+- Un **taux TVA est incomplet** : le document ne mentionne pas la catégorie de TVA, le pourcentage, la base ou la TVA,
+  ou écrit un nombre d'une manière qui n'est pas valide. CleanOps ne reprend pas ce taux et ne remplit rien qui n'y
+  figure pas : ajoutez-le vous-même avec **+ Ajouter un taux**.
+- Le **total** des lignes diffère du document, le document est dans une **autre devise** ou ne mentionne **aucune devise**, ou un **acompte** a déjà été
   payé — vérifiez les montants ; un acompte s'enregistre séparément dans [Paiements](betalingen.md).
 
 ### Un nouveau fournisseur
 
 Si CleanOps ne connaît pas encore le fournisseur, cliquez sur **Créer le fournisseur**. La fiche d'un nouveau
 fournisseur s'ouvre, préremplie avec le nom, l'adresse, le numéro de TVA, l'adresse e-mail, l'IBAN et le BIC du
-document.
+document. S'il ne porte qu'un numéro d'entreprise, le numéro de TVA reste vide : toute entreprise n'est pas assujettie
+à la TVA.
 
 ![Le message indiquant que le Fournisseur Rioolinspectie Noord bv n'existe pas encore, avec le bouton Créer le fournisseur](images/peppol-leverancier-aanmaken-fr.png "Un fournisseur inconnu")
 
