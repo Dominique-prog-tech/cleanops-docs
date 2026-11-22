@@ -47,7 +47,8 @@ zijn. Leeg laten mag; half ingevuld niet.
 
 Het **btw-nummer** hoort op elke factuur. CleanOps controleert het controlecijfer van een Belgisch nummer en
 bewaart het in de vaste schrijfwijze, bijvoorbeeld `BE 0123.456.749`. Naast het veld staat **Ophalen**: die knop
-zoekt het nummer op in de Kruispuntbank van Ondernemingen en vult uw adres aan met wat daar geregistreerd staat.
+zoekt het nummer op in de Kruispuntbank van Ondernemingen en vult uw adres aan met wat daar geregistreerd staat. Is het land van
+uw bedrijf Nederland, dan staat die knop er niet, en controleert CleanOps de Nederlandse vorm (bv. NL123456789B01).
 
 !!! note "Komt er niets terug?"
     Het scherm zegt waarom. *"De KBO kent dit nummer niet"*: het nummer is opgezocht en staat er niet in —

@@ -49,7 +49,8 @@ saisis sont valides. Les laisser vides est permis ; les remplir à moitié ne l'
 Le **numéro de TVA** doit figurer sur chaque facture. CleanOps vérifie le chiffre de contrôle d'un numéro belge
 et l'enregistre dans son écriture fixe, par exemple `BE 0123.456.749`. À côté du champ se trouve
 **Rechercher** : ce bouton consulte le numéro auprès de la Banque-Carrefour des Entreprises et complète votre
-adresse avec ce qui y est enregistré.
+adresse avec ce qui y est enregistré. Si le pays de votre entreprise est les Pays-Bas, ce bouton n'apparaît pas, et
+CleanOps vérifie la forme néerlandaise (p. ex. NL123456789B01).
 
 !!! note "Rien ne revient ?"
     L'écran dit pourquoi. *« La BCE ne connaît pas ce numéro »* : le numéro a été recherché et n'y figure
