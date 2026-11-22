@@ -26,7 +26,7 @@ achats*, vous voyez la liste et les PDF, mais pas le bouton **Traiter**.
 Par document, vous voyez quand il a été reçu, le fournisseur, le numéro et le total. Une note de crédit porte
 l'étiquette *Note de crédit* à côté du numéro et un signe moins dans le total. Le document le plus ancien figure en haut.
 
-- **Consulter** — ouvre le PDF du fournisseur dans une nouvelle fenêtre.
+- **Consulter** — affiche le PDF du fournisseur dans une fenêtre au-dessus de la liste.
 - **Traiter** — ouvre une facture d'achat préremplie (voir ci-dessous).
 - **Exporter** — la liste sous forme de fichier.
 
