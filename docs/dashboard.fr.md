@@ -63,7 +63,7 @@ une réponse.
 | Carte | Ce qu'elle montre | Afficher les … ouvre |
 |---|---|---|
 | Au planning aujourd'hui | les ordres de travail planifiés aujourd'hui et pas encore exécutés : le numéro, le client et la commune | la [liste du planning](planning.fr.md#la-liste-du-planning) sur le jour même |
-| Encore à planifier | le travail ouvert sans date planifiée, les plus récents d'abord : le numéro, le client, le jour où le travail doit être fait et la commune. Le même chiffre que la colonne **Encore à planifier** du [tableau de planning](planning.fr.md) | les [ordres de travail](werkorders.fr.md) sur le filtre **Planning : Encore à planifier** |
+| Encore à planifier | le travail ouvert sans date planifiée, les urgents d'abord (avec l'étiquette rouge **urgent**), puis les plus récents : le numéro, le client, le jour où le travail doit être fait et la commune. Le même chiffre que la colonne **Encore à planifier** du [tableau de planning](planning.fr.md) | les [ordres de travail](werkorders.fr.md) sur le filtre **Planning : Encore à planifier** |
 | Ordres de travail à facturer | le travail exécuté qui attend une facture, jusqu'à aujourd'hui inclus — sans ce qui a été payé comptant. Par client, avec le nombre d'ordres de travail et le montant ; le client qui attend depuis le plus longtemps figure en premier | [Facturation](facturatie.fr.md) |
 
 ### Demande votre attention

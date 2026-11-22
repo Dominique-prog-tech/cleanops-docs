@@ -60,7 +60,7 @@ Ligt er niets, dan blijft de kaart staan met een zin als *Niets gepland vandaag.
 | Kaart | Wat ze toont | Alle … tonen opent |
 |---|---|---|
 | Op de planning vandaag | de werkorders die vandaag gepland staan en nog niet uitgevoerd zijn: het nummer, de klant en de gemeente | de [planningslijst](planning.md#de-planningslijst) op de dag van vandaag |
-| Nog in te plannen | het open werk zonder geplande datum, de nieuwste eerst: het nummer, de klant, de dag waarop het werk moet gebeuren en de gemeente. Hetzelfde getal als de kolom **Nog in te plannen** op het [planbord](planning.md) | de [werkorders](werkorders.md) op de filter **Planning: Nog in te plannen** |
+| Nog in te plannen | het open werk zonder geplande datum, de dringende eerst (met het rode label **dringend**), daarna de nieuwste: het nummer, de klant, de dag waarop het werk moet gebeuren en de gemeente. Hetzelfde getal als de kolom **Nog in te plannen** op het [planbord](planning.md) | de [werkorders](werkorders.md) op de filter **Planning: Nog in te plannen** |
 | Werkorders te factureren | het uitgevoerde werk dat op een factuur wacht, tot en met vandaag — zonder wat contant betaald werd. Per klant, met het aantal werkorders en het bedrag; de klant die al het langst wacht, staat eerst | [Facturatie](facturatie.md) |
 
 ### Vraagt aandacht
