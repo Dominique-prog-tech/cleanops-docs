@@ -25,7 +25,7 @@ Si vous avez aussi le droit **Modifier les ordres de travail**, le bouton ouvre 
 2. **Adresse** : choisissez l'adresse principale ou une adresse d'exécution du client. La première de la liste est déjà
    choisie : la seule adresse d'exécution, ou sinon l'adresse principale. Ce que le bureau a noté sur l'accessibilité d'une
    adresse apparaît en dessous.
-3. **Description** : ce qu'il faut faire, en 35 caractères au plus. Ce champ est obligatoire.
+3. **Description** : ce qu'il faut faire, en 150 caractères au plus (dans une application antérieure à la version 1.4.3 : 35). Ce champ est obligatoire.
 4. **Remarque pour le bureau** : ce que le bureau doit savoir, par exemple que le client l'a demandé sur place. Ce texte va
    dans la remarque interne et n'apparaît pas sur le bon de livraison.
 5. **Planning** : le **Jour**, la **Partie de la journée** et le **Collaborateur**. Le jour est celui du planning, ou

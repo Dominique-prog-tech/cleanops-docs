@@ -23,7 +23,7 @@ Hebt u ook het recht **Werkorders bewerken**, dan opent de knop vanaf versie 1.3
    **Andere klant** kiest u opnieuw. Een nieuwe klant maakt het kantoor aan.
 2. **Adres**: kies het hoofdadres of een uitvoeringsadres van de klant. Het eerste in de lijst staat al gekozen: het enige
    uitvoeringsadres, of anders het hoofdadres. Wat het kantoor bij een adres noteerde over de bereikbaarheid, staat eronder.
-3. **Omschrijving**: wat er moet gebeuren, in hoogstens 35 tekens. Dit veld is verplicht.
+3. **Omschrijving**: wat er moet gebeuren, in hoogstens 150 tekens (in een app van vóór versie 1.4.3: 35). Dit veld is verplicht.
 4. **Opmerking voor het kantoor**: wat het kantoor moet weten, bijvoorbeeld dat de klant het ter plaatse vroeg. Deze tekst
    komt in de interne opmerking en staat niet op de leveringsbon.
 5. **Planning**: de **Dag**, het **Tijdsdeel** en de **Medewerker**. De dag is die van de planning, of vandaag als de
