@@ -26,8 +26,8 @@ Klik in de zijbalk op **Platformbeheer** en daarna op de tegel **Actielogboek**.
 Zoek met het zoekveld bovenaan en druk op Enter: het zoekt in de gebruiker, de actie, de samenvatting en de entiteit.
 Met **Exporteren** bewaart u de lijst als bestand.
 
-U ziet enkel wat er in uw eigen omgeving gebeurde. Het actielogboek is er voor de **Tenant-beheerder**: het recht om
-het te bekijken kunt u aan geen andere rol geven.
+U ziet enkel wat er in uw eigen omgeving gebeurde. Het actielogboek is er voor de **Klantbeheerder** (in een oudere
+omgeving: **Tenant-beheerder**): het recht om het te bekijken kunt u aan geen andere rol geven.
 
 ## Wat er in staat
 
@@ -53,4 +53,4 @@ het te bekijken kunt u aan geen andere rol geven.
 ## Zie ook
 
 - [Prullenbak](prullenbak.md) — een verwijderd record terugzetten
-- [Rollen](rollen.md) — de Tenant-beheerder
+- [Rollen](rollen.md) — de Klantbeheerder

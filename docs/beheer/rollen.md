@@ -25,10 +25,10 @@ hem die rol.
 
 ## De twee rollen die er al staan
 
-**Tenant-beheerder 🔒** is de beheerder van uw omgeving. Deze rol heeft automatisch álle rechten, ook de rechten die er
-later bij komen. U kunt ze niet bewerken en niet verwijderen. Enkel een Tenant-beheerder kan rollen beheren: dat recht
-kunt u aan geen andere rol geven. Daarom kunt u de **laatste** Tenant-beheerder niet uitvinken: CleanOps weigert dat en
-zegt waarom. Geef eerst een tweede persoon de rol.
+**Klantbeheerder 🔒** is de beheerder van uw omgeving. In een oudere omgeving heet deze rol **Tenant-beheerder**: enkel
+de naam verschilt, de rechten zijn dezelfde. Deze rol heeft automatisch álle rechten, ook de rechten die er later bij
+komen. U kunt ze niet bewerken en niet verwijderen. Enkel een Klantbeheerder kan rollen beheren: dat recht kunt u aan
+geen andere rol geven. Daarom kunt u de **laatste** Klantbeheerder niet uitvinken: CleanOps weigert dat en zegt waarom. Geef eerst een tweede persoon de rol.
 
 **Financieel** krijgt elke klant vanzelf. Ze draagt standaard twee rechten: **Facturatie bekijken** en **Openstaande
 posten bekijken**. Wie ook facturen maakt, heeft daarnaast **Facturen opmaken** nodig — vink dat aan bij deze rol, of

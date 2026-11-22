@@ -26,8 +26,9 @@ Dans la barre latérale, cliquez sur **Administration**, puis sur la tuile **Jou
 Cherchez avec le champ de recherche en haut et appuyez sur Entrée : la recherche porte sur l'utilisateur, l'action, le
 résumé et l'entité. Avec **Exporter**, vous enregistrez la liste en fichier.
 
-Vous ne voyez que ce qui s'est passé dans votre propre environnement. Le journal des actions est réservé au
-**Tenant-beheerder** : le droit de le consulter ne peut être donné à aucun autre rôle.
+Vous ne voyez que ce qui s'est passé dans votre propre environnement. Le journal des actions est réservé à
+l'**Administrateur du client** (dans un environnement plus ancien : **Tenant-beheerder**) : le droit de le
+consulter ne peut être donné à aucun autre rôle.
 
 ## Ce qui y figure
 
@@ -53,4 +54,4 @@ Vous ne voyez que ce qui s'est passé dans votre propre environnement. Le journa
 ## Voir aussi
 
 - [Corbeille](prullenbak.fr.md) — restaurer un enregistrement supprimé
-- [Rôles](rollen.fr.md) — le Tenant-beheerder
+- [Rôles](rollen.fr.md) — l'administrateur du client

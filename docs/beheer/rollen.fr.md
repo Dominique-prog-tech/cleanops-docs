@@ -25,12 +25,13 @@ les clients** et donnez-lui ce rôle.
 
 ## Les deux rôles déjà présents
 
-Les noms de ces deux rôles restent en néerlandais : ce sont des données, pas des textes de l'écran.
+Le nom du rôle Financieel reste en néerlandais : c'est une donnée, pas un texte de l'écran.
 
-**Tenant-beheerder 🔒** est l'administrateur de votre environnement. Ce rôle possède automatiquement tous les droits,
-y compris ceux qui s'ajouteront plus tard. Vous ne pouvez ni le modifier ni le supprimer. Seul un Tenant-beheerder peut
-gérer les rôles : ce droit ne peut être donné à aucun autre rôle. C'est pourquoi vous ne pouvez pas décocher le
-**dernier** Tenant-beheerder : CleanOps le refuse et en explique la raison. Donnez d'abord le rôle à une deuxième personne.
+**Administrateur du client 🔒** est l'administrateur de votre environnement. Dans un environnement plus ancien, ce rôle
+s'appelle **Tenant-beheerder** : seul le nom diffère, les droits sont les mêmes. Ce rôle possède automatiquement tous les
+droits, y compris ceux qui s'ajouteront plus tard. Vous ne pouvez ni le modifier ni le supprimer. Seul un administrateur
+du client peut gérer les rôles : ce droit ne peut être donné à aucun autre rôle. C'est pourquoi vous ne pouvez pas
+décocher le **dernier** administrateur du client : CleanOps le refuse et en explique la raison. Donnez d'abord le rôle à une deuxième personne.
 
 **Financieel** est créé d'office pour chaque client. Il porte par défaut deux droits : **Voir la facturation** et
 **Voir les postes ouverts**. Celui qui établit aussi des factures a besoin en plus de **Établir des factures** — cochez-le
