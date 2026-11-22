@@ -57,6 +57,11 @@ uw bedrijf Nederland, dan staat die knop er niet, en controleert CleanOps de Ned
 
 Uw naam wordt bij het ophalen **niet** overschreven.
 
+Is uw bedrijf in Nederland gevestigd, dan staat er onder het btw-nummer ook een veld **KvK-nummer**: de acht cijfers
+van uw inschrijving bij de Kamer van Koophandel. Spaties en punten mag u meetypen; CleanOps bewaart enkel de cijfers.
+Het nummer komt in het briefhoofd van uw facturen, offertes, aanmaningen, attesten en cameraverslagen, naast het
+btw-nummer: `Btw NL123456789B01 · KvK 12345678`. Laat u het leeg, dan verandert er niets aan het briefhoofd.
+
 De **IBAN** wordt eveneens op zijn controlecijfer nagekeken en in groepjes van vier bewaard
 (`BE68 5390 0754 7034`). Daarnaast de **BIC**. Het SEPA-bestand van het [betalingsvoorstel](../betalingsvoorstel.md)
 betaalt uw leveranciers vanaf deze IBAN.

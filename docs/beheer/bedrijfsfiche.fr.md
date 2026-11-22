@@ -59,6 +59,12 @@ CleanOps vérifie la forme néerlandaise (p. ex. NL123456789B01).
 
 Votre nom n'est **pas** écrasé lors de la recherche.
 
+Si votre entreprise est établie aux Pays-Bas, un champ **N° KvK (Pays-Bas)** apparaît aussi sous le numéro de TVA :
+les huit chiffres de votre inscription à la Chambre de commerce néerlandaise (KvK). Vous pouvez taper des espaces et
+des points ; CleanOps n'enregistre que les chiffres. Le numéro figure dans l'en-tête de vos factures, offres, rappels,
+attestations et rapports caméra, à côté du numéro de TVA : `TVA NL123456789B01 · KvK 12345678`. Si vous le laissez
+vide, l'en-tête ne change pas.
+
 L'**IBAN** est lui aussi vérifié sur son chiffre de contrôle et enregistré par groupes de quatre
 (`BE68 5390 0754 7034`). À côté, le **BIC**. Le fichier SEPA de la [proposition de paiement](../betalingsvoorstel.md)
 paie vos fournisseurs depuis cet IBAN.
