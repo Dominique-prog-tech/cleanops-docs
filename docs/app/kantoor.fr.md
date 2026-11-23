@@ -30,10 +30,12 @@ Vous vous connectez dans l'application avec **votre adresse e-mail et le même m
 l'ordinateur.
 
 L'accès à l'application n'est pas ouvert d'office à chaque utilisateur : une connexion sur un téléphone est une porte plus
-grande qu'une connexion au bureau. **ADM-Concept active l'accès par personne**, à votre demande. Si nous le retirons,
-l'application déconnecte cette personne au prochain écran qu'elle ouvre.
+grande qu'une connexion au bureau. **Qui peut modifier les collaborateurs active l'accès par personne** sous
+[Administration › Accès à l'app](../medewerkers.fr.md#acces-a-lapp-pour-le-bureau). S'il est retiré, l'application
+déconnecte cette personne au prochain écran qu'elle ouvre.
 
-Si vous travaillez vous-même aussi sur le terrain, nous lions votre connexion à votre collaborateur. L'application s'ouvre
+Si vous travaillez vous-même aussi sur le terrain, liez votre connexion à votre collaborateur : sur sa fiche, avec
+[Lier un compte bureau…](../medewerkers.fr.md#lier-un-compte-bureau). L'application s'ouvre
 alors sur votre planning du jour, comme pour chaque collaborateur, et l'**Aperçu** et les écrans pour le bureau
 s'ajoutent au menu.
 
@@ -90,8 +92,9 @@ Tirez l'écran vers le bas pour l'actualiser.
 ## Questions fréquentes
 
 **Je ne parviens pas à me connecter dans l'application.**
-Pour un utilisateur du bureau, l'application n'est ouverte que si ADM-Concept a activé l'accès pour vous. Demandez-le-nous.
-Si vous partagez votre adresse e-mail avec un autre utilisateur, l'application ne peut pas vous reconnaître : chaque
+Pour un utilisateur du bureau, l'application n'est ouverte que si quelqu'un a activé l'accès pour vous : sous
+**Administration › Accès à l'app**, ou en liant votre connexion à votre collaborateur. Ne vous créez **pas de second
+compte** comme collaborateur : il ne fonctionne que dans l'application, pas sur l'ordinateur. Si vous partagez votre adresse e-mail avec un autre utilisateur, l'application ne peut pas vous reconnaître : chaque
 utilisateur a besoin de sa propre adresse.
 
 **Un écran ne figure pas dans mon menu.**

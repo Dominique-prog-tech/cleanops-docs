@@ -17,6 +17,7 @@ Dans le menu de gauche, sous **CRM**, cliquez sur **Collaborateurs**.
 ## La liste
 
 Pour chaque collaborateur, vous voyez le code, le nom, la commune, un numéro de téléphone (le GSM, sinon le fixe),
+avec quel compte il se connecte (colonne **Accès app**, voir [Compte bureau et compte app](#compte-bureau-et-compte-app)),
 et si la personne est chauffeur et active. En tête figurent les collaborateurs avec la **priorité** la plus élevée,
 puis les autres par nom.
 
@@ -93,6 +94,24 @@ Sous les blocs figure **Accès à l'app** : le collaborateur peut-il se connecte
 
 ![Le bloc Accès à l'app sur la fiche d'un collaborateur, avec l'état Pas d'accès à l'app et le bouton Donner l'accès…](images/medewerker-app-toegang-fr.png "Accès à l'app")
 
+#### Compte bureau et compte app
+
+Il y a deux sortes de compte, et le bloc indique lequel est lié au collaborateur :
+
+| Compte | Pour quoi | Qui le crée |
+|---|---|---|
+| **Compte bureau** | L'identifiant pour CleanOps sur l'ordinateur. Lié à un collaborateur, le même identifiant fonctionne aussi dans l'application. | ADM-Concept, à votre demande. |
+| **Compte app** | Uniquement l'application mobile. Il ne donne pas accès à CleanOps sur l'ordinateur. | Vous, avec **Donner l'accès…** |
+
+Si le collaborateur a déjà un compte bureau, ne lui donnez **pas** de compte app, mais liez son compte bureau : il
+garde un seul identifiant. Si vous indiquez malgré tout l'adresse d'un compte bureau dans **Donner l'accès…**, CleanOps
+propose lui-même de lier ce compte.
+
+Quelqu'un qui travaille au bureau sans être planifié n'a pas besoin de fiche collaborateur : donnez l'accès à son
+compte bureau sous [Accès à l'app](#acces-a-lapp-pour-le-bureau).
+
+#### Donner un compte app
+
 Le collaborateur se connecte avec son adresse e-mail et un mot de passe qu'il choisit lui-même. Pour lui donner accès :
 
 1. Cliquez sur **Donner l'accès…**.
@@ -105,21 +124,48 @@ fonctionne qu'une seule fois. L'e-mail indique aussi où trouver l'application, 
 Dans une version d'essai ou un environnement qui n'est pas encore libéré, aucun e-mail ne part. Le lien apparaît alors dans le bloc, avec le bouton
 **Copier le lien** : transmettez-le vous-même au collaborateur, par exemple par un message sur son GSM. Disparu ? **Inviter à nouveau** en crée un nouveau.
 
+#### Lier un compte bureau
+
+1. Cliquez sur **Lier un compte bureau…**.
+2. Choisissez le **Compte bureau**. La liste ne montre que ceux qui peuvent être liés : pas ceux déjà liés à un autre
+   collaborateur, pas ceux qui sont désactivés, ni ceux qui partagent leur adresse e-mail avec un autre utilisateur.
+3. Cliquez sur **Lier**.
+
+Aucun e-mail ne part : le collaborateur se connecte dans l'application avec le même identifiant que sur l'ordinateur,
+et y voit son travail ainsi que les écrans que montre son rôle.
+
+Quelqu'un a reçu un compte app alors qu'il a un compte bureau ? Cliquez sur **Remplacer par un compte bureau…** et
+choisissez son compte bureau. Le compte app est supprimé : il ne peut plus se connecter avec.
+
+#### Les états
+
 Ce que le bloc affiche et les boutons présents dépendent de l'état :
 
 | État | Boutons |
 |---|---|
-| Pas d'accès à l'app. | **Donner l'accès…** |
-| Invité : le mot de passe n'a pas encore été choisi. | **Inviter à nouveau** envoie un nouvel e-mail, par exemple si le lien a expiré. **Révoquer** |
-| Accès actif : le collaborateur se connecte avec l'adresse affichée. | **Nouveau mot de passe** envoie un lien pour choisir un nouveau mot de passe ; l'actuel reste valable jusque-là. **Révoquer** |
-| Accès révoqué. | **Rétablir l'accès**. Si le collaborateur n'avait pas encore de mot de passe, il reçoit une nouvelle invitation. |
+| Pas d'accès à l'app. | **Donner l'accès…** crée un compte app. **Lier un compte bureau…** |
+| Compte bureau : le collaborateur se connecte avec le même identifiant sur l'ordinateur et dans l'application. | **Délier**. Son identifiant sur l'ordinateur reste. |
+| Compte app, invité : le mot de passe n'a pas encore été choisi. | **Inviter à nouveau** envoie un nouvel e-mail, par exemple si le lien a expiré. **Révoquer**. **Remplacer par un compte bureau…** |
+| Compte app : le collaborateur se connecte avec l'adresse affichée. | **Nouveau mot de passe** envoie un lien pour choisir un nouveau mot de passe ; l'actuel reste valable jusque-là. **Révoquer**. **Remplacer par un compte bureau…** |
+| Compte app, accès révoqué. | **Rétablir l'accès**. Si le collaborateur n'avait pas encore de mot de passe, il reçoit une nouvelle invitation. **Remplacer par un compte bureau…** |
 
 **Révoquer** exclut immédiatement le collaborateur. Une session déjà ouverte dans l'application reste valable au plus
 une heure.
 
 !!! info "Qui n'obtient pas d'accès"
     Un collaborateur supprimé, inactif ou retraité ne peut pas se connecter : le bloc l'indique, et **Donner
-    l'accès…** ne fonctionne pas. Une adresse e-mail qui appartient déjà à un autre utilisateur est refusée.
+    l'accès…** ne fonctionne pas. Une adresse e-mail qui appartient déjà à un autre utilisateur est refusée, sauf
+    s'il s'agit d'un compte bureau que vous pouvez lier : CleanOps le propose alors.
+
+### Accès à l'app pour le bureau
+
+Sous **Administration › Accès à l'app** figurent les comptes bureau de votre entreprise. À qui n'a pas de fiche
+collaborateur, vous donnez ici l'accès à l'application avec **Donner l'accès** ; **Révoquer** le retire. Il se connecte
+dans l'application avec le même identifiant que sur l'ordinateur et y voit ce que montre son rôle (voir
+[L'application pour le bureau](app/kantoor.fr.md)). Qui est lié à un collaborateur y figure avec le nom de ce
+collaborateur : il entre déjà par sa fiche.
+
+Vous voyez la tuile si vous pouvez modifier les collaborateurs. Un nouveau compte bureau se demande à ADM-Concept.
 
 ### L'onglet Congés
 

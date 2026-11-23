@@ -15,8 +15,9 @@ Klik links in het menu, onder **CRM**, op **Medewerkers**.
 
 ## De lijst
 
-Per medewerker ziet u de code, de naam, de gemeente, een telefoonnummer (de gsm, en anders het vaste nummer), en
-of de persoon chauffeur is en actief. Bovenaan staan de medewerkers met de hoogste **prioriteit**, daarna de
+Per medewerker ziet u de code, de naam, de gemeente, een telefoonnummer (de gsm, en anders het vaste nummer), met
+welk account hij zich aanmeldt (kolom **App-toegang**, zie [Kantooraccount en app-account](#kantooraccount-en-app-account)),
+en of de persoon chauffeur is en actief. Bovenaan staan de medewerkers met de hoogste **prioriteit**, daarna de
 anderen op naam.
 
 - **Zoeken** — de cursor staat meteen in het zoekveld. Er wordt gezocht in de code, de naam, de gemeente en het
@@ -89,6 +90,24 @@ ziet het blok als u medewerkers mag bewerken.
 
 ![Het blok App-toegang op de fiche van een medewerker, met de stand Geen app-toegang en de knop Toegang geven…](images/medewerker-app-toegang.png "App-toegang")
 
+#### Kantooraccount en app-account
+
+Er zijn twee soorten account, en het blok zegt welk aan de medewerker hangt:
+
+| Account | Waarvoor | Wie maakt het |
+|---|---|---|
+| **Kantooraccount** | De login voor CleanOps op de computer. Gekoppeld aan een medewerker werkt dezelfde login ook in de app. | ADM-Concept, op uw vraag. |
+| **App-account** | Enkel de mobiele app. Daarmee komt de medewerker niet in CleanOps op de computer. | U, met **Toegang geven…** |
+
+Heeft de medewerker al een kantooraccount, geef hem dan **geen** app-account, maar koppel zijn kantooraccount: dan
+houdt hij één login. Vult u bij **Toegang geven…** toch het adres van een kantooraccount in, dan stelt CleanOps zelf
+voor om dat account te koppelen.
+
+Wie op kantoor werkt maar niet ingepland wordt, heeft geen medewerkersfiche nodig: geef zijn kantooraccount toegang
+onder [App-toegang](#app-toegang-voor-kantoor).
+
+#### Een app-account geven
+
 De medewerker meldt zich aan met zijn e-mailadres en een wachtwoord dat hij zelf kiest. Zo geeft u hem toegang:
 
 1. Klik op **Toegang geven…**.
@@ -101,21 +120,47 @@ De mail zegt ook waar hij de app vindt, en met welk e-mailadres hij zich aanmeld
 In een proefversie of een omgeving die nog niet vrijgegeven is, vertrekt er geen mail. De link verschijnt dan in het blok, met de knop
 **Link kopiëren**: bezorg hem zelf aan de medewerker, bijvoorbeeld via een bericht op zijn gsm. Verdwenen? **Opnieuw uitnodigen** maakt een nieuwe.
 
+#### Een kantooraccount koppelen
+
+1. Klik op **Kantooraccount koppelen…**.
+2. Kies het **Kantooraccount**. De lijst toont enkel wie gekoppeld kan worden: niet wie al aan een andere medewerker
+   hangt, niet wie gedeactiveerd is, en niet wie zijn e-mailadres met een andere gebruiker deelt.
+3. Klik op **Koppelen**.
+
+Er vertrekt geen mail: de medewerker meldt zich in de app aan met dezelfde login als op de computer, en ziet er zijn
+werk én de schermen die zijn rol toont.
+
+Kreeg iemand eerder een app-account terwijl hij een kantooraccount heeft, klik dan op **Vervangen door kantooraccount…**
+en kies zijn kantooraccount. Het app-account wordt verwijderd: daarmee kan hij zich niet meer aanmelden.
+
+#### De standen
+
 Wat het blok toont en welke knoppen er staan, hangt af van de stand:
 
 | Stand | Knoppen |
 |---|---|
-| Geen app-toegang. | **Toegang geven…** |
-| Uitgenodigd: het wachtwoord is nog niet gekozen. | **Opnieuw uitnodigen** stuurt een nieuwe mail, bijvoorbeeld als de link verlopen is. **Intrekken** |
-| Actieve toegang: de medewerker meldt zich aan met het getoonde adres. | **Nieuw wachtwoord** stuurt een link om een nieuw wachtwoord te kiezen; het huidige blijft werken tot dan. **Intrekken** |
-| Toegang ingetrokken. | **Toegang terugzetten**. Had de medewerker nog geen wachtwoord, dan krijgt hij opnieuw een uitnodiging. |
+| Geen app-toegang. | **Toegang geven…** maakt een app-account. **Kantooraccount koppelen…** |
+| Kantooraccount: de medewerker meldt zich met dezelfde login aan op de computer en in de app. | **Ontkoppelen**. Zijn login op de computer blijft. |
+| App-account, uitgenodigd: het wachtwoord is nog niet gekozen. | **Opnieuw uitnodigen** stuurt een nieuwe mail, bijvoorbeeld als de link verlopen is. **Intrekken**. **Vervangen door kantooraccount…** |
+| App-account: de medewerker meldt zich aan met het getoonde adres. | **Nieuw wachtwoord** stuurt een link om een nieuw wachtwoord te kiezen; het huidige blijft werken tot dan. **Intrekken**. **Vervangen door kantooraccount…** |
+| App-account, toegang ingetrokken. | **Toegang terugzetten**. Had de medewerker nog geen wachtwoord, dan krijgt hij opnieuw een uitnodiging. **Vervangen door kantooraccount…** |
 
 **Intrekken** sluit de medewerker meteen uit. Een sessie die al open staat in de app, blijft nog hoogstens een uur
 werken.
 
 !!! info "Wie geen toegang krijgt"
     Een medewerker die verwijderd, niet actief of met pensioen is, kan zich niet aanmelden: het blok zegt dat, en
-    **Toegang geven…** werkt niet. Een e-mailadres dat al bij een andere gebruiker hoort, wordt geweigerd.
+    **Toegang geven…** werkt niet. Een e-mailadres dat al bij een andere gebruiker hoort, wordt geweigerd, behalve
+    als het een kantooraccount is dat u kunt koppelen: dan stelt CleanOps dat voor.
+
+### App-toegang voor kantoor
+
+Onder **Platformbeheer › App-toegang** staan de kantooraccounts van uw bedrijf. Wie geen medewerkersfiche heeft, geeft
+u hier met **Toegang geven** toegang tot de app; **Intrekken** neemt ze weer af. Hij meldt zich in de app aan met
+dezelfde login als op de computer en ziet er wat zijn rol toont (zie [De app voor kantoor](app/kantoor.md)). Wie aan
+een medewerker gekoppeld is, staat er met de naam van die medewerker: hij komt al via zijn fiche binnen.
+
+U ziet de tegel als u medewerkers mag bewerken. Een nieuw kantooraccount vraagt u aan ADM-Concept.
 
 ### Het tabblad Verlof
 

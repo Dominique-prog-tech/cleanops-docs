@@ -29,10 +29,12 @@ factuur maken of een verlofaanvraag goedkeuren doet u in CleanOps op de computer
 U meldt zich in de app aan met **uw e-mailadres en hetzelfde wachtwoord** als in CleanOps op de computer.
 
 Toegang tot de app staat niet vanzelf open voor iedere gebruiker: een login op een telefoon is een grotere deur dan een
-login op kantoor. **ADM-Concept zet de toegang per persoon aan**, op uw vraag. Trekken we ze in, dan meldt de app die
+login op kantoor. **Wie medewerkers mag bewerken, zet de toegang per persoon aan** onder
+[Platformbeheer › App-toegang](../medewerkers.md#app-toegang-voor-kantoor). Wordt ze ingetrokken, dan meldt de app die
 persoon af bij het volgende scherm dat ze opent.
 
-Werkt u zelf ook mee op de baan, dan koppelen we uw login aan uw medewerker. De app opent dan op uw planning van vandaag,
+Werkt u zelf ook mee op de baan, koppel dan uw login aan uw medewerker: op zijn fiche, met
+[Kantooraccount koppelen…](../medewerkers.md#een-kantooraccount-koppelen). De app opent dan op uw planning van vandaag,
 zoals bij elke medewerker, en het **Overzicht** en de schermen voor kantoor staan erbij in het menu.
 
 ## Wat u ziet
@@ -85,8 +87,10 @@ Trek het scherm naar beneden om het te verversen.
 ## Veelgestelde vragen
 
 **Ik kan me niet aanmelden in de app.**
-De app is voor een kantoorgebruiker enkel open als ADM-Concept de toegang voor u aanzette. Vraag het ons. Deelt u uw
-e-mailadres met een andere gebruiker, dan kan de app u niet herkennen: elke gebruiker heeft een eigen adres nodig.
+De app is voor een kantoorgebruiker enkel open als iemand de toegang voor u aanzette: onder **Platformbeheer ›
+App-toegang**, of door uw login aan uw medewerker te koppelen. Maak uzelf **geen tweede account** als medewerker: dat
+werkt enkel in de app en niet op de computer. Deelt u uw e-mailadres met een andere gebruiker, dan kan de app u niet
+herkennen: elke gebruiker heeft een eigen adres nodig.
 
 **Een scherm staat niet in mijn menu.**
 Dan heeft uw rol het recht op dat scherm niet, of uw bedrijf zette de functie uit. Dat is in de app hetzelfde als op de
