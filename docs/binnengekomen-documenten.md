@@ -72,6 +72,9 @@ Bovenaan de fiche staat een melding als iets niet vanzelf ingevuld kon worden:
   niet staat: voeg het zelf toe met **+ Tarief toevoegen**.
 - Het **totaal** van de regels wijkt af van het document, het document staat in een **andere munt** of vermeldt **geen munt**, of er is al een
   **voorschot** betaald — kijk de bedragen na; een voorschot boekt u apart in [Betalingen](betalingen.md).
+- Het document vraagt betaling op een **andere rekening** dan de IBAN op de leveranciersfiche. Vraag het na bij de
+  leverancier vóór u betaalt: een gewijzigde rekening is een gekende fraudetruc. CleanOps betaalt (in het
+  [SEPA-bestand](betalingsvoorstel.md)) altijd op de rekening van de fiche; pas die enkel aan als de leverancier het bevestigt.
 
 ### Een nieuwe leverancier
 

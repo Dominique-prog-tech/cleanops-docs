@@ -54,7 +54,7 @@ als ritme. Na **Bewaren** opent het nieuwe contract.
 ## De contractfiche
 
 Bovenaan staan het contractnummer en de klant; staat het contract on hold, dan staat dat erbij. Daaronder drie
-tabbladen: **Contract**, **Werkorders** en **Journaal**. Onder Journaal staan **Logboek** en **Mails**.
+tabbladen: **Contract**, **Werkorders** en **Journaal**. Onder Journaal staan **Bijlagen**, **Logboek** en **Mails**.
 
 ![Het contract van Tuincentrum De Linde: om de zes maanden op de 15de, met bovenaan de opmerking die op elke werkbon komt en onderaan de volgende beurten](images/contract-fiche.png "Contractfiche")
 
@@ -176,6 +176,12 @@ nog maakt, maakt CleanOps er geen, en dat staat er dan ook.
 ![Het tabblad Werkorders van het contract van Tuincentrum De Linde, met de gefactureerde, de te factureren en de volgende, geplande beurt](images/contract-werkorders.png "Werkorders van een contract")
 
 ### Het tabblad Journaal
+
+**Bijlagen** — de documenten van het contract: een plan van de putten, de afspraken, de getekende overeenkomst. Klik op
+**Bijlage** om er een toe te voegen. Elke werkorder die CleanOps daarna uit het contract maakt (elke nacht, met
+**Werkorders nu aanmaken** of bij een nieuw contract), krijgt een kopie van die bijlagen. Werkorders die er al waren,
+krijgen niets: voeg een document daar zelf toe als het ook voor die beurten geldt. Na **Werkorders nu aanmaken** zegt
+een melding hoeveel bijlagen er meegingen.
 
 **Logboek** — wie welk veld van dit contract gewijzigd heeft, wanneer, en van welke waarde naar welke.
 

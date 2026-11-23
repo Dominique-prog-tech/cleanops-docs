@@ -38,6 +38,10 @@ Klik op **Nieuwe klant**. U krijgt een lege fiche; de velden met een sterretje z
 opent de fiche van de nieuwe klant, met de tabbladen erbij. CleanOps maakt meteen ook een eerste uitvoeringsadres uit
 het adres en de telefoon van de klant, en zegt dat bovenaan; u vindt het onder **Adressen**.
 
+Bestaat de klant misschien al, dan vraagt CleanOps het vóór het bewaren: een venster toont de klanten met hetzelfde
+telefoon- of gsm-nummer, hetzelfde btw-nummer, of dezelfde naam en postcode. Een klik op een naam opent die fiche in een
+nieuw tabblad; wat u al ingevuld hebt, blijft staan. Is het toch een andere klant, klik dan op **Toch aanmaken**.
+
 ## De klantfiche
 
 Bovenaan staan de naam en het klantnummer, daaronder een rij tabbladen. Links **Fiche** en **Adressen** —
@@ -144,6 +148,8 @@ meegaat en wat blijft:
 - Draagt een meegaande werkorder een bestelnummer van de huidige klant, dan blijft dat staan. Het venster waarschuwt
   ervoor, zodat u het kunt nakijken.
 - De [cameraverslagen](cameraverslagen.md) van het adres gaan mee: ze horen bij het adres.
+- Is de nieuwe klant **geblokkeerd** of aanvaardt hij **geen nieuwe opdrachten**, dan zegt het venster dat vóór u op
+  **Verplaatsen** klikt.
 
 Na het verplaatsen zegt een korte melding bovenaan het scherm hoeveel adressen, contracten en werkorders meegingen.
 

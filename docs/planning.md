@@ -14,6 +14,8 @@ er meerdere tegelijk toe, opent u de dagroute van een chauffeur en drukt u de pl
 
 Klik links in het menu, onder **Werk**, op **Planning**. Het planbord opent op de lopende week, op zaterdag en zondag
 op de volgende week. Met **Lijstweergave** rechtsboven gaat u naar de planningslijst, met **Planbord** weer terug.
+De uitleg bij het planbord staat achter het **ⓘ** naast de titel: een klik opent ze, een tweede klik sluit ze weer, zodat
+het bord de hoogte van het scherm krijgt.
 
 Op het planbord ziet u in één oogopslag wat nog moet: uitgevoerd werk blijft op zijn dag staan, in het groen en met
 een ✓, en open werk op een dag die al voorbij is, draagt **Niet uitgevoerd**. De planningslijst toont standaard enkel

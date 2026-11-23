@@ -72,12 +72,17 @@ CleanOps crée **un virement par fournisseur**, pour le montant qui figure sous 
 [fiche entreprise](beheer/bedrijfsfiche.md).
 
 1. Cliquez sur **Fichier SEPA**. La fenêtre indique combien de virements le fichier contient, pour quel total et depuis
-   quel compte.
+   quel compte, et pour chaque virement le fournisseur, son IBAN et le montant.
 2. Vérifiez la **Date d'exécution** : le jour où la banque exécute les virements. Elle est fixée à aujourd'hui et peut se
    situer au plus un an plus tard.
 3. Cliquez sur **Télécharger le fichier SEPA**. Votre navigateur enregistre le fichier (`sepa-betalingsvoorstel-` suivi de
    la date d'exécution).
 4. Chargez le fichier dans votre application bancaire et signez-y les virements.
+
+Si un document de la proposition figurait déjà dans un fichier SEPA précédent, même d'une proposition antérieure, la fenêtre
+l'indique en haut, avec le jour et l'heure de ce fichier, et **déjà dans un fichier** figure à côté de ce fournisseur. Si vous
+avez déjà chargé ce fichier dans votre application bancaire, marquez les documents comme payés au lieu de charger un nouveau
+fichier : sinon vous les payez deux fois.
 
 ![La fenêtre Fichier SEPA de la proposition avec un virement, la Date d'exécution, le bouton Télécharger le fichier SEPA et deux fournisseurs qui ne figurent pas dans le fichier](images/betalingsvoorstel-sepa-fr.png "Fichier SEPA de la proposition")
 

@@ -54,7 +54,7 @@ mensuel le premier du mois. Après **Enregistrer**, le nouveau contrat s'ouvre.
 ## La fiche du contrat
 
 En haut figurent le numéro du contrat et le client ; si le contrat est en pause, c'est indiqué. En dessous, trois
-onglets : **Contrat**, **Ordres de travail** et **Journal**. Sous Journal figurent **Historique** et **E-mails**.
+onglets : **Contrat**, **Ordres de travail** et **Journal**. Sous Journal figurent **Pièces jointes**, **Historique** et **E-mails**.
 
 ![Le contrat de Résidence Les Tilleuls : tous les 3 mois le 20, avec en haut la remarque qui figure sur chaque bon de travail et en bas les prochains passages](images/contract-fiche-fr.png "Fiche du contrat")
 
@@ -177,6 +177,12 @@ votre application précédente crée encore les ordres de travail, CleanOps n'en
 ![L'onglet Ordres de travail du contrat de Résidence Les Tilleuls, avec les passages facturés, à facturer et le prochain, planifié](images/contract-werkorders-fr.png "Ordres de travail d'un contrat")
 
 ### L'onglet Journal
+
+**Pièces jointes** — les documents du contrat : un plan des fosses, les accords, le contrat signé. Cliquez sur
+**Pièce jointe** pour en ajouter une. Chaque ordre de travail que CleanOps crée ensuite à partir du contrat (chaque nuit,
+avec **Créer les ordres de travail** ou pour un nouveau contrat) reçoit une copie de ces pièces jointes. Les ordres de travail
+qui existaient déjà ne reçoivent rien : ajoutez-y vous-même un document s'il vaut aussi pour ces passages. Après
+**Créer les ordres de travail**, un message indique combien de pièces jointes ont suivi.
 
 **Historique** — qui a modifié quel champ de ce contrat, quand, et de quelle valeur à quelle valeur.
 

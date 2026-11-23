@@ -40,6 +40,11 @@ obligatoires. Après **Enregistrer**, la fiche du nouveau client s'ouvre, avec s
 première adresse d'exécution à partir de l'adresse et du téléphone du client, et l'indique en haut ; vous la trouvez sous
 **Adresses**.
 
+Si le client existe peut-être déjà, CleanOps le demande avant d'enregistrer : une fenêtre montre les clients avec le même
+numéro de téléphone ou de GSM, le même numéro de TVA, ou le même nom et code postal. Un clic sur un nom ouvre cette fiche
+dans un nouvel onglet ; ce que vous avez déjà rempli reste. S'il s'agit bien d'un autre client, cliquez sur
+**Créer quand même**.
+
 ## La fiche client
 
 En haut figurent le nom et le numéro du client, puis une rangée d'onglets. À gauche **Fiche** et
@@ -148,6 +153,8 @@ sur **choisir**. La fenêtre indique alors ce qui part et ce qui reste :
 - Si un ordre qui part porte un numéro de commande du client actuel, celui-ci reste en place. La fenêtre le signale,
   pour que vous puissiez le vérifier.
 - Les [rapports caméra](cameraverslagen.fr.md) de l'adresse la suivent : ils appartiennent à l'adresse.
+- Si le nouveau client est **bloqué** ou n'accepte **plus de nouvelles missions**, la fenêtre l'indique avant que vous
+  cliquiez sur **Déplacer**.
 
 Après le déplacement, un court message en haut de l'écran indique combien d'adresses, de contrats et d'ordres de travail
 sont partis.

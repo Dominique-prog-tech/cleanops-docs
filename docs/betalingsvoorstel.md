@@ -71,12 +71,17 @@ overschrijving per leverancier**, voor het bedrag dat onder zijn naam staat, van
 [bedrijfsfiche](beheer/bedrijfsfiche.md).
 
 1. Klik op **SEPA-bestand**. Het venster toont hoeveel overschrijvingen het bestand bevat, voor welk totaal en van welke
-   rekening.
+   rekening, en per overschrijving de leverancier, zijn IBAN en het bedrag.
 2. Kijk de **Uitvoeringsdatum** na: de dag waarop de bank de overschrijvingen uitvoert. Ze staat op vandaag en mag
    hoogstens een jaar vooruit liggen.
 3. Klik op **SEPA-bestand downloaden**. Uw browser bewaart het bestand (`sepa-betalingsvoorstel-` gevolgd door de
    uitvoeringsdatum).
 4. Laad het bestand op in uw bankapp en onderteken er de overschrijvingen.
+
+Stond een document van het voorstel al in een eerder SEPA-bestand, ook van een vorig voorstel, dan zegt het venster dat
+bovenaan, met de dag en het uur van dat bestand, en staat **al in een bestand** naast die leverancier. Hebt u dat bestand
+al in uw bankapp opgeladen, markeer de documenten dan als betaald in plaats van een nieuw bestand op te laden: anders
+betaalt u ze twee keer.
 
 ![Het venster SEPA-bestand van het voorstel met één overschrijving, de Uitvoeringsdatum, de knop SEPA-bestand downloaden en twee leveranciers die niet in het bestand staan](images/betalingsvoorstel-sepa.png "SEPA-bestand van het voorstel")
 

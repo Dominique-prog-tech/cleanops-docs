@@ -74,6 +74,9 @@ En haut de la fiche figure un message quand quelque chose n'a pas pu être rempl
   figure pas : ajoutez-le vous-même avec **+ Ajouter un taux**.
 - Le **total** des lignes diffère du document, le document est dans une **autre devise** ou ne mentionne **aucune devise**, ou un **acompte** a déjà été
   payé — vérifiez les montants ; un acompte s'enregistre séparément dans [Paiements](betalingen.md).
+- Le document demande un paiement sur un **autre compte** que l'IBAN de la fiche du fournisseur. Vérifiez auprès du
+  fournisseur avant de payer : un compte modifié est une technique de fraude courante. CleanOps paie (dans le
+  [fichier SEPA](betalingsvoorstel.md)) toujours sur le compte de la fiche ; ne le modifiez que si le fournisseur le confirme.
 
 ### Un nouveau fournisseur
 

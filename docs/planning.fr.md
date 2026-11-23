@@ -16,6 +16,8 @@ du jour d'un chauffeur et vous imprimez le planning.
 Dans le menu de gauche, sous **Travail**, cliquez sur **Planning**. Le tableau de planning s'ouvre sur la semaine en
 cours, le samedi et le dimanche sur la semaine suivante. Avec **Vue liste** en haut à droite, vous passez à la liste
 du planning, avec **Tableau de planning** vous revenez.
+L'explication du tableau de planning se trouve derrière le **ⓘ** à côté du titre : un clic l'ouvre, un second clic la
+referme, pour que le tableau prenne la hauteur de l'écran.
 
 Le tableau de planning montre d'un coup d'œil ce qui reste à faire : le travail exécuté reste sur son jour, en vert et
 avec un ✓, et le travail ouvert sur un jour déjà passé porte **Non exécuté**. La liste du planning ne montre par défaut
