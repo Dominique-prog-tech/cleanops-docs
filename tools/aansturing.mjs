@@ -1,4 +1,3 @@
-import { readFileSync } from 'node:fs';
 // De dunne koppellaag tussen de gedeelde schermmachinerie en dit pakket (zie creditsoft-docs/tools/aansturing.mjs).
 import { PAKKET, BASIS, DEMO } from './app.mjs';
 import { geheim, aanmeldgegevens, appToestand as _appToestand, meldAan as _meldAan }
@@ -7,14 +6,7 @@ import { geheim, aanmeldgegevens, appToestand as _appToestand, meldAan as _meldA
 export { BASIS, DEMO };
 
 // De ontwikkelbeheerder van appsettings.Development.json (of user-secrets als die hem dragen) — geen nieuw geheim.
-const aanmelding = aanmeldgegevens(PAKKET.secrets, PAKKET.cfg);
-// ⚠️ 23/11/2026: user-secrets draagt enkel Auth:InitialAdmin:Password, geen UserName. De gedeelde aanmeldgegevens() neemt dan het wachtwoord
-// uit user-secrets en laat de gebruiker null — en meldAan faalde met "locator.fill: expected string, got object". Hier de gebruikersnaam uit
-// appsettings.Development.json, dezelfde terugval die de gedeelde code al heeft. Gemeld aan ADM One (de gedeelde tool hoort het zelf te doen).
-const gebruiker = aanmelding.gebruiker
-  ?? readFileSync(PAKKET.cfg, 'utf8').match(/"InitialAdmin"\s*:\s*\{(.*?)\}/s)?.[1].match(/"UserName"\s*:\s*"([^"]*)"/)?.[1]
-  ?? (() => { throw new Error('Geen gebruikersnaam voor de ontwikkelbeheerder: niet in user-secrets en niet in appsettings.Development.json.'); })();
-const wachtwoord = aanmelding.wachtwoord;
+const { gebruiker, wachtwoord } = aanmeldgegevens(PAKKET.secrets, PAKKET.cfg);
 export { gebruiker, wachtwoord };
 
 export const appToestand = () => _appToestand(PAKKET.repo);
