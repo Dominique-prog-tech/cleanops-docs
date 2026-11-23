@@ -35,6 +35,18 @@ anderen op naam.
 Klik op **Nieuwe medewerker**. U krijgt een lege fiche; de velden met een sterretje zijn verplicht. Na
 **Bewaren** opent de fiche van de nieuwe medewerker, met de tabbladen erbij.
 
+### Uzelf inplanbaar maken
+
+Een login is nog geen medewerker: wie zich aanmeldt maar geen medewerkersfiche heeft, staat niet op het
+[planbord](planning.md#het-planbord) en kan zichzelf geen werk toewijzen. Is dat bij u zo, dan staat er bovenaan het
+planbord en deze lijst een kader **U staat niet bij de medewerkers**.
+
+Werkt u zelf ook mee, klik dan op **Mezelf inplanbaar maken…**. Code, naam, postcode en gemeente zijn al ingevuld;
+pas ze aan waar nodig en klik op **Mijn fiche maken**. CleanOps maakt uw fiche en koppelt ze aan uw login. U komt
+op uw nieuwe fiche uit en vult ze verder aan zoals elke andere.
+
+Werkt u niet mee op de baan, klik dan op het kruisje: deze computer toont het kader niet meer.
+
 ## De medewerkerfiche
 
 Bovenaan staan de naam en de code, daaronder de tabbladen **Fiche**, **Verlof** en **Journaal**. Onder Journaal staan
@@ -208,6 +220,10 @@ bovenaan.
 
 **Verwijderen** onderaan de fiche legt de medewerker in de [prullenbak](beheer/prullenbak.md); van daaruit haalt
 u hem terug.
+
+De vraag vóór het verwijderen zegt wat het meeneemt: dat het uw eigen fiche is (dan staat u daarna niet meer in de
+planning), dat de medewerker zich niet meer kan aanmelden in de app, dat er daarna geen actieve medewerker meer
+overblijft, of hoeveel werkorders er nog te doen staan op zijn naam.
 
 Wie ooit op een werkorder gestaan heeft, verwijdert u beter niet: zet de medewerker op niet-actief. Dan blijft
 alles wat aan die persoon hangt leesbaar.

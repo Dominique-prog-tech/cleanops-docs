@@ -37,6 +37,18 @@ puis les autres par nom.
 Cliquez sur **Nouveau collaborateur**. Vous obtenez une fiche vide ; les champs marqués d'un astérisque sont
 obligatoires. Après **Enregistrer**, la fiche du nouveau collaborateur s'ouvre, avec ses onglets.
 
+### Vous rendre planifiable
+
+Un identifiant n'est pas encore un collaborateur : qui se connecte sans fiche collaborateur ne figure pas sur le
+[planning](planning.fr.md#le-tableau-de-planning) et ne peut pas s'attribuer de travail. Si c'est votre cas, un cadre
+**Vous ne figurez pas parmi les collaborateurs** apparaît en haut du planning et de cette liste.
+
+Vous travaillez aussi sur le terrain ? Cliquez sur **Me rendre planifiable…**. Le code, le nom, le code postal et la
+commune sont déjà remplis ; adaptez-les si nécessaire et cliquez sur **Créer ma fiche**. CleanOps crée votre fiche et
+la lie à votre identifiant. Vous arrivez sur votre nouvelle fiche et la complétez comme toute autre.
+
+Vous ne travaillez pas sur le terrain ? Cliquez sur la croix : cet ordinateur n'affiche plus le cadre.
+
 ## La fiche collaborateur
 
 En haut figurent le nom et le code, puis les onglets **Fiche**, **Congés** et **Journal**. Sous Journal figurent
@@ -213,6 +225,10 @@ en tête.
 
 **Supprimer**, en bas de la fiche, place le collaborateur dans la [corbeille](beheer/prullenbak.fr.md), d'où vous le
 restaurez.
+
+La question avant la suppression indique ce que cela entraîne : qu'il s'agit de votre propre fiche (vous ne figurez
+alors plus dans le planning), que le collaborateur ne peut plus se connecter dans l'app, qu'il ne reste ensuite plus
+aucun collaborateur actif, ou combien d'ordres de travail sont encore à faire à son nom.
 
 Mieux vaut ne pas supprimer une personne qui a figuré sur un ordre de travail : mettez-la sur inactif. Tout ce qui
 s'y rattache reste alors lisible.
