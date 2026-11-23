@@ -268,6 +268,9 @@ wilt factureren, bijvoorbeeld na een fout op de factuur: de werkorders staan dan
 **Crediteren**. De creditnota krijgt het volgende nummer uit de reeks van de creditnota's en opent meteen, met het
 afdrukvoorbeeld open — net als na het boeken in Facturatie.
 
+Op de creditnota draagt de eerste lijn *Tegenboeking factuur* en het nummer van de factuur; de volgende lijnen houden de
+omschrijving van hun factuurlijn, zodat uw klant ziet wat er gecrediteerd wordt, ook in de elektronische creditnota.
+
 Een factuur die al gecrediteerd is, kan niet nog eens gecrediteerd worden.
 
 ## Veelgestelde vragen

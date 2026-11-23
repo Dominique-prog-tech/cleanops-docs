@@ -283,6 +283,10 @@ figurent alors à nouveau dans [Facturation](facturatie.fr.md). Cliquez sur **Cr
 suivant de la série des notes de crédit et s'ouvre aussitôt, avec l'aperçu avant impression ouvert — comme après la
 comptabilisation dans Facturation.
 
+Sur la note de crédit, la première ligne porte *Contre-passation facture* et le numéro de la facture ; les lignes suivantes
+gardent la description de leur ligne de facture, pour que votre client voie ce qui est crédité, aussi dans la note de crédit
+électronique.
+
 Une facture déjà créditée ne peut pas l'être une seconde fois.
 
 ## Questions fréquentes

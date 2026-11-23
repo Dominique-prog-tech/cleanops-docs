@@ -52,7 +52,9 @@ deux boutons :
 Avec **Envoyer au client**, l'adresse e-mail du client est déjà remplie : l'adresse principale, sinon celle de la
 facturation. Le collaborateur peut la modifier. Plusieurs adresses se séparent par `;` : la première est le
 destinataire, les autres reçoivent une copie. **Envoyer** fait partir l'e-mail, avec le texte des
-[Textes d'e-mail](../beheer/mailteksten.fr.md). Aucun e-mail ne part jamais tout seul.
+[Textes d'e-mail](../beheer/mailteksten.fr.md). Aucun e-mail ne part jamais tout seul. Si une adresse n'appartient pas au
+client (ni sur la fiche client, ni sur l'adresse d'exécution), l'e-mail part quand même, mais l'app le signale après l'envoi.
+Le bureau le retrouve dans le [journal des actions](../beheer/actielogboek.fr.md).
 
 ![La fenêtre Envoyer le bon signé avec l'Adresse e-mail du client remplie, l'explication sur le texte et les adresses, et les boutons Annuler et Envoyer](../images/app-mail-fr.png "Envoyer au client"){ width="560" }
 

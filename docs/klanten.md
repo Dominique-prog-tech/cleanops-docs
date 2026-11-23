@@ -265,7 +265,8 @@ bijbehorende tabblad. Staat er voor u niets in het menu, dan ziet u **Meer…** 
 
 **Verwijderen** onderaan de fiche legt de klant in de [prullenbak](beheer/prullenbak.md); van daaruit haalt u hem
 terug. Heeft de klant lopende contracten, dan zegt de vraag hoeveel: die maken geen werkorders meer zolang de
-klant in de prullenbak ligt.
+klant in de prullenbak ligt. Staan er nog werkorders die ingegeven of gepland zijn, dan zegt de vraag ook hoeveel: die
+blijven op de [planning](planning.md) staan. Verzet of verwijder ze daar als het werk niet meer moet gebeuren.
 
 ## Veelgestelde vragen
 

@@ -275,7 +275,9 @@ apparaît dans l'onglet correspondant. Si le menu ne contient rien pour vous, **
 
 **Supprimer**, en bas de la fiche, place le client dans la [corbeille](beheer/prullenbak.fr.md), d'où vous le
 restaurez. Si le client a des contrats en cours, la question indique combien : ils ne génèrent plus d'ordres de
-travail tant que le client est dans la corbeille.
+travail tant que le client est dans la corbeille. S'il reste des ordres de travail encodés ou planifiés, la question
+indique aussi combien : ils restent au [planning](planning.fr.md). Déplacez-les ou supprimez-les là si le travail ne
+doit plus être fait.
 
 ## Questions fréquentes
 

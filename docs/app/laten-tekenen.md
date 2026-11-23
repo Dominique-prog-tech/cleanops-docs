@@ -50,7 +50,9 @@ Bovenaan de werkorder staat nu de kaart **Getekend door de klant**, met de naam 
 Bij **Mail naar de klant** staat het e-mailadres van de klant al ingevuld: het hoofdadres, anders het adres voor de
 facturatie. De medewerker kan het aanpassen. Meerdere adressen scheidt hij met `;`: het eerste is de ontvanger, de
 andere krijgen een kopie. Met **Versturen** vertrekt de mail, met de tekst uit
-[Mailteksten](../beheer/mailteksten.md). Er vertrekt nooit vanzelf een mail.
+[Mailteksten](../beheer/mailteksten.md). Er vertrekt nooit vanzelf een mail. Hoort een adres niet bij de klant (niet op de
+klantfiche en niet op het uitvoeringsadres), dan vertrekt de mail toch, maar zegt de app het na het versturen. Kantoor vindt
+het terug in het [actielogboek](../beheer/actielogboek.md).
 
 ![Het venster De getekende bon mailen met het E-mailadres van de klant ingevuld, de uitleg over de tekst en de adressen, en de knoppen Annuleren en Versturen](../images/app-mail.png "Mail naar de klant"){ width="560" }
 

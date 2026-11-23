@@ -37,7 +37,7 @@ Klik op **Nieuwe btw-code**, of dubbelklik op een bestaande rij.
 | Veld | Wat u invult |
 |---|---|
 | **Code** *(verplicht)* | maximaal 5 tekens, bijvoorbeeld `21P`. Ligt vast zodra de code bestaat. Een code die enkel in hoofdletters verschilt van een bestaande (`21p` naast `21P`), wordt geweigerd. |
-| **Percentage** | van 0 tot 99,99. |
+| **Percentage** | van 0 tot 99,99. Wijzigt u het percentage van een bestaande code, dan vraagt CleanOps eerst bevestiging: de vraag zegt op hoeveel open werkorders de code staat (die krijgen meteen het nieuwe percentage), en bij hoeveel daarvan ter plaatse al betaald of een QR-code getoond werd met het oude bedrag. Wilt u dat niet, maak dan een nieuwe code. |
 | **Omschrijving (NL)** / **(FR)** | maximaal 30 tekens. Die in de hoofdtaal van uw bedrijf is verplicht. |
 | **Code boekhouding** | maximaal 20 tekens. Gaat met elke factuurlijn mee naar uw boekhoudkantoor, dat er de omzetrekening mee koppelt. Vraag de juiste code aan uw boekhouder. |
 | **Btw-categorie (UBL)** | de soort btw zoals de elektronische factuur ze vraagt. *Standaard* hoort bij een percentage boven 0; de andere (verlegd, vrijgesteld, intracommunautair …) bij 0 %. |

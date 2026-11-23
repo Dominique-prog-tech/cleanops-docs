@@ -37,7 +37,7 @@ Cliquez sur **Nouveau code TVA**, ou double-cliquez sur une ligne existante.
 | Champ | Ce que vous complétez |
 |---|---|
 | **Code** *(obligatoire)* | 5 caractères au maximum, par exemple `21P`. Figé dès que le code existe. Un code qui ne diffère d'un code existant que par les majuscules (`21p` à côté de `21P`) est refusé. |
-| **Pourcentage** | de 0 à 99,99. |
+| **Pourcentage** | de 0 à 99,99. Si vous modifiez le pourcentage d'un code existant, CleanOps demande d'abord confirmation : la question indique sur combien d'ordres de travail ouverts figure le code (ils reçoivent aussitôt le nouveau pourcentage), et pour combien d'entre eux un paiement sur place ou un code QR avec l'ancien montant existe déjà. Si vous ne le souhaitez pas, créez un nouveau code. |
 | **Description (NL)** / **(FR)** | 30 caractères au maximum. Celle dans la langue principale de votre entreprise est obligatoire. |
 | **Code comptable** | 20 caractères au maximum. Accompagne chaque ligne de facture vers votre bureau comptable, qui l'utilise pour lier le compte de chiffre d'affaires. Demandez le bon code à votre comptable. |
 | **Catégorie TVA (UBL)** | le type de TVA tel que le demande la facture électronique. *Taux normal* va avec un pourcentage supérieur à 0 ; les autres (autoliquidation, exonéré, intracommunautaire …) avec 0 %. |
