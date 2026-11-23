@@ -4,7 +4,8 @@
 import { aanmeldgegevens, meldAan } from '/Users/dominique/projects/adm-appkit/tools/schermmachinerie/aansturing.mjs';
 import { PAKKET } from './app.mjs';
 const { chromium } = await import(PAKKET.playwright);
-const { gebruiker, wachtwoord } = aanmeldgegevens(PAKKET.secrets, PAKKET.cfg);
+// De aanmeldgegevens uit de koppellaag (aansturing.mjs): die vult de gebruikersnaam aan als user-secrets enkel het wachtwoord draagt (23/11/2026).
+const { gebruiker, wachtwoord } = await import('./aansturing.mjs');
 const browser = await chromium.launch();
 const page = await (await browser.newContext({ ignoreHTTPSErrors: true, viewport: { width: 1440, height: 900 } })).newPage();
 await page.goto(`${PAKKET.basis}/culture/set?c=nl-BE&returnUrl=%2F`);
