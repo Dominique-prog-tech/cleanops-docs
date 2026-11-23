@@ -37,6 +37,18 @@ const VERBERG = '.nav-version, .adm-klok-vast, .dxbl-scroll-viewer-vert-scroll-b
   + ' { visibility: hidden !important; }'
   + '::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb { background: transparent !important; }';
 
+// De week met het werk van de demo (23/11/2026). "Demo vullen" zet het in de week NA het vullen; weken later staat het in het verleden, en
+// een vaste klik op "Volgende week" vond het niet meer (TimeoutError op het planbord, 23/11). Eerst de volgende week, dan terug, week per week
+// tot vier weken: zonder werk geen beeld (het merkteken blijft de grendel), maar een oudere demo is geen reden om te weigeren.
+async function naarDemoWeek(p) {
+  await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) ▶$/ }).first().click();
+  for (let i = 0; i <= 4; i++) {
+    if (await p.getByText(/Mestkelder ledigen/).first().waitFor({ timeout: 4000 }).then(() => true, () => false)) return;
+    await p.getByRole('button', { name: /^◀ (Vorige week|Semaine précédente)$/ }).first().click();
+  }
+  await p.getByText(/Mestkelder ledigen/).first().waitFor();   // gooit met de gewone melding
+}
+
 // ── De recepten ──────────────────────────────────────────────────────────────────────────────────────────────
 // naam · route · (optioneel) wat er na het openen gebeurt · (optioneel) magKortZijn met reden.
 const tekstTaal = (nl, fr) => new RegExp(`${nl}|${fr}`);
@@ -319,6 +331,10 @@ const SCHOTEN = [
       // nam de focus te vroeg weg en het beeld toonde de dag nog blauw).
       await p.waitForFunction(() => document.activeElement?.tagName === 'INPUT', null, { timeout: 5000 }).catch(() => {});
       await p.evaluate(() => document.activeElement?.blur());
+      // ⚠️ 23/11/2026: sinds de lijst per overschrijving (AB-8) zet het datumveld de focus en de selectie van de dag pas NA die eerste blur
+      // terug — het beeld toonde "23" blauw. Even wachten, opnieuw wegnemen, en de selectie leegmaken.
+      await p.waitForTimeout(600);
+      await p.evaluate(() => { document.activeElement?.blur(); window.getSelection()?.removeAllRanges(); });
     } },
   // Stap 2: na een klik op de downloadknop. ⚠️ Het downloaden zelf wordt TEGENGEHOUDEN (preventDefault in de capture-fase): de app
   // ziet de klik en toont de bevestiging, maar er komt geen bestand — en "Markeer als betaald" wordt NIET aangeklikt, anders verdwijnt
@@ -573,8 +589,7 @@ const SCHOTEN = [
   // TWEE zijn: zo blijft het juist bij een tweede run (een vaste klik zou ze terug omdraaien). Het schrijft in de demo, niet elders.
   { naam: 'planning-bord', route: '/planning', verwacht: /Mestkelder ledigen/, hoogte: 1140,
     na: async p => {
-      await p.getByRole('button', { name: /^(Volgende week|Semaine suivante) ▶$/ }).first().click();
-      await p.getByText(/Mestkelder ledigen/).first().waitFor();
+      await naarDemoWeek(p);
       for (let i = 0; i < 4 && await p.locator('button[data-verwittigd][data-ok="true"]').count() < 2; i++) {
         const voor = await p.locator('button[data-verwittigd][data-ok="true"]').count();
         await p.locator('button[data-verwittigd][data-ok="false"]').first().click();
