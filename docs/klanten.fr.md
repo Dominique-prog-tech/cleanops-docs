@@ -103,8 +103,9 @@ La fiche est répartie en cinq blocs : **Identification**, **Adresse**, **Contac
 Du texte libre sur le client, comme les coordonnées de personnes ou des accords.
 
 Cliquez sur **Enregistrer** pour sauvegarder. S'il manque un champ obligatoire, CleanOps indique lequel. Une
-adresse e-mail, un numéro de téléphone ou un numéro de TVA incorrect est refusé — même si vous ne l'avez pas
-modifié vous-même ; corrigez-le d'abord. **Annuler** vous ramène à la liste sans sauvegarder.
+adresse e-mail, un numéro de téléphone ou un numéro de TVA incorrect est refusé dès que vous le saisissez ou le
+modifiez. Une ancienne valeur à laquelle vous ne touchez pas n'empêche pas d'enregistrer ; corrigez-la quand vous
+disposez des bonnes données. **Annuler** vous ramène à la liste sans sauvegarder.
 
 ### L'onglet Adresses
 

@@ -99,8 +99,9 @@ De fiche staat in vijf blokken: **Identificatie**, **Adres**, **Contact**, **Fac
 Vrije tekst bij de klant, zoals contactgegevens van personen of afspraken.
 
 Klik op **Bewaren** om te bewaren. Ontbreekt er een verplicht veld, dan zegt CleanOps welk. Een e-mailadres,
-telefoonnummer of btw-nummer dat niet klopt, wordt geweigerd — ook als u het zelf niet gewijzigd hebt; verbeter
-het dan eerst. **Annuleren** brengt u terug naar de lijst zonder te bewaren.
+telefoonnummer of btw-nummer dat niet klopt, wordt geweigerd zodra u het ingeeft of wijzigt. Een oude waarde waar u
+niet aan raakt, houdt het bewaren niet tegen; verbeter ze wel wanneer u de juiste gegevens hebt. **Annuleren** brengt
+u terug naar de lijst zonder te bewaren.
 
 ### Het tabblad Adressen
 
