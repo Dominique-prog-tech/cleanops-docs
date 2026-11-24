@@ -70,6 +70,7 @@ De velden staan in vijf blokken: **Contract**, **Opmerkingen**, **Adres**, **Rit
 | Contractnr | Een eigen nummer of referentie, hoogstens 30 tekens. |
 | Type contract | Een keuze uit de lijst *Contracttypes* van de [basistabellen](beheer/basistabellen.md). |
 | Btw-code, Tarief | Komen op de werkorders van dit contract. De lijst Tarief toont de tarieven in de taal van de klant. Bestaat het tarief van het contract niet in die taal, dan staat het er toch, in een andere taal, met een melding eronder. Met het potlood ✎ ernaast maakt of kiest u een tarief zonder dit scherm te verlaten ([Tarieven](beheer/tarieven.md#potlood)). |
+| Aantal, Afgesproken prijs (excl. btw) | Werkt u met een vaste prijs per beurt, vul die dan hier in. Elke nieuwe werkorder krijgt dan aantal × prijs (leeg aantal = 1). Leeg: de prijs vult u op de werkorder in, zoals voordien. |
 | Contractdatum * | De datum van het contract. Mag niet in de toekomst liggen. |
 | Start * | Vanaf wanneer het ritme loopt. Mag niet vóór de contractdatum liggen. |
 | Einde | Vanaf deze datum komen er geen beurten meer bij. Mag niet vóór de start liggen. Leeg: het contract loopt door, en CleanOps maakt telkens de werkorders voor de komende 90 dagen. |
@@ -78,12 +79,13 @@ De velden staan in vijf blokken: **Contract**, **Opmerkingen**, **Adres**, **Rit
 
 Komt er bij elke beurt meer dan één soort werk, bijvoorbeeld de vetput naast de septische put, zet die dan onder
 **Bijkomende lijnen**. Tik op **+ Lijn toevoegen** en kies een **tarief**, of vul een eigen **omschrijving** in (leeg = de tekst
-van het tarief). Vul het **aantal** in en, als het een ander tarief is, de **btw-code** (standaard die van het contract). Met **⋯**
-verwijdert u een lijn.
+van het tarief). Vul het **aantal** in, de **afgesproken prijs** als die vastligt, en, als het een ander tarief is, de **btw-code**
+(standaard die van het contract). Met **⋯** verwijdert u een lijn.
 
 - Elke **nieuwe** werkorder van dit contract krijgt deze lijnen als
   [bijkomende lijnen](werkorders.md#bijkomende-lijnen). Werkorders die er al zijn, veranderen niet.
-- Er komt geen prijs op het contract. De eenheid en de prijs vult u op de werkorder in, zoals bij het tarief van het contract.
+- Met een afgesproken prijs krijgt de lijn op de werkorder aantal × prijs. Zonder prijs vult u de prijs op de werkorder in. De eenheid
+  vult u altijd op de werkorder in.
 - Zolang de werkorders nog uit de vorige toepassing komen, kunnen er geen bijkomende lijnen bij.
 
 **Opmerkingen**
@@ -126,6 +128,11 @@ Kies onder **Frequentie** hoe vaak de beurten terugkomen. Naargelang de keuze ve
 | Wekelijks | **Om de … weken**, en de dagen waarop: **Ma** tot **Zo**. |
 | Maandelijks | **Type**: een **Vaste dag** (bijvoorbeeld de 15de) of een **Rang** (bijvoorbeeld de tweede dinsdag), en **Om de … maanden**. |
 | Jaarlijks | **Type**: een **Vaste dag** of een **Rang**, en de **Maand**. |
+| Op afroep | Geen velden. Er komen geen werkorders vanzelf: belt de klant, dan klikt u op **Werkorder maken** onderaan de fiche. |
+
+**Op afroep.** Voor een klant met een vaste afspraak maar zonder vast ritme. **Werkorder maken** maakt meteen één werkorder met het
+adres, het tarief, de afgesproken prijs, de bijkomende lijnen, de opmerkingen en de bijlagen van het contract, uit te voeren vandaag,
+en opent ze. Daar plant u ze in. Hebt u het contract net gewijzigd, bewaar dan eerst: de werkorder komt uit het bewaarde contract.
 
 Het kader eronder zegt na **Voorbeeld** in woorden wat u instelde, bijvoorbeeld *Om de 6 maanden op dag 15*. Daaronder staan de
 **Volgende beurten**: de vijf eerstvolgende datums. Heeft een datum al een werkorder, dan staat er

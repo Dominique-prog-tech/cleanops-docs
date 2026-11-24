@@ -70,6 +70,7 @@ Les champs sont répartis en cinq blocs : **Contrat**, **Remarques**, **Adresse*
 | N° de contrat | Un numéro ou une référence propre, 30 caractères au maximum. |
 | Type de contrat | Un choix dans la liste *Types de contrat* des [tables de base](beheer/basistabellen.fr.md). |
 | Code TVA, Tarif | Figurent sur les ordres de travail de ce contrat. La liste Tarif montre les tarifs dans la langue du client. Si le tarif du contrat n'existe pas dans cette langue, il reste affiché, dans une autre langue, avec un message en dessous. Le crayon ✎ à côté permet de créer ou de choisir un tarif sans quitter cet écran ([Tarifs](beheer/tarieven.fr.md#potlood)). |
+| Quantité, Prix convenu (HTVA) | Si vous travaillez avec un prix fixe par passage, indiquez-le ici. Chaque nouvel ordre de travail reçoit alors quantité × prix (quantité vide = 1). Vide : le prix se complète sur l'ordre de travail, comme avant. |
 | Date du contrat * | La date du contrat. Ne peut pas se situer dans le futur. |
 | Début * | À partir de quand le rythme court. Ne peut pas précéder la date du contrat. |
 | Fin | À partir de cette date, plus aucun passage ne s'ajoute. Ne peut pas précéder le début. Vide : le contrat continue, et CleanOps crée chaque fois les ordres de travail des 90 jours à venir. |
@@ -78,12 +79,13 @@ Les champs sont répartis en cinq blocs : **Contrat**, **Remarques**, **Adresse*
 
 Si chaque passage comprend plus d'un type de travail, par exemple le bac à graisse à côté de la fosse septique, ajoutez-le sous
 **Lignes supplémentaires**. Appuyez sur **+ Ajouter une ligne** et choisissez un **tarif**, ou indiquez votre propre
-**description** (vide = le texte du tarif). Indiquez la **quantité** et, s'il s'agit d'un autre taux, le **code TVA** (par défaut
-celui du contrat). Avec **⋯**, vous supprimez une ligne.
+**description** (vide = le texte du tarif). Indiquez la **quantité**, le **prix convenu** s'il est fixé, et, s'il s'agit d'un autre
+taux, le **code TVA** (par défaut celui du contrat). Avec **⋯**, vous supprimez une ligne.
 
 - Chaque **nouvel** ordre de travail de ce contrat reçoit ces lignes comme
   [lignes supplémentaires](werkorders.fr.md#lignes-supplementaires). Les ordres de travail existants ne changent pas.
-- Le contrat ne porte pas de prix. L'unité et le prix se complètent sur l'ordre de travail, comme pour le tarif du contrat.
+- Avec un prix convenu, la ligne de l'ordre de travail reçoit quantité × prix. Sans prix, le prix se complète sur l'ordre de travail.
+  L'unité se complète toujours sur l'ordre de travail.
 - Tant que les ordres de travail viennent encore de l'application précédente, aucune ligne supplémentaire n'est possible.
 
 **Remarques**
@@ -126,6 +128,12 @@ Choisissez sous **Fréquence** à quelle fréquence les passages reviennent. Sel
 | Hebdomadaire | **Toutes les … semaines**, et les jours : **Lu** à **Di**. |
 | Mensuel | **Type** : un **Jour fixe** (par exemple le 15) ou un **Rang** (par exemple le deuxième mardi), et **Tous les … mois**. |
 | Annuel | **Type** : un **Jour fixe** ou un **Rang**, et le **Mois**. |
+| Sur appel | Aucun champ. Aucun ordre de travail n'est créé automatiquement : quand le client appelle, cliquez sur **Créer un ordre de travail** en bas de la fiche. |
+
+**Sur appel.** Pour un client avec un accord fixe mais sans rythme fixe. **Créer un ordre de travail** crée tout de suite un ordre
+avec l'adresse, le tarif, le prix convenu, les lignes supplémentaires, les remarques et les pièces jointes du contrat, à exécuter
+aujourd'hui, et l'ouvre. Vous le planifiez là. Si vous venez de modifier le contrat, enregistrez d'abord : l'ordre vient du contrat
+enregistré.
 
 Le cadre en dessous dit en mots, après **Exemple**, ce que vous avez réglé, par exemple *Chaque année le 20 mars*. En dessous figurent les
 **Prochains passages** : les cinq dates suivantes. Si une date a déjà un ordre de travail, *(ordre existant)* est
