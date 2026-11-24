@@ -228,6 +228,12 @@ viennent encore de votre application précédente, vous ne pouvez pas y ajouter 
 S'il manque un montant ou un code TVA, aussi sur une ligne supplémentaire, la fiche affiche **Pas encore facturable** avec ce qui
 manque. Vous pouvez enregistrer l'ordre normalement, mais il n'arrive sur une facture que lorsque tout est rempli.
 
+**Une première ligne sans montant, à côté de lignes supplémentaires, ne figure pas sur la facture.** Un ordre venant de l'app porte
+ses heures et son matériel en lignes supplémentaires ; la première ligne reste alors vide, et c'est normal. Sous le total, la fiche
+affiche *La ligne principale n'a pas de montant : elle ne figure pas sur la facture, les lignes supplémentaires bien.* S'il y a une
+remarque de facturation, elle figure sous la ligne 2. Si la première ligne doit quand même figurer sur la facture, indiquez un
+montant (0 est permis). N'y remettez pas le même tarif qu'une ligne supplémentaire : il figurerait deux fois sur la facture.
+
 Une fois l'ordre facturé, ces données sont figées. S'il faut y changer quelque chose, créditez la facture.
 Si la facture a été créditée, la fiche l'indique sous le numéro de facture : *créditée par la note de crédit …*, avec un lien
 vers la note de crédit.
@@ -236,10 +242,13 @@ vers la note de crédit.
 
 **Bon de livraison** ouvre le bon que l'équipe emporte et que le client signe, dans la langue du client. On y trouve
 le client, l'adresse d'exécution avec son téléphone et son e-mail (sinon ceux du client ; un autre numéro sur
-l'ordre s'y ajoute), le nom de l'exécutant, l'heure, la description, les
+l'ordre s'y ajoute), le nom de l'exécutant, les heures, la description, les
 instructions sous **Travail demandé**, le matériel, le montant du terrain et le mode de paiement (s'ils sont remplis) et
 les signatures. La date y figure toujours au format
 jour/mois/année. **Imprimer** n'imprime que le bon.
+
+Les heures qui figurent sur le bon se choisissent sur la [fiche d'entreprise](beheer/bedrijfsfiche.fr.md#bon-de-livraison) : le début
+et la fin (le réglage par défaut), les heures de travail facturées, ou pas d'heures.
 
 ![Le bon de livraison d'un ordre de Résidence Les Tilleuls, avec en bas les cases pour les signatures](images/leveringsbon-fr.png "Bon de livraison")
 

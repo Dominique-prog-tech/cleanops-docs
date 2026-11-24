@@ -129,6 +129,18 @@ n'adapte pas le prix.
   déplacement. S'il coûte autant que le temps compris au tarif horaire, il fonctionne comme un temps minimum.
 - Un tarif archivé n'est plus proposé. Choisissez-en alors un autre ici.
 
+## Bon de livraison
+
+Sous **Heures sur le bon de livraison**, vous choisissez ce que le [bon de livraison](../werkorders.fr.md#le-bon-de-livraison) indique sur les heures :
+
+| Choix | Ce qui figure sur le bon |
+|---|---|
+| **Début et fin** | de la première à la dernière heure enregistrée, par exemple *08:00 – 16:30*. Une pause n'est pas déduite ici. C'est le réglage par défaut. |
+| **Heures de travail** | les heures de travail facturées : la quantité de la ligne *heures de travail de l'app*, par exemple *5,00 h*. Sans ligne d'heures, aucune ligne n'y figure. |
+| **Pas d'heures** | rien sur les heures. |
+
+Un bon déjà signé par le client reste tel qu'il a été signé.
+
 ## Comptabilité
 
 Avec **Envoyer chaque jour les factures et notes de crédit au bureau comptable**, chaque document part automatiquement

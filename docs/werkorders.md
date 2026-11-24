@@ -219,6 +219,12 @@ uit uw vorige toepassing, dan kunnen er geen bijkomende lijnen bij.
 Ontbreekt er een bedrag of een btw-code, ook op een bijkomende lijn, dan staat er **Nog niet te factureren** met wat er
 ontbreekt. U kunt de werkorder gewoon bewaren, maar ze komt pas op een factuur als alles ingevuld is.
 
+**Een eerste lijn zonder bedrag, naast bijkomende lijnen, komt niet op de factuur.** Een werkorder uit de app draagt haar uren en
+materiaal als bijkomende lijnen; de eerste lijn blijft dan leeg, en dat is goed zo. Onder het totaal staat dan *De hoofdlijn heeft
+geen bedrag: ze komt niet op de factuur, de bijkomende lijnen wel.* Staat er een factuuropmerking, dan komt die onder lijn 2. Moet
+de eerste lijn toch op de factuur, vul dan een bedrag in (0 mag ook). Vul daar niet nog eens hetzelfde tarief in als op een
+bijkomende lijn: dan staat het twee keer op de factuur.
+
 Is de werkorder gefactureerd, dan liggen deze gegevens vast. Moet er iets aan veranderen, crediteer dan de factuur.
 Is de factuur gecrediteerd, dan staat dat onder het factuurnummer op de fiche: *gecrediteerd met creditnota …*, met een link
 naar de creditnota.
@@ -227,10 +233,13 @@ naar de creditnota.
 
 Met **Leveringsbon** opent de bon die de ploeg meeneemt en de klant ondertekent, in de taal van de klant. Daarop
 staan de klant, het uitvoeringsadres met zijn telefoonnummer en e-mailadres (anders die van de klant; een ander
-nummer op de werkorder komt erbij), de naam van de uitvoerder, het uur, de omschrijving,
+nummer op de werkorder komt erbij), de naam van de uitvoerder, de uren, de omschrijving,
 de instructies onder **Opdracht**, het materiaal, het bedrag uit het veld en de betaalwijze (als ze ingevuld zijn) en de
 handtekeningen. De datum staat er altijd als dag/maand/jaar.
 Met **Afdrukken** drukt u enkel de bon af.
+
+Welke uren er op de bon staan, kiest u op de [Bedrijfsfiche](beheer/bedrijfsfiche.md#leveringsbon): het begin- en einduur
+(zo staat het standaard ingesteld), de werkuren die gefactureerd worden, of geen uren.
 
 ![De leveringsbon van werkorder 900118 voor Tuincentrum De Linde, met onderaan de vakken voor de handtekeningen](images/leveringsbon.png "Leveringsbon")
 

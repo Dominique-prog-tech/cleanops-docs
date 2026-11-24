@@ -124,6 +124,18 @@ past hij niet aan.
   starttarief evenveel als de inbegrepen tijd aan uurtarief, dan werkt het als een minimumtijd.
 - Een gearchiveerd tarief wordt niet meer voorgesteld. Kies dan hier een ander.
 
+## Leveringsbon
+
+Onder **Uren op de leveringsbon** kiest u wat de [leveringsbon](../werkorders.md#de-leveringsbon) over de uren zegt:
+
+| Keuze | Wat er op de bon staat |
+|---|---|
+| **Begin- en einduur** | van het eerste tot het laatste geregistreerde uur, bijvoorbeeld *08:00 – 16:30*. Een pauze telt hier niet af. Zo staat het standaard ingesteld. |
+| **Werkuren** | de werkuren die gefactureerd worden: het aantal van de lijn *werkuren uit de app*, bijvoorbeeld *5,00 uur*. Heeft de werkorder geen urenlijn, dan staat er geen regel. |
+| **Geen uren** | niets over de uren. |
+
+Een bon die de klant al tekende, blijft zoals hij getekend werd.
+
 ## Boekhouding
 
 Met **Facturen en creditnota's elke dag naar het boekhoudkantoor sturen** gaat elk document automatisch naar uw
