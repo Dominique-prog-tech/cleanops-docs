@@ -145,6 +145,9 @@ Zo rekent CleanOps de beurten:
   ook een zaterdag.
 - Een beurt op een **feestdag** of een **sluitingsdag** schuift naar de volgende werkdag. De feestdagen en
   sluitingsdagen staan bij [Feestdagen](beheer/feestdagen.md).
+- Bij **Dagelijks** (om de … dagen) schuiven de volgende beurten mee: de volgende komt het ingestelde aantal dagen ná de dag waarop
+  de beurt werkelijk valt. Bij een contract om de 10 dagen dat van zaterdag naar maandag schuift, komt de volgende 10 dagen na die
+  maandag. Bij wekelijks, maandelijks en jaarlijks blijft het ritme op de gekozen dag.
 - Een vaste dag die in een maand niet bestaat — de 31ste in april — wordt de laatste dag van die maand.
 - Er komt geen beurt vóór de startdatum.
 - Een beurt die voorbij is zonder werkorder, wordt niet ingehaald.
@@ -239,7 +242,7 @@ werkorders voor de komende tijd die niemand aanraakte, dan vraagt CleanOps of di
 
 **De volgende beurt valt niet op de dag die ik verwacht.**
 Het ritme loopt vanaf de laatste beurt, niet vanaf de startdatum. Valt een beurt in het weekend of op een feestdag,
-dan schuift ze naar de volgende werkdag. Het kader op de fiche toont welke beurt als laatste telt.
+dan schuift ze naar de volgende werkdag; bij "om de … dagen" schuiven de volgende beurten mee. Het kader op de fiche toont welke beurt als laatste telt.
 
 **Ik wil een contract tijdelijk stopzetten.**
 Vink **On hold** aan. Wilt u het voorgoed stoppen, vul dan een **Einde** in.

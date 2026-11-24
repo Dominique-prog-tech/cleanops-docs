@@ -146,6 +146,9 @@ Voici comment CleanOps calcule les passages :
   y compris un samedi.
 - Un passage un **jour férié** ou un **jour de fermeture** glisse au jour ouvrable suivant. Les jours fériés et de
   fermeture se trouvent sous [Jours fériés](beheer/feestdagen.fr.md).
+- En **Quotidien** (tous les … jours), les passages suivants glissent aussi : le suivant vient le nombre de jours réglé après le jour
+  où le passage a réellement lieu. Pour un contrat tous les 10 jours qui glisse du samedi au lundi, le suivant vient 10 jours après ce
+  lundi. En hebdomadaire, mensuel et annuel, le rythme reste sur le jour choisi.
 - Un jour fixe qui n'existe pas dans un mois — le 31 en avril — devient le dernier jour de ce mois.
 - Aucun passage n'est créé avant la date de début.
 - Un passage passé sans ordre de travail n'est pas rattrapé.
@@ -243,7 +246,7 @@ supprimer : **Supprimer** ou **Laisser**.
 
 **Le prochain passage ne tombe pas le jour attendu.**
 Le rythme part du dernier passage, pas de la date de début. Si un passage tombe un week-end ou un jour férié, il
-glisse au jour ouvrable suivant. Le cadre sur la fiche montre quel passage compte comme dernier.
+glisse au jour ouvrable suivant ; en « tous les … jours », les passages suivants glissent aussi. Le cadre sur la fiche montre quel passage compte comme dernier.
 
 **Je veux suspendre temporairement un contrat.**
 Cochez **En pause**. Pour l'arrêter définitivement, indiquez une **Fin**.
