@@ -22,6 +22,10 @@ L'application montre le client, l'adresse et le numéro de l'ordre de travail, p
 demandé, la remarque, le matériel, le temps, les lignes sous *Matériel et heures*, le montant et le mode de paiement. Le client vérifie ce qui a été fait. Le
 collaborateur appuie sur **D'accord, signer**.
 
+Sous **Texte sur la facture** figure le texte qui viendra sur la facture (à partir de la version 1.4.9 de l'application). Le
+collaborateur l'adapte, et **Insérer un texte** y ajoute un texte standard. Le bureau crée ces textes sous
+[Textes de facture](../beheer/factuurteksten.fr.md), dans la langue du client. Un texte modifié part avec la signature.
+
 ![L'écran Signature du client à la vérification : Résidence Les Tilleuls avec l'adresse et l'ordre de travail 900144, la Mission, le Temps, le Montant de 98,50 et le Mode de paiement Payconiq, et en bas D'accord, signer](../images/app-nakijken-fr.png "Vérifier"){ width="560" }
 
 Un montant que le collaborateur a saisi sans l'enregistrer est d'abord transmis : le client signe ce qu'il a vu à

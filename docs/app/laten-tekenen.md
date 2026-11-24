@@ -26,6 +26,10 @@ het materiaal, de tijd, de lijnen onder *Materiaal en uren*, het bedrag en de be
 Een bedrag dat de medewerker wel typte maar nog niet bewaarde, gaat eerst mee: de klant tekent voor wat hij op het
 scherm zag.
 
+Onder **Tekst op de factuur** staat de tekst die op de factuur komt (vanaf app-versie 1.4.9). De medewerker past ze aan, en
+met **Tekst invoegen** zet hij er een standaardtekst achter. Die teksten maakt het kantoor aan onder
+[Factuurteksten](../beheer/factuurteksten.md), in de taal van de klant. Een gewijzigde tekst gaat mee bij het tekenen.
+
 ### 2. Tekenen
 
 De medewerker vult de **Naam van wie tekent** in. Wil de klant iets kwijt, dan tikt hij op **Opmerking toevoegen**.
