@@ -69,7 +69,7 @@ Na **Bewaren** krijgt het document zijn nummer en opent het opnieuw, met de tabb
 | Datum leverancier * | de datum op het document van de leverancier, niet in de toekomst |
 | Nummer leverancier * | het nummer op het document van de leverancier |
 | Vervaldag | leeg laten: ze volgt dan uit de betaaltermijn van de leverancier (een creditnota vervalt op haar datum) |
-| Mededeling | de gestructureerde mededeling van de leverancier (+++123/4567/89002+++); het controlegetal wordt nagekeken. Het [betalingsvoorstel](betalingsvoorstel.md) zet ze in het SEPA-bestand |
+| Mededeling | de mededeling van de leverancier: een Belgische gestructureerde mededeling (+++123/4567/89002+++) of een RF-referentie, waarvan het controlegetal nagekeken wordt, of een andere referentie van hoogstens 35 tekens, zoals het betalingskenmerk van een Nederlandse leverancier. Het [betalingsvoorstel](betalingsvoorstel.md) zet ze in het SEPA-bestand |
 | Omschrijving | wat er gekocht werd, kort |
 | Voertuig | voor een kost van een voertuig, uit de lijst van de [voertuigen](beheer/voertuigen.md) |
 

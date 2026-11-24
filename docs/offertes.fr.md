@@ -65,7 +65,7 @@ Le devis est réparti en trois blocs : **Devis**, **Remarques et impression** et
 
 | Champ | Ce que vous indiquez |
 |---|---|
-| Remarques (client) | Figurent sur le devis pour le client. |
+| Remarques (client) | Figurent sur le devis pour le client. **Insérer un texte…** en dessous ajoute à la fin un texte des [textes de facture](beheer/factuurteksten.fr.md), dans la langue du client ; vous l'adaptez ensuite librement. La mention TVA 6 % n'y figure pas : elle va sur la facture. |
 | Remarques internes | Pour vous seul ; elles ne figurent pas sur le devis. |
 | Sur l'impression | Si les **Colonnes** (quantité, unité, prix unitaire) et les **Totaux** figurent sur le devis. Sans colonnes, le client ne voit que les descriptions et les montants par ligne. |
 

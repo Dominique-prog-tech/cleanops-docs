@@ -64,7 +64,7 @@ De offerte staat in drie blokken: **Offerte**, **Opmerkingen en afdruk** en **Li
 
 | Veld | Wat u invult |
 |---|---|
-| Opmerkingen (klant) | Komen op de offerte voor de klant. |
+| Opmerkingen (klant) | Komen op de offerte voor de klant. Met **Tekst invoegen…** eronder zet u een tekst uit [Factuurteksten](beheer/factuurteksten.md) achteraan, in de taal van de klant; daarna past u hem vrij aan. De vermelding bij 6 % btw staat er niet tussen: die hoort op de factuur. |
 | Interne opmerkingen | Enkel voor uzelf; ze komen niet op de offerte. |
 | Op de afdruk | Of de **Kolommen** (aantal, eenheid, eenheidsprijs) en de **Totalen** op de offerte komen. Zonder kolommen ziet de klant enkel de omschrijvingen en de bedragen per lijn. |
 

@@ -96,6 +96,9 @@ texte et cliquez sur **Rétablir**.
 Sur la fiche d'une [facture](../facturen.md), le bloc **Texte de pied de page** figure en bas — vous y lisez ce qui est
 réellement apparu sur cette facture. S'il n'y a rien, le bloc n'apparaît pas.
 
+Vous choisissez aussi ces textes sur un [devis](../offertes.fr.md), sous **Remarques (client)** avec **Insérer un texte…**. Le
+texte marqué TVA 6 % n'y figure pas.
+
 ## Le journal
 
 À droite de l'écran se trouve une bande **Journal**. Sélectionnez un texte dans la liste et ouvrez la bande : le

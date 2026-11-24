@@ -69,7 +69,7 @@ déjà remplis. Après **Enregistrer**, le document reçoit son numéro et s'ouv
 | Date fournisseur * | la date sur le document du fournisseur, pas dans le futur |
 | N° fournisseur * | le numéro sur le document du fournisseur |
 | Échéance | à laisser vide : elle suit alors le délai de paiement du fournisseur (une note de crédit échoit à sa date) |
-| Communication structurée | la communication structurée du fournisseur (+++123/4567/89002+++) ; le chiffre de contrôle est vérifié. La [proposition de paiement](betalingsvoorstel.md) la reprend dans le fichier SEPA |
+| Communication | la communication du fournisseur : une communication structurée belge (+++123/4567/89002+++) ou une référence RF, dont le chiffre de contrôle est vérifié, ou une autre référence de 35 caractères maximum, comme le code de paiement d'un fournisseur néerlandais. La [proposition de paiement](betalingsvoorstel.md) la reprend dans le fichier SEPA |
 | Description | ce qui a été acheté, en bref |
 | Véhicule | pour un coût de véhicule, dans la liste des [véhicules](beheer/voertuigen.md) |
 

@@ -95,6 +95,9 @@ Wilt u hem terug? Zet bovenaan de lijst **Tonen** op **Ook gearchiveerd**, open 
 Op de fiche van een [factuur](../facturen.md) staat onderaan het blok **Slottekst** — daar leest u wat er werkelijk op die
 factuur is komen te staan. Staat er niets, dan is het blok er ook niet.
 
+Dezelfde teksten kiest u ook op een [offerte](../offertes.md), onder **Opmerkingen (klant)** met **Tekst invoegen…**. Daar
+staat de tekst met het merkteken 6 % btw niet bij.
+
 ## Het journaal
 
 Rechts op het scherm zit een strook **Journaal**. Klik een tekst in de lijst aan en open de strook: het paneel
