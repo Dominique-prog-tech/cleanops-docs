@@ -66,6 +66,10 @@ ou du ticket de caisse dans la fenêtre (ou cliquez dessus pour choisir le fichi
   comptable voie tout de suite de quoi il s'agit. La date ne peut pas être dans le futur.
 - **Quand il part** — avec l'envoi du lendemain matin, dans un mail à part avec le fichier en pièce jointe. Jusque-là, vous
   pouvez encore le supprimer. **Vers la comptabilité…** aussi n'emporte un fichier que le lendemain de son chargement.
+- **Plutôt tout en une fois ?** Cochez sur la [fiche d'entreprise](beheer/bedrijfsfiche.md#comptabilite) **Envoyer les
+  fichiers pour le comptable seulement à la main**. Les fichiers attendent alors dans la liste jusqu'à ce que vous
+  choisissiez **Comptabilité → Vers la comptabilité…**, par exemple une ou deux fois par mois. Ils partent alors tous, même
+  ceux du jour, chacun dans un mail à part. Les factures d'achat elles-mêmes continuent de partir chaque matin.
 - **Ce qui ne se passe pas** — le fichier n'apparaît pas dans la liste des factures d'achat, ni dans la
   [proposition de paiement](betalingsvoorstel.md), ni dans les [postes ouverts](openstaande-posten-leveranciers.md).
 

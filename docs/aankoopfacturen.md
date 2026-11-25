@@ -64,6 +64,10 @@ te vullen. Klik op **Boekhouding → Bestand naar de boekhouder…**, sleep de p
   boekhouder meteen ziet waarover het gaat. De datum mag niet in de toekomst liggen.
 - **Wanneer het vertrekt** — met de verzending van de volgende ochtend, als een eigen mail met het bestand als bijlage. Tot
   dan kunt u het nog verwijderen. Ook **Naar de boekhouding…** neemt een bestand pas de dag na het opladen mee.
+- **Liever alles in één keer?** Zet op de [bedrijfsfiche](beheer/bedrijfsfiche.md#boekhouding) **Bestanden voor de
+  boekhouder enkel met de hand versturen** aan. De bestanden wachten dan in de lijst tot u **Boekhouding → Naar de
+  boekhouding…** kiest, bijvoorbeeld een of twee keer per maand. Dan vertrekken ze allemaal, ook die van vandaag, elk als
+  een eigen mail. De aankoopfacturen zelf blijven elke ochtend vertrekken.
 - **Wat er niet mee gebeurt** — het bestand komt niet in de lijst van de aankoopfacturen, niet in het
   [betalingsvoorstel](betalingsvoorstel.md) en niet in de [openstaande posten](openstaande-posten-leveranciers.md).
 

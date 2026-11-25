@@ -148,6 +148,7 @@ het boekhoudkantoor**, met de elektronische factuur (UBL) en de PDF erin.
 | **Adres van het boekhoudkantoor** | het e-mailadres waar uw boekhouder de facturen ontvangt, bijvoorbeeld de inbox van zijn boekhoudpakket. Verplicht zodra het vinkje aan staat. |
 | **Aankoopfacturen elke dag naar het boekhoudkantoor sturen** | aan of uit. |
 | **Adres voor de aankoopfacturen** | het e-mailadres waar uw boekhouder de aankoopfacturen ontvangt. Verplicht zodra het vinkje aan staat; mag hetzelfde zijn als hierboven. |
+| **Bestanden voor de boekhouder enkel met de hand versturen** | aan: de [bestanden voor de boekhouder](../aankoopfacturen.md#een-bestand-naar-de-boekhouder) vertrekken niet elke ochtend, maar pas als u op Aankoopfacturen **Boekhouding → Naar de boekhouding…** kiest, en dan allemaal tegelijk. Uit (standaard): elke ochtend. |
 
 Met het tweede vinkje gaan ook de aankoopfacturen en -creditnota's die u in CleanOps registreert (met de hand of via
 Peppol) elke ochtend naar uw boekhouder, naar een eigen adres: veel boekhoudpakketten hebben een aparte mailbox voor

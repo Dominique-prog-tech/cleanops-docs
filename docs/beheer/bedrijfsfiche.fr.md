@@ -153,6 +153,7 @@ l'**adresse du bureau comptable**, avec la facture électronique (UBL) et le PDF
 | **Adresse du bureau comptable** | l'adresse e-mail où votre comptable reçoit les factures, par exemple la boîte de son logiciel comptable. Obligatoire dès que la case est cochée. |
 | **Envoyer chaque jour les factures d'achat au bureau comptable** | activé ou non. |
 | **Adresse pour les factures d'achat** | l'adresse e-mail où votre comptable reçoit les factures d'achat. Obligatoire dès que la case est cochée ; peut être la même que ci-dessus. |
+| **Envoyer les fichiers pour le comptable seulement à la main** | activé : les [fichiers pour le comptable](../aankoopfacturen.md#un-fichier-pour-le-comptable) ne partent pas chaque matin, mais seulement quand vous choisissez **Comptabilité → Vers la comptabilité…** dans Factures d'achat, et alors tous en une fois. Désactivé (par défaut) : chaque matin. |
 
 Avec la deuxième case, les factures et notes de crédit d'achat que vous enregistrez dans CleanOps (à la main ou via
 Peppol) partent aussi chaque matin chez votre comptable, vers une adresse propre : beaucoup de logiciels comptables ont
