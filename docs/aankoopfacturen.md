@@ -34,9 +34,9 @@ standaard verborgen: met de kolomkiezer zet u ze erbij. De recentste boeking sta
 
 Staat het op de [bedrijfsfiche](beheer/bedrijfsfiche.md#boekhouding) aan, dan gaan de aankoopfacturen en -creditnota's die
 in CleanOps geregistreerd werden elke ochtend vanzelf naar uw boekhoudkantoor, tot en met de boekingsdatum van gisteren. Met
-**Naar de boekhouding…** doet u het meteen: het venster zegt eerst hoeveel documenten wachten, hoeveel er via Peppol
-binnenkwamen, hoeveel er geen PDF van de leverancier hebben en naar welk adres ze gaan. Het verstuurt pas als u op
-**Versturen** klikt.
+**Boekhouding → Naar de boekhouding…** doet u het meteen: het venster zegt eerst hoeveel documenten wachten, hoeveel er via Peppol
+binnenkwamen, hoeveel er geen PDF van de leverancier hebben, hoeveel [bestanden voor de boekhouder](#een-bestand-naar-de-boekhouder)
+meegaan en naar welk adres ze gaan. Het verstuurt pas als u op **Versturen** klikt.
 
 - Een document dat via **Peppol** binnenkwam, vertrekt zoals de leverancier het stuurde.
 - Een document dat u **met de hand** registreerde, vertrekt als elektronische factuur (UBL) met de eerste PDF uit de
@@ -50,6 +50,30 @@ toepassing nog in gebruik, dan zegt het venster dat en verstuurt het niets.
 Loopt er op dat moment al een verzending — die van elke ochtend, of een collega die net op **Versturen** klikte — dan zegt het
 venster dat ook en verstuurt het niets: zo krijgt uw boekhoudkantoor geen document twee keer. Open het venster enkele minuten
 later opnieuw om te zien wat er vertrok.
+
+### Een bestand naar de boekhouder
+
+Volgt u uw aankoopfacturen niet op in CleanOps, maar moeten ze enkel naar uw boekhoudkantoor? Dan hoeft u geen fiche in
+te vullen. Klik op **Boekhouding → Bestand naar de boekhouder…**, sleep de pdf of de foto van de factuur of het kasticket in het venster
+(of klik erop om het bestand te kiezen) en klik op **Naar de boekhouder**. U hebt daarvoor het recht *Aankoop bewerken* nodig.
+
+![Het venster Bestand naar de boekhouder met de zone om een bestand te kiezen, de velden Leverancier, Datum en Omschrijving, en eronder het bestand kasticket-shell.pdf van Shell dat wacht](images/aankoopfacturen-bestand.png "Bestand naar de boekhouder")
+
+- **Welk bestand** — een pdf of een foto (jpg, png, heic), tot 10 MB. Groter kan niet mee in de mail naar het kantoor.
+- **Leverancier, Datum en Omschrijving** — niet verplicht. Wat u invult, staat in het onderwerp van de mail, zodat uw
+  boekhouder meteen ziet waarover het gaat. De datum mag niet in de toekomst liggen.
+- **Wanneer het vertrekt** — met de verzending van de volgende ochtend, als een eigen mail met het bestand als bijlage. Tot
+  dan kunt u het nog verwijderen. Ook **Naar de boekhouding…** neemt een bestand pas de dag na het opladen mee.
+- **Wat er niet mee gebeurt** — het bestand komt niet in de lijst van de aankoopfacturen, niet in het
+  [betalingsvoorstel](betalingsvoorstel.md) en niet in de [openstaande posten](openstaande-posten-leveranciers.md).
+
+Onder het formulier ziet u de bestanden die u al opstuurde: met de leverancier, de datum en of het **wacht** of
+**verstuurd** is. Zolang het wacht, haalt **Verwijderen** het weer weg. Eenmaal verstuurd ligt het vast: uw boekhouder
+heeft het al.
+
+Het bestand vertrekt naar hetzelfde adres als de aankoopfacturen: zet de export dus aan op de
+[bedrijfsfiche](beheer/bedrijfsfiche.md#boekhouding). Staat ze uit, dan zegt het venster dat, en wachten de bestanden tot
+ze aanstaat.
 
 ## Een nieuwe aankoopfactuur
 
@@ -158,6 +182,10 @@ document al naar uw boekhoudkantoor: corrigeer het met een creditnota.
 **Waar staan het voertuig en de datum van de leverancier?**
 In de lijst staan ze standaard verborgen, zodat de lijst ook op een kleiner scherm past. Zet ze aan met de kolomkiezer;
 op de fiche staan ze altijd.
+
+**Ik wil mijn aankoopfacturen enkel aan mijn boekhouder bezorgen.**
+Gebruik **Boekhouding → Bestand naar de boekhouder…**: u laadt enkel de pdf of de foto op, zonder fiche, en ze gaat de volgende ochtend
+naar uw boekhoudkantoor. Zie [Een bestand naar de boekhouder](#een-bestand-naar-de-boekhouder).
 
 **De vervaldag klopt niet.**
 Laat het veld leeg om ze opnieuw uit de betaaltermijn van de leverancier te laten berekenen, of vul de datum van het

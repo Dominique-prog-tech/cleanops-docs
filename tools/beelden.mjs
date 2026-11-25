@@ -284,6 +284,19 @@ const SCHOTEN = [
       await veld.click(); await veld.fill('aankoop@kantoor-demo.be'); await p.keyboard.press('Tab');
       await p.evaluate(() => document.activeElement?.blur());
     } },
+  // Bestand naar de boekhouder (vraag van Nonstop, 25/11/2026): het venster met één opgeladen bestand. ⚠️ Het bestand komt NIET uit Demo
+  // vullen: laad in de demo eerst via dit venster kasticket-shell.pdf op (Leverancier Shell, Datum 24/11/2026, Omschrijving Diesel
+  // bestelwagen). Zonder dat bestand weigert het merkteken het beeld. De melding "de export staat uit" verbergt het recept: de demo heeft
+  // de aankoopexport uit, een klant die deze knop gebruikt heeft ze aan en ziet die melding niet. Het recept laadt niets op.
+  { naam: 'aankoopfacturen-bestand', route: '/aankoopfacturen', verwacht: /kasticket-shell\.pdf/,
+    na: async p => {
+      const dicht = p.locator('.adm-detail-drawer__btn').first();
+      if (await dicht.isVisible()) await dicht.click();
+      // Sinds 25/11/2026 één menu Boekhouding met dit venster en Naar de boekhouding…
+      await p.getByRole('button', { name: /^(Boekhouding|Comptabilité)$/ }).first().click();
+      await p.getByRole('menuitem', { name: /^(Bestand naar de boekhouder…|Fichier pour le comptable…)$/ }).click();
+      await p.addStyleTag({ content: '[data-bestanden-reden] { display: none !important; }' });
+    } },
   // Binnengekomen documenten (vrijgave 06/10/2026, Aankoop laag 4). De documenten komen uit de ONTWIKKEL-INBOX van de app
   // (PeppolDevelopmentInbox: enkel in Development, met de vlag Peppol:OntwikkelInbox) — vier voor de demo. ⚠️ Herstart de preview vóór
   // deze beelden als er al documenten verwerkt werden: de ontwikkel-inbox onthoudt wat bevestigd is tot de app herstart, en een

@@ -34,9 +34,10 @@ masqués par défaut : le sélecteur de colonnes les affiche. La comptabilisatio
 
 Si c'est activé sur la [fiche d'entreprise](beheer/bedrijfsfiche.md#comptabilite), les factures et notes de crédit d'achat
 enregistrées dans CleanOps partent chaque matin d'elles-mêmes chez votre bureau comptable, jusqu'à la date de
-comptabilisation de la veille. **Vers la comptabilité…** le fait tout de suite : la fenêtre indique d'abord combien de
+comptabilisation de la veille. **Comptabilité → Vers la comptabilité…** le fait tout de suite : la fenêtre indique d'abord combien de
 documents attendent, combien sont arrivés par Peppol, combien n'ont pas de PDF du fournisseur et vers quelle adresse ils
-partent. Elle n'envoie que lorsque vous cliquez sur **Envoyer**.
+partent, ainsi que combien de [fichiers pour le comptable](#un-fichier-pour-le-comptable) partent avec eux. Elle n'envoie que
+lorsque vous cliquez sur **Envoyer**.
 
 - Un document arrivé par **Peppol** part tel que le fournisseur l'a envoyé.
 - Un document que vous avez enregistré **à la main** part comme facture électronique (UBL) avec le premier PDF des
@@ -50,6 +51,30 @@ précédente est encore en service, la fenêtre le dit et n'envoie rien.
 Si un envoi est déjà en cours à ce moment-là — celui de chaque matin, ou un collègue qui vient de cliquer sur **Envoyer** — la
 fenêtre le dit aussi et n'envoie rien : votre bureau comptable ne reçoit ainsi aucun document en double. Rouvrez la fenêtre
 quelques minutes plus tard pour voir ce qui est parti.
+
+### Un fichier pour le comptable
+
+Vous ne suivez pas vos factures d'achat dans CleanOps et elles doivent seulement partir chez votre bureau comptable ? Vous
+n'avez alors pas de fiche à remplir. Cliquez sur **Comptabilité → Fichier pour le comptable…**, glissez le PDF ou la photo de la facture
+ou du ticket de caisse dans la fenêtre (ou cliquez dessus pour choisir le fichier) et cliquez sur **Envoyer au comptable**. Il vous faut le droit *Modifier les achats*.
+
+![La fenêtre Fichier pour le comptable avec la zone pour choisir un fichier, les champs Fournisseur, Date et Description, et en dessous le fichier kasticket-shell.pdf de Shell en attente](images/aankoopfacturen-bestand-fr.png "Fichier pour le comptable")
+
+- **Quel fichier** — un PDF ou une photo (jpg, png, heic), jusqu'à 10 Mo. Plus grand, il ne peut pas partir dans le mail
+  vers le bureau.
+- **Fournisseur, Date et Description** — facultatifs. Ce que vous remplissez figure dans l'objet du mail, pour que votre
+  comptable voie tout de suite de quoi il s'agit. La date ne peut pas être dans le futur.
+- **Quand il part** — avec l'envoi du lendemain matin, dans un mail à part avec le fichier en pièce jointe. Jusque-là, vous
+  pouvez encore le supprimer. **Vers la comptabilité…** aussi n'emporte un fichier que le lendemain de son chargement.
+- **Ce qui ne se passe pas** — le fichier n'apparaît pas dans la liste des factures d'achat, ni dans la
+  [proposition de paiement](betalingsvoorstel.md), ni dans les [postes ouverts](openstaande-posten-leveranciers.md).
+
+Sous le formulaire, vous voyez les fichiers déjà envoyés : avec le fournisseur, la date et s'il est **en attente** ou
+**envoyé**. Tant qu'il attend, **Supprimer** le retire. Une fois envoyé, il est figé : votre comptable l'a déjà.
+
+Le fichier part vers la même adresse que les factures d'achat : activez donc l'envoi sur la
+[fiche d'entreprise](beheer/bedrijfsfiche.md#comptabilite). S'il est désactivé, la fenêtre le dit et les fichiers attendent
+qu'il soit activé.
 
 ## Une nouvelle facture d'achat
 
@@ -158,6 +183,10 @@ comptabilité*, le document est déjà parti chez votre bureau comptable : corri
 **Où sont le véhicule et la date du fournisseur ?**
 Dans la liste, ils sont masqués par défaut, pour que la liste tienne aussi sur un écran plus petit. Affichez-les avec le
 sélecteur de colonnes ; sur la fiche, ils figurent toujours.
+
+**Je veux seulement transmettre mes factures d'achat à mon comptable.**
+Utilisez **Comptabilité → Fichier pour le comptable…** : vous chargez seulement le PDF ou la photo, sans fiche, et il part le lendemain matin
+chez votre bureau comptable. Voir [Un fichier pour le comptable](#un-fichier-pour-le-comptable).
 
 **L'échéance est incorrecte.**
 Laissez le champ vide pour la recalculer à partir du délai de paiement du fournisseur, ou indiquez la date du document.
