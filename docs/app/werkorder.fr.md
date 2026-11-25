@@ -147,7 +147,9 @@ Si une quantité ne convient pas, il l'adapte ; sous le champ figure alors la pr
 sur l'ordre de travail, puis viennent la signature ou la clôture. Avec la croix, il revient sans terminer.
 
 - S'il appuie plus tard encore sur signer ou terminer, CleanOps remplace les lignes des heures : elles ne viennent pas une
-  seconde fois. Une quantité qu'il avait adaptée figure de nouveau.
+  seconde fois. Le champ affiche alors la proposition actuelle, avec le temps ajouté entre-temps. Une quantité qu'il avait
+  adaptée la dernière fois figure en dessous sous **La dernière fois** (à partir de la version 1.4.11 de l'app ; une version plus
+  ancienne remet cette quantité dans le champ).
 - Sans réseau, l'app ne peut pas montrer la proposition. S'il termine alors, CleanOps calcule les heures et le tarif de
   démarrage dès qu'il reçoit l'ordre de travail, sans adaptation. Jusque-là, la carte l'indique.
 - Si la fiche d'entreprise n'a pas de tarif pour les heures ni de tarif de démarrage, cet écran ne vient pas.

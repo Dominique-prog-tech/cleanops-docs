@@ -141,7 +141,8 @@ Klopt een aantal niet, dan past hij het aan; onder het veld staat dan wat het vo
 op de werkorder, en daarna volgt het tekenen of het afronden. Met het kruisje gaat hij terug, zonder af te ronden.
 
 - Tikt hij later nog eens op tekenen of afronden, dan vervangt CleanOps de lijnen van de uren: ze komen er geen tweede keer bij.
-  Een aantal dat hij aanpaste, staat er dan opnieuw in.
+  In het veld staat dan het voorstel van nu, met de tijd die er intussen bijkwam. Een aantal dat hij vorige keer zelf aanpaste,
+  staat eronder als **Vorige keer** (vanaf versie 1.4.11 van de app; een oudere versie zet dat aantal opnieuw in het veld).
 - Zonder bereik kan de app het voorstel niet tonen. Rondt hij dan af, dan rekent CleanOps de uren en het starttarief zodra het de
   werkorder ontvangt, zonder aanpassing. Tot dan staat dat op de kaart.
 - Staat er op de bedrijfsfiche geen tarief voor de uren en geen starttarief, dan komt dit scherm niet.
