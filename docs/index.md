@@ -117,6 +117,16 @@ factuur: [Video's](videos.md).
 
 **Historiek** — [Prullenbak](beheer/prullenbak.md) · [Actielogboek](beheer/actielogboek.md)
 
+## Zoeken in heel CleanOps
+
+Klik rechtsboven op het vergrootglas, of druk **Ctrl+K** (op een Mac ook **Cmd+K**), en typ een naam, een nummer of een
+gemeente. CleanOps zoekt in één keer in de klanten, werkorders, contracten, offertes, facturen, aankoopfacturen, leveranciers en
+medewerkers, en toont de treffers per soort. Kies er een met de muis, of met de pijltjes en **Enter**.
+
+Elke soort zoekt zoals de zoekbalk van haar eigen lijst: "residence" vindt ook "Résidence", en een werkorder vindt u ook op de
+naam van de klant of het nummer van het contract. U ziet enkel treffers uit schermen die u mag openen. Staat wat u zoekt er niet
+bij, typ dan een woord meer of zoek verder in de lijst zelf.
+
 ## Snelkoppelingen rechtsboven
 
 Rechtsboven, vóór de knop voor het donkere thema, staan vier iconen die u in één klik naar een scherm brengen dat u vaak

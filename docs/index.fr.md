@@ -119,6 +119,17 @@ première visite guidée à la facture : [Vidéos](videos.md).
 
 **Historique** — [Corbeille](beheer/prullenbak.md) · [Journal des actions](beheer/actielogboek.md)
 
+## Rechercher dans tout CleanOps
+
+Cliquez sur la loupe en haut à droite, ou appuyez sur **Ctrl+K** (sur un Mac aussi **Cmd+K**), et tapez un nom, un numéro ou une
+commune. CleanOps cherche en une fois dans les clients, ordres de travail, contrats, devis, factures, factures d'achat,
+fournisseurs et collaborateurs, et affiche les résultats par type. Choisissez-en un avec la souris, ou avec les flèches et
+**Entrée**.
+
+Chaque type cherche comme la barre de recherche de sa propre liste : "residence" trouve aussi "Résidence", et vous trouvez un
+ordre de travail aussi par le nom du client ou le numéro du contrat. Vous ne voyez que les résultats des écrans que vous pouvez
+ouvrir. Si ce que vous cherchez n'y est pas, ajoutez un mot ou continuez dans la liste elle-même.
+
 ## Raccourcis en haut à droite
 
 En haut à droite, avant le bouton du thème sombre, quatre icônes vous mènent en un clic vers un écran que vous utilisez
