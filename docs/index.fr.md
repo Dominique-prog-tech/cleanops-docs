@@ -119,6 +119,15 @@ première visite guidée à la facture : [Vidéos](videos.md).
 
 **Historique** — [Corbeille](beheer/prullenbak.md) · [Journal des actions](beheer/actielogboek.md)
 
+## Raccourcis en haut à droite
+
+En haut à droite, avant le bouton du thème sombre, quatre icônes vous mènent en un clic vers un écran que vous utilisez
+souvent : **Tableau de bord**, **Planning**, **Ordres de travail** et **Équipes**. Ce sont les mêmes écrans que dans le menu
+de gauche, avec la même icône. Survolez une icône pour voir son nom.
+
+Vous ne voyez que les raccourcis vers les écrans que vous pouvez ouvrir. Sur un téléphone, ils n'apparaissent pas ; utilisez
+alors le menu.
+
 ## L'aide dans l'application
 
 En haut à droite de CleanOps se trouve un bouton **?**. Il ouvre un panneau avec une explication sur l'écran

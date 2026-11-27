@@ -117,6 +117,14 @@ factuur: [Video's](videos.md).
 
 **Historiek** — [Prullenbak](beheer/prullenbak.md) · [Actielogboek](beheer/actielogboek.md)
 
+## Snelkoppelingen rechtsboven
+
+Rechtsboven, vóór de knop voor het donkere thema, staan vier iconen die u in één klik naar een scherm brengen dat u vaak
+gebruikt: **Dashboard**, **Planning**, **Werkorders** en **Ploegen**. Het zijn dezelfde schermen als in het menu links, met
+hetzelfde icoon. Wijs een icoon aan om de naam te zien.
+
+U ziet enkel de snelkoppelingen naar schermen die u mag openen. Op een telefoon staan ze er niet; gebruik daar het menu.
+
 ## Hulp in de app zelf
 
 Rechtsboven in CleanOps staat een **?**-knop. Die opent een lade met uitleg bij het scherm waar u op dat
