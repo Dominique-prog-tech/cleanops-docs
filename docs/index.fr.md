@@ -121,10 +121,11 @@ première visite guidée à la facture : [Vidéos](videos.md).
 
 ## Rechercher dans tout CleanOps
 
-Cliquez sur la loupe en haut à droite, ou appuyez sur **Ctrl+K** (sur un Mac aussi **Cmd+K**), et tapez un nom, un numéro ou une
-commune. CleanOps cherche en une fois dans les clients, ordres de travail, contrats, devis, factures, factures d'achat,
-fournisseurs et collaborateurs, et affiche les résultats par type. Choisissez-en un avec la souris, ou avec les flèches et
-**Entrée**.
+Tapez un nom, un numéro ou une commune dans le champ de recherche en haut, à côté du nom CleanOps. Avec **Ctrl+K** (sur un Mac
+aussi **Cmd+K**), le curseur s'y place directement. Sur un écran plus étroit, comme une tablette, une loupe se trouve en haut à
+droite : cliquez dessus et tapez dans la fenêtre qui s'ouvre. CleanOps cherche en une fois dans les clients, ordres de travail,
+contrats, devis, factures, factures d'achat, fournisseurs et collaborateurs, et affiche les résultats par type. Choisissez-en un
+avec la souris, ou avec les flèches et **Entrée**. **Échap** ferme les résultats et vide le champ.
 
 Chaque type cherche comme la barre de recherche de sa propre liste : "residence" trouve aussi "Résidence", et vous trouvez un
 ordre de travail aussi par le nom du client ou le numéro du contrat. Vous ne voyez que les résultats des écrans que vous pouvez

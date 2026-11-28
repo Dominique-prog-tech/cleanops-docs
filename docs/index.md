@@ -119,9 +119,11 @@ factuur: [Video's](videos.md).
 
 ## Zoeken in heel CleanOps
 
-Klik rechtsboven op het vergrootglas, of druk **Ctrl+K** (op een Mac ook **Cmd+K**), en typ een naam, een nummer of een
-gemeente. CleanOps zoekt in één keer in de klanten, werkorders, contracten, offertes, facturen, aankoopfacturen, leveranciers en
-medewerkers, en toont de treffers per soort. Kies er een met de muis, of met de pijltjes en **Enter**.
+Typ een naam, een nummer of een gemeente in het zoekveld bovenaan, naast de naam CleanOps. Met **Ctrl+K** (op een Mac ook
+**Cmd+K**) staat de cursor er meteen in. Op een smaller scherm, zoals een tablet, staat er rechtsboven een vergrootglas: klik erop
+en typ in het venster dat opent. CleanOps zoekt in één keer in de klanten, werkorders, contracten, offertes, facturen,
+aankoopfacturen, leveranciers en medewerkers, en toont de treffers per soort. Kies er een met de muis, of met de pijltjes en
+**Enter**. **Escape** sluit de treffers en maakt het veld leeg.
 
 Elke soort zoekt zoals de zoekbalk van haar eigen lijst: "residence" vindt ook "Résidence", en een werkorder vindt u ook op de
 naam van de klant of het nummer van het contract. U ziet enkel treffers uit schermen die u mag openen. Staat wat u zoekt er niet
